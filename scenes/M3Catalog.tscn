@@ -167,13 +167,30 @@ script = ExtResource("2_b")
 Text = "Tablet (768x576)"
 ButtonType = 1
 
-[node name="DisplayArea" type="CenterContainer" parent="Layout"]
+[node name="BtnResAuto" type="Control" parent="Layout/ControlPanel/Scroll/VBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 40)
 layout_mode = 2
+focus_mode = 2
+script = ExtResource("2_b")
+Text = "Auto (Adaptive DPI)"
+ButtonType = 1
+
+[node name="DisplayArea" type="MarginContainer" parent="Layout"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
 
 [node name="ViewportFrame" type="PanelContainer" parent="Layout/DisplayArea"]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(1000, 600)
+custom_minimum_size = Vector2(300, 200)
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="Layout/DisplayArea/ViewportFrame"]
 layout_mode = 2

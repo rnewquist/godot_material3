@@ -23,11 +23,11 @@ Abstract base control that all Material 3 components inherit from.
 ## 2. Dynamic DPI Scaling Framework (Typography & Layouts)
 
 ### 2.1 Viewport Resolution & Adaptive DP Sizing
-To guarantee that all components remain readable on all physical screens, the visual `ScaleFactor` is dynamically computed on the fly using a combined density and layout resolution equation:
-- **DPI-based scale factor**: Queries `DisplayServer.ScreenGetDpi()` and standardizes against a standard **96 DPI baseline** (`dpiScale = dpi / 96.0f`).
-- **Viewport-based scale factor**: Compares active visible sizes against a standard `1280x720` design baseline (`viewportScale = Mathf.Min(scaleX, scaleY)` clamped between `0.75f` and `2.5f`).
-- **DP Result**: Yields a dynamic product of `dpiScale * viewportScale` (clamped between `1.0f` and `3.0x` for high-dpi readability). Recalculates dynamically on viewport boundaries adjustments (`viewport.SizeChanged`).
+To guarantee that all components remain readable on all physical screens while maintaining constant sizes during OS window resizes:
+- **DPI-only screen density scaling**: The visual `ScaleFactor` is dynamically computed strictly based on physical hardware screen density. It queries `DisplayServer.ScreenGetDpi()` and standardizes against a standard **96 DPI baseline** (`dpiScale = dpi / 96.0f`).
+- **Constant Sizing on Resize**: Resizing the window does NOT modify the scaling factor (clamped between `1.0x` and `3.0x`). Buttons, fonts, and controls maintain a perfectly constant pixel size while the layout naturally reflows and expands to occupy the newly available workspace.
 - **Manual Preset Overrides**: Swapping active emulation presets in the catalog (Desktop `1.0x`, Tablet `1.25x`, Mobile `1.6x`) applies manual overrides that bypass auto-recalculation cleanly.
+- **Adaptive Auto Resizing**: Clicking the "Auto (Adaptive DPI)" button disables preset overrides by calling `M3ThemeManager.Instance.ClearScaleOverride()`, letting the hardware screen density dynamically govern the DP scaling factor.
 
 ### 2.2 Proportional Component-Level Sizing
 All 15 Material 3 custom controls apply `ScaleFactor` multiplication to their elements inside their `ApplyTheme()`, `ResetLayout()`, and `_Draw()` methods:

@@ -14,17 +14,7 @@ public partial class M3ThemeManager : Node
     /// <summary>
     /// Static singleton instance accessor.
     /// </summary>
-    public static M3ThemeManager Instance
-    {
-        get
-        {
-            if (_instance == null)
-            {
-                GD.PrintErr("M3ThemeManager is not yet loaded in the SceneTree autoloads.");
-            }
-            return _instance;
-        }
-    }
+    public static M3ThemeManager Instance => _instance;
 
     private M3Theme _currentTheme;
     private bool _isDarkMode = false;
@@ -74,6 +64,16 @@ public partial class M3ThemeManager : Node
         }
     }
 
+    /// <summary>
+    /// Resets manual scale factor override, enabling dynamic scaling calculations on window resizes.
+    /// </summary>
+    public void ClearScaleOverride()
+    {
+        _isManualScaleOverride = false;
+        _scaleFactor = -1.0f; // Force recalculation
+        RecalculateDynamicScaleFactor();
+    }
+
     public override void _Ready()
     {
         RecalculateDynamicScaleFactor();
@@ -107,23 +107,8 @@ public partial class M3ThemeManager : Node
             // Fail-safe fallback if DisplayServer is unavailable in early init or headless mode
         }
 
-        // 2. Viewport-based scale relative to standard 1280x720 baseline
-        float viewportScale = 1.0f;
-        var viewport = GetViewport();
-        if (viewport != null)
-        {
-            Vector2 visibleSize = viewport.GetVisibleRect().Size;
-            if (visibleSize.X > 0 && visibleSize.Y > 0)
-            {
-                float scaleX = visibleSize.X / 1280.0f;
-                float scaleY = visibleSize.Y / 720.0f;
-                viewportScale = Mathf.Min(scaleX, scaleY);
-                viewportScale = Mathf.Clamp(viewportScale, 0.75f, 2.5f);
-            }
-        }
-
         // Combine hardware density and screen real-estate scaling
-        float dynamicScale = dpiScale * viewportScale;
+        float dynamicScale = dpiScale;
         
         // Clamp final scale factor between 1.0x and 3.0x to maintain readability and prevent clipping
         float newScale = Mathf.Clamp(dynamicScale, 1.0f, 3.0f);
