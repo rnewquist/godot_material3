@@ -1,3 +1,39 @@
-# Godot 4+ specific ignores
-.godot/
-/android/
+# --- Godot C# Project Git Ignore Rules ---
+
+# Godot-specific exclusions
+**/material-3/.godot/
+**/material-3/*.translation
+**/material-3/*.import
+
+# Mono / .NET C# build outputs
+**/bin/
+**/obj/
+**/material-3/.godot/mono/
+**/material-3/.godot/mono/temp/
+*.csproj.user
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# IDE and Editor configurations
+.idea/
+.vscode/
+.vs/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln.targets
+.vscode/
+
+# Operating System specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Dynamic screenshots (exclude raw generated runs, keeping doc assets separate if needed)
+# **/material-3/screenshots/
