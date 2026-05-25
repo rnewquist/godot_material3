@@ -1,0 +1,495 @@
+[gd_scene load_steps=15 format=3 uid="uid://ca7a109a-ea91-4c3e-8c88-e216e8f31ff9"]
+
+[ext_resource type="Script" path="res://scenes/M3Catalog.cs" id="1_a"]
+[ext_resource type="Script" path="res://components/M3Button.cs" id="2_b"]
+[ext_resource type="Script" path="res://components/M3Switch.cs" id="3_c"]
+[ext_resource type="Script" path="res://components/M3Checkbox.cs" id="4_d"]
+[ext_resource type="Script" path="res://components/M3RadioButton.cs" id="5_e"]
+[ext_resource type="Script" path="res://components/M3Slider.cs" id="6_f"]
+[ext_resource type="Script" path="res://components/M3ProgressIndicator.cs" id="7_g"]
+[ext_resource type="Script" path="res://components/M3Card.cs" id="8_h"]
+[ext_resource type="Script" path="res://components/M3Divider.cs" id="9_i"]
+[ext_resource type="Script" path="res://components/M3Badge.cs" id="10_j"]
+[ext_resource type="Script" path="res://components/M3TextField.cs" id="11_k"]
+[ext_resource type="Script" path="res://components/M3NavigationBar.cs" id="12_l"]
+[ext_resource type="Script" path="res://components/M3NavigationRail.cs" id="13_m"]
+[ext_resource type="Script" path="res://components/M3NavigationDrawer.cs" id="14_n"]
+[ext_resource type="Script" path="res://components/M3Tooltip.cs" id="15_o"]
+[ext_resource type="Script" path="res://components/M3TabBar.cs" id="16_p"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bg"]
+bg_color = Color(0.12, 0.12, 0.14, 1)
+
+[node name="M3Catalog" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_a")
+
+[node name="BGPanel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_bg")
+
+[node name="Layout" type="HSplitContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+split_offset = 320
+
+[node name="ControlPanel" type="MarginContainer" parent="Layout"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="Scroll" type="ScrollContainer" parent="Layout/ControlPanel"]
+layout_mode = 2
+
+[node name="VBox" type="VBoxContainer" parent="Layout/ControlPanel/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 20
+
+[node name="LabelTitle" type="Label" parent="Layout/ControlPanel/Scroll/VBox"]
+layout_mode = 2
+text = "Material 3 Catalog"
+
+[node name="HSeparator1" type="HSeparator" parent="Layout/ControlPanel/Scroll/VBox"]
+layout_mode = 2
+
+[node name="LabelTheme" type="Label" parent="Layout/ControlPanel/Scroll/VBox"]
+layout_mode = 2
+text = "Theme Settings"
+
+[node name="HBoxDark" type="HBoxContainer" parent="Layout/ControlPanel/Scroll/VBox"]
+layout_mode = 2
+
+[node name="LabelDark" type="Label" parent="Layout/ControlPanel/Scroll/VBox/HBoxDark"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Dark Mode Toggle"
+
+[node name="SwitchDarkMode" type="Control" parent="Layout/ControlPanel/Scroll/VBox/HBoxDark"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(52, 32)
+layout_mode = 2
+focus_mode = 2
+script = ExtResource("3_c")
+
+[node name="LabelSeed" type="Label" parent="Layout/ControlPanel/Scroll/VBox"]
+layout_mode = 2
+text = "Select HSL Seed Color"
+
+[node name="GridSeed" type="GridContainer" parent="Layout/ControlPanel/Scroll/VBox"]
+layout_mode = 2
+theme_override_constants/h_separation = 10
+theme_override_constants/v_separation = 10
+columns = 2
+
+[node name="BtnSeedViolet" type="Control" parent="Layout/ControlPanel/Scroll/VBox/GridSeed"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 40)
+layout_mode = 2
+focus_mode = 2
+script = ExtResource("2_b")
+Text = "Violet Seed"
+
+[node name="BtnSeedEmerald" type="Control" parent="Layout/ControlPanel/Scroll/VBox/GridSeed"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 40)
+layout_mode = 2
+focus_mode = 2
+script = ExtResource("2_b")
+Text = "Emerald"
+ButtonType = 2
+
+[node name="BtnSeedAmber" type="Control" parent="Layout/ControlPanel/Scroll/VBox/GridSeed"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 40)
+layout_mode = 2
+focus_mode = 2
+script = ExtResource("2_b")
+Text = "Amber"
+ButtonType = 3
+
+[node name="BtnSeedCrimson" type="Control" parent="Layout/ControlPanel/Scroll/VBox/GridSeed"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 40)
+layout_mode = 2
+focus_mode = 2
+script = ExtResource("2_b")
+Text = "Crimson"
+ButtonType = 4
+
+[node name="HSeparator2" type="HSeparator" parent="Layout/ControlPanel/Scroll/VBox"]
+layout_mode = 2
+
+[node name="LabelEmu" type="Label" parent="Layout/ControlPanel/Scroll/VBox"]
+layout_mode = 2
+text = "Screen Viewport Emulator"
+
+[node name="BtnResDesktop" type="Control" parent="Layout/ControlPanel/Scroll/VBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 40)
+layout_mode = 2
+focus_mode = 2
+script = ExtResource("2_b")
+Text = "Desktop (1000x600)"
+ButtonType = 1
+
+[node name="BtnResMobile" type="Control" parent="Layout/ControlPanel/Scroll/VBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 40)
+layout_mode = 2
+focus_mode = 2
+script = ExtResource("2_b")
+Text = "Mobile (360x640)"
+ButtonType = 1
+
+[node name="BtnResTablet" type="Control" parent="Layout/ControlPanel/Scroll/VBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 40)
+layout_mode = 2
+focus_mode = 2
+script = ExtResource("2_b")
+Text = "Tablet (768x576)"
+ButtonType = 1
+
+[node name="DisplayArea" type="CenterContainer" parent="Layout"]
+layout_mode = 2
+
+[node name="ViewportFrame" type="PanelContainer" parent="Layout/DisplayArea"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(1000, 600)
+layout_mode = 2
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="Layout/DisplayArea/ViewportFrame"]
+layout_mode = 2
+stretch = true
+
+[node name="DemoViewport" type="SubViewport" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer"]
+unique_name_in_owner = true
+handle_input_locally = true
+size = Vector2i(1000, 600)
+render_target_update_mode = 4
+
+[node name="DemoContent" type="HBoxContainer" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="NavigationRail" type="Control" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+script = ExtResource("13_m")
+
+[node name="MainPanel" type="MarginContainer" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="Scroll" type="ScrollContainer" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel"]
+layout_mode = 2
+
+[node name="VBoxMain" type="VBoxContainer" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 24
+
+[node name="LabelShowcase" type="Label" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain"]
+layout_mode = 2
+text = "Material 3 Component Showcase"
+
+[node name="DashboardGrid" type="GridContainer" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain"]
+layout_mode = 2
+theme_override_constants/h_separation = 32
+columns = 2
+
+[node name="LeftVBox" type="VBoxContainer" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 24
+
+[node name="ActionsBox" type="VBoxContainer" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/LeftVBox"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="LabelActions" type="Label" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/LeftVBox/ActionsBox"]
+layout_mode = 2
+text = "Actions (Buttons)"
+
+[node name="HBoxButtons" type="HBoxContainer" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/LeftVBox/ActionsBox"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="BtnDemoFilled" type="Control" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/LeftVBox/ActionsBox/HBoxButtons"]
+custom_minimum_size = Vector2(90, 36)
+layout_mode = 2
+script = ExtResource("2_b")
+Text = "Filled"
+
+[node name="BtnDemoElevated" type="Control" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/LeftVBox/ActionsBox/HBoxButtons"]
+custom_minimum_size = Vector2(90, 36)
+layout_mode = 2
+script = ExtResource("2_b")
+Text = "Elevated"
+ButtonType = 1
+
+[node name="BtnDemoTonal" type="Control" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/LeftVBox/ActionsBox/HBoxButtons"]
+custom_minimum_size = Vector2(90, 36)
+layout_mode = 2
+script = ExtResource("2_b")
+Text = "Tonal"
+ButtonType = 2
+
+[node name="BtnDemoOutlined" type="Control" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/LeftVBox/ActionsBox/HBoxButtons"]
+custom_minimum_size = Vector2(90, 36)
+layout_mode = 2
+script = ExtResource("2_b")
+Text = "Outlined"
+ButtonType = 3
+
+[node name="BtnDemoText" type="Control" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/LeftVBox/ActionsBox/HBoxButtons"]
+custom_minimum_size = Vector2(90, 36)
+layout_mode = 2
+script = ExtResource("2_b")
+Text = "Text"
+ButtonType = 4
+
+[node name="SelectionBox" type="VBoxContainer" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/LeftVBox"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="LabelSelection" type="Label" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/LeftVBox/SelectionBox"]
+layout_mode = 2
+text = "Selection Controls & Slider"
+
+[node name="HBoxSelection" type="HBoxContainer" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/LeftVBox/SelectionBox"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Switch1" type="Control" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/LeftVBox/SelectionBox/HBoxSelection"]
+custom_minimum_size = Vector2(52, 32)
+layout_mode = 2
+script = ExtResource("3_c")
+
+[node name="Checkbox1" type="Control" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/LeftVBox/SelectionBox/HBoxSelection"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+script = ExtResource("4_d")
+
+[node name="Checkbox2" type="Control" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/LeftVBox/SelectionBox/HBoxSelection"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+script = ExtResource("4_d")
+Checked = true
+
+[node name="Radio1" type="Control" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/LeftVBox/SelectionBox/HBoxSelection"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+script = ExtResource("5_e")
+Selected = true
+
+[node name="Radio2" type="Control" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/LeftVBox/SelectionBox/HBoxSelection"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+script = ExtResource("5_e")
+
+[node name="Slider1" type="Control" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/LeftVBox/SelectionBox"]
+custom_minimum_size = Vector2(150, 44)
+layout_mode = 2
+script = ExtResource("6_f")
+Value = 50.0
+
+[node name="RightVBox" type="VBoxContainer" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 24
+
+[node name="InputsBox" type="VBoxContainer" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/RightVBox"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="LabelInputs" type="Label" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/RightVBox/InputsBox"]
+layout_mode = 2
+text = "Inputs (TextFields)"
+
+[node name="TextFieldFilled" type="Control" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/RightVBox/InputsBox"]
+custom_minimum_size = Vector2(200, 56)
+layout_mode = 2
+script = ExtResource("11_k")
+LabelText = "Filled TextField"
+TextFieldStyle = 0
+
+[node name="TextFieldOutlined" type="Control" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/RightVBox/InputsBox"]
+custom_minimum_size = Vector2(200, 56)
+layout_mode = 2
+script = ExtResource("11_k")
+LabelText = "Outlined TextField"
+TextFieldStyle = 1
+
+[node name="CommBox" type="VBoxContainer" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/RightVBox"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="LabelComm" type="Label" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/RightVBox/CommBox"]
+layout_mode = 2
+text = "Communication & Containment"
+
+[node name="HBoxComm" type="HBoxContainer" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/RightVBox/CommBox"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="ProgressLinear" type="Control" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/RightVBox/CommBox/HBoxComm"]
+custom_minimum_size = Vector2(100, 4)
+layout_mode = 2
+size_flags_vertical = 4
+script = ExtResource("7_g")
+ProgressValue = 0.7
+
+[node name="ProgressLinearIndet" type="Control" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/RightVBox/CommBox/HBoxComm"]
+custom_minimum_size = Vector2(100, 4)
+layout_mode = 2
+size_flags_vertical = 4
+script = ExtResource("7_g")
+Indeterminate = true
+
+[node name="ProgressCirc" type="Control" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/RightVBox/CommBox/HBoxComm"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+script = ExtResource("7_g")
+ProgressType = 1
+ProgressValue = 0.6
+
+[node name="ProgressCircIndet" type="Control" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/RightVBox/CommBox/HBoxComm"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+script = ExtResource("7_g")
+ProgressType = 1
+Indeterminate = true
+
+[node name="Badge1" type="Control" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/RightVBox/CommBox/HBoxComm"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+script = ExtResource("10_j")
+
+[node name="Badge2" type="Control" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/RightVBox/CommBox/HBoxComm"]
+custom_minimum_size = Vector2(24, 16)
+layout_mode = 2
+script = ExtResource("10_j")
+Number = 12
+
+[node name="Divider1" type="Control" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/RightVBox/CommBox"]
+custom_minimum_size = Vector2(0, 1)
+layout_mode = 2
+script = ExtResource("9_i")
+
+[node name="HBoxCards" type="HBoxContainer" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/RightVBox/CommBox"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="CardElevated" type="PanelContainer" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/RightVBox/CommBox/HBoxCards"]
+custom_minimum_size = Vector2(160, 90)
+layout_mode = 2
+script = ExtResource("8_h")
+CardType = 0
+
+[node name="Margin" type="MarginContainer" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/RightVBox/CommBox/HBoxCards/CardElevated"]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBox" type="VBoxContainer" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/RightVBox/CommBox/HBoxCards/CardElevated/Margin"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/RightVBox/CommBox/HBoxCards/CardElevated/Margin/VBox"]
+layout_mode = 2
+text = "Elevated Card"
+
+[node name="CardOutlined" type="PanelContainer" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/RightVBox/CommBox/HBoxCards"]
+custom_minimum_size = Vector2(160, 90)
+layout_mode = 2
+script = ExtResource("8_h")
+CardType = 2
+
+[node name="Margin" type="MarginContainer" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/RightVBox/CommBox/HBoxCards/CardOutlined"]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBox" type="VBoxContainer" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/RightVBox/CommBox/HBoxCards/CardOutlined/Margin"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/RightVBox/CommBox/HBoxCards/CardOutlined/Margin/VBox"]
+layout_mode = 2
+text = "Outlined Card"
+
+[node name="NavigationBarBox" type="VBoxContainer" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="LabelNavBar" type="Label" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/NavigationBarBox"]
+layout_mode = 2
+text = "Navigation Bar (Bottom Navigation)"
+
+[node name="BottomNavBar" type="Control" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/NavigationBarBox"]
+custom_minimum_size = Vector2(200, 80)
+layout_mode = 2
+script = ExtResource("12_l")
+
+[node name="TabBarBox" type="VBoxContainer" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="LabelTabBar" type="Label" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/TabBarBox"]
+layout_mode = 2
+text = "Tab Bar (Horizontal Navigation)"
+
+[node name="TabBar1" type="Control" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport/DemoContent/MainPanel/Scroll/VBoxMain/TabBarBox"]
+custom_minimum_size = Vector2(200, 48)
+layout_mode = 2
+script = ExtResource("16_p")
+
+[node name="Drawer" type="Control" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport"]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("14_n")
+
+[node name="Tooltip1" type="Control" parent="Layout/DisplayArea/ViewportFrame/SubViewportContainer/DemoViewport"]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("15_o")
+TargetPath = NodePath("../DemoContent/MainPanel/Scroll/VBoxMain/DashboardGrid/LeftVBox/ActionsBox/HBoxButtons/BtnDemoTonal")
+TooltipPosition = 1
+Text = "Tonal button hovered!"
+
