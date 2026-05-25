@@ -10,7 +10,7 @@ namespace Material3.Components;
 /// Sits on the left side, holding 3-5 items with capsule active indicators vertically.
 /// </summary>
 [Tool]
-[GlobalClass]
+[GlobalClass, Icon("res://icon.svg")]
 public partial class M3NavigationRail : Control
 {
     private VBoxContainer _vbox;

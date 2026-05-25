@@ -9,7 +9,7 @@ namespace Material3.Components;
 /// Draws procedural vector checkmarks and backgrounds.
 /// </summary>
 [Tool]
-[GlobalClass]
+[GlobalClass, Icon("res://icon.svg")]
 public partial class M3Checkbox : M3BaseComponent
 {
     private bool _checked = false;

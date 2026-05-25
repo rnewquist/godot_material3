@@ -10,7 +10,7 @@ namespace Material3.Components;
 /// Manages a horizontal list of Tabs, routing select events and maintaining active state.
 /// </summary>
 [Tool]
-[GlobalClass]
+[GlobalClass, Icon("res://icon.svg")]
 public partial class M3TabBar : Control
 {
     private HBoxContainer _hbox;

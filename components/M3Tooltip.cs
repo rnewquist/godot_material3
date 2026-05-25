@@ -17,7 +17,7 @@ public enum M3TooltipPosition
 /// Binds dynamically to target hover signals, positioning and fading overlays smoothly.
 /// </summary>
 [Tool]
-[GlobalClass]
+[GlobalClass, Icon("res://icon.svg")]
 public partial class M3Tooltip : Control
 {
     private NodePath _targetPath;

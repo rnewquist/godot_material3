@@ -9,7 +9,7 @@ namespace Material3.Components;
 /// Animates state transitions smoothly using vector math and properties.
 /// </summary>
 [Tool]
-[GlobalClass]
+[GlobalClass, Icon("res://icon.svg")]
 public partial class M3Switch : M3BaseComponent
 {
     private bool _checked = false;

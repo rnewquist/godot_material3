@@ -9,7 +9,7 @@ namespace Material3.Components;
 /// Renders as a small red notification circle (dot) or text-pill.
 /// </summary>
 [Tool]
-[GlobalClass]
+[GlobalClass, Icon("res://icon.svg")]
 public partial class M3Badge : Control
 {
     private string _text = "";

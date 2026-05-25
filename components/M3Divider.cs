@@ -9,7 +9,7 @@ namespace Material3.Components;
 /// Separates content visually using a thin line token.
 /// </summary>
 [Tool]
-[GlobalClass]
+[GlobalClass, Icon("res://icon.svg")]
 public partial class M3Divider : Control
 {
     private float _thickness = 1.0f;

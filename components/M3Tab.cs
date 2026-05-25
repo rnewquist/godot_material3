@@ -9,7 +9,7 @@ namespace Material3.Components;
 /// Handles active highlight transitions and ripple interactive layers.
 /// </summary>
 [Tool]
-[GlobalClass]
+[GlobalClass, Icon("res://icon.svg")]
 public partial class M3Tab : M3BaseComponent
 {
     private string _text = "Tab Item";

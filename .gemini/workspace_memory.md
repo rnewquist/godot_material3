@@ -47,3 +47,13 @@ Custom controls that do not inherit from `M3BaseComponent` (like `M3Card`, `M3Ba
 
 ### 3.2 Pure Vector Drawing
 Avoid raster graphic textures for UI borders and shapes wherever possible. Procedurally draw circles, lines, styleboxes, and outline gaps (e.g. floated label cutouts in `M3TextField`) inside `_Draw()` to ensure infinite sharpness at any emulated resolution.
+
+### 3.3 Global Class Node Registry
+All 16 custom UI controls are decorated with `[GlobalClass, Icon("res://icon.svg")]` right above the class definition. This exposes them natively to Godot's standard "Create New Node" dialog with the custom brand icon. Any future custom components must maintain this declaration syntax.
+
+### 3.4 Godot Editor Plugin Entry Point
+The self-contained plugin structure resides inside `res://addons/material_3_ui/`. It includes:
+- `plugin.cfg`: Plugin metadata and bootstrapper pointer.
+- `Material3Plugin.cs`: Editor bootstrap class inheriting from `EditorPlugin`, decorated with `[Tool]` and enclosed within `#if TOOLS` preprocessors. This script coordinates global singleton injections, automatically calling `AddAutoloadSingleton` and `RemoveAutoloadSingleton` during the plugin's `_EnterTree` and `_ExitTree` states.
+- `MaterialThemeManager.cs`: Centralizes color theme properties and broadcasts standard Godot signals (`ThemeChanged`) to components upon value mutations.
+- `MaterialButton.cs`: Fully reactive button demonstrating editor rendering (`[Tool]`) and memory cleanup safety bounds by attaching/detaching the `ThemeChanged` subscription in `_Ready` and `_ExitTree`.

@@ -16,7 +16,7 @@ public enum M3CardType
 /// Acts as a container for arbitrary controls, applying spec styling.
 /// </summary>
 [Tool]
-[GlobalClass]
+[GlobalClass, Icon("res://icon.svg")]
 public partial class M3Card : PanelContainer
 {
     private M3CardType _cardType = M3CardType.Elevated;

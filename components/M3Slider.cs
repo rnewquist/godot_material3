@@ -9,7 +9,7 @@ namespace Material3.Components;
 /// Supports horizontal dragging, continuous/discrete steps, and custom vector tracks.
 /// </summary>
 [Tool]
-[GlobalClass]
+[GlobalClass, Icon("res://icon.svg")]
 public partial class M3Slider : M3BaseComponent
 {
     private float _value = 0.0f;

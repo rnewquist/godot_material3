@@ -15,7 +15,7 @@ public enum M3ProgressType
 /// Supports Linear/Circular shapes and Determinate/Indeterminate load states.
 /// </summary>
 [Tool]
-[GlobalClass]
+[GlobalClass, Icon("res://icon.svg")]
 public partial class M3ProgressIndicator : Control
 {
     private M3ProgressType _progressType = M3ProgressType.Linear;

@@ -21,7 +21,7 @@ public enum M3ButtonType
 /// state layers, and fluid vector layouts.
 /// </summary>
 [Tool]
-[GlobalClass]
+[GlobalClass, Icon("res://icon.svg")]
 public partial class M3Button : M3BaseComponent
 {
     private string _text = "Button";
@@ -158,38 +158,15 @@ public partial class M3Button : M3BaseComponent
         UpdateLayout();
 
         // 1. Resolve Color Tokens based on Button Type
-        Color bgColor = Color.FromHtml("#00000000");
-        Color textColor = CurrentTheme.Primary;
-        float borderWidth = 0.0f;
-        Color borderColor = Color.FromHtml("#00000000");
-        float shadowSize = 0.0f;
-
-        switch (_buttonType)
+        Color textColor = _buttonType switch
         {
-            case M3ButtonType.Filled:
-                bgColor = CurrentTheme.Primary;
-                textColor = CurrentTheme.OnPrimary;
-                break;
-            case M3ButtonType.Elevated:
-                bgColor = CurrentTheme.Surface;
-                textColor = CurrentTheme.Primary;
-                shadowSize = 1.0f;
-                break;
-            case M3ButtonType.Tonal:
-                bgColor = CurrentTheme.SecondaryContainer;
-                textColor = CurrentTheme.OnSecondaryContainer;
-                break;
-            case M3ButtonType.Outlined:
-                bgColor = Color.FromHtml("#00000000");
-                textColor = CurrentTheme.Primary;
-                borderWidth = 1.0f;
-                borderColor = CurrentTheme.Outline;
-                break;
-            case M3ButtonType.Text:
-                bgColor = Color.FromHtml("#00000000");
-                textColor = CurrentTheme.Primary;
-                break;
-        }
+            M3ButtonType.Filled => CurrentTheme.OnPrimary,
+            M3ButtonType.Elevated => CurrentTheme.Primary,
+            M3ButtonType.Tonal => CurrentTheme.OnSecondaryContainer,
+            M3ButtonType.Outlined => CurrentTheme.Primary,
+            M3ButtonType.Text => CurrentTheme.Primary,
+            _ => CurrentTheme.Primary
+        };
 
         // Apply visual updates to child Label settings
         LabelSettings labelSettings = new LabelSettings();

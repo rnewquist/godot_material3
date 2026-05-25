@@ -15,7 +15,7 @@ public enum M3DrawerAnchor
 /// Slides dynamically from the screen edge, managing elevation backgrounds and shapes.
 /// </summary>
 [Tool]
-[GlobalClass]
+[GlobalClass, Icon("res://icon.svg")]
 public partial class M3NavigationDrawer : M3BaseComponent
 {
     private bool _isOpen = false;

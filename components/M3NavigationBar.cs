@@ -10,7 +10,7 @@ namespace Material3.Components;
 /// Sits at the bottom, holding 3-5 items with capsule active indicators.
 /// </summary>
 [Tool]
-[GlobalClass]
+[GlobalClass, Icon("res://icon.svg")]
 public partial class M3NavigationBar : Control
 {
     private HBoxContainer _hbox;

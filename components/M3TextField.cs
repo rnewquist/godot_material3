@@ -15,7 +15,7 @@ public enum M3TextFieldStyle
 /// Leverages LineEdit composition with dynamic floating label vectors.
 /// </summary>
 [Tool]
-[GlobalClass]
+[GlobalClass, Icon("res://icon.svg")]
 public partial class M3TextField : M3BaseComponent
 {
     private string _text = "";

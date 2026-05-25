@@ -9,7 +9,7 @@ namespace Material3.Components;
 /// Draws procedural vector concentric circles representing choices.
 /// </summary>
 [Tool]
-[GlobalClass]
+[GlobalClass, Icon("res://icon.svg")]
 public partial class M3RadioButton : M3BaseComponent
 {
     private bool _selected = false;
