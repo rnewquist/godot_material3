@@ -1,0 +1,4623 @@
+{
+  "format": "godot_scene_snapshot_live",
+  "short_name": "GSS_LIVE",
+  "version": "1.0",
+  "recording_name": "inputs.text_field.extended__focus_affix_and_expand_multiline",
+  "metadata": {
+    "recording_name": "inputs.text_field.extended__focus_affix_and_expand_multiline",
+    "timestamp_iso": "2026-11-24T01:45:56",
+    "total_frames": 57,
+    "delta_frames": 56,
+    "viewport_size": {
+      "width": 1280,
+      "height": 720
+    },
+    "duration_ms": 919,
+    "active_node_count": 2,
+    "bounces_detected": 0,
+    "files": {
+      "png": "res://artifacts/gss/inputs/inputs.text_field.extended__focus_affix_and_expand_multiline.png",
+      "json": "res://artifacts/gss/inputs/inputs.text_field.extended__focus_affix_and_expand_multiline.gss.live.json",
+      "html": "res://artifacts/gss/inputs/inputs.text_field.extended__focus_affix_and_expand_multiline.gss.live.html",
+      "global_png": "/Users/rnewquist/Documents/Godot/material3/artifacts/gss/inputs/inputs.text_field.extended__focus_affix_and_expand_multiline.png",
+      "global_json": "/Users/rnewquist/Documents/Godot/material3/artifacts/gss/inputs/inputs.text_field.extended__focus_affix_and_expand_multiline.gss.live.json",
+      "global_html": "/Users/rnewquist/Documents/Godot/material3/artifacts/gss/inputs/inputs.text_field.extended__focus_affix_and_expand_multiline.gss.live.html"
+    }
+  },
+  "initial_snapshot": {
+    "metadata": {
+      "format": "godot_scene_snapshot",
+      "short_name": "GSS",
+      "version": "1.0",
+      "snapshot_name": "inputs.text_field.extended__focus_affix_and_expand_multiline_frame_0",
+      "timestamp_iso": "2026-11-24T01:45:55",
+      "timestamp_ticks_ms": 45523,
+      "engine_version": "4.7.2-stable (official)",
+      "display_server": "macOS",
+      "viewport_size": {
+        "width": 1280,
+        "height": 720
+      },
+      "total_nodes": 4,
+      "visible_nodes": 4,
+      "class_counts": {
+        "ColorRect": 1,
+        "Control": 3
+      },
+      "camera_3d": {},
+      "camera_2d": {},
+      "performance": {
+        "fps": 57.0,
+        "process_frames": 2329,
+        "physics_frames": 2625,
+        "memory_static_bytes": 67103625,
+        "object_count": 1762,
+        "node_count": 33
+      },
+      "frame_index": 0,
+      "elapsed_ms": 0
+    },
+    "hierarchy": {
+      "id": "node_0",
+      "parent_id": "",
+      "name": "TextFieldExtendedVariants",
+      "class": "ColorRect",
+      "category": "control",
+      "path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants",
+      "depth": 0,
+      "index_in_parent": 0,
+      "children_count": 3,
+      "groups": [],
+      "script": "",
+      "process_mode": 0,
+      "visible": true,
+      "screen_rect": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 1280.0,
+        "height": 720.0,
+        "has_bounds": true,
+        "on_screen": true
+      },
+      "script_variables": {},
+      "transforms": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "global_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "size": {
+          "x": 1280.0,
+          "y": 720.0
+        },
+        "custom_minimum_size": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "rotation_deg": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "anchors": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 0.0,
+          "bottom": 0.0
+        },
+        "offsets": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 1280.0,
+          "bottom": 720.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_vertical": 1
+      },
+      "visibility": {
+        "visible": true,
+        "visible_in_tree": true,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "top_level": false,
+        "show_behind_parent": false,
+        "clip_children": 0,
+        "light_mask": 1,
+        "visibility_layer": 1,
+        "z_index": 0,
+        "z_as_relative": true,
+        "y_sort_enabled": false
+      },
+      "physics": {},
+      "ui_and_content": {
+        "focus_mode": 0,
+        "mouse_filter": 2,
+        "tooltip_text": "",
+        "color": {
+          "r": 0.9788,
+          "g": 0.9745,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#faf9ffff"
+        }
+      },
+      "signals": [
+        {
+          "signal": "child_order_changed",
+          "target": "/root/@Node@83/GSSStageViewport",
+          "method": "Viewport::canvas_parent_mark_dirty"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField",
+          "method": "Control::_size_changed"
+        }
+      ],
+      "all_properties": {
+        "accessibility_controls_nodes": [],
+        "accessibility_described_by_nodes": [],
+        "accessibility_description": "",
+        "accessibility_flow_to_nodes": [],
+        "accessibility_labeled_by_nodes": [],
+        "accessibility_live": 0,
+        "accessibility_name": "",
+        "anchor_bottom": 0.0,
+        "anchor_left": 0.0,
+        "anchor_right": 0.0,
+        "anchor_top": 0.0,
+        "anchors_preset": 0,
+        "auto_translate_mode": 0,
+        "clip_children": 0,
+        "clip_contents": false,
+        "color": {
+          "r": 0.9788,
+          "g": 0.9745,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#faf9ffff"
+        },
+        "custom_maximum_size": {
+          "x": -1.0,
+          "y": -1.0
+        },
+        "custom_minimum_size": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "editor_description": "",
+        "focus_behavior_recursive": 0,
+        "focus_mode": 0,
+        "focus_neighbor_bottom": "",
+        "focus_neighbor_left": "",
+        "focus_neighbor_right": "",
+        "focus_neighbor_top": "",
+        "focus_next": "",
+        "focus_previous": "",
+        "grow_horizontal": 1,
+        "grow_vertical": 1,
+        "layout_direction": 0,
+        "layout_mode": 3,
+        "light_mask": 1,
+        "localize_numeral_system": true,
+        "material": null,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "mouse_behavior_recursive": 0,
+        "mouse_default_cursor_shape": 0,
+        "mouse_filter": 2,
+        "mouse_force_pass_scroll_events": true,
+        "offset_bottom": 720.0,
+        "offset_left": 0.0,
+        "offset_right": 1280.0,
+        "offset_top": 0.0,
+        "offset_transform_enabled": false,
+        "offset_transform_pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_pivot_ratio": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "offset_transform_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_position_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_rotation": 0.0,
+        "offset_transform_scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "offset_transform_visual_only": true,
+        "oversampling_with_scale": 0,
+        "physics_interpolation_mode": 2,
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "pivot_offset_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "process_mode": 0,
+        "process_physics_priority": 0,
+        "process_priority": 0,
+        "process_thread_group": 0,
+        "propagate_maximum_size": false,
+        "rotation": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "shortcut_context": null,
+        "show_behind_parent": false,
+        "size": {
+          "x": 1280.0,
+          "y": 720.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_stretch_ratio": 1.0,
+        "size_flags_vertical": 1,
+        "texture_filter": 0,
+        "texture_repeat": 0,
+        "theme": null,
+        "theme_type_variation": "",
+        "tooltip_auto_translate_mode": 0,
+        "tooltip_text": "",
+        "top_level": false,
+        "translation_context": "",
+        "unique_name_in_owner": false,
+        "use_parent_material": false,
+        "visibility_layer": 1,
+        "visible": true,
+        "y_sort_enabled": false,
+        "z_as_relative": true,
+        "z_index": 0
+      },
+      "children": [
+        {
+          "id": "node_1",
+          "parent_id": "node_0",
+          "name": "AffixCurrencyField",
+          "class": "Control",
+          "category": "control",
+          "path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+          "depth": 1,
+          "index_in_parent": 0,
+          "children_count": 0,
+          "groups": [],
+          "script": "res://addons/material3/components/inputs/m3_text_field.gd",
+          "process_mode": 0,
+          "visible": true,
+          "screen_rect": {
+            "x": 40.0,
+            "y": 48.0,
+            "width": 260.0,
+            "height": 56.0,
+            "has_bounds": true,
+            "on_screen": true
+          },
+          "script_variables": {
+            "_active_height": 56.0,
+            "_focus_progress": 0.0,
+            "_focus_tween": null,
+            "_font": "<FontFile>",
+            "_font_size_float": 12,
+            "_font_size_helper": 12,
+            "_font_size_rest": 16,
+            "_height_tween": null,
+            "_is_focused_internal": false,
+            "_is_pointer_down": false,
+            "_label_float_progress": 0.0,
+            "_label_progress": 0.0,
+            "_label_tween": null,
+            "_line_edit": "<Node:M3InternalLineEdit (LineEdit)>",
+            "_pointer_inside": false,
+            "_ripple": "<Node:M3Ripple (Control)>",
+            "_ripple_wave_alpha": 0.0,
+            "_ripple_wave_count": 0,
+            "_ripple_wave_radius": 0.0,
+            "_state_layer_alpha": 0.0,
+            "_text_edit": "<Node:M3InternalTextEdit (TextEdit)>",
+            "_theme_connected": true,
+            "current_state": 0,
+            "custom_corner_radius": -1.0,
+            "density_override": 99,
+            "disabled": false,
+            "error_text": "",
+            "field_type": 1,
+            "helper_text": "",
+            "is_error": false,
+            "is_password": false,
+            "label": "Amount",
+            "label_text": "Amount",
+            "leading_icon": "",
+            "leading_icon_texture": null,
+            "max_characters": 0,
+            "max_length": 0,
+            "max_lines": 6,
+            "min_lines": 3,
+            "multiline": false,
+            "placeholder": "",
+            "prefix_text": "$",
+            "ripple_enabled": true,
+            "secret": false,
+            "shape_token": 0,
+            "show_clear_button": false,
+            "show_counter": false,
+            "show_password_toggle": false,
+            "suffix_text": "USD",
+            "supporting_text": "",
+            "text": "",
+            "touch_target_min_size": {
+              "x": 48.0,
+              "y": 48.0
+            },
+            "trailing_icon": "",
+            "trailing_icon_texture": null,
+            "variant": 1
+          },
+          "transforms": {
+            "position": {
+              "x": 40.0,
+              "y": 48.0
+            },
+            "global_position": {
+              "x": 40.0,
+              "y": 48.0
+            },
+            "size": {
+              "x": 260.0,
+              "y": 56.0
+            },
+            "custom_minimum_size": {
+              "x": 96.0,
+              "y": 56.0
+            },
+            "rotation_deg": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "anchors": {
+              "left": 0.0,
+              "top": 0.0,
+              "right": 0.0,
+              "bottom": 0.0
+            },
+            "offsets": {
+              "left": 40.0,
+              "top": 48.0,
+              "right": 300.0,
+              "bottom": 104.0
+            },
+            "size_flags_horizontal": 1,
+            "size_flags_vertical": 1
+          },
+          "visibility": {
+            "visible": true,
+            "visible_in_tree": true,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "top_level": false,
+            "show_behind_parent": false,
+            "clip_children": 0,
+            "light_mask": 1,
+            "visibility_layer": 1,
+            "z_index": 0,
+            "z_as_relative": true,
+            "y_sort_enabled": false
+          },
+          "physics": {},
+          "ui_and_content": {
+            "focus_mode": 2,
+            "mouse_filter": 0,
+            "tooltip_text": ""
+          },
+          "signals": [
+            {
+              "signal": "child_order_changed",
+              "target": "/root/@Node@83/GSSStageViewport",
+              "method": "Viewport::canvas_parent_mark_dirty"
+            },
+            {
+              "signal": "item_rect_changed",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField/M3Ripple",
+              "method": "Control::_size_changed"
+            },
+            {
+              "signal": "item_rect_changed",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField/M3InternalLineEdit",
+              "method": "Control::_size_changed"
+            },
+            {
+              "signal": "item_rect_changed",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField/M3InternalTextEdit",
+              "method": "Control::_size_changed"
+            },
+            {
+              "signal": "resized",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+              "method": "_on_resized"
+            },
+            {
+              "signal": "mouse_entered",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+              "method": "_on_mouse_entered"
+            },
+            {
+              "signal": "mouse_exited",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+              "method": "_on_mouse_exited"
+            },
+            {
+              "signal": "focus_entered",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+              "method": "_on_focus_entered"
+            },
+            {
+              "signal": "focus_exited",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+              "method": "_on_focus_exited"
+            }
+          ],
+          "all_properties": {
+            "accessibility_controls_nodes": [],
+            "accessibility_described_by_nodes": [],
+            "accessibility_description": "",
+            "accessibility_flow_to_nodes": [],
+            "accessibility_labeled_by_nodes": [],
+            "accessibility_live": 0,
+            "accessibility_name": "",
+            "anchor_bottom": 0.0,
+            "anchor_left": 0.0,
+            "anchor_right": 0.0,
+            "anchor_top": 0.0,
+            "anchors_preset": 0,
+            "auto_translate_mode": 0,
+            "clip_children": 0,
+            "clip_contents": false,
+            "current_state": 0,
+            "custom_corner_radius": -1.0,
+            "custom_maximum_size": {
+              "x": -1.0,
+              "y": -1.0
+            },
+            "custom_minimum_size": {
+              "x": 96.0,
+              "y": 56.0
+            },
+            "density_override": 99,
+            "disabled": false,
+            "editor_description": "",
+            "error_text": "",
+            "field_type": 1,
+            "focus_behavior_recursive": 0,
+            "focus_mode": 2,
+            "focus_neighbor_bottom": "",
+            "focus_neighbor_left": "",
+            "focus_neighbor_right": "",
+            "focus_neighbor_top": "",
+            "focus_next": "",
+            "focus_previous": "",
+            "grow_horizontal": 1,
+            "grow_vertical": 1,
+            "helper_text": "",
+            "is_error": false,
+            "is_password": false,
+            "label": "Amount",
+            "label_text": "Amount",
+            "layout_direction": 0,
+            "layout_mode": 0,
+            "leading_icon": "",
+            "leading_icon_texture": null,
+            "light_mask": 1,
+            "localize_numeral_system": true,
+            "material": null,
+            "max_characters": 0,
+            "max_length": 0,
+            "max_lines": 6,
+            "min_lines": 3,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "mouse_behavior_recursive": 0,
+            "mouse_default_cursor_shape": 2,
+            "mouse_filter": 0,
+            "mouse_force_pass_scroll_events": true,
+            "multiline": false,
+            "offset_bottom": 104.0,
+            "offset_left": 40.0,
+            "offset_right": 300.0,
+            "offset_top": 48.0,
+            "offset_transform_enabled": false,
+            "offset_transform_pivot": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_pivot_ratio": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "offset_transform_position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_position_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_rotation": 0.0,
+            "offset_transform_scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "offset_transform_visual_only": true,
+            "oversampling_with_scale": 0,
+            "physics_interpolation_mode": 2,
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "pivot_offset_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "placeholder": "",
+            "position": {
+              "x": 40.0,
+              "y": 48.0
+            },
+            "prefix_text": "$",
+            "process_mode": 0,
+            "process_physics_priority": 0,
+            "process_priority": 0,
+            "process_thread_group": 0,
+            "propagate_maximum_size": false,
+            "ripple_enabled": true,
+            "rotation": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "secret": false,
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "shape_token": 0,
+            "shortcut_context": null,
+            "show_behind_parent": false,
+            "show_clear_button": false,
+            "show_counter": false,
+            "show_password_toggle": false,
+            "size": {
+              "x": 260.0,
+              "y": 56.0
+            },
+            "size_flags_horizontal": 1,
+            "size_flags_stretch_ratio": 1.0,
+            "size_flags_vertical": 1,
+            "suffix_text": "USD",
+            "supporting_text": "",
+            "text": "",
+            "texture_filter": 0,
+            "texture_repeat": 0,
+            "theme": null,
+            "theme_type_variation": "",
+            "tooltip_auto_translate_mode": 0,
+            "tooltip_text": "",
+            "top_level": false,
+            "touch_target_min_size": {
+              "x": 48.0,
+              "y": 48.0
+            },
+            "trailing_icon": "",
+            "trailing_icon_texture": null,
+            "translation_context": "",
+            "unique_name_in_owner": false,
+            "use_parent_material": false,
+            "variant": 1,
+            "visibility_layer": 1,
+            "visible": true,
+            "y_sort_enabled": false,
+            "z_as_relative": true,
+            "z_index": 0
+          },
+          "children": []
+        },
+        {
+          "id": "node_2",
+          "parent_id": "node_0",
+          "name": "AffixWeightField",
+          "class": "Control",
+          "category": "control",
+          "path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField",
+          "depth": 1,
+          "index_in_parent": 1,
+          "children_count": 0,
+          "groups": [],
+          "script": "res://addons/material3/components/inputs/m3_text_field.gd",
+          "process_mode": 0,
+          "visible": true,
+          "screen_rect": {
+            "x": 340.0,
+            "y": 48.0,
+            "width": 260.0,
+            "height": 76.0,
+            "has_bounds": true,
+            "on_screen": true
+          },
+          "script_variables": {
+            "_active_height": 56.0,
+            "_focus_progress": 0.0,
+            "_focus_tween": null,
+            "_font": "<FontFile>",
+            "_font_size_float": 12,
+            "_font_size_helper": 12,
+            "_font_size_rest": 16,
+            "_height_tween": null,
+            "_is_focused_internal": false,
+            "_is_pointer_down": false,
+            "_label_float_progress": 1.0,
+            "_label_progress": 1.0,
+            "_label_tween": null,
+            "_line_edit": "<Node:M3InternalLineEdit (LineEdit)>",
+            "_pointer_inside": false,
+            "_ripple": "<Node:M3Ripple (Control)>",
+            "_ripple_wave_alpha": 0.0,
+            "_ripple_wave_count": 0,
+            "_ripple_wave_radius": 0.0,
+            "_state_layer_alpha": 0.0,
+            "_text_edit": "<Node:M3InternalTextEdit (TextEdit)>",
+            "_theme_connected": true,
+            "current_state": 0,
+            "custom_corner_radius": -1.0,
+            "density_override": 99,
+            "disabled": false,
+            "error_text": "",
+            "field_type": 0,
+            "helper_text": "Metric weight",
+            "is_error": false,
+            "is_password": false,
+            "label": "Package Weight",
+            "label_text": "Package Weight",
+            "leading_icon": "",
+            "leading_icon_texture": null,
+            "max_characters": 0,
+            "max_length": 0,
+            "max_lines": 6,
+            "min_lines": 3,
+            "multiline": false,
+            "placeholder": "",
+            "prefix_text": "",
+            "ripple_enabled": true,
+            "secret": false,
+            "shape_token": 0,
+            "show_clear_button": false,
+            "show_counter": false,
+            "show_password_toggle": false,
+            "suffix_text": "kg",
+            "supporting_text": "Metric weight",
+            "text": "14.5",
+            "touch_target_min_size": {
+              "x": 48.0,
+              "y": 48.0
+            },
+            "trailing_icon": "",
+            "trailing_icon_texture": null,
+            "variant": 0
+          },
+          "transforms": {
+            "position": {
+              "x": 340.0,
+              "y": 48.0
+            },
+            "global_position": {
+              "x": 340.0,
+              "y": 48.0
+            },
+            "size": {
+              "x": 260.0,
+              "y": 76.0
+            },
+            "custom_minimum_size": {
+              "x": 96.0,
+              "y": 76.0
+            },
+            "rotation_deg": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "anchors": {
+              "left": 0.0,
+              "top": 0.0,
+              "right": 0.0,
+              "bottom": 0.0
+            },
+            "offsets": {
+              "left": 340.0,
+              "top": 48.0,
+              "right": 600.0,
+              "bottom": 124.0
+            },
+            "size_flags_horizontal": 1,
+            "size_flags_vertical": 1
+          },
+          "visibility": {
+            "visible": true,
+            "visible_in_tree": true,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "top_level": false,
+            "show_behind_parent": false,
+            "clip_children": 0,
+            "light_mask": 1,
+            "visibility_layer": 1,
+            "z_index": 0,
+            "z_as_relative": true,
+            "y_sort_enabled": false
+          },
+          "physics": {},
+          "ui_and_content": {
+            "focus_mode": 2,
+            "mouse_filter": 0,
+            "tooltip_text": ""
+          },
+          "signals": [
+            {
+              "signal": "child_order_changed",
+              "target": "/root/@Node@83/GSSStageViewport",
+              "method": "Viewport::canvas_parent_mark_dirty"
+            },
+            {
+              "signal": "item_rect_changed",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField/M3Ripple",
+              "method": "Control::_size_changed"
+            },
+            {
+              "signal": "item_rect_changed",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField/M3InternalLineEdit",
+              "method": "Control::_size_changed"
+            },
+            {
+              "signal": "item_rect_changed",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField/M3InternalTextEdit",
+              "method": "Control::_size_changed"
+            },
+            {
+              "signal": "resized",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField",
+              "method": "_on_resized"
+            },
+            {
+              "signal": "mouse_entered",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField",
+              "method": "_on_mouse_entered"
+            },
+            {
+              "signal": "mouse_exited",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField",
+              "method": "_on_mouse_exited"
+            },
+            {
+              "signal": "focus_entered",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField",
+              "method": "_on_focus_entered"
+            },
+            {
+              "signal": "focus_exited",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField",
+              "method": "_on_focus_exited"
+            }
+          ],
+          "all_properties": {
+            "accessibility_controls_nodes": [],
+            "accessibility_described_by_nodes": [],
+            "accessibility_description": "",
+            "accessibility_flow_to_nodes": [],
+            "accessibility_labeled_by_nodes": [],
+            "accessibility_live": 0,
+            "accessibility_name": "",
+            "anchor_bottom": 0.0,
+            "anchor_left": 0.0,
+            "anchor_right": 0.0,
+            "anchor_top": 0.0,
+            "anchors_preset": 0,
+            "auto_translate_mode": 0,
+            "clip_children": 0,
+            "clip_contents": false,
+            "current_state": 0,
+            "custom_corner_radius": -1.0,
+            "custom_maximum_size": {
+              "x": -1.0,
+              "y": -1.0
+            },
+            "custom_minimum_size": {
+              "x": 96.0,
+              "y": 76.0
+            },
+            "density_override": 99,
+            "disabled": false,
+            "editor_description": "",
+            "error_text": "",
+            "field_type": 0,
+            "focus_behavior_recursive": 0,
+            "focus_mode": 2,
+            "focus_neighbor_bottom": "",
+            "focus_neighbor_left": "",
+            "focus_neighbor_right": "",
+            "focus_neighbor_top": "",
+            "focus_next": "",
+            "focus_previous": "",
+            "grow_horizontal": 1,
+            "grow_vertical": 1,
+            "helper_text": "Metric weight",
+            "is_error": false,
+            "is_password": false,
+            "label": "Package Weight",
+            "label_text": "Package Weight",
+            "layout_direction": 0,
+            "layout_mode": 0,
+            "leading_icon": "",
+            "leading_icon_texture": null,
+            "light_mask": 1,
+            "localize_numeral_system": true,
+            "material": null,
+            "max_characters": 0,
+            "max_length": 0,
+            "max_lines": 6,
+            "min_lines": 3,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "mouse_behavior_recursive": 0,
+            "mouse_default_cursor_shape": 2,
+            "mouse_filter": 0,
+            "mouse_force_pass_scroll_events": true,
+            "multiline": false,
+            "offset_bottom": 124.0,
+            "offset_left": 340.0,
+            "offset_right": 600.0,
+            "offset_top": 48.0,
+            "offset_transform_enabled": false,
+            "offset_transform_pivot": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_pivot_ratio": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "offset_transform_position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_position_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_rotation": 0.0,
+            "offset_transform_scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "offset_transform_visual_only": true,
+            "oversampling_with_scale": 0,
+            "physics_interpolation_mode": 2,
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "pivot_offset_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "placeholder": "",
+            "position": {
+              "x": 340.0,
+              "y": 48.0
+            },
+            "prefix_text": "",
+            "process_mode": 0,
+            "process_physics_priority": 0,
+            "process_priority": 0,
+            "process_thread_group": 0,
+            "propagate_maximum_size": false,
+            "ripple_enabled": true,
+            "rotation": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "secret": false,
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "shape_token": 0,
+            "shortcut_context": null,
+            "show_behind_parent": false,
+            "show_clear_button": false,
+            "show_counter": false,
+            "show_password_toggle": false,
+            "size": {
+              "x": 260.0,
+              "y": 76.0
+            },
+            "size_flags_horizontal": 1,
+            "size_flags_stretch_ratio": 1.0,
+            "size_flags_vertical": 1,
+            "suffix_text": "kg",
+            "supporting_text": "Metric weight",
+            "text": "14.5",
+            "texture_filter": 0,
+            "texture_repeat": 0,
+            "theme": null,
+            "theme_type_variation": "",
+            "tooltip_auto_translate_mode": 0,
+            "tooltip_text": "",
+            "top_level": false,
+            "touch_target_min_size": {
+              "x": 48.0,
+              "y": 48.0
+            },
+            "trailing_icon": "",
+            "trailing_icon_texture": null,
+            "translation_context": "",
+            "unique_name_in_owner": false,
+            "use_parent_material": false,
+            "variant": 0,
+            "visibility_layer": 1,
+            "visible": true,
+            "y_sort_enabled": false,
+            "z_as_relative": true,
+            "z_index": 0
+          },
+          "children": []
+        },
+        {
+          "id": "node_3",
+          "parent_id": "node_0",
+          "name": "MultilineNotesField",
+          "class": "Control",
+          "category": "control",
+          "path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField",
+          "depth": 1,
+          "index_in_parent": 2,
+          "children_count": 0,
+          "groups": [],
+          "script": "res://addons/material3/components/inputs/m3_text_field.gd",
+          "process_mode": 0,
+          "visible": true,
+          "screen_rect": {
+            "x": 640.0,
+            "y": 48.0,
+            "width": 320.0,
+            "height": 122.0,
+            "has_bounds": true,
+            "on_screen": true
+          },
+          "script_variables": {
+            "_active_height": 102.0,
+            "_focus_progress": 0.0,
+            "_focus_tween": null,
+            "_font": "<FontFile>",
+            "_font_size_float": 12,
+            "_font_size_helper": 12,
+            "_font_size_rest": 16,
+            "_height_tween": null,
+            "_is_focused_internal": false,
+            "_is_pointer_down": false,
+            "_label_float_progress": 1.0,
+            "_label_progress": 1.0,
+            "_label_tween": null,
+            "_line_edit": "<Node:M3InternalLineEdit (LineEdit)>",
+            "_pointer_inside": false,
+            "_ripple": "<Node:M3Ripple (Control)>",
+            "_ripple_wave_alpha": 0.0,
+            "_ripple_wave_count": 0,
+            "_ripple_wave_radius": 0.0,
+            "_state_layer_alpha": 0.0,
+            "_text_edit": "<Node:M3InternalTextEdit (TextEdit)>",
+            "_theme_connected": true,
+            "current_state": 0,
+            "custom_corner_radius": -1.0,
+            "density_override": 99,
+            "disabled": false,
+            "error_text": "",
+            "field_type": 1,
+            "helper_text": "Auto-growing 3..6 lines",
+            "is_error": false,
+            "is_password": false,
+            "label": "Release Notes",
+            "label_text": "Release Notes",
+            "leading_icon": "",
+            "leading_icon_texture": null,
+            "max_characters": 0,
+            "max_length": 0,
+            "max_lines": 6,
+            "min_lines": 3,
+            "multiline": true,
+            "placeholder": "",
+            "prefix_text": "",
+            "ripple_enabled": true,
+            "secret": false,
+            "shape_token": 0,
+            "show_clear_button": false,
+            "show_counter": true,
+            "show_password_toggle": false,
+            "suffix_text": "",
+            "supporting_text": "Auto-growing 3..6 lines",
+            "text": "Line 1\nLine 2\nLine 3",
+            "touch_target_min_size": {
+              "x": 48.0,
+              "y": 48.0
+            },
+            "trailing_icon": "",
+            "trailing_icon_texture": null,
+            "variant": 1
+          },
+          "transforms": {
+            "position": {
+              "x": 640.0,
+              "y": 48.0
+            },
+            "global_position": {
+              "x": 640.0,
+              "y": 48.0
+            },
+            "size": {
+              "x": 320.0,
+              "y": 122.0
+            },
+            "custom_minimum_size": {
+              "x": 96.0,
+              "y": 122.0
+            },
+            "rotation_deg": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "anchors": {
+              "left": 0.0,
+              "top": 0.0,
+              "right": 0.0,
+              "bottom": 0.0
+            },
+            "offsets": {
+              "left": 640.0,
+              "top": 48.0,
+              "right": 960.0,
+              "bottom": 170.0
+            },
+            "size_flags_horizontal": 1,
+            "size_flags_vertical": 1
+          },
+          "visibility": {
+            "visible": true,
+            "visible_in_tree": true,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "top_level": false,
+            "show_behind_parent": false,
+            "clip_children": 0,
+            "light_mask": 1,
+            "visibility_layer": 1,
+            "z_index": 0,
+            "z_as_relative": true,
+            "y_sort_enabled": false
+          },
+          "physics": {},
+          "ui_and_content": {
+            "focus_mode": 2,
+            "mouse_filter": 0,
+            "tooltip_text": ""
+          },
+          "signals": [
+            {
+              "signal": "child_order_changed",
+              "target": "/root/@Node@83/GSSStageViewport",
+              "method": "Viewport::canvas_parent_mark_dirty"
+            },
+            {
+              "signal": "item_rect_changed",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField/M3Ripple",
+              "method": "Control::_size_changed"
+            },
+            {
+              "signal": "item_rect_changed",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField/M3InternalLineEdit",
+              "method": "Control::_size_changed"
+            },
+            {
+              "signal": "item_rect_changed",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField/M3InternalTextEdit",
+              "method": "Control::_size_changed"
+            },
+            {
+              "signal": "resized",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField",
+              "method": "_on_resized"
+            },
+            {
+              "signal": "mouse_entered",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField",
+              "method": "_on_mouse_entered"
+            },
+            {
+              "signal": "mouse_exited",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField",
+              "method": "_on_mouse_exited"
+            },
+            {
+              "signal": "focus_entered",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField",
+              "method": "_on_focus_entered"
+            },
+            {
+              "signal": "focus_exited",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField",
+              "method": "_on_focus_exited"
+            }
+          ],
+          "all_properties": {
+            "accessibility_controls_nodes": [],
+            "accessibility_described_by_nodes": [],
+            "accessibility_description": "",
+            "accessibility_flow_to_nodes": [],
+            "accessibility_labeled_by_nodes": [],
+            "accessibility_live": 0,
+            "accessibility_name": "",
+            "anchor_bottom": 0.0,
+            "anchor_left": 0.0,
+            "anchor_right": 0.0,
+            "anchor_top": 0.0,
+            "anchors_preset": 0,
+            "auto_translate_mode": 0,
+            "clip_children": 0,
+            "clip_contents": false,
+            "current_state": 0,
+            "custom_corner_radius": -1.0,
+            "custom_maximum_size": {
+              "x": -1.0,
+              "y": -1.0
+            },
+            "custom_minimum_size": {
+              "x": 96.0,
+              "y": 122.0
+            },
+            "density_override": 99,
+            "disabled": false,
+            "editor_description": "",
+            "error_text": "",
+            "field_type": 1,
+            "focus_behavior_recursive": 0,
+            "focus_mode": 2,
+            "focus_neighbor_bottom": "",
+            "focus_neighbor_left": "",
+            "focus_neighbor_right": "",
+            "focus_neighbor_top": "",
+            "focus_next": "",
+            "focus_previous": "",
+            "grow_horizontal": 1,
+            "grow_vertical": 1,
+            "helper_text": "Auto-growing 3..6 lines",
+            "is_error": false,
+            "is_password": false,
+            "label": "Release Notes",
+            "label_text": "Release Notes",
+            "layout_direction": 0,
+            "layout_mode": 0,
+            "leading_icon": "",
+            "leading_icon_texture": null,
+            "light_mask": 1,
+            "localize_numeral_system": true,
+            "material": null,
+            "max_characters": 0,
+            "max_length": 0,
+            "max_lines": 6,
+            "min_lines": 3,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "mouse_behavior_recursive": 0,
+            "mouse_default_cursor_shape": 2,
+            "mouse_filter": 0,
+            "mouse_force_pass_scroll_events": true,
+            "multiline": true,
+            "offset_bottom": 170.0,
+            "offset_left": 640.0,
+            "offset_right": 960.0,
+            "offset_top": 48.0,
+            "offset_transform_enabled": false,
+            "offset_transform_pivot": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_pivot_ratio": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "offset_transform_position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_position_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_rotation": 0.0,
+            "offset_transform_scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "offset_transform_visual_only": true,
+            "oversampling_with_scale": 0,
+            "physics_interpolation_mode": 2,
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "pivot_offset_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "placeholder": "",
+            "position": {
+              "x": 640.0,
+              "y": 48.0
+            },
+            "prefix_text": "",
+            "process_mode": 0,
+            "process_physics_priority": 0,
+            "process_priority": 0,
+            "process_thread_group": 0,
+            "propagate_maximum_size": false,
+            "ripple_enabled": true,
+            "rotation": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "secret": false,
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "shape_token": 0,
+            "shortcut_context": null,
+            "show_behind_parent": false,
+            "show_clear_button": false,
+            "show_counter": true,
+            "show_password_toggle": false,
+            "size": {
+              "x": 320.0,
+              "y": 122.0
+            },
+            "size_flags_horizontal": 1,
+            "size_flags_stretch_ratio": 1.0,
+            "size_flags_vertical": 1,
+            "suffix_text": "",
+            "supporting_text": "Auto-growing 3..6 lines",
+            "text": "Line 1\nLine 2\nLine 3",
+            "texture_filter": 0,
+            "texture_repeat": 0,
+            "theme": null,
+            "theme_type_variation": "",
+            "tooltip_auto_translate_mode": 0,
+            "tooltip_text": "",
+            "top_level": false,
+            "touch_target_min_size": {
+              "x": 48.0,
+              "y": 48.0
+            },
+            "trailing_icon": "",
+            "trailing_icon_texture": null,
+            "translation_context": "",
+            "unique_name_in_owner": false,
+            "use_parent_material": false,
+            "variant": 1,
+            "visibility_layer": 1,
+            "visible": true,
+            "y_sort_enabled": false,
+            "z_as_relative": true,
+            "z_index": 0
+          },
+          "children": []
+        }
+      ]
+    },
+    "flat_nodes": [
+      {
+        "id": "node_0",
+        "parent_id": "",
+        "name": "TextFieldExtendedVariants",
+        "class": "ColorRect",
+        "category": "control",
+        "path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants",
+        "depth": 0,
+        "index_in_parent": 0,
+        "children_count": 3,
+        "groups": [],
+        "script": "",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 1280.0,
+          "height": 720.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {},
+        "transforms": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "global_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "size": {
+            "x": 1280.0,
+            "y": 720.0
+          },
+          "custom_minimum_size": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 1280.0,
+            "bottom": 720.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 0,
+          "mouse_filter": 2,
+          "tooltip_text": "",
+          "color": {
+            "r": 0.9788,
+            "g": 0.9745,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#faf9ffff"
+          }
+        },
+        "signals": [
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@83/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField",
+            "method": "Control::_size_changed"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "clip_children": 0,
+          "clip_contents": false,
+          "color": {
+            "r": 0.9788,
+            "g": 0.9745,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#faf9ffff"
+          },
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "editor_description": "",
+          "focus_behavior_recursive": 0,
+          "focus_mode": 0,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "layout_direction": 0,
+          "layout_mode": 3,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 0,
+          "mouse_filter": 2,
+          "mouse_force_pass_scroll_events": true,
+          "offset_bottom": 720.0,
+          "offset_left": 0.0,
+          "offset_right": 1280.0,
+          "offset_top": 0.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "size": {
+            "x": 1280.0,
+            "y": 720.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "visibility_layer": 1,
+          "visible": true,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        }
+      },
+      {
+        "id": "node_1",
+        "parent_id": "node_0",
+        "name": "AffixCurrencyField",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "depth": 1,
+        "index_in_parent": 0,
+        "children_count": 0,
+        "groups": [],
+        "script": "res://addons/material3/components/inputs/m3_text_field.gd",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 40.0,
+          "y": 48.0,
+          "width": 260.0,
+          "height": 56.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {
+          "_active_height": 56.0,
+          "_focus_progress": 0.0,
+          "_focus_tween": null,
+          "_font": "<FontFile>",
+          "_font_size_float": 12,
+          "_font_size_helper": 12,
+          "_font_size_rest": 16,
+          "_height_tween": null,
+          "_is_focused_internal": false,
+          "_is_pointer_down": false,
+          "_label_float_progress": 0.0,
+          "_label_progress": 0.0,
+          "_label_tween": null,
+          "_line_edit": "<Node:M3InternalLineEdit (LineEdit)>",
+          "_pointer_inside": false,
+          "_ripple": "<Node:M3Ripple (Control)>",
+          "_ripple_wave_alpha": 0.0,
+          "_ripple_wave_count": 0,
+          "_ripple_wave_radius": 0.0,
+          "_state_layer_alpha": 0.0,
+          "_text_edit": "<Node:M3InternalTextEdit (TextEdit)>",
+          "_theme_connected": true,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "density_override": 99,
+          "disabled": false,
+          "error_text": "",
+          "field_type": 1,
+          "helper_text": "",
+          "is_error": false,
+          "is_password": false,
+          "label": "Amount",
+          "label_text": "Amount",
+          "leading_icon": "",
+          "leading_icon_texture": null,
+          "max_characters": 0,
+          "max_length": 0,
+          "max_lines": 6,
+          "min_lines": 3,
+          "multiline": false,
+          "placeholder": "",
+          "prefix_text": "$",
+          "ripple_enabled": true,
+          "secret": false,
+          "shape_token": 0,
+          "show_clear_button": false,
+          "show_counter": false,
+          "show_password_toggle": false,
+          "suffix_text": "USD",
+          "supporting_text": "",
+          "text": "",
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "trailing_icon": "",
+          "trailing_icon_texture": null,
+          "variant": 1
+        },
+        "transforms": {
+          "position": {
+            "x": 40.0,
+            "y": 48.0
+          },
+          "global_position": {
+            "x": 40.0,
+            "y": 48.0
+          },
+          "size": {
+            "x": 260.0,
+            "y": 56.0
+          },
+          "custom_minimum_size": {
+            "x": 96.0,
+            "y": 56.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 40.0,
+            "top": 48.0,
+            "right": 300.0,
+            "bottom": 104.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 2,
+          "mouse_filter": 0,
+          "tooltip_text": ""
+        },
+        "signals": [
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@83/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField/M3Ripple",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField/M3InternalLineEdit",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField/M3InternalTextEdit",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "resized",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+            "method": "_on_resized"
+          },
+          {
+            "signal": "mouse_entered",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+            "method": "_on_mouse_entered"
+          },
+          {
+            "signal": "mouse_exited",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+            "method": "_on_mouse_exited"
+          },
+          {
+            "signal": "focus_entered",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+            "method": "_on_focus_entered"
+          },
+          {
+            "signal": "focus_exited",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+            "method": "_on_focus_exited"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "clip_children": 0,
+          "clip_contents": false,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 96.0,
+            "y": 56.0
+          },
+          "density_override": 99,
+          "disabled": false,
+          "editor_description": "",
+          "error_text": "",
+          "field_type": 1,
+          "focus_behavior_recursive": 0,
+          "focus_mode": 2,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "helper_text": "",
+          "is_error": false,
+          "is_password": false,
+          "label": "Amount",
+          "label_text": "Amount",
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "leading_icon": "",
+          "leading_icon_texture": null,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "max_characters": 0,
+          "max_length": 0,
+          "max_lines": 6,
+          "min_lines": 3,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 2,
+          "mouse_filter": 0,
+          "mouse_force_pass_scroll_events": true,
+          "multiline": false,
+          "offset_bottom": 104.0,
+          "offset_left": 40.0,
+          "offset_right": 300.0,
+          "offset_top": 48.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "placeholder": "",
+          "position": {
+            "x": 40.0,
+            "y": 48.0
+          },
+          "prefix_text": "$",
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "ripple_enabled": true,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "secret": false,
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shape_token": 0,
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "show_clear_button": false,
+          "show_counter": false,
+          "show_password_toggle": false,
+          "size": {
+            "x": 260.0,
+            "y": 56.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "suffix_text": "USD",
+          "supporting_text": "",
+          "text": "",
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "trailing_icon": "",
+          "trailing_icon_texture": null,
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "variant": 1,
+          "visibility_layer": 1,
+          "visible": true,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        }
+      },
+      {
+        "id": "node_2",
+        "parent_id": "node_0",
+        "name": "AffixWeightField",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField",
+        "depth": 1,
+        "index_in_parent": 1,
+        "children_count": 0,
+        "groups": [],
+        "script": "res://addons/material3/components/inputs/m3_text_field.gd",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 340.0,
+          "y": 48.0,
+          "width": 260.0,
+          "height": 76.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {
+          "_active_height": 56.0,
+          "_focus_progress": 0.0,
+          "_focus_tween": null,
+          "_font": "<FontFile>",
+          "_font_size_float": 12,
+          "_font_size_helper": 12,
+          "_font_size_rest": 16,
+          "_height_tween": null,
+          "_is_focused_internal": false,
+          "_is_pointer_down": false,
+          "_label_float_progress": 1.0,
+          "_label_progress": 1.0,
+          "_label_tween": null,
+          "_line_edit": "<Node:M3InternalLineEdit (LineEdit)>",
+          "_pointer_inside": false,
+          "_ripple": "<Node:M3Ripple (Control)>",
+          "_ripple_wave_alpha": 0.0,
+          "_ripple_wave_count": 0,
+          "_ripple_wave_radius": 0.0,
+          "_state_layer_alpha": 0.0,
+          "_text_edit": "<Node:M3InternalTextEdit (TextEdit)>",
+          "_theme_connected": true,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "density_override": 99,
+          "disabled": false,
+          "error_text": "",
+          "field_type": 0,
+          "helper_text": "Metric weight",
+          "is_error": false,
+          "is_password": false,
+          "label": "Package Weight",
+          "label_text": "Package Weight",
+          "leading_icon": "",
+          "leading_icon_texture": null,
+          "max_characters": 0,
+          "max_length": 0,
+          "max_lines": 6,
+          "min_lines": 3,
+          "multiline": false,
+          "placeholder": "",
+          "prefix_text": "",
+          "ripple_enabled": true,
+          "secret": false,
+          "shape_token": 0,
+          "show_clear_button": false,
+          "show_counter": false,
+          "show_password_toggle": false,
+          "suffix_text": "kg",
+          "supporting_text": "Metric weight",
+          "text": "14.5",
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "trailing_icon": "",
+          "trailing_icon_texture": null,
+          "variant": 0
+        },
+        "transforms": {
+          "position": {
+            "x": 340.0,
+            "y": 48.0
+          },
+          "global_position": {
+            "x": 340.0,
+            "y": 48.0
+          },
+          "size": {
+            "x": 260.0,
+            "y": 76.0
+          },
+          "custom_minimum_size": {
+            "x": 96.0,
+            "y": 76.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 340.0,
+            "top": 48.0,
+            "right": 600.0,
+            "bottom": 124.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 2,
+          "mouse_filter": 0,
+          "tooltip_text": ""
+        },
+        "signals": [
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@83/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField/M3Ripple",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField/M3InternalLineEdit",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField/M3InternalTextEdit",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "resized",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField",
+            "method": "_on_resized"
+          },
+          {
+            "signal": "mouse_entered",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField",
+            "method": "_on_mouse_entered"
+          },
+          {
+            "signal": "mouse_exited",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField",
+            "method": "_on_mouse_exited"
+          },
+          {
+            "signal": "focus_entered",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField",
+            "method": "_on_focus_entered"
+          },
+          {
+            "signal": "focus_exited",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField",
+            "method": "_on_focus_exited"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "clip_children": 0,
+          "clip_contents": false,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 96.0,
+            "y": 76.0
+          },
+          "density_override": 99,
+          "disabled": false,
+          "editor_description": "",
+          "error_text": "",
+          "field_type": 0,
+          "focus_behavior_recursive": 0,
+          "focus_mode": 2,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "helper_text": "Metric weight",
+          "is_error": false,
+          "is_password": false,
+          "label": "Package Weight",
+          "label_text": "Package Weight",
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "leading_icon": "",
+          "leading_icon_texture": null,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "max_characters": 0,
+          "max_length": 0,
+          "max_lines": 6,
+          "min_lines": 3,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 2,
+          "mouse_filter": 0,
+          "mouse_force_pass_scroll_events": true,
+          "multiline": false,
+          "offset_bottom": 124.0,
+          "offset_left": 340.0,
+          "offset_right": 600.0,
+          "offset_top": 48.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "placeholder": "",
+          "position": {
+            "x": 340.0,
+            "y": 48.0
+          },
+          "prefix_text": "",
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "ripple_enabled": true,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "secret": false,
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shape_token": 0,
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "show_clear_button": false,
+          "show_counter": false,
+          "show_password_toggle": false,
+          "size": {
+            "x": 260.0,
+            "y": 76.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "suffix_text": "kg",
+          "supporting_text": "Metric weight",
+          "text": "14.5",
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "trailing_icon": "",
+          "trailing_icon_texture": null,
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "variant": 0,
+          "visibility_layer": 1,
+          "visible": true,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        }
+      },
+      {
+        "id": "node_3",
+        "parent_id": "node_0",
+        "name": "MultilineNotesField",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField",
+        "depth": 1,
+        "index_in_parent": 2,
+        "children_count": 0,
+        "groups": [],
+        "script": "res://addons/material3/components/inputs/m3_text_field.gd",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 640.0,
+          "y": 48.0,
+          "width": 320.0,
+          "height": 122.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {
+          "_active_height": 102.0,
+          "_focus_progress": 0.0,
+          "_focus_tween": null,
+          "_font": "<FontFile>",
+          "_font_size_float": 12,
+          "_font_size_helper": 12,
+          "_font_size_rest": 16,
+          "_height_tween": null,
+          "_is_focused_internal": false,
+          "_is_pointer_down": false,
+          "_label_float_progress": 1.0,
+          "_label_progress": 1.0,
+          "_label_tween": null,
+          "_line_edit": "<Node:M3InternalLineEdit (LineEdit)>",
+          "_pointer_inside": false,
+          "_ripple": "<Node:M3Ripple (Control)>",
+          "_ripple_wave_alpha": 0.0,
+          "_ripple_wave_count": 0,
+          "_ripple_wave_radius": 0.0,
+          "_state_layer_alpha": 0.0,
+          "_text_edit": "<Node:M3InternalTextEdit (TextEdit)>",
+          "_theme_connected": true,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "density_override": 99,
+          "disabled": false,
+          "error_text": "",
+          "field_type": 1,
+          "helper_text": "Auto-growing 3..6 lines",
+          "is_error": false,
+          "is_password": false,
+          "label": "Release Notes",
+          "label_text": "Release Notes",
+          "leading_icon": "",
+          "leading_icon_texture": null,
+          "max_characters": 0,
+          "max_length": 0,
+          "max_lines": 6,
+          "min_lines": 3,
+          "multiline": true,
+          "placeholder": "",
+          "prefix_text": "",
+          "ripple_enabled": true,
+          "secret": false,
+          "shape_token": 0,
+          "show_clear_button": false,
+          "show_counter": true,
+          "show_password_toggle": false,
+          "suffix_text": "",
+          "supporting_text": "Auto-growing 3..6 lines",
+          "text": "Line 1\nLine 2\nLine 3",
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "trailing_icon": "",
+          "trailing_icon_texture": null,
+          "variant": 1
+        },
+        "transforms": {
+          "position": {
+            "x": 640.0,
+            "y": 48.0
+          },
+          "global_position": {
+            "x": 640.0,
+            "y": 48.0
+          },
+          "size": {
+            "x": 320.0,
+            "y": 122.0
+          },
+          "custom_minimum_size": {
+            "x": 96.0,
+            "y": 122.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 640.0,
+            "top": 48.0,
+            "right": 960.0,
+            "bottom": 170.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 2,
+          "mouse_filter": 0,
+          "tooltip_text": ""
+        },
+        "signals": [
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@83/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField/M3Ripple",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField/M3InternalLineEdit",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField/M3InternalTextEdit",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "resized",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField",
+            "method": "_on_resized"
+          },
+          {
+            "signal": "mouse_entered",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField",
+            "method": "_on_mouse_entered"
+          },
+          {
+            "signal": "mouse_exited",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField",
+            "method": "_on_mouse_exited"
+          },
+          {
+            "signal": "focus_entered",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField",
+            "method": "_on_focus_entered"
+          },
+          {
+            "signal": "focus_exited",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField",
+            "method": "_on_focus_exited"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "clip_children": 0,
+          "clip_contents": false,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 96.0,
+            "y": 122.0
+          },
+          "density_override": 99,
+          "disabled": false,
+          "editor_description": "",
+          "error_text": "",
+          "field_type": 1,
+          "focus_behavior_recursive": 0,
+          "focus_mode": 2,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "helper_text": "Auto-growing 3..6 lines",
+          "is_error": false,
+          "is_password": false,
+          "label": "Release Notes",
+          "label_text": "Release Notes",
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "leading_icon": "",
+          "leading_icon_texture": null,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "max_characters": 0,
+          "max_length": 0,
+          "max_lines": 6,
+          "min_lines": 3,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 2,
+          "mouse_filter": 0,
+          "mouse_force_pass_scroll_events": true,
+          "multiline": true,
+          "offset_bottom": 170.0,
+          "offset_left": 640.0,
+          "offset_right": 960.0,
+          "offset_top": 48.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "placeholder": "",
+          "position": {
+            "x": 640.0,
+            "y": 48.0
+          },
+          "prefix_text": "",
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "ripple_enabled": true,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "secret": false,
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shape_token": 0,
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "show_clear_button": false,
+          "show_counter": true,
+          "show_password_toggle": false,
+          "size": {
+            "x": 320.0,
+            "y": 122.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "suffix_text": "",
+          "supporting_text": "Auto-growing 3..6 lines",
+          "text": "Line 1\nLine 2\nLine 3",
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "trailing_icon": "",
+          "trailing_icon_texture": null,
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "variant": 1,
+          "visibility_layer": 1,
+          "visible": true,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        }
+      }
+    ]
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "elapsed_ms": 5,
+      "delta_sec": 0.0106,
+      "process_frame": 2330,
+      "physics_frame": 2626,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField": {
+          "script_variables": {
+            "_focus_tween": "<Tween>",
+            "_is_focused_internal": true,
+            "_label_tween": "<Tween>"
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 2,
+      "elapsed_ms": 17,
+      "delta_sec": 0.0098,
+      "process_frame": 2331,
+      "physics_frame": 2626,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField": {
+          "script_variables": {
+            "_focus_progress": 0.1506,
+            "_label_float_progress": 0.1506,
+            "_label_progress": 0.1506
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 3,
+      "elapsed_ms": 34,
+      "delta_sec": 0.0182,
+      "process_frame": 2332,
+      "physics_frame": 2627,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField": {
+          "script_variables": {
+            "_focus_progress": 0.2763,
+            "_label_float_progress": 0.2763,
+            "_label_progress": 0.2763
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 4,
+      "elapsed_ms": 50,
+      "delta_sec": 0.0182,
+      "process_frame": 2333,
+      "physics_frame": 2628,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField": {
+          "script_variables": {
+            "_focus_progress": 0.4746,
+            "_label_float_progress": 0.4746,
+            "_label_progress": 0.4746
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 5,
+      "elapsed_ms": 67,
+      "delta_sec": 0.0182,
+      "process_frame": 2334,
+      "physics_frame": 2629,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField": {
+          "script_variables": {
+            "_focus_progress": 0.6329,
+            "_label_float_progress": 0.6329,
+            "_label_progress": 0.6329
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 6,
+      "elapsed_ms": 84,
+      "delta_sec": 0.0182,
+      "process_frame": 2335,
+      "physics_frame": 2631,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField": {
+          "script_variables": {
+            "_focus_progress": 0.7557,
+            "_label_float_progress": 0.7557,
+            "_label_progress": 0.7557
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 7,
+      "elapsed_ms": 101,
+      "delta_sec": 0.0182,
+      "process_frame": 2336,
+      "physics_frame": 2632,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField": {
+          "script_variables": {
+            "_focus_progress": 0.8476,
+            "_label_float_progress": 0.8476,
+            "_label_progress": 0.8476
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 8,
+      "elapsed_ms": 117,
+      "delta_sec": 0.0182,
+      "process_frame": 2337,
+      "physics_frame": 2633,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField": {
+          "script_variables": {
+            "_focus_progress": 0.9129,
+            "_label_float_progress": 0.9129,
+            "_label_progress": 0.9129
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 9,
+      "elapsed_ms": 134,
+      "delta_sec": 0.0182,
+      "process_frame": 2338,
+      "physics_frame": 2634,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField": {
+          "script_variables": {
+            "_focus_progress": 0.9562,
+            "_label_float_progress": 0.9562,
+            "_label_progress": 0.9562
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 10,
+      "elapsed_ms": 151,
+      "delta_sec": 0.0182,
+      "process_frame": 2339,
+      "physics_frame": 2635,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField": {
+          "script_variables": {
+            "_focus_progress": 0.9821,
+            "_label_float_progress": 0.9821,
+            "_label_progress": 0.9821
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 11,
+      "elapsed_ms": 168,
+      "delta_sec": 0.0182,
+      "process_frame": 2340,
+      "physics_frame": 2636,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField": {
+          "script_variables": {
+            "_focus_progress": 0.995,
+            "_label_float_progress": 0.995,
+            "_label_progress": 0.995
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 12,
+      "elapsed_ms": 185,
+      "delta_sec": 0.0182,
+      "process_frame": 2341,
+      "physics_frame": 2637,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField": {
+          "script_variables": {
+            "_focus_progress": 0.9995,
+            "_label_float_progress": 0.9995,
+            "_label_progress": 0.9995
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 13,
+      "elapsed_ms": 201,
+      "delta_sec": 0.0182,
+      "process_frame": 2342,
+      "physics_frame": 2638,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField": {
+          "script_variables": {
+            "_focus_progress": 1.0,
+            "_label_float_progress": 1.0,
+            "_label_progress": 1.0
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 14,
+      "elapsed_ms": 218,
+      "delta_sec": 0.0182,
+      "process_frame": 2343,
+      "physics_frame": 2639,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 15,
+      "elapsed_ms": 235,
+      "delta_sec": 0.0182,
+      "process_frame": 2344,
+      "physics_frame": 2640,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 16,
+      "elapsed_ms": 252,
+      "delta_sec": 0.0182,
+      "process_frame": 2345,
+      "physics_frame": 2641,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 17,
+      "elapsed_ms": 268,
+      "delta_sec": 0.0182,
+      "process_frame": 2346,
+      "physics_frame": 2643,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 18,
+      "elapsed_ms": 286,
+      "delta_sec": 0.0182,
+      "process_frame": 2347,
+      "physics_frame": 2644,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 19,
+      "elapsed_ms": 303,
+      "delta_sec": 0.0182,
+      "process_frame": 2348,
+      "physics_frame": 2645,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField": {
+          "script_variables": {
+            "text": "2"
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 20,
+      "elapsed_ms": 318,
+      "delta_sec": 0.0182,
+      "process_frame": 2349,
+      "physics_frame": 2646,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 21,
+      "elapsed_ms": 336,
+      "delta_sec": 0.0182,
+      "process_frame": 2350,
+      "physics_frame": 2647,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField": {
+          "script_variables": {
+            "text": "25"
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 22,
+      "elapsed_ms": 352,
+      "delta_sec": 0.0182,
+      "process_frame": 2351,
+      "physics_frame": 2648,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 23,
+      "elapsed_ms": 370,
+      "delta_sec": 0.0182,
+      "process_frame": 2352,
+      "physics_frame": 2649,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField": {
+          "script_variables": {
+            "text": "250"
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 24,
+      "elapsed_ms": 386,
+      "delta_sec": 0.0182,
+      "process_frame": 2353,
+      "physics_frame": 2650,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 25,
+      "elapsed_ms": 402,
+      "delta_sec": 0.0182,
+      "process_frame": 2354,
+      "physics_frame": 2651,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 26,
+      "elapsed_ms": 419,
+      "delta_sec": 0.0182,
+      "process_frame": 2355,
+      "physics_frame": 2652,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 27,
+      "elapsed_ms": 435,
+      "delta_sec": 0.0182,
+      "process_frame": 2356,
+      "physics_frame": 2653,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 28,
+      "elapsed_ms": 452,
+      "delta_sec": 0.0182,
+      "process_frame": 2357,
+      "physics_frame": 2655,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 29,
+      "elapsed_ms": 469,
+      "delta_sec": 0.0182,
+      "process_frame": 2358,
+      "physics_frame": 2656,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 30,
+      "elapsed_ms": 485,
+      "delta_sec": 0.0182,
+      "process_frame": 2359,
+      "physics_frame": 2657,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 31,
+      "elapsed_ms": 502,
+      "delta_sec": 0.0182,
+      "process_frame": 2360,
+      "physics_frame": 2658,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField": {
+          "script_variables": {
+            "_height_tween": "<Tween>",
+            "_label_tween": "<Tween>",
+            "text": "Line 1\nLine 2\nLine 3\nLine 4\nLine 5"
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 32,
+      "elapsed_ms": 517,
+      "delta_sec": 0.0182,
+      "process_frame": 2361,
+      "physics_frame": 2659,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField": {
+          "screen_rect": {
+            "height": 132.9421
+          },
+          "transforms": {
+            "size": {
+              "x": 320.0,
+              "y": 132.9421
+            },
+            "custom_minimum_size": {
+              "x": 96.0,
+              "y": 132.9421
+            },
+            "offsets": {
+              "left": 640.0,
+              "top": 48.0,
+              "right": 960.0,
+              "bottom": 180.9421
+            }
+          },
+          "script_variables": {
+            "_active_height": 112.9421
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 33,
+      "elapsed_ms": 534,
+      "delta_sec": 0.0182,
+      "process_frame": 2362,
+      "physics_frame": 2660,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField": {
+          "screen_rect": {
+            "height": 141.9008
+          },
+          "transforms": {
+            "size": {
+              "x": 320.0,
+              "y": 141.9008
+            },
+            "custom_minimum_size": {
+              "x": 96.0,
+              "y": 141.9008
+            },
+            "offsets": {
+              "left": 640.0,
+              "top": 48.0,
+              "right": 960.0,
+              "bottom": 189.9008
+            }
+          },
+          "script_variables": {
+            "_active_height": 121.9008
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 34,
+      "elapsed_ms": 550,
+      "delta_sec": 0.0182,
+      "process_frame": 2363,
+      "physics_frame": 2661,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField": {
+          "screen_rect": {
+            "height": 149.0744
+          },
+          "transforms": {
+            "size": {
+              "x": 320.0,
+              "y": 149.0744
+            },
+            "custom_minimum_size": {
+              "x": 96.0,
+              "y": 149.0744
+            },
+            "offsets": {
+              "left": 640.0,
+              "top": 48.0,
+              "right": 960.0,
+              "bottom": 197.0744
+            }
+          },
+          "script_variables": {
+            "_active_height": 129.0744
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 35,
+      "elapsed_ms": 567,
+      "delta_sec": 0.0182,
+      "process_frame": 2364,
+      "physics_frame": 2662,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField": {
+          "screen_rect": {
+            "height": 154.6612
+          },
+          "transforms": {
+            "size": {
+              "x": 320.0,
+              "y": 154.6612
+            },
+            "custom_minimum_size": {
+              "x": 96.0,
+              "y": 154.6612
+            },
+            "offsets": {
+              "left": 640.0,
+              "top": 48.0,
+              "right": 960.0,
+              "bottom": 202.6612
+            }
+          },
+          "script_variables": {
+            "_active_height": 134.6612
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 36,
+      "elapsed_ms": 584,
+      "delta_sec": 0.0182,
+      "process_frame": 2365,
+      "physics_frame": 2663,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField": {
+          "screen_rect": {
+            "height": 158.8595
+          },
+          "transforms": {
+            "size": {
+              "x": 320.0,
+              "y": 158.8595
+            },
+            "custom_minimum_size": {
+              "x": 96.0,
+              "y": 158.8595
+            },
+            "offsets": {
+              "left": 640.0,
+              "top": 48.0,
+              "right": 960.0,
+              "bottom": 206.8595
+            }
+          },
+          "script_variables": {
+            "_active_height": 138.8595
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 37,
+      "elapsed_ms": 601,
+      "delta_sec": 0.0182,
+      "process_frame": 2366,
+      "physics_frame": 2664,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField": {
+          "screen_rect": {
+            "height": 161.8678
+          },
+          "transforms": {
+            "size": {
+              "x": 320.0,
+              "y": 161.8678
+            },
+            "custom_minimum_size": {
+              "x": 96.0,
+              "y": 161.8678
+            },
+            "offsets": {
+              "left": 640.0,
+              "top": 48.0,
+              "right": 960.0,
+              "bottom": 209.8678
+            }
+          },
+          "script_variables": {
+            "_active_height": 141.8678
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 38,
+      "elapsed_ms": 617,
+      "delta_sec": 0.0182,
+      "process_frame": 2367,
+      "physics_frame": 2665,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField": {
+          "screen_rect": {
+            "height": 163.8843
+          },
+          "transforms": {
+            "size": {
+              "x": 320.0,
+              "y": 163.8843
+            },
+            "custom_minimum_size": {
+              "x": 96.0,
+              "y": 163.8843
+            },
+            "offsets": {
+              "left": 640.0,
+              "top": 48.0,
+              "right": 960.0,
+              "bottom": 211.8843
+            }
+          },
+          "script_variables": {
+            "_active_height": 143.8843
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 39,
+      "elapsed_ms": 634,
+      "delta_sec": 0.0182,
+      "process_frame": 2368,
+      "physics_frame": 2667,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField": {
+          "screen_rect": {
+            "height": 165.1074
+          },
+          "transforms": {
+            "size": {
+              "x": 320.0,
+              "y": 165.1074
+            },
+            "custom_minimum_size": {
+              "x": 96.0,
+              "y": 165.1074
+            },
+            "offsets": {
+              "left": 640.0,
+              "top": 48.0,
+              "right": 960.0,
+              "bottom": 213.1074
+            }
+          },
+          "script_variables": {
+            "_active_height": 145.1074
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 40,
+      "elapsed_ms": 651,
+      "delta_sec": 0.0182,
+      "process_frame": 2369,
+      "physics_frame": 2668,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField": {
+          "screen_rect": {
+            "height": 165.7355
+          },
+          "transforms": {
+            "size": {
+              "x": 320.0,
+              "y": 165.7355
+            },
+            "custom_minimum_size": {
+              "x": 96.0,
+              "y": 165.7355
+            },
+            "offsets": {
+              "left": 640.0,
+              "top": 48.0,
+              "right": 960.0,
+              "bottom": 213.7355
+            }
+          },
+          "script_variables": {
+            "_active_height": 145.7355
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 41,
+      "elapsed_ms": 668,
+      "delta_sec": 0.0182,
+      "process_frame": 2370,
+      "physics_frame": 2669,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField": {
+          "screen_rect": {
+            "height": 165.9669
+          },
+          "transforms": {
+            "size": {
+              "x": 320.0,
+              "y": 165.9669
+            },
+            "custom_minimum_size": {
+              "x": 96.0,
+              "y": 165.9669
+            },
+            "offsets": {
+              "left": 640.0,
+              "top": 48.0,
+              "right": 960.0,
+              "bottom": 213.9669
+            }
+          },
+          "script_variables": {
+            "_active_height": 145.9669
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 42,
+      "elapsed_ms": 685,
+      "delta_sec": 0.0182,
+      "process_frame": 2371,
+      "physics_frame": 2670,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField": {
+          "screen_rect": {
+            "height": 166.0
+          },
+          "transforms": {
+            "size": {
+              "x": 320.0,
+              "y": 166.0
+            },
+            "custom_minimum_size": {
+              "x": 96.0,
+              "y": 166.0
+            },
+            "offsets": {
+              "left": 640.0,
+              "top": 48.0,
+              "right": 960.0,
+              "bottom": 214.0
+            }
+          },
+          "script_variables": {
+            "_active_height": 146.0
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 43,
+      "elapsed_ms": 702,
+      "delta_sec": 0.0181,
+      "process_frame": 2372,
+      "physics_frame": 2671,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 44,
+      "elapsed_ms": 718,
+      "delta_sec": 0.0181,
+      "process_frame": 2373,
+      "physics_frame": 2672,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 45,
+      "elapsed_ms": 735,
+      "delta_sec": 0.0181,
+      "process_frame": 2374,
+      "physics_frame": 2673,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 46,
+      "elapsed_ms": 752,
+      "delta_sec": 0.0181,
+      "process_frame": 2375,
+      "physics_frame": 2674,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 47,
+      "elapsed_ms": 768,
+      "delta_sec": 0.0181,
+      "process_frame": 2376,
+      "physics_frame": 2675,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 48,
+      "elapsed_ms": 785,
+      "delta_sec": 0.0181,
+      "process_frame": 2377,
+      "physics_frame": 2676,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 49,
+      "elapsed_ms": 802,
+      "delta_sec": 0.0175,
+      "process_frame": 2378,
+      "physics_frame": 2677,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 50,
+      "elapsed_ms": 818,
+      "delta_sec": 0.0166,
+      "process_frame": 2379,
+      "physics_frame": 2678,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 51,
+      "elapsed_ms": 835,
+      "delta_sec": 0.0167,
+      "process_frame": 2380,
+      "physics_frame": 2679,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 52,
+      "elapsed_ms": 852,
+      "delta_sec": 0.0167,
+      "process_frame": 2381,
+      "physics_frame": 2680,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 53,
+      "elapsed_ms": 869,
+      "delta_sec": 0.0167,
+      "process_frame": 2382,
+      "physics_frame": 2681,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 54,
+      "elapsed_ms": 885,
+      "delta_sec": 0.0167,
+      "process_frame": 2383,
+      "physics_frame": 2682,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 55,
+      "elapsed_ms": 902,
+      "delta_sec": 0.0167,
+      "process_frame": 2384,
+      "physics_frame": 2683,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 56,
+      "elapsed_ms": 919,
+      "delta_sec": 0.0167,
+      "process_frame": 2385,
+      "physics_frame": 2684,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    }
+  ],
+  "analysis": {
+    "summary": {
+      "total_frames": 57,
+      "delta_frames": 56,
+      "duration_ms": 919,
+      "initial_node_count": 4,
+      "active_node_count": 2,
+      "static_node_count": 2,
+      "spawned_node_count": 0,
+      "removed_node_count": 0,
+      "bounces_detected": 0,
+      "floor_contacts_detected": 0,
+      "total_events": 56
+    },
+    "node_trajectories": {
+      "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField": {
+        "name": "AffixCurrencyField",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "frames_changed": 16,
+        "is_3d": false,
+        "start_position": {
+          "x": 40.0,
+          "y": 48.0
+        },
+        "end_position": {
+          "x": 40.0,
+          "y": 48.0
+        },
+        "min_position": {
+          "x": 40.0,
+          "y": 48.0
+        },
+        "max_position": {
+          "x": 40.0,
+          "y": 48.0
+        },
+        "total_distance": 0.0,
+        "peak_speed": 0.0,
+        "peak_speed_frame": 0,
+        "bounce_frames": [],
+        "bounces": [],
+        "screen_trail": [
+          {
+            "x": 170.0,
+            "y": 76.0
+          }
+        ],
+        "mutated_properties": {
+          "script_variables._focus_tween": {
+            "initial": null,
+            "final": "<Tween>",
+            "change_count": 1
+          },
+          "script_variables._is_focused_internal": {
+            "initial": false,
+            "final": true,
+            "change_count": 1
+          },
+          "script_variables._label_tween": {
+            "initial": null,
+            "final": "<Tween>",
+            "change_count": 1
+          },
+          "script_variables._focus_progress": {
+            "initial": 0.0,
+            "final": 1.0,
+            "change_count": 12
+          },
+          "script_variables._label_float_progress": {
+            "initial": 0.0,
+            "final": 1.0,
+            "change_count": 12
+          },
+          "script_variables._label_progress": {
+            "initial": 0.0,
+            "final": 1.0,
+            "change_count": 12
+          },
+          "script_variables.text": {
+            "initial": "",
+            "final": "250",
+            "change_count": 3
+          }
+        },
+        "displacement": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField": {
+        "name": "MultilineNotesField",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField",
+        "frames_changed": 12,
+        "is_3d": false,
+        "start_position": {
+          "x": 640.0,
+          "y": 48.0
+        },
+        "end_position": {
+          "x": 640.0,
+          "y": 48.0
+        },
+        "min_position": {
+          "x": 640.0,
+          "y": 48.0
+        },
+        "max_position": {
+          "x": 640.0,
+          "y": 48.0
+        },
+        "total_distance": 0.0,
+        "peak_speed": 0.0,
+        "peak_speed_frame": 0,
+        "bounce_frames": [],
+        "bounces": [],
+        "screen_trail": [
+          {
+            "x": 800.0,
+            "y": 109.0
+          },
+          {
+            "x": 800.0,
+            "y": 114.4711
+          },
+          {
+            "x": 800.0,
+            "y": 118.9504
+          },
+          {
+            "x": 800.0,
+            "y": 122.5372
+          },
+          {
+            "x": 800.0,
+            "y": 125.3306
+          },
+          {
+            "x": 800.0,
+            "y": 127.4298
+          },
+          {
+            "x": 800.0,
+            "y": 128.9339
+          },
+          {
+            "x": 800.0,
+            "y": 129.9422
+          },
+          {
+            "x": 800.0,
+            "y": 130.5537
+          },
+          {
+            "x": 800.0,
+            "y": 130.8678
+          },
+          {
+            "x": 800.0,
+            "y": 130.9835
+          },
+          {
+            "x": 800.0,
+            "y": 131.0
+          }
+        ],
+        "mutated_properties": {
+          "script_variables._height_tween": {
+            "initial": null,
+            "final": "<Tween>",
+            "change_count": 1
+          },
+          "script_variables._label_tween": {
+            "initial": null,
+            "final": "<Tween>",
+            "change_count": 1
+          },
+          "script_variables.text": {
+            "initial": "Line 1\nLine 2\nLine 3",
+            "final": "Line 1\nLine 2\nLine 3\nLine 4\nLine 5",
+            "change_count": 1
+          },
+          "script_variables._active_height": {
+            "initial": 102.0,
+            "final": 146.0,
+            "change_count": 11
+          }
+        },
+        "displacement": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      }
+    },
+    "events": [
+      {
+        "frame_index": 1,
+        "elapsed_ms": 5,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_focus_tween",
+        "old_value": null,
+        "new_value": "<Tween>"
+      },
+      {
+        "frame_index": 1,
+        "elapsed_ms": 5,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_is_focused_internal",
+        "old_value": false,
+        "new_value": true
+      },
+      {
+        "frame_index": 1,
+        "elapsed_ms": 5,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_label_tween",
+        "old_value": null,
+        "new_value": "<Tween>"
+      },
+      {
+        "frame_index": 2,
+        "elapsed_ms": 17,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_focus_progress",
+        "old_value": 0.0,
+        "new_value": 0.1506
+      },
+      {
+        "frame_index": 2,
+        "elapsed_ms": 17,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_label_float_progress",
+        "old_value": 0.0,
+        "new_value": 0.1506
+      },
+      {
+        "frame_index": 2,
+        "elapsed_ms": 17,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_label_progress",
+        "old_value": 0.0,
+        "new_value": 0.1506
+      },
+      {
+        "frame_index": 3,
+        "elapsed_ms": 34,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_focus_progress",
+        "old_value": 0.1506,
+        "new_value": 0.2763
+      },
+      {
+        "frame_index": 3,
+        "elapsed_ms": 34,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_label_float_progress",
+        "old_value": 0.1506,
+        "new_value": 0.2763
+      },
+      {
+        "frame_index": 3,
+        "elapsed_ms": 34,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_label_progress",
+        "old_value": 0.1506,
+        "new_value": 0.2763
+      },
+      {
+        "frame_index": 4,
+        "elapsed_ms": 50,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_focus_progress",
+        "old_value": 0.2763,
+        "new_value": 0.4746
+      },
+      {
+        "frame_index": 4,
+        "elapsed_ms": 50,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_label_float_progress",
+        "old_value": 0.2763,
+        "new_value": 0.4746
+      },
+      {
+        "frame_index": 4,
+        "elapsed_ms": 50,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_label_progress",
+        "old_value": 0.2763,
+        "new_value": 0.4746
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 67,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_focus_progress",
+        "old_value": 0.4746,
+        "new_value": 0.6329
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 67,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_label_float_progress",
+        "old_value": 0.4746,
+        "new_value": 0.6329
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 67,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_label_progress",
+        "old_value": 0.4746,
+        "new_value": 0.6329
+      },
+      {
+        "frame_index": 6,
+        "elapsed_ms": 84,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_focus_progress",
+        "old_value": 0.6329,
+        "new_value": 0.7557
+      },
+      {
+        "frame_index": 6,
+        "elapsed_ms": 84,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_label_float_progress",
+        "old_value": 0.6329,
+        "new_value": 0.7557
+      },
+      {
+        "frame_index": 6,
+        "elapsed_ms": 84,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_label_progress",
+        "old_value": 0.6329,
+        "new_value": 0.7557
+      },
+      {
+        "frame_index": 7,
+        "elapsed_ms": 101,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_focus_progress",
+        "old_value": 0.7557,
+        "new_value": 0.8476
+      },
+      {
+        "frame_index": 7,
+        "elapsed_ms": 101,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_label_float_progress",
+        "old_value": 0.7557,
+        "new_value": 0.8476
+      },
+      {
+        "frame_index": 7,
+        "elapsed_ms": 101,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_label_progress",
+        "old_value": 0.7557,
+        "new_value": 0.8476
+      },
+      {
+        "frame_index": 8,
+        "elapsed_ms": 117,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_focus_progress",
+        "old_value": 0.8476,
+        "new_value": 0.9129
+      },
+      {
+        "frame_index": 8,
+        "elapsed_ms": 117,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_label_float_progress",
+        "old_value": 0.8476,
+        "new_value": 0.9129
+      },
+      {
+        "frame_index": 8,
+        "elapsed_ms": 117,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_label_progress",
+        "old_value": 0.8476,
+        "new_value": 0.9129
+      },
+      {
+        "frame_index": 9,
+        "elapsed_ms": 134,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_focus_progress",
+        "old_value": 0.9129,
+        "new_value": 0.9562
+      },
+      {
+        "frame_index": 9,
+        "elapsed_ms": 134,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_label_float_progress",
+        "old_value": 0.9129,
+        "new_value": 0.9562
+      },
+      {
+        "frame_index": 9,
+        "elapsed_ms": 134,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_label_progress",
+        "old_value": 0.9129,
+        "new_value": 0.9562
+      },
+      {
+        "frame_index": 10,
+        "elapsed_ms": 151,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_focus_progress",
+        "old_value": 0.9562,
+        "new_value": 0.9821
+      },
+      {
+        "frame_index": 10,
+        "elapsed_ms": 151,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_label_float_progress",
+        "old_value": 0.9562,
+        "new_value": 0.9821
+      },
+      {
+        "frame_index": 10,
+        "elapsed_ms": 151,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_label_progress",
+        "old_value": 0.9562,
+        "new_value": 0.9821
+      },
+      {
+        "frame_index": 11,
+        "elapsed_ms": 168,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_focus_progress",
+        "old_value": 0.9821,
+        "new_value": 0.995
+      },
+      {
+        "frame_index": 11,
+        "elapsed_ms": 168,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_label_float_progress",
+        "old_value": 0.9821,
+        "new_value": 0.995
+      },
+      {
+        "frame_index": 11,
+        "elapsed_ms": 168,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_label_progress",
+        "old_value": 0.9821,
+        "new_value": 0.995
+      },
+      {
+        "frame_index": 12,
+        "elapsed_ms": 185,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_focus_progress",
+        "old_value": 0.995,
+        "new_value": 0.9995
+      },
+      {
+        "frame_index": 12,
+        "elapsed_ms": 185,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_label_float_progress",
+        "old_value": 0.995,
+        "new_value": 0.9995
+      },
+      {
+        "frame_index": 12,
+        "elapsed_ms": 185,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_label_progress",
+        "old_value": 0.995,
+        "new_value": 0.9995
+      },
+      {
+        "frame_index": 13,
+        "elapsed_ms": 201,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_focus_progress",
+        "old_value": 0.9995,
+        "new_value": 1.0
+      },
+      {
+        "frame_index": 13,
+        "elapsed_ms": 201,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_label_float_progress",
+        "old_value": 0.9995,
+        "new_value": 1.0
+      },
+      {
+        "frame_index": 13,
+        "elapsed_ms": 201,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "_label_progress",
+        "old_value": 0.9995,
+        "new_value": 1.0
+      },
+      {
+        "frame_index": 19,
+        "elapsed_ms": 303,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "text",
+        "old_value": "",
+        "new_value": "2"
+      },
+      {
+        "frame_index": 21,
+        "elapsed_ms": 336,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "text",
+        "old_value": "2",
+        "new_value": "25"
+      },
+      {
+        "frame_index": 23,
+        "elapsed_ms": 370,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField",
+        "node_name": "AffixCurrencyField",
+        "property": "text",
+        "old_value": "25",
+        "new_value": "250"
+      },
+      {
+        "frame_index": 31,
+        "elapsed_ms": 502,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField",
+        "node_name": "MultilineNotesField",
+        "property": "_height_tween",
+        "old_value": null,
+        "new_value": "<Tween>"
+      },
+      {
+        "frame_index": 31,
+        "elapsed_ms": 502,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField",
+        "node_name": "MultilineNotesField",
+        "property": "_label_tween",
+        "old_value": null,
+        "new_value": "<Tween>"
+      },
+      {
+        "frame_index": 31,
+        "elapsed_ms": 502,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField",
+        "node_name": "MultilineNotesField",
+        "property": "text",
+        "old_value": "Line 1\nLine 2\nLine 3",
+        "new_value": "Line 1\nLine 2\nLine 3\nLine 4\nLine 5"
+      },
+      {
+        "frame_index": 32,
+        "elapsed_ms": 517,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField",
+        "node_name": "MultilineNotesField",
+        "property": "_active_height",
+        "old_value": 102.0,
+        "new_value": 112.9421
+      },
+      {
+        "frame_index": 33,
+        "elapsed_ms": 534,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField",
+        "node_name": "MultilineNotesField",
+        "property": "_active_height",
+        "old_value": 112.9421,
+        "new_value": 121.9008
+      },
+      {
+        "frame_index": 34,
+        "elapsed_ms": 550,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField",
+        "node_name": "MultilineNotesField",
+        "property": "_active_height",
+        "old_value": 121.9008,
+        "new_value": 129.0744
+      },
+      {
+        "frame_index": 35,
+        "elapsed_ms": 567,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField",
+        "node_name": "MultilineNotesField",
+        "property": "_active_height",
+        "old_value": 129.0744,
+        "new_value": 134.6612
+      },
+      {
+        "frame_index": 36,
+        "elapsed_ms": 584,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField",
+        "node_name": "MultilineNotesField",
+        "property": "_active_height",
+        "old_value": 134.6612,
+        "new_value": 138.8595
+      },
+      {
+        "frame_index": 37,
+        "elapsed_ms": 601,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField",
+        "node_name": "MultilineNotesField",
+        "property": "_active_height",
+        "old_value": 138.8595,
+        "new_value": 141.8678
+      },
+      {
+        "frame_index": 38,
+        "elapsed_ms": 617,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField",
+        "node_name": "MultilineNotesField",
+        "property": "_active_height",
+        "old_value": 141.8678,
+        "new_value": 143.8843
+      },
+      {
+        "frame_index": 39,
+        "elapsed_ms": 634,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField",
+        "node_name": "MultilineNotesField",
+        "property": "_active_height",
+        "old_value": 143.8843,
+        "new_value": 145.1074
+      },
+      {
+        "frame_index": 40,
+        "elapsed_ms": 651,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField",
+        "node_name": "MultilineNotesField",
+        "property": "_active_height",
+        "old_value": 145.1074,
+        "new_value": 145.7355
+      },
+      {
+        "frame_index": 41,
+        "elapsed_ms": 668,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField",
+        "node_name": "MultilineNotesField",
+        "property": "_active_height",
+        "old_value": 145.7355,
+        "new_value": 145.9669
+      },
+      {
+        "frame_index": 42,
+        "elapsed_ms": 685,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField",
+        "node_name": "MultilineNotesField",
+        "property": "_active_height",
+        "old_value": 145.9669,
+        "new_value": 146.0
+      }
+    ]
+  }
+}

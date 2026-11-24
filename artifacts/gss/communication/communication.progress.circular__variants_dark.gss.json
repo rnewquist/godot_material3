@@ -1,0 +1,2767 @@
+{
+  "metadata": {
+    "format": "godot_scene_snapshot",
+    "short_name": "GSS",
+    "version": "1.0",
+    "snapshot_name": "communication.progress.circular__variants_dark",
+    "timestamp_iso": "2026-11-24T01:45:23",
+    "timestamp_ticks_ms": 14173,
+    "engine_version": "4.7.2-stable (official)",
+    "display_server": "macOS",
+    "viewport_size": {
+      "width": 1280,
+      "height": 720
+    },
+    "total_nodes": 5,
+    "visible_nodes": 3,
+    "class_counts": {
+      "ColorRect": 1,
+      "Control": 4
+    },
+    "camera_3d": {},
+    "camera_2d": {},
+    "performance": {
+      "fps": 53.0,
+      "process_frames": 741,
+      "physics_frames": 802,
+      "memory_static_bytes": 55849992,
+      "object_count": 1633,
+      "node_count": 9
+    },
+    "is_synthetic_preview": false,
+    "files": {
+      "png": "res://artifacts/gss/communication/communication.progress.circular__variants_dark.png",
+      "json": "res://artifacts/gss/communication/communication.progress.circular__variants_dark.gss.json",
+      "html": "res://artifacts/gss/communication/communication.progress.circular__variants_dark.gss.html",
+      "global_png": "/Users/rnewquist/Documents/Godot/material3/artifacts/gss/communication/communication.progress.circular__variants_dark.png",
+      "global_json": "/Users/rnewquist/Documents/Godot/material3/artifacts/gss/communication/communication.progress.circular__variants_dark.gss.json",
+      "global_html": "/Users/rnewquist/Documents/Godot/material3/artifacts/gss/communication/communication.progress.circular__variants_dark.gss.html"
+    }
+  },
+  "hierarchy": {
+    "id": "node_0",
+    "parent_id": "",
+    "name": "CircularProgress",
+    "class": "ColorRect",
+    "category": "control",
+    "path": "/root/@Node@3/GSSStageViewport/CircularProgress",
+    "depth": 0,
+    "index_in_parent": 0,
+    "children_count": 2,
+    "groups": [],
+    "script": "",
+    "process_mode": 0,
+    "visible": true,
+    "screen_rect": {
+      "x": 0.0,
+      "y": 0.0,
+      "width": 1280.0,
+      "height": 720.0,
+      "has_bounds": true,
+      "on_screen": true
+    },
+    "script_variables": {},
+    "transforms": {
+      "position": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "global_position": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "size": {
+        "x": 1280.0,
+        "y": 720.0
+      },
+      "custom_minimum_size": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "rotation_deg": 0.0,
+      "scale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "pivot_offset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "anchors": {
+        "left": 0.0,
+        "top": 0.0,
+        "right": 0.0,
+        "bottom": 0.0
+      },
+      "offsets": {
+        "left": 0.0,
+        "top": 0.0,
+        "right": 1280.0,
+        "bottom": 720.0
+      },
+      "size_flags_horizontal": 1,
+      "size_flags_vertical": 1
+    },
+    "visibility": {
+      "visible": true,
+      "visible_in_tree": true,
+      "modulate": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0,
+        "hex": "#ffffffff"
+      },
+      "self_modulate": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0,
+        "hex": "#ffffffff"
+      },
+      "top_level": false,
+      "show_behind_parent": false,
+      "clip_children": 0,
+      "light_mask": 1,
+      "visibility_layer": 1,
+      "z_index": 0,
+      "z_as_relative": true,
+      "y_sort_enabled": false
+    },
+    "physics": {},
+    "ui_and_content": {
+      "focus_mode": 0,
+      "mouse_filter": 2,
+      "tooltip_text": "",
+      "color": {
+        "r": 0.0776,
+        "g": 0.072,
+        "b": 0.101,
+        "a": 1.0,
+        "hex": "#14121aff"
+      }
+    },
+    "signals": [
+      {
+        "signal": "child_order_changed",
+        "target": "/root/@Node@3/GSSStageViewport",
+        "method": "Viewport::canvas_parent_mark_dirty"
+      },
+      {
+        "signal": "item_rect_changed",
+        "target": "/root/@Node@3/GSSStageViewport/CircularProgress/CircularDeterminate",
+        "method": "Control::_size_changed"
+      },
+      {
+        "signal": "item_rect_changed",
+        "target": "/root/@Node@3/GSSStageViewport/CircularProgress/CircularIndeterminate",
+        "method": "Control::_size_changed"
+      }
+    ],
+    "all_properties": {
+      "accessibility_controls_nodes": [],
+      "accessibility_described_by_nodes": [],
+      "accessibility_description": "",
+      "accessibility_flow_to_nodes": [],
+      "accessibility_labeled_by_nodes": [],
+      "accessibility_live": 0,
+      "accessibility_name": "",
+      "anchor_bottom": 0.0,
+      "anchor_left": 0.0,
+      "anchor_right": 0.0,
+      "anchor_top": 0.0,
+      "anchors_preset": 0,
+      "auto_translate_mode": 0,
+      "clip_children": 0,
+      "clip_contents": false,
+      "color": {
+        "r": 0.0776,
+        "g": 0.072,
+        "b": 0.101,
+        "a": 1.0,
+        "hex": "#14121aff"
+      },
+      "custom_maximum_size": {
+        "x": -1.0,
+        "y": -1.0
+      },
+      "custom_minimum_size": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "editor_description": "",
+      "focus_behavior_recursive": 0,
+      "focus_mode": 0,
+      "focus_neighbor_bottom": "",
+      "focus_neighbor_left": "",
+      "focus_neighbor_right": "",
+      "focus_neighbor_top": "",
+      "focus_next": "",
+      "focus_previous": "",
+      "grow_horizontal": 1,
+      "grow_vertical": 1,
+      "layout_direction": 0,
+      "layout_mode": 3,
+      "light_mask": 1,
+      "localize_numeral_system": true,
+      "material": null,
+      "modulate": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0,
+        "hex": "#ffffffff"
+      },
+      "mouse_behavior_recursive": 0,
+      "mouse_default_cursor_shape": 0,
+      "mouse_filter": 2,
+      "mouse_force_pass_scroll_events": true,
+      "offset_bottom": 720.0,
+      "offset_left": 0.0,
+      "offset_right": 1280.0,
+      "offset_top": 0.0,
+      "offset_transform_enabled": false,
+      "offset_transform_pivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "offset_transform_pivot_ratio": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "offset_transform_position": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "offset_transform_position_ratio": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "offset_transform_rotation": 0.0,
+      "offset_transform_scale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "offset_transform_visual_only": true,
+      "oversampling_with_scale": 0,
+      "physics_interpolation_mode": 2,
+      "pivot_offset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "pivot_offset_ratio": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "process_mode": 0,
+      "process_physics_priority": 0,
+      "process_priority": 0,
+      "process_thread_group": 0,
+      "propagate_maximum_size": false,
+      "rotation": 0.0,
+      "scale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "self_modulate": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0,
+        "hex": "#ffffffff"
+      },
+      "shortcut_context": null,
+      "show_behind_parent": false,
+      "size": {
+        "x": 1280.0,
+        "y": 720.0
+      },
+      "size_flags_horizontal": 1,
+      "size_flags_stretch_ratio": 1.0,
+      "size_flags_vertical": 1,
+      "texture_filter": 0,
+      "texture_repeat": 0,
+      "theme": null,
+      "theme_type_variation": "",
+      "tooltip_auto_translate_mode": 0,
+      "tooltip_text": "",
+      "top_level": false,
+      "translation_context": "",
+      "unique_name_in_owner": false,
+      "use_parent_material": false,
+      "visibility_layer": 1,
+      "visible": true,
+      "y_sort_enabled": false,
+      "z_as_relative": true,
+      "z_index": 0
+    },
+    "children": [
+      {
+        "id": "node_1",
+        "parent_id": "node_0",
+        "name": "CircularDeterminate",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@3/GSSStageViewport/CircularProgress/CircularDeterminate",
+        "depth": 1,
+        "index_in_parent": 0,
+        "children_count": 1,
+        "groups": [],
+        "script": "res://addons/material3/components/feedback/m3_circular_progress.gd",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 160.0,
+          "y": 160.0,
+          "width": 48.0,
+          "height": 48.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {
+          "_anim_time": 0.0,
+          "_animated_val": 0.65,
+          "_indeterminate_phase": 0.0,
+          "_indeterminate_time": 0.0,
+          "_ripple_effect": "<Node:@Control (Control)>",
+          "_suppress_tween": false,
+          "_tween": null,
+          "_wave_phase": 0.0,
+          "disabled": false,
+          "displayed_value": 0.65,
+          "indeterminate": false,
+          "is_focused": false,
+          "is_hovered": false,
+          "is_pressed": false,
+          "show_track": true,
+          "stroke_width": 4.0,
+          "value": 0.65,
+          "wave_amplitude": 2.0,
+          "wave_cycles": 8,
+          "wave_speed": 5.0,
+          "wavy": false
+        },
+        "transforms": {
+          "position": {
+            "x": 160.0,
+            "y": 160.0
+          },
+          "global_position": {
+            "x": 160.0,
+            "y": 160.0
+          },
+          "size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "custom_minimum_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 160.0,
+            "top": 160.0,
+            "right": 208.0,
+            "bottom": 208.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 0,
+          "mouse_filter": 2,
+          "tooltip_text": ""
+        },
+        "signals": [
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@3/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@3/GSSStageViewport/CircularProgress/CircularDeterminate/@Control@9",
+            "method": "Control::_size_changed"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "clip_children": 0,
+          "clip_contents": false,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "disabled": false,
+          "displayed_value": 0.65,
+          "editor_description": "",
+          "focus_behavior_recursive": 0,
+          "focus_mode": 0,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "indeterminate": false,
+          "is_focused": false,
+          "is_hovered": false,
+          "is_pressed": false,
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 0,
+          "mouse_filter": 2,
+          "mouse_force_pass_scroll_events": true,
+          "offset_bottom": 208.0,
+          "offset_left": 160.0,
+          "offset_right": 208.0,
+          "offset_top": 160.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "position": {
+            "x": 160.0,
+            "y": 160.0
+          },
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "show_track": true,
+          "size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "stroke_width": 4.0,
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "value": 0.65,
+          "visibility_layer": 1,
+          "visible": true,
+          "wave_amplitude": 2.0,
+          "wave_cycles": 8,
+          "wave_speed": 5.0,
+          "wavy": false,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        },
+        "children": [
+          {
+            "id": "node_2",
+            "parent_id": "node_1",
+            "name": "@Control",
+            "class": "Control",
+            "category": "control",
+            "path": "/root/@Node@3/GSSStageViewport/CircularProgress/CircularDeterminate/@Control@9",
+            "depth": 2,
+            "index_in_parent": 0,
+            "children_count": 0,
+            "groups": [],
+            "script": "res://addons/material3/components/base/m3_ripple.gd",
+            "process_mode": 0,
+            "visible": false,
+            "screen_rect": {
+              "x": 160.0,
+              "y": 160.0,
+              "width": 48.0,
+              "height": 48.0,
+              "has_bounds": true,
+              "on_screen": true
+            },
+            "script_variables": {
+              "_active_waves": [],
+              "_is_dragged": false,
+              "_is_focused": false,
+              "_is_hovered": false,
+              "_is_pressed": false,
+              "_state_layer_alpha": 0.0,
+              "_state_tween": null,
+              "_wave_alpha": 0.0,
+              "_wave_count": 0,
+              "_wave_radius": 0.0,
+              "_waves": [],
+              "bounded": true,
+              "corner_radius": 0.0,
+              "dragged_opacity": 0.16,
+              "focus_opacity": 0.1,
+              "hover_opacity": 0.08,
+              "press_opacity": 0.1,
+              "ripple_color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              }
+            },
+            "transforms": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "global_position": {
+                "x": 160.0,
+                "y": 160.0
+              },
+              "size": {
+                "x": 48.0,
+                "y": 48.0
+              },
+              "custom_minimum_size": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "rotation_deg": 0.0,
+              "scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "pivot_offset": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "anchors": {
+                "left": 0.0,
+                "top": 0.0,
+                "right": 1.0,
+                "bottom": 1.0
+              },
+              "offsets": {
+                "left": 0.0,
+                "top": 0.0,
+                "right": 0.0,
+                "bottom": 0.0
+              },
+              "size_flags_horizontal": 1,
+              "size_flags_vertical": 1
+            },
+            "visibility": {
+              "visible": false,
+              "visible_in_tree": false,
+              "modulate": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "self_modulate": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "top_level": false,
+              "show_behind_parent": false,
+              "clip_children": 0,
+              "light_mask": 1,
+              "visibility_layer": 1,
+              "z_index": 0,
+              "z_as_relative": true,
+              "y_sort_enabled": false
+            },
+            "physics": {},
+            "ui_and_content": {
+              "focus_mode": 0,
+              "mouse_filter": 2,
+              "tooltip_text": ""
+            },
+            "signals": [],
+            "all_properties": {
+              "accessibility_controls_nodes": [],
+              "accessibility_described_by_nodes": [],
+              "accessibility_description": "",
+              "accessibility_flow_to_nodes": [],
+              "accessibility_labeled_by_nodes": [],
+              "accessibility_live": 0,
+              "accessibility_name": "",
+              "anchor_bottom": 1.0,
+              "anchor_left": 0.0,
+              "anchor_right": 1.0,
+              "anchor_top": 0.0,
+              "anchors_preset": 0,
+              "auto_translate_mode": 0,
+              "bounded": true,
+              "clip_children": 0,
+              "clip_contents": true,
+              "corner_radius": 0.0,
+              "custom_maximum_size": {
+                "x": -1.0,
+                "y": -1.0
+              },
+              "custom_minimum_size": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "dragged_opacity": 0.16,
+              "editor_description": "",
+              "focus_behavior_recursive": 0,
+              "focus_mode": 0,
+              "focus_neighbor_bottom": "",
+              "focus_neighbor_left": "",
+              "focus_neighbor_right": "",
+              "focus_neighbor_top": "",
+              "focus_next": "",
+              "focus_opacity": 0.1,
+              "focus_previous": "",
+              "grow_horizontal": 1,
+              "grow_vertical": 1,
+              "hover_opacity": 0.08,
+              "layout_direction": 0,
+              "layout_mode": 0,
+              "light_mask": 1,
+              "localize_numeral_system": true,
+              "material": null,
+              "modulate": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "mouse_behavior_recursive": 0,
+              "mouse_default_cursor_shape": 0,
+              "mouse_filter": 2,
+              "mouse_force_pass_scroll_events": true,
+              "offset_bottom": 0.0,
+              "offset_left": 0.0,
+              "offset_right": 0.0,
+              "offset_top": 0.0,
+              "offset_transform_enabled": false,
+              "offset_transform_pivot": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "offset_transform_pivot_ratio": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "offset_transform_position": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "offset_transform_position_ratio": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "offset_transform_rotation": 0.0,
+              "offset_transform_scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "offset_transform_visual_only": true,
+              "oversampling_with_scale": 0,
+              "physics_interpolation_mode": 2,
+              "pivot_offset": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "pivot_offset_ratio": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "position": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "press_opacity": 0.1,
+              "process_mode": 0,
+              "process_physics_priority": 0,
+              "process_priority": 0,
+              "process_thread_group": 0,
+              "propagate_maximum_size": false,
+              "ripple_color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "rotation": 0.0,
+              "scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "self_modulate": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "shortcut_context": null,
+              "show_behind_parent": false,
+              "size": {
+                "x": 48.0,
+                "y": 48.0
+              },
+              "size_flags_horizontal": 1,
+              "size_flags_stretch_ratio": 1.0,
+              "size_flags_vertical": 1,
+              "texture_filter": 0,
+              "texture_repeat": 0,
+              "theme": null,
+              "theme_type_variation": "",
+              "tooltip_auto_translate_mode": 0,
+              "tooltip_text": "",
+              "top_level": false,
+              "translation_context": "",
+              "unique_name_in_owner": false,
+              "use_parent_material": false,
+              "visibility_layer": 1,
+              "visible": false,
+              "y_sort_enabled": false,
+              "z_as_relative": true,
+              "z_index": 0
+            },
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "node_3",
+        "parent_id": "node_0",
+        "name": "CircularIndeterminate",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@3/GSSStageViewport/CircularProgress/CircularIndeterminate",
+        "depth": 1,
+        "index_in_parent": 1,
+        "children_count": 1,
+        "groups": [],
+        "script": "res://addons/material3/components/feedback/m3_circular_progress.gd",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 260.0,
+          "y": 160.0,
+          "width": 48.0,
+          "height": 48.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {
+          "_anim_time": 0.1278,
+          "_animated_val": 0.0,
+          "_indeterminate_phase": 0.0508,
+          "_indeterminate_time": 0.1278,
+          "_ripple_effect": "<Node:@Control (Control)>",
+          "_suppress_tween": false,
+          "_tween": null,
+          "_wave_phase": 0.0,
+          "disabled": false,
+          "displayed_value": 0.0,
+          "indeterminate": true,
+          "is_focused": false,
+          "is_hovered": false,
+          "is_pressed": false,
+          "show_track": true,
+          "stroke_width": 4.0,
+          "value": 0.0,
+          "wave_amplitude": 2.0,
+          "wave_cycles": 8,
+          "wave_speed": 5.0,
+          "wavy": false
+        },
+        "transforms": {
+          "position": {
+            "x": 260.0,
+            "y": 160.0
+          },
+          "global_position": {
+            "x": 260.0,
+            "y": 160.0
+          },
+          "size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "custom_minimum_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 260.0,
+            "top": 160.0,
+            "right": 308.0,
+            "bottom": 208.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 0,
+          "mouse_filter": 2,
+          "tooltip_text": ""
+        },
+        "signals": [
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@3/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@3/GSSStageViewport/CircularProgress/CircularIndeterminate/@Control@10",
+            "method": "Control::_size_changed"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "clip_children": 0,
+          "clip_contents": false,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "disabled": false,
+          "displayed_value": 0.0,
+          "editor_description": "",
+          "focus_behavior_recursive": 0,
+          "focus_mode": 0,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "indeterminate": true,
+          "is_focused": false,
+          "is_hovered": false,
+          "is_pressed": false,
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 0,
+          "mouse_filter": 2,
+          "mouse_force_pass_scroll_events": true,
+          "offset_bottom": 208.0,
+          "offset_left": 260.0,
+          "offset_right": 308.0,
+          "offset_top": 160.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "position": {
+            "x": 260.0,
+            "y": 160.0
+          },
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "show_track": true,
+          "size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "stroke_width": 4.0,
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "value": 0.0,
+          "visibility_layer": 1,
+          "visible": true,
+          "wave_amplitude": 2.0,
+          "wave_cycles": 8,
+          "wave_speed": 5.0,
+          "wavy": false,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        },
+        "children": [
+          {
+            "id": "node_4",
+            "parent_id": "node_3",
+            "name": "@Control",
+            "class": "Control",
+            "category": "control",
+            "path": "/root/@Node@3/GSSStageViewport/CircularProgress/CircularIndeterminate/@Control@10",
+            "depth": 2,
+            "index_in_parent": 0,
+            "children_count": 0,
+            "groups": [],
+            "script": "res://addons/material3/components/base/m3_ripple.gd",
+            "process_mode": 0,
+            "visible": false,
+            "screen_rect": {
+              "x": 260.0,
+              "y": 160.0,
+              "width": 48.0,
+              "height": 48.0,
+              "has_bounds": true,
+              "on_screen": true
+            },
+            "script_variables": {
+              "_active_waves": [],
+              "_is_dragged": false,
+              "_is_focused": false,
+              "_is_hovered": false,
+              "_is_pressed": false,
+              "_state_layer_alpha": 0.0,
+              "_state_tween": null,
+              "_wave_alpha": 0.0,
+              "_wave_count": 0,
+              "_wave_radius": 0.0,
+              "_waves": [],
+              "bounded": true,
+              "corner_radius": 0.0,
+              "dragged_opacity": 0.16,
+              "focus_opacity": 0.1,
+              "hover_opacity": 0.08,
+              "press_opacity": 0.1,
+              "ripple_color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              }
+            },
+            "transforms": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "global_position": {
+                "x": 260.0,
+                "y": 160.0
+              },
+              "size": {
+                "x": 48.0,
+                "y": 48.0
+              },
+              "custom_minimum_size": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "rotation_deg": 0.0,
+              "scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "pivot_offset": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "anchors": {
+                "left": 0.0,
+                "top": 0.0,
+                "right": 1.0,
+                "bottom": 1.0
+              },
+              "offsets": {
+                "left": 0.0,
+                "top": 0.0,
+                "right": 0.0,
+                "bottom": 0.0
+              },
+              "size_flags_horizontal": 1,
+              "size_flags_vertical": 1
+            },
+            "visibility": {
+              "visible": false,
+              "visible_in_tree": false,
+              "modulate": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "self_modulate": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "top_level": false,
+              "show_behind_parent": false,
+              "clip_children": 0,
+              "light_mask": 1,
+              "visibility_layer": 1,
+              "z_index": 0,
+              "z_as_relative": true,
+              "y_sort_enabled": false
+            },
+            "physics": {},
+            "ui_and_content": {
+              "focus_mode": 0,
+              "mouse_filter": 2,
+              "tooltip_text": ""
+            },
+            "signals": [],
+            "all_properties": {
+              "accessibility_controls_nodes": [],
+              "accessibility_described_by_nodes": [],
+              "accessibility_description": "",
+              "accessibility_flow_to_nodes": [],
+              "accessibility_labeled_by_nodes": [],
+              "accessibility_live": 0,
+              "accessibility_name": "",
+              "anchor_bottom": 1.0,
+              "anchor_left": 0.0,
+              "anchor_right": 1.0,
+              "anchor_top": 0.0,
+              "anchors_preset": 0,
+              "auto_translate_mode": 0,
+              "bounded": true,
+              "clip_children": 0,
+              "clip_contents": true,
+              "corner_radius": 0.0,
+              "custom_maximum_size": {
+                "x": -1.0,
+                "y": -1.0
+              },
+              "custom_minimum_size": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "dragged_opacity": 0.16,
+              "editor_description": "",
+              "focus_behavior_recursive": 0,
+              "focus_mode": 0,
+              "focus_neighbor_bottom": "",
+              "focus_neighbor_left": "",
+              "focus_neighbor_right": "",
+              "focus_neighbor_top": "",
+              "focus_next": "",
+              "focus_opacity": 0.1,
+              "focus_previous": "",
+              "grow_horizontal": 1,
+              "grow_vertical": 1,
+              "hover_opacity": 0.08,
+              "layout_direction": 0,
+              "layout_mode": 0,
+              "light_mask": 1,
+              "localize_numeral_system": true,
+              "material": null,
+              "modulate": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "mouse_behavior_recursive": 0,
+              "mouse_default_cursor_shape": 0,
+              "mouse_filter": 2,
+              "mouse_force_pass_scroll_events": true,
+              "offset_bottom": 0.0,
+              "offset_left": 0.0,
+              "offset_right": 0.0,
+              "offset_top": 0.0,
+              "offset_transform_enabled": false,
+              "offset_transform_pivot": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "offset_transform_pivot_ratio": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "offset_transform_position": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "offset_transform_position_ratio": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "offset_transform_rotation": 0.0,
+              "offset_transform_scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "offset_transform_visual_only": true,
+              "oversampling_with_scale": 0,
+              "physics_interpolation_mode": 2,
+              "pivot_offset": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "pivot_offset_ratio": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "position": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "press_opacity": 0.1,
+              "process_mode": 0,
+              "process_physics_priority": 0,
+              "process_priority": 0,
+              "process_thread_group": 0,
+              "propagate_maximum_size": false,
+              "ripple_color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "rotation": 0.0,
+              "scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "self_modulate": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "shortcut_context": null,
+              "show_behind_parent": false,
+              "size": {
+                "x": 48.0,
+                "y": 48.0
+              },
+              "size_flags_horizontal": 1,
+              "size_flags_stretch_ratio": 1.0,
+              "size_flags_vertical": 1,
+              "texture_filter": 0,
+              "texture_repeat": 0,
+              "theme": null,
+              "theme_type_variation": "",
+              "tooltip_auto_translate_mode": 0,
+              "tooltip_text": "",
+              "top_level": false,
+              "translation_context": "",
+              "unique_name_in_owner": false,
+              "use_parent_material": false,
+              "visibility_layer": 1,
+              "visible": false,
+              "y_sort_enabled": false,
+              "z_as_relative": true,
+              "z_index": 0
+            },
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "flat_nodes": [
+    {
+      "id": "node_0",
+      "parent_id": "",
+      "name": "CircularProgress",
+      "class": "ColorRect",
+      "category": "control",
+      "path": "/root/@Node@3/GSSStageViewport/CircularProgress",
+      "depth": 0,
+      "index_in_parent": 0,
+      "children_count": 2,
+      "groups": [],
+      "script": "",
+      "process_mode": 0,
+      "visible": true,
+      "screen_rect": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 1280.0,
+        "height": 720.0,
+        "has_bounds": true,
+        "on_screen": true
+      },
+      "script_variables": {},
+      "transforms": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "global_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "size": {
+          "x": 1280.0,
+          "y": 720.0
+        },
+        "custom_minimum_size": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "rotation_deg": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "anchors": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 0.0,
+          "bottom": 0.0
+        },
+        "offsets": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 1280.0,
+          "bottom": 720.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_vertical": 1
+      },
+      "visibility": {
+        "visible": true,
+        "visible_in_tree": true,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "top_level": false,
+        "show_behind_parent": false,
+        "clip_children": 0,
+        "light_mask": 1,
+        "visibility_layer": 1,
+        "z_index": 0,
+        "z_as_relative": true,
+        "y_sort_enabled": false
+      },
+      "physics": {},
+      "ui_and_content": {
+        "focus_mode": 0,
+        "mouse_filter": 2,
+        "tooltip_text": "",
+        "color": {
+          "r": 0.0776,
+          "g": 0.072,
+          "b": 0.101,
+          "a": 1.0,
+          "hex": "#14121aff"
+        }
+      },
+      "signals": [
+        {
+          "signal": "child_order_changed",
+          "target": "/root/@Node@3/GSSStageViewport",
+          "method": "Viewport::canvas_parent_mark_dirty"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@3/GSSStageViewport/CircularProgress/CircularDeterminate",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@3/GSSStageViewport/CircularProgress/CircularIndeterminate",
+          "method": "Control::_size_changed"
+        }
+      ],
+      "all_properties": {
+        "accessibility_controls_nodes": [],
+        "accessibility_described_by_nodes": [],
+        "accessibility_description": "",
+        "accessibility_flow_to_nodes": [],
+        "accessibility_labeled_by_nodes": [],
+        "accessibility_live": 0,
+        "accessibility_name": "",
+        "anchor_bottom": 0.0,
+        "anchor_left": 0.0,
+        "anchor_right": 0.0,
+        "anchor_top": 0.0,
+        "anchors_preset": 0,
+        "auto_translate_mode": 0,
+        "clip_children": 0,
+        "clip_contents": false,
+        "color": {
+          "r": 0.0776,
+          "g": 0.072,
+          "b": 0.101,
+          "a": 1.0,
+          "hex": "#14121aff"
+        },
+        "custom_maximum_size": {
+          "x": -1.0,
+          "y": -1.0
+        },
+        "custom_minimum_size": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "editor_description": "",
+        "focus_behavior_recursive": 0,
+        "focus_mode": 0,
+        "focus_neighbor_bottom": "",
+        "focus_neighbor_left": "",
+        "focus_neighbor_right": "",
+        "focus_neighbor_top": "",
+        "focus_next": "",
+        "focus_previous": "",
+        "grow_horizontal": 1,
+        "grow_vertical": 1,
+        "layout_direction": 0,
+        "layout_mode": 3,
+        "light_mask": 1,
+        "localize_numeral_system": true,
+        "material": null,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "mouse_behavior_recursive": 0,
+        "mouse_default_cursor_shape": 0,
+        "mouse_filter": 2,
+        "mouse_force_pass_scroll_events": true,
+        "offset_bottom": 720.0,
+        "offset_left": 0.0,
+        "offset_right": 1280.0,
+        "offset_top": 0.0,
+        "offset_transform_enabled": false,
+        "offset_transform_pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_pivot_ratio": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "offset_transform_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_position_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_rotation": 0.0,
+        "offset_transform_scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "offset_transform_visual_only": true,
+        "oversampling_with_scale": 0,
+        "physics_interpolation_mode": 2,
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "pivot_offset_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "process_mode": 0,
+        "process_physics_priority": 0,
+        "process_priority": 0,
+        "process_thread_group": 0,
+        "propagate_maximum_size": false,
+        "rotation": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "shortcut_context": null,
+        "show_behind_parent": false,
+        "size": {
+          "x": 1280.0,
+          "y": 720.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_stretch_ratio": 1.0,
+        "size_flags_vertical": 1,
+        "texture_filter": 0,
+        "texture_repeat": 0,
+        "theme": null,
+        "theme_type_variation": "",
+        "tooltip_auto_translate_mode": 0,
+        "tooltip_text": "",
+        "top_level": false,
+        "translation_context": "",
+        "unique_name_in_owner": false,
+        "use_parent_material": false,
+        "visibility_layer": 1,
+        "visible": true,
+        "y_sort_enabled": false,
+        "z_as_relative": true,
+        "z_index": 0
+      }
+    },
+    {
+      "id": "node_1",
+      "parent_id": "node_0",
+      "name": "CircularDeterminate",
+      "class": "Control",
+      "category": "control",
+      "path": "/root/@Node@3/GSSStageViewport/CircularProgress/CircularDeterminate",
+      "depth": 1,
+      "index_in_parent": 0,
+      "children_count": 1,
+      "groups": [],
+      "script": "res://addons/material3/components/feedback/m3_circular_progress.gd",
+      "process_mode": 0,
+      "visible": true,
+      "screen_rect": {
+        "x": 160.0,
+        "y": 160.0,
+        "width": 48.0,
+        "height": 48.0,
+        "has_bounds": true,
+        "on_screen": true
+      },
+      "script_variables": {
+        "_anim_time": 0.0,
+        "_animated_val": 0.65,
+        "_indeterminate_phase": 0.0,
+        "_indeterminate_time": 0.0,
+        "_ripple_effect": "<Node:@Control (Control)>",
+        "_suppress_tween": false,
+        "_tween": null,
+        "_wave_phase": 0.0,
+        "disabled": false,
+        "displayed_value": 0.65,
+        "indeterminate": false,
+        "is_focused": false,
+        "is_hovered": false,
+        "is_pressed": false,
+        "show_track": true,
+        "stroke_width": 4.0,
+        "value": 0.65,
+        "wave_amplitude": 2.0,
+        "wave_cycles": 8,
+        "wave_speed": 5.0,
+        "wavy": false
+      },
+      "transforms": {
+        "position": {
+          "x": 160.0,
+          "y": 160.0
+        },
+        "global_position": {
+          "x": 160.0,
+          "y": 160.0
+        },
+        "size": {
+          "x": 48.0,
+          "y": 48.0
+        },
+        "custom_minimum_size": {
+          "x": 48.0,
+          "y": 48.0
+        },
+        "rotation_deg": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "anchors": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 0.0,
+          "bottom": 0.0
+        },
+        "offsets": {
+          "left": 160.0,
+          "top": 160.0,
+          "right": 208.0,
+          "bottom": 208.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_vertical": 1
+      },
+      "visibility": {
+        "visible": true,
+        "visible_in_tree": true,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "top_level": false,
+        "show_behind_parent": false,
+        "clip_children": 0,
+        "light_mask": 1,
+        "visibility_layer": 1,
+        "z_index": 0,
+        "z_as_relative": true,
+        "y_sort_enabled": false
+      },
+      "physics": {},
+      "ui_and_content": {
+        "focus_mode": 0,
+        "mouse_filter": 2,
+        "tooltip_text": ""
+      },
+      "signals": [
+        {
+          "signal": "child_order_changed",
+          "target": "/root/@Node@3/GSSStageViewport",
+          "method": "Viewport::canvas_parent_mark_dirty"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@3/GSSStageViewport/CircularProgress/CircularDeterminate/@Control@9",
+          "method": "Control::_size_changed"
+        }
+      ],
+      "all_properties": {
+        "accessibility_controls_nodes": [],
+        "accessibility_described_by_nodes": [],
+        "accessibility_description": "",
+        "accessibility_flow_to_nodes": [],
+        "accessibility_labeled_by_nodes": [],
+        "accessibility_live": 0,
+        "accessibility_name": "",
+        "anchor_bottom": 0.0,
+        "anchor_left": 0.0,
+        "anchor_right": 0.0,
+        "anchor_top": 0.0,
+        "anchors_preset": 0,
+        "auto_translate_mode": 0,
+        "clip_children": 0,
+        "clip_contents": false,
+        "custom_maximum_size": {
+          "x": -1.0,
+          "y": -1.0
+        },
+        "custom_minimum_size": {
+          "x": 48.0,
+          "y": 48.0
+        },
+        "disabled": false,
+        "displayed_value": 0.65,
+        "editor_description": "",
+        "focus_behavior_recursive": 0,
+        "focus_mode": 0,
+        "focus_neighbor_bottom": "",
+        "focus_neighbor_left": "",
+        "focus_neighbor_right": "",
+        "focus_neighbor_top": "",
+        "focus_next": "",
+        "focus_previous": "",
+        "grow_horizontal": 1,
+        "grow_vertical": 1,
+        "indeterminate": false,
+        "is_focused": false,
+        "is_hovered": false,
+        "is_pressed": false,
+        "layout_direction": 0,
+        "layout_mode": 0,
+        "light_mask": 1,
+        "localize_numeral_system": true,
+        "material": null,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "mouse_behavior_recursive": 0,
+        "mouse_default_cursor_shape": 0,
+        "mouse_filter": 2,
+        "mouse_force_pass_scroll_events": true,
+        "offset_bottom": 208.0,
+        "offset_left": 160.0,
+        "offset_right": 208.0,
+        "offset_top": 160.0,
+        "offset_transform_enabled": false,
+        "offset_transform_pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_pivot_ratio": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "offset_transform_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_position_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_rotation": 0.0,
+        "offset_transform_scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "offset_transform_visual_only": true,
+        "oversampling_with_scale": 0,
+        "physics_interpolation_mode": 2,
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "pivot_offset_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "position": {
+          "x": 160.0,
+          "y": 160.0
+        },
+        "process_mode": 0,
+        "process_physics_priority": 0,
+        "process_priority": 0,
+        "process_thread_group": 0,
+        "propagate_maximum_size": false,
+        "rotation": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "shortcut_context": null,
+        "show_behind_parent": false,
+        "show_track": true,
+        "size": {
+          "x": 48.0,
+          "y": 48.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_stretch_ratio": 1.0,
+        "size_flags_vertical": 1,
+        "stroke_width": 4.0,
+        "texture_filter": 0,
+        "texture_repeat": 0,
+        "theme": null,
+        "theme_type_variation": "",
+        "tooltip_auto_translate_mode": 0,
+        "tooltip_text": "",
+        "top_level": false,
+        "translation_context": "",
+        "unique_name_in_owner": false,
+        "use_parent_material": false,
+        "value": 0.65,
+        "visibility_layer": 1,
+        "visible": true,
+        "wave_amplitude": 2.0,
+        "wave_cycles": 8,
+        "wave_speed": 5.0,
+        "wavy": false,
+        "y_sort_enabled": false,
+        "z_as_relative": true,
+        "z_index": 0
+      }
+    },
+    {
+      "id": "node_2",
+      "parent_id": "node_1",
+      "name": "@Control",
+      "class": "Control",
+      "category": "control",
+      "path": "/root/@Node@3/GSSStageViewport/CircularProgress/CircularDeterminate/@Control@9",
+      "depth": 2,
+      "index_in_parent": 0,
+      "children_count": 0,
+      "groups": [],
+      "script": "res://addons/material3/components/base/m3_ripple.gd",
+      "process_mode": 0,
+      "visible": false,
+      "screen_rect": {
+        "x": 160.0,
+        "y": 160.0,
+        "width": 48.0,
+        "height": 48.0,
+        "has_bounds": true,
+        "on_screen": true
+      },
+      "script_variables": {
+        "_active_waves": [],
+        "_is_dragged": false,
+        "_is_focused": false,
+        "_is_hovered": false,
+        "_is_pressed": false,
+        "_state_layer_alpha": 0.0,
+        "_state_tween": null,
+        "_wave_alpha": 0.0,
+        "_wave_count": 0,
+        "_wave_radius": 0.0,
+        "_waves": [],
+        "bounded": true,
+        "corner_radius": 0.0,
+        "dragged_opacity": 0.16,
+        "focus_opacity": 0.1,
+        "hover_opacity": 0.08,
+        "press_opacity": 0.1,
+        "ripple_color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        }
+      },
+      "transforms": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "global_position": {
+          "x": 160.0,
+          "y": 160.0
+        },
+        "size": {
+          "x": 48.0,
+          "y": 48.0
+        },
+        "custom_minimum_size": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "rotation_deg": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "anchors": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 1.0,
+          "bottom": 1.0
+        },
+        "offsets": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 0.0,
+          "bottom": 0.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_vertical": 1
+      },
+      "visibility": {
+        "visible": false,
+        "visible_in_tree": false,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "top_level": false,
+        "show_behind_parent": false,
+        "clip_children": 0,
+        "light_mask": 1,
+        "visibility_layer": 1,
+        "z_index": 0,
+        "z_as_relative": true,
+        "y_sort_enabled": false
+      },
+      "physics": {},
+      "ui_and_content": {
+        "focus_mode": 0,
+        "mouse_filter": 2,
+        "tooltip_text": ""
+      },
+      "signals": [],
+      "all_properties": {
+        "accessibility_controls_nodes": [],
+        "accessibility_described_by_nodes": [],
+        "accessibility_description": "",
+        "accessibility_flow_to_nodes": [],
+        "accessibility_labeled_by_nodes": [],
+        "accessibility_live": 0,
+        "accessibility_name": "",
+        "anchor_bottom": 1.0,
+        "anchor_left": 0.0,
+        "anchor_right": 1.0,
+        "anchor_top": 0.0,
+        "anchors_preset": 0,
+        "auto_translate_mode": 0,
+        "bounded": true,
+        "clip_children": 0,
+        "clip_contents": true,
+        "corner_radius": 0.0,
+        "custom_maximum_size": {
+          "x": -1.0,
+          "y": -1.0
+        },
+        "custom_minimum_size": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "dragged_opacity": 0.16,
+        "editor_description": "",
+        "focus_behavior_recursive": 0,
+        "focus_mode": 0,
+        "focus_neighbor_bottom": "",
+        "focus_neighbor_left": "",
+        "focus_neighbor_right": "",
+        "focus_neighbor_top": "",
+        "focus_next": "",
+        "focus_opacity": 0.1,
+        "focus_previous": "",
+        "grow_horizontal": 1,
+        "grow_vertical": 1,
+        "hover_opacity": 0.08,
+        "layout_direction": 0,
+        "layout_mode": 0,
+        "light_mask": 1,
+        "localize_numeral_system": true,
+        "material": null,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "mouse_behavior_recursive": 0,
+        "mouse_default_cursor_shape": 0,
+        "mouse_filter": 2,
+        "mouse_force_pass_scroll_events": true,
+        "offset_bottom": 0.0,
+        "offset_left": 0.0,
+        "offset_right": 0.0,
+        "offset_top": 0.0,
+        "offset_transform_enabled": false,
+        "offset_transform_pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_pivot_ratio": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "offset_transform_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_position_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_rotation": 0.0,
+        "offset_transform_scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "offset_transform_visual_only": true,
+        "oversampling_with_scale": 0,
+        "physics_interpolation_mode": 2,
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "pivot_offset_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "press_opacity": 0.1,
+        "process_mode": 0,
+        "process_physics_priority": 0,
+        "process_priority": 0,
+        "process_thread_group": 0,
+        "propagate_maximum_size": false,
+        "ripple_color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "rotation": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "shortcut_context": null,
+        "show_behind_parent": false,
+        "size": {
+          "x": 48.0,
+          "y": 48.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_stretch_ratio": 1.0,
+        "size_flags_vertical": 1,
+        "texture_filter": 0,
+        "texture_repeat": 0,
+        "theme": null,
+        "theme_type_variation": "",
+        "tooltip_auto_translate_mode": 0,
+        "tooltip_text": "",
+        "top_level": false,
+        "translation_context": "",
+        "unique_name_in_owner": false,
+        "use_parent_material": false,
+        "visibility_layer": 1,
+        "visible": false,
+        "y_sort_enabled": false,
+        "z_as_relative": true,
+        "z_index": 0
+      }
+    },
+    {
+      "id": "node_3",
+      "parent_id": "node_0",
+      "name": "CircularIndeterminate",
+      "class": "Control",
+      "category": "control",
+      "path": "/root/@Node@3/GSSStageViewport/CircularProgress/CircularIndeterminate",
+      "depth": 1,
+      "index_in_parent": 1,
+      "children_count": 1,
+      "groups": [],
+      "script": "res://addons/material3/components/feedback/m3_circular_progress.gd",
+      "process_mode": 0,
+      "visible": true,
+      "screen_rect": {
+        "x": 260.0,
+        "y": 160.0,
+        "width": 48.0,
+        "height": 48.0,
+        "has_bounds": true,
+        "on_screen": true
+      },
+      "script_variables": {
+        "_anim_time": 0.1278,
+        "_animated_val": 0.0,
+        "_indeterminate_phase": 0.0508,
+        "_indeterminate_time": 0.1278,
+        "_ripple_effect": "<Node:@Control (Control)>",
+        "_suppress_tween": false,
+        "_tween": null,
+        "_wave_phase": 0.0,
+        "disabled": false,
+        "displayed_value": 0.0,
+        "indeterminate": true,
+        "is_focused": false,
+        "is_hovered": false,
+        "is_pressed": false,
+        "show_track": true,
+        "stroke_width": 4.0,
+        "value": 0.0,
+        "wave_amplitude": 2.0,
+        "wave_cycles": 8,
+        "wave_speed": 5.0,
+        "wavy": false
+      },
+      "transforms": {
+        "position": {
+          "x": 260.0,
+          "y": 160.0
+        },
+        "global_position": {
+          "x": 260.0,
+          "y": 160.0
+        },
+        "size": {
+          "x": 48.0,
+          "y": 48.0
+        },
+        "custom_minimum_size": {
+          "x": 48.0,
+          "y": 48.0
+        },
+        "rotation_deg": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "anchors": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 0.0,
+          "bottom": 0.0
+        },
+        "offsets": {
+          "left": 260.0,
+          "top": 160.0,
+          "right": 308.0,
+          "bottom": 208.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_vertical": 1
+      },
+      "visibility": {
+        "visible": true,
+        "visible_in_tree": true,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "top_level": false,
+        "show_behind_parent": false,
+        "clip_children": 0,
+        "light_mask": 1,
+        "visibility_layer": 1,
+        "z_index": 0,
+        "z_as_relative": true,
+        "y_sort_enabled": false
+      },
+      "physics": {},
+      "ui_and_content": {
+        "focus_mode": 0,
+        "mouse_filter": 2,
+        "tooltip_text": ""
+      },
+      "signals": [
+        {
+          "signal": "child_order_changed",
+          "target": "/root/@Node@3/GSSStageViewport",
+          "method": "Viewport::canvas_parent_mark_dirty"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@3/GSSStageViewport/CircularProgress/CircularIndeterminate/@Control@10",
+          "method": "Control::_size_changed"
+        }
+      ],
+      "all_properties": {
+        "accessibility_controls_nodes": [],
+        "accessibility_described_by_nodes": [],
+        "accessibility_description": "",
+        "accessibility_flow_to_nodes": [],
+        "accessibility_labeled_by_nodes": [],
+        "accessibility_live": 0,
+        "accessibility_name": "",
+        "anchor_bottom": 0.0,
+        "anchor_left": 0.0,
+        "anchor_right": 0.0,
+        "anchor_top": 0.0,
+        "anchors_preset": 0,
+        "auto_translate_mode": 0,
+        "clip_children": 0,
+        "clip_contents": false,
+        "custom_maximum_size": {
+          "x": -1.0,
+          "y": -1.0
+        },
+        "custom_minimum_size": {
+          "x": 48.0,
+          "y": 48.0
+        },
+        "disabled": false,
+        "displayed_value": 0.0,
+        "editor_description": "",
+        "focus_behavior_recursive": 0,
+        "focus_mode": 0,
+        "focus_neighbor_bottom": "",
+        "focus_neighbor_left": "",
+        "focus_neighbor_right": "",
+        "focus_neighbor_top": "",
+        "focus_next": "",
+        "focus_previous": "",
+        "grow_horizontal": 1,
+        "grow_vertical": 1,
+        "indeterminate": true,
+        "is_focused": false,
+        "is_hovered": false,
+        "is_pressed": false,
+        "layout_direction": 0,
+        "layout_mode": 0,
+        "light_mask": 1,
+        "localize_numeral_system": true,
+        "material": null,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "mouse_behavior_recursive": 0,
+        "mouse_default_cursor_shape": 0,
+        "mouse_filter": 2,
+        "mouse_force_pass_scroll_events": true,
+        "offset_bottom": 208.0,
+        "offset_left": 260.0,
+        "offset_right": 308.0,
+        "offset_top": 160.0,
+        "offset_transform_enabled": false,
+        "offset_transform_pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_pivot_ratio": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "offset_transform_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_position_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_rotation": 0.0,
+        "offset_transform_scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "offset_transform_visual_only": true,
+        "oversampling_with_scale": 0,
+        "physics_interpolation_mode": 2,
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "pivot_offset_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "position": {
+          "x": 260.0,
+          "y": 160.0
+        },
+        "process_mode": 0,
+        "process_physics_priority": 0,
+        "process_priority": 0,
+        "process_thread_group": 0,
+        "propagate_maximum_size": false,
+        "rotation": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "shortcut_context": null,
+        "show_behind_parent": false,
+        "show_track": true,
+        "size": {
+          "x": 48.0,
+          "y": 48.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_stretch_ratio": 1.0,
+        "size_flags_vertical": 1,
+        "stroke_width": 4.0,
+        "texture_filter": 0,
+        "texture_repeat": 0,
+        "theme": null,
+        "theme_type_variation": "",
+        "tooltip_auto_translate_mode": 0,
+        "tooltip_text": "",
+        "top_level": false,
+        "translation_context": "",
+        "unique_name_in_owner": false,
+        "use_parent_material": false,
+        "value": 0.0,
+        "visibility_layer": 1,
+        "visible": true,
+        "wave_amplitude": 2.0,
+        "wave_cycles": 8,
+        "wave_speed": 5.0,
+        "wavy": false,
+        "y_sort_enabled": false,
+        "z_as_relative": true,
+        "z_index": 0
+      }
+    },
+    {
+      "id": "node_4",
+      "parent_id": "node_3",
+      "name": "@Control",
+      "class": "Control",
+      "category": "control",
+      "path": "/root/@Node@3/GSSStageViewport/CircularProgress/CircularIndeterminate/@Control@10",
+      "depth": 2,
+      "index_in_parent": 0,
+      "children_count": 0,
+      "groups": [],
+      "script": "res://addons/material3/components/base/m3_ripple.gd",
+      "process_mode": 0,
+      "visible": false,
+      "screen_rect": {
+        "x": 260.0,
+        "y": 160.0,
+        "width": 48.0,
+        "height": 48.0,
+        "has_bounds": true,
+        "on_screen": true
+      },
+      "script_variables": {
+        "_active_waves": [],
+        "_is_dragged": false,
+        "_is_focused": false,
+        "_is_hovered": false,
+        "_is_pressed": false,
+        "_state_layer_alpha": 0.0,
+        "_state_tween": null,
+        "_wave_alpha": 0.0,
+        "_wave_count": 0,
+        "_wave_radius": 0.0,
+        "_waves": [],
+        "bounded": true,
+        "corner_radius": 0.0,
+        "dragged_opacity": 0.16,
+        "focus_opacity": 0.1,
+        "hover_opacity": 0.08,
+        "press_opacity": 0.1,
+        "ripple_color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        }
+      },
+      "transforms": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "global_position": {
+          "x": 260.0,
+          "y": 160.0
+        },
+        "size": {
+          "x": 48.0,
+          "y": 48.0
+        },
+        "custom_minimum_size": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "rotation_deg": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "anchors": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 1.0,
+          "bottom": 1.0
+        },
+        "offsets": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 0.0,
+          "bottom": 0.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_vertical": 1
+      },
+      "visibility": {
+        "visible": false,
+        "visible_in_tree": false,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "top_level": false,
+        "show_behind_parent": false,
+        "clip_children": 0,
+        "light_mask": 1,
+        "visibility_layer": 1,
+        "z_index": 0,
+        "z_as_relative": true,
+        "y_sort_enabled": false
+      },
+      "physics": {},
+      "ui_and_content": {
+        "focus_mode": 0,
+        "mouse_filter": 2,
+        "tooltip_text": ""
+      },
+      "signals": [],
+      "all_properties": {
+        "accessibility_controls_nodes": [],
+        "accessibility_described_by_nodes": [],
+        "accessibility_description": "",
+        "accessibility_flow_to_nodes": [],
+        "accessibility_labeled_by_nodes": [],
+        "accessibility_live": 0,
+        "accessibility_name": "",
+        "anchor_bottom": 1.0,
+        "anchor_left": 0.0,
+        "anchor_right": 1.0,
+        "anchor_top": 0.0,
+        "anchors_preset": 0,
+        "auto_translate_mode": 0,
+        "bounded": true,
+        "clip_children": 0,
+        "clip_contents": true,
+        "corner_radius": 0.0,
+        "custom_maximum_size": {
+          "x": -1.0,
+          "y": -1.0
+        },
+        "custom_minimum_size": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "dragged_opacity": 0.16,
+        "editor_description": "",
+        "focus_behavior_recursive": 0,
+        "focus_mode": 0,
+        "focus_neighbor_bottom": "",
+        "focus_neighbor_left": "",
+        "focus_neighbor_right": "",
+        "focus_neighbor_top": "",
+        "focus_next": "",
+        "focus_opacity": 0.1,
+        "focus_previous": "",
+        "grow_horizontal": 1,
+        "grow_vertical": 1,
+        "hover_opacity": 0.08,
+        "layout_direction": 0,
+        "layout_mode": 0,
+        "light_mask": 1,
+        "localize_numeral_system": true,
+        "material": null,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "mouse_behavior_recursive": 0,
+        "mouse_default_cursor_shape": 0,
+        "mouse_filter": 2,
+        "mouse_force_pass_scroll_events": true,
+        "offset_bottom": 0.0,
+        "offset_left": 0.0,
+        "offset_right": 0.0,
+        "offset_top": 0.0,
+        "offset_transform_enabled": false,
+        "offset_transform_pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_pivot_ratio": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "offset_transform_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_position_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_rotation": 0.0,
+        "offset_transform_scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "offset_transform_visual_only": true,
+        "oversampling_with_scale": 0,
+        "physics_interpolation_mode": 2,
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "pivot_offset_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "press_opacity": 0.1,
+        "process_mode": 0,
+        "process_physics_priority": 0,
+        "process_priority": 0,
+        "process_thread_group": 0,
+        "propagate_maximum_size": false,
+        "ripple_color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "rotation": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "shortcut_context": null,
+        "show_behind_parent": false,
+        "size": {
+          "x": 48.0,
+          "y": 48.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_stretch_ratio": 1.0,
+        "size_flags_vertical": 1,
+        "texture_filter": 0,
+        "texture_repeat": 0,
+        "theme": null,
+        "theme_type_variation": "",
+        "tooltip_auto_translate_mode": 0,
+        "tooltip_text": "",
+        "top_level": false,
+        "translation_context": "",
+        "unique_name_in_owner": false,
+        "use_parent_material": false,
+        "visibility_layer": 1,
+        "visible": false,
+        "y_sort_enabled": false,
+        "z_as_relative": true,
+        "z_index": 0
+      }
+    }
+  ]
+}

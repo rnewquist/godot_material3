@@ -1,0 +1,3770 @@
+{
+  "metadata": {
+    "format": "godot_scene_snapshot",
+    "short_name": "GSS",
+    "version": "1.0",
+    "snapshot_name": "foundations.motion.springs_transitions__four_transition_patterns_rest",
+    "timestamp_iso": "2026-11-24T01:45:43",
+    "timestamp_ticks_ms": 33558,
+    "engine_version": "4.7.2-stable (official)",
+    "display_server": "macOS",
+    "viewport_size": {
+      "width": 1280,
+      "height": 720
+    },
+    "total_nodes": 6,
+    "visible_nodes": 6,
+    "class_counts": {
+      "ColorRect": 1,
+      "GridContainer": 1,
+      "Control": 4
+    },
+    "camera_3d": {},
+    "camera_2d": {},
+    "performance": {
+      "fps": 59.0,
+      "process_frames": 1763,
+      "physics_frames": 1954,
+      "memory_static_bytes": 59719427,
+      "object_count": 1674,
+      "node_count": 10
+    },
+    "is_synthetic_preview": false,
+    "files": {
+      "png": "res://artifacts/gss/foundations/foundations.motion.springs_transitions__four_transition_patterns_rest.png",
+      "json": "res://artifacts/gss/foundations/foundations.motion.springs_transitions__four_transition_patterns_rest.gss.json",
+      "html": "res://artifacts/gss/foundations/foundations.motion.springs_transitions__four_transition_patterns_rest.gss.html",
+      "global_png": "/Users/rnewquist/Documents/Godot/material3/artifacts/gss/foundations/foundations.motion.springs_transitions__four_transition_patterns_rest.png",
+      "global_json": "/Users/rnewquist/Documents/Godot/material3/artifacts/gss/foundations/foundations.motion.springs_transitions__four_transition_patterns_rest.gss.json",
+      "global_html": "/Users/rnewquist/Documents/Godot/material3/artifacts/gss/foundations/foundations.motion.springs_transitions__four_transition_patterns_rest.gss.html"
+    }
+  },
+  "hierarchy": {
+    "id": "node_0",
+    "parent_id": "",
+    "name": "MotionSpringsTransitions",
+    "class": "ColorRect",
+    "category": "control",
+    "path": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions",
+    "depth": 0,
+    "index_in_parent": 0,
+    "children_count": 1,
+    "groups": [],
+    "script": "",
+    "process_mode": 0,
+    "visible": true,
+    "screen_rect": {
+      "x": 0.0,
+      "y": 0.0,
+      "width": 1280.0,
+      "height": 720.0,
+      "has_bounds": true,
+      "on_screen": true
+    },
+    "script_variables": {},
+    "transforms": {
+      "position": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "global_position": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "size": {
+        "x": 1280.0,
+        "y": 720.0
+      },
+      "custom_minimum_size": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "rotation_deg": 0.0,
+      "scale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "pivot_offset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "anchors": {
+        "left": 0.0,
+        "top": 0.0,
+        "right": 0.0,
+        "bottom": 0.0
+      },
+      "offsets": {
+        "left": 0.0,
+        "top": 0.0,
+        "right": 1280.0,
+        "bottom": 720.0
+      },
+      "size_flags_horizontal": 1,
+      "size_flags_vertical": 1
+    },
+    "visibility": {
+      "visible": true,
+      "visible_in_tree": true,
+      "modulate": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0,
+        "hex": "#ffffffff"
+      },
+      "self_modulate": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0,
+        "hex": "#ffffffff"
+      },
+      "top_level": false,
+      "show_behind_parent": false,
+      "clip_children": 0,
+      "light_mask": 1,
+      "visibility_layer": 1,
+      "z_index": 0,
+      "z_as_relative": true,
+      "y_sort_enabled": false
+    },
+    "physics": {},
+    "ui_and_content": {
+      "focus_mode": 0,
+      "mouse_filter": 2,
+      "tooltip_text": "",
+      "color": {
+        "r": 0.9788,
+        "g": 0.9745,
+        "b": 1.0,
+        "a": 1.0,
+        "hex": "#faf9ffff"
+      }
+    },
+    "signals": [
+      {
+        "signal": "child_order_changed",
+        "target": "/root/@Node@68/GSSStageViewport",
+        "method": "Viewport::canvas_parent_mark_dirty"
+      },
+      {
+        "signal": "item_rect_changed",
+        "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+        "method": "Control::_size_changed"
+      }
+    ],
+    "all_properties": {
+      "accessibility_controls_nodes": [],
+      "accessibility_described_by_nodes": [],
+      "accessibility_description": "",
+      "accessibility_flow_to_nodes": [],
+      "accessibility_labeled_by_nodes": [],
+      "accessibility_live": 0,
+      "accessibility_name": "",
+      "anchor_bottom": 0.0,
+      "anchor_left": 0.0,
+      "anchor_right": 0.0,
+      "anchor_top": 0.0,
+      "anchors_preset": 0,
+      "auto_translate_mode": 0,
+      "clip_children": 0,
+      "clip_contents": false,
+      "color": {
+        "r": 0.9788,
+        "g": 0.9745,
+        "b": 1.0,
+        "a": 1.0,
+        "hex": "#faf9ffff"
+      },
+      "custom_maximum_size": {
+        "x": -1.0,
+        "y": -1.0
+      },
+      "custom_minimum_size": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "editor_description": "",
+      "focus_behavior_recursive": 0,
+      "focus_mode": 0,
+      "focus_neighbor_bottom": "",
+      "focus_neighbor_left": "",
+      "focus_neighbor_right": "",
+      "focus_neighbor_top": "",
+      "focus_next": "",
+      "focus_previous": "",
+      "grow_horizontal": 1,
+      "grow_vertical": 1,
+      "layout_direction": 0,
+      "layout_mode": 3,
+      "light_mask": 1,
+      "localize_numeral_system": true,
+      "material": null,
+      "modulate": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0,
+        "hex": "#ffffffff"
+      },
+      "mouse_behavior_recursive": 0,
+      "mouse_default_cursor_shape": 0,
+      "mouse_filter": 2,
+      "mouse_force_pass_scroll_events": true,
+      "offset_bottom": 720.0,
+      "offset_left": 0.0,
+      "offset_right": 1280.0,
+      "offset_top": 0.0,
+      "offset_transform_enabled": false,
+      "offset_transform_pivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "offset_transform_pivot_ratio": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "offset_transform_position": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "offset_transform_position_ratio": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "offset_transform_rotation": 0.0,
+      "offset_transform_scale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "offset_transform_visual_only": true,
+      "oversampling_with_scale": 0,
+      "physics_interpolation_mode": 2,
+      "pivot_offset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "pivot_offset_ratio": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "process_mode": 0,
+      "process_physics_priority": 0,
+      "process_priority": 0,
+      "process_thread_group": 0,
+      "propagate_maximum_size": false,
+      "rotation": 0.0,
+      "scale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "self_modulate": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0,
+        "hex": "#ffffffff"
+      },
+      "shortcut_context": null,
+      "show_behind_parent": false,
+      "size": {
+        "x": 1280.0,
+        "y": 720.0
+      },
+      "size_flags_horizontal": 1,
+      "size_flags_stretch_ratio": 1.0,
+      "size_flags_vertical": 1,
+      "texture_filter": 0,
+      "texture_repeat": 0,
+      "theme": null,
+      "theme_type_variation": "",
+      "tooltip_auto_translate_mode": 0,
+      "tooltip_text": "",
+      "top_level": false,
+      "translation_context": "",
+      "unique_name_in_owner": false,
+      "use_parent_material": false,
+      "visibility_layer": 1,
+      "visible": true,
+      "y_sort_enabled": false,
+      "z_as_relative": true,
+      "z_index": 0
+    },
+    "children": [
+      {
+        "id": "node_1",
+        "parent_id": "node_0",
+        "name": "TransitionPatternsGrid",
+        "class": "GridContainer",
+        "category": "control",
+        "path": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+        "depth": 1,
+        "index_in_parent": 0,
+        "children_count": 4,
+        "groups": [],
+        "script": "",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 48.0,
+          "y": 40.0,
+          "width": 1108.0,
+          "height": 344.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {},
+        "transforms": {
+          "position": {
+            "x": 48.0,
+            "y": 40.0
+          },
+          "global_position": {
+            "x": 48.0,
+            "y": 40.0
+          },
+          "size": {
+            "x": 1108.0,
+            "y": 344.0
+          },
+          "custom_minimum_size": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 48.0,
+            "top": 40.0,
+            "right": 48.0,
+            "bottom": 40.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 0,
+          "mouse_filter": 1,
+          "tooltip_text": ""
+        },
+        "signals": [
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@68/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid/Transition_ContainerTransform",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid/Transition_SharedAxisX",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid/Transition_FadeThrough",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid/Transition_Fade",
+            "method": "Control::_size_changed"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "accessibility_region": false,
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "clip_children": 0,
+          "clip_contents": false,
+          "columns": 2,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "editor_description": "",
+          "focus_behavior_recursive": 0,
+          "focus_mode": 0,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 0,
+          "mouse_filter": 1,
+          "mouse_force_pass_scroll_events": true,
+          "offset_bottom": 40.0,
+          "offset_left": 48.0,
+          "offset_right": 48.0,
+          "offset_top": 40.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "position": {
+            "x": 48.0,
+            "y": 40.0
+          },
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": true,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "size": {
+            "x": 1108.0,
+            "y": 344.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_override_constants/h_separation": 28,
+          "theme_override_constants/v_separation": 24,
+          "theme_type_variation": "",
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "visibility_layer": 1,
+          "visible": true,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        },
+        "children": [
+          {
+            "id": "node_2",
+            "parent_id": "node_1",
+            "name": "Transition_ContainerTransform",
+            "class": "Control",
+            "category": "control",
+            "path": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid/Transition_ContainerTransform",
+            "depth": 2,
+            "index_in_parent": 0,
+            "children_count": 0,
+            "groups": [],
+            "script": "res://addons/material3/components/base/m3_transition.gd",
+            "process_mode": 0,
+            "visible": true,
+            "screen_rect": {
+              "x": 48.0,
+              "y": 40.0,
+              "width": 540.0,
+              "height": 160.0,
+              "has_bounds": true,
+              "on_screen": true
+            },
+            "script_variables": {
+              "_tween": null,
+              "collapsed_radius": 16.0,
+              "collapsed_rect": {
+                "position": {
+                  "x": 16.0,
+                  "y": 20.0
+                },
+                "size": {
+                  "x": 96.0,
+                  "y": 56.0
+                }
+              },
+              "current_radius": 16.0,
+              "current_rect": {
+                "position": {
+                  "x": 16.0,
+                  "y": 20.0
+                },
+                "size": {
+                  "x": 96.0,
+                  "y": 56.0
+                }
+              },
+              "effects_spring_val": 0.0,
+              "expanded_radius": 24.0,
+              "expanded_rect": {
+                "position": {
+                  "x": 16.0,
+                  "y": 14.0
+                },
+                "size": {
+                  "x": 500.0,
+                  "y": 130.0
+                }
+              },
+              "incoming_alpha": 0.0,
+              "incoming_label": "Expanded Detail",
+              "is_expanded": false,
+              "outgoing_alpha": 1.0,
+              "outgoing_label": "Card Stub",
+              "pattern": 0,
+              "spatial_spring_val": 0.0,
+              "spring_speed": 1,
+              "transition_progress": 0.0
+            },
+            "transforms": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "global_position": {
+                "x": 48.0,
+                "y": 40.0
+              },
+              "size": {
+                "x": 540.0,
+                "y": 160.0
+              },
+              "custom_minimum_size": {
+                "x": 540.0,
+                "y": 160.0
+              },
+              "rotation_deg": 0.0,
+              "scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "pivot_offset": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "anchors": {
+                "left": 0.0,
+                "top": 0.0,
+                "right": 0.0,
+                "bottom": 0.0
+              },
+              "offsets": {
+                "left": 0.0,
+                "top": 0.0,
+                "right": 540.0,
+                "bottom": 160.0
+              },
+              "size_flags_horizontal": 1,
+              "size_flags_vertical": 1
+            },
+            "visibility": {
+              "visible": true,
+              "visible_in_tree": true,
+              "modulate": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "self_modulate": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "top_level": false,
+              "show_behind_parent": false,
+              "clip_children": 0,
+              "light_mask": 1,
+              "visibility_layer": 1,
+              "z_index": 0,
+              "z_as_relative": true,
+              "y_sort_enabled": false
+            },
+            "physics": {},
+            "ui_and_content": {
+              "focus_mode": 0,
+              "mouse_filter": 0,
+              "tooltip_text": ""
+            },
+            "signals": [
+              {
+                "signal": "visibility_changed",
+                "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+                "method": "Container::_child_minsize_changed"
+              },
+              {
+                "signal": "size_flags_changed",
+                "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+                "method": "Container::queue_sort"
+              },
+              {
+                "signal": "maximum_size_changed",
+                "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+                "method": "Container::_child_minsize_changed"
+              },
+              {
+                "signal": "minimum_size_changed",
+                "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+                "method": "Container::_child_minsize_changed"
+              },
+              {
+                "signal": "_desired_size_changed",
+                "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+                "method": "Container::_child_desired_size_changed"
+              }
+            ],
+            "all_properties": {
+              "accessibility_controls_nodes": [],
+              "accessibility_described_by_nodes": [],
+              "accessibility_description": "",
+              "accessibility_flow_to_nodes": [],
+              "accessibility_labeled_by_nodes": [],
+              "accessibility_live": 0,
+              "accessibility_name": "",
+              "auto_translate_mode": 0,
+              "clip_children": 0,
+              "clip_contents": false,
+              "collapsed_radius": 16.0,
+              "collapsed_rect": {
+                "position": {
+                  "x": 16.0,
+                  "y": 20.0
+                },
+                "size": {
+                  "x": 96.0,
+                  "y": 56.0
+                }
+              },
+              "current_radius": 16.0,
+              "current_rect": {
+                "position": {
+                  "x": 16.0,
+                  "y": 20.0
+                },
+                "size": {
+                  "x": 96.0,
+                  "y": 56.0
+                }
+              },
+              "custom_maximum_size": {
+                "x": -1.0,
+                "y": -1.0
+              },
+              "custom_minimum_size": {
+                "x": 540.0,
+                "y": 160.0
+              },
+              "editor_description": "",
+              "effects_spring_val": 0.0,
+              "expanded_radius": 24.0,
+              "expanded_rect": {
+                "position": {
+                  "x": 16.0,
+                  "y": 14.0
+                },
+                "size": {
+                  "x": 500.0,
+                  "y": 130.0
+                }
+              },
+              "focus_behavior_recursive": 0,
+              "focus_mode": 0,
+              "focus_neighbor_bottom": "",
+              "focus_neighbor_left": "",
+              "focus_neighbor_right": "",
+              "focus_neighbor_top": "",
+              "focus_next": "",
+              "focus_previous": "",
+              "incoming_alpha": 0.0,
+              "incoming_label": "Expanded Detail",
+              "is_expanded": false,
+              "layout_direction": 0,
+              "layout_mode": 2,
+              "light_mask": 1,
+              "localize_numeral_system": true,
+              "material": null,
+              "modulate": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "mouse_behavior_recursive": 0,
+              "mouse_default_cursor_shape": 0,
+              "mouse_filter": 0,
+              "mouse_force_pass_scroll_events": true,
+              "offset_transform_enabled": false,
+              "offset_transform_pivot": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "offset_transform_pivot_ratio": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "offset_transform_position": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "offset_transform_position_ratio": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "offset_transform_rotation": 0.0,
+              "offset_transform_scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "offset_transform_visual_only": true,
+              "outgoing_alpha": 1.0,
+              "outgoing_label": "Card Stub",
+              "oversampling_with_scale": 0,
+              "pattern": 0,
+              "physics_interpolation_mode": 2,
+              "pivot_offset": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "pivot_offset_ratio": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "position": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "process_mode": 0,
+              "process_physics_priority": 0,
+              "process_priority": 0,
+              "process_thread_group": 0,
+              "propagate_maximum_size": false,
+              "rotation": 0.0,
+              "scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "self_modulate": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "shortcut_context": null,
+              "show_behind_parent": false,
+              "size": {
+                "x": 540.0,
+                "y": 160.0
+              },
+              "size_flags_horizontal": 1,
+              "size_flags_stretch_ratio": 1.0,
+              "size_flags_vertical": 1,
+              "spatial_spring_val": 0.0,
+              "spring_speed": 1,
+              "texture_filter": 0,
+              "texture_repeat": 0,
+              "theme": null,
+              "theme_type_variation": "",
+              "tooltip_auto_translate_mode": 0,
+              "tooltip_text": "",
+              "top_level": false,
+              "transition_progress": 0.0,
+              "translation_context": "",
+              "unique_name_in_owner": false,
+              "use_parent_material": false,
+              "visibility_layer": 1,
+              "visible": true,
+              "y_sort_enabled": false,
+              "z_as_relative": true,
+              "z_index": 0
+            },
+            "children": []
+          },
+          {
+            "id": "node_3",
+            "parent_id": "node_1",
+            "name": "Transition_SharedAxisX",
+            "class": "Control",
+            "category": "control",
+            "path": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid/Transition_SharedAxisX",
+            "depth": 2,
+            "index_in_parent": 1,
+            "children_count": 0,
+            "groups": [],
+            "script": "res://addons/material3/components/base/m3_transition.gd",
+            "process_mode": 0,
+            "visible": true,
+            "screen_rect": {
+              "x": 616.0,
+              "y": 40.0,
+              "width": 540.0,
+              "height": 160.0,
+              "has_bounds": true,
+              "on_screen": true
+            },
+            "script_variables": {
+              "_tween": null,
+              "collapsed_radius": 16.0,
+              "collapsed_rect": {
+                "position": {
+                  "x": 16.0,
+                  "y": 20.0
+                },
+                "size": {
+                  "x": 96.0,
+                  "y": 56.0
+                }
+              },
+              "current_radius": 24.0,
+              "current_rect": {
+                "position": {
+                  "x": 64.0,
+                  "y": 12.0
+                },
+                "size": {
+                  "x": 240.0,
+                  "y": 116.0
+                }
+              },
+              "effects_spring_val": 0.0,
+              "expanded_radius": 24.0,
+              "expanded_rect": {
+                "position": {
+                  "x": 16.0,
+                  "y": 14.0
+                },
+                "size": {
+                  "x": 500.0,
+                  "y": 130.0
+                }
+              },
+              "incoming_alpha": 0.0,
+              "incoming_label": "Step 2 (Axis X)",
+              "is_expanded": false,
+              "outgoing_alpha": 1.0,
+              "outgoing_label": "Step 1",
+              "pattern": 1,
+              "spatial_spring_val": 0.0,
+              "spring_speed": 1,
+              "transition_progress": 0.0
+            },
+            "transforms": {
+              "position": {
+                "x": 568.0,
+                "y": 0.0
+              },
+              "global_position": {
+                "x": 616.0,
+                "y": 40.0
+              },
+              "size": {
+                "x": 540.0,
+                "y": 160.0
+              },
+              "custom_minimum_size": {
+                "x": 540.0,
+                "y": 160.0
+              },
+              "rotation_deg": 0.0,
+              "scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "pivot_offset": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "anchors": {
+                "left": 0.0,
+                "top": 0.0,
+                "right": 0.0,
+                "bottom": 0.0
+              },
+              "offsets": {
+                "left": 568.0,
+                "top": 0.0,
+                "right": 1108.0,
+                "bottom": 160.0
+              },
+              "size_flags_horizontal": 1,
+              "size_flags_vertical": 1
+            },
+            "visibility": {
+              "visible": true,
+              "visible_in_tree": true,
+              "modulate": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "self_modulate": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "top_level": false,
+              "show_behind_parent": false,
+              "clip_children": 0,
+              "light_mask": 1,
+              "visibility_layer": 1,
+              "z_index": 0,
+              "z_as_relative": true,
+              "y_sort_enabled": false
+            },
+            "physics": {},
+            "ui_and_content": {
+              "focus_mode": 0,
+              "mouse_filter": 0,
+              "tooltip_text": ""
+            },
+            "signals": [
+              {
+                "signal": "visibility_changed",
+                "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+                "method": "Container::_child_minsize_changed"
+              },
+              {
+                "signal": "size_flags_changed",
+                "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+                "method": "Container::queue_sort"
+              },
+              {
+                "signal": "maximum_size_changed",
+                "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+                "method": "Container::_child_minsize_changed"
+              },
+              {
+                "signal": "minimum_size_changed",
+                "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+                "method": "Container::_child_minsize_changed"
+              },
+              {
+                "signal": "_desired_size_changed",
+                "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+                "method": "Container::_child_desired_size_changed"
+              }
+            ],
+            "all_properties": {
+              "accessibility_controls_nodes": [],
+              "accessibility_described_by_nodes": [],
+              "accessibility_description": "",
+              "accessibility_flow_to_nodes": [],
+              "accessibility_labeled_by_nodes": [],
+              "accessibility_live": 0,
+              "accessibility_name": "",
+              "auto_translate_mode": 0,
+              "clip_children": 0,
+              "clip_contents": false,
+              "collapsed_radius": 16.0,
+              "collapsed_rect": {
+                "position": {
+                  "x": 16.0,
+                  "y": 20.0
+                },
+                "size": {
+                  "x": 96.0,
+                  "y": 56.0
+                }
+              },
+              "current_radius": 24.0,
+              "current_rect": {
+                "position": {
+                  "x": 64.0,
+                  "y": 12.0
+                },
+                "size": {
+                  "x": 240.0,
+                  "y": 116.0
+                }
+              },
+              "custom_maximum_size": {
+                "x": -1.0,
+                "y": -1.0
+              },
+              "custom_minimum_size": {
+                "x": 540.0,
+                "y": 160.0
+              },
+              "editor_description": "",
+              "effects_spring_val": 0.0,
+              "expanded_radius": 24.0,
+              "expanded_rect": {
+                "position": {
+                  "x": 16.0,
+                  "y": 14.0
+                },
+                "size": {
+                  "x": 500.0,
+                  "y": 130.0
+                }
+              },
+              "focus_behavior_recursive": 0,
+              "focus_mode": 0,
+              "focus_neighbor_bottom": "",
+              "focus_neighbor_left": "",
+              "focus_neighbor_right": "",
+              "focus_neighbor_top": "",
+              "focus_next": "",
+              "focus_previous": "",
+              "incoming_alpha": 0.0,
+              "incoming_label": "Step 2 (Axis X)",
+              "is_expanded": false,
+              "layout_direction": 0,
+              "layout_mode": 2,
+              "light_mask": 1,
+              "localize_numeral_system": true,
+              "material": null,
+              "modulate": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "mouse_behavior_recursive": 0,
+              "mouse_default_cursor_shape": 0,
+              "mouse_filter": 0,
+              "mouse_force_pass_scroll_events": true,
+              "offset_transform_enabled": false,
+              "offset_transform_pivot": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "offset_transform_pivot_ratio": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "offset_transform_position": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "offset_transform_position_ratio": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "offset_transform_rotation": 0.0,
+              "offset_transform_scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "offset_transform_visual_only": true,
+              "outgoing_alpha": 1.0,
+              "outgoing_label": "Step 1",
+              "oversampling_with_scale": 0,
+              "pattern": 1,
+              "physics_interpolation_mode": 2,
+              "pivot_offset": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "pivot_offset_ratio": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "position": {
+                "x": 568.0,
+                "y": 0.0
+              },
+              "process_mode": 0,
+              "process_physics_priority": 0,
+              "process_priority": 0,
+              "process_thread_group": 0,
+              "propagate_maximum_size": false,
+              "rotation": 0.0,
+              "scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "self_modulate": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "shortcut_context": null,
+              "show_behind_parent": false,
+              "size": {
+                "x": 540.0,
+                "y": 160.0
+              },
+              "size_flags_horizontal": 1,
+              "size_flags_stretch_ratio": 1.0,
+              "size_flags_vertical": 1,
+              "spatial_spring_val": 0.0,
+              "spring_speed": 1,
+              "texture_filter": 0,
+              "texture_repeat": 0,
+              "theme": null,
+              "theme_type_variation": "",
+              "tooltip_auto_translate_mode": 0,
+              "tooltip_text": "",
+              "top_level": false,
+              "transition_progress": 0.0,
+              "translation_context": "",
+              "unique_name_in_owner": false,
+              "use_parent_material": false,
+              "visibility_layer": 1,
+              "visible": true,
+              "y_sort_enabled": false,
+              "z_as_relative": true,
+              "z_index": 0
+            },
+            "children": []
+          },
+          {
+            "id": "node_4",
+            "parent_id": "node_1",
+            "name": "Transition_FadeThrough",
+            "class": "Control",
+            "category": "control",
+            "path": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid/Transition_FadeThrough",
+            "depth": 2,
+            "index_in_parent": 2,
+            "children_count": 0,
+            "groups": [],
+            "script": "res://addons/material3/components/base/m3_transition.gd",
+            "process_mode": 0,
+            "visible": true,
+            "screen_rect": {
+              "x": 48.0,
+              "y": 224.0,
+              "width": 540.0,
+              "height": 160.0,
+              "has_bounds": true,
+              "on_screen": true
+            },
+            "script_variables": {
+              "_tween": null,
+              "collapsed_radius": 16.0,
+              "collapsed_rect": {
+                "position": {
+                  "x": 16.0,
+                  "y": 20.0
+                },
+                "size": {
+                  "x": 96.0,
+                  "y": 56.0
+                }
+              },
+              "current_radius": 24.0,
+              "current_rect": {
+                "position": {
+                  "x": 16.0,
+                  "y": 12.0
+                },
+                "size": {
+                  "x": 240.0,
+                  "y": 116.0
+                }
+              },
+              "effects_spring_val": 0.0,
+              "expanded_radius": 24.0,
+              "expanded_rect": {
+                "position": {
+                  "x": 16.0,
+                  "y": 14.0
+                },
+                "size": {
+                  "x": 500.0,
+                  "y": 130.0
+                }
+              },
+              "incoming_alpha": 0.0,
+              "incoming_label": "Tab B (FadeThrough)",
+              "is_expanded": false,
+              "outgoing_alpha": 1.0,
+              "outgoing_label": "Tab A",
+              "pattern": 4,
+              "spatial_spring_val": 0.0,
+              "spring_speed": 1,
+              "transition_progress": 0.0
+            },
+            "transforms": {
+              "position": {
+                "x": 0.0,
+                "y": 184.0
+              },
+              "global_position": {
+                "x": 48.0,
+                "y": 224.0
+              },
+              "size": {
+                "x": 540.0,
+                "y": 160.0
+              },
+              "custom_minimum_size": {
+                "x": 540.0,
+                "y": 160.0
+              },
+              "rotation_deg": 0.0,
+              "scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "pivot_offset": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "anchors": {
+                "left": 0.0,
+                "top": 0.0,
+                "right": 0.0,
+                "bottom": 0.0
+              },
+              "offsets": {
+                "left": 0.0,
+                "top": 184.0,
+                "right": 540.0,
+                "bottom": 344.0
+              },
+              "size_flags_horizontal": 1,
+              "size_flags_vertical": 1
+            },
+            "visibility": {
+              "visible": true,
+              "visible_in_tree": true,
+              "modulate": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "self_modulate": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "top_level": false,
+              "show_behind_parent": false,
+              "clip_children": 0,
+              "light_mask": 1,
+              "visibility_layer": 1,
+              "z_index": 0,
+              "z_as_relative": true,
+              "y_sort_enabled": false
+            },
+            "physics": {},
+            "ui_and_content": {
+              "focus_mode": 0,
+              "mouse_filter": 0,
+              "tooltip_text": ""
+            },
+            "signals": [
+              {
+                "signal": "visibility_changed",
+                "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+                "method": "Container::_child_minsize_changed"
+              },
+              {
+                "signal": "size_flags_changed",
+                "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+                "method": "Container::queue_sort"
+              },
+              {
+                "signal": "maximum_size_changed",
+                "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+                "method": "Container::_child_minsize_changed"
+              },
+              {
+                "signal": "minimum_size_changed",
+                "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+                "method": "Container::_child_minsize_changed"
+              },
+              {
+                "signal": "_desired_size_changed",
+                "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+                "method": "Container::_child_desired_size_changed"
+              }
+            ],
+            "all_properties": {
+              "accessibility_controls_nodes": [],
+              "accessibility_described_by_nodes": [],
+              "accessibility_description": "",
+              "accessibility_flow_to_nodes": [],
+              "accessibility_labeled_by_nodes": [],
+              "accessibility_live": 0,
+              "accessibility_name": "",
+              "auto_translate_mode": 0,
+              "clip_children": 0,
+              "clip_contents": false,
+              "collapsed_radius": 16.0,
+              "collapsed_rect": {
+                "position": {
+                  "x": 16.0,
+                  "y": 20.0
+                },
+                "size": {
+                  "x": 96.0,
+                  "y": 56.0
+                }
+              },
+              "current_radius": 24.0,
+              "current_rect": {
+                "position": {
+                  "x": 16.0,
+                  "y": 12.0
+                },
+                "size": {
+                  "x": 240.0,
+                  "y": 116.0
+                }
+              },
+              "custom_maximum_size": {
+                "x": -1.0,
+                "y": -1.0
+              },
+              "custom_minimum_size": {
+                "x": 540.0,
+                "y": 160.0
+              },
+              "editor_description": "",
+              "effects_spring_val": 0.0,
+              "expanded_radius": 24.0,
+              "expanded_rect": {
+                "position": {
+                  "x": 16.0,
+                  "y": 14.0
+                },
+                "size": {
+                  "x": 500.0,
+                  "y": 130.0
+                }
+              },
+              "focus_behavior_recursive": 0,
+              "focus_mode": 0,
+              "focus_neighbor_bottom": "",
+              "focus_neighbor_left": "",
+              "focus_neighbor_right": "",
+              "focus_neighbor_top": "",
+              "focus_next": "",
+              "focus_previous": "",
+              "incoming_alpha": 0.0,
+              "incoming_label": "Tab B (FadeThrough)",
+              "is_expanded": false,
+              "layout_direction": 0,
+              "layout_mode": 2,
+              "light_mask": 1,
+              "localize_numeral_system": true,
+              "material": null,
+              "modulate": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "mouse_behavior_recursive": 0,
+              "mouse_default_cursor_shape": 0,
+              "mouse_filter": 0,
+              "mouse_force_pass_scroll_events": true,
+              "offset_transform_enabled": false,
+              "offset_transform_pivot": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "offset_transform_pivot_ratio": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "offset_transform_position": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "offset_transform_position_ratio": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "offset_transform_rotation": 0.0,
+              "offset_transform_scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "offset_transform_visual_only": true,
+              "outgoing_alpha": 1.0,
+              "outgoing_label": "Tab A",
+              "oversampling_with_scale": 0,
+              "pattern": 4,
+              "physics_interpolation_mode": 2,
+              "pivot_offset": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "pivot_offset_ratio": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "position": {
+                "x": 0.0,
+                "y": 184.0
+              },
+              "process_mode": 0,
+              "process_physics_priority": 0,
+              "process_priority": 0,
+              "process_thread_group": 0,
+              "propagate_maximum_size": false,
+              "rotation": 0.0,
+              "scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "self_modulate": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "shortcut_context": null,
+              "show_behind_parent": false,
+              "size": {
+                "x": 540.0,
+                "y": 160.0
+              },
+              "size_flags_horizontal": 1,
+              "size_flags_stretch_ratio": 1.0,
+              "size_flags_vertical": 1,
+              "spatial_spring_val": 0.0,
+              "spring_speed": 1,
+              "texture_filter": 0,
+              "texture_repeat": 0,
+              "theme": null,
+              "theme_type_variation": "",
+              "tooltip_auto_translate_mode": 0,
+              "tooltip_text": "",
+              "top_level": false,
+              "transition_progress": 0.0,
+              "translation_context": "",
+              "unique_name_in_owner": false,
+              "use_parent_material": false,
+              "visibility_layer": 1,
+              "visible": true,
+              "y_sort_enabled": false,
+              "z_as_relative": true,
+              "z_index": 0
+            },
+            "children": []
+          },
+          {
+            "id": "node_5",
+            "parent_id": "node_1",
+            "name": "Transition_Fade",
+            "class": "Control",
+            "category": "control",
+            "path": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid/Transition_Fade",
+            "depth": 2,
+            "index_in_parent": 3,
+            "children_count": 0,
+            "groups": [],
+            "script": "res://addons/material3/components/base/m3_transition.gd",
+            "process_mode": 0,
+            "visible": true,
+            "screen_rect": {
+              "x": 616.0,
+              "y": 224.0,
+              "width": 540.0,
+              "height": 160.0,
+              "has_bounds": true,
+              "on_screen": true
+            },
+            "script_variables": {
+              "_tween": null,
+              "collapsed_radius": 16.0,
+              "collapsed_rect": {
+                "position": {
+                  "x": 16.0,
+                  "y": 20.0
+                },
+                "size": {
+                  "x": 96.0,
+                  "y": 56.0
+                }
+              },
+              "current_radius": 24.0,
+              "current_rect": {
+                "position": {
+                  "x": 16.0,
+                  "y": 12.0
+                },
+                "size": {
+                  "x": 240.0,
+                  "y": 116.0
+                }
+              },
+              "effects_spring_val": 0.0,
+              "expanded_radius": 24.0,
+              "expanded_rect": {
+                "position": {
+                  "x": 16.0,
+                  "y": 14.0
+                },
+                "size": {
+                  "x": 500.0,
+                  "y": 130.0
+                }
+              },
+              "incoming_alpha": 0.0,
+              "incoming_label": "Modal Dialog (Fade)",
+              "is_expanded": false,
+              "outgoing_alpha": 1.0,
+              "outgoing_label": "Closed",
+              "pattern": 5,
+              "spatial_spring_val": 0.0,
+              "spring_speed": 1,
+              "transition_progress": 0.0
+            },
+            "transforms": {
+              "position": {
+                "x": 568.0,
+                "y": 184.0
+              },
+              "global_position": {
+                "x": 616.0,
+                "y": 224.0
+              },
+              "size": {
+                "x": 540.0,
+                "y": 160.0
+              },
+              "custom_minimum_size": {
+                "x": 540.0,
+                "y": 160.0
+              },
+              "rotation_deg": 0.0,
+              "scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "pivot_offset": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "anchors": {
+                "left": 0.0,
+                "top": 0.0,
+                "right": 0.0,
+                "bottom": 0.0
+              },
+              "offsets": {
+                "left": 568.0,
+                "top": 184.0,
+                "right": 1108.0,
+                "bottom": 344.0
+              },
+              "size_flags_horizontal": 1,
+              "size_flags_vertical": 1
+            },
+            "visibility": {
+              "visible": true,
+              "visible_in_tree": true,
+              "modulate": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "self_modulate": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "top_level": false,
+              "show_behind_parent": false,
+              "clip_children": 0,
+              "light_mask": 1,
+              "visibility_layer": 1,
+              "z_index": 0,
+              "z_as_relative": true,
+              "y_sort_enabled": false
+            },
+            "physics": {},
+            "ui_and_content": {
+              "focus_mode": 0,
+              "mouse_filter": 0,
+              "tooltip_text": ""
+            },
+            "signals": [
+              {
+                "signal": "visibility_changed",
+                "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+                "method": "Container::_child_minsize_changed"
+              },
+              {
+                "signal": "size_flags_changed",
+                "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+                "method": "Container::queue_sort"
+              },
+              {
+                "signal": "maximum_size_changed",
+                "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+                "method": "Container::_child_minsize_changed"
+              },
+              {
+                "signal": "minimum_size_changed",
+                "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+                "method": "Container::_child_minsize_changed"
+              },
+              {
+                "signal": "_desired_size_changed",
+                "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+                "method": "Container::_child_desired_size_changed"
+              }
+            ],
+            "all_properties": {
+              "accessibility_controls_nodes": [],
+              "accessibility_described_by_nodes": [],
+              "accessibility_description": "",
+              "accessibility_flow_to_nodes": [],
+              "accessibility_labeled_by_nodes": [],
+              "accessibility_live": 0,
+              "accessibility_name": "",
+              "auto_translate_mode": 0,
+              "clip_children": 0,
+              "clip_contents": false,
+              "collapsed_radius": 16.0,
+              "collapsed_rect": {
+                "position": {
+                  "x": 16.0,
+                  "y": 20.0
+                },
+                "size": {
+                  "x": 96.0,
+                  "y": 56.0
+                }
+              },
+              "current_radius": 24.0,
+              "current_rect": {
+                "position": {
+                  "x": 16.0,
+                  "y": 12.0
+                },
+                "size": {
+                  "x": 240.0,
+                  "y": 116.0
+                }
+              },
+              "custom_maximum_size": {
+                "x": -1.0,
+                "y": -1.0
+              },
+              "custom_minimum_size": {
+                "x": 540.0,
+                "y": 160.0
+              },
+              "editor_description": "",
+              "effects_spring_val": 0.0,
+              "expanded_radius": 24.0,
+              "expanded_rect": {
+                "position": {
+                  "x": 16.0,
+                  "y": 14.0
+                },
+                "size": {
+                  "x": 500.0,
+                  "y": 130.0
+                }
+              },
+              "focus_behavior_recursive": 0,
+              "focus_mode": 0,
+              "focus_neighbor_bottom": "",
+              "focus_neighbor_left": "",
+              "focus_neighbor_right": "",
+              "focus_neighbor_top": "",
+              "focus_next": "",
+              "focus_previous": "",
+              "incoming_alpha": 0.0,
+              "incoming_label": "Modal Dialog (Fade)",
+              "is_expanded": false,
+              "layout_direction": 0,
+              "layout_mode": 2,
+              "light_mask": 1,
+              "localize_numeral_system": true,
+              "material": null,
+              "modulate": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "mouse_behavior_recursive": 0,
+              "mouse_default_cursor_shape": 0,
+              "mouse_filter": 0,
+              "mouse_force_pass_scroll_events": true,
+              "offset_transform_enabled": false,
+              "offset_transform_pivot": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "offset_transform_pivot_ratio": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "offset_transform_position": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "offset_transform_position_ratio": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "offset_transform_rotation": 0.0,
+              "offset_transform_scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "offset_transform_visual_only": true,
+              "outgoing_alpha": 1.0,
+              "outgoing_label": "Closed",
+              "oversampling_with_scale": 0,
+              "pattern": 5,
+              "physics_interpolation_mode": 2,
+              "pivot_offset": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "pivot_offset_ratio": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "position": {
+                "x": 568.0,
+                "y": 184.0
+              },
+              "process_mode": 0,
+              "process_physics_priority": 0,
+              "process_priority": 0,
+              "process_thread_group": 0,
+              "propagate_maximum_size": false,
+              "rotation": 0.0,
+              "scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "self_modulate": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "shortcut_context": null,
+              "show_behind_parent": false,
+              "size": {
+                "x": 540.0,
+                "y": 160.0
+              },
+              "size_flags_horizontal": 1,
+              "size_flags_stretch_ratio": 1.0,
+              "size_flags_vertical": 1,
+              "spatial_spring_val": 0.0,
+              "spring_speed": 1,
+              "texture_filter": 0,
+              "texture_repeat": 0,
+              "theme": null,
+              "theme_type_variation": "",
+              "tooltip_auto_translate_mode": 0,
+              "tooltip_text": "",
+              "top_level": false,
+              "transition_progress": 0.0,
+              "translation_context": "",
+              "unique_name_in_owner": false,
+              "use_parent_material": false,
+              "visibility_layer": 1,
+              "visible": true,
+              "y_sort_enabled": false,
+              "z_as_relative": true,
+              "z_index": 0
+            },
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "flat_nodes": [
+    {
+      "id": "node_0",
+      "parent_id": "",
+      "name": "MotionSpringsTransitions",
+      "class": "ColorRect",
+      "category": "control",
+      "path": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions",
+      "depth": 0,
+      "index_in_parent": 0,
+      "children_count": 1,
+      "groups": [],
+      "script": "",
+      "process_mode": 0,
+      "visible": true,
+      "screen_rect": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 1280.0,
+        "height": 720.0,
+        "has_bounds": true,
+        "on_screen": true
+      },
+      "script_variables": {},
+      "transforms": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "global_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "size": {
+          "x": 1280.0,
+          "y": 720.0
+        },
+        "custom_minimum_size": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "rotation_deg": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "anchors": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 0.0,
+          "bottom": 0.0
+        },
+        "offsets": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 1280.0,
+          "bottom": 720.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_vertical": 1
+      },
+      "visibility": {
+        "visible": true,
+        "visible_in_tree": true,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "top_level": false,
+        "show_behind_parent": false,
+        "clip_children": 0,
+        "light_mask": 1,
+        "visibility_layer": 1,
+        "z_index": 0,
+        "z_as_relative": true,
+        "y_sort_enabled": false
+      },
+      "physics": {},
+      "ui_and_content": {
+        "focus_mode": 0,
+        "mouse_filter": 2,
+        "tooltip_text": "",
+        "color": {
+          "r": 0.9788,
+          "g": 0.9745,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#faf9ffff"
+        }
+      },
+      "signals": [
+        {
+          "signal": "child_order_changed",
+          "target": "/root/@Node@68/GSSStageViewport",
+          "method": "Viewport::canvas_parent_mark_dirty"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+          "method": "Control::_size_changed"
+        }
+      ],
+      "all_properties": {
+        "accessibility_controls_nodes": [],
+        "accessibility_described_by_nodes": [],
+        "accessibility_description": "",
+        "accessibility_flow_to_nodes": [],
+        "accessibility_labeled_by_nodes": [],
+        "accessibility_live": 0,
+        "accessibility_name": "",
+        "anchor_bottom": 0.0,
+        "anchor_left": 0.0,
+        "anchor_right": 0.0,
+        "anchor_top": 0.0,
+        "anchors_preset": 0,
+        "auto_translate_mode": 0,
+        "clip_children": 0,
+        "clip_contents": false,
+        "color": {
+          "r": 0.9788,
+          "g": 0.9745,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#faf9ffff"
+        },
+        "custom_maximum_size": {
+          "x": -1.0,
+          "y": -1.0
+        },
+        "custom_minimum_size": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "editor_description": "",
+        "focus_behavior_recursive": 0,
+        "focus_mode": 0,
+        "focus_neighbor_bottom": "",
+        "focus_neighbor_left": "",
+        "focus_neighbor_right": "",
+        "focus_neighbor_top": "",
+        "focus_next": "",
+        "focus_previous": "",
+        "grow_horizontal": 1,
+        "grow_vertical": 1,
+        "layout_direction": 0,
+        "layout_mode": 3,
+        "light_mask": 1,
+        "localize_numeral_system": true,
+        "material": null,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "mouse_behavior_recursive": 0,
+        "mouse_default_cursor_shape": 0,
+        "mouse_filter": 2,
+        "mouse_force_pass_scroll_events": true,
+        "offset_bottom": 720.0,
+        "offset_left": 0.0,
+        "offset_right": 1280.0,
+        "offset_top": 0.0,
+        "offset_transform_enabled": false,
+        "offset_transform_pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_pivot_ratio": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "offset_transform_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_position_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_rotation": 0.0,
+        "offset_transform_scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "offset_transform_visual_only": true,
+        "oversampling_with_scale": 0,
+        "physics_interpolation_mode": 2,
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "pivot_offset_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "process_mode": 0,
+        "process_physics_priority": 0,
+        "process_priority": 0,
+        "process_thread_group": 0,
+        "propagate_maximum_size": false,
+        "rotation": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "shortcut_context": null,
+        "show_behind_parent": false,
+        "size": {
+          "x": 1280.0,
+          "y": 720.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_stretch_ratio": 1.0,
+        "size_flags_vertical": 1,
+        "texture_filter": 0,
+        "texture_repeat": 0,
+        "theme": null,
+        "theme_type_variation": "",
+        "tooltip_auto_translate_mode": 0,
+        "tooltip_text": "",
+        "top_level": false,
+        "translation_context": "",
+        "unique_name_in_owner": false,
+        "use_parent_material": false,
+        "visibility_layer": 1,
+        "visible": true,
+        "y_sort_enabled": false,
+        "z_as_relative": true,
+        "z_index": 0
+      }
+    },
+    {
+      "id": "node_1",
+      "parent_id": "node_0",
+      "name": "TransitionPatternsGrid",
+      "class": "GridContainer",
+      "category": "control",
+      "path": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+      "depth": 1,
+      "index_in_parent": 0,
+      "children_count": 4,
+      "groups": [],
+      "script": "",
+      "process_mode": 0,
+      "visible": true,
+      "screen_rect": {
+        "x": 48.0,
+        "y": 40.0,
+        "width": 1108.0,
+        "height": 344.0,
+        "has_bounds": true,
+        "on_screen": true
+      },
+      "script_variables": {},
+      "transforms": {
+        "position": {
+          "x": 48.0,
+          "y": 40.0
+        },
+        "global_position": {
+          "x": 48.0,
+          "y": 40.0
+        },
+        "size": {
+          "x": 1108.0,
+          "y": 344.0
+        },
+        "custom_minimum_size": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "rotation_deg": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "anchors": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 0.0,
+          "bottom": 0.0
+        },
+        "offsets": {
+          "left": 48.0,
+          "top": 40.0,
+          "right": 48.0,
+          "bottom": 40.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_vertical": 1
+      },
+      "visibility": {
+        "visible": true,
+        "visible_in_tree": true,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "top_level": false,
+        "show_behind_parent": false,
+        "clip_children": 0,
+        "light_mask": 1,
+        "visibility_layer": 1,
+        "z_index": 0,
+        "z_as_relative": true,
+        "y_sort_enabled": false
+      },
+      "physics": {},
+      "ui_and_content": {
+        "focus_mode": 0,
+        "mouse_filter": 1,
+        "tooltip_text": ""
+      },
+      "signals": [
+        {
+          "signal": "child_order_changed",
+          "target": "/root/@Node@68/GSSStageViewport",
+          "method": "Viewport::canvas_parent_mark_dirty"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid/Transition_ContainerTransform",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid/Transition_SharedAxisX",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid/Transition_FadeThrough",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid/Transition_Fade",
+          "method": "Control::_size_changed"
+        }
+      ],
+      "all_properties": {
+        "accessibility_controls_nodes": [],
+        "accessibility_described_by_nodes": [],
+        "accessibility_description": "",
+        "accessibility_flow_to_nodes": [],
+        "accessibility_labeled_by_nodes": [],
+        "accessibility_live": 0,
+        "accessibility_name": "",
+        "accessibility_region": false,
+        "anchor_bottom": 0.0,
+        "anchor_left": 0.0,
+        "anchor_right": 0.0,
+        "anchor_top": 0.0,
+        "anchors_preset": 0,
+        "auto_translate_mode": 0,
+        "clip_children": 0,
+        "clip_contents": false,
+        "columns": 2,
+        "custom_maximum_size": {
+          "x": -1.0,
+          "y": -1.0
+        },
+        "custom_minimum_size": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "editor_description": "",
+        "focus_behavior_recursive": 0,
+        "focus_mode": 0,
+        "focus_neighbor_bottom": "",
+        "focus_neighbor_left": "",
+        "focus_neighbor_right": "",
+        "focus_neighbor_top": "",
+        "focus_next": "",
+        "focus_previous": "",
+        "grow_horizontal": 1,
+        "grow_vertical": 1,
+        "layout_direction": 0,
+        "layout_mode": 0,
+        "light_mask": 1,
+        "localize_numeral_system": true,
+        "material": null,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "mouse_behavior_recursive": 0,
+        "mouse_default_cursor_shape": 0,
+        "mouse_filter": 1,
+        "mouse_force_pass_scroll_events": true,
+        "offset_bottom": 40.0,
+        "offset_left": 48.0,
+        "offset_right": 48.0,
+        "offset_top": 40.0,
+        "offset_transform_enabled": false,
+        "offset_transform_pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_pivot_ratio": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "offset_transform_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_position_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_rotation": 0.0,
+        "offset_transform_scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "offset_transform_visual_only": true,
+        "oversampling_with_scale": 0,
+        "physics_interpolation_mode": 2,
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "pivot_offset_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "position": {
+          "x": 48.0,
+          "y": 40.0
+        },
+        "process_mode": 0,
+        "process_physics_priority": 0,
+        "process_priority": 0,
+        "process_thread_group": 0,
+        "propagate_maximum_size": true,
+        "rotation": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "shortcut_context": null,
+        "show_behind_parent": false,
+        "size": {
+          "x": 1108.0,
+          "y": 344.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_stretch_ratio": 1.0,
+        "size_flags_vertical": 1,
+        "texture_filter": 0,
+        "texture_repeat": 0,
+        "theme": null,
+        "theme_override_constants/h_separation": 28,
+        "theme_override_constants/v_separation": 24,
+        "theme_type_variation": "",
+        "tooltip_auto_translate_mode": 0,
+        "tooltip_text": "",
+        "top_level": false,
+        "translation_context": "",
+        "unique_name_in_owner": false,
+        "use_parent_material": false,
+        "visibility_layer": 1,
+        "visible": true,
+        "y_sort_enabled": false,
+        "z_as_relative": true,
+        "z_index": 0
+      }
+    },
+    {
+      "id": "node_2",
+      "parent_id": "node_1",
+      "name": "Transition_ContainerTransform",
+      "class": "Control",
+      "category": "control",
+      "path": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid/Transition_ContainerTransform",
+      "depth": 2,
+      "index_in_parent": 0,
+      "children_count": 0,
+      "groups": [],
+      "script": "res://addons/material3/components/base/m3_transition.gd",
+      "process_mode": 0,
+      "visible": true,
+      "screen_rect": {
+        "x": 48.0,
+        "y": 40.0,
+        "width": 540.0,
+        "height": 160.0,
+        "has_bounds": true,
+        "on_screen": true
+      },
+      "script_variables": {
+        "_tween": null,
+        "collapsed_radius": 16.0,
+        "collapsed_rect": {
+          "position": {
+            "x": 16.0,
+            "y": 20.0
+          },
+          "size": {
+            "x": 96.0,
+            "y": 56.0
+          }
+        },
+        "current_radius": 16.0,
+        "current_rect": {
+          "position": {
+            "x": 16.0,
+            "y": 20.0
+          },
+          "size": {
+            "x": 96.0,
+            "y": 56.0
+          }
+        },
+        "effects_spring_val": 0.0,
+        "expanded_radius": 24.0,
+        "expanded_rect": {
+          "position": {
+            "x": 16.0,
+            "y": 14.0
+          },
+          "size": {
+            "x": 500.0,
+            "y": 130.0
+          }
+        },
+        "incoming_alpha": 0.0,
+        "incoming_label": "Expanded Detail",
+        "is_expanded": false,
+        "outgoing_alpha": 1.0,
+        "outgoing_label": "Card Stub",
+        "pattern": 0,
+        "spatial_spring_val": 0.0,
+        "spring_speed": 1,
+        "transition_progress": 0.0
+      },
+      "transforms": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "global_position": {
+          "x": 48.0,
+          "y": 40.0
+        },
+        "size": {
+          "x": 540.0,
+          "y": 160.0
+        },
+        "custom_minimum_size": {
+          "x": 540.0,
+          "y": 160.0
+        },
+        "rotation_deg": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "anchors": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 0.0,
+          "bottom": 0.0
+        },
+        "offsets": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 540.0,
+          "bottom": 160.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_vertical": 1
+      },
+      "visibility": {
+        "visible": true,
+        "visible_in_tree": true,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "top_level": false,
+        "show_behind_parent": false,
+        "clip_children": 0,
+        "light_mask": 1,
+        "visibility_layer": 1,
+        "z_index": 0,
+        "z_as_relative": true,
+        "y_sort_enabled": false
+      },
+      "physics": {},
+      "ui_and_content": {
+        "focus_mode": 0,
+        "mouse_filter": 0,
+        "tooltip_text": ""
+      },
+      "signals": [
+        {
+          "signal": "visibility_changed",
+          "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+          "method": "Container::_child_minsize_changed"
+        },
+        {
+          "signal": "size_flags_changed",
+          "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+          "method": "Container::queue_sort"
+        },
+        {
+          "signal": "maximum_size_changed",
+          "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+          "method": "Container::_child_minsize_changed"
+        },
+        {
+          "signal": "minimum_size_changed",
+          "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+          "method": "Container::_child_minsize_changed"
+        },
+        {
+          "signal": "_desired_size_changed",
+          "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+          "method": "Container::_child_desired_size_changed"
+        }
+      ],
+      "all_properties": {
+        "accessibility_controls_nodes": [],
+        "accessibility_described_by_nodes": [],
+        "accessibility_description": "",
+        "accessibility_flow_to_nodes": [],
+        "accessibility_labeled_by_nodes": [],
+        "accessibility_live": 0,
+        "accessibility_name": "",
+        "auto_translate_mode": 0,
+        "clip_children": 0,
+        "clip_contents": false,
+        "collapsed_radius": 16.0,
+        "collapsed_rect": {
+          "position": {
+            "x": 16.0,
+            "y": 20.0
+          },
+          "size": {
+            "x": 96.0,
+            "y": 56.0
+          }
+        },
+        "current_radius": 16.0,
+        "current_rect": {
+          "position": {
+            "x": 16.0,
+            "y": 20.0
+          },
+          "size": {
+            "x": 96.0,
+            "y": 56.0
+          }
+        },
+        "custom_maximum_size": {
+          "x": -1.0,
+          "y": -1.0
+        },
+        "custom_minimum_size": {
+          "x": 540.0,
+          "y": 160.0
+        },
+        "editor_description": "",
+        "effects_spring_val": 0.0,
+        "expanded_radius": 24.0,
+        "expanded_rect": {
+          "position": {
+            "x": 16.0,
+            "y": 14.0
+          },
+          "size": {
+            "x": 500.0,
+            "y": 130.0
+          }
+        },
+        "focus_behavior_recursive": 0,
+        "focus_mode": 0,
+        "focus_neighbor_bottom": "",
+        "focus_neighbor_left": "",
+        "focus_neighbor_right": "",
+        "focus_neighbor_top": "",
+        "focus_next": "",
+        "focus_previous": "",
+        "incoming_alpha": 0.0,
+        "incoming_label": "Expanded Detail",
+        "is_expanded": false,
+        "layout_direction": 0,
+        "layout_mode": 2,
+        "light_mask": 1,
+        "localize_numeral_system": true,
+        "material": null,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "mouse_behavior_recursive": 0,
+        "mouse_default_cursor_shape": 0,
+        "mouse_filter": 0,
+        "mouse_force_pass_scroll_events": true,
+        "offset_transform_enabled": false,
+        "offset_transform_pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_pivot_ratio": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "offset_transform_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_position_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_rotation": 0.0,
+        "offset_transform_scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "offset_transform_visual_only": true,
+        "outgoing_alpha": 1.0,
+        "outgoing_label": "Card Stub",
+        "oversampling_with_scale": 0,
+        "pattern": 0,
+        "physics_interpolation_mode": 2,
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "pivot_offset_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "process_mode": 0,
+        "process_physics_priority": 0,
+        "process_priority": 0,
+        "process_thread_group": 0,
+        "propagate_maximum_size": false,
+        "rotation": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "shortcut_context": null,
+        "show_behind_parent": false,
+        "size": {
+          "x": 540.0,
+          "y": 160.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_stretch_ratio": 1.0,
+        "size_flags_vertical": 1,
+        "spatial_spring_val": 0.0,
+        "spring_speed": 1,
+        "texture_filter": 0,
+        "texture_repeat": 0,
+        "theme": null,
+        "theme_type_variation": "",
+        "tooltip_auto_translate_mode": 0,
+        "tooltip_text": "",
+        "top_level": false,
+        "transition_progress": 0.0,
+        "translation_context": "",
+        "unique_name_in_owner": false,
+        "use_parent_material": false,
+        "visibility_layer": 1,
+        "visible": true,
+        "y_sort_enabled": false,
+        "z_as_relative": true,
+        "z_index": 0
+      }
+    },
+    {
+      "id": "node_3",
+      "parent_id": "node_1",
+      "name": "Transition_SharedAxisX",
+      "class": "Control",
+      "category": "control",
+      "path": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid/Transition_SharedAxisX",
+      "depth": 2,
+      "index_in_parent": 1,
+      "children_count": 0,
+      "groups": [],
+      "script": "res://addons/material3/components/base/m3_transition.gd",
+      "process_mode": 0,
+      "visible": true,
+      "screen_rect": {
+        "x": 616.0,
+        "y": 40.0,
+        "width": 540.0,
+        "height": 160.0,
+        "has_bounds": true,
+        "on_screen": true
+      },
+      "script_variables": {
+        "_tween": null,
+        "collapsed_radius": 16.0,
+        "collapsed_rect": {
+          "position": {
+            "x": 16.0,
+            "y": 20.0
+          },
+          "size": {
+            "x": 96.0,
+            "y": 56.0
+          }
+        },
+        "current_radius": 24.0,
+        "current_rect": {
+          "position": {
+            "x": 64.0,
+            "y": 12.0
+          },
+          "size": {
+            "x": 240.0,
+            "y": 116.0
+          }
+        },
+        "effects_spring_val": 0.0,
+        "expanded_radius": 24.0,
+        "expanded_rect": {
+          "position": {
+            "x": 16.0,
+            "y": 14.0
+          },
+          "size": {
+            "x": 500.0,
+            "y": 130.0
+          }
+        },
+        "incoming_alpha": 0.0,
+        "incoming_label": "Step 2 (Axis X)",
+        "is_expanded": false,
+        "outgoing_alpha": 1.0,
+        "outgoing_label": "Step 1",
+        "pattern": 1,
+        "spatial_spring_val": 0.0,
+        "spring_speed": 1,
+        "transition_progress": 0.0
+      },
+      "transforms": {
+        "position": {
+          "x": 568.0,
+          "y": 0.0
+        },
+        "global_position": {
+          "x": 616.0,
+          "y": 40.0
+        },
+        "size": {
+          "x": 540.0,
+          "y": 160.0
+        },
+        "custom_minimum_size": {
+          "x": 540.0,
+          "y": 160.0
+        },
+        "rotation_deg": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "anchors": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 0.0,
+          "bottom": 0.0
+        },
+        "offsets": {
+          "left": 568.0,
+          "top": 0.0,
+          "right": 1108.0,
+          "bottom": 160.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_vertical": 1
+      },
+      "visibility": {
+        "visible": true,
+        "visible_in_tree": true,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "top_level": false,
+        "show_behind_parent": false,
+        "clip_children": 0,
+        "light_mask": 1,
+        "visibility_layer": 1,
+        "z_index": 0,
+        "z_as_relative": true,
+        "y_sort_enabled": false
+      },
+      "physics": {},
+      "ui_and_content": {
+        "focus_mode": 0,
+        "mouse_filter": 0,
+        "tooltip_text": ""
+      },
+      "signals": [
+        {
+          "signal": "visibility_changed",
+          "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+          "method": "Container::_child_minsize_changed"
+        },
+        {
+          "signal": "size_flags_changed",
+          "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+          "method": "Container::queue_sort"
+        },
+        {
+          "signal": "maximum_size_changed",
+          "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+          "method": "Container::_child_minsize_changed"
+        },
+        {
+          "signal": "minimum_size_changed",
+          "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+          "method": "Container::_child_minsize_changed"
+        },
+        {
+          "signal": "_desired_size_changed",
+          "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+          "method": "Container::_child_desired_size_changed"
+        }
+      ],
+      "all_properties": {
+        "accessibility_controls_nodes": [],
+        "accessibility_described_by_nodes": [],
+        "accessibility_description": "",
+        "accessibility_flow_to_nodes": [],
+        "accessibility_labeled_by_nodes": [],
+        "accessibility_live": 0,
+        "accessibility_name": "",
+        "auto_translate_mode": 0,
+        "clip_children": 0,
+        "clip_contents": false,
+        "collapsed_radius": 16.0,
+        "collapsed_rect": {
+          "position": {
+            "x": 16.0,
+            "y": 20.0
+          },
+          "size": {
+            "x": 96.0,
+            "y": 56.0
+          }
+        },
+        "current_radius": 24.0,
+        "current_rect": {
+          "position": {
+            "x": 64.0,
+            "y": 12.0
+          },
+          "size": {
+            "x": 240.0,
+            "y": 116.0
+          }
+        },
+        "custom_maximum_size": {
+          "x": -1.0,
+          "y": -1.0
+        },
+        "custom_minimum_size": {
+          "x": 540.0,
+          "y": 160.0
+        },
+        "editor_description": "",
+        "effects_spring_val": 0.0,
+        "expanded_radius": 24.0,
+        "expanded_rect": {
+          "position": {
+            "x": 16.0,
+            "y": 14.0
+          },
+          "size": {
+            "x": 500.0,
+            "y": 130.0
+          }
+        },
+        "focus_behavior_recursive": 0,
+        "focus_mode": 0,
+        "focus_neighbor_bottom": "",
+        "focus_neighbor_left": "",
+        "focus_neighbor_right": "",
+        "focus_neighbor_top": "",
+        "focus_next": "",
+        "focus_previous": "",
+        "incoming_alpha": 0.0,
+        "incoming_label": "Step 2 (Axis X)",
+        "is_expanded": false,
+        "layout_direction": 0,
+        "layout_mode": 2,
+        "light_mask": 1,
+        "localize_numeral_system": true,
+        "material": null,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "mouse_behavior_recursive": 0,
+        "mouse_default_cursor_shape": 0,
+        "mouse_filter": 0,
+        "mouse_force_pass_scroll_events": true,
+        "offset_transform_enabled": false,
+        "offset_transform_pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_pivot_ratio": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "offset_transform_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_position_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_rotation": 0.0,
+        "offset_transform_scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "offset_transform_visual_only": true,
+        "outgoing_alpha": 1.0,
+        "outgoing_label": "Step 1",
+        "oversampling_with_scale": 0,
+        "pattern": 1,
+        "physics_interpolation_mode": 2,
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "pivot_offset_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "position": {
+          "x": 568.0,
+          "y": 0.0
+        },
+        "process_mode": 0,
+        "process_physics_priority": 0,
+        "process_priority": 0,
+        "process_thread_group": 0,
+        "propagate_maximum_size": false,
+        "rotation": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "shortcut_context": null,
+        "show_behind_parent": false,
+        "size": {
+          "x": 540.0,
+          "y": 160.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_stretch_ratio": 1.0,
+        "size_flags_vertical": 1,
+        "spatial_spring_val": 0.0,
+        "spring_speed": 1,
+        "texture_filter": 0,
+        "texture_repeat": 0,
+        "theme": null,
+        "theme_type_variation": "",
+        "tooltip_auto_translate_mode": 0,
+        "tooltip_text": "",
+        "top_level": false,
+        "transition_progress": 0.0,
+        "translation_context": "",
+        "unique_name_in_owner": false,
+        "use_parent_material": false,
+        "visibility_layer": 1,
+        "visible": true,
+        "y_sort_enabled": false,
+        "z_as_relative": true,
+        "z_index": 0
+      }
+    },
+    {
+      "id": "node_4",
+      "parent_id": "node_1",
+      "name": "Transition_FadeThrough",
+      "class": "Control",
+      "category": "control",
+      "path": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid/Transition_FadeThrough",
+      "depth": 2,
+      "index_in_parent": 2,
+      "children_count": 0,
+      "groups": [],
+      "script": "res://addons/material3/components/base/m3_transition.gd",
+      "process_mode": 0,
+      "visible": true,
+      "screen_rect": {
+        "x": 48.0,
+        "y": 224.0,
+        "width": 540.0,
+        "height": 160.0,
+        "has_bounds": true,
+        "on_screen": true
+      },
+      "script_variables": {
+        "_tween": null,
+        "collapsed_radius": 16.0,
+        "collapsed_rect": {
+          "position": {
+            "x": 16.0,
+            "y": 20.0
+          },
+          "size": {
+            "x": 96.0,
+            "y": 56.0
+          }
+        },
+        "current_radius": 24.0,
+        "current_rect": {
+          "position": {
+            "x": 16.0,
+            "y": 12.0
+          },
+          "size": {
+            "x": 240.0,
+            "y": 116.0
+          }
+        },
+        "effects_spring_val": 0.0,
+        "expanded_radius": 24.0,
+        "expanded_rect": {
+          "position": {
+            "x": 16.0,
+            "y": 14.0
+          },
+          "size": {
+            "x": 500.0,
+            "y": 130.0
+          }
+        },
+        "incoming_alpha": 0.0,
+        "incoming_label": "Tab B (FadeThrough)",
+        "is_expanded": false,
+        "outgoing_alpha": 1.0,
+        "outgoing_label": "Tab A",
+        "pattern": 4,
+        "spatial_spring_val": 0.0,
+        "spring_speed": 1,
+        "transition_progress": 0.0
+      },
+      "transforms": {
+        "position": {
+          "x": 0.0,
+          "y": 184.0
+        },
+        "global_position": {
+          "x": 48.0,
+          "y": 224.0
+        },
+        "size": {
+          "x": 540.0,
+          "y": 160.0
+        },
+        "custom_minimum_size": {
+          "x": 540.0,
+          "y": 160.0
+        },
+        "rotation_deg": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "anchors": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 0.0,
+          "bottom": 0.0
+        },
+        "offsets": {
+          "left": 0.0,
+          "top": 184.0,
+          "right": 540.0,
+          "bottom": 344.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_vertical": 1
+      },
+      "visibility": {
+        "visible": true,
+        "visible_in_tree": true,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "top_level": false,
+        "show_behind_parent": false,
+        "clip_children": 0,
+        "light_mask": 1,
+        "visibility_layer": 1,
+        "z_index": 0,
+        "z_as_relative": true,
+        "y_sort_enabled": false
+      },
+      "physics": {},
+      "ui_and_content": {
+        "focus_mode": 0,
+        "mouse_filter": 0,
+        "tooltip_text": ""
+      },
+      "signals": [
+        {
+          "signal": "visibility_changed",
+          "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+          "method": "Container::_child_minsize_changed"
+        },
+        {
+          "signal": "size_flags_changed",
+          "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+          "method": "Container::queue_sort"
+        },
+        {
+          "signal": "maximum_size_changed",
+          "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+          "method": "Container::_child_minsize_changed"
+        },
+        {
+          "signal": "minimum_size_changed",
+          "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+          "method": "Container::_child_minsize_changed"
+        },
+        {
+          "signal": "_desired_size_changed",
+          "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+          "method": "Container::_child_desired_size_changed"
+        }
+      ],
+      "all_properties": {
+        "accessibility_controls_nodes": [],
+        "accessibility_described_by_nodes": [],
+        "accessibility_description": "",
+        "accessibility_flow_to_nodes": [],
+        "accessibility_labeled_by_nodes": [],
+        "accessibility_live": 0,
+        "accessibility_name": "",
+        "auto_translate_mode": 0,
+        "clip_children": 0,
+        "clip_contents": false,
+        "collapsed_radius": 16.0,
+        "collapsed_rect": {
+          "position": {
+            "x": 16.0,
+            "y": 20.0
+          },
+          "size": {
+            "x": 96.0,
+            "y": 56.0
+          }
+        },
+        "current_radius": 24.0,
+        "current_rect": {
+          "position": {
+            "x": 16.0,
+            "y": 12.0
+          },
+          "size": {
+            "x": 240.0,
+            "y": 116.0
+          }
+        },
+        "custom_maximum_size": {
+          "x": -1.0,
+          "y": -1.0
+        },
+        "custom_minimum_size": {
+          "x": 540.0,
+          "y": 160.0
+        },
+        "editor_description": "",
+        "effects_spring_val": 0.0,
+        "expanded_radius": 24.0,
+        "expanded_rect": {
+          "position": {
+            "x": 16.0,
+            "y": 14.0
+          },
+          "size": {
+            "x": 500.0,
+            "y": 130.0
+          }
+        },
+        "focus_behavior_recursive": 0,
+        "focus_mode": 0,
+        "focus_neighbor_bottom": "",
+        "focus_neighbor_left": "",
+        "focus_neighbor_right": "",
+        "focus_neighbor_top": "",
+        "focus_next": "",
+        "focus_previous": "",
+        "incoming_alpha": 0.0,
+        "incoming_label": "Tab B (FadeThrough)",
+        "is_expanded": false,
+        "layout_direction": 0,
+        "layout_mode": 2,
+        "light_mask": 1,
+        "localize_numeral_system": true,
+        "material": null,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "mouse_behavior_recursive": 0,
+        "mouse_default_cursor_shape": 0,
+        "mouse_filter": 0,
+        "mouse_force_pass_scroll_events": true,
+        "offset_transform_enabled": false,
+        "offset_transform_pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_pivot_ratio": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "offset_transform_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_position_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_rotation": 0.0,
+        "offset_transform_scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "offset_transform_visual_only": true,
+        "outgoing_alpha": 1.0,
+        "outgoing_label": "Tab A",
+        "oversampling_with_scale": 0,
+        "pattern": 4,
+        "physics_interpolation_mode": 2,
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "pivot_offset_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "position": {
+          "x": 0.0,
+          "y": 184.0
+        },
+        "process_mode": 0,
+        "process_physics_priority": 0,
+        "process_priority": 0,
+        "process_thread_group": 0,
+        "propagate_maximum_size": false,
+        "rotation": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "shortcut_context": null,
+        "show_behind_parent": false,
+        "size": {
+          "x": 540.0,
+          "y": 160.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_stretch_ratio": 1.0,
+        "size_flags_vertical": 1,
+        "spatial_spring_val": 0.0,
+        "spring_speed": 1,
+        "texture_filter": 0,
+        "texture_repeat": 0,
+        "theme": null,
+        "theme_type_variation": "",
+        "tooltip_auto_translate_mode": 0,
+        "tooltip_text": "",
+        "top_level": false,
+        "transition_progress": 0.0,
+        "translation_context": "",
+        "unique_name_in_owner": false,
+        "use_parent_material": false,
+        "visibility_layer": 1,
+        "visible": true,
+        "y_sort_enabled": false,
+        "z_as_relative": true,
+        "z_index": 0
+      }
+    },
+    {
+      "id": "node_5",
+      "parent_id": "node_1",
+      "name": "Transition_Fade",
+      "class": "Control",
+      "category": "control",
+      "path": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid/Transition_Fade",
+      "depth": 2,
+      "index_in_parent": 3,
+      "children_count": 0,
+      "groups": [],
+      "script": "res://addons/material3/components/base/m3_transition.gd",
+      "process_mode": 0,
+      "visible": true,
+      "screen_rect": {
+        "x": 616.0,
+        "y": 224.0,
+        "width": 540.0,
+        "height": 160.0,
+        "has_bounds": true,
+        "on_screen": true
+      },
+      "script_variables": {
+        "_tween": null,
+        "collapsed_radius": 16.0,
+        "collapsed_rect": {
+          "position": {
+            "x": 16.0,
+            "y": 20.0
+          },
+          "size": {
+            "x": 96.0,
+            "y": 56.0
+          }
+        },
+        "current_radius": 24.0,
+        "current_rect": {
+          "position": {
+            "x": 16.0,
+            "y": 12.0
+          },
+          "size": {
+            "x": 240.0,
+            "y": 116.0
+          }
+        },
+        "effects_spring_val": 0.0,
+        "expanded_radius": 24.0,
+        "expanded_rect": {
+          "position": {
+            "x": 16.0,
+            "y": 14.0
+          },
+          "size": {
+            "x": 500.0,
+            "y": 130.0
+          }
+        },
+        "incoming_alpha": 0.0,
+        "incoming_label": "Modal Dialog (Fade)",
+        "is_expanded": false,
+        "outgoing_alpha": 1.0,
+        "outgoing_label": "Closed",
+        "pattern": 5,
+        "spatial_spring_val": 0.0,
+        "spring_speed": 1,
+        "transition_progress": 0.0
+      },
+      "transforms": {
+        "position": {
+          "x": 568.0,
+          "y": 184.0
+        },
+        "global_position": {
+          "x": 616.0,
+          "y": 224.0
+        },
+        "size": {
+          "x": 540.0,
+          "y": 160.0
+        },
+        "custom_minimum_size": {
+          "x": 540.0,
+          "y": 160.0
+        },
+        "rotation_deg": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "anchors": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 0.0,
+          "bottom": 0.0
+        },
+        "offsets": {
+          "left": 568.0,
+          "top": 184.0,
+          "right": 1108.0,
+          "bottom": 344.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_vertical": 1
+      },
+      "visibility": {
+        "visible": true,
+        "visible_in_tree": true,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "top_level": false,
+        "show_behind_parent": false,
+        "clip_children": 0,
+        "light_mask": 1,
+        "visibility_layer": 1,
+        "z_index": 0,
+        "z_as_relative": true,
+        "y_sort_enabled": false
+      },
+      "physics": {},
+      "ui_and_content": {
+        "focus_mode": 0,
+        "mouse_filter": 0,
+        "tooltip_text": ""
+      },
+      "signals": [
+        {
+          "signal": "visibility_changed",
+          "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+          "method": "Container::_child_minsize_changed"
+        },
+        {
+          "signal": "size_flags_changed",
+          "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+          "method": "Container::queue_sort"
+        },
+        {
+          "signal": "maximum_size_changed",
+          "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+          "method": "Container::_child_minsize_changed"
+        },
+        {
+          "signal": "minimum_size_changed",
+          "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+          "method": "Container::_child_minsize_changed"
+        },
+        {
+          "signal": "_desired_size_changed",
+          "target": "/root/@Node@68/GSSStageViewport/MotionSpringsTransitions/TransitionPatternsGrid",
+          "method": "Container::_child_desired_size_changed"
+        }
+      ],
+      "all_properties": {
+        "accessibility_controls_nodes": [],
+        "accessibility_described_by_nodes": [],
+        "accessibility_description": "",
+        "accessibility_flow_to_nodes": [],
+        "accessibility_labeled_by_nodes": [],
+        "accessibility_live": 0,
+        "accessibility_name": "",
+        "auto_translate_mode": 0,
+        "clip_children": 0,
+        "clip_contents": false,
+        "collapsed_radius": 16.0,
+        "collapsed_rect": {
+          "position": {
+            "x": 16.0,
+            "y": 20.0
+          },
+          "size": {
+            "x": 96.0,
+            "y": 56.0
+          }
+        },
+        "current_radius": 24.0,
+        "current_rect": {
+          "position": {
+            "x": 16.0,
+            "y": 12.0
+          },
+          "size": {
+            "x": 240.0,
+            "y": 116.0
+          }
+        },
+        "custom_maximum_size": {
+          "x": -1.0,
+          "y": -1.0
+        },
+        "custom_minimum_size": {
+          "x": 540.0,
+          "y": 160.0
+        },
+        "editor_description": "",
+        "effects_spring_val": 0.0,
+        "expanded_radius": 24.0,
+        "expanded_rect": {
+          "position": {
+            "x": 16.0,
+            "y": 14.0
+          },
+          "size": {
+            "x": 500.0,
+            "y": 130.0
+          }
+        },
+        "focus_behavior_recursive": 0,
+        "focus_mode": 0,
+        "focus_neighbor_bottom": "",
+        "focus_neighbor_left": "",
+        "focus_neighbor_right": "",
+        "focus_neighbor_top": "",
+        "focus_next": "",
+        "focus_previous": "",
+        "incoming_alpha": 0.0,
+        "incoming_label": "Modal Dialog (Fade)",
+        "is_expanded": false,
+        "layout_direction": 0,
+        "layout_mode": 2,
+        "light_mask": 1,
+        "localize_numeral_system": true,
+        "material": null,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "mouse_behavior_recursive": 0,
+        "mouse_default_cursor_shape": 0,
+        "mouse_filter": 0,
+        "mouse_force_pass_scroll_events": true,
+        "offset_transform_enabled": false,
+        "offset_transform_pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_pivot_ratio": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "offset_transform_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_position_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_rotation": 0.0,
+        "offset_transform_scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "offset_transform_visual_only": true,
+        "outgoing_alpha": 1.0,
+        "outgoing_label": "Closed",
+        "oversampling_with_scale": 0,
+        "pattern": 5,
+        "physics_interpolation_mode": 2,
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "pivot_offset_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "position": {
+          "x": 568.0,
+          "y": 184.0
+        },
+        "process_mode": 0,
+        "process_physics_priority": 0,
+        "process_priority": 0,
+        "process_thread_group": 0,
+        "propagate_maximum_size": false,
+        "rotation": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "shortcut_context": null,
+        "show_behind_parent": false,
+        "size": {
+          "x": 540.0,
+          "y": 160.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_stretch_ratio": 1.0,
+        "size_flags_vertical": 1,
+        "spatial_spring_val": 0.0,
+        "spring_speed": 1,
+        "texture_filter": 0,
+        "texture_repeat": 0,
+        "theme": null,
+        "theme_type_variation": "",
+        "tooltip_auto_translate_mode": 0,
+        "tooltip_text": "",
+        "top_level": false,
+        "transition_progress": 0.0,
+        "translation_context": "",
+        "unique_name_in_owner": false,
+        "use_parent_material": false,
+        "visibility_layer": 1,
+        "visible": true,
+        "y_sort_enabled": false,
+        "z_as_relative": true,
+        "z_index": 0
+      }
+    }
+  ]
+}

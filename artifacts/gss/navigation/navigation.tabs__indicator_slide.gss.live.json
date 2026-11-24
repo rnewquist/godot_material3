@@ -1,0 +1,4807 @@
+{
+  "format": "godot_scene_snapshot_live",
+  "short_name": "GSS_LIVE",
+  "version": "1.0",
+  "recording_name": "navigation.tabs__indicator_slide",
+  "metadata": {
+    "recording_name": "navigation.tabs__indicator_slide",
+    "timestamp_iso": "2026-11-24T01:46:10",
+    "total_frames": 39,
+    "delta_frames": 38,
+    "viewport_size": {
+      "width": 1280,
+      "height": 720
+    },
+    "duration_ms": 620,
+    "active_node_count": 2,
+    "bounces_detected": 0,
+    "files": {
+      "png": "res://artifacts/gss/navigation/navigation.tabs__indicator_slide.png",
+      "json": "res://artifacts/gss/navigation/navigation.tabs__indicator_slide.gss.live.json",
+      "html": "res://artifacts/gss/navigation/navigation.tabs__indicator_slide.gss.live.html",
+      "global_png": "/Users/rnewquist/Documents/Godot/material3/artifacts/gss/navigation/navigation.tabs__indicator_slide.png",
+      "global_json": "/Users/rnewquist/Documents/Godot/material3/artifacts/gss/navigation/navigation.tabs__indicator_slide.gss.live.json",
+      "global_html": "/Users/rnewquist/Documents/Godot/material3/artifacts/gss/navigation/navigation.tabs__indicator_slide.gss.live.html"
+    }
+  },
+  "initial_snapshot": {
+    "metadata": {
+      "format": "godot_scene_snapshot",
+      "short_name": "GSS",
+      "version": "1.0",
+      "snapshot_name": "navigation.tabs__indicator_slide_frame_0",
+      "timestamp_iso": "2026-11-24T01:46:09",
+      "timestamp_ticks_ms": 59890,
+      "engine_version": "4.7.2-stable (official)",
+      "display_server": "macOS",
+      "viewport_size": {
+        "width": 1280,
+        "height": 720
+      },
+      "total_nodes": 5,
+      "visible_nodes": 5,
+      "class_counts": {
+        "ColorRect": 1,
+        "Control": 4
+      },
+      "camera_3d": {},
+      "camera_2d": {},
+      "performance": {
+        "fps": 55.0,
+        "process_frames": 3032,
+        "physics_frames": 3443,
+        "memory_static_bytes": 69027067,
+        "object_count": 1730,
+        "node_count": 10
+      },
+      "frame_index": 0,
+      "elapsed_ms": 0
+    },
+    "hierarchy": {
+      "id": "node_0",
+      "parent_id": "",
+      "name": "Tabs",
+      "class": "ColorRect",
+      "category": "control",
+      "path": "/root/@Node@217/GSSStageViewport/Tabs",
+      "depth": 0,
+      "index_in_parent": 0,
+      "children_count": 2,
+      "groups": [],
+      "script": "",
+      "process_mode": 0,
+      "visible": true,
+      "screen_rect": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 1280.0,
+        "height": 720.0,
+        "has_bounds": true,
+        "on_screen": true
+      },
+      "script_variables": {},
+      "transforms": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "global_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "size": {
+          "x": 1280.0,
+          "y": 720.0
+        },
+        "custom_minimum_size": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "rotation_deg": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "anchors": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 0.0,
+          "bottom": 0.0
+        },
+        "offsets": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 1280.0,
+          "bottom": 720.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_vertical": 1
+      },
+      "visibility": {
+        "visible": true,
+        "visible_in_tree": true,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "top_level": false,
+        "show_behind_parent": false,
+        "clip_children": 0,
+        "light_mask": 1,
+        "visibility_layer": 1,
+        "z_index": 0,
+        "z_as_relative": true,
+        "y_sort_enabled": false
+      },
+      "physics": {},
+      "ui_and_content": {
+        "focus_mode": 0,
+        "mouse_filter": 2,
+        "tooltip_text": "",
+        "color": {
+          "r": 0.9788,
+          "g": 0.9745,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#faf9ffff"
+        }
+      },
+      "signals": [
+        {
+          "signal": "child_order_changed",
+          "target": "/root/@Node@217/GSSStageViewport",
+          "method": "Viewport::canvas_parent_mark_dirty"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@217/GSSStageViewport/Tabs/TabsSecondary",
+          "method": "Control::_size_changed"
+        }
+      ],
+      "all_properties": {
+        "accessibility_controls_nodes": [],
+        "accessibility_described_by_nodes": [],
+        "accessibility_description": "",
+        "accessibility_flow_to_nodes": [],
+        "accessibility_labeled_by_nodes": [],
+        "accessibility_live": 0,
+        "accessibility_name": "",
+        "anchor_bottom": 0.0,
+        "anchor_left": 0.0,
+        "anchor_right": 0.0,
+        "anchor_top": 0.0,
+        "anchors_preset": 0,
+        "auto_translate_mode": 0,
+        "clip_children": 0,
+        "clip_contents": false,
+        "color": {
+          "r": 0.9788,
+          "g": 0.9745,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#faf9ffff"
+        },
+        "custom_maximum_size": {
+          "x": -1.0,
+          "y": -1.0
+        },
+        "custom_minimum_size": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "editor_description": "",
+        "focus_behavior_recursive": 0,
+        "focus_mode": 0,
+        "focus_neighbor_bottom": "",
+        "focus_neighbor_left": "",
+        "focus_neighbor_right": "",
+        "focus_neighbor_top": "",
+        "focus_next": "",
+        "focus_previous": "",
+        "grow_horizontal": 1,
+        "grow_vertical": 1,
+        "layout_direction": 0,
+        "layout_mode": 3,
+        "light_mask": 1,
+        "localize_numeral_system": true,
+        "material": null,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "mouse_behavior_recursive": 0,
+        "mouse_default_cursor_shape": 0,
+        "mouse_filter": 2,
+        "mouse_force_pass_scroll_events": true,
+        "offset_bottom": 720.0,
+        "offset_left": 0.0,
+        "offset_right": 1280.0,
+        "offset_top": 0.0,
+        "offset_transform_enabled": false,
+        "offset_transform_pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_pivot_ratio": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "offset_transform_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_position_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_rotation": 0.0,
+        "offset_transform_scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "offset_transform_visual_only": true,
+        "oversampling_with_scale": 0,
+        "physics_interpolation_mode": 2,
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "pivot_offset_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "process_mode": 0,
+        "process_physics_priority": 0,
+        "process_priority": 0,
+        "process_thread_group": 0,
+        "propagate_maximum_size": false,
+        "rotation": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "shortcut_context": null,
+        "show_behind_parent": false,
+        "size": {
+          "x": 1280.0,
+          "y": 720.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_stretch_ratio": 1.0,
+        "size_flags_vertical": 1,
+        "texture_filter": 0,
+        "texture_repeat": 0,
+        "theme": null,
+        "theme_type_variation": "",
+        "tooltip_auto_translate_mode": 0,
+        "tooltip_text": "",
+        "top_level": false,
+        "translation_context": "",
+        "unique_name_in_owner": false,
+        "use_parent_material": false,
+        "visibility_layer": 1,
+        "visible": true,
+        "y_sort_enabled": false,
+        "z_as_relative": true,
+        "z_index": 0
+      },
+      "children": [
+        {
+          "id": "node_1",
+          "parent_id": "node_0",
+          "name": "TabsPrimary",
+          "class": "Control",
+          "category": "control",
+          "path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+          "depth": 1,
+          "index_in_parent": 0,
+          "children_count": 1,
+          "groups": [],
+          "script": "res://addons/material3/components/navigation/m3_tabs.gd",
+          "process_mode": 0,
+          "visible": true,
+          "screen_rect": {
+            "x": 60.0,
+            "y": 60.0,
+            "width": 540.0,
+            "height": 48.0,
+            "has_bounds": true,
+            "on_screen": true
+          },
+          "script_variables": {
+            "_indicator_width": 64.0,
+            "_indicator_x": 58.0,
+            "_is_dragging": false,
+            "_press_pos": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "_press_scroll": 0.0,
+            "_ripple_effect": "<Node:@Control (Control)>",
+            "_tab_rects": [
+              {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "size": {
+                  "x": 180.0,
+                  "y": 48.0
+                }
+              },
+              {
+                "position": {
+                  "x": 180.0,
+                  "y": 0.0
+                },
+                "size": {
+                  "x": 180.0,
+                  "y": 48.0
+                }
+              },
+              {
+                "position": {
+                  "x": 360.0,
+                  "y": 0.0
+                },
+                "size": {
+                  "x": 180.0,
+                  "y": 48.0
+                }
+              }
+            ],
+            "_tween": null,
+            "disabled": false,
+            "is_focused": false,
+            "is_hovered": false,
+            "is_pressed": false,
+            "leading_edge_offset": 52.0,
+            "max_scroll_offset": 0.0,
+            "min_tab_width": 120.0,
+            "scroll_offset": 0.0,
+            "scrollable": false,
+            "selected_index": 0,
+            "selected_tab": 0,
+            "selection_progress": 1.0,
+            "tab_type": 0,
+            "tabs": [
+              {
+                "label": "Overview"
+              },
+              {
+                "label": "Specifications"
+              },
+              {
+                "label": "Reviews"
+              }
+            ],
+            "total_tabs_width": 540.0
+          },
+          "transforms": {
+            "position": {
+              "x": 60.0,
+              "y": 60.0
+            },
+            "global_position": {
+              "x": 60.0,
+              "y": 60.0
+            },
+            "size": {
+              "x": 540.0,
+              "y": 48.0
+            },
+            "custom_minimum_size": {
+              "x": 0.0,
+              "y": 48.0
+            },
+            "rotation_deg": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "anchors": {
+              "left": 0.0,
+              "top": 0.0,
+              "right": 0.0,
+              "bottom": 0.0
+            },
+            "offsets": {
+              "left": 60.0,
+              "top": 60.0,
+              "right": 600.0,
+              "bottom": 108.0
+            },
+            "size_flags_horizontal": 3,
+            "size_flags_vertical": 1
+          },
+          "visibility": {
+            "visible": true,
+            "visible_in_tree": true,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "top_level": false,
+            "show_behind_parent": false,
+            "clip_children": 0,
+            "light_mask": 1,
+            "visibility_layer": 1,
+            "z_index": 0,
+            "z_as_relative": true,
+            "y_sort_enabled": false
+          },
+          "physics": {},
+          "ui_and_content": {
+            "focus_mode": 2,
+            "mouse_filter": 0,
+            "tooltip_text": ""
+          },
+          "signals": [
+            {
+              "signal": "child_order_changed",
+              "target": "/root/@Node@217/GSSStageViewport",
+              "method": "Viewport::canvas_parent_mark_dirty"
+            },
+            {
+              "signal": "item_rect_changed",
+              "target": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+              "method": "Control::_size_changed"
+            }
+          ],
+          "all_properties": {
+            "accessibility_controls_nodes": [],
+            "accessibility_described_by_nodes": [],
+            "accessibility_description": "",
+            "accessibility_flow_to_nodes": [],
+            "accessibility_labeled_by_nodes": [],
+            "accessibility_live": 0,
+            "accessibility_name": "",
+            "anchor_bottom": 0.0,
+            "anchor_left": 0.0,
+            "anchor_right": 0.0,
+            "anchor_top": 0.0,
+            "anchors_preset": 0,
+            "auto_translate_mode": 0,
+            "clip_children": 0,
+            "clip_contents": false,
+            "custom_maximum_size": {
+              "x": -1.0,
+              "y": -1.0
+            },
+            "custom_minimum_size": {
+              "x": 0.0,
+              "y": 48.0
+            },
+            "disabled": false,
+            "editor_description": "",
+            "focus_behavior_recursive": 0,
+            "focus_mode": 2,
+            "focus_neighbor_bottom": "",
+            "focus_neighbor_left": "",
+            "focus_neighbor_right": "",
+            "focus_neighbor_top": "",
+            "focus_next": "",
+            "focus_previous": "",
+            "grow_horizontal": 1,
+            "grow_vertical": 1,
+            "is_focused": false,
+            "is_hovered": false,
+            "is_pressed": false,
+            "layout_direction": 0,
+            "layout_mode": 0,
+            "leading_edge_offset": 52.0,
+            "light_mask": 1,
+            "localize_numeral_system": true,
+            "material": null,
+            "max_scroll_offset": 0.0,
+            "min_tab_width": 120.0,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "mouse_behavior_recursive": 0,
+            "mouse_default_cursor_shape": 0,
+            "mouse_filter": 0,
+            "mouse_force_pass_scroll_events": true,
+            "offset_bottom": 108.0,
+            "offset_left": 60.0,
+            "offset_right": 600.0,
+            "offset_top": 60.0,
+            "offset_transform_enabled": false,
+            "offset_transform_pivot": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_pivot_ratio": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "offset_transform_position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_position_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_rotation": 0.0,
+            "offset_transform_scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "offset_transform_visual_only": true,
+            "oversampling_with_scale": 0,
+            "physics_interpolation_mode": 2,
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "pivot_offset_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "position": {
+              "x": 60.0,
+              "y": 60.0
+            },
+            "process_mode": 0,
+            "process_physics_priority": 0,
+            "process_priority": 0,
+            "process_thread_group": 0,
+            "propagate_maximum_size": false,
+            "rotation": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "scroll_offset": 0.0,
+            "scrollable": false,
+            "selected_index": 0,
+            "selected_tab": 0,
+            "selection_progress": 1.0,
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "shortcut_context": null,
+            "show_behind_parent": false,
+            "size": {
+              "x": 540.0,
+              "y": 48.0
+            },
+            "size_flags_horizontal": 3,
+            "size_flags_stretch_ratio": 1.0,
+            "size_flags_vertical": 1,
+            "tab_type": 0,
+            "tabs": [
+              {
+                "label": "Overview"
+              },
+              {
+                "label": "Specifications"
+              },
+              {
+                "label": "Reviews"
+              }
+            ],
+            "texture_filter": 0,
+            "texture_repeat": 0,
+            "theme": null,
+            "theme_type_variation": "",
+            "tooltip_auto_translate_mode": 0,
+            "tooltip_text": "",
+            "top_level": false,
+            "total_tabs_width": 540.0,
+            "translation_context": "",
+            "unique_name_in_owner": false,
+            "use_parent_material": false,
+            "visibility_layer": 1,
+            "visible": true,
+            "y_sort_enabled": false,
+            "z_as_relative": true,
+            "z_index": 0
+          },
+          "children": [
+            {
+              "id": "node_2",
+              "parent_id": "node_1",
+              "name": "@Control",
+              "class": "Control",
+              "category": "control",
+              "path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+              "depth": 2,
+              "index_in_parent": 0,
+              "children_count": 0,
+              "groups": [],
+              "script": "res://addons/material3/components/base/m3_ripple.gd",
+              "process_mode": 0,
+              "visible": true,
+              "screen_rect": {
+                "x": 60.0,
+                "y": 60.0,
+                "width": 540.0,
+                "height": 48.0,
+                "has_bounds": true,
+                "on_screen": true
+              },
+              "script_variables": {
+                "_active_waves": [],
+                "_is_dragged": false,
+                "_is_focused": false,
+                "_is_hovered": false,
+                "_is_pressed": false,
+                "_state_layer_alpha": 0.0,
+                "_state_tween": null,
+                "_wave_alpha": 0.0,
+                "_wave_count": 0,
+                "_wave_radius": 0.0,
+                "_waves": [],
+                "bounded": true,
+                "corner_radius": 0.0,
+                "dragged_opacity": 0.16,
+                "focus_opacity": 0.1,
+                "hover_opacity": 0.08,
+                "press_opacity": 0.1,
+                "ripple_color": {
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0,
+                  "a": 1.0,
+                  "hex": "#ffffffff"
+                }
+              },
+              "transforms": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "global_position": {
+                  "x": 60.0,
+                  "y": 60.0
+                },
+                "size": {
+                  "x": 540.0,
+                  "y": 48.0
+                },
+                "custom_minimum_size": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "rotation_deg": 0.0,
+                "scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "pivot_offset": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "anchors": {
+                  "left": 0.0,
+                  "top": 0.0,
+                  "right": 1.0,
+                  "bottom": 1.0
+                },
+                "offsets": {
+                  "left": 0.0,
+                  "top": 0.0,
+                  "right": 0.0,
+                  "bottom": 0.0
+                },
+                "size_flags_horizontal": 1,
+                "size_flags_vertical": 1
+              },
+              "visibility": {
+                "visible": true,
+                "visible_in_tree": true,
+                "modulate": {
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0,
+                  "a": 1.0,
+                  "hex": "#ffffffff"
+                },
+                "self_modulate": {
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0,
+                  "a": 1.0,
+                  "hex": "#ffffffff"
+                },
+                "top_level": false,
+                "show_behind_parent": false,
+                "clip_children": 0,
+                "light_mask": 1,
+                "visibility_layer": 1,
+                "z_index": 0,
+                "z_as_relative": true,
+                "y_sort_enabled": false
+              },
+              "physics": {},
+              "ui_and_content": {
+                "focus_mode": 0,
+                "mouse_filter": 2,
+                "tooltip_text": ""
+              },
+              "signals": [],
+              "all_properties": {
+                "accessibility_controls_nodes": [],
+                "accessibility_described_by_nodes": [],
+                "accessibility_description": "",
+                "accessibility_flow_to_nodes": [],
+                "accessibility_labeled_by_nodes": [],
+                "accessibility_live": 0,
+                "accessibility_name": "",
+                "anchor_bottom": 1.0,
+                "anchor_left": 0.0,
+                "anchor_right": 1.0,
+                "anchor_top": 0.0,
+                "anchors_preset": 0,
+                "auto_translate_mode": 0,
+                "bounded": true,
+                "clip_children": 0,
+                "clip_contents": true,
+                "corner_radius": 0.0,
+                "custom_maximum_size": {
+                  "x": -1.0,
+                  "y": -1.0
+                },
+                "custom_minimum_size": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "dragged_opacity": 0.16,
+                "editor_description": "",
+                "focus_behavior_recursive": 0,
+                "focus_mode": 0,
+                "focus_neighbor_bottom": "",
+                "focus_neighbor_left": "",
+                "focus_neighbor_right": "",
+                "focus_neighbor_top": "",
+                "focus_next": "",
+                "focus_opacity": 0.1,
+                "focus_previous": "",
+                "grow_horizontal": 1,
+                "grow_vertical": 1,
+                "hover_opacity": 0.08,
+                "layout_direction": 0,
+                "layout_mode": 0,
+                "light_mask": 1,
+                "localize_numeral_system": true,
+                "material": null,
+                "modulate": {
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0,
+                  "a": 1.0,
+                  "hex": "#ffffffff"
+                },
+                "mouse_behavior_recursive": 0,
+                "mouse_default_cursor_shape": 0,
+                "mouse_filter": 2,
+                "mouse_force_pass_scroll_events": true,
+                "offset_bottom": 0.0,
+                "offset_left": 0.0,
+                "offset_right": 0.0,
+                "offset_top": 0.0,
+                "offset_transform_enabled": false,
+                "offset_transform_pivot": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "offset_transform_pivot_ratio": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "offset_transform_position": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "offset_transform_position_ratio": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "offset_transform_rotation": 0.0,
+                "offset_transform_scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "offset_transform_visual_only": true,
+                "oversampling_with_scale": 0,
+                "physics_interpolation_mode": 2,
+                "pivot_offset": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "pivot_offset_ratio": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "press_opacity": 0.1,
+                "process_mode": 0,
+                "process_physics_priority": 0,
+                "process_priority": 0,
+                "process_thread_group": 0,
+                "propagate_maximum_size": false,
+                "ripple_color": {
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0,
+                  "a": 1.0,
+                  "hex": "#ffffffff"
+                },
+                "rotation": 0.0,
+                "scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "self_modulate": {
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0,
+                  "a": 1.0,
+                  "hex": "#ffffffff"
+                },
+                "shortcut_context": null,
+                "show_behind_parent": false,
+                "size": {
+                  "x": 540.0,
+                  "y": 48.0
+                },
+                "size_flags_horizontal": 1,
+                "size_flags_stretch_ratio": 1.0,
+                "size_flags_vertical": 1,
+                "texture_filter": 0,
+                "texture_repeat": 0,
+                "theme": null,
+                "theme_type_variation": "",
+                "tooltip_auto_translate_mode": 0,
+                "tooltip_text": "",
+                "top_level": false,
+                "translation_context": "",
+                "unique_name_in_owner": false,
+                "use_parent_material": false,
+                "visibility_layer": 1,
+                "visible": true,
+                "y_sort_enabled": false,
+                "z_as_relative": true,
+                "z_index": 0
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "node_3",
+          "parent_id": "node_0",
+          "name": "TabsSecondary",
+          "class": "Control",
+          "category": "control",
+          "path": "/root/@Node@217/GSSStageViewport/Tabs/TabsSecondary",
+          "depth": 1,
+          "index_in_parent": 1,
+          "children_count": 1,
+          "groups": [],
+          "script": "res://addons/material3/components/navigation/m3_tabs.gd",
+          "process_mode": 0,
+          "visible": true,
+          "screen_rect": {
+            "x": 60.0,
+            "y": 150.0,
+            "width": 540.0,
+            "height": 48.0,
+            "has_bounds": true,
+            "on_screen": true
+          },
+          "script_variables": {
+            "_indicator_width": 180.0,
+            "_indicator_x": 0.0,
+            "_is_dragging": false,
+            "_press_pos": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "_press_scroll": 0.0,
+            "_ripple_effect": "<Node:@Control (Control)>",
+            "_tab_rects": [
+              {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "size": {
+                  "x": 180.0,
+                  "y": 48.0
+                }
+              },
+              {
+                "position": {
+                  "x": 180.0,
+                  "y": 0.0
+                },
+                "size": {
+                  "x": 180.0,
+                  "y": 48.0
+                }
+              },
+              {
+                "position": {
+                  "x": 360.0,
+                  "y": 0.0
+                },
+                "size": {
+                  "x": 180.0,
+                  "y": 48.0
+                }
+              }
+            ],
+            "_tween": null,
+            "disabled": false,
+            "is_focused": false,
+            "is_hovered": false,
+            "is_pressed": false,
+            "leading_edge_offset": 52.0,
+            "max_scroll_offset": 0.0,
+            "min_tab_width": 120.0,
+            "scroll_offset": 0.0,
+            "scrollable": false,
+            "selected_index": 0,
+            "selected_tab": 0,
+            "selection_progress": 1.0,
+            "tab_type": 1,
+            "tabs": [
+              {
+                "label": "All"
+              },
+              {
+                "label": "Unread"
+              },
+              {
+                "label": "Archived"
+              }
+            ],
+            "total_tabs_width": 540.0
+          },
+          "transforms": {
+            "position": {
+              "x": 60.0,
+              "y": 150.0
+            },
+            "global_position": {
+              "x": 60.0,
+              "y": 150.0
+            },
+            "size": {
+              "x": 540.0,
+              "y": 48.0
+            },
+            "custom_minimum_size": {
+              "x": 0.0,
+              "y": 48.0
+            },
+            "rotation_deg": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "anchors": {
+              "left": 0.0,
+              "top": 0.0,
+              "right": 0.0,
+              "bottom": 0.0
+            },
+            "offsets": {
+              "left": 60.0,
+              "top": 150.0,
+              "right": 600.0,
+              "bottom": 198.0
+            },
+            "size_flags_horizontal": 3,
+            "size_flags_vertical": 1
+          },
+          "visibility": {
+            "visible": true,
+            "visible_in_tree": true,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "top_level": false,
+            "show_behind_parent": false,
+            "clip_children": 0,
+            "light_mask": 1,
+            "visibility_layer": 1,
+            "z_index": 0,
+            "z_as_relative": true,
+            "y_sort_enabled": false
+          },
+          "physics": {},
+          "ui_and_content": {
+            "focus_mode": 2,
+            "mouse_filter": 0,
+            "tooltip_text": ""
+          },
+          "signals": [
+            {
+              "signal": "child_order_changed",
+              "target": "/root/@Node@217/GSSStageViewport",
+              "method": "Viewport::canvas_parent_mark_dirty"
+            },
+            {
+              "signal": "item_rect_changed",
+              "target": "/root/@Node@217/GSSStageViewport/Tabs/TabsSecondary/@Control@303",
+              "method": "Control::_size_changed"
+            }
+          ],
+          "all_properties": {
+            "accessibility_controls_nodes": [],
+            "accessibility_described_by_nodes": [],
+            "accessibility_description": "",
+            "accessibility_flow_to_nodes": [],
+            "accessibility_labeled_by_nodes": [],
+            "accessibility_live": 0,
+            "accessibility_name": "",
+            "anchor_bottom": 0.0,
+            "anchor_left": 0.0,
+            "anchor_right": 0.0,
+            "anchor_top": 0.0,
+            "anchors_preset": 0,
+            "auto_translate_mode": 0,
+            "clip_children": 0,
+            "clip_contents": false,
+            "custom_maximum_size": {
+              "x": -1.0,
+              "y": -1.0
+            },
+            "custom_minimum_size": {
+              "x": 0.0,
+              "y": 48.0
+            },
+            "disabled": false,
+            "editor_description": "",
+            "focus_behavior_recursive": 0,
+            "focus_mode": 2,
+            "focus_neighbor_bottom": "",
+            "focus_neighbor_left": "",
+            "focus_neighbor_right": "",
+            "focus_neighbor_top": "",
+            "focus_next": "",
+            "focus_previous": "",
+            "grow_horizontal": 1,
+            "grow_vertical": 1,
+            "is_focused": false,
+            "is_hovered": false,
+            "is_pressed": false,
+            "layout_direction": 0,
+            "layout_mode": 0,
+            "leading_edge_offset": 52.0,
+            "light_mask": 1,
+            "localize_numeral_system": true,
+            "material": null,
+            "max_scroll_offset": 0.0,
+            "min_tab_width": 120.0,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "mouse_behavior_recursive": 0,
+            "mouse_default_cursor_shape": 0,
+            "mouse_filter": 0,
+            "mouse_force_pass_scroll_events": true,
+            "offset_bottom": 198.0,
+            "offset_left": 60.0,
+            "offset_right": 600.0,
+            "offset_top": 150.0,
+            "offset_transform_enabled": false,
+            "offset_transform_pivot": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_pivot_ratio": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "offset_transform_position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_position_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_rotation": 0.0,
+            "offset_transform_scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "offset_transform_visual_only": true,
+            "oversampling_with_scale": 0,
+            "physics_interpolation_mode": 2,
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "pivot_offset_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "position": {
+              "x": 60.0,
+              "y": 150.0
+            },
+            "process_mode": 0,
+            "process_physics_priority": 0,
+            "process_priority": 0,
+            "process_thread_group": 0,
+            "propagate_maximum_size": false,
+            "rotation": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "scroll_offset": 0.0,
+            "scrollable": false,
+            "selected_index": 0,
+            "selected_tab": 0,
+            "selection_progress": 1.0,
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "shortcut_context": null,
+            "show_behind_parent": false,
+            "size": {
+              "x": 540.0,
+              "y": 48.0
+            },
+            "size_flags_horizontal": 3,
+            "size_flags_stretch_ratio": 1.0,
+            "size_flags_vertical": 1,
+            "tab_type": 1,
+            "tabs": [
+              {
+                "label": "All"
+              },
+              {
+                "label": "Unread"
+              },
+              {
+                "label": "Archived"
+              }
+            ],
+            "texture_filter": 0,
+            "texture_repeat": 0,
+            "theme": null,
+            "theme_type_variation": "",
+            "tooltip_auto_translate_mode": 0,
+            "tooltip_text": "",
+            "top_level": false,
+            "total_tabs_width": 540.0,
+            "translation_context": "",
+            "unique_name_in_owner": false,
+            "use_parent_material": false,
+            "visibility_layer": 1,
+            "visible": true,
+            "y_sort_enabled": false,
+            "z_as_relative": true,
+            "z_index": 0
+          },
+          "children": [
+            {
+              "id": "node_4",
+              "parent_id": "node_3",
+              "name": "@Control",
+              "class": "Control",
+              "category": "control",
+              "path": "/root/@Node@217/GSSStageViewport/Tabs/TabsSecondary/@Control@303",
+              "depth": 2,
+              "index_in_parent": 0,
+              "children_count": 0,
+              "groups": [],
+              "script": "res://addons/material3/components/base/m3_ripple.gd",
+              "process_mode": 0,
+              "visible": true,
+              "screen_rect": {
+                "x": 60.0,
+                "y": 150.0,
+                "width": 540.0,
+                "height": 48.0,
+                "has_bounds": true,
+                "on_screen": true
+              },
+              "script_variables": {
+                "_active_waves": [],
+                "_is_dragged": false,
+                "_is_focused": false,
+                "_is_hovered": false,
+                "_is_pressed": false,
+                "_state_layer_alpha": 0.0,
+                "_state_tween": null,
+                "_wave_alpha": 0.0,
+                "_wave_count": 0,
+                "_wave_radius": 0.0,
+                "_waves": [],
+                "bounded": true,
+                "corner_radius": 0.0,
+                "dragged_opacity": 0.16,
+                "focus_opacity": 0.1,
+                "hover_opacity": 0.08,
+                "press_opacity": 0.1,
+                "ripple_color": {
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0,
+                  "a": 1.0,
+                  "hex": "#ffffffff"
+                }
+              },
+              "transforms": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "global_position": {
+                  "x": 60.0,
+                  "y": 150.0
+                },
+                "size": {
+                  "x": 540.0,
+                  "y": 48.0
+                },
+                "custom_minimum_size": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "rotation_deg": 0.0,
+                "scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "pivot_offset": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "anchors": {
+                  "left": 0.0,
+                  "top": 0.0,
+                  "right": 1.0,
+                  "bottom": 1.0
+                },
+                "offsets": {
+                  "left": 0.0,
+                  "top": 0.0,
+                  "right": 0.0,
+                  "bottom": 0.0
+                },
+                "size_flags_horizontal": 1,
+                "size_flags_vertical": 1
+              },
+              "visibility": {
+                "visible": true,
+                "visible_in_tree": true,
+                "modulate": {
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0,
+                  "a": 1.0,
+                  "hex": "#ffffffff"
+                },
+                "self_modulate": {
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0,
+                  "a": 1.0,
+                  "hex": "#ffffffff"
+                },
+                "top_level": false,
+                "show_behind_parent": false,
+                "clip_children": 0,
+                "light_mask": 1,
+                "visibility_layer": 1,
+                "z_index": 0,
+                "z_as_relative": true,
+                "y_sort_enabled": false
+              },
+              "physics": {},
+              "ui_and_content": {
+                "focus_mode": 0,
+                "mouse_filter": 2,
+                "tooltip_text": ""
+              },
+              "signals": [],
+              "all_properties": {
+                "accessibility_controls_nodes": [],
+                "accessibility_described_by_nodes": [],
+                "accessibility_description": "",
+                "accessibility_flow_to_nodes": [],
+                "accessibility_labeled_by_nodes": [],
+                "accessibility_live": 0,
+                "accessibility_name": "",
+                "anchor_bottom": 1.0,
+                "anchor_left": 0.0,
+                "anchor_right": 1.0,
+                "anchor_top": 0.0,
+                "anchors_preset": 0,
+                "auto_translate_mode": 0,
+                "bounded": true,
+                "clip_children": 0,
+                "clip_contents": true,
+                "corner_radius": 0.0,
+                "custom_maximum_size": {
+                  "x": -1.0,
+                  "y": -1.0
+                },
+                "custom_minimum_size": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "dragged_opacity": 0.16,
+                "editor_description": "",
+                "focus_behavior_recursive": 0,
+                "focus_mode": 0,
+                "focus_neighbor_bottom": "",
+                "focus_neighbor_left": "",
+                "focus_neighbor_right": "",
+                "focus_neighbor_top": "",
+                "focus_next": "",
+                "focus_opacity": 0.1,
+                "focus_previous": "",
+                "grow_horizontal": 1,
+                "grow_vertical": 1,
+                "hover_opacity": 0.08,
+                "layout_direction": 0,
+                "layout_mode": 0,
+                "light_mask": 1,
+                "localize_numeral_system": true,
+                "material": null,
+                "modulate": {
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0,
+                  "a": 1.0,
+                  "hex": "#ffffffff"
+                },
+                "mouse_behavior_recursive": 0,
+                "mouse_default_cursor_shape": 0,
+                "mouse_filter": 2,
+                "mouse_force_pass_scroll_events": true,
+                "offset_bottom": 0.0,
+                "offset_left": 0.0,
+                "offset_right": 0.0,
+                "offset_top": 0.0,
+                "offset_transform_enabled": false,
+                "offset_transform_pivot": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "offset_transform_pivot_ratio": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "offset_transform_position": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "offset_transform_position_ratio": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "offset_transform_rotation": 0.0,
+                "offset_transform_scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "offset_transform_visual_only": true,
+                "oversampling_with_scale": 0,
+                "physics_interpolation_mode": 2,
+                "pivot_offset": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "pivot_offset_ratio": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "press_opacity": 0.1,
+                "process_mode": 0,
+                "process_physics_priority": 0,
+                "process_priority": 0,
+                "process_thread_group": 0,
+                "propagate_maximum_size": false,
+                "ripple_color": {
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0,
+                  "a": 1.0,
+                  "hex": "#ffffffff"
+                },
+                "rotation": 0.0,
+                "scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "self_modulate": {
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0,
+                  "a": 1.0,
+                  "hex": "#ffffffff"
+                },
+                "shortcut_context": null,
+                "show_behind_parent": false,
+                "size": {
+                  "x": 540.0,
+                  "y": 48.0
+                },
+                "size_flags_horizontal": 1,
+                "size_flags_stretch_ratio": 1.0,
+                "size_flags_vertical": 1,
+                "texture_filter": 0,
+                "texture_repeat": 0,
+                "theme": null,
+                "theme_type_variation": "",
+                "tooltip_auto_translate_mode": 0,
+                "tooltip_text": "",
+                "top_level": false,
+                "translation_context": "",
+                "unique_name_in_owner": false,
+                "use_parent_material": false,
+                "visibility_layer": 1,
+                "visible": true,
+                "y_sort_enabled": false,
+                "z_as_relative": true,
+                "z_index": 0
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    "flat_nodes": [
+      {
+        "id": "node_0",
+        "parent_id": "",
+        "name": "Tabs",
+        "class": "ColorRect",
+        "category": "control",
+        "path": "/root/@Node@217/GSSStageViewport/Tabs",
+        "depth": 0,
+        "index_in_parent": 0,
+        "children_count": 2,
+        "groups": [],
+        "script": "",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 1280.0,
+          "height": 720.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {},
+        "transforms": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "global_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "size": {
+            "x": 1280.0,
+            "y": 720.0
+          },
+          "custom_minimum_size": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 1280.0,
+            "bottom": 720.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 0,
+          "mouse_filter": 2,
+          "tooltip_text": "",
+          "color": {
+            "r": 0.9788,
+            "g": 0.9745,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#faf9ffff"
+          }
+        },
+        "signals": [
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@217/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@217/GSSStageViewport/Tabs/TabsSecondary",
+            "method": "Control::_size_changed"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "clip_children": 0,
+          "clip_contents": false,
+          "color": {
+            "r": 0.9788,
+            "g": 0.9745,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#faf9ffff"
+          },
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "editor_description": "",
+          "focus_behavior_recursive": 0,
+          "focus_mode": 0,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "layout_direction": 0,
+          "layout_mode": 3,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 0,
+          "mouse_filter": 2,
+          "mouse_force_pass_scroll_events": true,
+          "offset_bottom": 720.0,
+          "offset_left": 0.0,
+          "offset_right": 1280.0,
+          "offset_top": 0.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "size": {
+            "x": 1280.0,
+            "y": 720.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "visibility_layer": 1,
+          "visible": true,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        }
+      },
+      {
+        "id": "node_1",
+        "parent_id": "node_0",
+        "name": "TabsPrimary",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "depth": 1,
+        "index_in_parent": 0,
+        "children_count": 1,
+        "groups": [],
+        "script": "res://addons/material3/components/navigation/m3_tabs.gd",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 60.0,
+          "y": 60.0,
+          "width": 540.0,
+          "height": 48.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {
+          "_indicator_width": 64.0,
+          "_indicator_x": 58.0,
+          "_is_dragging": false,
+          "_press_pos": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "_press_scroll": 0.0,
+          "_ripple_effect": "<Node:@Control (Control)>",
+          "_tab_rects": [
+            {
+              "position": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "size": {
+                "x": 180.0,
+                "y": 48.0
+              }
+            },
+            {
+              "position": {
+                "x": 180.0,
+                "y": 0.0
+              },
+              "size": {
+                "x": 180.0,
+                "y": 48.0
+              }
+            },
+            {
+              "position": {
+                "x": 360.0,
+                "y": 0.0
+              },
+              "size": {
+                "x": 180.0,
+                "y": 48.0
+              }
+            }
+          ],
+          "_tween": null,
+          "disabled": false,
+          "is_focused": false,
+          "is_hovered": false,
+          "is_pressed": false,
+          "leading_edge_offset": 52.0,
+          "max_scroll_offset": 0.0,
+          "min_tab_width": 120.0,
+          "scroll_offset": 0.0,
+          "scrollable": false,
+          "selected_index": 0,
+          "selected_tab": 0,
+          "selection_progress": 1.0,
+          "tab_type": 0,
+          "tabs": [
+            {
+              "label": "Overview"
+            },
+            {
+              "label": "Specifications"
+            },
+            {
+              "label": "Reviews"
+            }
+          ],
+          "total_tabs_width": 540.0
+        },
+        "transforms": {
+          "position": {
+            "x": 60.0,
+            "y": 60.0
+          },
+          "global_position": {
+            "x": 60.0,
+            "y": 60.0
+          },
+          "size": {
+            "x": 540.0,
+            "y": 48.0
+          },
+          "custom_minimum_size": {
+            "x": 0.0,
+            "y": 48.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 60.0,
+            "top": 60.0,
+            "right": 600.0,
+            "bottom": 108.0
+          },
+          "size_flags_horizontal": 3,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 2,
+          "mouse_filter": 0,
+          "tooltip_text": ""
+        },
+        "signals": [
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@217/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+            "method": "Control::_size_changed"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "clip_children": 0,
+          "clip_contents": false,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 0.0,
+            "y": 48.0
+          },
+          "disabled": false,
+          "editor_description": "",
+          "focus_behavior_recursive": 0,
+          "focus_mode": 2,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "is_focused": false,
+          "is_hovered": false,
+          "is_pressed": false,
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "leading_edge_offset": 52.0,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "max_scroll_offset": 0.0,
+          "min_tab_width": 120.0,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 0,
+          "mouse_filter": 0,
+          "mouse_force_pass_scroll_events": true,
+          "offset_bottom": 108.0,
+          "offset_left": 60.0,
+          "offset_right": 600.0,
+          "offset_top": 60.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "position": {
+            "x": 60.0,
+            "y": 60.0
+          },
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "scroll_offset": 0.0,
+          "scrollable": false,
+          "selected_index": 0,
+          "selected_tab": 0,
+          "selection_progress": 1.0,
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "size": {
+            "x": 540.0,
+            "y": 48.0
+          },
+          "size_flags_horizontal": 3,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "tab_type": 0,
+          "tabs": [
+            {
+              "label": "Overview"
+            },
+            {
+              "label": "Specifications"
+            },
+            {
+              "label": "Reviews"
+            }
+          ],
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "total_tabs_width": 540.0,
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "visibility_layer": 1,
+          "visible": true,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        }
+      },
+      {
+        "id": "node_2",
+        "parent_id": "node_1",
+        "name": "@Control",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "depth": 2,
+        "index_in_parent": 0,
+        "children_count": 0,
+        "groups": [],
+        "script": "res://addons/material3/components/base/m3_ripple.gd",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 60.0,
+          "y": 60.0,
+          "width": 540.0,
+          "height": 48.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {
+          "_active_waves": [],
+          "_is_dragged": false,
+          "_is_focused": false,
+          "_is_hovered": false,
+          "_is_pressed": false,
+          "_state_layer_alpha": 0.0,
+          "_state_tween": null,
+          "_wave_alpha": 0.0,
+          "_wave_count": 0,
+          "_wave_radius": 0.0,
+          "_waves": [],
+          "bounded": true,
+          "corner_radius": 0.0,
+          "dragged_opacity": 0.16,
+          "focus_opacity": 0.1,
+          "hover_opacity": 0.08,
+          "press_opacity": 0.1,
+          "ripple_color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          }
+        },
+        "transforms": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "global_position": {
+            "x": 60.0,
+            "y": 60.0
+          },
+          "size": {
+            "x": 540.0,
+            "y": 48.0
+          },
+          "custom_minimum_size": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 1.0,
+            "bottom": 1.0
+          },
+          "offsets": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 0,
+          "mouse_filter": 2,
+          "tooltip_text": ""
+        },
+        "signals": [],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 1.0,
+          "anchor_left": 0.0,
+          "anchor_right": 1.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "bounded": true,
+          "clip_children": 0,
+          "clip_contents": true,
+          "corner_radius": 0.0,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "dragged_opacity": 0.16,
+          "editor_description": "",
+          "focus_behavior_recursive": 0,
+          "focus_mode": 0,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_opacity": 0.1,
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "hover_opacity": 0.08,
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 0,
+          "mouse_filter": 2,
+          "mouse_force_pass_scroll_events": true,
+          "offset_bottom": 0.0,
+          "offset_left": 0.0,
+          "offset_right": 0.0,
+          "offset_top": 0.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "press_opacity": 0.1,
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "ripple_color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "size": {
+            "x": 540.0,
+            "y": 48.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "visibility_layer": 1,
+          "visible": true,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        }
+      },
+      {
+        "id": "node_3",
+        "parent_id": "node_0",
+        "name": "TabsSecondary",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@217/GSSStageViewport/Tabs/TabsSecondary",
+        "depth": 1,
+        "index_in_parent": 1,
+        "children_count": 1,
+        "groups": [],
+        "script": "res://addons/material3/components/navigation/m3_tabs.gd",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 60.0,
+          "y": 150.0,
+          "width": 540.0,
+          "height": 48.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {
+          "_indicator_width": 180.0,
+          "_indicator_x": 0.0,
+          "_is_dragging": false,
+          "_press_pos": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "_press_scroll": 0.0,
+          "_ripple_effect": "<Node:@Control (Control)>",
+          "_tab_rects": [
+            {
+              "position": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "size": {
+                "x": 180.0,
+                "y": 48.0
+              }
+            },
+            {
+              "position": {
+                "x": 180.0,
+                "y": 0.0
+              },
+              "size": {
+                "x": 180.0,
+                "y": 48.0
+              }
+            },
+            {
+              "position": {
+                "x": 360.0,
+                "y": 0.0
+              },
+              "size": {
+                "x": 180.0,
+                "y": 48.0
+              }
+            }
+          ],
+          "_tween": null,
+          "disabled": false,
+          "is_focused": false,
+          "is_hovered": false,
+          "is_pressed": false,
+          "leading_edge_offset": 52.0,
+          "max_scroll_offset": 0.0,
+          "min_tab_width": 120.0,
+          "scroll_offset": 0.0,
+          "scrollable": false,
+          "selected_index": 0,
+          "selected_tab": 0,
+          "selection_progress": 1.0,
+          "tab_type": 1,
+          "tabs": [
+            {
+              "label": "All"
+            },
+            {
+              "label": "Unread"
+            },
+            {
+              "label": "Archived"
+            }
+          ],
+          "total_tabs_width": 540.0
+        },
+        "transforms": {
+          "position": {
+            "x": 60.0,
+            "y": 150.0
+          },
+          "global_position": {
+            "x": 60.0,
+            "y": 150.0
+          },
+          "size": {
+            "x": 540.0,
+            "y": 48.0
+          },
+          "custom_minimum_size": {
+            "x": 0.0,
+            "y": 48.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 60.0,
+            "top": 150.0,
+            "right": 600.0,
+            "bottom": 198.0
+          },
+          "size_flags_horizontal": 3,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 2,
+          "mouse_filter": 0,
+          "tooltip_text": ""
+        },
+        "signals": [
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@217/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@217/GSSStageViewport/Tabs/TabsSecondary/@Control@303",
+            "method": "Control::_size_changed"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "clip_children": 0,
+          "clip_contents": false,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 0.0,
+            "y": 48.0
+          },
+          "disabled": false,
+          "editor_description": "",
+          "focus_behavior_recursive": 0,
+          "focus_mode": 2,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "is_focused": false,
+          "is_hovered": false,
+          "is_pressed": false,
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "leading_edge_offset": 52.0,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "max_scroll_offset": 0.0,
+          "min_tab_width": 120.0,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 0,
+          "mouse_filter": 0,
+          "mouse_force_pass_scroll_events": true,
+          "offset_bottom": 198.0,
+          "offset_left": 60.0,
+          "offset_right": 600.0,
+          "offset_top": 150.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "position": {
+            "x": 60.0,
+            "y": 150.0
+          },
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "scroll_offset": 0.0,
+          "scrollable": false,
+          "selected_index": 0,
+          "selected_tab": 0,
+          "selection_progress": 1.0,
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "size": {
+            "x": 540.0,
+            "y": 48.0
+          },
+          "size_flags_horizontal": 3,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "tab_type": 1,
+          "tabs": [
+            {
+              "label": "All"
+            },
+            {
+              "label": "Unread"
+            },
+            {
+              "label": "Archived"
+            }
+          ],
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "total_tabs_width": 540.0,
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "visibility_layer": 1,
+          "visible": true,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        }
+      },
+      {
+        "id": "node_4",
+        "parent_id": "node_3",
+        "name": "@Control",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@217/GSSStageViewport/Tabs/TabsSecondary/@Control@303",
+        "depth": 2,
+        "index_in_parent": 0,
+        "children_count": 0,
+        "groups": [],
+        "script": "res://addons/material3/components/base/m3_ripple.gd",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 60.0,
+          "y": 150.0,
+          "width": 540.0,
+          "height": 48.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {
+          "_active_waves": [],
+          "_is_dragged": false,
+          "_is_focused": false,
+          "_is_hovered": false,
+          "_is_pressed": false,
+          "_state_layer_alpha": 0.0,
+          "_state_tween": null,
+          "_wave_alpha": 0.0,
+          "_wave_count": 0,
+          "_wave_radius": 0.0,
+          "_waves": [],
+          "bounded": true,
+          "corner_radius": 0.0,
+          "dragged_opacity": 0.16,
+          "focus_opacity": 0.1,
+          "hover_opacity": 0.08,
+          "press_opacity": 0.1,
+          "ripple_color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          }
+        },
+        "transforms": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "global_position": {
+            "x": 60.0,
+            "y": 150.0
+          },
+          "size": {
+            "x": 540.0,
+            "y": 48.0
+          },
+          "custom_minimum_size": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 1.0,
+            "bottom": 1.0
+          },
+          "offsets": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 0,
+          "mouse_filter": 2,
+          "tooltip_text": ""
+        },
+        "signals": [],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 1.0,
+          "anchor_left": 0.0,
+          "anchor_right": 1.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "bounded": true,
+          "clip_children": 0,
+          "clip_contents": true,
+          "corner_radius": 0.0,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "dragged_opacity": 0.16,
+          "editor_description": "",
+          "focus_behavior_recursive": 0,
+          "focus_mode": 0,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_opacity": 0.1,
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "hover_opacity": 0.08,
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 0,
+          "mouse_filter": 2,
+          "mouse_force_pass_scroll_events": true,
+          "offset_bottom": 0.0,
+          "offset_left": 0.0,
+          "offset_right": 0.0,
+          "offset_top": 0.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "press_opacity": 0.1,
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "ripple_color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "size": {
+            "x": 540.0,
+            "y": 48.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "visibility_layer": 1,
+          "visible": true,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        }
+      }
+    ]
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "elapsed_ms": 5,
+      "delta_sec": 0.0167,
+      "process_frame": 3033,
+      "physics_frame": 3444,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary": {
+          "script_variables": {
+            "_tween": "<Tween>",
+            "is_focused": true,
+            "is_hovered": true,
+            "is_pressed": true,
+            "selected_index": 2,
+            "selected_tab": 2,
+            "selection_progress": 0.0
+          }
+        },
+        "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302": {
+          "script_variables": {
+            "_active_waves": [
+              "<RefCounted>"
+            ],
+            "_is_hovered": true,
+            "_is_pressed": true,
+            "_state_tween": "<Tween>",
+            "_wave_alpha": 0.1,
+            "_wave_count": 1
+          }
+        }
+      },
+      "changed_count": 2
+    },
+    {
+      "frame_index": 2,
+      "elapsed_ms": 18,
+      "delta_sec": 0.0167,
+      "process_frame": 3034,
+      "physics_frame": 3445,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary": {
+          "script_variables": {
+            "_indicator_width": 62.3173,
+            "_indicator_x": 126.148,
+            "selection_progress": 0.187
+          }
+        },
+        "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302": {
+          "script_variables": {
+            "_state_layer_alpha": 0.0298,
+            "_wave_radius": 70.5642
+          }
+        }
+      },
+      "changed_count": 2
+    },
+    {
+      "frame_index": 3,
+      "elapsed_ms": 35,
+      "delta_sec": 0.0167,
+      "process_frame": 3035,
+      "physics_frame": 3446,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary": {
+          "script_variables": {
+            "_indicator_width": 60.8587,
+            "_indicator_x": 185.224,
+            "selection_progress": 0.349
+          }
+        },
+        "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302": {
+          "script_variables": {
+            "_state_layer_alpha": 0.0529,
+            "_wave_radius": 134.4133
+          }
+        }
+      },
+      "changed_count": 2
+    },
+    {
+      "frame_index": 4,
+      "elapsed_ms": 51,
+      "delta_sec": 0.0167,
+      "process_frame": 3036,
+      "physics_frame": 3447,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary": {
+          "script_variables": {
+            "_indicator_width": 59.608,
+            "_indicator_x": 235.876,
+            "selection_progress": 0.488
+          }
+        },
+        "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302": {
+          "script_variables": {
+            "_state_layer_alpha": 0.0704,
+            "_wave_radius": 191.8831
+          }
+        }
+      },
+      "changed_count": 2
+    },
+    {
+      "frame_index": 5,
+      "elapsed_ms": 68,
+      "delta_sec": 0.0167,
+      "process_frame": 3037,
+      "physics_frame": 3448,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary": {
+          "script_variables": {
+            "_indicator_width": 58.5493,
+            "_indicator_x": 278.752,
+            "is_pressed": false,
+            "selection_progress": 0.6056
+          }
+        },
+        "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302": {
+          "script_variables": {
+            "_is_pressed": false,
+            "_state_layer_alpha": 0.0829,
+            "_wave_radius": 243.3093
+          }
+        }
+      },
+      "changed_count": 2
+    },
+    {
+      "frame_index": 6,
+      "elapsed_ms": 85,
+      "delta_sec": 0.0167,
+      "process_frame": 3038,
+      "physics_frame": 3449,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary": {
+          "script_variables": {
+            "_indicator_width": 57.6667,
+            "_indicator_x": 314.5,
+            "selection_progress": 0.7037
+          }
+        },
+        "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302": {
+          "script_variables": {
+            "_state_layer_alpha": 0.082,
+            "_wave_alpha": 0.0813
+          }
+        }
+      },
+      "changed_count": 2
+    },
+    {
+      "frame_index": 7,
+      "elapsed_ms": 102,
+      "delta_sec": 0.0167,
+      "process_frame": 3039,
+      "physics_frame": 3450,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary": {
+          "script_variables": {
+            "_indicator_width": 56.944,
+            "_indicator_x": 343.768,
+            "selection_progress": 0.784
+          }
+        },
+        "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302": {
+          "script_variables": {
+            "_state_layer_alpha": 0.0813,
+            "_wave_alpha": 0.0651
+          }
+        }
+      },
+      "changed_count": 2
+    },
+    {
+      "frame_index": 8,
+      "elapsed_ms": 118,
+      "delta_sec": 0.0167,
+      "process_frame": 3040,
+      "physics_frame": 3451,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary": {
+          "script_variables": {
+            "_indicator_width": 56.3653,
+            "_indicator_x": 367.204,
+            "selection_progress": 0.8483
+          }
+        },
+        "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302": {
+          "script_variables": {
+            "_state_layer_alpha": 0.0808,
+            "_wave_alpha": 0.0512
+          }
+        }
+      },
+      "changed_count": 2
+    },
+    {
+      "frame_index": 9,
+      "elapsed_ms": 135,
+      "delta_sec": 0.0167,
+      "process_frame": 3041,
+      "physics_frame": 3452,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary": {
+          "script_variables": {
+            "_indicator_width": 55.9147,
+            "_indicator_x": 385.456,
+            "selection_progress": 0.8984
+          }
+        },
+        "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302": {
+          "script_variables": {
+            "_state_layer_alpha": 0.0805,
+            "_wave_alpha": 0.0394
+          }
+        }
+      },
+      "changed_count": 2
+    },
+    {
+      "frame_index": 10,
+      "elapsed_ms": 152,
+      "delta_sec": 0.0167,
+      "process_frame": 3042,
+      "physics_frame": 3453,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary": {
+          "script_variables": {
+            "_indicator_width": 55.576,
+            "_indicator_x": 399.172,
+            "selection_progress": 0.936
+          }
+        },
+        "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302": {
+          "script_variables": {
+            "_state_layer_alpha": 0.0803,
+            "_wave_alpha": 0.0296
+          }
+        }
+      },
+      "changed_count": 2
+    },
+    {
+      "frame_index": 11,
+      "elapsed_ms": 169,
+      "delta_sec": 0.0167,
+      "process_frame": 3043,
+      "physics_frame": 3454,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary": {
+          "script_variables": {
+            "_indicator_width": 55.3333,
+            "_indicator_x": 409.0,
+            "selection_progress": 0.963
+          }
+        },
+        "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302": {
+          "script_variables": {
+            "_state_layer_alpha": 0.0801,
+            "_wave_alpha": 0.0216
+          }
+        }
+      },
+      "changed_count": 2
+    },
+    {
+      "frame_index": 12,
+      "elapsed_ms": 185,
+      "delta_sec": 0.0182,
+      "process_frame": 3044,
+      "physics_frame": 3455,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary": {
+          "script_variables": {
+            "_indicator_width": 55.1707,
+            "_indicator_x": 415.588,
+            "selection_progress": 0.981
+          }
+        },
+        "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302": {
+          "script_variables": {
+            "_state_layer_alpha": 0.08,
+            "_wave_alpha": 0.0152
+          }
+        }
+      },
+      "changed_count": 2
+    },
+    {
+      "frame_index": 13,
+      "elapsed_ms": 202,
+      "delta_sec": 0.0182,
+      "process_frame": 3045,
+      "physics_frame": 3456,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary": {
+          "script_variables": {
+            "_indicator_width": 55.0657,
+            "_indicator_x": 419.8395,
+            "selection_progress": 0.9927
+          }
+        },
+        "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302": {
+          "script_variables": {
+            "_wave_alpha": 0.0098
+          }
+        }
+      },
+      "changed_count": 2
+    },
+    {
+      "frame_index": 14,
+      "elapsed_ms": 219,
+      "delta_sec": 0.0182,
+      "process_frame": 3046,
+      "physics_frame": 3457,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary": {
+          "script_variables": {
+            "_indicator_width": 55.016,
+            "_indicator_x": 421.8502,
+            "selection_progress": 0.9982
+          }
+        },
+        "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302": {
+          "script_variables": {
+            "_wave_alpha": 0.0058
+          }
+        }
+      },
+      "changed_count": 2
+    },
+    {
+      "frame_index": 15,
+      "elapsed_ms": 236,
+      "delta_sec": 0.0182,
+      "process_frame": 3047,
+      "physics_frame": 3459,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary": {
+          "script_variables": {
+            "_indicator_width": 55.001,
+            "_indicator_x": 422.4583,
+            "selection_progress": 0.9999
+          }
+        },
+        "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302": {
+          "script_variables": {
+            "_wave_alpha": 0.0031
+          }
+        }
+      },
+      "changed_count": 2
+    },
+    {
+      "frame_index": 16,
+      "elapsed_ms": 252,
+      "delta_sec": 0.0182,
+      "process_frame": 3048,
+      "physics_frame": 3460,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary": {
+          "script_variables": {
+            "_indicator_width": 55.0,
+            "_indicator_x": 422.5,
+            "selection_progress": 1.0
+          }
+        },
+        "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302": {
+          "script_variables": {
+            "_wave_alpha": 0.0014
+          }
+        }
+      },
+      "changed_count": 2
+    },
+    {
+      "frame_index": 17,
+      "elapsed_ms": 269,
+      "delta_sec": 0.0182,
+      "process_frame": 3049,
+      "physics_frame": 3461,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302": {
+          "script_variables": {
+            "_wave_alpha": 0.0005
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 18,
+      "elapsed_ms": 286,
+      "delta_sec": 0.0182,
+      "process_frame": 3050,
+      "physics_frame": 3462,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302": {
+          "script_variables": {
+            "_wave_alpha": 0.0001
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 19,
+      "elapsed_ms": 302,
+      "delta_sec": 0.0182,
+      "process_frame": 3051,
+      "physics_frame": 3463,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302": {
+          "script_variables": {
+            "_wave_alpha": 0.0
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 20,
+      "elapsed_ms": 319,
+      "delta_sec": 0.0182,
+      "process_frame": 3052,
+      "physics_frame": 3464,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302": {
+          "script_variables": {
+            "_active_waves": [],
+            "_wave_count": 0,
+            "_wave_radius": 0.0
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 21,
+      "elapsed_ms": 336,
+      "delta_sec": 0.0182,
+      "process_frame": 3053,
+      "physics_frame": 3465,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 22,
+      "elapsed_ms": 353,
+      "delta_sec": 0.0182,
+      "process_frame": 3054,
+      "physics_frame": 3466,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 23,
+      "elapsed_ms": 369,
+      "delta_sec": 0.0182,
+      "process_frame": 3055,
+      "physics_frame": 3467,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 24,
+      "elapsed_ms": 386,
+      "delta_sec": 0.0182,
+      "process_frame": 3056,
+      "physics_frame": 3468,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 25,
+      "elapsed_ms": 403,
+      "delta_sec": 0.0182,
+      "process_frame": 3057,
+      "physics_frame": 3469,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 26,
+      "elapsed_ms": 419,
+      "delta_sec": 0.0182,
+      "process_frame": 3058,
+      "physics_frame": 3471,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 27,
+      "elapsed_ms": 436,
+      "delta_sec": 0.0182,
+      "process_frame": 3059,
+      "physics_frame": 3472,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 28,
+      "elapsed_ms": 453,
+      "delta_sec": 0.0182,
+      "process_frame": 3060,
+      "physics_frame": 3473,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 29,
+      "elapsed_ms": 470,
+      "delta_sec": 0.0182,
+      "process_frame": 3061,
+      "physics_frame": 3474,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 30,
+      "elapsed_ms": 486,
+      "delta_sec": 0.0182,
+      "process_frame": 3062,
+      "physics_frame": 3475,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 31,
+      "elapsed_ms": 503,
+      "delta_sec": 0.0182,
+      "process_frame": 3063,
+      "physics_frame": 3476,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 32,
+      "elapsed_ms": 520,
+      "delta_sec": 0.0182,
+      "process_frame": 3064,
+      "physics_frame": 3477,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 33,
+      "elapsed_ms": 536,
+      "delta_sec": 0.0182,
+      "process_frame": 3065,
+      "physics_frame": 3478,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 34,
+      "elapsed_ms": 553,
+      "delta_sec": 0.0182,
+      "process_frame": 3066,
+      "physics_frame": 3479,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 35,
+      "elapsed_ms": 569,
+      "delta_sec": 0.0182,
+      "process_frame": 3067,
+      "physics_frame": 3480,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 36,
+      "elapsed_ms": 586,
+      "delta_sec": 0.0182,
+      "process_frame": 3068,
+      "physics_frame": 3481,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 37,
+      "elapsed_ms": 603,
+      "delta_sec": 0.0182,
+      "process_frame": 3069,
+      "physics_frame": 3483,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 38,
+      "elapsed_ms": 620,
+      "delta_sec": 0.0182,
+      "process_frame": 3070,
+      "physics_frame": 3484,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    }
+  ],
+  "analysis": {
+    "summary": {
+      "total_frames": 39,
+      "delta_frames": 38,
+      "duration_ms": 620,
+      "initial_node_count": 5,
+      "active_node_count": 2,
+      "static_node_count": 3,
+      "spawned_node_count": 0,
+      "removed_node_count": 0,
+      "bounces_detected": 0,
+      "floor_contacts_detected": 0,
+      "total_events": 92
+    },
+    "node_trajectories": {
+      "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary": {
+        "name": "TabsPrimary",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "frames_changed": 16,
+        "is_3d": false,
+        "start_position": {
+          "x": 60.0,
+          "y": 60.0
+        },
+        "end_position": {
+          "x": 60.0,
+          "y": 60.0
+        },
+        "min_position": {
+          "x": 60.0,
+          "y": 60.0
+        },
+        "max_position": {
+          "x": 60.0,
+          "y": 60.0
+        },
+        "total_distance": 0.0,
+        "peak_speed": 0.0,
+        "peak_speed_frame": 0,
+        "bounce_frames": [],
+        "bounces": [],
+        "screen_trail": [
+          {
+            "x": 330.0,
+            "y": 84.0
+          }
+        ],
+        "mutated_properties": {
+          "script_variables._tween": {
+            "initial": null,
+            "final": "<Tween>",
+            "change_count": 1
+          },
+          "script_variables.is_focused": {
+            "initial": false,
+            "final": true,
+            "change_count": 1
+          },
+          "script_variables.is_hovered": {
+            "initial": false,
+            "final": true,
+            "change_count": 1
+          },
+          "script_variables.is_pressed": {
+            "initial": false,
+            "final": false,
+            "change_count": 2
+          },
+          "script_variables.selected_index": {
+            "initial": 0,
+            "final": 2,
+            "change_count": 1
+          },
+          "script_variables.selected_tab": {
+            "initial": 0,
+            "final": 2,
+            "change_count": 1
+          },
+          "script_variables.selection_progress": {
+            "initial": 1.0,
+            "final": 1.0,
+            "change_count": 16
+          },
+          "script_variables._indicator_width": {
+            "initial": 64.0,
+            "final": 55.0,
+            "change_count": 15
+          },
+          "script_variables._indicator_x": {
+            "initial": 58.0,
+            "final": 422.5,
+            "change_count": 15
+          }
+        },
+        "displacement": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302": {
+        "name": "@Control",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "frames_changed": 20,
+        "is_3d": false,
+        "start_position": {
+          "x": 60.0,
+          "y": 60.0
+        },
+        "end_position": {
+          "x": 60.0,
+          "y": 60.0
+        },
+        "min_position": {
+          "x": 60.0,
+          "y": 60.0
+        },
+        "max_position": {
+          "x": 60.0,
+          "y": 60.0
+        },
+        "total_distance": 0.0,
+        "peak_speed": 0.0,
+        "peak_speed_frame": 0,
+        "bounce_frames": [],
+        "bounces": [],
+        "screen_trail": [
+          {
+            "x": 330.0,
+            "y": 84.0
+          }
+        ],
+        "mutated_properties": {
+          "script_variables._active_waves": {
+            "initial": [],
+            "final": [],
+            "change_count": 2
+          },
+          "script_variables._is_hovered": {
+            "initial": false,
+            "final": true,
+            "change_count": 1
+          },
+          "script_variables._is_pressed": {
+            "initial": false,
+            "final": false,
+            "change_count": 2
+          },
+          "script_variables._state_tween": {
+            "initial": null,
+            "final": "<Tween>",
+            "change_count": 1
+          },
+          "script_variables._wave_alpha": {
+            "initial": 0.0,
+            "final": 0.0,
+            "change_count": 15
+          },
+          "script_variables._wave_count": {
+            "initial": 0,
+            "final": 0,
+            "change_count": 2
+          },
+          "script_variables._state_layer_alpha": {
+            "initial": 0.0,
+            "final": 0.08,
+            "change_count": 11
+          },
+          "script_variables._wave_radius": {
+            "initial": 0.0,
+            "final": 0.0,
+            "change_count": 5
+          }
+        },
+        "displacement": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      }
+    },
+    "events": [
+      {
+        "frame_index": 1,
+        "elapsed_ms": 5,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "_tween",
+        "old_value": null,
+        "new_value": "<Tween>"
+      },
+      {
+        "frame_index": 1,
+        "elapsed_ms": 5,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "is_focused",
+        "old_value": false,
+        "new_value": true
+      },
+      {
+        "frame_index": 1,
+        "elapsed_ms": 5,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "is_hovered",
+        "old_value": false,
+        "new_value": true
+      },
+      {
+        "frame_index": 1,
+        "elapsed_ms": 5,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "is_pressed",
+        "old_value": false,
+        "new_value": true
+      },
+      {
+        "frame_index": 1,
+        "elapsed_ms": 5,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "selected_index",
+        "old_value": 0,
+        "new_value": 2
+      },
+      {
+        "frame_index": 1,
+        "elapsed_ms": 5,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "selected_tab",
+        "old_value": 0,
+        "new_value": 2
+      },
+      {
+        "frame_index": 1,
+        "elapsed_ms": 5,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "selection_progress",
+        "old_value": 1.0,
+        "new_value": 0.0
+      },
+      {
+        "frame_index": 1,
+        "elapsed_ms": 5,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_active_waves",
+        "old_value": [],
+        "new_value": [
+          "<RefCounted>"
+        ]
+      },
+      {
+        "frame_index": 1,
+        "elapsed_ms": 5,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_is_hovered",
+        "old_value": false,
+        "new_value": true
+      },
+      {
+        "frame_index": 1,
+        "elapsed_ms": 5,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_is_pressed",
+        "old_value": false,
+        "new_value": true
+      },
+      {
+        "frame_index": 1,
+        "elapsed_ms": 5,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_state_tween",
+        "old_value": null,
+        "new_value": "<Tween>"
+      },
+      {
+        "frame_index": 1,
+        "elapsed_ms": 5,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_wave_alpha",
+        "old_value": 0.0,
+        "new_value": 0.1
+      },
+      {
+        "frame_index": 1,
+        "elapsed_ms": 5,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_wave_count",
+        "old_value": 0,
+        "new_value": 1
+      },
+      {
+        "frame_index": 2,
+        "elapsed_ms": 18,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "_indicator_width",
+        "old_value": 64.0,
+        "new_value": 62.3173
+      },
+      {
+        "frame_index": 2,
+        "elapsed_ms": 18,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "_indicator_x",
+        "old_value": 58.0,
+        "new_value": 126.148
+      },
+      {
+        "frame_index": 2,
+        "elapsed_ms": 18,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "selection_progress",
+        "old_value": 0.0,
+        "new_value": 0.187
+      },
+      {
+        "frame_index": 2,
+        "elapsed_ms": 18,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0,
+        "new_value": 0.0298
+      },
+      {
+        "frame_index": 2,
+        "elapsed_ms": 18,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_wave_radius",
+        "old_value": 0.0,
+        "new_value": 70.5642
+      },
+      {
+        "frame_index": 3,
+        "elapsed_ms": 35,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "_indicator_width",
+        "old_value": 62.3173,
+        "new_value": 60.8587
+      },
+      {
+        "frame_index": 3,
+        "elapsed_ms": 35,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "_indicator_x",
+        "old_value": 126.148,
+        "new_value": 185.224
+      },
+      {
+        "frame_index": 3,
+        "elapsed_ms": 35,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "selection_progress",
+        "old_value": 0.187,
+        "new_value": 0.349
+      },
+      {
+        "frame_index": 3,
+        "elapsed_ms": 35,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0298,
+        "new_value": 0.0529
+      },
+      {
+        "frame_index": 3,
+        "elapsed_ms": 35,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_wave_radius",
+        "old_value": 70.5642,
+        "new_value": 134.4133
+      },
+      {
+        "frame_index": 4,
+        "elapsed_ms": 51,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "_indicator_width",
+        "old_value": 60.8587,
+        "new_value": 59.608
+      },
+      {
+        "frame_index": 4,
+        "elapsed_ms": 51,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "_indicator_x",
+        "old_value": 185.224,
+        "new_value": 235.876
+      },
+      {
+        "frame_index": 4,
+        "elapsed_ms": 51,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "selection_progress",
+        "old_value": 0.349,
+        "new_value": 0.488
+      },
+      {
+        "frame_index": 4,
+        "elapsed_ms": 51,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0529,
+        "new_value": 0.0704
+      },
+      {
+        "frame_index": 4,
+        "elapsed_ms": 51,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_wave_radius",
+        "old_value": 134.4133,
+        "new_value": 191.8831
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 68,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "_indicator_width",
+        "old_value": 59.608,
+        "new_value": 58.5493
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 68,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "_indicator_x",
+        "old_value": 235.876,
+        "new_value": 278.752
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 68,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "is_pressed",
+        "old_value": true,
+        "new_value": false
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 68,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "selection_progress",
+        "old_value": 0.488,
+        "new_value": 0.6056
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 68,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_is_pressed",
+        "old_value": true,
+        "new_value": false
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 68,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0704,
+        "new_value": 0.0829
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 68,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_wave_radius",
+        "old_value": 191.8831,
+        "new_value": 243.3093
+      },
+      {
+        "frame_index": 6,
+        "elapsed_ms": 85,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "_indicator_width",
+        "old_value": 58.5493,
+        "new_value": 57.6667
+      },
+      {
+        "frame_index": 6,
+        "elapsed_ms": 85,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "_indicator_x",
+        "old_value": 278.752,
+        "new_value": 314.5
+      },
+      {
+        "frame_index": 6,
+        "elapsed_ms": 85,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "selection_progress",
+        "old_value": 0.6056,
+        "new_value": 0.7037
+      },
+      {
+        "frame_index": 6,
+        "elapsed_ms": 85,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0829,
+        "new_value": 0.082
+      },
+      {
+        "frame_index": 6,
+        "elapsed_ms": 85,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_wave_alpha",
+        "old_value": 0.1,
+        "new_value": 0.0813
+      },
+      {
+        "frame_index": 7,
+        "elapsed_ms": 102,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "_indicator_width",
+        "old_value": 57.6667,
+        "new_value": 56.944
+      },
+      {
+        "frame_index": 7,
+        "elapsed_ms": 102,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "_indicator_x",
+        "old_value": 314.5,
+        "new_value": 343.768
+      },
+      {
+        "frame_index": 7,
+        "elapsed_ms": 102,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "selection_progress",
+        "old_value": 0.7037,
+        "new_value": 0.784
+      },
+      {
+        "frame_index": 7,
+        "elapsed_ms": 102,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_state_layer_alpha",
+        "old_value": 0.082,
+        "new_value": 0.0813
+      },
+      {
+        "frame_index": 7,
+        "elapsed_ms": 102,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_wave_alpha",
+        "old_value": 0.0813,
+        "new_value": 0.0651
+      },
+      {
+        "frame_index": 8,
+        "elapsed_ms": 118,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "_indicator_width",
+        "old_value": 56.944,
+        "new_value": 56.3653
+      },
+      {
+        "frame_index": 8,
+        "elapsed_ms": 118,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "_indicator_x",
+        "old_value": 343.768,
+        "new_value": 367.204
+      },
+      {
+        "frame_index": 8,
+        "elapsed_ms": 118,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "selection_progress",
+        "old_value": 0.784,
+        "new_value": 0.8483
+      },
+      {
+        "frame_index": 8,
+        "elapsed_ms": 118,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0813,
+        "new_value": 0.0808
+      },
+      {
+        "frame_index": 8,
+        "elapsed_ms": 118,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_wave_alpha",
+        "old_value": 0.0651,
+        "new_value": 0.0512
+      },
+      {
+        "frame_index": 9,
+        "elapsed_ms": 135,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "_indicator_width",
+        "old_value": 56.3653,
+        "new_value": 55.9147
+      },
+      {
+        "frame_index": 9,
+        "elapsed_ms": 135,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "_indicator_x",
+        "old_value": 367.204,
+        "new_value": 385.456
+      },
+      {
+        "frame_index": 9,
+        "elapsed_ms": 135,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "selection_progress",
+        "old_value": 0.8483,
+        "new_value": 0.8984
+      },
+      {
+        "frame_index": 9,
+        "elapsed_ms": 135,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0808,
+        "new_value": 0.0805
+      },
+      {
+        "frame_index": 9,
+        "elapsed_ms": 135,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_wave_alpha",
+        "old_value": 0.0512,
+        "new_value": 0.0394
+      },
+      {
+        "frame_index": 10,
+        "elapsed_ms": 152,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "_indicator_width",
+        "old_value": 55.9147,
+        "new_value": 55.576
+      },
+      {
+        "frame_index": 10,
+        "elapsed_ms": 152,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "_indicator_x",
+        "old_value": 385.456,
+        "new_value": 399.172
+      },
+      {
+        "frame_index": 10,
+        "elapsed_ms": 152,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "selection_progress",
+        "old_value": 0.8984,
+        "new_value": 0.936
+      },
+      {
+        "frame_index": 10,
+        "elapsed_ms": 152,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0805,
+        "new_value": 0.0803
+      },
+      {
+        "frame_index": 10,
+        "elapsed_ms": 152,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_wave_alpha",
+        "old_value": 0.0394,
+        "new_value": 0.0296
+      },
+      {
+        "frame_index": 11,
+        "elapsed_ms": 169,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "_indicator_width",
+        "old_value": 55.576,
+        "new_value": 55.3333
+      },
+      {
+        "frame_index": 11,
+        "elapsed_ms": 169,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "_indicator_x",
+        "old_value": 399.172,
+        "new_value": 409.0
+      },
+      {
+        "frame_index": 11,
+        "elapsed_ms": 169,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "selection_progress",
+        "old_value": 0.936,
+        "new_value": 0.963
+      },
+      {
+        "frame_index": 11,
+        "elapsed_ms": 169,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0803,
+        "new_value": 0.0801
+      },
+      {
+        "frame_index": 11,
+        "elapsed_ms": 169,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_wave_alpha",
+        "old_value": 0.0296,
+        "new_value": 0.0216
+      },
+      {
+        "frame_index": 12,
+        "elapsed_ms": 185,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "_indicator_width",
+        "old_value": 55.3333,
+        "new_value": 55.1707
+      },
+      {
+        "frame_index": 12,
+        "elapsed_ms": 185,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "_indicator_x",
+        "old_value": 409.0,
+        "new_value": 415.588
+      },
+      {
+        "frame_index": 12,
+        "elapsed_ms": 185,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "selection_progress",
+        "old_value": 0.963,
+        "new_value": 0.981
+      },
+      {
+        "frame_index": 12,
+        "elapsed_ms": 185,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0801,
+        "new_value": 0.08
+      },
+      {
+        "frame_index": 12,
+        "elapsed_ms": 185,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_wave_alpha",
+        "old_value": 0.0216,
+        "new_value": 0.0152
+      },
+      {
+        "frame_index": 13,
+        "elapsed_ms": 202,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "_indicator_width",
+        "old_value": 55.1707,
+        "new_value": 55.0657
+      },
+      {
+        "frame_index": 13,
+        "elapsed_ms": 202,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "_indicator_x",
+        "old_value": 415.588,
+        "new_value": 419.8395
+      },
+      {
+        "frame_index": 13,
+        "elapsed_ms": 202,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "selection_progress",
+        "old_value": 0.981,
+        "new_value": 0.9927
+      },
+      {
+        "frame_index": 13,
+        "elapsed_ms": 202,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_wave_alpha",
+        "old_value": 0.0152,
+        "new_value": 0.0098
+      },
+      {
+        "frame_index": 14,
+        "elapsed_ms": 219,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "_indicator_width",
+        "old_value": 55.0657,
+        "new_value": 55.016
+      },
+      {
+        "frame_index": 14,
+        "elapsed_ms": 219,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "_indicator_x",
+        "old_value": 419.8395,
+        "new_value": 421.8502
+      },
+      {
+        "frame_index": 14,
+        "elapsed_ms": 219,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "selection_progress",
+        "old_value": 0.9927,
+        "new_value": 0.9982
+      },
+      {
+        "frame_index": 14,
+        "elapsed_ms": 219,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_wave_alpha",
+        "old_value": 0.0098,
+        "new_value": 0.0058
+      },
+      {
+        "frame_index": 15,
+        "elapsed_ms": 236,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "_indicator_width",
+        "old_value": 55.016,
+        "new_value": 55.001
+      },
+      {
+        "frame_index": 15,
+        "elapsed_ms": 236,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "_indicator_x",
+        "old_value": 421.8502,
+        "new_value": 422.4583
+      },
+      {
+        "frame_index": 15,
+        "elapsed_ms": 236,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "selection_progress",
+        "old_value": 0.9982,
+        "new_value": 0.9999
+      },
+      {
+        "frame_index": 15,
+        "elapsed_ms": 236,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_wave_alpha",
+        "old_value": 0.0058,
+        "new_value": 0.0031
+      },
+      {
+        "frame_index": 16,
+        "elapsed_ms": 252,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "_indicator_width",
+        "old_value": 55.001,
+        "new_value": 55.0
+      },
+      {
+        "frame_index": 16,
+        "elapsed_ms": 252,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "_indicator_x",
+        "old_value": 422.4583,
+        "new_value": 422.5
+      },
+      {
+        "frame_index": 16,
+        "elapsed_ms": 252,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary",
+        "node_name": "TabsPrimary",
+        "property": "selection_progress",
+        "old_value": 0.9999,
+        "new_value": 1.0
+      },
+      {
+        "frame_index": 16,
+        "elapsed_ms": 252,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_wave_alpha",
+        "old_value": 0.0031,
+        "new_value": 0.0014
+      },
+      {
+        "frame_index": 17,
+        "elapsed_ms": 269,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_wave_alpha",
+        "old_value": 0.0014,
+        "new_value": 0.0005
+      },
+      {
+        "frame_index": 18,
+        "elapsed_ms": 286,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_wave_alpha",
+        "old_value": 0.0005,
+        "new_value": 0.0001
+      },
+      {
+        "frame_index": 19,
+        "elapsed_ms": 302,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_wave_alpha",
+        "old_value": 0.0001,
+        "new_value": 0.0
+      },
+      {
+        "frame_index": 20,
+        "elapsed_ms": 319,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_active_waves",
+        "old_value": [
+          "<RefCounted>"
+        ],
+        "new_value": []
+      },
+      {
+        "frame_index": 20,
+        "elapsed_ms": 319,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_wave_count",
+        "old_value": 1,
+        "new_value": 0
+      },
+      {
+        "frame_index": 20,
+        "elapsed_ms": 319,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@217/GSSStageViewport/Tabs/TabsPrimary/@Control@302",
+        "node_name": "@Control",
+        "property": "_wave_radius",
+        "old_value": 243.3093,
+        "new_value": 0.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://b7v9x4q9d2universalrunner"]
+
+[ext_resource type="Script" path="res://addons/gdtest/core/test_runner.gd" id="1_script"]
+
+[node name="GDTestRunnerScene" type="Node"]
+script = ExtResource("1_script")

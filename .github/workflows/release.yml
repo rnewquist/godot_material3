@@ -1,0 +1,46 @@
+name: Release (Tag Packaging)
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+permissions:
+  contents: write
+
+jobs:
+  build-release:
+    name: Package Release ZIPs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Prepare Release Archives
+        run: |
+          TAG_NAME="${{ github.ref_name }}"
+          echo "Packaging release for tag: ${TAG_NAME}"
+          
+          # Package 1: Standalone Project Archive (Showcase + Addon)
+          zip -r "godot-material3-${TAG_NAME}.zip" . \
+            -x "*.git*" \
+            -x "*.godot/*" \
+            -x "*__pycache__*" \
+            -x "*.bak" \
+            -x "godot.log"
+
+          # Package 2: Addon-Only Drop-in Archive (res://addons/material3)
+          zip -r "addons-material3-${TAG_NAME}.zip" addons/material3/ \
+            -x "*.git*" \
+            -x "*__pycache__*"
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: "Material 3 Godot ${{ github.ref_name }}"
+          draft: false
+          prerelease: false
+          generate_release_notes: true
+          files: |
+            godot-material3-${{ github.ref_name }}.zip
+            addons-material3-${{ github.ref_name }}.zip

@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GSS — Godot Scene Snapshot — selection.radio__variants_light</title>
+<style>
+:root {
+  color-scheme: dark;
+  --bg-app: #0d1117;
+  --bg-pane: #161b22;
+  --bg-header: #1f2630;
+  --bg-hover: #262e3a;
+  --bg-selected: #1f3a5f;
+  --border: #30363d;
+  --text-main: #e6edf3;
+  --text-muted: #8b949e;
+  --accent: #58a6ff;
+  --cat-control: #29c7f5;
+  --cat-node2d: #3ddc7a;
+  --cat-node3d: #ad73fa;
+  --cat-physics: #fa9433;
+  --cat-other: #9eaec7;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace;
+  background: var(--bg-app);
+  color: var(--text-main);
+  block-size: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  overflow: hidden;
+}
+header.gss-topbar {
+  background: var(--bg-header);
+  border-block-end: 1px solid var(--border);
+  padding: 0.6rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.gss-brand { display: flex; align-items: center; gap: 0.75rem; font-weight: 700; font-size: 0.95rem; }
+.gss-badge { background: #238636; color: #fff; padding: 0.15rem 0.5rem; border-radius: 999px; font-size: 0.75rem; }
+.gss-meta-pills { display: flex; gap: 0.6rem; font-size: 0.8rem; color: var(--text-muted); flex-wrap: wrap; }
+.gss-meta-pill { background: var(--bg-pane); border: 1px solid var(--border); padding: 0.2rem 0.55rem; border-radius: 6px; }
+.gss-workspace {
+  display: grid;
+  grid-template-columns: 320px 1fr 440px;
+  overflow: hidden;
+  block-size: 100%;
+}
+/* Isolate layout/style/paint recalculations per pane (modern-web-guidance: interactions-in-complex-layouts) */
+.gss-pane {
+  background: var(--bg-pane);
+  border-inline-end: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 360px auto 800px;
+}
+@supports not (content-visibility: auto) {
+  .gss-pane { contain: layout style paint; }
+}
+.gss-pane-header {
+  padding: 0.6rem 0.75rem;
+  background: var(--bg-header);
+  border-block-end: 1px solid var(--border);
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+.gss-search {
+  inline-size: 100%;
+  background: var(--bg-app);
+  color: var(--text-main);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 0.38rem 0.6rem;
+  font-size: 0.8rem;
+}
+.gss-tree-list { flex: 1; overflow: auto; padding: 0.4rem 0; font-size: 0.82rem; }
+.gss-tree-row {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.28rem 0.6rem;
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+}
+.gss-tree-row:hover { background: var(--bg-hover); }
+.gss-tree-row.selected { background: var(--bg-selected); outline: 1px solid var(--accent); }
+.gss-tree-row.hidden-node { opacity: 0.45; }
+.gss-cat-dot { inline-size: 8px; block-size: 8px; border-radius: 50%; flex-shrink: 0; }
+.gss-class-tag { color: var(--text-muted); font-size: 0.72rem; margin-inline-start: auto; padding-inline-start: 0.5rem; }
+/* Center Screenshot & 3D Layer Canvas */
+.gss-canvas-pane { background: #090c10; position: relative; display: flex; flex-direction: column; overflow: hidden; }
+.gss-toolbar {
+  padding: 0.5rem 0.75rem;
+  background: var(--bg-header);
+  border-block-end: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  font-size: 0.78rem;
+}
+.gss-btn, .gss-select {
+  background: var(--bg-pane);
+  color: var(--text-main);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 0.28rem 0.55rem;
+  font-size: 0.76rem;
+  cursor: pointer;
+}
+.gss-btn.active { background: var(--bg-selected); border-color: var(--accent); color: var(--accent); }
+.gss-viewport-stage {
+  flex: 1;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  perspective: 1400px;
+}
+.gss-screen-wrapper {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.2s ease;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.65);
+  border: 1px solid var(--border);
+}
+.gss-screenshot-img {
+  display: block;
+  max-inline-size: none;
+  user-select: none;
+  pointer-events: none;
+}
+.gss-overlay-layer {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+}
+.gss-bbox {
+  position: absolute;
+  border: 1.5px solid rgba(88, 166, 255, 0.55);
+  cursor: pointer;
+  transition: background 0.1s ease, border-color 0.1s ease, transform 0.2s ease;
+}
+.gss-bbox:hover { background: rgba(88, 166, 255, 0.18); border-color: #fff; z-index: 20; }
+.gss-bbox.selected {
+  background: rgba(88, 166, 255, 0.26);
+  border: 2px solid #ffea00;
+  box-shadow: 0 0 0 1px #000;
+  z-index: 30;
+}
+.gss-bbox-label {
+  position: absolute;
+  inset-block-start: -18px;
+  inset-inline-start: -1px;
+  background: #ffea00;
+  color: #000;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 1px 5px;
+  border-radius: 3px;
+  white-space: nowrap;
+  pointer-events: none;
+  display: none;
+}
+.gss-bbox.selected .gss-bbox-label, .gss-bbox:hover .gss-bbox-label { display: block; }
+/* Visual Detail Filter Presets */
+.filter-luma { filter: saturate(0) contrast(1.35) brightness(1.05); }
+.filter-detail { filter: contrast(2.2) saturate(0.25) brightness(1.1); }
+.filter-dim { filter: brightness(0.32) saturate(0.3); }
+.filter-invert { filter: invert(1) hue-rotate(180deg) contrast(1.2); }
+/* Right Attributes & Properties Inspector (modern-web-guidance: responsive-table) */
+.gss-props-scroll { flex: 1; overflow-y: auto; padding: 0.65rem; display: flex; flex-direction: column; gap: 0.75rem; }
+.gss-node-summary {
+  background: var(--bg-app);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.65rem;
+  font-size: 0.8rem;
+  display: grid;
+  gap: 0.3rem;
+}
+.gss-section-details {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg-app);
+  overflow: hidden;
+}
+.gss-section-details summary {
+  padding: 0.5rem 0.7rem;
+  background: var(--bg-header);
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+}
+.table-wrapper {
+  overflow: auto;
+  max-inline-size: 100%;
+  max-block-size: min(420px, 70vh);
+  container-type: inline-size;
+}
+table.gss-prop-table {
+  inline-size: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.76rem;
+  --label-2: "Value";
+  --label-3: "Category";
+}
+table.gss-prop-table thead {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 1;
+  background: var(--bg-header);
+}
+table.gss-prop-table th, table.gss-prop-table td {
+  padding: 0.38rem 0.6rem;
+  border-block-end: 1px solid var(--border);
+  text-align: start;
+  vertical-align: top;
+  word-break: break-word;
+}
+table.gss-prop-table tbody th {
+  position: sticky;
+  inset-inline-start: 0;
+  background: var(--bg-app);
+  color: #79c0ff;
+  font-weight: 600;
+  inline-size: 40%;
+}
+table.gss-prop-table tbody td { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+@container (width < 600px) {
+  table.gss-prop-table, table.gss-prop-table thead, table.gss-prop-table tbody, table.gss-prop-table tr, table.gss-prop-table th, table.gss-prop-table td {
+    display: block;
+    inline-size: 100%;
+  }
+  table.gss-prop-table thead { display: none; }
+  table.gss-prop-table tr { margin-block-end: 0.5rem; border: 1px solid var(--border); }
+  table.gss-prop-table tbody th { position: sticky; inset-block-start: 0; z-index: 2; background: var(--bg-header); }
+  table.gss-prop-table td:nth-child(2)::before { content: var(--label-2) ": "; color: var(--text-muted); }
+  table.gss-prop-table td:nth-child(3)::before { content: var(--label-3) ": "; color: var(--text-muted); }
+}
+.gss-swatch { display: inline-block; inline-size: 11px; block-size: 11px; border-radius: 2px; border: 1px solid #fff; vertical-align: middle; margin-inline-end: 5px; }
+</style>
+</head>
+<body>
+<header class="gss-topbar">
+  <div class="gss-brand">
+    <span>🔬 GSS — Godot Scene Snapshot Inspector</span>
+    <span class="gss-badge" id="hdr-snap-name">selection.radio__variants_light</span>
+  </div>
+  <div class="gss-meta-pills" id="hdr-meta-pills"></div>
+</header>
+<main class="gss-workspace">
+  <!-- Left Pane: Component Hierarchy Tree -->
+  <section class="gss-pane" aria-label="Scene Component Tree">
+    <div class="gss-pane-header">
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <span>COMPONENT TREE</span>
+        <span id="tree-count-label" style="color:var(--text-muted);">0 nodes</span>
+      </div>
+      <input type="search" id="tree-search" class="gss-search" placeholder="Filter nodes by name, class, path, or group...">
+    </div>
+    <div class="gss-tree-list" id="tree-container" role="tree"></div>
+  </section>
+  <!-- Center Pane: Interactive Screenshot & 2D/3D Wireframe Canvas -->
+  <section class="gss-pane gss-canvas-pane" aria-label="Interactive Screenshot Viewport">
+    <div class="gss-toolbar">
+      <button type="button" class="gss-btn active" id="btn-boxes">Wireframe Boxes</button>
+      <button type="button" class="gss-btn" id="btn-3d">3D Layer Stack</button>
+      <label>Detail Filter:
+        <select id="sel-filter" class="gss-select">
+          <option value="">Original RGB</option>
+          <option value="filter-luma">Perceptual Lightness (L*)</option>
+          <option value="filter-detail">High-Contrast Detail</option>
+          <option value="filter-dim">Dimmed + Wireframes</option>
+          <option value="filter-invert">Inverted Contrast</option>
+        </select>
+      </label>
+      <label>Zoom:
+        <select id="sel-zoom" class="gss-select">
+          <option value="0.5">50%</option>
+          <option value="0.75">75%</option>
+          <option value="1" selected>100%</option>
+          <option value="1.5">150%</option>
+          <option value="2">200%</option>
+        </select>
+      </label>
+      <label id="lbl-depth-slider" style="display:none;align-items:center;gap:4px;">Z-Spacing:
+        <input type="range" id="rng-z-space" min="4" max="40" value="16" style="inline-size:70px;">
+      </label>
+    </div>
+    <div class="gss-viewport-stage" id="viewport-stage">
+      <div class="gss-screen-wrapper" id="screen-wrapper">
+        <img id="screenshot-img" class="gss-screenshot-img" alt="Captured Scene Screenshot" src="data:image/png;base64,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5goAAECP3AW6Jw/9cnmyfq/77DWf+/zio+s3hDB06JDPfn7x56//dAjhqSd/98tfLHuvZ3nS5s+/4KqrPnEyR7j77v/3gx/8UHNz8wmN2rNnzxmnn/n973//ZE4NAADQSwL4mHZUVS9f9lgI4WMLLrli4WU97/yxBZcsvOpjIYQnHntm+7Ydxz34jTfcVFJS+pWvfPXwjfPnX/DXf/U3JzHld9Jrr71WUlKa/G/69BmLFi1et27dsXYuLi4eP358nz59TugUffv2HT9h/JAhRcmX69atW7HikZOaNAAAwLEJ4GN6/vnVe/fWDxtWdPmCS3qz/wUXnjd8xLA9e2pffGFNL0/xy1/8cvXq1Scxx3fdxRdfvGTJnYuuuebVV1793Gc/v3dv97cBW7Tomh/+8AcZGRkndPC8vLz77vvpRz/61j8u3HPPt1esWHGyMwYAADgGAXxMr72yIYRw5tmnFRYO6s3+w4YVzZ49I4Tw6qsberP/7NmzCwYV3HrLbe3t7Ue/29rauuTOJaeffsakSZMXXnHl88+vSm5ftmz5pEmT6+vrFy/+9KRJk1966aVly5ZPmDDxpZdeuvTSyyZOnHTppZe98sqrP/3pfWeffc60aTO+cNMXGhoakmNffPHFa6+97gMfOG3atBmLF39669atx53krFmzFi9e/NX/8dVbb72lfn99chq33nLrtddeV15efuEFF02dMi2RSNx6y60lJaVdo+7/2f3z5p0/YcLE88//8P0/uz+5sba2tqSkdM2aNXfccefUKdP+7X//W3LLN///b4YQrr/+hqeffvrRRx8tKSmdP/+Cb3zjH0pKSjdseOs3uWXLlpKS0rvu+npvfrEAAADdEsDdq68/UFW1M4QwZszI3o+aPGVCCGH79p0HDjQcd+c+6X1uueXmzRWbv/fd7x397pIld/3kJz+97NJLb775/zl06NC11173+uuvJ99qa2tbtGhxa2vrpz71qeHDR4QQ3nzzzRtv/MIll1zy5S9/efPmims/c+2Pf/zjm2666ZJLLn7s8ce/+4fjZ2RklJaUfO1rX/v615e8/vqGr371f/T+o+UNGBBCOHiwJfny1VdfvfGGm0rHln7mM59OTf2T/4uW/nrpbbffPnbs2Ntvu23ChAm33X57VwOHEG677fZnnn5m4ZULZ82effioz372s1n9sk477bT77vvp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AACAKAhgAAAAoiCAAQAAiIIABgAAIAoCGAAAgCgIYAAAAKIggAEAAIiCAAYAACAKAhgAAIAoCGAAAACiIIABAACIggAGAAAgCgIYAACAKAhgAAAAoiCAAQAAiIIABgAAIAoCGAAAgCgIYAAAAKIggAEAAIiCAAYAACAKAhgAAIAoCGAAAACiIIABAACIggAGAAAgCgIYAACAKAhgAAAAoiCAAQAAiIIABgAAIAoCGAAAgCgIYAAAAKIggAEAAIiCAAYAACAKAhgAAIAoCGAAAACiIIABAACIggAGAAAgCgIYAACAKAhgAAAAoiCAAQAAiIIABgAAIAoCGAAAgCgIYAAAAKIggAEAAIiCAAYAACAKAhgAAIAoCGAAAACiIIABAACIggAGAAAgCgIYAACAKAhgAAAAoiCAAQAAiIIABgAAIAoCGAAAgCgIYAAAAKIggAEAAIiCAAYAACAKAhgAAIAoCGAAAACiIIABAACIggAGAAAgCgIYAACAKAhgAAAAoiCAAQAAiIIABgAAIAoCGAAAgCgIYAAAAKIggAEAAIiCAAYAACAKAhgAAIAoCGAAAACiIIABAACIggAGAAAgCgIYAACAKAhgAAAAoiCAAQAAiIIABgAAIAoCGAAAgCgIYAAAAKIggAEAAIiCAAYAACAKAhgAAIAoCGAAAACiIIABAACIggAGAAAgCgIYAACAKAhgAAAAoiCAAQAAiIIABgAAIAoCGAAAgCgIYAAAAKIggAEAAIiCAAYAACAKAhgAAIAoCGAAAACiIIABAACIggAGAAAgCgIYAACAKAhgAAAAoiCAAQAAiIIABgAAIAoCGAAAgCgIYAAAAKIggAEAAIiCAAYAACAKAhgAAIAoCGAAAACiIIABAACIggAGAAAgCgIYAACAKAhgAAAAoiCAAQAAiIIABgAAIAoCGAAAgCgIYAAAAKIggAEAAIiCAAYAACAKAhgAAIAoCGAAAACiIIABAACIggAGAAAgCgIYAACAKAhgAAAAoiCAAQAAiIIABgAAIAoCGAAAgCgIYAAAAKIggAEAAIiCAAYAACAKAhgAAIAoCGAAAACiIIABAACIggAGAAAgCgIYAACAKAhgAAAAoiCAAQAAiIIABgAAIAoCGAAAgCgIYAAAAKIggAEAAIiCAAYAACAKAhgAAIAoCGAAAACiIIABAACIggAGAAAgCgIYAACAKAhgAAAAoiCAAQAAiIIABgAAIAoCGAAAgCgIYAAAAKIggAEAAIiCAAYAACAKAhgAAIAoCGAAAACiIIABAACIggAGAAAgCgIYAACAKAhgAAAAoiCAAQAAiIIABgAAIAoCGAAAgCgIYAAAAKIggAEAAIiCAAYAACAKAhgAAIAoCGAAAACiIIABAACIggAGAAAgCgIYAACAKAhgAAAAoiCAAQAAiIIABgAAIAoCGAAAgCgIYAAAAKIggAEAAIiCAAYAACAKAhgAAIAoCGAAAACiIIABAACIggAGAAAgCgIYAACAKAhgAAAAoiCAAQAAiIIABgAAIAoCGAAAgCgIYAAAAKIggAEAAIiCAAYAACAKAhgAAIAoCGAAAACiIIABAACIggAGAAAgCgIYAACAKAhgAAAAoiCAAQAAiIIABgAAIAoCGAAAgCgIYAAAAKIggAEAAIiCAAYAACAKAhgAAIAoCGAAAACiIIABAACIggAGAAAgCgIYAACAKAhgAAAAoiCAAQAAiIIABgAAIAoCGAAAgCgIYAAAAKIggAEAAIiCAAYAACAKAhgAAIAoCGAAAACiIIABAACIggAGAAAgCgIYAACAKAhgAAAAoiCAAQAAiIIABgAAIAoCGAAAgCgIYAAAAKIggAEAAIiCAAYAACAKAhgAAIAoCGAAAACiIIABAACIggAGAAAgCgIYAACAKAhgAAAAoiCAAQAAiIIABgAAIAoCGAAAgCgIYAAAAKIggAEAAIiCAAYAACAKAhgAAIAoCGAAAACiIIABAACIggAGAAAgCgIYAACAKAhgAAAAoiCAAQAAiIIABgAAIAoCGAAAgCgIYAAAAKIggAEAAIiCAAYAACAKAhgAAIAoCGAAAACiIIABAACIggAGAAAgCgIYAACAKAhgAAAAoiCAAQAAiIIABgAAIAoCGAAAgCgIYAAAAKIggAEAAIiCAAYAACAKAhgAAIAoCGAAAACiIIABAACIggAGAAAgCgIYAACAKAhgAAAAoiCAAQAAiIIABgAAIAoCGAAAgCgIYAAAAKIggAEAAIiCAAYAACAKAhgAAIAoCGAAAACiIIABAACIggAGAAAgCgIYAACAKAhgAAAAoiCAAQAAiIIABgAAIAoCGAAAgCgIYAAAAKIggAEAAIiCAAYAACAKAhgAAIAoCGAAAACiIIABAACIggAGAAAgCgIYAACAKAhgAAAAoiCAAQAAiIIABgAAIAoCGAAAgCgIYAAAAKIggAEAAIiCAAYAACAKAhgAAIAoCGAAAACiIIABAACIggAGAAAgCgIYAACAKAhgAAAAoiCAAQAAiIIABgAAIAoCGAAAgCgIYAAAAKIggAEAAIiCAAYAACAKAhgAAIAoCGAAAACiIIABAACIggAGAAAgCgIYAACAKAhgAAAAoiCAAQAAiIIABgAAIAoCGAAAgCgIYAAAAKIggAEAAIiCAAYAACAKAhgAAIAoCGAAAACiIIABAACIggAGAAAgCgIYAACAKAhgAAAAoiCAAQAAiIIABgAAIAoCGAAAgCgIYAAAAKIggAEAAIiCAAYAACAKAhgAAIAoCGAAAACiIIABAACIggAGAAAgCgIYAACAKAhgAAAAoiCAAQAAiIIABgAAIAoCGAAAgCgIYAAAAKIggAEAAIiCAAYAACAKAhgAAIAoCGAAAACiIIABAACIggAGAAAgCgIYAACAKAhgAAAAoiCAAQAAiIIABgAAIAoCGAAAgCgIYAAAAKIggAEAAIiCAAYAACAKAhgAAIAoCGAAAACiIIABAACIggAGAAAgCgIYAACAKAhgAAAAoiCAAQAAiIIABgAAIAoCGAAAgCgIYAAAAKIggAEAAIiCAAYAACAKAhgAAIAoCGAAAACiIIABAACIggAGAAAgCgIYAACAKAhgAAAAoiCAAQAAiIIABgAAIAoCGAAAgCgIYAAAAKIggAEAAIiCAAYAACAKAhgAAIAoCGAAAACiIIABAACIggAGAAAgCgIYAACAKAhgAAAAoiCAAQAAiIIABgAAIAoCGAAAgCgIYAAAAKIggAEAAIiCAAYAACAKAhgAAIAoCGAAAACiIIABAACIggAGAAAgCgIYAACAKAhgAAAAoiCAAQAAiIIABgAAIAoCGAAAgCgIYAAAAKIggAEAAIiCAAYAACAKAhgAAIAoCGAAAACiIIABAACIggAGAAAgCgIYAACAKAhgAAAAoiCAAQAAiIIABgAAIAoCGID/034dCAAAAAAI8rce5LIIAGBBgAEAAFgQYAAAABYEGAAAgAUBBgAAYEGAAQAAWBBgAAAAFgQYAACABQEGAABgQYABAABYEGAAAAAWBBgAAIAFAQYAAGBBgAEAAFgQYAAAABYEGAAAgAUBBgAAYEGAAQAAWBBgAAAAFgQYAACABQEGAABgQYABAABYEGAAAAAWBBgAAIAFAQYAAGBBgAEAAFgQYAAAABYEGAAAgAUBBgAAYEGAAQAAWBBgAAAAFgQYAACABQEGAABgQYABAABYEGAAAAAWBBgAAIAFAQYAAGBBgAEAAFgQYAAAABYEGAAAgAUBBgAAYEGAAQAAWBBgAAAAFgQYAACABQEGAABgQYABAABYEGAAAAAWBBgAAIAFAQYAAGBBgAEAAFgQYAAAABYEGAAAgAUBBgAAYEGAAQAAWBBgAAAAFgQYAACABQEGAABgQYABAABYEGAAAAAWBBgAAIAFAQYAAGBBgAEAAFgQYAAAABYEGAAAgAUBBgAAYEGAAQAAWBBgAAAAFgQYAACABQEGAABgQYABAABYEGAAAAAWBBgAAIAFAQYAAGBBgAEAAFgQYAAAABYEGAAAgIUA5U7+zEnmlxIAAAAASUVORK5CYII=">
+        <div class="gss-overlay-layer" id="bbox-overlay"></div>
+      </div>
+    </div>
+  </section>
+  <!-- Right Pane: Categorized Node Attributes & Properties -->
+  <section class="gss-pane" style="border-inline-end:none;" aria-label="Node Attributes Inspector">
+    <div class="gss-pane-header">
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <span>ATTRIBUTES &amp; PROPERTIES</span>
+        <button type="button" class="gss-btn" id="btn-copy-node">Copy Node JSON</button>
+      </div>
+      <input type="search" id="prop-search" class="gss-search" placeholder="Filter properties or values...">
+    </div>
+    <div class="gss-props-scroll" id="props-container">
+      <div tabindex="0" role="region" aria-labelledby="gss-props-caption" class="table-wrapper">
+        <table class="gss-prop-table">
+          <caption id="gss-props-caption">Selected Node Properties</caption>
+          <thead><tr><th>Property</th><th>Value</th><th>Category</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+<script id="gss-data-payload" type="application/json">{"flat_nodes":[{"all_properties":{"accessibility_controls_nodes":[],"accessibility_described_by_nodes":[],"accessibility_description":"","accessibility_flow_to_nodes":[],"accessibility_labeled_by_nodes":[],"accessibility_live":0,"accessibility_name":"","anchor_bottom":0.0,"anchor_left":0.0,"anchor_right":0.0,"anchor_top":0.0,"anchors_preset":0,"auto_translate_mode":0,"clip_children":0,"clip_contents":false,"color":{"a":1.0,"b":1.0,"g":0.9745,"hex":"#faf9ffff","r":0.9788},"custom_maximum_size":{"x":-1.0,"y":-1.0},"custom_minimum_size":{"x":0.0,"y":0.0},"editor_description":"","focus_behavior_recursive":0,"focus_mode":0,"focus_neighbor_bottom":"","focus_neighbor_left":"","focus_neighbor_right":"","focus_neighbor_top":"","focus_next":"","focus_previous":"","grow_horizontal":1,"grow_vertical":1,"layout_direction":0,"layout_mode":3,"light_mask":1,"localize_numeral_system":true,"material":null,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"mouse_behavior_recursive":0,"mouse_default_cursor_shape":0,"mouse_filter":2,"mouse_force_pass_scroll_events":true,"offset_bottom":720.0,"offset_left":0.0,"offset_right":1280.0,"offset_top":0.0,"offset_transform_enabled":false,"offset_transform_pivot":{"x":0.0,"y":0.0},"offset_transform_pivot_ratio":{"x":0.5,"y":0.5},"offset_transform_position":{"x":0.0,"y":0.0},"offset_transform_position_ratio":{"x":0.0,"y":0.0},"offset_transform_rotation":0.0,"offset_transform_scale":{"x":1.0,"y":1.0},"offset_transform_visual_only":true,"oversampling_with_scale":0,"physics_interpolation_mode":2,"pivot_offset":{"x":0.0,"y":0.0},"pivot_offset_ratio":{"x":0.0,"y":0.0},"position":{"x":0.0,"y":0.0},"process_mode":0,"process_physics_priority":0,"process_priority":0,"process_thread_group":0,"propagate_maximum_size":false,"rotation":0.0,"scale":{"x":1.0,"y":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"shortcut_context":null,"show_behind_parent":false,"size":{"x":1280.0,"y":720.0},"size_flags_horizontal":1,"size_flags_stretch_ratio":1.0,"size_flags_vertical":1,"texture_filter":0,"texture_repeat":0,"theme":null,"theme_type_variation":"","tooltip_auto_translate_mode":0,"tooltip_text":"","top_level":false,"translation_context":"","unique_name_in_owner":false,"use_parent_material":false,"visibility_layer":1,"visible":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"category":"control","children_count":1,"class":"ColorRect","depth":0,"groups":[],"id":"node_0","index_in_parent":0,"name":"RadioVariants","parent_id":"","path":"/root/@Node@304/GSSStageViewport/RadioVariants","physics":{},"process_mode":0,"screen_rect":{"has_bounds":true,"height":720.0,"on_screen":true,"width":1280.0,"x":0.0,"y":0.0},"script":"","script_variables":{},"signals":[{"method":"Viewport::canvas_parent_mark_dirty","signal":"child_order_changed","target":"/root/@Node@304/GSSStageViewport"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"}],"transforms":{"anchors":{"bottom":0.0,"left":0.0,"right":0.0,"top":0.0},"custom_minimum_size":{"x":0.0,"y":0.0},"global_position":{"x":0.0,"y":0.0},"offsets":{"bottom":720.0,"left":0.0,"right":1280.0,"top":0.0},"pivot_offset":{"x":0.0,"y":0.0},"position":{"x":0.0,"y":0.0},"rotation_deg":0.0,"scale":{"x":1.0,"y":1.0},"size":{"x":1280.0,"y":720.0},"size_flags_horizontal":1,"size_flags_vertical":1},"ui_and_content":{"color":{"a":1.0,"b":1.0,"g":0.9745,"hex":"#faf9ffff","r":0.9788},"focus_mode":0,"mouse_filter":2,"tooltip_text":""},"visibility":{"clip_children":0,"light_mask":1,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"show_behind_parent":false,"top_level":false,"visibility_layer":1,"visible":true,"visible_in_tree":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"visible":true},{"all_properties":{"accessibility_controls_nodes":[],"accessibility_described_by_nodes":[],"accessibility_description":"","accessibility_flow_to_nodes":[],"accessibility_labeled_by_nodes":[],"accessibility_live":0,"accessibility_name":"","accessibility_region":false,"alignment":0,"anchor_bottom":0.0,"anchor_left":0.0,"anchor_right":0.0,"anchor_top":0.0,"anchors_preset":0,"auto_translate_mode":0,"clip_children":0,"clip_contents":false,"custom_maximum_size":{"x":-1.0,"y":-1.0},"custom_minimum_size":{"x":209.0,"y":152.0},"editor_description":"","focus_behavior_recursive":0,"focus_mode":0,"focus_neighbor_bottom":"","focus_neighbor_left":"","focus_neighbor_right":"","focus_neighbor_top":"","focus_next":"","focus_previous":"","grow_horizontal":1,"grow_vertical":1,"layout_direction":0,"layout_mode":0,"light_mask":1,"localize_numeral_system":true,"material":null,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"mouse_behavior_recursive":0,"mouse_default_cursor_shape":0,"mouse_filter":1,"mouse_force_pass_scroll_events":true,"offset_bottom":232.0,"offset_left":80.0,"offset_right":289.0,"offset_top":80.0,"offset_transform_enabled":false,"offset_transform_pivot":{"x":0.0,"y":0.0},"offset_transform_pivot_ratio":{"x":0.5,"y":0.5},"offset_transform_position":{"x":0.0,"y":0.0},"offset_transform_position_ratio":{"x":0.0,"y":0.0},"offset_transform_rotation":0.0,"offset_transform_scale":{"x":1.0,"y":1.0},"offset_transform_visual_only":true,"oversampling_with_scale":0,"physics_interpolation_mode":2,"pivot_offset":{"x":0.0,"y":0.0},"pivot_offset_ratio":{"x":0.0,"y":0.0},"position":{"x":80.0,"y":80.0},"process_mode":0,"process_physics_priority":0,"process_priority":0,"process_thread_group":0,"propagate_maximum_size":true,"rotation":0.0,"scale":{"x":1.0,"y":1.0},"selected_index":0,"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"shortcut_context":null,"show_behind_parent":false,"size":{"x":209.0,"y":152.0},"size_flags_horizontal":1,"size_flags_stretch_ratio":1.0,"size_flags_vertical":1,"texture_filter":0,"texture_repeat":0,"theme":null,"theme_override_constants/separation":null,"theme_type_variation":"","tooltip_auto_translate_mode":0,"tooltip_text":"","top_level":false,"translation_context":"","unique_name_in_owner":false,"use_parent_material":false,"visibility_layer":1,"visible":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"category":"control","children_count":3,"class":"VBoxContainer","depth":1,"groups":[],"id":"node_1","index_in_parent":0,"name":"PriorityRadioGroup","parent_id":"node_0","path":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup","physics":{},"process_mode":0,"screen_rect":{"has_bounds":true,"height":152.0,"on_screen":true,"width":209.0,"x":80.0,"y":80.0},"script":"res://addons/material3/components/selection/m3_radio_group.gd","script_variables":{"_is_updating":false,"selected_index":0},"signals":[{"method":"_on_child_tree_changed","signal":"child_entered_tree","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"},{"method":"_on_child_tree_changed","signal":"child_exiting_tree","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"},{"method":"Viewport::canvas_parent_mark_dirty","signal":"child_order_changed","target":"/root/@Node@304/GSSStageViewport"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioHigh"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioNormal"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioDisabled"}],"transforms":{"anchors":{"bottom":0.0,"left":0.0,"right":0.0,"top":0.0},"custom_minimum_size":{"x":209.0,"y":152.0},"global_position":{"x":80.0,"y":80.0},"offsets":{"bottom":232.0,"left":80.0,"right":289.0,"top":80.0},"pivot_offset":{"x":0.0,"y":0.0},"position":{"x":80.0,"y":80.0},"rotation_deg":0.0,"scale":{"x":1.0,"y":1.0},"size":{"x":209.0,"y":152.0},"size_flags_horizontal":1,"size_flags_vertical":1},"ui_and_content":{"focus_mode":0,"mouse_filter":1,"tooltip_text":""},"visibility":{"clip_children":0,"light_mask":1,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"show_behind_parent":false,"top_level":false,"visibility_layer":1,"visible":true,"visible_in_tree":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"visible":true},{"all_properties":{"accessibility_controls_nodes":[],"accessibility_described_by_nodes":[],"accessibility_description":"","accessibility_flow_to_nodes":[],"accessibility_labeled_by_nodes":[],"accessibility_live":0,"accessibility_name":"","auto_translate_mode":0,"clip_children":0,"clip_contents":false,"current_state":0,"custom_corner_radius":-1.0,"custom_maximum_size":{"x":-1.0,"y":-1.0},"custom_minimum_size":{"x":141.0,"y":48.0},"density_override":99,"disabled":false,"dot_size":10.0,"editor_description":"","focus_behavior_recursive":0,"focus_mode":2,"focus_neighbor_bottom":"","focus_neighbor_left":"","focus_neighbor_right":"","focus_neighbor_top":"","focus_next":"","focus_previous":"","group_name":"","layout_direction":0,"layout_mode":2,"light_mask":1,"localize_numeral_system":true,"material":null,"metadata/_m3_group_wired":true,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"mouse_behavior_recursive":0,"mouse_default_cursor_shape":2,"mouse_filter":0,"mouse_force_pass_scroll_events":true,"offset_transform_enabled":false,"offset_transform_pivot":{"x":0.0,"y":0.0},"offset_transform_pivot_ratio":{"x":0.5,"y":0.5},"offset_transform_position":{"x":0.0,"y":0.0},"offset_transform_position_ratio":{"x":0.0,"y":0.0},"offset_transform_rotation":0.0,"offset_transform_scale":{"x":1.0,"y":1.0},"offset_transform_visual_only":true,"oversampling_with_scale":0,"physics_interpolation_mode":2,"pivot_offset":{"x":0.0,"y":0.0},"pivot_offset_ratio":{"x":0.0,"y":0.0},"position":{"x":0.0,"y":0.0},"process_mode":0,"process_physics_priority":0,"process_priority":0,"process_thread_group":0,"propagate_maximum_size":false,"ring_size":20.0,"ripple_enabled":true,"rotation":0.0,"scale":{"x":1.0,"y":1.0},"selected":true,"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"shape_token":0,"shortcut_context":null,"show_behind_parent":false,"size":{"x":209.0,"y":48.0},"size_flags_horizontal":1,"size_flags_stretch_ratio":1.0,"size_flags_vertical":1,"text":"High Priority","texture_filter":0,"texture_repeat":0,"theme":null,"theme_type_variation":"","tooltip_auto_translate_mode":0,"tooltip_text":"","top_level":false,"touch_target_min_size":{"x":48.0,"y":48.0},"translation_context":"","unique_name_in_owner":false,"use_parent_material":false,"value":"high","visibility_layer":1,"visible":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"category":"control","children_count":0,"class":"Control","depth":2,"groups":[],"id":"node_2","index_in_parent":0,"name":"RadioHigh","parent_id":"node_1","path":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioHigh","physics":{},"process_mode":0,"screen_rect":{"has_bounds":true,"height":48.0,"on_screen":true,"width":209.0,"x":80.0,"y":80.0},"script":"res://addons/material3/components/selection/m3_radio.gd","script_variables":{"_dot_scale":0.7392,"_dot_tween":"<Tween>","_font":"<FontFile>","_font_size":14,"_is_pointer_down":false,"_pointer_inside":false,"_ripple":"<Node:M3Ripple (Control)>","_ripple_wave_alpha":0.0,"_ripple_wave_count":0,"_ripple_wave_radius":0.0,"_select_progress":0.7392,"_state_layer_alpha":0.0,"_theme_connected":true,"current_state":0,"custom_corner_radius":-1.0,"density_override":99,"disabled":false,"dot_size":10.0,"group_name":"","ring_size":20.0,"ripple_enabled":true,"selected":true,"shape_token":0,"text":"High Priority","touch_target_min_size":{"x":48.0,"y":48.0},"value":"high"},"signals":[{"method":"_on_radio_toggled","signal":"toggled","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"},{"method":"Viewport::canvas_parent_mark_dirty","signal":"child_order_changed","target":"/root/@Node@304/GSSStageViewport"},{"method":"Container::_child_minsize_changed","signal":"visibility_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioHigh/M3Ripple"},{"method":"_on_resized","signal":"resized","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioHigh"},{"method":"_on_mouse_entered","signal":"mouse_entered","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioHigh"},{"method":"_on_mouse_exited","signal":"mouse_exited","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioHigh"},{"method":"_on_focus_entered","signal":"focus_entered","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioHigh"},{"method":"_on_focus_exited","signal":"focus_exited","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioHigh"},{"method":"Container::queue_sort","signal":"size_flags_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"},{"method":"Container::_child_minsize_changed","signal":"maximum_size_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"},{"method":"Container::_child_minsize_changed","signal":"minimum_size_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"},{"method":"Container::_child_desired_size_changed","signal":"_desired_size_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"}],"transforms":{"anchors":{"bottom":0.0,"left":0.0,"right":0.0,"top":0.0},"custom_minimum_size":{"x":141.0,"y":48.0},"global_position":{"x":80.0,"y":80.0},"offsets":{"bottom":48.0,"left":0.0,"right":209.0,"top":0.0},"pivot_offset":{"x":0.0,"y":0.0},"position":{"x":0.0,"y":0.0},"rotation_deg":0.0,"scale":{"x":1.0,"y":1.0},"size":{"x":209.0,"y":48.0},"size_flags_horizontal":1,"size_flags_vertical":1},"ui_and_content":{"focus_mode":2,"mouse_filter":0,"tooltip_text":""},"visibility":{"clip_children":0,"light_mask":1,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"show_behind_parent":false,"top_level":false,"visibility_layer":1,"visible":true,"visible_in_tree":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"visible":true},{"all_properties":{"accessibility_controls_nodes":[],"accessibility_described_by_nodes":[],"accessibility_description":"","accessibility_flow_to_nodes":[],"accessibility_labeled_by_nodes":[],"accessibility_live":0,"accessibility_name":"","auto_translate_mode":0,"clip_children":0,"clip_contents":false,"current_state":0,"custom_corner_radius":-1.0,"custom_maximum_size":{"x":-1.0,"y":-1.0},"custom_minimum_size":{"x":161.0,"y":48.0},"density_override":99,"disabled":false,"dot_size":10.0,"editor_description":"","focus_behavior_recursive":0,"focus_mode":2,"focus_neighbor_bottom":"","focus_neighbor_left":"","focus_neighbor_right":"","focus_neighbor_top":"","focus_next":"","focus_previous":"","group_name":"","layout_direction":0,"layout_mode":2,"light_mask":1,"localize_numeral_system":true,"material":null,"metadata/_m3_group_wired":true,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"mouse_behavior_recursive":0,"mouse_default_cursor_shape":2,"mouse_filter":0,"mouse_force_pass_scroll_events":true,"offset_transform_enabled":false,"offset_transform_pivot":{"x":0.0,"y":0.0},"offset_transform_pivot_ratio":{"x":0.5,"y":0.5},"offset_transform_position":{"x":0.0,"y":0.0},"offset_transform_position_ratio":{"x":0.0,"y":0.0},"offset_transform_rotation":0.0,"offset_transform_scale":{"x":1.0,"y":1.0},"offset_transform_visual_only":true,"oversampling_with_scale":0,"physics_interpolation_mode":2,"pivot_offset":{"x":0.0,"y":0.0},"pivot_offset_ratio":{"x":0.0,"y":0.0},"position":{"x":0.0,"y":52.0},"process_mode":0,"process_physics_priority":0,"process_priority":0,"process_thread_group":0,"propagate_maximum_size":false,"ring_size":20.0,"ripple_enabled":true,"rotation":0.0,"scale":{"x":1.0,"y":1.0},"selected":false,"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"shape_token":0,"shortcut_context":null,"show_behind_parent":false,"size":{"x":209.0,"y":48.0},"size_flags_horizontal":1,"size_flags_stretch_ratio":1.0,"size_flags_vertical":1,"text":"Normal Priority","texture_filter":0,"texture_repeat":0,"theme":null,"theme_type_variation":"","tooltip_auto_translate_mode":0,"tooltip_text":"","top_level":false,"touch_target_min_size":{"x":48.0,"y":48.0},"translation_context":"","unique_name_in_owner":false,"use_parent_material":false,"value":"normal","visibility_layer":1,"visible":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"category":"control","children_count":0,"class":"Control","depth":2,"groups":[],"id":"node_3","index_in_parent":1,"name":"RadioNormal","parent_id":"node_1","path":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioNormal","physics":{},"process_mode":0,"screen_rect":{"has_bounds":true,"height":48.0,"on_screen":true,"width":209.0,"x":80.0,"y":132.0},"script":"res://addons/material3/components/selection/m3_radio.gd","script_variables":{"_dot_scale":0.0,"_dot_tween":null,"_font":"<FontFile>","_font_size":14,"_is_pointer_down":false,"_pointer_inside":false,"_ripple":"<Node:M3Ripple (Control)>","_ripple_wave_alpha":0.0,"_ripple_wave_count":0,"_ripple_wave_radius":0.0,"_select_progress":0.0,"_state_layer_alpha":0.0,"_theme_connected":true,"current_state":0,"custom_corner_radius":-1.0,"density_override":99,"disabled":false,"dot_size":10.0,"group_name":"","ring_size":20.0,"ripple_enabled":true,"selected":false,"shape_token":0,"text":"Normal Priority","touch_target_min_size":{"x":48.0,"y":48.0},"value":"normal"},"signals":[{"method":"_on_radio_toggled","signal":"toggled","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"},{"method":"Viewport::canvas_parent_mark_dirty","signal":"child_order_changed","target":"/root/@Node@304/GSSStageViewport"},{"method":"Container::_child_minsize_changed","signal":"visibility_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioNormal/M3Ripple"},{"method":"_on_resized","signal":"resized","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioNormal"},{"method":"_on_mouse_entered","signal":"mouse_entered","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioNormal"},{"method":"_on_mouse_exited","signal":"mouse_exited","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioNormal"},{"method":"_on_focus_entered","signal":"focus_entered","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioNormal"},{"method":"_on_focus_exited","signal":"focus_exited","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioNormal"},{"method":"Container::queue_sort","signal":"size_flags_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"},{"method":"Container::_child_minsize_changed","signal":"maximum_size_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"},{"method":"Container::_child_minsize_changed","signal":"minimum_size_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"},{"method":"Container::_child_desired_size_changed","signal":"_desired_size_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"}],"transforms":{"anchors":{"bottom":0.0,"left":0.0,"right":0.0,"top":0.0},"custom_minimum_size":{"x":161.0,"y":48.0},"global_position":{"x":80.0,"y":132.0},"offsets":{"bottom":100.0,"left":0.0,"right":209.0,"top":52.0},"pivot_offset":{"x":0.0,"y":0.0},"position":{"x":0.0,"y":52.0},"rotation_deg":0.0,"scale":{"x":1.0,"y":1.0},"size":{"x":209.0,"y":48.0},"size_flags_horizontal":1,"size_flags_vertical":1},"ui_and_content":{"focus_mode":2,"mouse_filter":0,"tooltip_text":""},"visibility":{"clip_children":0,"light_mask":1,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"show_behind_parent":false,"top_level":false,"visibility_layer":1,"visible":true,"visible_in_tree":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"visible":true},{"all_properties":{"accessibility_controls_nodes":[],"accessibility_described_by_nodes":[],"accessibility_description":"","accessibility_flow_to_nodes":[],"accessibility_labeled_by_nodes":[],"accessibility_live":0,"accessibility_name":"","auto_translate_mode":0,"clip_children":0,"clip_contents":false,"current_state":4,"custom_corner_radius":-1.0,"custom_maximum_size":{"x":-1.0,"y":-1.0},"custom_minimum_size":{"x":209.0,"y":48.0},"density_override":99,"disabled":true,"dot_size":10.0,"editor_description":"","focus_behavior_recursive":0,"focus_mode":2,"focus_neighbor_bottom":"","focus_neighbor_left":"","focus_neighbor_right":"","focus_neighbor_top":"","focus_next":"","focus_previous":"","group_name":"","layout_direction":0,"layout_mode":2,"light_mask":1,"localize_numeral_system":true,"material":null,"metadata/_m3_group_wired":true,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"mouse_behavior_recursive":0,"mouse_default_cursor_shape":8,"mouse_filter":0,"mouse_force_pass_scroll_events":true,"offset_transform_enabled":false,"offset_transform_pivot":{"x":0.0,"y":0.0},"offset_transform_pivot_ratio":{"x":0.5,"y":0.5},"offset_transform_position":{"x":0.0,"y":0.0},"offset_transform_position_ratio":{"x":0.0,"y":0.0},"offset_transform_rotation":0.0,"offset_transform_scale":{"x":1.0,"y":1.0},"offset_transform_visual_only":true,"oversampling_with_scale":0,"physics_interpolation_mode":2,"pivot_offset":{"x":0.0,"y":0.0},"pivot_offset_ratio":{"x":0.0,"y":0.0},"position":{"x":0.0,"y":104.0},"process_mode":0,"process_physics_priority":0,"process_priority":0,"process_thread_group":0,"propagate_maximum_size":false,"ring_size":20.0,"ripple_enabled":true,"rotation":0.0,"scale":{"x":1.0,"y":1.0},"selected":false,"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"shape_token":0,"shortcut_context":null,"show_behind_parent":false,"size":{"x":209.0,"y":48.0},"size_flags_horizontal":1,"size_flags_stretch_ratio":1.0,"size_flags_vertical":1,"text":"Low Priority (Disabled)","texture_filter":0,"texture_repeat":0,"theme":null,"theme_type_variation":"","tooltip_auto_translate_mode":0,"tooltip_text":"","top_level":false,"touch_target_min_size":{"x":48.0,"y":48.0},"translation_context":"","unique_name_in_owner":false,"use_parent_material":false,"value":"low","visibility_layer":1,"visible":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"category":"control","children_count":0,"class":"Control","depth":2,"groups":[],"id":"node_4","index_in_parent":2,"name":"RadioDisabled","parent_id":"node_1","path":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioDisabled","physics":{},"process_mode":0,"screen_rect":{"has_bounds":true,"height":48.0,"on_screen":true,"width":209.0,"x":80.0,"y":184.0},"script":"res://addons/material3/components/selection/m3_radio.gd","script_variables":{"_dot_scale":0.0,"_dot_tween":null,"_font":"<FontFile>","_font_size":14,"_is_pointer_down":false,"_pointer_inside":false,"_ripple":"<Node:M3Ripple (Control)>","_ripple_wave_alpha":0.0,"_ripple_wave_count":0,"_ripple_wave_radius":0.0,"_select_progress":0.0,"_state_layer_alpha":0.0,"_theme_connected":true,"current_state":4,"custom_corner_radius":-1.0,"density_override":99,"disabled":true,"dot_size":10.0,"group_name":"","ring_size":20.0,"ripple_enabled":true,"selected":false,"shape_token":0,"text":"Low Priority (Disabled)","touch_target_min_size":{"x":48.0,"y":48.0},"value":"low"},"signals":[{"method":"_on_radio_toggled","signal":"toggled","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"},{"method":"Viewport::canvas_parent_mark_dirty","signal":"child_order_changed","target":"/root/@Node@304/GSSStageViewport"},{"method":"Container::_child_minsize_changed","signal":"visibility_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioDisabled/M3Ripple"},{"method":"_on_resized","signal":"resized","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioDisabled"},{"method":"_on_mouse_entered","signal":"mouse_entered","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioDisabled"},{"method":"_on_mouse_exited","signal":"mouse_exited","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioDisabled"},{"method":"_on_focus_entered","signal":"focus_entered","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioDisabled"},{"method":"_on_focus_exited","signal":"focus_exited","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioDisabled"},{"method":"Container::queue_sort","signal":"size_flags_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"},{"method":"Container::_child_minsize_changed","signal":"maximum_size_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"},{"method":"Container::_child_minsize_changed","signal":"minimum_size_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"},{"method":"Container::_child_desired_size_changed","signal":"_desired_size_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"}],"transforms":{"anchors":{"bottom":0.0,"left":0.0,"right":0.0,"top":0.0},"custom_minimum_size":{"x":209.0,"y":48.0},"global_position":{"x":80.0,"y":184.0},"offsets":{"bottom":152.0,"left":0.0,"right":209.0,"top":104.0},"pivot_offset":{"x":0.0,"y":0.0},"position":{"x":0.0,"y":104.0},"rotation_deg":0.0,"scale":{"x":1.0,"y":1.0},"size":{"x":209.0,"y":48.0},"size_flags_horizontal":1,"size_flags_vertical":1},"ui_and_content":{"focus_mode":2,"mouse_filter":0,"tooltip_text":""},"visibility":{"clip_children":0,"light_mask":1,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"show_behind_parent":false,"top_level":false,"visibility_layer":1,"visible":true,"visible_in_tree":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"visible":true}],"hierarchy":{"all_properties":{"accessibility_controls_nodes":[],"accessibility_described_by_nodes":[],"accessibility_description":"","accessibility_flow_to_nodes":[],"accessibility_labeled_by_nodes":[],"accessibility_live":0,"accessibility_name":"","anchor_bottom":0.0,"anchor_left":0.0,"anchor_right":0.0,"anchor_top":0.0,"anchors_preset":0,"auto_translate_mode":0,"clip_children":0,"clip_contents":false,"color":{"a":1.0,"b":1.0,"g":0.9745,"hex":"#faf9ffff","r":0.9788},"custom_maximum_size":{"x":-1.0,"y":-1.0},"custom_minimum_size":{"x":0.0,"y":0.0},"editor_description":"","focus_behavior_recursive":0,"focus_mode":0,"focus_neighbor_bottom":"","focus_neighbor_left":"","focus_neighbor_right":"","focus_neighbor_top":"","focus_next":"","focus_previous":"","grow_horizontal":1,"grow_vertical":1,"layout_direction":0,"layout_mode":3,"light_mask":1,"localize_numeral_system":true,"material":null,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"mouse_behavior_recursive":0,"mouse_default_cursor_shape":0,"mouse_filter":2,"mouse_force_pass_scroll_events":true,"offset_bottom":720.0,"offset_left":0.0,"offset_right":1280.0,"offset_top":0.0,"offset_transform_enabled":false,"offset_transform_pivot":{"x":0.0,"y":0.0},"offset_transform_pivot_ratio":{"x":0.5,"y":0.5},"offset_transform_position":{"x":0.0,"y":0.0},"offset_transform_position_ratio":{"x":0.0,"y":0.0},"offset_transform_rotation":0.0,"offset_transform_scale":{"x":1.0,"y":1.0},"offset_transform_visual_only":true,"oversampling_with_scale":0,"physics_interpolation_mode":2,"pivot_offset":{"x":0.0,"y":0.0},"pivot_offset_ratio":{"x":0.0,"y":0.0},"position":{"x":0.0,"y":0.0},"process_mode":0,"process_physics_priority":0,"process_priority":0,"process_thread_group":0,"propagate_maximum_size":false,"rotation":0.0,"scale":{"x":1.0,"y":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"shortcut_context":null,"show_behind_parent":false,"size":{"x":1280.0,"y":720.0},"size_flags_horizontal":1,"size_flags_stretch_ratio":1.0,"size_flags_vertical":1,"texture_filter":0,"texture_repeat":0,"theme":null,"theme_type_variation":"","tooltip_auto_translate_mode":0,"tooltip_text":"","top_level":false,"translation_context":"","unique_name_in_owner":false,"use_parent_material":false,"visibility_layer":1,"visible":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"category":"control","children":[{"all_properties":{"accessibility_controls_nodes":[],"accessibility_described_by_nodes":[],"accessibility_description":"","accessibility_flow_to_nodes":[],"accessibility_labeled_by_nodes":[],"accessibility_live":0,"accessibility_name":"","accessibility_region":false,"alignment":0,"anchor_bottom":0.0,"anchor_left":0.0,"anchor_right":0.0,"anchor_top":0.0,"anchors_preset":0,"auto_translate_mode":0,"clip_children":0,"clip_contents":false,"custom_maximum_size":{"x":-1.0,"y":-1.0},"custom_minimum_size":{"x":209.0,"y":152.0},"editor_description":"","focus_behavior_recursive":0,"focus_mode":0,"focus_neighbor_bottom":"","focus_neighbor_left":"","focus_neighbor_right":"","focus_neighbor_top":"","focus_next":"","focus_previous":"","grow_horizontal":1,"grow_vertical":1,"layout_direction":0,"layout_mode":0,"light_mask":1,"localize_numeral_system":true,"material":null,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"mouse_behavior_recursive":0,"mouse_default_cursor_shape":0,"mouse_filter":1,"mouse_force_pass_scroll_events":true,"offset_bottom":232.0,"offset_left":80.0,"offset_right":289.0,"offset_top":80.0,"offset_transform_enabled":false,"offset_transform_pivot":{"x":0.0,"y":0.0},"offset_transform_pivot_ratio":{"x":0.5,"y":0.5},"offset_transform_position":{"x":0.0,"y":0.0},"offset_transform_position_ratio":{"x":0.0,"y":0.0},"offset_transform_rotation":0.0,"offset_transform_scale":{"x":1.0,"y":1.0},"offset_transform_visual_only":true,"oversampling_with_scale":0,"physics_interpolation_mode":2,"pivot_offset":{"x":0.0,"y":0.0},"pivot_offset_ratio":{"x":0.0,"y":0.0},"position":{"x":80.0,"y":80.0},"process_mode":0,"process_physics_priority":0,"process_priority":0,"process_thread_group":0,"propagate_maximum_size":true,"rotation":0.0,"scale":{"x":1.0,"y":1.0},"selected_index":0,"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"shortcut_context":null,"show_behind_parent":false,"size":{"x":209.0,"y":152.0},"size_flags_horizontal":1,"size_flags_stretch_ratio":1.0,"size_flags_vertical":1,"texture_filter":0,"texture_repeat":0,"theme":null,"theme_override_constants/separation":null,"theme_type_variation":"","tooltip_auto_translate_mode":0,"tooltip_text":"","top_level":false,"translation_context":"","unique_name_in_owner":false,"use_parent_material":false,"visibility_layer":1,"visible":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"category":"control","children":[{"all_properties":{"accessibility_controls_nodes":[],"accessibility_described_by_nodes":[],"accessibility_description":"","accessibility_flow_to_nodes":[],"accessibility_labeled_by_nodes":[],"accessibility_live":0,"accessibility_name":"","auto_translate_mode":0,"clip_children":0,"clip_contents":false,"current_state":0,"custom_corner_radius":-1.0,"custom_maximum_size":{"x":-1.0,"y":-1.0},"custom_minimum_size":{"x":141.0,"y":48.0},"density_override":99,"disabled":false,"dot_size":10.0,"editor_description":"","focus_behavior_recursive":0,"focus_mode":2,"focus_neighbor_bottom":"","focus_neighbor_left":"","focus_neighbor_right":"","focus_neighbor_top":"","focus_next":"","focus_previous":"","group_name":"","layout_direction":0,"layout_mode":2,"light_mask":1,"localize_numeral_system":true,"material":null,"metadata/_m3_group_wired":true,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"mouse_behavior_recursive":0,"mouse_default_cursor_shape":2,"mouse_filter":0,"mouse_force_pass_scroll_events":true,"offset_transform_enabled":false,"offset_transform_pivot":{"x":0.0,"y":0.0},"offset_transform_pivot_ratio":{"x":0.5,"y":0.5},"offset_transform_position":{"x":0.0,"y":0.0},"offset_transform_position_ratio":{"x":0.0,"y":0.0},"offset_transform_rotation":0.0,"offset_transform_scale":{"x":1.0,"y":1.0},"offset_transform_visual_only":true,"oversampling_with_scale":0,"physics_interpolation_mode":2,"pivot_offset":{"x":0.0,"y":0.0},"pivot_offset_ratio":{"x":0.0,"y":0.0},"position":{"x":0.0,"y":0.0},"process_mode":0,"process_physics_priority":0,"process_priority":0,"process_thread_group":0,"propagate_maximum_size":false,"ring_size":20.0,"ripple_enabled":true,"rotation":0.0,"scale":{"x":1.0,"y":1.0},"selected":true,"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"shape_token":0,"shortcut_context":null,"show_behind_parent":false,"size":{"x":209.0,"y":48.0},"size_flags_horizontal":1,"size_flags_stretch_ratio":1.0,"size_flags_vertical":1,"text":"High Priority","texture_filter":0,"texture_repeat":0,"theme":null,"theme_type_variation":"","tooltip_auto_translate_mode":0,"tooltip_text":"","top_level":false,"touch_target_min_size":{"x":48.0,"y":48.0},"translation_context":"","unique_name_in_owner":false,"use_parent_material":false,"value":"high","visibility_layer":1,"visible":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"category":"control","children":[],"children_count":0,"class":"Control","depth":2,"groups":[],"id":"node_2","index_in_parent":0,"name":"RadioHigh","parent_id":"node_1","path":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioHigh","physics":{},"process_mode":0,"screen_rect":{"has_bounds":true,"height":48.0,"on_screen":true,"width":209.0,"x":80.0,"y":80.0},"script":"res://addons/material3/components/selection/m3_radio.gd","script_variables":{"_dot_scale":0.7392,"_dot_tween":"<Tween>","_font":"<FontFile>","_font_size":14,"_is_pointer_down":false,"_pointer_inside":false,"_ripple":"<Node:M3Ripple (Control)>","_ripple_wave_alpha":0.0,"_ripple_wave_count":0,"_ripple_wave_radius":0.0,"_select_progress":0.7392,"_state_layer_alpha":0.0,"_theme_connected":true,"current_state":0,"custom_corner_radius":-1.0,"density_override":99,"disabled":false,"dot_size":10.0,"group_name":"","ring_size":20.0,"ripple_enabled":true,"selected":true,"shape_token":0,"text":"High Priority","touch_target_min_size":{"x":48.0,"y":48.0},"value":"high"},"signals":[{"method":"_on_radio_toggled","signal":"toggled","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"},{"method":"Viewport::canvas_parent_mark_dirty","signal":"child_order_changed","target":"/root/@Node@304/GSSStageViewport"},{"method":"Container::_child_minsize_changed","signal":"visibility_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioHigh/M3Ripple"},{"method":"_on_resized","signal":"resized","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioHigh"},{"method":"_on_mouse_entered","signal":"mouse_entered","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioHigh"},{"method":"_on_mouse_exited","signal":"mouse_exited","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioHigh"},{"method":"_on_focus_entered","signal":"focus_entered","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioHigh"},{"method":"_on_focus_exited","signal":"focus_exited","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioHigh"},{"method":"Container::queue_sort","signal":"size_flags_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"},{"method":"Container::_child_minsize_changed","signal":"maximum_size_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"},{"method":"Container::_child_minsize_changed","signal":"minimum_size_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"},{"method":"Container::_child_desired_size_changed","signal":"_desired_size_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"}],"transforms":{"anchors":{"bottom":0.0,"left":0.0,"right":0.0,"top":0.0},"custom_minimum_size":{"x":141.0,"y":48.0},"global_position":{"x":80.0,"y":80.0},"offsets":{"bottom":48.0,"left":0.0,"right":209.0,"top":0.0},"pivot_offset":{"x":0.0,"y":0.0},"position":{"x":0.0,"y":0.0},"rotation_deg":0.0,"scale":{"x":1.0,"y":1.0},"size":{"x":209.0,"y":48.0},"size_flags_horizontal":1,"size_flags_vertical":1},"ui_and_content":{"focus_mode":2,"mouse_filter":0,"tooltip_text":""},"visibility":{"clip_children":0,"light_mask":1,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"show_behind_parent":false,"top_level":false,"visibility_layer":1,"visible":true,"visible_in_tree":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"visible":true},{"all_properties":{"accessibility_controls_nodes":[],"accessibility_described_by_nodes":[],"accessibility_description":"","accessibility_flow_to_nodes":[],"accessibility_labeled_by_nodes":[],"accessibility_live":0,"accessibility_name":"","auto_translate_mode":0,"clip_children":0,"clip_contents":false,"current_state":0,"custom_corner_radius":-1.0,"custom_maximum_size":{"x":-1.0,"y":-1.0},"custom_minimum_size":{"x":161.0,"y":48.0},"density_override":99,"disabled":false,"dot_size":10.0,"editor_description":"","focus_behavior_recursive":0,"focus_mode":2,"focus_neighbor_bottom":"","focus_neighbor_left":"","focus_neighbor_right":"","focus_neighbor_top":"","focus_next":"","focus_previous":"","group_name":"","layout_direction":0,"layout_mode":2,"light_mask":1,"localize_numeral_system":true,"material":null,"metadata/_m3_group_wired":true,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"mouse_behavior_recursive":0,"mouse_default_cursor_shape":2,"mouse_filter":0,"mouse_force_pass_scroll_events":true,"offset_transform_enabled":false,"offset_transform_pivot":{"x":0.0,"y":0.0},"offset_transform_pivot_ratio":{"x":0.5,"y":0.5},"offset_transform_position":{"x":0.0,"y":0.0},"offset_transform_position_ratio":{"x":0.0,"y":0.0},"offset_transform_rotation":0.0,"offset_transform_scale":{"x":1.0,"y":1.0},"offset_transform_visual_only":true,"oversampling_with_scale":0,"physics_interpolation_mode":2,"pivot_offset":{"x":0.0,"y":0.0},"pivot_offset_ratio":{"x":0.0,"y":0.0},"position":{"x":0.0,"y":52.0},"process_mode":0,"process_physics_priority":0,"process_priority":0,"process_thread_group":0,"propagate_maximum_size":false,"ring_size":20.0,"ripple_enabled":true,"rotation":0.0,"scale":{"x":1.0,"y":1.0},"selected":false,"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"shape_token":0,"shortcut_context":null,"show_behind_parent":false,"size":{"x":209.0,"y":48.0},"size_flags_horizontal":1,"size_flags_stretch_ratio":1.0,"size_flags_vertical":1,"text":"Normal Priority","texture_filter":0,"texture_repeat":0,"theme":null,"theme_type_variation":"","tooltip_auto_translate_mode":0,"tooltip_text":"","top_level":false,"touch_target_min_size":{"x":48.0,"y":48.0},"translation_context":"","unique_name_in_owner":false,"use_parent_material":false,"value":"normal","visibility_layer":1,"visible":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"category":"control","children":[],"children_count":0,"class":"Control","depth":2,"groups":[],"id":"node_3","index_in_parent":1,"name":"RadioNormal","parent_id":"node_1","path":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioNormal","physics":{},"process_mode":0,"screen_rect":{"has_bounds":true,"height":48.0,"on_screen":true,"width":209.0,"x":80.0,"y":132.0},"script":"res://addons/material3/components/selection/m3_radio.gd","script_variables":{"_dot_scale":0.0,"_dot_tween":null,"_font":"<FontFile>","_font_size":14,"_is_pointer_down":false,"_pointer_inside":false,"_ripple":"<Node:M3Ripple (Control)>","_ripple_wave_alpha":0.0,"_ripple_wave_count":0,"_ripple_wave_radius":0.0,"_select_progress":0.0,"_state_layer_alpha":0.0,"_theme_connected":true,"current_state":0,"custom_corner_radius":-1.0,"density_override":99,"disabled":false,"dot_size":10.0,"group_name":"","ring_size":20.0,"ripple_enabled":true,"selected":false,"shape_token":0,"text":"Normal Priority","touch_target_min_size":{"x":48.0,"y":48.0},"value":"normal"},"signals":[{"method":"_on_radio_toggled","signal":"toggled","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"},{"method":"Viewport::canvas_parent_mark_dirty","signal":"child_order_changed","target":"/root/@Node@304/GSSStageViewport"},{"method":"Container::_child_minsize_changed","signal":"visibility_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioNormal/M3Ripple"},{"method":"_on_resized","signal":"resized","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioNormal"},{"method":"_on_mouse_entered","signal":"mouse_entered","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioNormal"},{"method":"_on_mouse_exited","signal":"mouse_exited","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioNormal"},{"method":"_on_focus_entered","signal":"focus_entered","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioNormal"},{"method":"_on_focus_exited","signal":"focus_exited","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioNormal"},{"method":"Container::queue_sort","signal":"size_flags_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"},{"method":"Container::_child_minsize_changed","signal":"maximum_size_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"},{"method":"Container::_child_minsize_changed","signal":"minimum_size_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"},{"method":"Container::_child_desired_size_changed","signal":"_desired_size_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"}],"transforms":{"anchors":{"bottom":0.0,"left":0.0,"right":0.0,"top":0.0},"custom_minimum_size":{"x":161.0,"y":48.0},"global_position":{"x":80.0,"y":132.0},"offsets":{"bottom":100.0,"left":0.0,"right":209.0,"top":52.0},"pivot_offset":{"x":0.0,"y":0.0},"position":{"x":0.0,"y":52.0},"rotation_deg":0.0,"scale":{"x":1.0,"y":1.0},"size":{"x":209.0,"y":48.0},"size_flags_horizontal":1,"size_flags_vertical":1},"ui_and_content":{"focus_mode":2,"mouse_filter":0,"tooltip_text":""},"visibility":{"clip_children":0,"light_mask":1,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"show_behind_parent":false,"top_level":false,"visibility_layer":1,"visible":true,"visible_in_tree":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"visible":true},{"all_properties":{"accessibility_controls_nodes":[],"accessibility_described_by_nodes":[],"accessibility_description":"","accessibility_flow_to_nodes":[],"accessibility_labeled_by_nodes":[],"accessibility_live":0,"accessibility_name":"","auto_translate_mode":0,"clip_children":0,"clip_contents":false,"current_state":4,"custom_corner_radius":-1.0,"custom_maximum_size":{"x":-1.0,"y":-1.0},"custom_minimum_size":{"x":209.0,"y":48.0},"density_override":99,"disabled":true,"dot_size":10.0,"editor_description":"","focus_behavior_recursive":0,"focus_mode":2,"focus_neighbor_bottom":"","focus_neighbor_left":"","focus_neighbor_right":"","focus_neighbor_top":"","focus_next":"","focus_previous":"","group_name":"","layout_direction":0,"layout_mode":2,"light_mask":1,"localize_numeral_system":true,"material":null,"metadata/_m3_group_wired":true,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"mouse_behavior_recursive":0,"mouse_default_cursor_shape":8,"mouse_filter":0,"mouse_force_pass_scroll_events":true,"offset_transform_enabled":false,"offset_transform_pivot":{"x":0.0,"y":0.0},"offset_transform_pivot_ratio":{"x":0.5,"y":0.5},"offset_transform_position":{"x":0.0,"y":0.0},"offset_transform_position_ratio":{"x":0.0,"y":0.0},"offset_transform_rotation":0.0,"offset_transform_scale":{"x":1.0,"y":1.0},"offset_transform_visual_only":true,"oversampling_with_scale":0,"physics_interpolation_mode":2,"pivot_offset":{"x":0.0,"y":0.0},"pivot_offset_ratio":{"x":0.0,"y":0.0},"position":{"x":0.0,"y":104.0},"process_mode":0,"process_physics_priority":0,"process_priority":0,"process_thread_group":0,"propagate_maximum_size":false,"ring_size":20.0,"ripple_enabled":true,"rotation":0.0,"scale":{"x":1.0,"y":1.0},"selected":false,"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"shape_token":0,"shortcut_context":null,"show_behind_parent":false,"size":{"x":209.0,"y":48.0},"size_flags_horizontal":1,"size_flags_stretch_ratio":1.0,"size_flags_vertical":1,"text":"Low Priority (Disabled)","texture_filter":0,"texture_repeat":0,"theme":null,"theme_type_variation":"","tooltip_auto_translate_mode":0,"tooltip_text":"","top_level":false,"touch_target_min_size":{"x":48.0,"y":48.0},"translation_context":"","unique_name_in_owner":false,"use_parent_material":false,"value":"low","visibility_layer":1,"visible":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"category":"control","children":[],"children_count":0,"class":"Control","depth":2,"groups":[],"id":"node_4","index_in_parent":2,"name":"RadioDisabled","parent_id":"node_1","path":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioDisabled","physics":{},"process_mode":0,"screen_rect":{"has_bounds":true,"height":48.0,"on_screen":true,"width":209.0,"x":80.0,"y":184.0},"script":"res://addons/material3/components/selection/m3_radio.gd","script_variables":{"_dot_scale":0.0,"_dot_tween":null,"_font":"<FontFile>","_font_size":14,"_is_pointer_down":false,"_pointer_inside":false,"_ripple":"<Node:M3Ripple (Control)>","_ripple_wave_alpha":0.0,"_ripple_wave_count":0,"_ripple_wave_radius":0.0,"_select_progress":0.0,"_state_layer_alpha":0.0,"_theme_connected":true,"current_state":4,"custom_corner_radius":-1.0,"density_override":99,"disabled":true,"dot_size":10.0,"group_name":"","ring_size":20.0,"ripple_enabled":true,"selected":false,"shape_token":0,"text":"Low Priority (Disabled)","touch_target_min_size":{"x":48.0,"y":48.0},"value":"low"},"signals":[{"method":"_on_radio_toggled","signal":"toggled","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"},{"method":"Viewport::canvas_parent_mark_dirty","signal":"child_order_changed","target":"/root/@Node@304/GSSStageViewport"},{"method":"Container::_child_minsize_changed","signal":"visibility_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioDisabled/M3Ripple"},{"method":"_on_resized","signal":"resized","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioDisabled"},{"method":"_on_mouse_entered","signal":"mouse_entered","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioDisabled"},{"method":"_on_mouse_exited","signal":"mouse_exited","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioDisabled"},{"method":"_on_focus_entered","signal":"focus_entered","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioDisabled"},{"method":"_on_focus_exited","signal":"focus_exited","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioDisabled"},{"method":"Container::queue_sort","signal":"size_flags_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"},{"method":"Container::_child_minsize_changed","signal":"maximum_size_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"},{"method":"Container::_child_minsize_changed","signal":"minimum_size_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"},{"method":"Container::_child_desired_size_changed","signal":"_desired_size_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"}],"transforms":{"anchors":{"bottom":0.0,"left":0.0,"right":0.0,"top":0.0},"custom_minimum_size":{"x":209.0,"y":48.0},"global_position":{"x":80.0,"y":184.0},"offsets":{"bottom":152.0,"left":0.0,"right":209.0,"top":104.0},"pivot_offset":{"x":0.0,"y":0.0},"position":{"x":0.0,"y":104.0},"rotation_deg":0.0,"scale":{"x":1.0,"y":1.0},"size":{"x":209.0,"y":48.0},"size_flags_horizontal":1,"size_flags_vertical":1},"ui_and_content":{"focus_mode":2,"mouse_filter":0,"tooltip_text":""},"visibility":{"clip_children":0,"light_mask":1,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"show_behind_parent":false,"top_level":false,"visibility_layer":1,"visible":true,"visible_in_tree":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"visible":true}],"children_count":3,"class":"VBoxContainer","depth":1,"groups":[],"id":"node_1","index_in_parent":0,"name":"PriorityRadioGroup","parent_id":"node_0","path":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup","physics":{},"process_mode":0,"screen_rect":{"has_bounds":true,"height":152.0,"on_screen":true,"width":209.0,"x":80.0,"y":80.0},"script":"res://addons/material3/components/selection/m3_radio_group.gd","script_variables":{"_is_updating":false,"selected_index":0},"signals":[{"method":"_on_child_tree_changed","signal":"child_entered_tree","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"},{"method":"_on_child_tree_changed","signal":"child_exiting_tree","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"},{"method":"Viewport::canvas_parent_mark_dirty","signal":"child_order_changed","target":"/root/@Node@304/GSSStageViewport"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioHigh"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioNormal"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioDisabled"}],"transforms":{"anchors":{"bottom":0.0,"left":0.0,"right":0.0,"top":0.0},"custom_minimum_size":{"x":209.0,"y":152.0},"global_position":{"x":80.0,"y":80.0},"offsets":{"bottom":232.0,"left":80.0,"right":289.0,"top":80.0},"pivot_offset":{"x":0.0,"y":0.0},"position":{"x":80.0,"y":80.0},"rotation_deg":0.0,"scale":{"x":1.0,"y":1.0},"size":{"x":209.0,"y":152.0},"size_flags_horizontal":1,"size_flags_vertical":1},"ui_and_content":{"focus_mode":0,"mouse_filter":1,"tooltip_text":""},"visibility":{"clip_children":0,"light_mask":1,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"show_behind_parent":false,"top_level":false,"visibility_layer":1,"visible":true,"visible_in_tree":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"visible":true}],"children_count":1,"class":"ColorRect","depth":0,"groups":[],"id":"node_0","index_in_parent":0,"name":"RadioVariants","parent_id":"","path":"/root/@Node@304/GSSStageViewport/RadioVariants","physics":{},"process_mode":0,"screen_rect":{"has_bounds":true,"height":720.0,"on_screen":true,"width":1280.0,"x":0.0,"y":0.0},"script":"","script_variables":{},"signals":[{"method":"Viewport::canvas_parent_mark_dirty","signal":"child_order_changed","target":"/root/@Node@304/GSSStageViewport"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup"}],"transforms":{"anchors":{"bottom":0.0,"left":0.0,"right":0.0,"top":0.0},"custom_minimum_size":{"x":0.0,"y":0.0},"global_position":{"x":0.0,"y":0.0},"offsets":{"bottom":720.0,"left":0.0,"right":1280.0,"top":0.0},"pivot_offset":{"x":0.0,"y":0.0},"position":{"x":0.0,"y":0.0},"rotation_deg":0.0,"scale":{"x":1.0,"y":1.0},"size":{"x":1280.0,"y":720.0},"size_flags_horizontal":1,"size_flags_vertical":1},"ui_and_content":{"color":{"a":1.0,"b":1.0,"g":0.9745,"hex":"#faf9ffff","r":0.9788},"focus_mode":0,"mouse_filter":2,"tooltip_text":""},"visibility":{"clip_children":0,"light_mask":1,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"show_behind_parent":false,"top_level":false,"visibility_layer":1,"visible":true,"visible_in_tree":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"visible":true},"metadata":{"camera_2d":{},"camera_3d":{},"class_counts":{"ColorRect":1,"Control":3,"VBoxContainer":1},"display_server":"macOS","engine_version":"4.7.2-stable (official)","files":{"global_html":"/Users/rnewquist/Documents/Godot/material3/artifacts/gss/selection/selection.radio__variants_light.gss.html","global_json":"/Users/rnewquist/Documents/Godot/material3/artifacts/gss/selection/selection.radio__variants_light.gss.json","global_png":"/Users/rnewquist/Documents/Godot/material3/artifacts/gss/selection/selection.radio__variants_light.png","html":"res://artifacts/gss/selection/selection.radio__variants_light.gss.html","json":"res://artifacts/gss/selection/selection.radio__variants_light.gss.json","png":"res://artifacts/gss/selection/selection.radio__variants_light.png"},"format":"godot_scene_snapshot","is_synthetic_preview":false,"performance":{"fps":58.0,"memory_static_bytes":70299145,"node_count":12,"object_count":1752,"physics_frames":3868,"process_frames":3422},"short_name":"GSS","snapshot_name":"selection.radio__variants_light","timestamp_iso":"2026-11-24T01:46:16","timestamp_ticks_ms":66941,"total_nodes":5,"version":"1.0","viewport_size":{"height":720,"width":1280},"visible_nodes":5}}</script>
+<script>
+(() => {
+  const rawJson = document.getElementById('gss-data-payload').textContent;
+  const SNAPSHOT = JSON.parse(rawJson);
+  const meta = SNAPSHOT.metadata || {};
+  const flatNodes = SNAPSHOT.flat_nodes || [];
+  const nodeMap = new Map(flatNodes.map(n => [n.id, n]));
+  let selectedId = flatNodes.length ? flatNodes[0].id : null;
+  let showBoxes = true;
+  let mode3D = false;
+  const catColor = (cat) => ({
+    control: 'var(--cat-control)',
+    node2d: 'var(--cat-node2d)',
+    node3d: 'var(--cat-node3d)',
+    physics: 'var(--cat-physics)'
+  }[cat] || 'var(--cat-other)');
+  // Header metadata pills
+  const pillsEl = document.getElementById('hdr-meta-pills');
+  const vpW = (meta.viewport_size && meta.viewport_size.width) || 1280;
+  const vpH = (meta.viewport_size && meta.viewport_size.height) || 720;
+  [
+    `Viewport: ${vpW}x${vpH}`,
+    `Nodes: ${meta.total_nodes || flatNodes.length} (${meta.visible_nodes || 0} visible)`,
+    `Engine: Godot ${meta.engine_version || '4.x'}`,
+    `Captured: ${meta.timestamp_iso || ''}`
+  ].forEach(txt => {
+    const span = document.createElement('span');
+    span.className = 'gss-meta-pill';
+    span.textContent = txt;
+    pillsEl.appendChild(span);
+  });
+  const wrapper = document.getElementById('screen-wrapper');
+  const imgEl = document.getElementById('screenshot-img');
+  wrapper.style.width = vpW + 'px';
+  wrapper.style.height = vpH + 'px';
+  imgEl.style.width = vpW + 'px';
+  imgEl.style.height = vpH + 'px';
+  const treeContainer = document.getElementById('tree-container');
+  const bboxOverlay = document.getElementById('bbox-overlay');
+  const propsContainer = document.getElementById('props-container');
+  function formatValue(val) {
+    if (val === null || val === undefined) return 'null';
+    if (typeof val === 'object') return JSON.stringify(val);
+    return String(val);
+  }
+  function renderTree(filterText = '') {
+    treeContainer.replaceChildren();
+    const q = filterText.trim().toLowerCase();
+    let shown = 0;
+    flatNodes.forEach(node => {
+      const matchStr = `${node.name} ${node.class} ${node.path} ${(node.groups || []).join(' ')}`.toLowerCase();
+      if (q && !matchStr.includes(q)) return;
+      shown++;
+      const row = document.createElement('div');
+      row.className = 'gss-tree-row' + (node.id === selectedId ? ' selected' : '') + (!node.visible ? ' hidden-node' : '');
+      row.dataset.id = node.id;
+      row.style.paddingInlineStart = (10 + (node.depth || 0) * 14) + 'px';
+      const dot = document.createElement('span');
+      dot.className = 'gss-cat-dot';
+      dot.style.background = catColor(node.category);
+      const nameSpan = document.createElement('span');
+      nameSpan.textContent = node.name + (node.script ? ' 📜' : '');
+      const clsSpan = document.createElement('span');
+      clsSpan.className = 'gss-class-tag';
+      clsSpan.textContent = node.class;
+      row.append(dot, nameSpan, clsSpan);
+      row.addEventListener('click', () => selectNode(node.id));
+      treeContainer.appendChild(row);
+    });
+    document.getElementById('tree-count-label').textContent = `${shown} / ${flatNodes.length} nodes`;
+  }
+  function renderBoundingBoxes() {
+    bboxOverlay.replaceChildren();
+    if (!showBoxes) return;
+    const zSpace = Number(document.getElementById('rng-z-space').value || 16);
+    flatNodes.forEach(node => {
+      if (!node.visible || !node.screen_rect || !node.screen_rect.has_bounds) return;
+      const sr = node.screen_rect;
+      if (sr.width <= 0 || sr.height <= 0) return;
+      const box = document.createElement('div');
+      box.className = 'gss-bbox' + (node.id === selectedId ? ' selected' : '');
+      box.dataset.id = node.id;
+      box.style.left = sr.x + 'px';
+      box.style.top = sr.y + 'px';
+      box.style.width = sr.width + 'px';
+      box.style.height = sr.height + 'px';
+      if (node.id !== selectedId) box.style.borderColor = catColor(node.category);
+      if (mode3D) box.style.transform = `translateZ(${(node.depth || 0) * zSpace}px)`;
+      const lbl = document.createElement('span');
+      lbl.className = 'gss-bbox-label';
+      lbl.textContent = `${node.name} (${node.class}) [${Math.round(sr.x)},${Math.round(sr.y)} ${Math.round(sr.width)}x${Math.round(sr.height)}]`;
+      box.appendChild(lbl);
+      box.addEventListener('click', (e) => { e.stopPropagation(); selectNode(node.id); });
+      bboxOverlay.appendChild(box);
+    });
+  }
+  function buildPropertySection(title, dataObj, propFilter, openByDefault = true) {
+    const keys = Object.keys(dataObj || {});
+    const filtered = keys.filter(k => {
+      if (!propFilter) return true;
+      const vStr = formatValue(dataObj[k]).toLowerCase();
+      return k.toLowerCase().includes(propFilter) || vStr.includes(propFilter);
+    });
+    if (!filtered.length) return null;
+    const details = document.createElement('details');
+    details.className = 'gss-section-details';
+    if (openByDefault) details.open = true;
+    const summary = document.createElement('summary');
+    summary.textContent = `${title} (${filtered.length})`;
+    details.appendChild(summary);
+    const wrap = document.createElement('div');
+    wrap.className = 'table-wrapper';
+    wrap.tabIndex = 0;
+    wrap.setAttribute('role', 'region');
+    wrap.setAttribute('aria-label', title);
+    const table = document.createElement('table');
+    table.className = 'gss-prop-table';
+    const thead = document.createElement('thead');
+    const htr = document.createElement('tr');
+    ['Property', 'Value', 'Category'].forEach(h => { const th = document.createElement('th'); th.textContent = h; htr.appendChild(th); });
+    thead.appendChild(htr);
+    const tbody = document.createElement('tbody');
+    filtered.forEach(k => {
+      const val = dataObj[k];
+      const tr = document.createElement('tr');
+      const th = document.createElement('th');
+      th.scope = 'row';
+      th.textContent = k;
+      const tdVal = document.createElement('td');
+      if (val && typeof val === 'object' && typeof val.hex === 'string') {
+        const sw = document.createElement('span');
+        sw.className = 'gss-swatch';
+        sw.style.background = val.hex;
+        tdVal.appendChild(sw);
+      }
+      tdVal.appendChild(document.createTextNode(formatValue(val)));
+      const tdCat = document.createElement('td');
+      tdCat.textContent = title;
+      tr.append(th, tdVal, tdCat);
+      tbody.appendChild(tr);
+    });
+    table.append(thead, tbody);
+    wrap.appendChild(table);
+    details.appendChild(wrap);
+    return details;
+  }
+  function renderProperties() {
+    propsContainer.replaceChildren();
+    const node = nodeMap.get(selectedId);
+    if (!node) return;
+    const q = document.getElementById('prop-search').value.trim().toLowerCase();
+    const card = document.createElement('div');
+    card.className = 'gss-node-summary';
+    const sr = node.screen_rect || {};
+    [
+      ['Node', `${node.name} (${node.class})`],
+      ['Path', node.path],
+      ['Screen Rect', sr.has_bounds ? `x:${sr.x}, y:${sr.y}, w:${sr.width}, h:${sr.height}` : 'N/A'],
+      ['Script', node.script || 'None'],
+      ['Groups', (node.groups && node.groups.length) ? node.groups.join(', ') : 'None']
+    ].forEach(([k, v]) => {
+      const row = document.createElement('div');
+      const b = document.createElement('strong');
+      b.textContent = k + ': ';
+      row.append(b, document.createTextNode(v));
+      card.appendChild(row);
+    });
+    propsContainer.appendChild(card);
+    [
+      ['Script Variables', node.script_variables, true],
+      ['Transforms & Bounds', node.transforms, true],
+      ['Visibility & Layers', node.visibility, true],
+      ['Physics & Collision', node.physics, true],
+      ['UI & Node Content', node.ui_and_content, true],
+      ['All Properties', node.all_properties, false]
+    ].forEach(([title, obj, openDef]) => {
+      const sec = buildPropertySection(title, obj, q, openDef);
+      if (sec) propsContainer.appendChild(sec);
+    });
+  }
+  function selectNode(id) {
+    selectedId = id;
+    renderTree(document.getElementById('tree-search').value);
+    renderBoundingBoxes();
+    renderProperties();
+  }
+  document.getElementById('tree-search').addEventListener('input', (e) => renderTree(e.target.value));
+  document.getElementById('prop-search').addEventListener('input', () => renderProperties());
+  document.getElementById('btn-boxes').addEventListener('click', (e) => {
+    showBoxes = !showBoxes;
+    e.currentTarget.classList.toggle('active', showBoxes);
+    renderBoundingBoxes();
+  });
+  function updateTransform() {
+    const z = Number(document.getElementById('sel-zoom').value || 1);
+    if (mode3D) {
+      wrapper.style.transform = `scale(${z * 0.8}) rotateX(24deg) rotateY(-28deg)`;
+    } else {
+      wrapper.style.transform = `scale(${z})`;
+    }
+  }
+  document.getElementById('btn-3d').addEventListener('click', (e) => {
+    mode3D = !mode3D;
+    e.currentTarget.classList.toggle('active', mode3D);
+    document.getElementById('lbl-depth-slider').style.display = mode3D ? 'inline-flex' : 'none';
+    updateTransform();
+    renderBoundingBoxes();
+  });
+  document.getElementById('rng-z-space').addEventListener('input', () => renderBoundingBoxes());
+  document.getElementById('sel-zoom').addEventListener('change', () => updateTransform());
+  document.getElementById('sel-filter').addEventListener('change', (e) => {
+    imgEl.className = 'gss-screenshot-img ' + (e.target.value || '');
+  });
+  document.getElementById('btn-copy-node').addEventListener('click', () => {
+    const node = nodeMap.get(selectedId);
+    if (node && navigator.clipboard) navigator.clipboard.writeText(JSON.stringify(node, null, 2));
+  });
+  renderTree('');
+  renderBoundingBoxes();
+  renderProperties();
+})();
+</script>
+</body>
+</html>

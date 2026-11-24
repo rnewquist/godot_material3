@@ -1,0 +1,58 @@
+[
+	{
+		"component_family": "Buttons",
+		"description": "Buttons family rendered in Light Mode",
+		"id": "checkpoint_buttons_light_mode",
+		"status": "PASS",
+		"timestamp": "2026-11-23T21:07:29"
+	},
+	{
+		"component_family": "Buttons",
+		"description": "Buttons family rendered in Dark Mode",
+		"id": "checkpoint_buttons_dark_mode",
+		"status": "PASS",
+		"timestamp": "2026-11-23T21:07:29"
+	},
+	{
+		"component_family": "Inputs",
+		"description": "TextFields with normal floating label and error validation state",
+		"id": "checkpoint_inputs_error_and_normal",
+		"status": "PASS",
+		"timestamp": "2026-11-23T21:07:29"
+	},
+	{
+		"component_family": "Responsive",
+		"description": "Compact screen breakpoint (<600px) activates Navigation Bar",
+		"id": "checkpoint_responsive_compact_480px",
+		"status": "PASS",
+		"timestamp": "2026-11-23T21:07:29"
+	},
+	{
+		"component_family": "Responsive",
+		"description": "Medium screen breakpoint (600-840px) activates Navigation Rail",
+		"id": "checkpoint_responsive_medium_720px",
+		"status": "PASS",
+		"timestamp": "2026-11-23T21:07:29"
+	},
+	{
+		"component_family": "Responsive",
+		"description": "Expanded screen breakpoint (>840px) activates Navigation Drawer",
+		"id": "checkpoint_responsive_expanded_1200px",
+		"status": "PASS",
+		"timestamp": "2026-11-23T21:07:29"
+	},
+	{
+		"component_family": "Selection",
+		"description": "Checkbox, Switch, and Radio in Active Checked states",
+		"id": "checkpoint_selection_active_states",
+		"status": "PASS",
+		"timestamp": "2026-11-23T21:07:29"
+	},
+	{
+		"component_family": "Surfaces",
+		"description": "Elevated, Filled, and Outlined cards with surface tinting",
+		"id": "checkpoint_cards_elevation_variants",
+		"status": "PASS",
+		"timestamp": "2026-11-23T21:07:29"
+	}
+]

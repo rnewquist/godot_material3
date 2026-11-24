@@ -1,0 +1,3725 @@
+{
+  "complete": true,
+  "items": [
+    {
+      "id": "foundations.color.roles",
+      "category": "Foundations",
+      "name": "Color roles",
+      "spec": "https://m3.material.io/styles/color/roles",
+      "variants": [
+        "primary/secondary/tertiary/error families",
+        "surface + surface containers",
+        "outline/inverse/scrim/shadow",
+        "fixed accents"
+      ],
+      "requires": [
+        "element"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "foundations.color.roles",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_foundations.gd",
+          "test": "test_foundations_color_roles",
+          "name": "foundations.color.roles__all_roles_light",
+          "png": "res://artifacts/gss/foundations/foundations.color.roles__all_roles_light.png",
+          "json": "res://artifacts/gss/foundations/foundations.color.roles__all_roles_light.gss.json",
+          "html": "res://artifacts/gss/foundations/foundations.color.roles__all_roles_light.gss.html",
+          "filmstrip": "",
+          "note": "All 49 M3 semantic & fixed color roles",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "foundations.color.dynamic",
+      "category": "Foundations",
+      "name": "Dynamic color (seed + light/dark)",
+      "spec": "https://m3.material.io/styles/color/dynamic/choosing-a-source",
+      "variants": [
+        "light scheme",
+        "dark scheme",
+        "seed change"
+      ],
+      "requires": [
+        "element",
+        "interaction"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "foundations.color.dynamic",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_foundations.gd",
+          "test": "test_foundations_color_dynamic",
+          "name": "foundations.color.dynamic__indigo_light_scheme",
+          "png": "res://artifacts/gss/foundations/foundations.color.dynamic__indigo_light_scheme.png",
+          "json": "res://artifacts/gss/foundations/foundations.color.dynamic__indigo_light_scheme.gss.json",
+          "html": "res://artifacts/gss/foundations/foundations.color.dynamic__indigo_light_scheme.gss.html",
+          "filmstrip": "",
+          "note": "Dynamic color light scheme",
+          "passed": true
+        },
+        {
+          "spec_id": "foundations.color.dynamic",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_foundations.gd",
+          "test": "test_foundations_color_dynamic",
+          "name": "foundations.color.dynamic__seed_and_dark_mode_switch",
+          "png": "res://artifacts/gss/foundations/foundations.color.dynamic__seed_and_dark_mode_switch.png",
+          "json": "res://artifacts/gss/foundations/foundations.color.dynamic__seed_and_dark_mode_switch.gss.live.json",
+          "html": "res://artifacts/gss/foundations/foundations.color.dynamic__seed_and_dark_mode_switch.gss.live.html",
+          "filmstrip": "res://artifacts/gss/foundations/foundations.color.dynamic__seed_and_dark_mode_switch.filmstrip.png",
+          "note": "Live seed color + light/dark mode switch",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "foundations.typography",
+      "category": "Foundations",
+      "name": "Type scale (15 roles)",
+      "spec": "https://m3.material.io/styles/typography/type-scale-tokens",
+      "variants": [
+        "display L/M/S",
+        "headline L/M/S",
+        "title L/M/S",
+        "body L/M/S",
+        "label L/M/S"
+      ],
+      "requires": [
+        "element"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "foundations.typography",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_foundations.gd",
+          "test": "test_foundations_typography",
+          "name": "foundations.typography__type_scale_15_roles",
+          "png": "res://artifacts/gss/foundations/foundations.typography__type_scale_15_roles.png",
+          "json": "res://artifacts/gss/foundations/foundations.typography__type_scale_15_roles.gss.json",
+          "html": "res://artifacts/gss/foundations/foundations.typography__type_scale_15_roles.gss.html",
+          "filmstrip": "",
+          "note": "All 15 M3 type scale roles",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "foundations.shape",
+      "category": "Foundations",
+      "name": "Shape scale",
+      "spec": "https://m3.material.io/styles/shape/corner-radius-scale",
+      "variants": [
+        "none 0",
+        "extra-small 4",
+        "small 8",
+        "medium 12",
+        "large 16",
+        "extra-large 28",
+        "full"
+      ],
+      "requires": [
+        "element"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "foundations.shape",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_foundations.gd",
+          "test": "test_foundations_shape",
+          "name": "foundations.shape__shape_scale_7_tokens",
+          "png": "res://artifacts/gss/foundations/foundations.shape__shape_scale_7_tokens.png",
+          "json": "res://artifacts/gss/foundations/foundations.shape__shape_scale_7_tokens.gss.json",
+          "html": "res://artifacts/gss/foundations/foundations.shape__shape_scale_7_tokens.gss.html",
+          "filmstrip": "",
+          "note": "7 M3 corner radius shape scale tokens",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "foundations.elevation",
+      "category": "Foundations",
+      "name": "Elevation levels 0-5",
+      "spec": "https://m3.material.io/styles/elevation/tokens",
+      "variants": [
+        "level0 0dp",
+        "level1 1dp",
+        "level2 3dp",
+        "level3 6dp",
+        "level4 8dp",
+        "level5 12dp"
+      ],
+      "requires": [
+        "element"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "foundations.elevation",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_foundations.gd",
+          "test": "test_foundations_elevation",
+          "name": "foundations.elevation__elevation_levels_0_to_5",
+          "png": "res://artifacts/gss/foundations/foundations.elevation__elevation_levels_0_to_5.png",
+          "json": "res://artifacts/gss/foundations/foundations.elevation__elevation_levels_0_to_5.gss.json",
+          "html": "res://artifacts/gss/foundations/foundations.elevation__elevation_levels_0_to_5.gss.html",
+          "filmstrip": "",
+          "note": "Elevation levels 0..5 with tonal tinting and shadows",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "foundations.motion",
+      "category": "Foundations",
+      "name": "Motion easing & duration tokens",
+      "spec": "https://m3.material.io/styles/motion/easing-and-duration/tokens-specs",
+      "variants": [
+        "standard",
+        "standard accelerate/decelerate",
+        "emphasized",
+        "emphasized accelerate/decelerate",
+        "short/medium/long/extra-long durations"
+      ],
+      "requires": [
+        "element",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "foundations.motion",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_foundations.gd",
+          "test": "test_foundations_motion",
+          "name": "foundations.motion__motion_curves_rest",
+          "png": "res://artifacts/gss/foundations/foundations.motion__motion_curves_rest.png",
+          "json": "res://artifacts/gss/foundations/foundations.motion__motion_curves_rest.gss.json",
+          "html": "res://artifacts/gss/foundations/foundations.motion__motion_curves_rest.gss.html",
+          "filmstrip": "",
+          "note": "6 M3 easing curves & duration tokens",
+          "passed": true
+        },
+        {
+          "spec_id": "foundations.motion",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_foundations.gd",
+          "test": "test_foundations_motion",
+          "name": "foundations.motion__motion_curves_active",
+          "png": "res://artifacts/gss/foundations/foundations.motion__motion_curves_active.png",
+          "json": "res://artifacts/gss/foundations/foundations.motion__motion_curves_active.gss.live.json",
+          "html": "res://artifacts/gss/foundations/foundations.motion__motion_curves_active.gss.live.html",
+          "filmstrip": "res://artifacts/gss/foundations/foundations.motion__motion_curves_active.filmstrip.png",
+          "note": "Live easing curve evaluation across frames",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "foundations.states.layers",
+      "category": "Foundations",
+      "name": "State layers",
+      "spec": "https://m3.material.io/foundations/interaction/states/state-layers",
+      "variants": [
+        "hover 0.08",
+        "focus 0.10",
+        "pressed 0.10",
+        "dragged 0.16"
+      ],
+      "requires": [
+        "element",
+        "interaction",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "foundations.states.layers",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_foundations.gd",
+          "test": "test_foundations_states_layers_and_ripple",
+          "name": "foundations.states.layers__state_layers_overview",
+          "png": "res://artifacts/gss/foundations/foundations.states.layers__state_layers_overview.png",
+          "json": "res://artifacts/gss/foundations/foundations.states.layers__state_layers_overview.gss.json",
+          "html": "res://artifacts/gss/foundations/foundations.states.layers__state_layers_overview.gss.html",
+          "filmstrip": "",
+          "note": "Hover, focus, pressed, and dragged state layer opacities",
+          "passed": true
+        },
+        {
+          "spec_id": "foundations.states.layers",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_foundations.gd",
+          "test": "test_foundations_states_layers_and_ripple",
+          "name": "foundations.states.ripple__press_ripple_and_state_layer",
+          "png": "res://artifacts/gss/foundations/foundations.states.ripple__press_ripple_and_state_layer.png",
+          "json": "res://artifacts/gss/foundations/foundations.states.ripple__press_ripple_and_state_layer.gss.live.json",
+          "html": "res://artifacts/gss/foundations/foundations.states.ripple__press_ripple_and_state_layer.gss.live.html",
+          "filmstrip": "res://artifacts/gss/foundations/foundations.states.ripple__press_ripple_and_state_layer.filmstrip.png",
+          "note": "Hover, press, and release state layer & ripple",
+          "passed": true
+        },
+        {
+          "spec_id": "foundations.states.layers",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_foundations.gd",
+          "test": "test_foundations_states_layers_and_ripple",
+          "name": "foundations.states.ripple__press_ripple_and_state_layer",
+          "png": "res://artifacts/gss/foundations/foundations.states.ripple__press_ripple_and_state_layer.png",
+          "json": "res://artifacts/gss/foundations/foundations.states.ripple__press_ripple_and_state_layer.gss.live.json",
+          "html": "res://artifacts/gss/foundations/foundations.states.ripple__press_ripple_and_state_layer.gss.live.html",
+          "filmstrip": "res://artifacts/gss/foundations/foundations.states.ripple__press_ripple_and_state_layer.filmstrip.png",
+          "note": "State layer alpha tween and ripple wave radius expansion",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "foundations.states.ripple",
+      "category": "Foundations",
+      "name": "Ripple (pressed feedback)",
+      "spec": "https://m3.material.io/foundations/interaction/states/applying-states",
+      "variants": [
+        "press spawn",
+        "expand",
+        "release fade"
+      ],
+      "requires": [
+        "interaction",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "foundations.states.ripple",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_foundations.gd",
+          "test": "test_foundations_states_layers_and_ripple",
+          "name": "foundations.states.ripple__press_ripple_and_state_layer",
+          "png": "res://artifacts/gss/foundations/foundations.states.ripple__press_ripple_and_state_layer.png",
+          "json": "res://artifacts/gss/foundations/foundations.states.ripple__press_ripple_and_state_layer.gss.live.json",
+          "html": "res://artifacts/gss/foundations/foundations.states.ripple__press_ripple_and_state_layer.gss.live.html",
+          "filmstrip": "res://artifacts/gss/foundations/foundations.states.ripple__press_ripple_and_state_layer.filmstrip.png",
+          "note": "Hover, press, and release state layer & ripple",
+          "passed": true
+        },
+        {
+          "spec_id": "foundations.states.ripple",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_foundations.gd",
+          "test": "test_foundations_states_layers_and_ripple",
+          "name": "foundations.states.ripple__press_ripple_and_state_layer",
+          "png": "res://artifacts/gss/foundations/foundations.states.ripple__press_ripple_and_state_layer.png",
+          "json": "res://artifacts/gss/foundations/foundations.states.ripple__press_ripple_and_state_layer.gss.live.json",
+          "html": "res://artifacts/gss/foundations/foundations.states.ripple__press_ripple_and_state_layer.gss.live.html",
+          "filmstrip": "res://artifacts/gss/foundations/foundations.states.ripple__press_ripple_and_state_layer.filmstrip.png",
+          "note": "State layer alpha tween and ripple wave radius expansion",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "foundations.states.disabled",
+      "category": "Foundations",
+      "name": "Disabled state opacities",
+      "spec": "https://m3.material.io/foundations/interaction/states/applying-states",
+      "variants": [
+        "content 38%",
+        "container 12%"
+      ],
+      "requires": [
+        "element",
+        "interaction"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "foundations.states.disabled",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_foundations.gd",
+          "test": "test_foundations_states_disabled_and_accessibility_targets",
+          "name": "foundations.states.disabled__disabled_and_48dp_targets",
+          "png": "res://artifacts/gss/foundations/foundations.states.disabled__disabled_and_48dp_targets.png",
+          "json": "res://artifacts/gss/foundations/foundations.states.disabled__disabled_and_48dp_targets.gss.json",
+          "html": "res://artifacts/gss/foundations/foundations.states.disabled__disabled_and_48dp_targets.gss.html",
+          "filmstrip": "",
+          "note": "Disabled 38%/12% opacities and >=48x48dp touch targets",
+          "passed": true
+        },
+        {
+          "spec_id": "foundations.states.disabled",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_foundations.gd",
+          "test": "test_foundations_states_disabled_and_accessibility_targets",
+          "name": "foundations.states.disabled__disabled_rejects_then_unlocks",
+          "png": "res://artifacts/gss/foundations/foundations.states.disabled__disabled_rejects_then_unlocks.png",
+          "json": "res://artifacts/gss/foundations/foundations.states.disabled__disabled_rejects_then_unlocks.gss.live.json",
+          "html": "res://artifacts/gss/foundations/foundations.states.disabled__disabled_rejects_then_unlocks.gss.live.html",
+          "filmstrip": "res://artifacts/gss/foundations/foundations.states.disabled__disabled_rejects_then_unlocks.filmstrip.png",
+          "note": "Disabled button blocks click until unlocked",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "foundations.accessibility.targets",
+      "category": "Foundations",
+      "name": "Minimum touch targets (48dp)",
+      "spec": "https://m3.material.io/foundations/designing/structure",
+      "variants": [
+        "48x48 target"
+      ],
+      "requires": [
+        "element"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "foundations.accessibility.targets",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_foundations.gd",
+          "test": "test_foundations_states_disabled_and_accessibility_targets",
+          "name": "foundations.states.disabled__disabled_and_48dp_targets",
+          "png": "res://artifacts/gss/foundations/foundations.states.disabled__disabled_and_48dp_targets.png",
+          "json": "res://artifacts/gss/foundations/foundations.states.disabled__disabled_and_48dp_targets.gss.json",
+          "html": "res://artifacts/gss/foundations/foundations.states.disabled__disabled_and_48dp_targets.gss.html",
+          "filmstrip": "",
+          "note": "Disabled 38%/12% opacities and >=48x48dp touch targets",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "foundations.layout.window_classes",
+      "category": "Foundations",
+      "name": "Window size classes",
+      "spec": "https://m3.material.io/foundations/layout/applying-layout/window-size-classes",
+      "variants": [
+        "compact <600",
+        "medium 600-839",
+        "expanded >=840"
+      ],
+      "requires": [
+        "element",
+        "interaction"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "foundations.layout.window_classes",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_navigation.gd",
+          "test": "test_adaptive_navigation_and_window_classes",
+          "name": "navigation.adaptive__compact_medium_expanded",
+          "png": "res://artifacts/gss/navigation/navigation.adaptive__compact_medium_expanded.png",
+          "json": "res://artifacts/gss/navigation/navigation.adaptive__compact_medium_expanded.gss.json",
+          "html": "res://artifacts/gss/navigation/navigation.adaptive__compact_medium_expanded.gss.html",
+          "filmstrip": "",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "foundations.layout.window_classes",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_navigation.gd",
+          "test": "test_adaptive_navigation_and_window_classes",
+          "name": "navigation.adaptive__navigate_and_breakpoint_switch",
+          "png": "res://artifacts/gss/navigation/navigation.adaptive__navigate_and_breakpoint_switch.png",
+          "json": "res://artifacts/gss/navigation/navigation.adaptive__navigate_and_breakpoint_switch.gss.live.json",
+          "html": "res://artifacts/gss/navigation/navigation.adaptive__navigate_and_breakpoint_switch.gss.live.html",
+          "filmstrip": "res://artifacts/gss/navigation/navigation.adaptive__navigate_and_breakpoint_switch.filmstrip.png",
+          "note": "",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "foundations.color.contrast_variants",
+      "category": "Foundations",
+      "name": "Contrast levels, 9 scheme variants & harmonization",
+      "spec": "https://m3.material.io/styles/color/system/how-the-system-works",
+      "variants": [
+        "standard/medium/high contrast",
+        "9 DynamicScheme variants (TonalSpot, Vibrant, Expressive, Monochrome, Neutral, Fidelity, Content, Rainbow, FruitSalad)",
+        "color harmonization"
+      ],
+      "requires": [
+        "element",
+        "interaction"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "foundations.color.contrast_variants",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_foundations.gd",
+          "test": "test_foundations_color_contrast_variants_and_harmonization",
+          "name": "foundations.color.contrast_variants__nine_variants_and_contrast_levels",
+          "png": "res://artifacts/gss/foundations/foundations.color.contrast_variants__nine_variants_and_contrast_levels.png",
+          "json": "res://artifacts/gss/foundations/foundations.color.contrast_variants__nine_variants_and_contrast_levels.gss.json",
+          "html": "res://artifacts/gss/foundations/foundations.color.contrast_variants__nine_variants_and_contrast_levels.gss.html",
+          "filmstrip": "",
+          "note": "9 DynamicScheme variants, 3 contrast levels, and color harmonization",
+          "passed": true
+        },
+        {
+          "spec_id": "foundations.color.contrast_variants",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_foundations.gd",
+          "test": "test_foundations_color_contrast_variants_and_harmonization",
+          "name": "foundations.color.contrast_variants__switch_contrast_and_variant",
+          "png": "res://artifacts/gss/foundations/foundations.color.contrast_variants__switch_contrast_and_variant.png",
+          "json": "res://artifacts/gss/foundations/foundations.color.contrast_variants__switch_contrast_and_variant.gss.live.json",
+          "html": "res://artifacts/gss/foundations/foundations.color.contrast_variants__switch_contrast_and_variant.gss.live.html",
+          "filmstrip": "res://artifacts/gss/foundations/foundations.color.contrast_variants__switch_contrast_and_variant.filmstrip.png",
+          "note": "Interactive contrast level and scheme variant switching",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "foundations.typography.emphasized",
+      "category": "Foundations",
+      "name": "Emphasized type scale (15 Expressive roles)",
+      "spec": "https://m3.material.io/styles/typography/type-scale-tokens",
+      "variants": [
+        "display L/M/S emphasized",
+        "headline L/M/S emphasized",
+        "title L/M/S emphasized",
+        "body L/M/S emphasized",
+        "label L/M/S emphasized"
+      ],
+      "requires": [
+        "element"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "foundations.typography.emphasized",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_foundations.gd",
+          "test": "test_foundations_typography_emphasized",
+          "name": "foundations.typography.emphasized__emphasized_type_scale_15_roles",
+          "png": "res://artifacts/gss/foundations/foundations.typography.emphasized__emphasized_type_scale_15_roles.png",
+          "json": "res://artifacts/gss/foundations/foundations.typography.emphasized__emphasized_type_scale_15_roles.gss.json",
+          "html": "res://artifacts/gss/foundations/foundations.typography.emphasized__emphasized_type_scale_15_roles.gss.html",
+          "filmstrip": "",
+          "note": "All 15 M3 Expressive Emphasized type scale roles",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "foundations.shape.expressive_morph",
+      "category": "Foundations",
+      "name": "Expressive 35 polygon shapes, Cut corners & morphing",
+      "spec": "https://m3.material.io/styles/shape/overview-principles",
+      "variants": [
+        "35 MaterialShapes polygons",
+        "Cut corner family (chamfered)",
+        "extra_large_increased 32dp & extra_extra_large 48dp",
+        "polygon vertex morphing"
+      ],
+      "requires": [
+        "element",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "foundations.shape.expressive_morph",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_foundations.gd",
+          "test": "test_foundations_shape_expressive_morph",
+          "name": "foundations.shape.expressive_morph__all_35_expressive_shapes_and_cut",
+          "png": "res://artifacts/gss/foundations/foundations.shape.expressive_morph__all_35_expressive_shapes_and_cut.png",
+          "json": "res://artifacts/gss/foundations/foundations.shape.expressive_morph__all_35_expressive_shapes_and_cut.gss.json",
+          "html": "res://artifacts/gss/foundations/foundations.shape.expressive_morph__all_35_expressive_shapes_and_cut.gss.html",
+          "filmstrip": "",
+          "note": "35 M3 Expressive MaterialShapes, 32/48dp tokens, and Cut corner family",
+          "passed": true
+        },
+        {
+          "spec_id": "foundations.shape.expressive_morph",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_foundations.gd",
+          "test": "test_foundations_shape_expressive_morph",
+          "name": "foundations.shape.expressive_morph__polygon_vertex_morph",
+          "png": "res://artifacts/gss/foundations/foundations.shape.expressive_morph__polygon_vertex_morph.png",
+          "json": "res://artifacts/gss/foundations/foundations.shape.expressive_morph__polygon_vertex_morph.gss.live.json",
+          "html": "res://artifacts/gss/foundations/foundations.shape.expressive_morph__polygon_vertex_morph.gss.live.html",
+          "filmstrip": "res://artifacts/gss/foundations/foundations.shape.expressive_morph__polygon_vertex_morph.filmstrip.png",
+          "note": "Live polygon vertex morphing across frames",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "foundations.motion.springs_transitions",
+      "category": "Foundations",
+      "name": "Spring physics (Spatial vs Effects) & 4 transition patterns",
+      "spec": "https://m3.material.io/styles/motion/overview/how-it-works",
+      "variants": [
+        "Spatial springs (Fast/Default/Slow with overshoot)",
+        "Effects springs (critically damped)",
+        "Container Transform",
+        "Shared Axis X/Y/Z",
+        "Fade Through & Fade"
+      ],
+      "requires": [
+        "element",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "foundations.motion.springs_transitions",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_foundations.gd",
+          "test": "test_foundations_motion_springs_and_transitions",
+          "name": "foundations.motion.springs_transitions__four_transition_patterns_rest",
+          "png": "res://artifacts/gss/foundations/foundations.motion.springs_transitions__four_transition_patterns_rest.png",
+          "json": "res://artifacts/gss/foundations/foundations.motion.springs_transitions__four_transition_patterns_rest.gss.json",
+          "html": "res://artifacts/gss/foundations/foundations.motion.springs_transitions__four_transition_patterns_rest.gss.html",
+          "filmstrip": "",
+          "note": "Spatial/Effects springs & 4 M3 transition patterns",
+          "passed": true
+        },
+        {
+          "spec_id": "foundations.motion.springs_transitions",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_foundations.gd",
+          "test": "test_foundations_motion_springs_and_transitions",
+          "name": "foundations.motion.springs_transitions__springs_and_transitions_active",
+          "png": "res://artifacts/gss/foundations/foundations.motion.springs_transitions__springs_and_transitions_active.png",
+          "json": "res://artifacts/gss/foundations/foundations.motion.springs_transitions__springs_and_transitions_active.gss.live.json",
+          "html": "res://artifacts/gss/foundations/foundations.motion.springs_transitions__springs_and_transitions_active.gss.live.html",
+          "filmstrip": "res://artifacts/gss/foundations/foundations.motion.springs_transitions__springs_and_transitions_active.filmstrip.png",
+          "note": "Live Spatial & Effects spring transition playback",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "foundations.layout.canonical_scaffolds",
+      "category": "Foundations",
+      "name": "Canonical multi-pane scaffolds & Pane Expansion splitter",
+      "spec": "https://m3.material.io/foundations/layout/canonical-layouts/overview",
+      "variants": [
+        "List-Detail scaffold",
+        "Supporting-Pane scaffold",
+        "Feed grid scaffold",
+        "draggable Pane Expansion splitter",
+        "Large (1200-1599) & Extra-Large (>=1600) size classes"
+      ],
+      "requires": [
+        "element",
+        "interaction",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "foundations.layout.canonical_scaffolds",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_navigation.gd",
+          "test": "test_canonical_scaffolds_and_pane_splitter",
+          "name": "foundations.layout.canonical_scaffolds__variants_light",
+          "png": "res://artifacts/gss/navigation/foundations.layout.canonical_scaffolds__variants_light.png",
+          "json": "res://artifacts/gss/navigation/foundations.layout.canonical_scaffolds__variants_light.gss.json",
+          "html": "res://artifacts/gss/navigation/foundations.layout.canonical_scaffolds__variants_light.gss.html",
+          "filmstrip": "",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "foundations.layout.canonical_scaffolds",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_navigation.gd",
+          "test": "test_canonical_scaffolds_and_pane_splitter",
+          "name": "foundations.layout.canonical_scaffolds__drag_splitter_and_compact_transition",
+          "png": "res://artifacts/gss/navigation/foundations.layout.canonical_scaffolds__drag_splitter_and_compact_transition.png",
+          "json": "res://artifacts/gss/navigation/foundations.layout.canonical_scaffolds__drag_splitter_and_compact_transition.gss.live.json",
+          "html": "res://artifacts/gss/navigation/foundations.layout.canonical_scaffolds__drag_splitter_and_compact_transition.gss.live.html",
+          "filmstrip": "res://artifacts/gss/navigation/foundations.layout.canonical_scaffolds__drag_splitter_and_compact_transition.filmstrip.png",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "foundations.layout.canonical_scaffolds",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_navigation.gd",
+          "test": "test_canonical_scaffolds_and_pane_splitter",
+          "name": "foundations.layout.canonical_scaffolds__drag_splitter_and_compact_transition",
+          "png": "res://artifacts/gss/navigation/foundations.layout.canonical_scaffolds__drag_splitter_and_compact_transition.png",
+          "json": "res://artifacts/gss/navigation/foundations.layout.canonical_scaffolds__drag_splitter_and_compact_transition.gss.live.json",
+          "html": "res://artifacts/gss/navigation/foundations.layout.canonical_scaffolds__drag_splitter_and_compact_transition.gss.live.html",
+          "filmstrip": "res://artifacts/gss/navigation/foundations.layout.canonical_scaffolds__drag_splitter_and_compact_transition.filmstrip.png",
+          "note": "",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "foundations.layout.density",
+      "category": "Foundations",
+      "name": "Visual density scale (0, -1, -2, -3)",
+      "spec": "https://m3.material.io/foundations/layout/understanding-layout/density",
+      "variants": [
+        "density 0 (default)",
+        "density -1 (-4dp)",
+        "density -2 (-8dp)",
+        "density -3 (-12dp)"
+      ],
+      "requires": [
+        "element",
+        "interaction"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "foundations.layout.density",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_foundations.gd",
+          "test": "test_foundations_layout_density",
+          "name": "foundations.layout.density__density_scale_0_to_minus3",
+          "png": "res://artifacts/gss/foundations/foundations.layout.density__density_scale_0_to_minus3.png",
+          "json": "res://artifacts/gss/foundations/foundations.layout.density__density_scale_0_to_minus3.gss.json",
+          "html": "res://artifacts/gss/foundations/foundations.layout.density__density_scale_0_to_minus3.gss.html",
+          "filmstrip": "",
+          "note": "Visual density scale 0 (40dp), -1 (36dp), -2 (32dp), -3 (28dp)",
+          "passed": true
+        },
+        {
+          "spec_id": "foundations.layout.density",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_foundations.gd",
+          "test": "test_foundations_layout_density",
+          "name": "foundations.layout.density__apply_compact_density",
+          "png": "res://artifacts/gss/foundations/foundations.layout.density__apply_compact_density.png",
+          "json": "res://artifacts/gss/foundations/foundations.layout.density__apply_compact_density.gss.live.json",
+          "html": "res://artifacts/gss/foundations/foundations.layout.density__apply_compact_density.gss.live.html",
+          "filmstrip": "res://artifacts/gss/foundations/foundations.layout.density__apply_compact_density.filmstrip.png",
+          "note": "Live visual density step change",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "actions.button.common",
+      "category": "Actions",
+      "name": "Common buttons",
+      "spec": "https://m3.material.io/components/buttons/overview",
+      "variants": [
+        "elevated",
+        "filled",
+        "filled tonal",
+        "outlined",
+        "text",
+        "with icon",
+        "disabled",
+        "toggle"
+      ],
+      "requires": [
+        "element",
+        "interaction",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "actions.button.common",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_actions.gd",
+          "test": "test_actions_button_common",
+          "name": "actions.button.common__variants_light",
+          "png": "res://artifacts/gss/actions/actions.button.common__variants_light.png",
+          "json": "res://artifacts/gss/actions/actions.button.common__variants_light.gss.json",
+          "html": "res://artifacts/gss/actions/actions.button.common__variants_light.gss.html",
+          "filmstrip": "",
+          "note": "All variants, sizes XS..XL, round/square, icon, disabled, toggle (light)",
+          "passed": true
+        },
+        {
+          "spec_id": "actions.button.common",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_actions.gd",
+          "test": "test_actions_button_common",
+          "name": "actions.button.common__variants_dark",
+          "png": "res://artifacts/gss/actions/actions.button.common__variants_dark.png",
+          "json": "res://artifacts/gss/actions/actions.button.common__variants_dark.gss.json",
+          "html": "res://artifacts/gss/actions/actions.button.common__variants_dark.gss.html",
+          "filmstrip": "",
+          "note": "All variants in dark mode",
+          "passed": true
+        },
+        {
+          "spec_id": "actions.button.common",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_actions.gd",
+          "test": "test_actions_button_common",
+          "name": "actions.button.common__hover_press_toggle",
+          "png": "res://artifacts/gss/actions/actions.button.common__hover_press_toggle.png",
+          "json": "res://artifacts/gss/actions/actions.button.common__hover_press_toggle.gss.live.json",
+          "html": "res://artifacts/gss/actions/actions.button.common__hover_press_toggle.gss.live.html",
+          "filmstrip": "res://artifacts/gss/actions/actions.button.common__hover_press_toggle.filmstrip.png",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "actions.button.common",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_actions.gd",
+          "test": "test_actions_button_common",
+          "name": "actions.button.common__hover_press_toggle",
+          "png": "res://artifacts/gss/actions/actions.button.common__hover_press_toggle.png",
+          "json": "res://artifacts/gss/actions/actions.button.common__hover_press_toggle.gss.live.json",
+          "html": "res://artifacts/gss/actions/actions.button.common__hover_press_toggle.gss.live.html",
+          "filmstrip": "res://artifacts/gss/actions/actions.button.common__hover_press_toggle.filmstrip.png",
+          "note": "",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "actions.button.icon",
+      "category": "Actions",
+      "name": "Icon buttons",
+      "spec": "https://m3.material.io/components/icon-buttons/overview",
+      "variants": [
+        "standard",
+        "filled",
+        "filled tonal",
+        "outlined",
+        "toggle selected/unselected"
+      ],
+      "requires": [
+        "element",
+        "interaction",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "actions.button.icon",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_actions.gd",
+          "test": "test_actions_button_icon",
+          "name": "actions.button.icon__variants_light",
+          "png": "res://artifacts/gss/actions/actions.button.icon__variants_light.png",
+          "json": "res://artifacts/gss/actions/actions.button.icon__variants_light.gss.json",
+          "html": "res://artifacts/gss/actions/actions.button.icon__variants_light.gss.html",
+          "filmstrip": "",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "actions.button.icon",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_actions.gd",
+          "test": "test_actions_button_icon",
+          "name": "actions.button.icon__toggle_select",
+          "png": "res://artifacts/gss/actions/actions.button.icon__toggle_select.png",
+          "json": "res://artifacts/gss/actions/actions.button.icon__toggle_select.gss.live.json",
+          "html": "res://artifacts/gss/actions/actions.button.icon__toggle_select.gss.live.html",
+          "filmstrip": "res://artifacts/gss/actions/actions.button.icon__toggle_select.filmstrip.png",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "actions.button.icon",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_actions.gd",
+          "test": "test_actions_button_icon",
+          "name": "actions.button.icon__toggle_select",
+          "png": "res://artifacts/gss/actions/actions.button.icon__toggle_select.png",
+          "json": "res://artifacts/gss/actions/actions.button.icon__toggle_select.gss.live.json",
+          "html": "res://artifacts/gss/actions/actions.button.icon__toggle_select.gss.live.html",
+          "filmstrip": "res://artifacts/gss/actions/actions.button.icon__toggle_select.filmstrip.png",
+          "note": "",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "actions.fab",
+      "category": "Actions",
+      "name": "Floating action buttons",
+      "spec": "https://m3.material.io/components/floating-action-button/overview",
+      "variants": [
+        "small",
+        "FAB",
+        "large",
+        "primary/secondary/tertiary/surface colors"
+      ],
+      "requires": [
+        "element",
+        "interaction",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "actions.fab",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_actions.gd",
+          "test": "test_actions_fab",
+          "name": "actions.fab__sizes_and_palettes",
+          "png": "res://artifacts/gss/actions/actions.fab__sizes_and_palettes.png",
+          "json": "res://artifacts/gss/actions/actions.fab__sizes_and_palettes.gss.json",
+          "html": "res://artifacts/gss/actions/actions.fab__sizes_and_palettes.gss.html",
+          "filmstrip": "",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "actions.fab",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_actions.gd",
+          "test": "test_actions_fab",
+          "name": "actions.fab__hover_press_elevation",
+          "png": "res://artifacts/gss/actions/actions.fab__hover_press_elevation.png",
+          "json": "res://artifacts/gss/actions/actions.fab__hover_press_elevation.gss.live.json",
+          "html": "res://artifacts/gss/actions/actions.fab__hover_press_elevation.gss.live.html",
+          "filmstrip": "res://artifacts/gss/actions/actions.fab__hover_press_elevation.filmstrip.png",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "actions.fab",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_actions.gd",
+          "test": "test_actions_fab",
+          "name": "actions.fab__hover_press_elevation",
+          "png": "res://artifacts/gss/actions/actions.fab__hover_press_elevation.png",
+          "json": "res://artifacts/gss/actions/actions.fab__hover_press_elevation.gss.live.json",
+          "html": "res://artifacts/gss/actions/actions.fab__hover_press_elevation.gss.live.html",
+          "filmstrip": "res://artifacts/gss/actions/actions.fab__hover_press_elevation.filmstrip.png",
+          "note": "",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "actions.fab.extended",
+      "category": "Actions",
+      "name": "Extended FAB",
+      "spec": "https://m3.material.io/components/extended-fab/overview",
+      "variants": [
+        "icon + label",
+        "label only"
+      ],
+      "requires": [
+        "element",
+        "interaction"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "actions.fab.extended",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_actions.gd",
+          "test": "test_actions_fab_extended",
+          "name": "actions.fab.extended__variants_light",
+          "png": "res://artifacts/gss/actions/actions.fab.extended__variants_light.png",
+          "json": "res://artifacts/gss/actions/actions.fab.extended__variants_light.gss.json",
+          "html": "res://artifacts/gss/actions/actions.fab.extended__variants_light.gss.html",
+          "filmstrip": "",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "actions.fab.extended",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_actions.gd",
+          "test": "test_actions_fab_extended",
+          "name": "actions.fab.extended__collapse_and_expand",
+          "png": "res://artifacts/gss/actions/actions.fab.extended__collapse_and_expand.png",
+          "json": "res://artifacts/gss/actions/actions.fab.extended__collapse_and_expand.gss.live.json",
+          "html": "res://artifacts/gss/actions/actions.fab.extended__collapse_and_expand.gss.live.html",
+          "filmstrip": "res://artifacts/gss/actions/actions.fab.extended__collapse_and_expand.filmstrip.png",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "actions.fab.extended",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_actions.gd",
+          "test": "test_actions_fab_extended",
+          "name": "actions.fab.extended__collapse_and_expand",
+          "png": "res://artifacts/gss/actions/actions.fab.extended__collapse_and_expand.png",
+          "json": "res://artifacts/gss/actions/actions.fab.extended__collapse_and_expand.gss.live.json",
+          "html": "res://artifacts/gss/actions/actions.fab.extended__collapse_and_expand.gss.live.html",
+          "filmstrip": "res://artifacts/gss/actions/actions.fab.extended__collapse_and_expand.filmstrip.png",
+          "note": "",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "actions.fab.menu",
+      "category": "Actions",
+      "name": "FAB menu (Expressive)",
+      "spec": "https://m3.material.io/components/fab-menu/overview",
+      "variants": [
+        "closed",
+        "open with 2-6 items",
+        "close button morph"
+      ],
+      "requires": [
+        "element",
+        "interaction",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "actions.fab.menu",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_actions.gd",
+          "test": "test_actions_fab_menu",
+          "name": "actions.fab.menu__closed_state",
+          "png": "res://artifacts/gss/actions/actions.fab.menu__closed_state.png",
+          "json": "res://artifacts/gss/actions/actions.fab.menu__closed_state.gss.json",
+          "html": "res://artifacts/gss/actions/actions.fab.menu__closed_state.gss.html",
+          "filmstrip": "",
+          "note": "Closed state",
+          "passed": true
+        },
+        {
+          "spec_id": "actions.fab.menu",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_actions.gd",
+          "test": "test_actions_fab_menu",
+          "name": "actions.fab.menu__expand_and_select",
+          "png": "res://artifacts/gss/actions/actions.fab.menu__expand_and_select.png",
+          "json": "res://artifacts/gss/actions/actions.fab.menu__expand_and_select.gss.live.json",
+          "html": "res://artifacts/gss/actions/actions.fab.menu__expand_and_select.gss.live.html",
+          "filmstrip": "res://artifacts/gss/actions/actions.fab.menu__expand_and_select.filmstrip.png",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "actions.fab.menu",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_actions.gd",
+          "test": "test_actions_fab_menu",
+          "name": "actions.fab.menu__expand_and_select",
+          "png": "res://artifacts/gss/actions/actions.fab.menu__expand_and_select.png",
+          "json": "res://artifacts/gss/actions/actions.fab.menu__expand_and_select.gss.live.json",
+          "html": "res://artifacts/gss/actions/actions.fab.menu__expand_and_select.gss.live.html",
+          "filmstrip": "res://artifacts/gss/actions/actions.fab.menu__expand_and_select.filmstrip.png",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "actions.fab.menu",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_actions.gd",
+          "test": "test_actions_fab_menu",
+          "name": "actions.fab.menu__open_with_items",
+          "png": "res://artifacts/gss/actions/actions.fab.menu__open_with_items.png",
+          "json": "res://artifacts/gss/actions/actions.fab.menu__open_with_items.gss.json",
+          "html": "res://artifacts/gss/actions/actions.fab.menu__open_with_items.gss.html",
+          "filmstrip": "",
+          "note": "Open state with 3 items and close button morph",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "actions.button.segmented",
+      "category": "Actions",
+      "name": "Segmented buttons",
+      "spec": "https://m3.material.io/components/segmented-buttons/overview",
+      "variants": [
+        "single-select",
+        "multi-select",
+        "selected checkmark"
+      ],
+      "requires": [
+        "element",
+        "interaction"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "actions.button.segmented",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_actions.gd",
+          "test": "test_actions_button_segmented",
+          "name": "actions.button.segmented__single_and_multi",
+          "png": "res://artifacts/gss/actions/actions.button.segmented__single_and_multi.png",
+          "json": "res://artifacts/gss/actions/actions.button.segmented__single_and_multi.gss.json",
+          "html": "res://artifacts/gss/actions/actions.button.segmented__single_and_multi.gss.html",
+          "filmstrip": "",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "actions.button.segmented",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_actions.gd",
+          "test": "test_actions_button_segmented",
+          "name": "actions.button.segmented__select_segment_checkmark",
+          "png": "res://artifacts/gss/actions/actions.button.segmented__select_segment_checkmark.png",
+          "json": "res://artifacts/gss/actions/actions.button.segmented__select_segment_checkmark.gss.live.json",
+          "html": "res://artifacts/gss/actions/actions.button.segmented__select_segment_checkmark.gss.live.html",
+          "filmstrip": "res://artifacts/gss/actions/actions.button.segmented__select_segment_checkmark.filmstrip.png",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "actions.button.segmented",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_actions.gd",
+          "test": "test_actions_button_segmented",
+          "name": "actions.button.segmented__select_segment_checkmark",
+          "png": "res://artifacts/gss/actions/actions.button.segmented__select_segment_checkmark.png",
+          "json": "res://artifacts/gss/actions/actions.button.segmented__select_segment_checkmark.gss.live.json",
+          "html": "res://artifacts/gss/actions/actions.button.segmented__select_segment_checkmark.gss.live.html",
+          "filmstrip": "res://artifacts/gss/actions/actions.button.segmented__select_segment_checkmark.filmstrip.png",
+          "note": "",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "actions.button.group",
+      "category": "Actions",
+      "name": "Button groups (Expressive)",
+      "spec": "https://m3.material.io/components/button-groups/overview",
+      "variants": [
+        "standard",
+        "connected",
+        "press width morph"
+      ],
+      "requires": [
+        "element",
+        "interaction",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "actions.button.group",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_actions.gd",
+          "test": "test_actions_button_group",
+          "name": "actions.button.group__standard_and_connected",
+          "png": "res://artifacts/gss/actions/actions.button.group__standard_and_connected.png",
+          "json": "res://artifacts/gss/actions/actions.button.group__standard_and_connected.gss.json",
+          "html": "res://artifacts/gss/actions/actions.button.group__standard_and_connected.gss.html",
+          "filmstrip": "",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "actions.button.group",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_actions.gd",
+          "test": "test_actions_button_group",
+          "name": "actions.button.group__connected_press_width_morph",
+          "png": "res://artifacts/gss/actions/actions.button.group__connected_press_width_morph.png",
+          "json": "res://artifacts/gss/actions/actions.button.group__connected_press_width_morph.gss.live.json",
+          "html": "res://artifacts/gss/actions/actions.button.group__connected_press_width_morph.gss.live.html",
+          "filmstrip": "res://artifacts/gss/actions/actions.button.group__connected_press_width_morph.filmstrip.png",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "actions.button.group",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_actions.gd",
+          "test": "test_actions_button_group",
+          "name": "actions.button.group__connected_press_width_morph",
+          "png": "res://artifacts/gss/actions/actions.button.group__connected_press_width_morph.png",
+          "json": "res://artifacts/gss/actions/actions.button.group__connected_press_width_morph.gss.live.json",
+          "html": "res://artifacts/gss/actions/actions.button.group__connected_press_width_morph.gss.live.html",
+          "filmstrip": "res://artifacts/gss/actions/actions.button.group__connected_press_width_morph.filmstrip.png",
+          "note": "",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "actions.button.split",
+      "category": "Actions",
+      "name": "Split buttons (Expressive)",
+      "spec": "https://m3.material.io/components/split-button/overview",
+      "variants": [
+        "filled/tonal/elevated/outlined",
+        "trailing menu open/closed"
+      ],
+      "requires": [
+        "element",
+        "interaction",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "actions.button.split",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_actions.gd",
+          "test": "test_actions_button_split",
+          "name": "actions.button.split__variants_closed",
+          "png": "res://artifacts/gss/actions/actions.button.split__variants_closed.png",
+          "json": "res://artifacts/gss/actions/actions.button.split__variants_closed.gss.json",
+          "html": "res://artifacts/gss/actions/actions.button.split__variants_closed.gss.html",
+          "filmstrip": "",
+          "note": "Filled, Tonal, Elevated, Outlined split buttons (closed)",
+          "passed": true
+        },
+        {
+          "spec_id": "actions.button.split",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_actions.gd",
+          "test": "test_actions_button_split",
+          "name": "actions.button.split__primary_and_menu_open",
+          "png": "res://artifacts/gss/actions/actions.button.split__primary_and_menu_open.png",
+          "json": "res://artifacts/gss/actions/actions.button.split__primary_and_menu_open.gss.live.json",
+          "html": "res://artifacts/gss/actions/actions.button.split__primary_and_menu_open.gss.live.html",
+          "filmstrip": "res://artifacts/gss/actions/actions.button.split__primary_and_menu_open.filmstrip.png",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "actions.button.split",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_actions.gd",
+          "test": "test_actions_button_split",
+          "name": "actions.button.split__primary_and_menu_open",
+          "png": "res://artifacts/gss/actions/actions.button.split__primary_and_menu_open.png",
+          "json": "res://artifacts/gss/actions/actions.button.split__primary_and_menu_open.gss.live.json",
+          "html": "res://artifacts/gss/actions/actions.button.split__primary_and_menu_open.gss.live.html",
+          "filmstrip": "res://artifacts/gss/actions/actions.button.split__primary_and_menu_open.filmstrip.png",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "actions.button.split",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_actions.gd",
+          "test": "test_actions_button_split",
+          "name": "actions.button.split__menu_open",
+          "png": "res://artifacts/gss/actions/actions.button.split__menu_open.png",
+          "json": "res://artifacts/gss/actions/actions.button.split__menu_open.gss.json",
+          "html": "res://artifacts/gss/actions/actions.button.split__menu_open.gss.html",
+          "filmstrip": "",
+          "note": "Split button with trailing popup menu open",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "actions.button.icon.expressive",
+      "category": "Actions",
+      "name": "Icon buttons — Expressive sizes, widths & shapes",
+      "spec": "https://m3.material.io/components/icon-buttons/specs",
+      "variants": [
+        "5 size tiers (XS 32dp, S 40dp, M 56dp, L 96dp, XL 136dp)",
+        "3 width modes (Narrow, Default, Wide)",
+        "Round vs Square resting shapes"
+      ],
+      "requires": [
+        "element",
+        "interaction",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "actions.button.icon.expressive",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_actions.gd",
+          "test": "test_actions_button_icon_expressive",
+          "name": "actions.button.icon.expressive__sizes_widths_shapes",
+          "png": "res://artifacts/gss/actions/actions.button.icon.expressive__sizes_widths_shapes.png",
+          "json": "res://artifacts/gss/actions/actions.button.icon.expressive__sizes_widths_shapes.gss.json",
+          "html": "res://artifacts/gss/actions/actions.button.icon.expressive__sizes_widths_shapes.gss.html",
+          "filmstrip": "",
+          "note": "5 sizes XS..XL, 3 width modes, Round and Square shapes",
+          "passed": true
+        },
+        {
+          "spec_id": "actions.button.icon.expressive",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_actions.gd",
+          "test": "test_actions_button_icon_expressive",
+          "name": "actions.button.icon.expressive__press_morph_and_toggle",
+          "png": "res://artifacts/gss/actions/actions.button.icon.expressive__press_morph_and_toggle.png",
+          "json": "res://artifacts/gss/actions/actions.button.icon.expressive__press_morph_and_toggle.gss.live.json",
+          "html": "res://artifacts/gss/actions/actions.button.icon.expressive__press_morph_and_toggle.gss.live.html",
+          "filmstrip": "res://artifacts/gss/actions/actions.button.icon.expressive__press_morph_and_toggle.filmstrip.png",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "actions.button.icon.expressive",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_actions.gd",
+          "test": "test_actions_button_icon_expressive",
+          "name": "actions.button.icon.expressive__press_morph_and_toggle",
+          "png": "res://artifacts/gss/actions/actions.button.icon.expressive__press_morph_and_toggle.png",
+          "json": "res://artifacts/gss/actions/actions.button.icon.expressive__press_morph_and_toggle.gss.live.json",
+          "html": "res://artifacts/gss/actions/actions.button.icon.expressive__press_morph_and_toggle.gss.live.html",
+          "filmstrip": "res://artifacts/gss/actions/actions.button.icon.expressive__press_morph_and_toggle.filmstrip.png",
+          "note": "",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "communication.badge",
+      "category": "Communication",
+      "name": "Badges",
+      "spec": "https://m3.material.io/components/badges/overview",
+      "variants": [
+        "small dot",
+        "large count",
+        "max count 999+"
+      ],
+      "requires": [
+        "element",
+        "interaction"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "communication.badge",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_communication.gd",
+          "test": "test_communication_badge",
+          "name": "communication.badge__variants_light",
+          "png": "res://artifacts/gss/communication/communication.badge__variants_light.png",
+          "json": "res://artifacts/gss/communication/communication.badge__variants_light.gss.json",
+          "html": "res://artifacts/gss/communication/communication.badge__variants_light.gss.html",
+          "filmstrip": "",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "communication.badge",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_communication.gd",
+          "test": "test_communication_badge",
+          "name": "communication.badge__increment_and_clear",
+          "png": "res://artifacts/gss/communication/communication.badge__increment_and_clear.png",
+          "json": "res://artifacts/gss/communication/communication.badge__increment_and_clear.gss.live.json",
+          "html": "res://artifacts/gss/communication/communication.badge__increment_and_clear.gss.live.html",
+          "filmstrip": "res://artifacts/gss/communication/communication.badge__increment_and_clear.filmstrip.png",
+          "note": "",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "communication.progress.linear",
+      "category": "Communication",
+      "name": "Linear progress indicator",
+      "spec": "https://m3.material.io/components/progress-indicators/overview",
+      "variants": [
+        "determinate",
+        "indeterminate"
+      ],
+      "requires": [
+        "element",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "communication.progress.linear",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_communication.gd",
+          "test": "test_communication_progress_linear",
+          "name": "communication.progress.linear__variants_light",
+          "png": "res://artifacts/gss/communication/communication.progress.linear__variants_light.png",
+          "json": "res://artifacts/gss/communication/communication.progress.linear__variants_light.gss.json",
+          "html": "res://artifacts/gss/communication/communication.progress.linear__variants_light.gss.html",
+          "filmstrip": "",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "communication.progress.linear",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_communication.gd",
+          "test": "test_communication_progress_linear",
+          "name": "communication.progress.linear__animate_progress",
+          "png": "res://artifacts/gss/communication/communication.progress.linear__animate_progress.png",
+          "json": "res://artifacts/gss/communication/communication.progress.linear__animate_progress.gss.live.json",
+          "html": "res://artifacts/gss/communication/communication.progress.linear__animate_progress.gss.live.html",
+          "filmstrip": "res://artifacts/gss/communication/communication.progress.linear__animate_progress.filmstrip.png",
+          "note": "",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "communication.progress.circular",
+      "category": "Communication",
+      "name": "Circular progress indicator",
+      "spec": "https://m3.material.io/components/progress-indicators/overview",
+      "variants": [
+        "determinate",
+        "indeterminate"
+      ],
+      "requires": [
+        "element",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "communication.progress.circular",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_communication.gd",
+          "test": "test_communication_progress_circular",
+          "name": "communication.progress.circular__variants_dark",
+          "png": "res://artifacts/gss/communication/communication.progress.circular__variants_dark.png",
+          "json": "res://artifacts/gss/communication/communication.progress.circular__variants_dark.gss.json",
+          "html": "res://artifacts/gss/communication/communication.progress.circular__variants_dark.gss.html",
+          "filmstrip": "",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "communication.progress.circular",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_communication.gd",
+          "test": "test_communication_progress_circular",
+          "name": "communication.progress.circular__animate_progress",
+          "png": "res://artifacts/gss/communication/communication.progress.circular__animate_progress.png",
+          "json": "res://artifacts/gss/communication/communication.progress.circular__animate_progress.gss.live.json",
+          "html": "res://artifacts/gss/communication/communication.progress.circular__animate_progress.gss.live.html",
+          "filmstrip": "res://artifacts/gss/communication/communication.progress.circular__animate_progress.filmstrip.png",
+          "note": "",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "communication.loading_indicator",
+      "category": "Communication",
+      "name": "Loading indicator (Expressive)",
+      "spec": "https://m3.material.io/components/loading-indicator/overview",
+      "variants": [
+        "uncontained",
+        "contained",
+        "shape morph sequence"
+      ],
+      "requires": [
+        "element",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "communication.loading_indicator",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_communication.gd",
+          "test": "test_communication_loading_indicator",
+          "name": "communication.loading_indicator__variants_and_morph_sequence",
+          "png": "res://artifacts/gss/communication/communication.loading_indicator__variants_and_morph_sequence.png",
+          "json": "res://artifacts/gss/communication/communication.loading_indicator__variants_and_morph_sequence.gss.json",
+          "html": "res://artifacts/gss/communication/communication.loading_indicator__variants_and_morph_sequence.gss.html",
+          "filmstrip": "",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "communication.loading_indicator",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_communication.gd",
+          "test": "test_communication_loading_indicator",
+          "name": "communication.loading_indicator__morph_and_rotate",
+          "png": "res://artifacts/gss/communication/communication.loading_indicator__morph_and_rotate.png",
+          "json": "res://artifacts/gss/communication/communication.loading_indicator__morph_and_rotate.gss.live.json",
+          "html": "res://artifacts/gss/communication/communication.loading_indicator__morph_and_rotate.gss.live.html",
+          "filmstrip": "res://artifacts/gss/communication/communication.loading_indicator__morph_and_rotate.filmstrip.png",
+          "note": "",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "communication.snackbar",
+      "category": "Communication",
+      "name": "Snackbar",
+      "spec": "https://m3.material.io/components/snackbar/overview",
+      "variants": [
+        "single line",
+        "with action",
+        "with close icon"
+      ],
+      "requires": [
+        "element",
+        "interaction",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "communication.snackbar",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_communication.gd",
+          "test": "test_communication_snackbar",
+          "name": "communication.snackbar__variants_light",
+          "png": "res://artifacts/gss/communication/communication.snackbar__variants_light.png",
+          "json": "res://artifacts/gss/communication/communication.snackbar__variants_light.gss.json",
+          "html": "res://artifacts/gss/communication/communication.snackbar__variants_light.gss.html",
+          "filmstrip": "",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "communication.snackbar",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_communication.gd",
+          "test": "test_communication_snackbar",
+          "name": "communication.snackbar__enter_action_and_dismiss",
+          "png": "res://artifacts/gss/communication/communication.snackbar__enter_action_and_dismiss.png",
+          "json": "res://artifacts/gss/communication/communication.snackbar__enter_action_and_dismiss.gss.live.json",
+          "html": "res://artifacts/gss/communication/communication.snackbar__enter_action_and_dismiss.gss.live.html",
+          "filmstrip": "res://artifacts/gss/communication/communication.snackbar__enter_action_and_dismiss.filmstrip.png",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "communication.snackbar",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_communication.gd",
+          "test": "test_communication_snackbar",
+          "name": "communication.snackbar__enter_action_and_dismiss",
+          "png": "res://artifacts/gss/communication/communication.snackbar__enter_action_and_dismiss.png",
+          "json": "res://artifacts/gss/communication/communication.snackbar__enter_action_and_dismiss.gss.live.json",
+          "html": "res://artifacts/gss/communication/communication.snackbar__enter_action_and_dismiss.gss.live.html",
+          "filmstrip": "res://artifacts/gss/communication/communication.snackbar__enter_action_and_dismiss.filmstrip.png",
+          "note": "",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "communication.tooltip.plain",
+      "category": "Communication",
+      "name": "Plain tooltip",
+      "spec": "https://m3.material.io/components/tooltips/overview",
+      "variants": [
+        "plain"
+      ],
+      "requires": [
+        "element",
+        "interaction",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "communication.tooltip.plain",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_communication.gd",
+          "test": "test_communication_tooltip_plain",
+          "name": "communication.tooltip.plain__plain_variant",
+          "png": "res://artifacts/gss/communication/communication.tooltip.plain__plain_variant.png",
+          "json": "res://artifacts/gss/communication/communication.tooltip.plain__plain_variant.gss.json",
+          "html": "res://artifacts/gss/communication/communication.tooltip.plain__plain_variant.gss.html",
+          "filmstrip": "",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "communication.tooltip.plain",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_communication.gd",
+          "test": "test_communication_tooltip_plain",
+          "name": "communication.tooltip.plain__hover_fade_in_and_out",
+          "png": "res://artifacts/gss/communication/communication.tooltip.plain__hover_fade_in_and_out.png",
+          "json": "res://artifacts/gss/communication/communication.tooltip.plain__hover_fade_in_and_out.gss.live.json",
+          "html": "res://artifacts/gss/communication/communication.tooltip.plain__hover_fade_in_and_out.gss.live.html",
+          "filmstrip": "res://artifacts/gss/communication/communication.tooltip.plain__hover_fade_in_and_out.filmstrip.png",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "communication.tooltip.plain",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_communication.gd",
+          "test": "test_communication_tooltip_plain",
+          "name": "communication.tooltip.plain__hover_fade_in_and_out",
+          "png": "res://artifacts/gss/communication/communication.tooltip.plain__hover_fade_in_and_out.png",
+          "json": "res://artifacts/gss/communication/communication.tooltip.plain__hover_fade_in_and_out.gss.live.json",
+          "html": "res://artifacts/gss/communication/communication.tooltip.plain__hover_fade_in_and_out.gss.live.html",
+          "filmstrip": "res://artifacts/gss/communication/communication.tooltip.plain__hover_fade_in_and_out.filmstrip.png",
+          "note": "",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "communication.tooltip.rich",
+      "category": "Communication",
+      "name": "Rich tooltip",
+      "spec": "https://m3.material.io/components/tooltips/overview",
+      "variants": [
+        "title + body",
+        "with action"
+      ],
+      "requires": [
+        "element",
+        "interaction"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "communication.tooltip.rich",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_communication.gd",
+          "test": "test_communication_tooltip_rich",
+          "name": "communication.tooltip.rich__variants_light",
+          "png": "res://artifacts/gss/communication/communication.tooltip.rich__variants_light.png",
+          "json": "res://artifacts/gss/communication/communication.tooltip.rich__variants_light.gss.json",
+          "html": "res://artifacts/gss/communication/communication.tooltip.rich__variants_light.gss.html",
+          "filmstrip": "",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "communication.tooltip.rich",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_communication.gd",
+          "test": "test_communication_tooltip_rich",
+          "name": "communication.tooltip.rich__hover_open_and_click_action",
+          "png": "res://artifacts/gss/communication/communication.tooltip.rich__hover_open_and_click_action.png",
+          "json": "res://artifacts/gss/communication/communication.tooltip.rich__hover_open_and_click_action.gss.live.json",
+          "html": "res://artifacts/gss/communication/communication.tooltip.rich__hover_open_and_click_action.gss.live.html",
+          "filmstrip": "res://artifacts/gss/communication/communication.tooltip.rich__hover_open_and_click_action.filmstrip.png",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "communication.tooltip.rich",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_communication.gd",
+          "test": "test_communication_tooltip_rich",
+          "name": "communication.tooltip.rich__hover_open_and_click_action",
+          "png": "res://artifacts/gss/communication/communication.tooltip.rich__hover_open_and_click_action.png",
+          "json": "res://artifacts/gss/communication/communication.tooltip.rich__hover_open_and_click_action.gss.live.json",
+          "html": "res://artifacts/gss/communication/communication.tooltip.rich__hover_open_and_click_action.gss.live.html",
+          "filmstrip": "res://artifacts/gss/communication/communication.tooltip.rich__hover_open_and_click_action.filmstrip.png",
+          "note": "",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "communication.banner",
+      "category": "Communication",
+      "name": "Banner",
+      "spec": "https://m2.material.io/components/banners",
+      "variants": [
+        "one action",
+        "two actions",
+        "dismiss"
+      ],
+      "requires": [
+        "element",
+        "interaction"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "communication.banner",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_communication.gd",
+          "test": "test_communication_banner",
+          "name": "communication.banner__variants_light",
+          "png": "res://artifacts/gss/communication/communication.banner__variants_light.png",
+          "json": "res://artifacts/gss/communication/communication.banner__variants_light.gss.json",
+          "html": "res://artifacts/gss/communication/communication.banner__variants_light.gss.html",
+          "filmstrip": "",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "communication.banner",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_communication.gd",
+          "test": "test_communication_banner",
+          "name": "communication.banner__click_primary_and_dismiss",
+          "png": "res://artifacts/gss/communication/communication.banner__click_primary_and_dismiss.png",
+          "json": "res://artifacts/gss/communication/communication.banner__click_primary_and_dismiss.gss.live.json",
+          "html": "res://artifacts/gss/communication/communication.banner__click_primary_and_dismiss.gss.live.html",
+          "filmstrip": "res://artifacts/gss/communication/communication.banner__click_primary_and_dismiss.filmstrip.png",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "communication.banner",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_communication.gd",
+          "test": "test_communication_banner",
+          "name": "communication.banner__click_primary_and_dismiss",
+          "png": "res://artifacts/gss/communication/communication.banner__click_primary_and_dismiss.png",
+          "json": "res://artifacts/gss/communication/communication.banner__click_primary_and_dismiss.gss.live.json",
+          "html": "res://artifacts/gss/communication/communication.banner__click_primary_and_dismiss.gss.live.html",
+          "filmstrip": "res://artifacts/gss/communication/communication.banner__click_primary_and_dismiss.filmstrip.png",
+          "note": "",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "communication.progress.wavy",
+      "category": "Communication",
+      "name": "Wavy progress indicators (Expressive)",
+      "spec": "https://m3.material.io/components/progress-indicators/overview",
+      "variants": [
+        "wavy linear determinate & indeterminate",
+        "wavy circular determinate & indeterminate",
+        "animated wave phase & amplitude"
+      ],
+      "requires": [
+        "element",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "communication.progress.wavy",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_communication.gd",
+          "test": "test_communication_progress_wavy",
+          "name": "communication.progress.wavy__linear_and_circular_wavy",
+          "png": "res://artifacts/gss/communication/communication.progress.wavy__linear_and_circular_wavy.png",
+          "json": "res://artifacts/gss/communication/communication.progress.wavy__linear_and_circular_wavy.gss.json",
+          "html": "res://artifacts/gss/communication/communication.progress.wavy__linear_and_circular_wavy.gss.html",
+          "filmstrip": "",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "communication.progress.wavy",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_communication.gd",
+          "test": "test_communication_progress_wavy",
+          "name": "communication.progress.wavy__animate_wave_phase",
+          "png": "res://artifacts/gss/communication/communication.progress.wavy__animate_wave_phase.png",
+          "json": "res://artifacts/gss/communication/communication.progress.wavy__animate_wave_phase.gss.live.json",
+          "html": "res://artifacts/gss/communication/communication.progress.wavy__animate_wave_phase.gss.live.html",
+          "filmstrip": "res://artifacts/gss/communication/communication.progress.wavy__animate_wave_phase.filmstrip.png",
+          "note": "",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "containment.bottom_sheet",
+      "category": "Containment",
+      "name": "Bottom sheets",
+      "spec": "https://m3.material.io/components/bottom-sheets/overview",
+      "variants": [
+        "standard",
+        "modal with scrim",
+        "drag handle"
+      ],
+      "requires": [
+        "element",
+        "interaction",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "containment.bottom_sheet",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_containment.gd",
+          "test": "test_bottom_sheet_variants_and_interaction",
+          "name": "containment.bottom_sheet__open_slide_up",
+          "png": "res://artifacts/gss/containment/containment.bottom_sheet__open_slide_up.png",
+          "json": "res://artifacts/gss/containment/containment.bottom_sheet__open_slide_up.gss.live.json",
+          "html": "res://artifacts/gss/containment/containment.bottom_sheet__open_slide_up.gss.live.html",
+          "filmstrip": "res://artifacts/gss/containment/containment.bottom_sheet__open_slide_up.filmstrip.png",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "containment.bottom_sheet",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_containment.gd",
+          "test": "test_bottom_sheet_variants_and_interaction",
+          "name": "containment.bottom_sheet__modal_open",
+          "png": "res://artifacts/gss/containment/containment.bottom_sheet__modal_open.png",
+          "json": "res://artifacts/gss/containment/containment.bottom_sheet__modal_open.gss.json",
+          "html": "res://artifacts/gss/containment/containment.bottom_sheet__modal_open.gss.html",
+          "filmstrip": "",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "containment.bottom_sheet",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_containment.gd",
+          "test": "test_bottom_sheet_variants_and_interaction",
+          "name": "containment.bottom_sheet__drag_handle_dismiss",
+          "png": "res://artifacts/gss/containment/containment.bottom_sheet__drag_handle_dismiss.png",
+          "json": "res://artifacts/gss/containment/containment.bottom_sheet__drag_handle_dismiss.gss.live.json",
+          "html": "res://artifacts/gss/containment/containment.bottom_sheet__drag_handle_dismiss.gss.live.html",
+          "filmstrip": "res://artifacts/gss/containment/containment.bottom_sheet__drag_handle_dismiss.filmstrip.png",
+          "note": "",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "containment.card",
+      "category": "Containment",
+      "name": "Cards",
+      "spec": "https://m3.material.io/components/cards/overview",
+      "variants": [
+        "elevated",
+        "filled",
+        "outlined",
+        "clickable states"
+      ],
+      "requires": [
+        "element",
+        "interaction"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "containment.card",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_containment.gd",
+          "test": "test_card_variants_and_interaction",
+          "name": "containment.card__variants_light",
+          "png": "res://artifacts/gss/containment/containment.card__variants_light.png",
+          "json": "res://artifacts/gss/containment/containment.card__variants_light.gss.json",
+          "html": "res://artifacts/gss/containment/containment.card__variants_light.gss.html",
+          "filmstrip": "",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "containment.card",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_containment.gd",
+          "test": "test_card_variants_and_interaction",
+          "name": "containment.card__variants_dark",
+          "png": "res://artifacts/gss/containment/containment.card__variants_dark.png",
+          "json": "res://artifacts/gss/containment/containment.card__variants_dark.gss.json",
+          "html": "res://artifacts/gss/containment/containment.card__variants_dark.gss.html",
+          "filmstrip": "",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "containment.card",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_containment.gd",
+          "test": "test_card_variants_and_interaction",
+          "name": "containment.card__click_and_drag",
+          "png": "res://artifacts/gss/containment/containment.card__click_and_drag.png",
+          "json": "res://artifacts/gss/containment/containment.card__click_and_drag.gss.live.json",
+          "html": "res://artifacts/gss/containment/containment.card__click_and_drag.gss.live.html",
+          "filmstrip": "res://artifacts/gss/containment/containment.card__click_and_drag.filmstrip.png",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "containment.card",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_containment.gd",
+          "test": "test_card_variants_and_interaction",
+          "name": "containment.card__click_and_drag",
+          "png": "res://artifacts/gss/containment/containment.card__click_and_drag.png",
+          "json": "res://artifacts/gss/containment/containment.card__click_and_drag.gss.live.json",
+          "html": "res://artifacts/gss/containment/containment.card__click_and_drag.gss.live.html",
+          "filmstrip": "res://artifacts/gss/containment/containment.card__click_and_drag.filmstrip.png",
+          "note": "",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "containment.carousel",
+      "category": "Containment",
+      "name": "Carousel",
+      "spec": "https://m3.material.io/components/carousel/overview",
+      "variants": [
+        "multi-browse",
+        "uncontained",
+        "hero",
+        "full-screen"
+      ],
+      "requires": [
+        "element",
+        "interaction",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "containment.carousel",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_containment.gd",
+          "test": "test_carousel_variants_and_scrolling",
+          "name": "containment.carousel__all_styles",
+          "png": "res://artifacts/gss/containment/containment.carousel__all_styles.png",
+          "json": "res://artifacts/gss/containment/containment.carousel__all_styles.gss.json",
+          "html": "res://artifacts/gss/containment/containment.carousel__all_styles.gss.html",
+          "filmstrip": "",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "containment.carousel",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_containment.gd",
+          "test": "test_carousel_variants_and_scrolling",
+          "name": "containment.carousel__click_and_drag_scroll",
+          "png": "res://artifacts/gss/containment/containment.carousel__click_and_drag_scroll.png",
+          "json": "res://artifacts/gss/containment/containment.carousel__click_and_drag_scroll.gss.live.json",
+          "html": "res://artifacts/gss/containment/containment.carousel__click_and_drag_scroll.gss.live.html",
+          "filmstrip": "res://artifacts/gss/containment/containment.carousel__click_and_drag_scroll.filmstrip.png",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "containment.carousel",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_containment.gd",
+          "test": "test_carousel_variants_and_scrolling",
+          "name": "containment.carousel__click_and_drag_scroll",
+          "png": "res://artifacts/gss/containment/containment.carousel__click_and_drag_scroll.png",
+          "json": "res://artifacts/gss/containment/containment.carousel__click_and_drag_scroll.gss.live.json",
+          "html": "res://artifacts/gss/containment/containment.carousel__click_and_drag_scroll.gss.live.html",
+          "filmstrip": "res://artifacts/gss/containment/containment.carousel__click_and_drag_scroll.filmstrip.png",
+          "note": "",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "containment.dialog.basic",
+      "category": "Containment",
+      "name": "Basic dialog",
+      "spec": "https://m3.material.io/components/dialogs/overview",
+      "variants": [
+        "headline + body + actions",
+        "with icon",
+        "scrim dismiss"
+      ],
+      "requires": [
+        "element",
+        "interaction",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "containment.dialog.basic",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_containment.gd",
+          "test": "test_basic_dialog_variants_and_interaction",
+          "name": "containment.dialog.basic__open_transition",
+          "png": "res://artifacts/gss/containment/containment.dialog.basic__open_transition.png",
+          "json": "res://artifacts/gss/containment/containment.dialog.basic__open_transition.gss.live.json",
+          "html": "res://artifacts/gss/containment/containment.dialog.basic__open_transition.gss.live.html",
+          "filmstrip": "res://artifacts/gss/containment/containment.dialog.basic__open_transition.filmstrip.png",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "containment.dialog.basic",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_containment.gd",
+          "test": "test_basic_dialog_variants_and_interaction",
+          "name": "containment.dialog.basic__open_with_icon",
+          "png": "res://artifacts/gss/containment/containment.dialog.basic__open_with_icon.png",
+          "json": "res://artifacts/gss/containment/containment.dialog.basic__open_with_icon.gss.json",
+          "html": "res://artifacts/gss/containment/containment.dialog.basic__open_with_icon.gss.html",
+          "filmstrip": "",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "containment.dialog.basic",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_containment.gd",
+          "test": "test_basic_dialog_variants_and_interaction",
+          "name": "containment.dialog.basic__confirm_click",
+          "png": "res://artifacts/gss/containment/containment.dialog.basic__confirm_click.png",
+          "json": "res://artifacts/gss/containment/containment.dialog.basic__confirm_click.gss.live.json",
+          "html": "res://artifacts/gss/containment/containment.dialog.basic__confirm_click.gss.live.html",
+          "filmstrip": "res://artifacts/gss/containment/containment.dialog.basic__confirm_click.filmstrip.png",
+          "note": "",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "containment.dialog.fullscreen",
+      "category": "Containment",
+      "name": "Full-screen dialog",
+      "spec": "https://m3.material.io/components/dialogs/overview",
+      "variants": [
+        "full-screen with close + confirm action"
+      ],
+      "requires": [
+        "element",
+        "interaction"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "containment.dialog.fullscreen",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_containment.gd",
+          "test": "test_fullscreen_dialog_variants_and_interaction",
+          "name": "containment.dialog.fullscreen__open_fullscreen",
+          "png": "res://artifacts/gss/containment/containment.dialog.fullscreen__open_fullscreen.png",
+          "json": "res://artifacts/gss/containment/containment.dialog.fullscreen__open_fullscreen.gss.live.json",
+          "html": "res://artifacts/gss/containment/containment.dialog.fullscreen__open_fullscreen.gss.live.html",
+          "filmstrip": "res://artifacts/gss/containment/containment.dialog.fullscreen__open_fullscreen.filmstrip.png",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "containment.dialog.fullscreen",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_containment.gd",
+          "test": "test_fullscreen_dialog_variants_and_interaction",
+          "name": "containment.dialog.fullscreen__open_header_and_body",
+          "png": "res://artifacts/gss/containment/containment.dialog.fullscreen__open_header_and_body.png",
+          "json": "res://artifacts/gss/containment/containment.dialog.fullscreen__open_header_and_body.gss.json",
+          "html": "res://artifacts/gss/containment/containment.dialog.fullscreen__open_header_and_body.gss.html",
+          "filmstrip": "",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "containment.dialog.fullscreen",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_containment.gd",
+          "test": "test_fullscreen_dialog_variants_and_interaction",
+          "name": "containment.dialog.fullscreen__save_action",
+          "png": "res://artifacts/gss/containment/containment.dialog.fullscreen__save_action.png",
+          "json": "res://artifacts/gss/containment/containment.dialog.fullscreen__save_action.gss.live.json",
+          "html": "res://artifacts/gss/containment/containment.dialog.fullscreen__save_action.gss.live.html",
+          "filmstrip": "res://artifacts/gss/containment/containment.dialog.fullscreen__save_action.filmstrip.png",
+          "note": "",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "containment.divider",
+      "category": "Containment",
+      "name": "Dividers",
+      "spec": "https://m3.material.io/components/divider/overview",
+      "variants": [
+        "full-width",
+        "inset",
+        "vertical"
+      ],
+      "requires": [
+        "element"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "containment.divider",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_containment.gd",
+          "test": "test_divider_variants",
+          "name": "containment.divider__all_variants",
+          "png": "res://artifacts/gss/containment/containment.divider__all_variants.png",
+          "json": "res://artifacts/gss/containment/containment.divider__all_variants.gss.json",
+          "html": "res://artifacts/gss/containment/containment.divider__all_variants.gss.html",
+          "filmstrip": "",
+          "note": "",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "containment.list",
+      "category": "Containment",
+      "name": "Lists",
+      "spec": "https://m3.material.io/components/lists/overview",
+      "variants": [
+        "one-line",
+        "two-line",
+        "three-line",
+        "leading/trailing elements",
+        "selected"
+      ],
+      "requires": [
+        "element",
+        "interaction"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "containment.list",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_containment.gd",
+          "test": "test_list_variants_and_selection",
+          "name": "containment.list__variants_light",
+          "png": "res://artifacts/gss/containment/containment.list__variants_light.png",
+          "json": "res://artifacts/gss/containment/containment.list__variants_light.gss.json",
+          "html": "res://artifacts/gss/containment/containment.list__variants_light.gss.html",
+          "filmstrip": "",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "containment.list",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_containment.gd",
+          "test": "test_list_variants_and_selection",
+          "name": "containment.list__select_item",
+          "png": "res://artifacts/gss/containment/containment.list__select_item.png",
+          "json": "res://artifacts/gss/containment/containment.list__select_item.gss.live.json",
+          "html": "res://artifacts/gss/containment/containment.list__select_item.gss.live.html",
+          "filmstrip": "res://artifacts/gss/containment/containment.list__select_item.filmstrip.png",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "containment.list",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_containment.gd",
+          "test": "test_list_variants_and_selection",
+          "name": "containment.list__select_item",
+          "png": "res://artifacts/gss/containment/containment.list__select_item.png",
+          "json": "res://artifacts/gss/containment/containment.list__select_item.gss.live.json",
+          "html": "res://artifacts/gss/containment/containment.list__select_item.gss.live.html",
+          "filmstrip": "res://artifacts/gss/containment/containment.list__select_item.filmstrip.png",
+          "note": "",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "containment.side_sheet",
+      "category": "Containment",
+      "name": "Side sheets",
+      "spec": "https://m3.material.io/components/side-sheets/overview",
+      "variants": [
+        "standard",
+        "modal with scrim"
+      ],
+      "requires": [
+        "element",
+        "interaction",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "containment.side_sheet",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_containment.gd",
+          "test": "test_side_sheet_variants_and_interaction",
+          "name": "containment.side_sheet__standard_and_modal",
+          "png": "res://artifacts/gss/containment/containment.side_sheet__standard_and_modal.png",
+          "json": "res://artifacts/gss/containment/containment.side_sheet__standard_and_modal.gss.json",
+          "html": "res://artifacts/gss/containment/containment.side_sheet__standard_and_modal.gss.html",
+          "filmstrip": "",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "containment.side_sheet",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_containment.gd",
+          "test": "test_side_sheet_variants_and_interaction",
+          "name": "containment.side_sheet__close_and_reopen",
+          "png": "res://artifacts/gss/containment/containment.side_sheet__close_and_reopen.png",
+          "json": "res://artifacts/gss/containment/containment.side_sheet__close_and_reopen.gss.live.json",
+          "html": "res://artifacts/gss/containment/containment.side_sheet__close_and_reopen.gss.live.html",
+          "filmstrip": "res://artifacts/gss/containment/containment.side_sheet__close_and_reopen.filmstrip.png",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "containment.side_sheet",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_containment.gd",
+          "test": "test_side_sheet_variants_and_interaction",
+          "name": "containment.side_sheet__close_and_reopen",
+          "png": "res://artifacts/gss/containment/containment.side_sheet__close_and_reopen.png",
+          "json": "res://artifacts/gss/containment/containment.side_sheet__close_and_reopen.gss.live.json",
+          "html": "res://artifacts/gss/containment/containment.side_sheet__close_and_reopen.gss.live.html",
+          "filmstrip": "res://artifacts/gss/containment/containment.side_sheet__close_and_reopen.filmstrip.png",
+          "note": "",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "navigation.app_bar.top",
+      "category": "Navigation",
+      "name": "Top app bar",
+      "spec": "https://m3.material.io/components/top-app-bar/overview",
+      "variants": [
+        "center-aligned",
+        "small",
+        "medium",
+        "large",
+        "scrolled (on-scroll container color)"
+      ],
+      "requires": [
+        "element",
+        "interaction",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "navigation.app_bar.top",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_navigation.gd",
+          "test": "test_top_app_bar",
+          "name": "navigation.app_bar.top__variants_light",
+          "png": "res://artifacts/gss/navigation/navigation.app_bar.top__variants_light.png",
+          "json": "res://artifacts/gss/navigation/navigation.app_bar.top__variants_light.gss.json",
+          "html": "res://artifacts/gss/navigation/navigation.app_bar.top__variants_light.gss.html",
+          "filmstrip": "",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "navigation.app_bar.top",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_navigation.gd",
+          "test": "test_top_app_bar",
+          "name": "navigation.app_bar.top__scroll_collapse_and_actions",
+          "png": "res://artifacts/gss/navigation/navigation.app_bar.top__scroll_collapse_and_actions.png",
+          "json": "res://artifacts/gss/navigation/navigation.app_bar.top__scroll_collapse_and_actions.gss.live.json",
+          "html": "res://artifacts/gss/navigation/navigation.app_bar.top__scroll_collapse_and_actions.gss.live.html",
+          "filmstrip": "res://artifacts/gss/navigation/navigation.app_bar.top__scroll_collapse_and_actions.filmstrip.png",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "navigation.app_bar.top",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_navigation.gd",
+          "test": "test_top_app_bar",
+          "name": "navigation.app_bar.top__scroll_collapse_and_actions",
+          "png": "res://artifacts/gss/navigation/navigation.app_bar.top__scroll_collapse_and_actions.png",
+          "json": "res://artifacts/gss/navigation/navigation.app_bar.top__scroll_collapse_and_actions.gss.live.json",
+          "html": "res://artifacts/gss/navigation/navigation.app_bar.top__scroll_collapse_and_actions.gss.live.html",
+          "filmstrip": "res://artifacts/gss/navigation/navigation.app_bar.top__scroll_collapse_and_actions.filmstrip.png",
+          "note": "",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "navigation.app_bar.bottom",
+      "category": "Navigation",
+      "name": "Bottom app bar",
+      "spec": "https://m3.material.io/components/bottom-app-bar/overview",
+      "variants": [
+        "actions + FAB",
+        "hide on scroll"
+      ],
+      "requires": [
+        "element",
+        "interaction",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "navigation.app_bar.bottom",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_navigation.gd",
+          "test": "test_bottom_app_bar",
+          "name": "navigation.app_bar.bottom__variants_dark",
+          "png": "res://artifacts/gss/navigation/navigation.app_bar.bottom__variants_dark.png",
+          "json": "res://artifacts/gss/navigation/navigation.app_bar.bottom__variants_dark.gss.json",
+          "html": "res://artifacts/gss/navigation/navigation.app_bar.bottom__variants_dark.gss.html",
+          "filmstrip": "",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "navigation.app_bar.bottom",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_navigation.gd",
+          "test": "test_bottom_app_bar",
+          "name": "navigation.app_bar.bottom__actions_fab_and_hide_on_scroll",
+          "png": "res://artifacts/gss/navigation/navigation.app_bar.bottom__actions_fab_and_hide_on_scroll.png",
+          "json": "res://artifacts/gss/navigation/navigation.app_bar.bottom__actions_fab_and_hide_on_scroll.gss.live.json",
+          "html": "res://artifacts/gss/navigation/navigation.app_bar.bottom__actions_fab_and_hide_on_scroll.gss.live.html",
+          "filmstrip": "res://artifacts/gss/navigation/navigation.app_bar.bottom__actions_fab_and_hide_on_scroll.filmstrip.png",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "navigation.app_bar.bottom",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_navigation.gd",
+          "test": "test_bottom_app_bar",
+          "name": "navigation.app_bar.bottom__actions_fab_and_hide_on_scroll",
+          "png": "res://artifacts/gss/navigation/navigation.app_bar.bottom__actions_fab_and_hide_on_scroll.png",
+          "json": "res://artifacts/gss/navigation/navigation.app_bar.bottom__actions_fab_and_hide_on_scroll.gss.live.json",
+          "html": "res://artifacts/gss/navigation/navigation.app_bar.bottom__actions_fab_and_hide_on_scroll.gss.live.html",
+          "filmstrip": "res://artifacts/gss/navigation/navigation.app_bar.bottom__actions_fab_and_hide_on_scroll.filmstrip.png",
+          "note": "",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "navigation.toolbar",
+      "category": "Navigation",
+      "name": "Toolbars (Expressive)",
+      "spec": "https://m3.material.io/components/toolbars/overview",
+      "variants": [
+        "docked",
+        "floating",
+        "standard/vibrant colors"
+      ],
+      "requires": [
+        "element",
+        "interaction"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "navigation.toolbar",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_navigation.gd",
+          "test": "test_toolbar",
+          "name": "navigation.toolbar__variants_light",
+          "png": "res://artifacts/gss/navigation/navigation.toolbar__variants_light.png",
+          "json": "res://artifacts/gss/navigation/navigation.toolbar__variants_light.gss.json",
+          "html": "res://artifacts/gss/navigation/navigation.toolbar__variants_light.gss.html",
+          "filmstrip": "",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "navigation.toolbar",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_navigation.gd",
+          "test": "test_toolbar",
+          "name": "navigation.toolbar__select_tool_item",
+          "png": "res://artifacts/gss/navigation/navigation.toolbar__select_tool_item.png",
+          "json": "res://artifacts/gss/navigation/navigation.toolbar__select_tool_item.gss.live.json",
+          "html": "res://artifacts/gss/navigation/navigation.toolbar__select_tool_item.gss.live.html",
+          "filmstrip": "res://artifacts/gss/navigation/navigation.toolbar__select_tool_item.filmstrip.png",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "navigation.toolbar",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_navigation.gd",
+          "test": "test_toolbar",
+          "name": "navigation.toolbar__select_tool_item",
+          "png": "res://artifacts/gss/navigation/navigation.toolbar__select_tool_item.png",
+          "json": "res://artifacts/gss/navigation/navigation.toolbar__select_tool_item.gss.live.json",
+          "html": "res://artifacts/gss/navigation/navigation.toolbar__select_tool_item.gss.live.html",
+          "filmstrip": "res://artifacts/gss/navigation/navigation.toolbar__select_tool_item.filmstrip.png",
+          "note": "",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "navigation.bar",
+      "category": "Navigation",
+      "name": "Navigation bar",
+      "spec": "https://m3.material.io/components/navigation-bar/overview",
+      "variants": [
+        "3-5 destinations",
+        "active indicator",
+        "badges"
+      ],
+      "requires": [
+        "element",
+        "interaction",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "navigation.bar",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_navigation.gd",
+          "test": "test_navigation_bar",
+          "name": "navigation.bar__variants_light",
+          "png": "res://artifacts/gss/navigation/navigation.bar__variants_light.png",
+          "json": "res://artifacts/gss/navigation/navigation.bar__variants_light.gss.json",
+          "html": "res://artifacts/gss/navigation/navigation.bar__variants_light.gss.html",
+          "filmstrip": "",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "navigation.bar",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_navigation.gd",
+          "test": "test_navigation_bar",
+          "name": "navigation.bar__select_destination",
+          "png": "res://artifacts/gss/navigation/navigation.bar__select_destination.png",
+          "json": "res://artifacts/gss/navigation/navigation.bar__select_destination.gss.live.json",
+          "html": "res://artifacts/gss/navigation/navigation.bar__select_destination.gss.live.html",
+          "filmstrip": "res://artifacts/gss/navigation/navigation.bar__select_destination.filmstrip.png",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "navigation.bar",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_navigation.gd",
+          "test": "test_navigation_bar",
+          "name": "navigation.bar__select_destination",
+          "png": "res://artifacts/gss/navigation/navigation.bar__select_destination.png",
+          "json": "res://artifacts/gss/navigation/navigation.bar__select_destination.gss.live.json",
+          "html": "res://artifacts/gss/navigation/navigation.bar__select_destination.gss.live.html",
+          "filmstrip": "res://artifacts/gss/navigation/navigation.bar__select_destination.filmstrip.png",
+          "note": "",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "navigation.drawer",
+      "category": "Navigation",
+      "name": "Navigation drawer",
+      "spec": "https://m3.material.io/components/navigation-drawer/overview",
+      "variants": [
+        "standard",
+        "modal with scrim"
+      ],
+      "requires": [
+        "element",
+        "interaction",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "navigation.drawer",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_navigation.gd",
+          "test": "test_navigation_drawer",
+          "name": "navigation.drawer__variants_light",
+          "png": "res://artifacts/gss/navigation/navigation.drawer__variants_light.png",
+          "json": "res://artifacts/gss/navigation/navigation.drawer__variants_light.gss.json",
+          "html": "res://artifacts/gss/navigation/navigation.drawer__variants_light.gss.html",
+          "filmstrip": "",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "navigation.drawer",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_navigation.gd",
+          "test": "test_navigation_drawer",
+          "name": "navigation.drawer__select_and_modal_close",
+          "png": "res://artifacts/gss/navigation/navigation.drawer__select_and_modal_close.png",
+          "json": "res://artifacts/gss/navigation/navigation.drawer__select_and_modal_close.gss.live.json",
+          "html": "res://artifacts/gss/navigation/navigation.drawer__select_and_modal_close.gss.live.html",
+          "filmstrip": "res://artifacts/gss/navigation/navigation.drawer__select_and_modal_close.filmstrip.png",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "navigation.drawer",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_navigation.gd",
+          "test": "test_navigation_drawer",
+          "name": "navigation.drawer__select_and_modal_close",
+          "png": "res://artifacts/gss/navigation/navigation.drawer__select_and_modal_close.png",
+          "json": "res://artifacts/gss/navigation/navigation.drawer__select_and_modal_close.gss.live.json",
+          "html": "res://artifacts/gss/navigation/navigation.drawer__select_and_modal_close.gss.live.html",
+          "filmstrip": "res://artifacts/gss/navigation/navigation.drawer__select_and_modal_close.filmstrip.png",
+          "note": "",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "navigation.rail",
+      "category": "Navigation",
+      "name": "Navigation rail",
+      "spec": "https://m3.material.io/components/navigation-rail/overview",
+      "variants": [
+        "with FAB",
+        "active indicator"
+      ],
+      "requires": [
+        "element",
+        "interaction"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "navigation.rail",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_navigation.gd",
+          "test": "test_navigation_rail",
+          "name": "navigation.rail__variants_light",
+          "png": "res://artifacts/gss/navigation/navigation.rail__variants_light.png",
+          "json": "res://artifacts/gss/navigation/navigation.rail__variants_light.gss.json",
+          "html": "res://artifacts/gss/navigation/navigation.rail__variants_light.gss.html",
+          "filmstrip": "",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "navigation.rail",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_navigation.gd",
+          "test": "test_navigation_rail",
+          "name": "navigation.rail__select_destination_and_fab",
+          "png": "res://artifacts/gss/navigation/navigation.rail__select_destination_and_fab.png",
+          "json": "res://artifacts/gss/navigation/navigation.rail__select_destination_and_fab.gss.live.json",
+          "html": "res://artifacts/gss/navigation/navigation.rail__select_destination_and_fab.gss.live.html",
+          "filmstrip": "res://artifacts/gss/navigation/navigation.rail__select_destination_and_fab.filmstrip.png",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "navigation.rail",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_navigation.gd",
+          "test": "test_navigation_rail",
+          "name": "navigation.rail__select_destination_and_fab",
+          "png": "res://artifacts/gss/navigation/navigation.rail__select_destination_and_fab.png",
+          "json": "res://artifacts/gss/navigation/navigation.rail__select_destination_and_fab.gss.live.json",
+          "html": "res://artifacts/gss/navigation/navigation.rail__select_destination_and_fab.gss.live.html",
+          "filmstrip": "res://artifacts/gss/navigation/navigation.rail__select_destination_and_fab.filmstrip.png",
+          "note": "",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "navigation.search",
+      "category": "Navigation",
+      "name": "Search (bar + view)",
+      "spec": "https://m3.material.io/components/search/overview",
+      "variants": [
+        "search bar",
+        "search view expanded with suggestions"
+      ],
+      "requires": [
+        "element",
+        "interaction",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "navigation.search",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_navigation.gd",
+          "test": "test_search_bar_and_view",
+          "name": "navigation.search__variants_light",
+          "png": "res://artifacts/gss/navigation/navigation.search__variants_light.png",
+          "json": "res://artifacts/gss/navigation/navigation.search__variants_light.gss.json",
+          "html": "res://artifacts/gss/navigation/navigation.search__variants_light.gss.html",
+          "filmstrip": "",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "navigation.search",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_navigation.gd",
+          "test": "test_search_bar_and_view",
+          "name": "navigation.search__activate_and_select_suggestion",
+          "png": "res://artifacts/gss/navigation/navigation.search__activate_and_select_suggestion.png",
+          "json": "res://artifacts/gss/navigation/navigation.search__activate_and_select_suggestion.gss.live.json",
+          "html": "res://artifacts/gss/navigation/navigation.search__activate_and_select_suggestion.gss.live.html",
+          "filmstrip": "res://artifacts/gss/navigation/navigation.search__activate_and_select_suggestion.filmstrip.png",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "navigation.search",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_navigation.gd",
+          "test": "test_search_bar_and_view",
+          "name": "navigation.search__activate_and_select_suggestion",
+          "png": "res://artifacts/gss/navigation/navigation.search__activate_and_select_suggestion.png",
+          "json": "res://artifacts/gss/navigation/navigation.search__activate_and_select_suggestion.gss.live.json",
+          "html": "res://artifacts/gss/navigation/navigation.search__activate_and_select_suggestion.gss.live.html",
+          "filmstrip": "res://artifacts/gss/navigation/navigation.search__activate_and_select_suggestion.filmstrip.png",
+          "note": "",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "navigation.tabs",
+      "category": "Navigation",
+      "name": "Tabs",
+      "spec": "https://m3.material.io/components/tabs/overview",
+      "variants": [
+        "primary",
+        "secondary",
+        "indicator slide"
+      ],
+      "requires": [
+        "element",
+        "interaction",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "navigation.tabs",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_navigation.gd",
+          "test": "test_tabs",
+          "name": "navigation.tabs__variants_light",
+          "png": "res://artifacts/gss/navigation/navigation.tabs__variants_light.png",
+          "json": "res://artifacts/gss/navigation/navigation.tabs__variants_light.gss.json",
+          "html": "res://artifacts/gss/navigation/navigation.tabs__variants_light.gss.html",
+          "filmstrip": "",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "navigation.tabs",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_navigation.gd",
+          "test": "test_tabs",
+          "name": "navigation.tabs__indicator_slide",
+          "png": "res://artifacts/gss/navigation/navigation.tabs__indicator_slide.png",
+          "json": "res://artifacts/gss/navigation/navigation.tabs__indicator_slide.gss.live.json",
+          "html": "res://artifacts/gss/navigation/navigation.tabs__indicator_slide.gss.live.html",
+          "filmstrip": "res://artifacts/gss/navigation/navigation.tabs__indicator_slide.filmstrip.png",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "navigation.tabs",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_navigation.gd",
+          "test": "test_tabs",
+          "name": "navigation.tabs__indicator_slide",
+          "png": "res://artifacts/gss/navigation/navigation.tabs__indicator_slide.png",
+          "json": "res://artifacts/gss/navigation/navigation.tabs__indicator_slide.gss.live.json",
+          "html": "res://artifacts/gss/navigation/navigation.tabs__indicator_slide.gss.live.html",
+          "filmstrip": "res://artifacts/gss/navigation/navigation.tabs__indicator_slide.filmstrip.png",
+          "note": "",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "navigation.adaptive",
+      "category": "Navigation",
+      "name": "Adaptive navigation",
+      "spec": "https://m3.material.io/foundations/layout/applying-layout/window-size-classes",
+      "variants": [
+        "bar (compact)",
+        "rail (medium)",
+        "drawer (expanded)"
+      ],
+      "requires": [
+        "element",
+        "interaction"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "navigation.adaptive",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_navigation.gd",
+          "test": "test_adaptive_navigation_and_window_classes",
+          "name": "navigation.adaptive__compact_medium_expanded",
+          "png": "res://artifacts/gss/navigation/navigation.adaptive__compact_medium_expanded.png",
+          "json": "res://artifacts/gss/navigation/navigation.adaptive__compact_medium_expanded.gss.json",
+          "html": "res://artifacts/gss/navigation/navigation.adaptive__compact_medium_expanded.gss.html",
+          "filmstrip": "",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "navigation.adaptive",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_navigation.gd",
+          "test": "test_adaptive_navigation_and_window_classes",
+          "name": "navigation.adaptive__navigate_and_breakpoint_switch",
+          "png": "res://artifacts/gss/navigation/navigation.adaptive__navigate_and_breakpoint_switch.png",
+          "json": "res://artifacts/gss/navigation/navigation.adaptive__navigate_and_breakpoint_switch.gss.live.json",
+          "html": "res://artifacts/gss/navigation/navigation.adaptive__navigate_and_breakpoint_switch.gss.live.html",
+          "filmstrip": "res://artifacts/gss/navigation/navigation.adaptive__navigate_and_breakpoint_switch.filmstrip.png",
+          "note": "",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "navigation.tabs.scrollable",
+      "category": "Navigation",
+      "name": "Scrollable tabs (52dp leading offset)",
+      "spec": "https://m3.material.io/components/tabs/specs",
+      "variants": [
+        "scrollable primary tabs",
+        "scrollable secondary tabs",
+        "auto-scroll to active tab"
+      ],
+      "requires": [
+        "element",
+        "interaction",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "navigation.tabs.scrollable",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_navigation.gd",
+          "test": "test_scrollable_tabs",
+          "name": "navigation.tabs.scrollable__variants_light",
+          "png": "res://artifacts/gss/navigation/navigation.tabs.scrollable__variants_light.png",
+          "json": "res://artifacts/gss/navigation/navigation.tabs.scrollable__variants_light.gss.json",
+          "html": "res://artifacts/gss/navigation/navigation.tabs.scrollable__variants_light.gss.html",
+          "filmstrip": "",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "navigation.tabs.scrollable",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_navigation.gd",
+          "test": "test_scrollable_tabs",
+          "name": "navigation.tabs.scrollable__select_and_auto_scroll",
+          "png": "res://artifacts/gss/navigation/navigation.tabs.scrollable__select_and_auto_scroll.png",
+          "json": "res://artifacts/gss/navigation/navigation.tabs.scrollable__select_and_auto_scroll.gss.live.json",
+          "html": "res://artifacts/gss/navigation/navigation.tabs.scrollable__select_and_auto_scroll.gss.live.html",
+          "filmstrip": "res://artifacts/gss/navigation/navigation.tabs.scrollable__select_and_auto_scroll.filmstrip.png",
+          "note": "",
+          "passed": true
+        },
+        {
+          "spec_id": "navigation.tabs.scrollable",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_navigation.gd",
+          "test": "test_scrollable_tabs",
+          "name": "navigation.tabs.scrollable__select_and_auto_scroll",
+          "png": "res://artifacts/gss/navigation/navigation.tabs.scrollable__select_and_auto_scroll.png",
+          "json": "res://artifacts/gss/navigation/navigation.tabs.scrollable__select_and_auto_scroll.gss.live.json",
+          "html": "res://artifacts/gss/navigation/navigation.tabs.scrollable__select_and_auto_scroll.gss.live.html",
+          "filmstrip": "res://artifacts/gss/navigation/navigation.tabs.scrollable__select_and_auto_scroll.filmstrip.png",
+          "note": "",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "selection.checkbox",
+      "category": "Selection",
+      "name": "Checkbox",
+      "spec": "https://m3.material.io/components/checkbox/overview",
+      "variants": [
+        "unchecked",
+        "checked",
+        "indeterminate",
+        "error",
+        "disabled"
+      ],
+      "requires": [
+        "element",
+        "interaction",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "selection.checkbox",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_selection.gd",
+          "test": "test_selection_checkbox",
+          "name": "selection.checkbox__variants_light",
+          "png": "res://artifacts/gss/selection/selection.checkbox__variants_light.png",
+          "json": "res://artifacts/gss/selection/selection.checkbox__variants_light.gss.json",
+          "html": "res://artifacts/gss/selection/selection.checkbox__variants_light.gss.html",
+          "filmstrip": "",
+          "note": "Unchecked, checked, indeterminate, error, disabled",
+          "passed": true
+        },
+        {
+          "spec_id": "selection.checkbox",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_selection.gd",
+          "test": "test_selection_checkbox",
+          "name": "selection.checkbox__check_morph",
+          "png": "res://artifacts/gss/selection/selection.checkbox__check_morph.png",
+          "json": "res://artifacts/gss/selection/selection.checkbox__check_morph.gss.live.json",
+          "html": "res://artifacts/gss/selection/selection.checkbox__check_morph.gss.live.html",
+          "filmstrip": "res://artifacts/gss/selection/selection.checkbox__check_morph.filmstrip.png",
+          "note": "Click toggles unchecked -> checked",
+          "passed": true
+        },
+        {
+          "spec_id": "selection.checkbox",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_selection.gd",
+          "test": "test_selection_checkbox",
+          "name": "selection.checkbox__check_morph",
+          "png": "res://artifacts/gss/selection/selection.checkbox__check_morph.png",
+          "json": "res://artifacts/gss/selection/selection.checkbox__check_morph.gss.live.json",
+          "html": "res://artifacts/gss/selection/selection.checkbox__check_morph.gss.live.html",
+          "filmstrip": "res://artifacts/gss/selection/selection.checkbox__check_morph.filmstrip.png",
+          "note": "_anim_progress spring tween",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "selection.chip",
+      "category": "Selection",
+      "name": "Chips",
+      "spec": "https://m3.material.io/components/chips/overview",
+      "variants": [
+        "assist",
+        "filter",
+        "input",
+        "suggestion",
+        "elevated"
+      ],
+      "requires": [
+        "element",
+        "interaction"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "selection.chip",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_selection.gd",
+          "test": "test_selection_chip",
+          "name": "selection.chip__variants_light",
+          "png": "res://artifacts/gss/selection/selection.chip__variants_light.png",
+          "json": "res://artifacts/gss/selection/selection.chip__variants_light.gss.json",
+          "html": "res://artifacts/gss/selection/selection.chip__variants_light.gss.html",
+          "filmstrip": "",
+          "note": "Assist, filter, input, suggestion, elevated",
+          "passed": true
+        },
+        {
+          "spec_id": "selection.chip",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_selection.gd",
+          "test": "test_selection_chip",
+          "name": "selection.chip__filter_toggle_and_input_close",
+          "png": "res://artifacts/gss/selection/selection.chip__filter_toggle_and_input_close.png",
+          "json": "res://artifacts/gss/selection/selection.chip__filter_toggle_and_input_close.gss.live.json",
+          "html": "res://artifacts/gss/selection/selection.chip__filter_toggle_and_input_close.gss.live.html",
+          "filmstrip": "res://artifacts/gss/selection/selection.chip__filter_toggle_and_input_close.filmstrip.png",
+          "note": "Filter chip toggle + Input chip close",
+          "passed": true
+        },
+        {
+          "spec_id": "selection.chip",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_selection.gd",
+          "test": "test_selection_chip",
+          "name": "selection.chip__filter_toggle_and_input_close",
+          "png": "res://artifacts/gss/selection/selection.chip__filter_toggle_and_input_close.png",
+          "json": "res://artifacts/gss/selection/selection.chip__filter_toggle_and_input_close.gss.live.json",
+          "html": "res://artifacts/gss/selection/selection.chip__filter_toggle_and_input_close.gss.live.html",
+          "filmstrip": "res://artifacts/gss/selection/selection.chip__filter_toggle_and_input_close.filmstrip.png",
+          "note": "Filter chip _select_progress & _checkmark_progress tween",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "selection.date_picker",
+      "category": "Selection",
+      "name": "Date pickers",
+      "spec": "https://m3.material.io/components/date-pickers/overview",
+      "variants": [
+        "docked",
+        "modal",
+        "modal input",
+        "range"
+      ],
+      "requires": [
+        "element",
+        "interaction",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "selection.date_picker",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_inputs.gd",
+          "test": "test_date_picker_variants_and_interaction",
+          "name": "selection.date_picker__docked_and_modal_light",
+          "png": "res://artifacts/gss/selection/selection.date_picker__docked_and_modal_light.png",
+          "json": "res://artifacts/gss/selection/selection.date_picker__docked_and_modal_light.gss.json",
+          "html": "res://artifacts/gss/selection/selection.date_picker__docked_and_modal_light.gss.html",
+          "filmstrip": "",
+          "note": "Docked and Modal M3DatePicker variants",
+          "passed": true
+        },
+        {
+          "spec_id": "selection.date_picker",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_inputs.gd",
+          "test": "test_date_picker_variants_and_interaction",
+          "name": "selection.date_picker__select_day_and_next_month",
+          "png": "res://artifacts/gss/selection/selection.date_picker__select_day_and_next_month.png",
+          "json": "res://artifacts/gss/selection/selection.date_picker__select_day_and_next_month.gss.live.json",
+          "html": "res://artifacts/gss/selection/selection.date_picker__select_day_and_next_month.gss.live.html",
+          "filmstrip": "res://artifacts/gss/selection/selection.date_picker__select_day_and_next_month.filmstrip.png",
+          "note": "Day cell selection, month navigation, and confirmation",
+          "passed": true
+        },
+        {
+          "spec_id": "selection.date_picker",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_inputs.gd",
+          "test": "test_date_picker_variants_and_interaction",
+          "name": "selection.date_picker__select_day_and_next_month",
+          "png": "res://artifacts/gss/selection/selection.date_picker__select_day_and_next_month.png",
+          "json": "res://artifacts/gss/selection/selection.date_picker__select_day_and_next_month.gss.live.json",
+          "html": "res://artifacts/gss/selection/selection.date_picker__select_day_and_next_month.gss.live.html",
+          "filmstrip": "res://artifacts/gss/selection/selection.date_picker__select_day_and_next_month.filmstrip.png",
+          "note": "Day selection circle and month transition animations",
+          "passed": true
+        },
+        {
+          "spec_id": "selection.date_picker",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_inputs.gd",
+          "test": "test_date_picker_variants_and_interaction",
+          "name": "selection.date_picker__input_and_range_dark",
+          "png": "res://artifacts/gss/selection/selection.date_picker__input_and_range_dark.png",
+          "json": "res://artifacts/gss/selection/selection.date_picker__input_and_range_dark.gss.json",
+          "html": "res://artifacts/gss/selection/selection.date_picker__input_and_range_dark.gss.html",
+          "filmstrip": "",
+          "note": "Modal input and date range variants in dark mode",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "selection.menu",
+      "category": "Selection",
+      "name": "Menus",
+      "spec": "https://m3.material.io/components/menus/overview",
+      "variants": [
+        "items with icons",
+        "trailing shortcut",
+        "divider",
+        "disabled item"
+      ],
+      "requires": [
+        "element",
+        "interaction",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "selection.menu",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_selection.gd",
+          "test": "test_selection_menu",
+          "name": "selection.menu__open_transition",
+          "png": "res://artifacts/gss/selection/selection.menu__open_transition.png",
+          "json": "res://artifacts/gss/selection/selection.menu__open_transition.gss.live.json",
+          "html": "res://artifacts/gss/selection/selection.menu__open_transition.gss.live.html",
+          "filmstrip": "res://artifacts/gss/selection/selection.menu__open_transition.filmstrip.png",
+          "note": "Menu open scale/fade open_progress transition",
+          "passed": true
+        },
+        {
+          "spec_id": "selection.menu",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_selection.gd",
+          "test": "test_selection_menu",
+          "name": "selection.menu__variants_open_light",
+          "png": "res://artifacts/gss/selection/selection.menu__variants_open_light.png",
+          "json": "res://artifacts/gss/selection/selection.menu__variants_open_light.gss.json",
+          "html": "res://artifacts/gss/selection/selection.menu__variants_open_light.gss.html",
+          "filmstrip": "",
+          "note": "Items with leading/trailing icons, shortcut, divider, disabled item",
+          "passed": true
+        },
+        {
+          "spec_id": "selection.menu",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_selection.gd",
+          "test": "test_selection_menu",
+          "name": "selection.menu__select_item",
+          "png": "res://artifacts/gss/selection/selection.menu__select_item.png",
+          "json": "res://artifacts/gss/selection/selection.menu__select_item.gss.live.json",
+          "html": "res://artifacts/gss/selection/selection.menu__select_item.gss.live.html",
+          "filmstrip": "res://artifacts/gss/selection/selection.menu__select_item.filmstrip.png",
+          "note": "Click menu item emits selection and closes menu",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "selection.radio",
+      "category": "Selection",
+      "name": "Radio button",
+      "spec": "https://m3.material.io/components/radio-button/overview",
+      "variants": [
+        "selected",
+        "unselected",
+        "group exclusivity"
+      ],
+      "requires": [
+        "element",
+        "interaction",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "selection.radio",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_selection.gd",
+          "test": "test_selection_radio",
+          "name": "selection.radio__variants_light",
+          "png": "res://artifacts/gss/selection/selection.radio__variants_light.png",
+          "json": "res://artifacts/gss/selection/selection.radio__variants_light.gss.json",
+          "html": "res://artifacts/gss/selection/selection.radio__variants_light.gss.html",
+          "filmstrip": "",
+          "note": "Selected, unselected, disabled, group",
+          "passed": true
+        },
+        {
+          "spec_id": "selection.radio",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_selection.gd",
+          "test": "test_selection_radio",
+          "name": "selection.radio__group_select_second",
+          "png": "res://artifacts/gss/selection/selection.radio__group_select_second.png",
+          "json": "res://artifacts/gss/selection/selection.radio__group_select_second.gss.live.json",
+          "html": "res://artifacts/gss/selection/selection.radio__group_select_second.gss.live.html",
+          "filmstrip": "res://artifacts/gss/selection/selection.radio__group_select_second.filmstrip.png",
+          "note": "Click unselected radio selects it and deselects previous",
+          "passed": true
+        },
+        {
+          "spec_id": "selection.radio",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_selection.gd",
+          "test": "test_selection_radio",
+          "name": "selection.radio__group_select_second",
+          "png": "res://artifacts/gss/selection/selection.radio__group_select_second.png",
+          "json": "res://artifacts/gss/selection/selection.radio__group_select_second.gss.live.json",
+          "html": "res://artifacts/gss/selection/selection.radio__group_select_second.gss.live.html",
+          "filmstrip": "res://artifacts/gss/selection/selection.radio__group_select_second.filmstrip.png",
+          "note": "Inner dot _dot_scale tween",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "selection.slider",
+      "category": "Selection",
+      "name": "Sliders",
+      "spec": "https://m3.material.io/components/sliders/overview",
+      "variants": [
+        "continuous",
+        "discrete with ticks",
+        "range",
+        "value indicator"
+      ],
+      "requires": [
+        "element",
+        "interaction",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "selection.slider",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_selection.gd",
+          "test": "test_selection_slider",
+          "name": "selection.slider__variants_light",
+          "png": "res://artifacts/gss/selection/selection.slider__variants_light.png",
+          "json": "res://artifacts/gss/selection/selection.slider__variants_light.gss.json",
+          "html": "res://artifacts/gss/selection/selection.slider__variants_light.gss.html",
+          "filmstrip": "",
+          "note": "Continuous, discrete with ticks, range",
+          "passed": true
+        },
+        {
+          "spec_id": "selection.slider",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_selection.gd",
+          "test": "test_selection_slider",
+          "name": "selection.slider__drag_discrete_with_bubble",
+          "png": "res://artifacts/gss/selection/selection.slider__drag_discrete_with_bubble.png",
+          "json": "res://artifacts/gss/selection/selection.slider__drag_discrete_with_bubble.gss.live.json",
+          "html": "res://artifacts/gss/selection/selection.slider__drag_discrete_with_bubble.gss.live.html",
+          "filmstrip": "res://artifacts/gss/selection/selection.slider__drag_discrete_with_bubble.filmstrip.png",
+          "note": "Drag discrete slider snaps to step 80",
+          "passed": true
+        },
+        {
+          "spec_id": "selection.slider",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_selection.gd",
+          "test": "test_selection_slider",
+          "name": "selection.slider__drag_discrete_with_bubble",
+          "png": "res://artifacts/gss/selection/selection.slider__drag_discrete_with_bubble.png",
+          "json": "res://artifacts/gss/selection/selection.slider__drag_discrete_with_bubble.gss.live.json",
+          "html": "res://artifacts/gss/selection/selection.slider__drag_discrete_with_bubble.gss.live.html",
+          "filmstrip": "res://artifacts/gss/selection/selection.slider__drag_discrete_with_bubble.filmstrip.png",
+          "note": "Value indicator _indicator_scale & _active_progress tween",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "selection.switch",
+      "category": "Selection",
+      "name": "Switch",
+      "spec": "https://m3.material.io/components/switch/overview",
+      "variants": [
+        "off",
+        "on",
+        "with icons",
+        "disabled"
+      ],
+      "requires": [
+        "element",
+        "interaction",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "selection.switch",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_selection.gd",
+          "test": "test_selection_switch",
+          "name": "selection.switch__variants_light",
+          "png": "res://artifacts/gss/selection/selection.switch__variants_light.png",
+          "json": "res://artifacts/gss/selection/selection.switch__variants_light.gss.json",
+          "html": "res://artifacts/gss/selection/selection.switch__variants_light.gss.html",
+          "filmstrip": "",
+          "note": "Off, on, with icons, disabled (light)",
+          "passed": true
+        },
+        {
+          "spec_id": "selection.switch",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_selection.gd",
+          "test": "test_selection_switch",
+          "name": "selection.switch__toggle_on_glide",
+          "png": "res://artifacts/gss/selection/selection.switch__toggle_on_glide.png",
+          "json": "res://artifacts/gss/selection/selection.switch__toggle_on_glide.gss.live.json",
+          "html": "res://artifacts/gss/selection/selection.switch__toggle_on_glide.gss.live.html",
+          "filmstrip": "res://artifacts/gss/selection/selection.switch__toggle_on_glide.filmstrip.png",
+          "note": "Click switch toggles selected -> true",
+          "passed": true
+        },
+        {
+          "spec_id": "selection.switch",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_selection.gd",
+          "test": "test_selection_switch",
+          "name": "selection.switch__toggle_on_glide",
+          "png": "res://artifacts/gss/selection/selection.switch__toggle_on_glide.png",
+          "json": "res://artifacts/gss/selection/selection.switch__toggle_on_glide.gss.live.json",
+          "html": "res://artifacts/gss/selection/selection.switch__toggle_on_glide.gss.live.html",
+          "filmstrip": "res://artifacts/gss/selection/selection.switch__toggle_on_glide.filmstrip.png",
+          "note": "Thumb glide _progress & _thumb_size morph",
+          "passed": true
+        },
+        {
+          "spec_id": "selection.switch",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_selection.gd",
+          "test": "test_selection_switch",
+          "name": "selection.switch__variants_dark",
+          "png": "res://artifacts/gss/selection/selection.switch__variants_dark.png",
+          "json": "res://artifacts/gss/selection/selection.switch__variants_dark.gss.json",
+          "html": "res://artifacts/gss/selection/selection.switch__variants_dark.gss.html",
+          "filmstrip": "",
+          "note": "Dark mode switch snapshot",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "selection.time_picker",
+      "category": "Selection",
+      "name": "Time pickers",
+      "spec": "https://m3.material.io/components/time-pickers/overview",
+      "variants": [
+        "dial",
+        "input",
+        "AM/PM selector",
+        "hour/minute modes"
+      ],
+      "requires": [
+        "element",
+        "interaction",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "selection.time_picker",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_inputs.gd",
+          "test": "test_time_picker_variants_and_interaction",
+          "name": "selection.time_picker__variants_light",
+          "png": "res://artifacts/gss/selection/selection.time_picker__variants_light.png",
+          "json": "res://artifacts/gss/selection/selection.time_picker__variants_light.gss.json",
+          "html": "res://artifacts/gss/selection/selection.time_picker__variants_light.gss.html",
+          "filmstrip": "",
+          "note": "Dial hour, dial minute, AM/PM, and input time picker variants",
+          "passed": true
+        },
+        {
+          "spec_id": "selection.time_picker",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_inputs.gd",
+          "test": "test_time_picker_variants_and_interaction",
+          "name": "selection.time_picker__dial_select_and_confirm",
+          "png": "res://artifacts/gss/selection/selection.time_picker__dial_select_and_confirm.png",
+          "json": "res://artifacts/gss/selection/selection.time_picker__dial_select_and_confirm.gss.live.json",
+          "html": "res://artifacts/gss/selection/selection.time_picker__dial_select_and_confirm.gss.live.html",
+          "filmstrip": "res://artifacts/gss/selection/selection.time_picker__dial_select_and_confirm.filmstrip.png",
+          "note": "Clock dial hour click, AM/PM toggle, minute chip, and OK confirm",
+          "passed": true
+        },
+        {
+          "spec_id": "selection.time_picker",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_inputs.gd",
+          "test": "test_time_picker_variants_and_interaction",
+          "name": "selection.time_picker__dial_select_and_confirm",
+          "png": "res://artifacts/gss/selection/selection.time_picker__dial_select_and_confirm.png",
+          "json": "res://artifacts/gss/selection/selection.time_picker__dial_select_and_confirm.gss.live.json",
+          "html": "res://artifacts/gss/selection/selection.time_picker__dial_select_and_confirm.gss.live.html",
+          "filmstrip": "res://artifacts/gss/selection/selection.time_picker__dial_select_and_confirm.filmstrip.png",
+          "note": "Animated clock hand dial_angle tween",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "selection.slider.expressive",
+      "category": "Selection",
+      "name": "Sliders — Vertical, centered-zero & Expressive sizes",
+      "spec": "https://m3.material.io/components/sliders/specs",
+      "variants": [
+        "vertical orientation",
+        "centered-zero bipolar (-100..+100)",
+        "Expressive XS/S/M/L/XL track heights"
+      ],
+      "requires": [
+        "element",
+        "interaction",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "selection.slider.expressive",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_selection.gd",
+          "test": "test_selection_slider_expressive",
+          "name": "selection.slider.expressive__expressive_vertical_centered_light",
+          "png": "res://artifacts/gss/selection/selection.slider.expressive__expressive_vertical_centered_light.png",
+          "json": "res://artifacts/gss/selection/selection.slider.expressive__expressive_vertical_centered_light.gss.json",
+          "html": "res://artifacts/gss/selection/selection.slider.expressive__expressive_vertical_centered_light.gss.html",
+          "filmstrip": "",
+          "note": "Expressive thick tracks, centered-zero bidirectional, and vertical slider",
+          "passed": true
+        },
+        {
+          "spec_id": "selection.slider.expressive",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_selection.gd",
+          "test": "test_selection_slider_expressive",
+          "name": "selection.slider.expressive__drag_vertical_and_centered",
+          "png": "res://artifacts/gss/selection/selection.slider.expressive__drag_vertical_and_centered.png",
+          "json": "res://artifacts/gss/selection/selection.slider.expressive__drag_vertical_and_centered.gss.live.json",
+          "html": "res://artifacts/gss/selection/selection.slider.expressive__drag_vertical_and_centered.gss.live.html",
+          "filmstrip": "res://artifacts/gss/selection/selection.slider.expressive__drag_vertical_and_centered.filmstrip.png",
+          "note": "Vertical upward drag and centered-zero negative selection",
+          "passed": true
+        },
+        {
+          "spec_id": "selection.slider.expressive",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_selection.gd",
+          "test": "test_selection_slider_expressive",
+          "name": "selection.slider.expressive__drag_vertical_and_centered",
+          "png": "res://artifacts/gss/selection/selection.slider.expressive__drag_vertical_and_centered.png",
+          "json": "res://artifacts/gss/selection/selection.slider.expressive__drag_vertical_and_centered.gss.live.json",
+          "html": "res://artifacts/gss/selection/selection.slider.expressive__drag_vertical_and_centered.gss.live.html",
+          "filmstrip": "res://artifacts/gss/selection/selection.slider.expressive__drag_vertical_and_centered.filmstrip.png",
+          "note": "Vertical handle active progress and indicator scale tween",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "selection.menu.cascading_grouped",
+      "category": "Selection",
+      "name": "Menus — Cascading submenus & Expressive groups",
+      "spec": "https://m3.material.io/components/menus/specs",
+      "variants": [
+        "nested cascading flyout submenu",
+        "Expressive detached rounded menu groups",
+        "keyboard shortcut labels"
+      ],
+      "requires": [
+        "element",
+        "interaction",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "selection.menu.cascading_grouped",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_selection.gd",
+          "test": "test_selection_menu_cascading_grouped",
+          "name": "selection.menu.cascading_grouped__open_cascading_submenu",
+          "png": "res://artifacts/gss/selection/selection.menu.cascading_grouped__open_cascading_submenu.png",
+          "json": "res://artifacts/gss/selection/selection.menu.cascading_grouped__open_cascading_submenu.gss.live.json",
+          "html": "res://artifacts/gss/selection/selection.menu.cascading_grouped__open_cascading_submenu.gss.live.html",
+          "filmstrip": "res://artifacts/gss/selection/selection.menu.cascading_grouped__open_cascading_submenu.filmstrip.png",
+          "note": "Cascading submenu scale/fade and submenu_open_progress tween",
+          "passed": true
+        },
+        {
+          "spec_id": "selection.menu.cascading_grouped",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_selection.gd",
+          "test": "test_selection_menu_cascading_grouped",
+          "name": "selection.menu.cascading_grouped__grouped_and_submenu_open_light",
+          "png": "res://artifacts/gss/selection/selection.menu.cascading_grouped__grouped_and_submenu_open_light.png",
+          "json": "res://artifacts/gss/selection/selection.menu.cascading_grouped__grouped_and_submenu_open_light.gss.json",
+          "html": "res://artifacts/gss/selection/selection.menu.cascading_grouped__grouped_and_submenu_open_light.gss.html",
+          "filmstrip": "",
+          "note": "Expressive grouped menu containers and open cascading submenu",
+          "passed": true
+        },
+        {
+          "spec_id": "selection.menu.cascading_grouped",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_selection.gd",
+          "test": "test_selection_menu_cascading_grouped",
+          "name": "selection.menu.cascading_grouped__select_submenu_item",
+          "png": "res://artifacts/gss/selection/selection.menu.cascading_grouped__select_submenu_item.png",
+          "json": "res://artifacts/gss/selection/selection.menu.cascading_grouped__select_submenu_item.gss.live.json",
+          "html": "res://artifacts/gss/selection/selection.menu.cascading_grouped__select_submenu_item.gss.live.html",
+          "filmstrip": "res://artifacts/gss/selection/selection.menu.cascading_grouped__select_submenu_item.filmstrip.png",
+          "note": "Click cascading submenu item selects action and closes hierarchy",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "selection.pickers.extended",
+      "category": "Selection",
+      "name": "Pickers — 24h dual-ring Time Picker & Year-grid Date Picker",
+      "spec": "https://m3.material.io/components/date-pickers/specs",
+      "variants": [
+        "24-hour inner/outer concentric clock dial (00-12 / 13-23)",
+        "interactive multi-year grid selector in Date Picker"
+      ],
+      "requires": [
+        "element",
+        "interaction",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "selection.pickers.extended",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_inputs.gd",
+          "test": "test_pickers_extended_24h_and_year_grid",
+          "name": "selection.pickers.extended__select_inner_ring_and_open_year_grid",
+          "png": "res://artifacts/gss/selection/selection.pickers.extended__select_inner_ring_and_open_year_grid.png",
+          "json": "res://artifacts/gss/selection/selection.pickers.extended__select_inner_ring_and_open_year_grid.gss.live.json",
+          "html": "res://artifacts/gss/selection/selection.pickers.extended__select_inner_ring_and_open_year_grid.gss.live.html",
+          "filmstrip": "res://artifacts/gss/selection/selection.pickers.extended__select_inner_ring_and_open_year_grid.filmstrip.png",
+          "note": "24h inner-ring dial_hand_length tween and year_picker_progress transition",
+          "passed": true
+        },
+        {
+          "spec_id": "selection.pickers.extended",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_inputs.gd",
+          "test": "test_pickers_extended_24h_and_year_grid",
+          "name": "selection.pickers.extended__dual_ring_24h_and_year_grid_light",
+          "png": "res://artifacts/gss/selection/selection.pickers.extended__dual_ring_24h_and_year_grid_light.png",
+          "json": "res://artifacts/gss/selection/selection.pickers.extended__dual_ring_24h_and_year_grid_light.gss.json",
+          "html": "res://artifacts/gss/selection/selection.pickers.extended__dual_ring_24h_and_year_grid_light.gss.html",
+          "filmstrip": "",
+          "note": "24-hour concentric dual-ring clock face and 3x5 Multi-Year Grid",
+          "passed": true
+        },
+        {
+          "spec_id": "selection.pickers.extended",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_inputs.gd",
+          "test": "test_pickers_extended_24h_and_year_grid",
+          "name": "selection.pickers.extended__pick_year_pill",
+          "png": "res://artifacts/gss/selection/selection.pickers.extended__pick_year_pill.png",
+          "json": "res://artifacts/gss/selection/selection.pickers.extended__pick_year_pill.gss.live.json",
+          "html": "res://artifacts/gss/selection/selection.pickers.extended__pick_year_pill.gss.live.html",
+          "filmstrip": "res://artifacts/gss/selection/selection.pickers.extended__pick_year_pill.filmstrip.png",
+          "note": "24h inner/outer ring selection and multi-year pill click",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "inputs.text_field",
+      "category": "Text inputs",
+      "name": "Text fields",
+      "spec": "https://m3.material.io/components/text-fields/overview",
+      "variants": [
+        "filled",
+        "outlined",
+        "error",
+        "supporting text",
+        "counter",
+        "leading/trailing icons"
+      ],
+      "requires": [
+        "element",
+        "interaction",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "inputs.text_field",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_inputs.gd",
+          "test": "test_text_field_variants_and_interaction",
+          "name": "inputs.text_field__variants_light",
+          "png": "res://artifacts/gss/inputs/inputs.text_field__variants_light.png",
+          "json": "res://artifacts/gss/inputs/inputs.text_field__variants_light.gss.json",
+          "html": "res://artifacts/gss/inputs/inputs.text_field__variants_light.gss.html",
+          "filmstrip": "",
+          "note": "All text field variants in light mode",
+          "passed": true
+        },
+        {
+          "spec_id": "inputs.text_field",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_inputs.gd",
+          "test": "test_text_field_variants_and_interaction",
+          "name": "inputs.text_field__focus_and_type",
+          "png": "res://artifacts/gss/inputs/inputs.text_field__focus_and_type.png",
+          "json": "res://artifacts/gss/inputs/inputs.text_field__focus_and_type.gss.live.json",
+          "html": "res://artifacts/gss/inputs/inputs.text_field__focus_and_type.gss.live.html",
+          "filmstrip": "res://artifacts/gss/inputs/inputs.text_field__focus_and_type.filmstrip.png",
+          "note": "Click focus, keyboard typing, clear & password toggle",
+          "passed": true
+        },
+        {
+          "spec_id": "inputs.text_field",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_inputs.gd",
+          "test": "test_text_field_variants_and_interaction",
+          "name": "inputs.text_field__focus_and_type",
+          "png": "res://artifacts/gss/inputs/inputs.text_field__focus_and_type.png",
+          "json": "res://artifacts/gss/inputs/inputs.text_field__focus_and_type.gss.live.json",
+          "html": "res://artifacts/gss/inputs/inputs.text_field__focus_and_type.gss.live.html",
+          "filmstrip": "res://artifacts/gss/inputs/inputs.text_field__focus_and_type.filmstrip.png",
+          "note": "Floating label and focus indicator tween",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "inputs.text_field.extended",
+      "category": "Text inputs",
+      "name": "Text fields — Multiline textarea & prefix/suffix affixes",
+      "spec": "https://m3.material.io/components/text-fields/specs",
+      "variants": [
+        "multiline wrapping textarea mode",
+        "prefix text ($)",
+        "suffix text (kg / .com)"
+      ],
+      "requires": [
+        "element",
+        "interaction",
+        "animation"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "inputs.text_field.extended",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_inputs.gd",
+          "test": "test_text_field_extended_multiline_and_affixes",
+          "name": "inputs.text_field.extended__affixes_and_multiline_light",
+          "png": "res://artifacts/gss/inputs/inputs.text_field.extended__affixes_and_multiline_light.png",
+          "json": "res://artifacts/gss/inputs/inputs.text_field.extended__affixes_and_multiline_light.gss.json",
+          "html": "res://artifacts/gss/inputs/inputs.text_field.extended__affixes_and_multiline_light.gss.html",
+          "filmstrip": "",
+          "note": "Prefix/suffix affixes and multiline auto-expanding textarea",
+          "passed": true
+        },
+        {
+          "spec_id": "inputs.text_field.extended",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_inputs.gd",
+          "test": "test_text_field_extended_multiline_and_affixes",
+          "name": "inputs.text_field.extended__focus_affix_and_expand_multiline",
+          "png": "res://artifacts/gss/inputs/inputs.text_field.extended__focus_affix_and_expand_multiline.png",
+          "json": "res://artifacts/gss/inputs/inputs.text_field.extended__focus_affix_and_expand_multiline.gss.live.json",
+          "html": "res://artifacts/gss/inputs/inputs.text_field.extended__focus_affix_and_expand_multiline.gss.live.html",
+          "filmstrip": "res://artifacts/gss/inputs/inputs.text_field.extended__focus_affix_and_expand_multiline.filmstrip.png",
+          "note": "Focus/type into prefix/suffix field and add lines to multiline field",
+          "passed": true
+        },
+        {
+          "spec_id": "inputs.text_field.extended",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_inputs.gd",
+          "test": "test_text_field_extended_multiline_and_affixes",
+          "name": "inputs.text_field.extended__focus_affix_and_expand_multiline",
+          "png": "res://artifacts/gss/inputs/inputs.text_field.extended__focus_affix_and_expand_multiline.png",
+          "json": "res://artifacts/gss/inputs/inputs.text_field.extended__focus_affix_and_expand_multiline.gss.live.json",
+          "html": "res://artifacts/gss/inputs/inputs.text_field.extended__focus_affix_and_expand_multiline.gss.live.html",
+          "filmstrip": "res://artifacts/gss/inputs/inputs.text_field.extended__focus_affix_and_expand_multiline.filmstrip.png",
+          "note": "Affix fade-in with _label_float_progress and multiline _active_height growth tween",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "inputs.select",
+      "category": "Text inputs",
+      "name": "Exposed dropdown menu (select)",
+      "spec": "https://m3.material.io/components/menus/overview",
+      "variants": [
+        "filled",
+        "outlined",
+        "open menu",
+        "selected value"
+      ],
+      "requires": [
+        "element",
+        "interaction"
+      ],
+      "verified": true,
+      "missing_kinds": [],
+      "missing_scripts": [],
+      "evidence": [
+        {
+          "spec_id": "inputs.select",
+          "kind": "element",
+          "suite": "res://tests/gss/test_gss_inputs.gd",
+          "test": "test_select_variants_and_dropdown_interaction",
+          "name": "inputs.select__variants_light",
+          "png": "res://artifacts/gss/inputs/inputs.select__variants_light.png",
+          "json": "res://artifacts/gss/inputs/inputs.select__variants_light.gss.json",
+          "html": "res://artifacts/gss/inputs/inputs.select__variants_light.gss.html",
+          "filmstrip": "",
+          "note": "Filled, outlined, open menu, and M3SelectDropdown variants",
+          "passed": true
+        },
+        {
+          "spec_id": "inputs.select",
+          "kind": "interaction",
+          "suite": "res://tests/gss/test_gss_inputs.gd",
+          "test": "test_select_variants_and_dropdown_interaction",
+          "name": "inputs.select__pick_option",
+          "png": "res://artifacts/gss/inputs/inputs.select__pick_option.png",
+          "json": "res://artifacts/gss/inputs/inputs.select__pick_option.gss.live.json",
+          "html": "res://artifacts/gss/inputs/inputs.select__pick_option.gss.live.html",
+          "filmstrip": "res://artifacts/gss/inputs/inputs.select__pick_option.filmstrip.png",
+          "note": "Open dropdown and click option item",
+          "passed": true
+        },
+        {
+          "spec_id": "inputs.select",
+          "kind": "animation",
+          "suite": "res://tests/gss/test_gss_inputs.gd",
+          "test": "test_select_variants_and_dropdown_interaction",
+          "name": "inputs.select__open_dropdown",
+          "png": "res://artifacts/gss/inputs/inputs.select__open_dropdown.png",
+          "json": "res://artifacts/gss/inputs/inputs.select__open_dropdown.gss.live.json",
+          "html": "res://artifacts/gss/inputs/inputs.select__open_dropdown.gss.live.html",
+          "filmstrip": "res://artifacts/gss/inputs/inputs.select__open_dropdown.filmstrip.png",
+          "note": "Chevron rotation and menu open_progress animation",
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "missing": [],
+  "meta": {
+    "generated": "2026-11-24T01:46:20",
+    "rendering": true,
+    "display_server": "macOS",
+    "engine": "4.7.2-stable (official)",
+    "total": 67,
+    "verified": 67
+  }
+}

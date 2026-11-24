@@ -1,0 +1,98 @@
+[gd_scene load_steps=2 format=3 uid="uid://new_suite_dialog_001"]
+
+[ext_resource type="Script" path="res://addons/gdtest/ui/new_suite_dialog.gd" id="1_dialog_script"]
+
+[node name="NewSuiteDialog" type="ConfirmationDialog"]
+title = "➕ Create New GDTest Suite"
+position = Vector2i(0, 36)
+size = Vector2i(540, 420)
+min_size = Vector2i(500, 380)
+ok_button_text = "Create Suite"
+script = ExtResource("1_dialog_script")
+
+[node name="MainLayout" type="VBoxContainer" parent="."]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 532.0
+offset_bottom = 371.0
+theme_override_constants/separation = 10
+
+[node name="FormGrid" type="GridContainer" parent="MainLayout"]
+layout_mode = 2
+theme_override_constants/h_separation = 12
+theme_override_constants/v_separation = 8
+columns = 2
+
+[node name="SuiteNameLabel" type="Label" parent="MainLayout/FormGrid"]
+layout_mode = 2
+text = "Suite Name:"
+
+[node name="SuiteNameEdit" type="LineEdit" parent="MainLayout/FormGrid"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "e.g. player_movement or CombatSystem"
+clear_button_enabled = true
+
+[node name="TierLabel" type="Label" parent="MainLayout/FormGrid"]
+layout_mode = 2
+text = "Test Tier:"
+
+[node name="TierOption" type="OptionButton" parent="MainLayout/FormGrid"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DirLabel" type="Label" parent="MainLayout/FormGrid"]
+layout_mode = 2
+text = "Target Directory:"
+
+[node name="DirContainer" type="HBoxContainer" parent="MainLayout/FormGrid"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DirectoryEdit" type="LineEdit" parent="MainLayout/FormGrid/DirContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "res://tests"
+placeholder_text = "res://tests"
+
+[node name="BrowseButton" type="Button" parent="MainLayout/FormGrid/DirContainer"]
+layout_mode = 2
+text = "📁 Browse..."
+
+[node name="PreviewLabel" type="Label" parent="MainLayout/FormGrid"]
+layout_mode = 2
+text = "Preview Path:"
+
+[node name="PreviewPathLabel" type="Label" parent="MainLayout/FormGrid"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.4, 0.8, 1, 1)
+text = "res://tests/test_new_suite.gd"
+
+[node name="HSeparator" type="HSeparator" parent="MainLayout"]
+layout_mode = 2
+
+[node name="OptionsVBox" type="VBoxContainer" parent="MainLayout"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="HooksCheck" type="CheckBox" parent="MainLayout/OptionsVBox"]
+layout_mode = 2
+text = "Include Lifecycle Hooks (before_all, before_each, etc.)"
+
+[node name="OpenEditorCheck" type="CheckBox" parent="MainLayout/OptionsVBox"]
+layout_mode = 2
+button_pressed = true
+text = "Open in Script Editor upon creation"
+
+[node name="ValidationLabel" type="Label" parent="MainLayout"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.2, 0.8, 0.2, 1)
+autowrap_mode = 2
+
+[node name="DirDialog" type="FileDialog" parent="."]
+title = "Select Target Directory"
+size = Vector2i(600, 400)
+file_mode = 2
+access = 0
+current_dir = "res://tests"

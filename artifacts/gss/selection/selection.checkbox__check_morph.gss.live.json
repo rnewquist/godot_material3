@@ -1,0 +1,4967 @@
+{
+  "format": "godot_scene_snapshot_live",
+  "short_name": "GSS_LIVE",
+  "version": "1.0",
+  "recording_name": "selection.checkbox__check_morph",
+  "metadata": {
+    "recording_name": "selection.checkbox__check_morph",
+    "timestamp_iso": "2026-11-24T01:46:13",
+    "total_frames": 33,
+    "delta_frames": 32,
+    "viewport_size": {
+      "width": 1280,
+      "height": 720
+    },
+    "duration_ms": 519,
+    "active_node_count": 1,
+    "bounces_detected": 0,
+    "files": {
+      "png": "res://artifacts/gss/selection/selection.checkbox__check_morph.png",
+      "json": "res://artifacts/gss/selection/selection.checkbox__check_morph.gss.live.json",
+      "html": "res://artifacts/gss/selection/selection.checkbox__check_morph.gss.live.html",
+      "global_png": "/Users/rnewquist/Documents/Godot/material3/artifacts/gss/selection/selection.checkbox__check_morph.png",
+      "global_json": "/Users/rnewquist/Documents/Godot/material3/artifacts/gss/selection/selection.checkbox__check_morph.gss.live.json",
+      "global_html": "/Users/rnewquist/Documents/Godot/material3/artifacts/gss/selection/selection.checkbox__check_morph.gss.live.html"
+    }
+  },
+  "initial_snapshot": {
+    "metadata": {
+      "format": "godot_scene_snapshot",
+      "short_name": "GSS",
+      "version": "1.0",
+      "snapshot_name": "selection.checkbox__check_morph_frame_0",
+      "timestamp_iso": "2026-11-24T01:46:12",
+      "timestamp_ticks_ms": 62857,
+      "engine_version": "4.7.2-stable (official)",
+      "display_server": "macOS",
+      "viewport_size": {
+        "width": 1280,
+        "height": 720
+      },
+      "total_nodes": 6,
+      "visible_nodes": 6,
+      "class_counts": {
+        "ColorRect": 1,
+        "Control": 5
+      },
+      "camera_3d": {},
+      "camera_2d": {},
+      "performance": {
+        "fps": 57.0,
+        "process_frames": 3192,
+        "physics_frames": 3623,
+        "memory_static_bytes": 70592121,
+        "object_count": 1755,
+        "node_count": 16
+      },
+      "frame_index": 0,
+      "elapsed_ms": 0
+    },
+    "hierarchy": {
+      "id": "node_0",
+      "parent_id": "",
+      "name": "CheckboxVariants",
+      "class": "ColorRect",
+      "category": "control",
+      "path": "/root/@Node@304/GSSStageViewport/CheckboxVariants",
+      "depth": 0,
+      "index_in_parent": 0,
+      "children_count": 5,
+      "groups": [],
+      "script": "",
+      "process_mode": 0,
+      "visible": true,
+      "screen_rect": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 1280.0,
+        "height": 720.0,
+        "has_bounds": true,
+        "on_screen": true
+      },
+      "script_variables": {},
+      "transforms": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "global_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "size": {
+          "x": 1280.0,
+          "y": 720.0
+        },
+        "custom_minimum_size": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "rotation_deg": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "anchors": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 0.0,
+          "bottom": 0.0
+        },
+        "offsets": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 1280.0,
+          "bottom": 720.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_vertical": 1
+      },
+      "visibility": {
+        "visible": true,
+        "visible_in_tree": true,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "top_level": false,
+        "show_behind_parent": false,
+        "clip_children": 0,
+        "light_mask": 1,
+        "visibility_layer": 1,
+        "z_index": 0,
+        "z_as_relative": true,
+        "y_sort_enabled": false
+      },
+      "physics": {},
+      "ui_and_content": {
+        "focus_mode": 0,
+        "mouse_filter": 2,
+        "tooltip_text": "",
+        "color": {
+          "r": 0.9788,
+          "g": 0.9745,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#faf9ffff"
+        }
+      },
+      "signals": [
+        {
+          "signal": "child_order_changed",
+          "target": "/root/@Node@304/GSSStageViewport",
+          "method": "Viewport::canvas_parent_mark_dirty"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxChecked",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxIndeterminate",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxError",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxDisabled",
+          "method": "Control::_size_changed"
+        }
+      ],
+      "all_properties": {
+        "accessibility_controls_nodes": [],
+        "accessibility_described_by_nodes": [],
+        "accessibility_description": "",
+        "accessibility_flow_to_nodes": [],
+        "accessibility_labeled_by_nodes": [],
+        "accessibility_live": 0,
+        "accessibility_name": "",
+        "anchor_bottom": 0.0,
+        "anchor_left": 0.0,
+        "anchor_right": 0.0,
+        "anchor_top": 0.0,
+        "anchors_preset": 0,
+        "auto_translate_mode": 0,
+        "clip_children": 0,
+        "clip_contents": false,
+        "color": {
+          "r": 0.9788,
+          "g": 0.9745,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#faf9ffff"
+        },
+        "custom_maximum_size": {
+          "x": -1.0,
+          "y": -1.0
+        },
+        "custom_minimum_size": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "editor_description": "",
+        "focus_behavior_recursive": 0,
+        "focus_mode": 0,
+        "focus_neighbor_bottom": "",
+        "focus_neighbor_left": "",
+        "focus_neighbor_right": "",
+        "focus_neighbor_top": "",
+        "focus_next": "",
+        "focus_previous": "",
+        "grow_horizontal": 1,
+        "grow_vertical": 1,
+        "layout_direction": 0,
+        "layout_mode": 3,
+        "light_mask": 1,
+        "localize_numeral_system": true,
+        "material": null,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "mouse_behavior_recursive": 0,
+        "mouse_default_cursor_shape": 0,
+        "mouse_filter": 2,
+        "mouse_force_pass_scroll_events": true,
+        "offset_bottom": 720.0,
+        "offset_left": 0.0,
+        "offset_right": 1280.0,
+        "offset_top": 0.0,
+        "offset_transform_enabled": false,
+        "offset_transform_pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_pivot_ratio": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "offset_transform_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_position_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_rotation": 0.0,
+        "offset_transform_scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "offset_transform_visual_only": true,
+        "oversampling_with_scale": 0,
+        "physics_interpolation_mode": 2,
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "pivot_offset_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "process_mode": 0,
+        "process_physics_priority": 0,
+        "process_priority": 0,
+        "process_thread_group": 0,
+        "propagate_maximum_size": false,
+        "rotation": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "shortcut_context": null,
+        "show_behind_parent": false,
+        "size": {
+          "x": 1280.0,
+          "y": 720.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_stretch_ratio": 1.0,
+        "size_flags_vertical": 1,
+        "texture_filter": 0,
+        "texture_repeat": 0,
+        "theme": null,
+        "theme_type_variation": "",
+        "tooltip_auto_translate_mode": 0,
+        "tooltip_text": "",
+        "top_level": false,
+        "translation_context": "",
+        "unique_name_in_owner": false,
+        "use_parent_material": false,
+        "visibility_layer": 1,
+        "visible": true,
+        "y_sort_enabled": false,
+        "z_as_relative": true,
+        "z_index": 0
+      },
+      "children": [
+        {
+          "id": "node_1",
+          "parent_id": "node_0",
+          "name": "CheckboxUnchecked",
+          "class": "Control",
+          "category": "control",
+          "path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+          "depth": 1,
+          "index_in_parent": 0,
+          "children_count": 0,
+          "groups": [],
+          "script": "res://addons/material3/components/selection/m3_checkbox.gd",
+          "process_mode": 0,
+          "visible": true,
+          "screen_rect": {
+            "x": 60.0,
+            "y": 80.0,
+            "width": 131.0,
+            "height": 48.0,
+            "has_bounds": true,
+            "on_screen": true
+          },
+          "script_variables": {
+            "_anim_progress": 0.0,
+            "_anim_tween": null,
+            "_font": "<FontFile>",
+            "_font_size": 14,
+            "_is_pointer_down": false,
+            "_pointer_inside": false,
+            "_ripple": "<Node:M3Ripple (Control)>",
+            "_ripple_wave_alpha": 0.0,
+            "_ripple_wave_count": 0,
+            "_ripple_wave_radius": 0.0,
+            "_state_layer_alpha": 0.0,
+            "_theme_connected": true,
+            "box_size": 18.0,
+            "check_state": 0,
+            "checked": false,
+            "current_state": 0,
+            "custom_corner_radius": -1.0,
+            "density_override": 99,
+            "disabled": false,
+            "error": false,
+            "indeterminate": false,
+            "is_error": false,
+            "ripple_enabled": true,
+            "shape_token": 0,
+            "text": "Unchecked",
+            "touch_target_min_size": {
+              "x": 48.0,
+              "y": 48.0
+            },
+            "tristate": false
+          },
+          "transforms": {
+            "position": {
+              "x": 60.0,
+              "y": 80.0
+            },
+            "global_position": {
+              "x": 60.0,
+              "y": 80.0
+            },
+            "size": {
+              "x": 131.0,
+              "y": 48.0
+            },
+            "custom_minimum_size": {
+              "x": 131.0,
+              "y": 48.0
+            },
+            "rotation_deg": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "anchors": {
+              "left": 0.0,
+              "top": 0.0,
+              "right": 0.0,
+              "bottom": 0.0
+            },
+            "offsets": {
+              "left": 60.0,
+              "top": 80.0,
+              "right": 191.0,
+              "bottom": 128.0
+            },
+            "size_flags_horizontal": 1,
+            "size_flags_vertical": 1
+          },
+          "visibility": {
+            "visible": true,
+            "visible_in_tree": true,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "top_level": false,
+            "show_behind_parent": false,
+            "clip_children": 0,
+            "light_mask": 1,
+            "visibility_layer": 1,
+            "z_index": 0,
+            "z_as_relative": true,
+            "y_sort_enabled": false
+          },
+          "physics": {},
+          "ui_and_content": {
+            "focus_mode": 2,
+            "mouse_filter": 0,
+            "tooltip_text": ""
+          },
+          "signals": [
+            {
+              "signal": "toggled",
+              "target": "<GDScript>",
+              "method": "<anonymous lambda>"
+            },
+            {
+              "signal": "child_order_changed",
+              "target": "/root/@Node@304/GSSStageViewport",
+              "method": "Viewport::canvas_parent_mark_dirty"
+            },
+            {
+              "signal": "item_rect_changed",
+              "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked/M3Ripple",
+              "method": "Control::_size_changed"
+            },
+            {
+              "signal": "resized",
+              "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+              "method": "_on_resized"
+            },
+            {
+              "signal": "mouse_entered",
+              "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+              "method": "_on_mouse_entered"
+            },
+            {
+              "signal": "mouse_exited",
+              "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+              "method": "_on_mouse_exited"
+            },
+            {
+              "signal": "focus_entered",
+              "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+              "method": "_on_focus_entered"
+            },
+            {
+              "signal": "focus_exited",
+              "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+              "method": "_on_focus_exited"
+            }
+          ],
+          "all_properties": {
+            "accessibility_controls_nodes": [],
+            "accessibility_described_by_nodes": [],
+            "accessibility_description": "",
+            "accessibility_flow_to_nodes": [],
+            "accessibility_labeled_by_nodes": [],
+            "accessibility_live": 0,
+            "accessibility_name": "",
+            "anchor_bottom": 0.0,
+            "anchor_left": 0.0,
+            "anchor_right": 0.0,
+            "anchor_top": 0.0,
+            "anchors_preset": 0,
+            "auto_translate_mode": 0,
+            "box_size": 18.0,
+            "check_state": 0,
+            "checked": false,
+            "clip_children": 0,
+            "clip_contents": false,
+            "current_state": 0,
+            "custom_corner_radius": -1.0,
+            "custom_maximum_size": {
+              "x": -1.0,
+              "y": -1.0
+            },
+            "custom_minimum_size": {
+              "x": 131.0,
+              "y": 48.0
+            },
+            "density_override": 99,
+            "disabled": false,
+            "editor_description": "",
+            "error": false,
+            "focus_behavior_recursive": 0,
+            "focus_mode": 2,
+            "focus_neighbor_bottom": "",
+            "focus_neighbor_left": "",
+            "focus_neighbor_right": "",
+            "focus_neighbor_top": "",
+            "focus_next": "",
+            "focus_previous": "",
+            "grow_horizontal": 1,
+            "grow_vertical": 1,
+            "indeterminate": false,
+            "is_error": false,
+            "layout_direction": 0,
+            "layout_mode": 0,
+            "light_mask": 1,
+            "localize_numeral_system": true,
+            "material": null,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "mouse_behavior_recursive": 0,
+            "mouse_default_cursor_shape": 2,
+            "mouse_filter": 0,
+            "mouse_force_pass_scroll_events": true,
+            "offset_bottom": 128.0,
+            "offset_left": 60.0,
+            "offset_right": 191.0,
+            "offset_top": 80.0,
+            "offset_transform_enabled": false,
+            "offset_transform_pivot": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_pivot_ratio": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "offset_transform_position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_position_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_rotation": 0.0,
+            "offset_transform_scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "offset_transform_visual_only": true,
+            "oversampling_with_scale": 0,
+            "physics_interpolation_mode": 2,
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "pivot_offset_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "position": {
+              "x": 60.0,
+              "y": 80.0
+            },
+            "process_mode": 0,
+            "process_physics_priority": 0,
+            "process_priority": 0,
+            "process_thread_group": 0,
+            "propagate_maximum_size": false,
+            "ripple_enabled": true,
+            "rotation": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "shape_token": 0,
+            "shortcut_context": null,
+            "show_behind_parent": false,
+            "size": {
+              "x": 131.0,
+              "y": 48.0
+            },
+            "size_flags_horizontal": 1,
+            "size_flags_stretch_ratio": 1.0,
+            "size_flags_vertical": 1,
+            "text": "Unchecked",
+            "texture_filter": 0,
+            "texture_repeat": 0,
+            "theme": null,
+            "theme_type_variation": "",
+            "tooltip_auto_translate_mode": 0,
+            "tooltip_text": "",
+            "top_level": false,
+            "touch_target_min_size": {
+              "x": 48.0,
+              "y": 48.0
+            },
+            "translation_context": "",
+            "tristate": false,
+            "unique_name_in_owner": false,
+            "use_parent_material": false,
+            "visibility_layer": 1,
+            "visible": true,
+            "y_sort_enabled": false,
+            "z_as_relative": true,
+            "z_index": 0
+          },
+          "children": []
+        },
+        {
+          "id": "node_2",
+          "parent_id": "node_0",
+          "name": "CheckboxChecked",
+          "class": "Control",
+          "category": "control",
+          "path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxChecked",
+          "depth": 1,
+          "index_in_parent": 1,
+          "children_count": 0,
+          "groups": [],
+          "script": "res://addons/material3/components/selection/m3_checkbox.gd",
+          "process_mode": 0,
+          "visible": true,
+          "screen_rect": {
+            "x": 260.0,
+            "y": 80.0,
+            "width": 114.0,
+            "height": 48.0,
+            "has_bounds": true,
+            "on_screen": true
+          },
+          "script_variables": {
+            "_anim_progress": 1.0,
+            "_anim_tween": null,
+            "_font": "<FontFile>",
+            "_font_size": 14,
+            "_is_pointer_down": false,
+            "_pointer_inside": false,
+            "_ripple": "<Node:M3Ripple (Control)>",
+            "_ripple_wave_alpha": 0.0,
+            "_ripple_wave_count": 0,
+            "_ripple_wave_radius": 0.0,
+            "_state_layer_alpha": 0.0,
+            "_theme_connected": true,
+            "box_size": 18.0,
+            "check_state": 1,
+            "checked": true,
+            "current_state": 0,
+            "custom_corner_radius": -1.0,
+            "density_override": 99,
+            "disabled": false,
+            "error": false,
+            "indeterminate": false,
+            "is_error": false,
+            "ripple_enabled": true,
+            "shape_token": 0,
+            "text": "Checked",
+            "touch_target_min_size": {
+              "x": 48.0,
+              "y": 48.0
+            },
+            "tristate": false
+          },
+          "transforms": {
+            "position": {
+              "x": 260.0,
+              "y": 80.0
+            },
+            "global_position": {
+              "x": 260.0,
+              "y": 80.0
+            },
+            "size": {
+              "x": 114.0,
+              "y": 48.0
+            },
+            "custom_minimum_size": {
+              "x": 114.0,
+              "y": 48.0
+            },
+            "rotation_deg": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "anchors": {
+              "left": 0.0,
+              "top": 0.0,
+              "right": 0.0,
+              "bottom": 0.0
+            },
+            "offsets": {
+              "left": 260.0,
+              "top": 80.0,
+              "right": 374.0,
+              "bottom": 128.0
+            },
+            "size_flags_horizontal": 1,
+            "size_flags_vertical": 1
+          },
+          "visibility": {
+            "visible": true,
+            "visible_in_tree": true,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "top_level": false,
+            "show_behind_parent": false,
+            "clip_children": 0,
+            "light_mask": 1,
+            "visibility_layer": 1,
+            "z_index": 0,
+            "z_as_relative": true,
+            "y_sort_enabled": false
+          },
+          "physics": {},
+          "ui_and_content": {
+            "focus_mode": 2,
+            "mouse_filter": 0,
+            "tooltip_text": ""
+          },
+          "signals": [
+            {
+              "signal": "child_order_changed",
+              "target": "/root/@Node@304/GSSStageViewport",
+              "method": "Viewport::canvas_parent_mark_dirty"
+            },
+            {
+              "signal": "item_rect_changed",
+              "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxChecked/M3Ripple",
+              "method": "Control::_size_changed"
+            },
+            {
+              "signal": "resized",
+              "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxChecked",
+              "method": "_on_resized"
+            },
+            {
+              "signal": "mouse_entered",
+              "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxChecked",
+              "method": "_on_mouse_entered"
+            },
+            {
+              "signal": "mouse_exited",
+              "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxChecked",
+              "method": "_on_mouse_exited"
+            },
+            {
+              "signal": "focus_entered",
+              "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxChecked",
+              "method": "_on_focus_entered"
+            },
+            {
+              "signal": "focus_exited",
+              "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxChecked",
+              "method": "_on_focus_exited"
+            }
+          ],
+          "all_properties": {
+            "accessibility_controls_nodes": [],
+            "accessibility_described_by_nodes": [],
+            "accessibility_description": "",
+            "accessibility_flow_to_nodes": [],
+            "accessibility_labeled_by_nodes": [],
+            "accessibility_live": 0,
+            "accessibility_name": "",
+            "anchor_bottom": 0.0,
+            "anchor_left": 0.0,
+            "anchor_right": 0.0,
+            "anchor_top": 0.0,
+            "anchors_preset": 0,
+            "auto_translate_mode": 0,
+            "box_size": 18.0,
+            "check_state": 1,
+            "checked": true,
+            "clip_children": 0,
+            "clip_contents": false,
+            "current_state": 0,
+            "custom_corner_radius": -1.0,
+            "custom_maximum_size": {
+              "x": -1.0,
+              "y": -1.0
+            },
+            "custom_minimum_size": {
+              "x": 114.0,
+              "y": 48.0
+            },
+            "density_override": 99,
+            "disabled": false,
+            "editor_description": "",
+            "error": false,
+            "focus_behavior_recursive": 0,
+            "focus_mode": 2,
+            "focus_neighbor_bottom": "",
+            "focus_neighbor_left": "",
+            "focus_neighbor_right": "",
+            "focus_neighbor_top": "",
+            "focus_next": "",
+            "focus_previous": "",
+            "grow_horizontal": 1,
+            "grow_vertical": 1,
+            "indeterminate": false,
+            "is_error": false,
+            "layout_direction": 0,
+            "layout_mode": 0,
+            "light_mask": 1,
+            "localize_numeral_system": true,
+            "material": null,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "mouse_behavior_recursive": 0,
+            "mouse_default_cursor_shape": 2,
+            "mouse_filter": 0,
+            "mouse_force_pass_scroll_events": true,
+            "offset_bottom": 128.0,
+            "offset_left": 260.0,
+            "offset_right": 374.0,
+            "offset_top": 80.0,
+            "offset_transform_enabled": false,
+            "offset_transform_pivot": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_pivot_ratio": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "offset_transform_position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_position_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_rotation": 0.0,
+            "offset_transform_scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "offset_transform_visual_only": true,
+            "oversampling_with_scale": 0,
+            "physics_interpolation_mode": 2,
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "pivot_offset_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "position": {
+              "x": 260.0,
+              "y": 80.0
+            },
+            "process_mode": 0,
+            "process_physics_priority": 0,
+            "process_priority": 0,
+            "process_thread_group": 0,
+            "propagate_maximum_size": false,
+            "ripple_enabled": true,
+            "rotation": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "shape_token": 0,
+            "shortcut_context": null,
+            "show_behind_parent": false,
+            "size": {
+              "x": 114.0,
+              "y": 48.0
+            },
+            "size_flags_horizontal": 1,
+            "size_flags_stretch_ratio": 1.0,
+            "size_flags_vertical": 1,
+            "text": "Checked",
+            "texture_filter": 0,
+            "texture_repeat": 0,
+            "theme": null,
+            "theme_type_variation": "",
+            "tooltip_auto_translate_mode": 0,
+            "tooltip_text": "",
+            "top_level": false,
+            "touch_target_min_size": {
+              "x": 48.0,
+              "y": 48.0
+            },
+            "translation_context": "",
+            "tristate": false,
+            "unique_name_in_owner": false,
+            "use_parent_material": false,
+            "visibility_layer": 1,
+            "visible": true,
+            "y_sort_enabled": false,
+            "z_as_relative": true,
+            "z_index": 0
+          },
+          "children": []
+        },
+        {
+          "id": "node_3",
+          "parent_id": "node_0",
+          "name": "CheckboxIndeterminate",
+          "class": "Control",
+          "category": "control",
+          "path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxIndeterminate",
+          "depth": 1,
+          "index_in_parent": 2,
+          "children_count": 0,
+          "groups": [],
+          "script": "res://addons/material3/components/selection/m3_checkbox.gd",
+          "process_mode": 0,
+          "visible": true,
+          "screen_rect": {
+            "x": 460.0,
+            "y": 80.0,
+            "width": 154.0,
+            "height": 48.0,
+            "has_bounds": true,
+            "on_screen": true
+          },
+          "script_variables": {
+            "_anim_progress": 1.0,
+            "_anim_tween": null,
+            "_font": "<FontFile>",
+            "_font_size": 14,
+            "_is_pointer_down": false,
+            "_pointer_inside": false,
+            "_ripple": "<Node:M3Ripple (Control)>",
+            "_ripple_wave_alpha": 0.0,
+            "_ripple_wave_count": 0,
+            "_ripple_wave_radius": 0.0,
+            "_state_layer_alpha": 0.0,
+            "_theme_connected": true,
+            "box_size": 18.0,
+            "check_state": 2,
+            "checked": false,
+            "current_state": 0,
+            "custom_corner_radius": -1.0,
+            "density_override": 99,
+            "disabled": false,
+            "error": false,
+            "indeterminate": true,
+            "is_error": false,
+            "ripple_enabled": true,
+            "shape_token": 0,
+            "text": "Indeterminate",
+            "touch_target_min_size": {
+              "x": 48.0,
+              "y": 48.0
+            },
+            "tristate": true
+          },
+          "transforms": {
+            "position": {
+              "x": 460.0,
+              "y": 80.0
+            },
+            "global_position": {
+              "x": 460.0,
+              "y": 80.0
+            },
+            "size": {
+              "x": 154.0,
+              "y": 48.0
+            },
+            "custom_minimum_size": {
+              "x": 154.0,
+              "y": 48.0
+            },
+            "rotation_deg": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "anchors": {
+              "left": 0.0,
+              "top": 0.0,
+              "right": 0.0,
+              "bottom": 0.0
+            },
+            "offsets": {
+              "left": 460.0,
+              "top": 80.0,
+              "right": 614.0,
+              "bottom": 128.0
+            },
+            "size_flags_horizontal": 1,
+            "size_flags_vertical": 1
+          },
+          "visibility": {
+            "visible": true,
+            "visible_in_tree": true,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "top_level": false,
+            "show_behind_parent": false,
+            "clip_children": 0,
+            "light_mask": 1,
+            "visibility_layer": 1,
+            "z_index": 0,
+            "z_as_relative": true,
+            "y_sort_enabled": false
+          },
+          "physics": {},
+          "ui_and_content": {
+            "focus_mode": 2,
+            "mouse_filter": 0,
+            "tooltip_text": ""
+          },
+          "signals": [
+            {
+              "signal": "child_order_changed",
+              "target": "/root/@Node@304/GSSStageViewport",
+              "method": "Viewport::canvas_parent_mark_dirty"
+            },
+            {
+              "signal": "item_rect_changed",
+              "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxIndeterminate/M3Ripple",
+              "method": "Control::_size_changed"
+            },
+            {
+              "signal": "resized",
+              "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxIndeterminate",
+              "method": "_on_resized"
+            },
+            {
+              "signal": "mouse_entered",
+              "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxIndeterminate",
+              "method": "_on_mouse_entered"
+            },
+            {
+              "signal": "mouse_exited",
+              "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxIndeterminate",
+              "method": "_on_mouse_exited"
+            },
+            {
+              "signal": "focus_entered",
+              "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxIndeterminate",
+              "method": "_on_focus_entered"
+            },
+            {
+              "signal": "focus_exited",
+              "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxIndeterminate",
+              "method": "_on_focus_exited"
+            }
+          ],
+          "all_properties": {
+            "accessibility_controls_nodes": [],
+            "accessibility_described_by_nodes": [],
+            "accessibility_description": "",
+            "accessibility_flow_to_nodes": [],
+            "accessibility_labeled_by_nodes": [],
+            "accessibility_live": 0,
+            "accessibility_name": "",
+            "anchor_bottom": 0.0,
+            "anchor_left": 0.0,
+            "anchor_right": 0.0,
+            "anchor_top": 0.0,
+            "anchors_preset": 0,
+            "auto_translate_mode": 0,
+            "box_size": 18.0,
+            "check_state": 2,
+            "checked": false,
+            "clip_children": 0,
+            "clip_contents": false,
+            "current_state": 0,
+            "custom_corner_radius": -1.0,
+            "custom_maximum_size": {
+              "x": -1.0,
+              "y": -1.0
+            },
+            "custom_minimum_size": {
+              "x": 154.0,
+              "y": 48.0
+            },
+            "density_override": 99,
+            "disabled": false,
+            "editor_description": "",
+            "error": false,
+            "focus_behavior_recursive": 0,
+            "focus_mode": 2,
+            "focus_neighbor_bottom": "",
+            "focus_neighbor_left": "",
+            "focus_neighbor_right": "",
+            "focus_neighbor_top": "",
+            "focus_next": "",
+            "focus_previous": "",
+            "grow_horizontal": 1,
+            "grow_vertical": 1,
+            "indeterminate": true,
+            "is_error": false,
+            "layout_direction": 0,
+            "layout_mode": 0,
+            "light_mask": 1,
+            "localize_numeral_system": true,
+            "material": null,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "mouse_behavior_recursive": 0,
+            "mouse_default_cursor_shape": 2,
+            "mouse_filter": 0,
+            "mouse_force_pass_scroll_events": true,
+            "offset_bottom": 128.0,
+            "offset_left": 460.0,
+            "offset_right": 614.0,
+            "offset_top": 80.0,
+            "offset_transform_enabled": false,
+            "offset_transform_pivot": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_pivot_ratio": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "offset_transform_position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_position_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_rotation": 0.0,
+            "offset_transform_scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "offset_transform_visual_only": true,
+            "oversampling_with_scale": 0,
+            "physics_interpolation_mode": 2,
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "pivot_offset_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "position": {
+              "x": 460.0,
+              "y": 80.0
+            },
+            "process_mode": 0,
+            "process_physics_priority": 0,
+            "process_priority": 0,
+            "process_thread_group": 0,
+            "propagate_maximum_size": false,
+            "ripple_enabled": true,
+            "rotation": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "shape_token": 0,
+            "shortcut_context": null,
+            "show_behind_parent": false,
+            "size": {
+              "x": 154.0,
+              "y": 48.0
+            },
+            "size_flags_horizontal": 1,
+            "size_flags_stretch_ratio": 1.0,
+            "size_flags_vertical": 1,
+            "text": "Indeterminate",
+            "texture_filter": 0,
+            "texture_repeat": 0,
+            "theme": null,
+            "theme_type_variation": "",
+            "tooltip_auto_translate_mode": 0,
+            "tooltip_text": "",
+            "top_level": false,
+            "touch_target_min_size": {
+              "x": 48.0,
+              "y": 48.0
+            },
+            "translation_context": "",
+            "tristate": true,
+            "unique_name_in_owner": false,
+            "use_parent_material": false,
+            "visibility_layer": 1,
+            "visible": true,
+            "y_sort_enabled": false,
+            "z_as_relative": true,
+            "z_index": 0
+          },
+          "children": []
+        },
+        {
+          "id": "node_4",
+          "parent_id": "node_0",
+          "name": "CheckboxError",
+          "class": "Control",
+          "category": "control",
+          "path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxError",
+          "depth": 1,
+          "index_in_parent": 3,
+          "children_count": 0,
+          "groups": [],
+          "script": "res://addons/material3/components/selection/m3_checkbox.gd",
+          "process_mode": 0,
+          "visible": true,
+          "screen_rect": {
+            "x": 680.0,
+            "y": 80.0,
+            "width": 91.0,
+            "height": 48.0,
+            "has_bounds": true,
+            "on_screen": true
+          },
+          "script_variables": {
+            "_anim_progress": 1.0,
+            "_anim_tween": null,
+            "_font": "<FontFile>",
+            "_font_size": 14,
+            "_is_pointer_down": false,
+            "_pointer_inside": false,
+            "_ripple": "<Node:M3Ripple (Control)>",
+            "_ripple_wave_alpha": 0.0,
+            "_ripple_wave_count": 0,
+            "_ripple_wave_radius": 0.0,
+            "_state_layer_alpha": 0.0,
+            "_theme_connected": true,
+            "box_size": 18.0,
+            "check_state": 1,
+            "checked": true,
+            "current_state": 0,
+            "custom_corner_radius": -1.0,
+            "density_override": 99,
+            "disabled": false,
+            "error": true,
+            "indeterminate": false,
+            "is_error": true,
+            "ripple_enabled": true,
+            "shape_token": 0,
+            "text": "Error",
+            "touch_target_min_size": {
+              "x": 48.0,
+              "y": 48.0
+            },
+            "tristate": false
+          },
+          "transforms": {
+            "position": {
+              "x": 680.0,
+              "y": 80.0
+            },
+            "global_position": {
+              "x": 680.0,
+              "y": 80.0
+            },
+            "size": {
+              "x": 91.0,
+              "y": 48.0
+            },
+            "custom_minimum_size": {
+              "x": 91.0,
+              "y": 48.0
+            },
+            "rotation_deg": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "anchors": {
+              "left": 0.0,
+              "top": 0.0,
+              "right": 0.0,
+              "bottom": 0.0
+            },
+            "offsets": {
+              "left": 680.0,
+              "top": 80.0,
+              "right": 771.0,
+              "bottom": 128.0
+            },
+            "size_flags_horizontal": 1,
+            "size_flags_vertical": 1
+          },
+          "visibility": {
+            "visible": true,
+            "visible_in_tree": true,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "top_level": false,
+            "show_behind_parent": false,
+            "clip_children": 0,
+            "light_mask": 1,
+            "visibility_layer": 1,
+            "z_index": 0,
+            "z_as_relative": true,
+            "y_sort_enabled": false
+          },
+          "physics": {},
+          "ui_and_content": {
+            "focus_mode": 2,
+            "mouse_filter": 0,
+            "tooltip_text": ""
+          },
+          "signals": [
+            {
+              "signal": "child_order_changed",
+              "target": "/root/@Node@304/GSSStageViewport",
+              "method": "Viewport::canvas_parent_mark_dirty"
+            },
+            {
+              "signal": "item_rect_changed",
+              "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxError/M3Ripple",
+              "method": "Control::_size_changed"
+            },
+            {
+              "signal": "resized",
+              "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxError",
+              "method": "_on_resized"
+            },
+            {
+              "signal": "mouse_entered",
+              "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxError",
+              "method": "_on_mouse_entered"
+            },
+            {
+              "signal": "mouse_exited",
+              "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxError",
+              "method": "_on_mouse_exited"
+            },
+            {
+              "signal": "focus_entered",
+              "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxError",
+              "method": "_on_focus_entered"
+            },
+            {
+              "signal": "focus_exited",
+              "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxError",
+              "method": "_on_focus_exited"
+            }
+          ],
+          "all_properties": {
+            "accessibility_controls_nodes": [],
+            "accessibility_described_by_nodes": [],
+            "accessibility_description": "",
+            "accessibility_flow_to_nodes": [],
+            "accessibility_labeled_by_nodes": [],
+            "accessibility_live": 0,
+            "accessibility_name": "",
+            "anchor_bottom": 0.0,
+            "anchor_left": 0.0,
+            "anchor_right": 0.0,
+            "anchor_top": 0.0,
+            "anchors_preset": 0,
+            "auto_translate_mode": 0,
+            "box_size": 18.0,
+            "check_state": 1,
+            "checked": true,
+            "clip_children": 0,
+            "clip_contents": false,
+            "current_state": 0,
+            "custom_corner_radius": -1.0,
+            "custom_maximum_size": {
+              "x": -1.0,
+              "y": -1.0
+            },
+            "custom_minimum_size": {
+              "x": 91.0,
+              "y": 48.0
+            },
+            "density_override": 99,
+            "disabled": false,
+            "editor_description": "",
+            "error": true,
+            "focus_behavior_recursive": 0,
+            "focus_mode": 2,
+            "focus_neighbor_bottom": "",
+            "focus_neighbor_left": "",
+            "focus_neighbor_right": "",
+            "focus_neighbor_top": "",
+            "focus_next": "",
+            "focus_previous": "",
+            "grow_horizontal": 1,
+            "grow_vertical": 1,
+            "indeterminate": false,
+            "is_error": true,
+            "layout_direction": 0,
+            "layout_mode": 0,
+            "light_mask": 1,
+            "localize_numeral_system": true,
+            "material": null,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "mouse_behavior_recursive": 0,
+            "mouse_default_cursor_shape": 2,
+            "mouse_filter": 0,
+            "mouse_force_pass_scroll_events": true,
+            "offset_bottom": 128.0,
+            "offset_left": 680.0,
+            "offset_right": 771.0,
+            "offset_top": 80.0,
+            "offset_transform_enabled": false,
+            "offset_transform_pivot": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_pivot_ratio": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "offset_transform_position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_position_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_rotation": 0.0,
+            "offset_transform_scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "offset_transform_visual_only": true,
+            "oversampling_with_scale": 0,
+            "physics_interpolation_mode": 2,
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "pivot_offset_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "position": {
+              "x": 680.0,
+              "y": 80.0
+            },
+            "process_mode": 0,
+            "process_physics_priority": 0,
+            "process_priority": 0,
+            "process_thread_group": 0,
+            "propagate_maximum_size": false,
+            "ripple_enabled": true,
+            "rotation": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "shape_token": 0,
+            "shortcut_context": null,
+            "show_behind_parent": false,
+            "size": {
+              "x": 91.0,
+              "y": 48.0
+            },
+            "size_flags_horizontal": 1,
+            "size_flags_stretch_ratio": 1.0,
+            "size_flags_vertical": 1,
+            "text": "Error",
+            "texture_filter": 0,
+            "texture_repeat": 0,
+            "theme": null,
+            "theme_type_variation": "",
+            "tooltip_auto_translate_mode": 0,
+            "tooltip_text": "",
+            "top_level": false,
+            "touch_target_min_size": {
+              "x": 48.0,
+              "y": 48.0
+            },
+            "translation_context": "",
+            "tristate": false,
+            "unique_name_in_owner": false,
+            "use_parent_material": false,
+            "visibility_layer": 1,
+            "visible": true,
+            "y_sort_enabled": false,
+            "z_as_relative": true,
+            "z_index": 0
+          },
+          "children": []
+        },
+        {
+          "id": "node_5",
+          "parent_id": "node_0",
+          "name": "CheckboxDisabled",
+          "class": "Control",
+          "category": "control",
+          "path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxDisabled",
+          "depth": 1,
+          "index_in_parent": 4,
+          "children_count": 0,
+          "groups": [],
+          "script": "res://addons/material3/components/selection/m3_checkbox.gd",
+          "process_mode": 0,
+          "visible": true,
+          "screen_rect": {
+            "x": 860.0,
+            "y": 80.0,
+            "width": 115.0,
+            "height": 48.0,
+            "has_bounds": true,
+            "on_screen": true
+          },
+          "script_variables": {
+            "_anim_progress": 1.0,
+            "_anim_tween": null,
+            "_font": "<FontFile>",
+            "_font_size": 14,
+            "_is_pointer_down": false,
+            "_pointer_inside": false,
+            "_ripple": "<Node:M3Ripple (Control)>",
+            "_ripple_wave_alpha": 0.0,
+            "_ripple_wave_count": 0,
+            "_ripple_wave_radius": 0.0,
+            "_state_layer_alpha": 0.0,
+            "_theme_connected": true,
+            "box_size": 18.0,
+            "check_state": 1,
+            "checked": true,
+            "current_state": 4,
+            "custom_corner_radius": -1.0,
+            "density_override": 99,
+            "disabled": true,
+            "error": false,
+            "indeterminate": false,
+            "is_error": false,
+            "ripple_enabled": true,
+            "shape_token": 0,
+            "text": "Disabled",
+            "touch_target_min_size": {
+              "x": 48.0,
+              "y": 48.0
+            },
+            "tristate": false
+          },
+          "transforms": {
+            "position": {
+              "x": 860.0,
+              "y": 80.0
+            },
+            "global_position": {
+              "x": 860.0,
+              "y": 80.0
+            },
+            "size": {
+              "x": 115.0,
+              "y": 48.0
+            },
+            "custom_minimum_size": {
+              "x": 115.0,
+              "y": 48.0
+            },
+            "rotation_deg": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "anchors": {
+              "left": 0.0,
+              "top": 0.0,
+              "right": 0.0,
+              "bottom": 0.0
+            },
+            "offsets": {
+              "left": 860.0,
+              "top": 80.0,
+              "right": 975.0,
+              "bottom": 128.0
+            },
+            "size_flags_horizontal": 1,
+            "size_flags_vertical": 1
+          },
+          "visibility": {
+            "visible": true,
+            "visible_in_tree": true,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "top_level": false,
+            "show_behind_parent": false,
+            "clip_children": 0,
+            "light_mask": 1,
+            "visibility_layer": 1,
+            "z_index": 0,
+            "z_as_relative": true,
+            "y_sort_enabled": false
+          },
+          "physics": {},
+          "ui_and_content": {
+            "focus_mode": 2,
+            "mouse_filter": 0,
+            "tooltip_text": ""
+          },
+          "signals": [
+            {
+              "signal": "child_order_changed",
+              "target": "/root/@Node@304/GSSStageViewport",
+              "method": "Viewport::canvas_parent_mark_dirty"
+            },
+            {
+              "signal": "item_rect_changed",
+              "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxDisabled/M3Ripple",
+              "method": "Control::_size_changed"
+            },
+            {
+              "signal": "resized",
+              "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxDisabled",
+              "method": "_on_resized"
+            },
+            {
+              "signal": "mouse_entered",
+              "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxDisabled",
+              "method": "_on_mouse_entered"
+            },
+            {
+              "signal": "mouse_exited",
+              "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxDisabled",
+              "method": "_on_mouse_exited"
+            },
+            {
+              "signal": "focus_entered",
+              "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxDisabled",
+              "method": "_on_focus_entered"
+            },
+            {
+              "signal": "focus_exited",
+              "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxDisabled",
+              "method": "_on_focus_exited"
+            }
+          ],
+          "all_properties": {
+            "accessibility_controls_nodes": [],
+            "accessibility_described_by_nodes": [],
+            "accessibility_description": "",
+            "accessibility_flow_to_nodes": [],
+            "accessibility_labeled_by_nodes": [],
+            "accessibility_live": 0,
+            "accessibility_name": "",
+            "anchor_bottom": 0.0,
+            "anchor_left": 0.0,
+            "anchor_right": 0.0,
+            "anchor_top": 0.0,
+            "anchors_preset": 0,
+            "auto_translate_mode": 0,
+            "box_size": 18.0,
+            "check_state": 1,
+            "checked": true,
+            "clip_children": 0,
+            "clip_contents": false,
+            "current_state": 4,
+            "custom_corner_radius": -1.0,
+            "custom_maximum_size": {
+              "x": -1.0,
+              "y": -1.0
+            },
+            "custom_minimum_size": {
+              "x": 115.0,
+              "y": 48.0
+            },
+            "density_override": 99,
+            "disabled": true,
+            "editor_description": "",
+            "error": false,
+            "focus_behavior_recursive": 0,
+            "focus_mode": 2,
+            "focus_neighbor_bottom": "",
+            "focus_neighbor_left": "",
+            "focus_neighbor_right": "",
+            "focus_neighbor_top": "",
+            "focus_next": "",
+            "focus_previous": "",
+            "grow_horizontal": 1,
+            "grow_vertical": 1,
+            "indeterminate": false,
+            "is_error": false,
+            "layout_direction": 0,
+            "layout_mode": 0,
+            "light_mask": 1,
+            "localize_numeral_system": true,
+            "material": null,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "mouse_behavior_recursive": 0,
+            "mouse_default_cursor_shape": 8,
+            "mouse_filter": 0,
+            "mouse_force_pass_scroll_events": true,
+            "offset_bottom": 128.0,
+            "offset_left": 860.0,
+            "offset_right": 975.0,
+            "offset_top": 80.0,
+            "offset_transform_enabled": false,
+            "offset_transform_pivot": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_pivot_ratio": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "offset_transform_position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_position_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_rotation": 0.0,
+            "offset_transform_scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "offset_transform_visual_only": true,
+            "oversampling_with_scale": 0,
+            "physics_interpolation_mode": 2,
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "pivot_offset_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "position": {
+              "x": 860.0,
+              "y": 80.0
+            },
+            "process_mode": 0,
+            "process_physics_priority": 0,
+            "process_priority": 0,
+            "process_thread_group": 0,
+            "propagate_maximum_size": false,
+            "ripple_enabled": true,
+            "rotation": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "shape_token": 0,
+            "shortcut_context": null,
+            "show_behind_parent": false,
+            "size": {
+              "x": 115.0,
+              "y": 48.0
+            },
+            "size_flags_horizontal": 1,
+            "size_flags_stretch_ratio": 1.0,
+            "size_flags_vertical": 1,
+            "text": "Disabled",
+            "texture_filter": 0,
+            "texture_repeat": 0,
+            "theme": null,
+            "theme_type_variation": "",
+            "tooltip_auto_translate_mode": 0,
+            "tooltip_text": "",
+            "top_level": false,
+            "touch_target_min_size": {
+              "x": 48.0,
+              "y": 48.0
+            },
+            "translation_context": "",
+            "tristate": false,
+            "unique_name_in_owner": false,
+            "use_parent_material": false,
+            "visibility_layer": 1,
+            "visible": true,
+            "y_sort_enabled": false,
+            "z_as_relative": true,
+            "z_index": 0
+          },
+          "children": []
+        }
+      ]
+    },
+    "flat_nodes": [
+      {
+        "id": "node_0",
+        "parent_id": "",
+        "name": "CheckboxVariants",
+        "class": "ColorRect",
+        "category": "control",
+        "path": "/root/@Node@304/GSSStageViewport/CheckboxVariants",
+        "depth": 0,
+        "index_in_parent": 0,
+        "children_count": 5,
+        "groups": [],
+        "script": "",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 1280.0,
+          "height": 720.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {},
+        "transforms": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "global_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "size": {
+            "x": 1280.0,
+            "y": 720.0
+          },
+          "custom_minimum_size": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 1280.0,
+            "bottom": 720.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 0,
+          "mouse_filter": 2,
+          "tooltip_text": "",
+          "color": {
+            "r": 0.9788,
+            "g": 0.9745,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#faf9ffff"
+          }
+        },
+        "signals": [
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@304/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxChecked",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxIndeterminate",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxError",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxDisabled",
+            "method": "Control::_size_changed"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "clip_children": 0,
+          "clip_contents": false,
+          "color": {
+            "r": 0.9788,
+            "g": 0.9745,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#faf9ffff"
+          },
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "editor_description": "",
+          "focus_behavior_recursive": 0,
+          "focus_mode": 0,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "layout_direction": 0,
+          "layout_mode": 3,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 0,
+          "mouse_filter": 2,
+          "mouse_force_pass_scroll_events": true,
+          "offset_bottom": 720.0,
+          "offset_left": 0.0,
+          "offset_right": 1280.0,
+          "offset_top": 0.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "size": {
+            "x": 1280.0,
+            "y": 720.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "visibility_layer": 1,
+          "visible": true,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        }
+      },
+      {
+        "id": "node_1",
+        "parent_id": "node_0",
+        "name": "CheckboxUnchecked",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "depth": 1,
+        "index_in_parent": 0,
+        "children_count": 0,
+        "groups": [],
+        "script": "res://addons/material3/components/selection/m3_checkbox.gd",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 60.0,
+          "y": 80.0,
+          "width": 131.0,
+          "height": 48.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {
+          "_anim_progress": 0.0,
+          "_anim_tween": null,
+          "_font": "<FontFile>",
+          "_font_size": 14,
+          "_is_pointer_down": false,
+          "_pointer_inside": false,
+          "_ripple": "<Node:M3Ripple (Control)>",
+          "_ripple_wave_alpha": 0.0,
+          "_ripple_wave_count": 0,
+          "_ripple_wave_radius": 0.0,
+          "_state_layer_alpha": 0.0,
+          "_theme_connected": true,
+          "box_size": 18.0,
+          "check_state": 0,
+          "checked": false,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "density_override": 99,
+          "disabled": false,
+          "error": false,
+          "indeterminate": false,
+          "is_error": false,
+          "ripple_enabled": true,
+          "shape_token": 0,
+          "text": "Unchecked",
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "tristate": false
+        },
+        "transforms": {
+          "position": {
+            "x": 60.0,
+            "y": 80.0
+          },
+          "global_position": {
+            "x": 60.0,
+            "y": 80.0
+          },
+          "size": {
+            "x": 131.0,
+            "y": 48.0
+          },
+          "custom_minimum_size": {
+            "x": 131.0,
+            "y": 48.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 60.0,
+            "top": 80.0,
+            "right": 191.0,
+            "bottom": 128.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 2,
+          "mouse_filter": 0,
+          "tooltip_text": ""
+        },
+        "signals": [
+          {
+            "signal": "toggled",
+            "target": "<GDScript>",
+            "method": "<anonymous lambda>"
+          },
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@304/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked/M3Ripple",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "resized",
+            "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+            "method": "_on_resized"
+          },
+          {
+            "signal": "mouse_entered",
+            "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+            "method": "_on_mouse_entered"
+          },
+          {
+            "signal": "mouse_exited",
+            "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+            "method": "_on_mouse_exited"
+          },
+          {
+            "signal": "focus_entered",
+            "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+            "method": "_on_focus_entered"
+          },
+          {
+            "signal": "focus_exited",
+            "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+            "method": "_on_focus_exited"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "box_size": 18.0,
+          "check_state": 0,
+          "checked": false,
+          "clip_children": 0,
+          "clip_contents": false,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 131.0,
+            "y": 48.0
+          },
+          "density_override": 99,
+          "disabled": false,
+          "editor_description": "",
+          "error": false,
+          "focus_behavior_recursive": 0,
+          "focus_mode": 2,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "indeterminate": false,
+          "is_error": false,
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 2,
+          "mouse_filter": 0,
+          "mouse_force_pass_scroll_events": true,
+          "offset_bottom": 128.0,
+          "offset_left": 60.0,
+          "offset_right": 191.0,
+          "offset_top": 80.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "position": {
+            "x": 60.0,
+            "y": 80.0
+          },
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "ripple_enabled": true,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shape_token": 0,
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "size": {
+            "x": 131.0,
+            "y": 48.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "text": "Unchecked",
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "translation_context": "",
+          "tristate": false,
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "visibility_layer": 1,
+          "visible": true,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        }
+      },
+      {
+        "id": "node_2",
+        "parent_id": "node_0",
+        "name": "CheckboxChecked",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxChecked",
+        "depth": 1,
+        "index_in_parent": 1,
+        "children_count": 0,
+        "groups": [],
+        "script": "res://addons/material3/components/selection/m3_checkbox.gd",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 260.0,
+          "y": 80.0,
+          "width": 114.0,
+          "height": 48.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {
+          "_anim_progress": 1.0,
+          "_anim_tween": null,
+          "_font": "<FontFile>",
+          "_font_size": 14,
+          "_is_pointer_down": false,
+          "_pointer_inside": false,
+          "_ripple": "<Node:M3Ripple (Control)>",
+          "_ripple_wave_alpha": 0.0,
+          "_ripple_wave_count": 0,
+          "_ripple_wave_radius": 0.0,
+          "_state_layer_alpha": 0.0,
+          "_theme_connected": true,
+          "box_size": 18.0,
+          "check_state": 1,
+          "checked": true,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "density_override": 99,
+          "disabled": false,
+          "error": false,
+          "indeterminate": false,
+          "is_error": false,
+          "ripple_enabled": true,
+          "shape_token": 0,
+          "text": "Checked",
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "tristate": false
+        },
+        "transforms": {
+          "position": {
+            "x": 260.0,
+            "y": 80.0
+          },
+          "global_position": {
+            "x": 260.0,
+            "y": 80.0
+          },
+          "size": {
+            "x": 114.0,
+            "y": 48.0
+          },
+          "custom_minimum_size": {
+            "x": 114.0,
+            "y": 48.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 260.0,
+            "top": 80.0,
+            "right": 374.0,
+            "bottom": 128.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 2,
+          "mouse_filter": 0,
+          "tooltip_text": ""
+        },
+        "signals": [
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@304/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxChecked/M3Ripple",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "resized",
+            "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxChecked",
+            "method": "_on_resized"
+          },
+          {
+            "signal": "mouse_entered",
+            "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxChecked",
+            "method": "_on_mouse_entered"
+          },
+          {
+            "signal": "mouse_exited",
+            "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxChecked",
+            "method": "_on_mouse_exited"
+          },
+          {
+            "signal": "focus_entered",
+            "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxChecked",
+            "method": "_on_focus_entered"
+          },
+          {
+            "signal": "focus_exited",
+            "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxChecked",
+            "method": "_on_focus_exited"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "box_size": 18.0,
+          "check_state": 1,
+          "checked": true,
+          "clip_children": 0,
+          "clip_contents": false,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 114.0,
+            "y": 48.0
+          },
+          "density_override": 99,
+          "disabled": false,
+          "editor_description": "",
+          "error": false,
+          "focus_behavior_recursive": 0,
+          "focus_mode": 2,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "indeterminate": false,
+          "is_error": false,
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 2,
+          "mouse_filter": 0,
+          "mouse_force_pass_scroll_events": true,
+          "offset_bottom": 128.0,
+          "offset_left": 260.0,
+          "offset_right": 374.0,
+          "offset_top": 80.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "position": {
+            "x": 260.0,
+            "y": 80.0
+          },
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "ripple_enabled": true,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shape_token": 0,
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "size": {
+            "x": 114.0,
+            "y": 48.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "text": "Checked",
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "translation_context": "",
+          "tristate": false,
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "visibility_layer": 1,
+          "visible": true,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        }
+      },
+      {
+        "id": "node_3",
+        "parent_id": "node_0",
+        "name": "CheckboxIndeterminate",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxIndeterminate",
+        "depth": 1,
+        "index_in_parent": 2,
+        "children_count": 0,
+        "groups": [],
+        "script": "res://addons/material3/components/selection/m3_checkbox.gd",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 460.0,
+          "y": 80.0,
+          "width": 154.0,
+          "height": 48.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {
+          "_anim_progress": 1.0,
+          "_anim_tween": null,
+          "_font": "<FontFile>",
+          "_font_size": 14,
+          "_is_pointer_down": false,
+          "_pointer_inside": false,
+          "_ripple": "<Node:M3Ripple (Control)>",
+          "_ripple_wave_alpha": 0.0,
+          "_ripple_wave_count": 0,
+          "_ripple_wave_radius": 0.0,
+          "_state_layer_alpha": 0.0,
+          "_theme_connected": true,
+          "box_size": 18.0,
+          "check_state": 2,
+          "checked": false,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "density_override": 99,
+          "disabled": false,
+          "error": false,
+          "indeterminate": true,
+          "is_error": false,
+          "ripple_enabled": true,
+          "shape_token": 0,
+          "text": "Indeterminate",
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "tristate": true
+        },
+        "transforms": {
+          "position": {
+            "x": 460.0,
+            "y": 80.0
+          },
+          "global_position": {
+            "x": 460.0,
+            "y": 80.0
+          },
+          "size": {
+            "x": 154.0,
+            "y": 48.0
+          },
+          "custom_minimum_size": {
+            "x": 154.0,
+            "y": 48.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 460.0,
+            "top": 80.0,
+            "right": 614.0,
+            "bottom": 128.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 2,
+          "mouse_filter": 0,
+          "tooltip_text": ""
+        },
+        "signals": [
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@304/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxIndeterminate/M3Ripple",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "resized",
+            "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxIndeterminate",
+            "method": "_on_resized"
+          },
+          {
+            "signal": "mouse_entered",
+            "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxIndeterminate",
+            "method": "_on_mouse_entered"
+          },
+          {
+            "signal": "mouse_exited",
+            "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxIndeterminate",
+            "method": "_on_mouse_exited"
+          },
+          {
+            "signal": "focus_entered",
+            "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxIndeterminate",
+            "method": "_on_focus_entered"
+          },
+          {
+            "signal": "focus_exited",
+            "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxIndeterminate",
+            "method": "_on_focus_exited"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "box_size": 18.0,
+          "check_state": 2,
+          "checked": false,
+          "clip_children": 0,
+          "clip_contents": false,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 154.0,
+            "y": 48.0
+          },
+          "density_override": 99,
+          "disabled": false,
+          "editor_description": "",
+          "error": false,
+          "focus_behavior_recursive": 0,
+          "focus_mode": 2,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "indeterminate": true,
+          "is_error": false,
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 2,
+          "mouse_filter": 0,
+          "mouse_force_pass_scroll_events": true,
+          "offset_bottom": 128.0,
+          "offset_left": 460.0,
+          "offset_right": 614.0,
+          "offset_top": 80.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "position": {
+            "x": 460.0,
+            "y": 80.0
+          },
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "ripple_enabled": true,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shape_token": 0,
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "size": {
+            "x": 154.0,
+            "y": 48.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "text": "Indeterminate",
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "translation_context": "",
+          "tristate": true,
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "visibility_layer": 1,
+          "visible": true,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        }
+      },
+      {
+        "id": "node_4",
+        "parent_id": "node_0",
+        "name": "CheckboxError",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxError",
+        "depth": 1,
+        "index_in_parent": 3,
+        "children_count": 0,
+        "groups": [],
+        "script": "res://addons/material3/components/selection/m3_checkbox.gd",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 680.0,
+          "y": 80.0,
+          "width": 91.0,
+          "height": 48.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {
+          "_anim_progress": 1.0,
+          "_anim_tween": null,
+          "_font": "<FontFile>",
+          "_font_size": 14,
+          "_is_pointer_down": false,
+          "_pointer_inside": false,
+          "_ripple": "<Node:M3Ripple (Control)>",
+          "_ripple_wave_alpha": 0.0,
+          "_ripple_wave_count": 0,
+          "_ripple_wave_radius": 0.0,
+          "_state_layer_alpha": 0.0,
+          "_theme_connected": true,
+          "box_size": 18.0,
+          "check_state": 1,
+          "checked": true,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "density_override": 99,
+          "disabled": false,
+          "error": true,
+          "indeterminate": false,
+          "is_error": true,
+          "ripple_enabled": true,
+          "shape_token": 0,
+          "text": "Error",
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "tristate": false
+        },
+        "transforms": {
+          "position": {
+            "x": 680.0,
+            "y": 80.0
+          },
+          "global_position": {
+            "x": 680.0,
+            "y": 80.0
+          },
+          "size": {
+            "x": 91.0,
+            "y": 48.0
+          },
+          "custom_minimum_size": {
+            "x": 91.0,
+            "y": 48.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 680.0,
+            "top": 80.0,
+            "right": 771.0,
+            "bottom": 128.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 2,
+          "mouse_filter": 0,
+          "tooltip_text": ""
+        },
+        "signals": [
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@304/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxError/M3Ripple",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "resized",
+            "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxError",
+            "method": "_on_resized"
+          },
+          {
+            "signal": "mouse_entered",
+            "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxError",
+            "method": "_on_mouse_entered"
+          },
+          {
+            "signal": "mouse_exited",
+            "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxError",
+            "method": "_on_mouse_exited"
+          },
+          {
+            "signal": "focus_entered",
+            "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxError",
+            "method": "_on_focus_entered"
+          },
+          {
+            "signal": "focus_exited",
+            "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxError",
+            "method": "_on_focus_exited"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "box_size": 18.0,
+          "check_state": 1,
+          "checked": true,
+          "clip_children": 0,
+          "clip_contents": false,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 91.0,
+            "y": 48.0
+          },
+          "density_override": 99,
+          "disabled": false,
+          "editor_description": "",
+          "error": true,
+          "focus_behavior_recursive": 0,
+          "focus_mode": 2,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "indeterminate": false,
+          "is_error": true,
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 2,
+          "mouse_filter": 0,
+          "mouse_force_pass_scroll_events": true,
+          "offset_bottom": 128.0,
+          "offset_left": 680.0,
+          "offset_right": 771.0,
+          "offset_top": 80.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "position": {
+            "x": 680.0,
+            "y": 80.0
+          },
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "ripple_enabled": true,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shape_token": 0,
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "size": {
+            "x": 91.0,
+            "y": 48.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "text": "Error",
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "translation_context": "",
+          "tristate": false,
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "visibility_layer": 1,
+          "visible": true,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        }
+      },
+      {
+        "id": "node_5",
+        "parent_id": "node_0",
+        "name": "CheckboxDisabled",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxDisabled",
+        "depth": 1,
+        "index_in_parent": 4,
+        "children_count": 0,
+        "groups": [],
+        "script": "res://addons/material3/components/selection/m3_checkbox.gd",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 860.0,
+          "y": 80.0,
+          "width": 115.0,
+          "height": 48.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {
+          "_anim_progress": 1.0,
+          "_anim_tween": null,
+          "_font": "<FontFile>",
+          "_font_size": 14,
+          "_is_pointer_down": false,
+          "_pointer_inside": false,
+          "_ripple": "<Node:M3Ripple (Control)>",
+          "_ripple_wave_alpha": 0.0,
+          "_ripple_wave_count": 0,
+          "_ripple_wave_radius": 0.0,
+          "_state_layer_alpha": 0.0,
+          "_theme_connected": true,
+          "box_size": 18.0,
+          "check_state": 1,
+          "checked": true,
+          "current_state": 4,
+          "custom_corner_radius": -1.0,
+          "density_override": 99,
+          "disabled": true,
+          "error": false,
+          "indeterminate": false,
+          "is_error": false,
+          "ripple_enabled": true,
+          "shape_token": 0,
+          "text": "Disabled",
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "tristate": false
+        },
+        "transforms": {
+          "position": {
+            "x": 860.0,
+            "y": 80.0
+          },
+          "global_position": {
+            "x": 860.0,
+            "y": 80.0
+          },
+          "size": {
+            "x": 115.0,
+            "y": 48.0
+          },
+          "custom_minimum_size": {
+            "x": 115.0,
+            "y": 48.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 860.0,
+            "top": 80.0,
+            "right": 975.0,
+            "bottom": 128.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 2,
+          "mouse_filter": 0,
+          "tooltip_text": ""
+        },
+        "signals": [
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@304/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxDisabled/M3Ripple",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "resized",
+            "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxDisabled",
+            "method": "_on_resized"
+          },
+          {
+            "signal": "mouse_entered",
+            "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxDisabled",
+            "method": "_on_mouse_entered"
+          },
+          {
+            "signal": "mouse_exited",
+            "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxDisabled",
+            "method": "_on_mouse_exited"
+          },
+          {
+            "signal": "focus_entered",
+            "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxDisabled",
+            "method": "_on_focus_entered"
+          },
+          {
+            "signal": "focus_exited",
+            "target": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxDisabled",
+            "method": "_on_focus_exited"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "box_size": 18.0,
+          "check_state": 1,
+          "checked": true,
+          "clip_children": 0,
+          "clip_contents": false,
+          "current_state": 4,
+          "custom_corner_radius": -1.0,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 115.0,
+            "y": 48.0
+          },
+          "density_override": 99,
+          "disabled": true,
+          "editor_description": "",
+          "error": false,
+          "focus_behavior_recursive": 0,
+          "focus_mode": 2,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "indeterminate": false,
+          "is_error": false,
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 8,
+          "mouse_filter": 0,
+          "mouse_force_pass_scroll_events": true,
+          "offset_bottom": 128.0,
+          "offset_left": 860.0,
+          "offset_right": 975.0,
+          "offset_top": 80.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "position": {
+            "x": 860.0,
+            "y": 80.0
+          },
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "ripple_enabled": true,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shape_token": 0,
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "size": {
+            "x": 115.0,
+            "y": 48.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "text": "Disabled",
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "translation_context": "",
+          "tristate": false,
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "visibility_layer": 1,
+          "visible": true,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        }
+      }
+    ]
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "elapsed_ms": 6,
+      "delta_sec": 0.0182,
+      "process_frame": 3193,
+      "physics_frame": 3624,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked": {
+          "script_variables": {
+            "_is_pointer_down": true,
+            "_pointer_inside": true,
+            "_ripple_wave_alpha": 0.1,
+            "_ripple_wave_count": 1,
+            "current_state": 3
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 2,
+      "elapsed_ms": 18,
+      "delta_sec": 0.0182,
+      "process_frame": 3194,
+      "physics_frame": 3625,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked": {
+          "script_variables": {
+            "_ripple_wave_radius": 18.649,
+            "_state_layer_alpha": 0.0321
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 3,
+      "elapsed_ms": 35,
+      "delta_sec": 0.0182,
+      "process_frame": 3195,
+      "physics_frame": 3627,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked": {
+          "script_variables": {
+            "_ripple_wave_radius": 35.3624,
+            "_state_layer_alpha": 0.0565
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 4,
+      "elapsed_ms": 52,
+      "delta_sec": 0.0182,
+      "process_frame": 3196,
+      "physics_frame": 3628,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked": {
+          "script_variables": {
+            "_ripple_wave_radius": 50.2463,
+            "_state_layer_alpha": 0.0742
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 5,
+      "elapsed_ms": 69,
+      "delta_sec": 0.0182,
+      "process_frame": 3197,
+      "physics_frame": 3629,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked": {
+          "script_variables": {
+            "_anim_tween": "<Tween>",
+            "_is_pointer_down": false,
+            "_ripple_wave_radius": 63.4065,
+            "_state_layer_alpha": 0.0863,
+            "check_state": 1,
+            "checked": true,
+            "current_state": 1
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 6,
+      "elapsed_ms": 85,
+      "delta_sec": 0.0182,
+      "process_frame": 3198,
+      "physics_frame": 3630,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked": {
+          "script_variables": {
+            "_anim_progress": 0.2878,
+            "_ripple_wave_alpha": 0.0797,
+            "_state_layer_alpha": 0.0843
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 7,
+      "elapsed_ms": 102,
+      "delta_sec": 0.0167,
+      "process_frame": 3199,
+      "physics_frame": 3631,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked": {
+          "script_variables": {
+            "_anim_progress": 0.5165,
+            "_ripple_wave_alpha": 0.0624,
+            "_state_layer_alpha": 0.0828
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 8,
+      "elapsed_ms": 119,
+      "delta_sec": 0.0167,
+      "process_frame": 3200,
+      "physics_frame": 3632,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked": {
+          "script_variables": {
+            "_anim_progress": 0.6937,
+            "_ripple_wave_alpha": 0.0489,
+            "_state_layer_alpha": 0.0817
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 9,
+      "elapsed_ms": 135,
+      "delta_sec": 0.0167,
+      "process_frame": 3201,
+      "physics_frame": 3633,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked": {
+          "script_variables": {
+            "_anim_progress": 0.8488,
+            "_ripple_wave_alpha": 0.0375,
+            "_state_layer_alpha": 0.081
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 10,
+      "elapsed_ms": 152,
+      "delta_sec": 0.0168,
+      "process_frame": 3202,
+      "physics_frame": 3634,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked": {
+          "script_variables": {
+            "_anim_progress": 0.9773,
+            "_ripple_wave_alpha": 0.028,
+            "_state_layer_alpha": 0.0805
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 11,
+      "elapsed_ms": 169,
+      "delta_sec": 0.0166,
+      "process_frame": 3203,
+      "physics_frame": 3635,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked": {
+          "script_variables": {
+            "_anim_progress": 1.0625,
+            "_ripple_wave_alpha": 0.0203,
+            "_state_layer_alpha": 0.0802
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 12,
+      "elapsed_ms": 185,
+      "delta_sec": 0.0166,
+      "process_frame": 3204,
+      "physics_frame": 3636,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked": {
+          "script_variables": {
+            "_anim_progress": 1.0823,
+            "_ripple_wave_alpha": 0.0141,
+            "_state_layer_alpha": 0.0801
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 13,
+      "elapsed_ms": 202,
+      "delta_sec": 0.0167,
+      "process_frame": 3205,
+      "physics_frame": 3637,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked": {
+          "script_variables": {
+            "_anim_progress": 1.0366,
+            "_ripple_wave_alpha": 0.0094,
+            "_state_layer_alpha": 0.08
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 14,
+      "elapsed_ms": 219,
+      "delta_sec": 0.0166,
+      "process_frame": 3206,
+      "physics_frame": 3638,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked": {
+          "script_variables": {
+            "_anim_progress": 0.9791,
+            "_ripple_wave_alpha": 0.0058
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 15,
+      "elapsed_ms": 236,
+      "delta_sec": 0.0167,
+      "process_frame": 3207,
+      "physics_frame": 3639,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked": {
+          "script_variables": {
+            "_anim_progress": 0.9842,
+            "_ripple_wave_alpha": 0.0033
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 16,
+      "elapsed_ms": 253,
+      "delta_sec": 0.0167,
+      "process_frame": 3208,
+      "physics_frame": 3640,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked": {
+          "script_variables": {
+            "_anim_progress": 1.0087,
+            "_ripple_wave_alpha": 0.0017
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 17,
+      "elapsed_ms": 269,
+      "delta_sec": 0.0167,
+      "process_frame": 3209,
+      "physics_frame": 3641,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked": {
+          "script_variables": {
+            "_anim_progress": 1.0,
+            "_ripple_wave_alpha": 0.0007
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 18,
+      "elapsed_ms": 286,
+      "delta_sec": 0.0167,
+      "process_frame": 3210,
+      "physics_frame": 3642,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked": {
+          "script_variables": {
+            "_ripple_wave_alpha": 0.0002
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 19,
+      "elapsed_ms": 302,
+      "delta_sec": 0.0167,
+      "process_frame": 3211,
+      "physics_frame": 3643,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked": {
+          "script_variables": {
+            "_ripple_wave_alpha": 0.0
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 20,
+      "elapsed_ms": 319,
+      "delta_sec": 0.0167,
+      "process_frame": 3212,
+      "physics_frame": 3644,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked": {
+          "script_variables": {
+            "_ripple_wave_count": 0,
+            "_ripple_wave_radius": 0.0
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 21,
+      "elapsed_ms": 336,
+      "delta_sec": 0.0167,
+      "process_frame": 3213,
+      "physics_frame": 3645,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 22,
+      "elapsed_ms": 353,
+      "delta_sec": 0.0167,
+      "process_frame": 3214,
+      "physics_frame": 3646,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 23,
+      "elapsed_ms": 369,
+      "delta_sec": 0.0167,
+      "process_frame": 3215,
+      "physics_frame": 3647,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 24,
+      "elapsed_ms": 386,
+      "delta_sec": 0.0167,
+      "process_frame": 3216,
+      "physics_frame": 3648,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 25,
+      "elapsed_ms": 402,
+      "delta_sec": 0.0167,
+      "process_frame": 3217,
+      "physics_frame": 3649,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 26,
+      "elapsed_ms": 419,
+      "delta_sec": 0.0167,
+      "process_frame": 3218,
+      "physics_frame": 3650,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 27,
+      "elapsed_ms": 436,
+      "delta_sec": 0.0167,
+      "process_frame": 3219,
+      "physics_frame": 3651,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 28,
+      "elapsed_ms": 453,
+      "delta_sec": 0.0167,
+      "process_frame": 3220,
+      "physics_frame": 3652,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 29,
+      "elapsed_ms": 470,
+      "delta_sec": 0.0167,
+      "process_frame": 3221,
+      "physics_frame": 3653,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 30,
+      "elapsed_ms": 486,
+      "delta_sec": 0.0167,
+      "process_frame": 3222,
+      "physics_frame": 3654,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 31,
+      "elapsed_ms": 502,
+      "delta_sec": 0.0167,
+      "process_frame": 3223,
+      "physics_frame": 3655,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 32,
+      "elapsed_ms": 519,
+      "delta_sec": 0.0167,
+      "process_frame": 3224,
+      "physics_frame": 3656,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    }
+  ],
+  "analysis": {
+    "summary": {
+      "total_frames": 33,
+      "delta_frames": 32,
+      "duration_ms": 519,
+      "initial_node_count": 6,
+      "active_node_count": 1,
+      "static_node_count": 5,
+      "spawned_node_count": 0,
+      "removed_node_count": 0,
+      "bounces_detected": 0,
+      "floor_contacts_detected": 0,
+      "total_events": 54
+    },
+    "node_trajectories": {
+      "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked": {
+        "name": "CheckboxUnchecked",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "frames_changed": 20,
+        "is_3d": false,
+        "start_position": {
+          "x": 60.0,
+          "y": 80.0
+        },
+        "end_position": {
+          "x": 60.0,
+          "y": 80.0
+        },
+        "min_position": {
+          "x": 60.0,
+          "y": 80.0
+        },
+        "max_position": {
+          "x": 60.0,
+          "y": 80.0
+        },
+        "total_distance": 0.0,
+        "peak_speed": 0.0,
+        "peak_speed_frame": 0,
+        "bounce_frames": [],
+        "bounces": [],
+        "screen_trail": [
+          {
+            "x": 125.5,
+            "y": 104.0
+          }
+        ],
+        "mutated_properties": {
+          "script_variables._is_pointer_down": {
+            "initial": false,
+            "final": false,
+            "change_count": 2
+          },
+          "script_variables._pointer_inside": {
+            "initial": false,
+            "final": true,
+            "change_count": 1
+          },
+          "script_variables._ripple_wave_alpha": {
+            "initial": 0.0,
+            "final": 0.0,
+            "change_count": 15
+          },
+          "script_variables._ripple_wave_count": {
+            "initial": 0,
+            "final": 0,
+            "change_count": 2
+          },
+          "script_variables.current_state": {
+            "initial": 0,
+            "final": 1,
+            "change_count": 2
+          },
+          "script_variables._ripple_wave_radius": {
+            "initial": 0.0,
+            "final": 0.0,
+            "change_count": 5
+          },
+          "script_variables._state_layer_alpha": {
+            "initial": 0.0,
+            "final": 0.08,
+            "change_count": 12
+          },
+          "script_variables._anim_tween": {
+            "initial": null,
+            "final": "<Tween>",
+            "change_count": 1
+          },
+          "script_variables.check_state": {
+            "initial": 0,
+            "final": 1,
+            "change_count": 1
+          },
+          "script_variables.checked": {
+            "initial": false,
+            "final": true,
+            "change_count": 1
+          },
+          "script_variables._anim_progress": {
+            "initial": 0.0,
+            "final": 1.0,
+            "change_count": 12
+          }
+        },
+        "displacement": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      }
+    },
+    "events": [
+      {
+        "frame_index": 1,
+        "elapsed_ms": 6,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_is_pointer_down",
+        "old_value": false,
+        "new_value": true
+      },
+      {
+        "frame_index": 1,
+        "elapsed_ms": 6,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_pointer_inside",
+        "old_value": false,
+        "new_value": true
+      },
+      {
+        "frame_index": 1,
+        "elapsed_ms": 6,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0,
+        "new_value": 0.1
+      },
+      {
+        "frame_index": 1,
+        "elapsed_ms": 6,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_ripple_wave_count",
+        "old_value": 0,
+        "new_value": 1
+      },
+      {
+        "frame_index": 1,
+        "elapsed_ms": 6,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "current_state",
+        "old_value": 0,
+        "new_value": 3
+      },
+      {
+        "frame_index": 2,
+        "elapsed_ms": 18,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_ripple_wave_radius",
+        "old_value": 0.0,
+        "new_value": 18.649
+      },
+      {
+        "frame_index": 2,
+        "elapsed_ms": 18,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0,
+        "new_value": 0.0321
+      },
+      {
+        "frame_index": 3,
+        "elapsed_ms": 35,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_ripple_wave_radius",
+        "old_value": 18.649,
+        "new_value": 35.3624
+      },
+      {
+        "frame_index": 3,
+        "elapsed_ms": 35,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0321,
+        "new_value": 0.0565
+      },
+      {
+        "frame_index": 4,
+        "elapsed_ms": 52,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_ripple_wave_radius",
+        "old_value": 35.3624,
+        "new_value": 50.2463
+      },
+      {
+        "frame_index": 4,
+        "elapsed_ms": 52,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0565,
+        "new_value": 0.0742
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 69,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_anim_tween",
+        "old_value": null,
+        "new_value": "<Tween>"
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 69,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_is_pointer_down",
+        "old_value": true,
+        "new_value": false
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 69,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_ripple_wave_radius",
+        "old_value": 50.2463,
+        "new_value": 63.4065
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 69,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0742,
+        "new_value": 0.0863
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 69,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "check_state",
+        "old_value": 0,
+        "new_value": 1
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 69,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "checked",
+        "old_value": false,
+        "new_value": true
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 69,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "current_state",
+        "old_value": 3,
+        "new_value": 1
+      },
+      {
+        "frame_index": 6,
+        "elapsed_ms": 85,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_anim_progress",
+        "old_value": 0.0,
+        "new_value": 0.2878
+      },
+      {
+        "frame_index": 6,
+        "elapsed_ms": 85,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.1,
+        "new_value": 0.0797
+      },
+      {
+        "frame_index": 6,
+        "elapsed_ms": 85,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0863,
+        "new_value": 0.0843
+      },
+      {
+        "frame_index": 7,
+        "elapsed_ms": 102,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_anim_progress",
+        "old_value": 0.2878,
+        "new_value": 0.5165
+      },
+      {
+        "frame_index": 7,
+        "elapsed_ms": 102,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0797,
+        "new_value": 0.0624
+      },
+      {
+        "frame_index": 7,
+        "elapsed_ms": 102,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0843,
+        "new_value": 0.0828
+      },
+      {
+        "frame_index": 8,
+        "elapsed_ms": 119,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_anim_progress",
+        "old_value": 0.5165,
+        "new_value": 0.6937
+      },
+      {
+        "frame_index": 8,
+        "elapsed_ms": 119,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0624,
+        "new_value": 0.0489
+      },
+      {
+        "frame_index": 8,
+        "elapsed_ms": 119,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0828,
+        "new_value": 0.0817
+      },
+      {
+        "frame_index": 9,
+        "elapsed_ms": 135,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_anim_progress",
+        "old_value": 0.6937,
+        "new_value": 0.8488
+      },
+      {
+        "frame_index": 9,
+        "elapsed_ms": 135,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0489,
+        "new_value": 0.0375
+      },
+      {
+        "frame_index": 9,
+        "elapsed_ms": 135,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0817,
+        "new_value": 0.081
+      },
+      {
+        "frame_index": 10,
+        "elapsed_ms": 152,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_anim_progress",
+        "old_value": 0.8488,
+        "new_value": 0.9773
+      },
+      {
+        "frame_index": 10,
+        "elapsed_ms": 152,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0375,
+        "new_value": 0.028
+      },
+      {
+        "frame_index": 10,
+        "elapsed_ms": 152,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_state_layer_alpha",
+        "old_value": 0.081,
+        "new_value": 0.0805
+      },
+      {
+        "frame_index": 11,
+        "elapsed_ms": 169,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_anim_progress",
+        "old_value": 0.9773,
+        "new_value": 1.0625
+      },
+      {
+        "frame_index": 11,
+        "elapsed_ms": 169,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.028,
+        "new_value": 0.0203
+      },
+      {
+        "frame_index": 11,
+        "elapsed_ms": 169,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0805,
+        "new_value": 0.0802
+      },
+      {
+        "frame_index": 12,
+        "elapsed_ms": 185,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_anim_progress",
+        "old_value": 1.0625,
+        "new_value": 1.0823
+      },
+      {
+        "frame_index": 12,
+        "elapsed_ms": 185,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0203,
+        "new_value": 0.0141
+      },
+      {
+        "frame_index": 12,
+        "elapsed_ms": 185,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0802,
+        "new_value": 0.0801
+      },
+      {
+        "frame_index": 13,
+        "elapsed_ms": 202,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_anim_progress",
+        "old_value": 1.0823,
+        "new_value": 1.0366
+      },
+      {
+        "frame_index": 13,
+        "elapsed_ms": 202,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0141,
+        "new_value": 0.0094
+      },
+      {
+        "frame_index": 13,
+        "elapsed_ms": 202,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0801,
+        "new_value": 0.08
+      },
+      {
+        "frame_index": 14,
+        "elapsed_ms": 219,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_anim_progress",
+        "old_value": 1.0366,
+        "new_value": 0.9791
+      },
+      {
+        "frame_index": 14,
+        "elapsed_ms": 219,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0094,
+        "new_value": 0.0058
+      },
+      {
+        "frame_index": 15,
+        "elapsed_ms": 236,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_anim_progress",
+        "old_value": 0.9791,
+        "new_value": 0.9842
+      },
+      {
+        "frame_index": 15,
+        "elapsed_ms": 236,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0058,
+        "new_value": 0.0033
+      },
+      {
+        "frame_index": 16,
+        "elapsed_ms": 253,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_anim_progress",
+        "old_value": 0.9842,
+        "new_value": 1.0087
+      },
+      {
+        "frame_index": 16,
+        "elapsed_ms": 253,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0033,
+        "new_value": 0.0017
+      },
+      {
+        "frame_index": 17,
+        "elapsed_ms": 269,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_anim_progress",
+        "old_value": 1.0087,
+        "new_value": 1.0
+      },
+      {
+        "frame_index": 17,
+        "elapsed_ms": 269,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0017,
+        "new_value": 0.0007
+      },
+      {
+        "frame_index": 18,
+        "elapsed_ms": 286,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0007,
+        "new_value": 0.0002
+      },
+      {
+        "frame_index": 19,
+        "elapsed_ms": 302,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0002,
+        "new_value": 0.0
+      },
+      {
+        "frame_index": 20,
+        "elapsed_ms": 319,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_ripple_wave_count",
+        "old_value": 1,
+        "new_value": 0
+      },
+      {
+        "frame_index": 20,
+        "elapsed_ms": 319,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@304/GSSStageViewport/CheckboxVariants/CheckboxUnchecked",
+        "node_name": "CheckboxUnchecked",
+        "property": "_ripple_wave_radius",
+        "old_value": 63.4065,
+        "new_value": 0.0
+      }
+    ]
+  }
+}

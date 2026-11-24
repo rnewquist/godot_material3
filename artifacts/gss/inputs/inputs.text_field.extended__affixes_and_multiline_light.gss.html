@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GSS — Godot Scene Snapshot — inputs.text_field.extended__affixes_and_multiline_light</title>
+<style>
+:root {
+  color-scheme: dark;
+  --bg-app: #0d1117;
+  --bg-pane: #161b22;
+  --bg-header: #1f2630;
+  --bg-hover: #262e3a;
+  --bg-selected: #1f3a5f;
+  --border: #30363d;
+  --text-main: #e6edf3;
+  --text-muted: #8b949e;
+  --accent: #58a6ff;
+  --cat-control: #29c7f5;
+  --cat-node2d: #3ddc7a;
+  --cat-node3d: #ad73fa;
+  --cat-physics: #fa9433;
+  --cat-other: #9eaec7;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace;
+  background: var(--bg-app);
+  color: var(--text-main);
+  block-size: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  overflow: hidden;
+}
+header.gss-topbar {
+  background: var(--bg-header);
+  border-block-end: 1px solid var(--border);
+  padding: 0.6rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.gss-brand { display: flex; align-items: center; gap: 0.75rem; font-weight: 700; font-size: 0.95rem; }
+.gss-badge { background: #238636; color: #fff; padding: 0.15rem 0.5rem; border-radius: 999px; font-size: 0.75rem; }
+.gss-meta-pills { display: flex; gap: 0.6rem; font-size: 0.8rem; color: var(--text-muted); flex-wrap: wrap; }
+.gss-meta-pill { background: var(--bg-pane); border: 1px solid var(--border); padding: 0.2rem 0.55rem; border-radius: 6px; }
+.gss-workspace {
+  display: grid;
+  grid-template-columns: 320px 1fr 440px;
+  overflow: hidden;
+  block-size: 100%;
+}
+/* Isolate layout/style/paint recalculations per pane (modern-web-guidance: interactions-in-complex-layouts) */
+.gss-pane {
+  background: var(--bg-pane);
+  border-inline-end: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 360px auto 800px;
+}
+@supports not (content-visibility: auto) {
+  .gss-pane { contain: layout style paint; }
+}
+.gss-pane-header {
+  padding: 0.6rem 0.75rem;
+  background: var(--bg-header);
+  border-block-end: 1px solid var(--border);
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+.gss-search {
+  inline-size: 100%;
+  background: var(--bg-app);
+  color: var(--text-main);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 0.38rem 0.6rem;
+  font-size: 0.8rem;
+}
+.gss-tree-list { flex: 1; overflow: auto; padding: 0.4rem 0; font-size: 0.82rem; }
+.gss-tree-row {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.28rem 0.6rem;
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+}
+.gss-tree-row:hover { background: var(--bg-hover); }
+.gss-tree-row.selected { background: var(--bg-selected); outline: 1px solid var(--accent); }
+.gss-tree-row.hidden-node { opacity: 0.45; }
+.gss-cat-dot { inline-size: 8px; block-size: 8px; border-radius: 50%; flex-shrink: 0; }
+.gss-class-tag { color: var(--text-muted); font-size: 0.72rem; margin-inline-start: auto; padding-inline-start: 0.5rem; }
+/* Center Screenshot & 3D Layer Canvas */
+.gss-canvas-pane { background: #090c10; position: relative; display: flex; flex-direction: column; overflow: hidden; }
+.gss-toolbar {
+  padding: 0.5rem 0.75rem;
+  background: var(--bg-header);
+  border-block-end: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  font-size: 0.78rem;
+}
+.gss-btn, .gss-select {
+  background: var(--bg-pane);
+  color: var(--text-main);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 0.28rem 0.55rem;
+  font-size: 0.76rem;
+  cursor: pointer;
+}
+.gss-btn.active { background: var(--bg-selected); border-color: var(--accent); color: var(--accent); }
+.gss-viewport-stage {
+  flex: 1;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  perspective: 1400px;
+}
+.gss-screen-wrapper {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.2s ease;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.65);
+  border: 1px solid var(--border);
+}
+.gss-screenshot-img {
+  display: block;
+  max-inline-size: none;
+  user-select: none;
+  pointer-events: none;
+}
+.gss-overlay-layer {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+}
+.gss-bbox {
+  position: absolute;
+  border: 1.5px solid rgba(88, 166, 255, 0.55);
+  cursor: pointer;
+  transition: background 0.1s ease, border-color 0.1s ease, transform 0.2s ease;
+}
+.gss-bbox:hover { background: rgba(88, 166, 255, 0.18); border-color: #fff; z-index: 20; }
+.gss-bbox.selected {
+  background: rgba(88, 166, 255, 0.26);
+  border: 2px solid #ffea00;
+  box-shadow: 0 0 0 1px #000;
+  z-index: 30;
+}
+.gss-bbox-label {
+  position: absolute;
+  inset-block-start: -18px;
+  inset-inline-start: -1px;
+  background: #ffea00;
+  color: #000;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 1px 5px;
+  border-radius: 3px;
+  white-space: nowrap;
+  pointer-events: none;
+  display: none;
+}
+.gss-bbox.selected .gss-bbox-label, .gss-bbox:hover .gss-bbox-label { display: block; }
+/* Visual Detail Filter Presets */
+.filter-luma { filter: saturate(0) contrast(1.35) brightness(1.05); }
+.filter-detail { filter: contrast(2.2) saturate(0.25) brightness(1.1); }
+.filter-dim { filter: brightness(0.32) saturate(0.3); }
+.filter-invert { filter: invert(1) hue-rotate(180deg) contrast(1.2); }
+/* Right Attributes & Properties Inspector (modern-web-guidance: responsive-table) */
+.gss-props-scroll { flex: 1; overflow-y: auto; padding: 0.65rem; display: flex; flex-direction: column; gap: 0.75rem; }
+.gss-node-summary {
+  background: var(--bg-app);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.65rem;
+  font-size: 0.8rem;
+  display: grid;
+  gap: 0.3rem;
+}
+.gss-section-details {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg-app);
+  overflow: hidden;
+}
+.gss-section-details summary {
+  padding: 0.5rem 0.7rem;
+  background: var(--bg-header);
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+}
+.table-wrapper {
+  overflow: auto;
+  max-inline-size: 100%;
+  max-block-size: min(420px, 70vh);
+  container-type: inline-size;
+}
+table.gss-prop-table {
+  inline-size: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.76rem;
+  --label-2: "Value";
+  --label-3: "Category";
+}
+table.gss-prop-table thead {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 1;
+  background: var(--bg-header);
+}
+table.gss-prop-table th, table.gss-prop-table td {
+  padding: 0.38rem 0.6rem;
+  border-block-end: 1px solid var(--border);
+  text-align: start;
+  vertical-align: top;
+  word-break: break-word;
+}
+table.gss-prop-table tbody th {
+  position: sticky;
+  inset-inline-start: 0;
+  background: var(--bg-app);
+  color: #79c0ff;
+  font-weight: 600;
+  inline-size: 40%;
+}
+table.gss-prop-table tbody td { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+@container (width < 600px) {
+  table.gss-prop-table, table.gss-prop-table thead, table.gss-prop-table tbody, table.gss-prop-table tr, table.gss-prop-table th, table.gss-prop-table td {
+    display: block;
+    inline-size: 100%;
+  }
+  table.gss-prop-table thead { display: none; }
+  table.gss-prop-table tr { margin-block-end: 0.5rem; border: 1px solid var(--border); }
+  table.gss-prop-table tbody th { position: sticky; inset-block-start: 0; z-index: 2; background: var(--bg-header); }
+  table.gss-prop-table td:nth-child(2)::before { content: var(--label-2) ": "; color: var(--text-muted); }
+  table.gss-prop-table td:nth-child(3)::before { content: var(--label-3) ": "; color: var(--text-muted); }
+}
+.gss-swatch { display: inline-block; inline-size: 11px; block-size: 11px; border-radius: 2px; border: 1px solid #fff; vertical-align: middle; margin-inline-end: 5px; }
+</style>
+</head>
+<body>
+<header class="gss-topbar">
+  <div class="gss-brand">
+    <span>🔬 GSS — Godot Scene Snapshot Inspector</span>
+    <span class="gss-badge" id="hdr-snap-name">inputs.text_field.extended__affixes_and_multiline_light</span>
+  </div>
+  <div class="gss-meta-pills" id="hdr-meta-pills"></div>
+</header>
+<main class="gss-workspace">
+  <!-- Left Pane: Component Hierarchy Tree -->
+  <section class="gss-pane" aria-label="Scene Component Tree">
+    <div class="gss-pane-header">
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <span>COMPONENT TREE</span>
+        <span id="tree-count-label" style="color:var(--text-muted);">0 nodes</span>
+      </div>
+      <input type="search" id="tree-search" class="gss-search" placeholder="Filter nodes by name, class, path, or group...">
+    </div>
+    <div class="gss-tree-list" id="tree-container" role="tree"></div>
+  </section>
+  <!-- Center Pane: Interactive Screenshot & 2D/3D Wireframe Canvas -->
+  <section class="gss-pane gss-canvas-pane" aria-label="Interactive Screenshot Viewport">
+    <div class="gss-toolbar">
+      <button type="button" class="gss-btn active" id="btn-boxes">Wireframe Boxes</button>
+      <button type="button" class="gss-btn" id="btn-3d">3D Layer Stack</button>
+      <label>Detail Filter:
+        <select id="sel-filter" class="gss-select">
+          <option value="">Original RGB</option>
+          <option value="filter-luma">Perceptual Lightness (L*)</option>
+          <option value="filter-detail">High-Contrast Detail</option>
+          <option value="filter-dim">Dimmed + Wireframes</option>
+          <option value="filter-invert">Inverted Contrast</option>
+        </select>
+      </label>
+      <label>Zoom:
+        <select id="sel-zoom" class="gss-select">
+          <option value="0.5">50%</option>
+          <option value="0.75">75%</option>
+          <option value="1" selected>100%</option>
+          <option value="1.5">150%</option>
+          <option value="2">200%</option>
+        </select>
+      </label>
+      <label id="lbl-depth-slider" style="display:none;align-items:center;gap:4px;">Z-Spacing:
+        <input type="range" id="rng-z-space" min="4" max="40" value="16" style="inline-size:70px;">
+      </label>
+    </div>
+    <div class="gss-viewport-stage" id="viewport-stage">
+      <div class="gss-screen-wrapper" id="screen-wrapper">
+        <img id="screenshot-img" class="gss-screenshot-img" alt="Captured Scene Screenshot" src="data:image/png;base64,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AAAAAJAEAhgAAAAAIAkEMAAAAABAEghgAAAAAIAkEMAAAAAAAEkggAEAAAAAkkAAAwAAAAAkgQAGAAAAAEgCAQwAAAAAkAQCGAAAAAAgCQQwAAAAAEASCGAAAAAAgCQQwAAAAAAASSCAAQAAAACSQAADAAAAACSBAAYAAAAASAIBDAAAAACQBAIYAAAAACAJBDAAAAAAQBIIYAAAAACAJBDAAAAAAABJIIABAAAAAJJAAAMAAAAAJIEABgAAAABIAgEMAAAAAJAEAhgAAAAAIAkEMAAAAABAEghgAAAAAIAkEMAAAAAAAEkggAEAAAAAkkAAAwAAAAAkgQAGAAAAAEgCAQwAAAAAkAQCGAAAAAAgCQQwAAAAAEASCGAAAAAAgCQQwAAAAAAASSCAAQAAAACSQAADAAAAACSBAAYAAAAASAIBDAAAAACQBAIYAAAAACAJBDAAAAAAQBIIYAAAAACAJBDAAAAAAABJIIABAAAAAJJAAAMAAAAAJIEABgAAAABIAgEMAAAAAJAEAhgAAAAAIAkEMAAAAABAEghgAAAAAIAkEMAAAAAAAEkggAEAAAAAkkAAAwAAAAAkgQAGAAAAAEgCAQwAAAAAkAQCGAAAAAAgCQQwAAAAAEASCGAAAAAAgCQQwAAAAAAASSCAAQAAAACSQAADAAAAACSBAAYAAAAASAIBDAAAAACQBAIYAAAAACAJBDAAAAAAQBIIYAAAAACAJBDAAAAAAABJIIABAAAAAJJAAAMAAAAAJIEABgAAAABIAgEMAAAAAJAEAhgAAAAAIAkEMAAAAABAEghgAAAAAIAkEMAAAAAAAEkggAEAAAAAkkAAAwAAAAAkgQAGAAAAAEgCAQwAAAAAkAQCGAAAAAAgCQQwAAAAAEASCGAAAAAAgCQQwAAAAAAASSCAAQAAAACSQAADAAAAACSBAAYAAAAASAIBDAAAAACQBAIYAAAAACAJBDAAAAAAQBIIYAAAAACAJBDAAAAAAABJIIABAAAAAJJAAAMAAAAAJIEABgAAAABIAgEMAAAAAJAEAhgAAAAAIAkEMAAAAABAEghgAAAAAIAkEMAAAAAAAEkggAEAAAAAkkAAAwAAAAAkgQAGAAAAAEgCAQwAAAAAkAQCGAAAAAAgCQQwAAAAAEASCGAAAAAAgCQQwAAAAAAASSCAAQAAAACSQAADAAAAACSBAAYAAAAASAIBDAAAAACQBAIYAAAAACAJBDAAAAAAQBIIYAAAAACAJBDAAAAAAABJIIABAAAAAJJAAAMAAAAAJIEABgAAAABIAgEMAAAAAJAEAhgAAAAAIAkEMAAAAABAEghgAAAAAIAkEMAAAAAAAEkggAEAAAAAkkAAAwAAAAAkgQAGAAAAAEgCAQwAAAAAkAQCGAAAAAAgCQQwAAAAAEASCGAAAAAAgCQQwAAAAAAASSCAAQAAAACSQAADAAAAACSBAAYAAAAASAIBDAAAAACQBAIYAAAAACAJBDAAAAAAQBIIYAAAAACAJBDAAAAAAABJIIABAAAAAJJAAAMAAAAAJIEABgAAAABIAgEMAAAAAJAEAhgAgP9rvw4EAAAAAAT5Ww9yWQQALAgwAAAACwIMAADAggADAACwIMAAAAAsCDAAAAALAgwAAMCCAAMAALAgwAAAACwIMAAAAAsCDAAAwIIAAwAAsCDAAAAALAgwAAAACwIMAADAggADAACwIMAAAAAsCDAAAAALAgwAAMCCAAMAALAgwAAAACwIMAAAAAsCDAAAwIIAAwAAsCDAAAAALAgwAAAACwIMAADAggADAACwIMAAAAAsCDAAAAALAgwAAMCCAAMAALAgwAAAACwIMAAAAAsCDAAAwIIAAwAAsCDAAAAALAgwAAAACwIMAADAggADAACwIMAAAAAsCDAAAAALAgwAAMCCAAMAALAgwAAAACwIMAAAAAsCDAAAwIIAAwAAsCDAAAAALAgwAAAACwIMAADAggADAACwIMAAAAAsCDAAAAALAgwAAMCCAAMAALAgwAAAACwIMAAAAAsCDAAAwIIAAwAAsCDAAAAALAgwAAAACwIMAADAggADAACwIMAAAAAsCDAAAAALAgwAAMCCAAMAALAgwAAAACwIMAAAAAsCDAAAwIIAAwAAsCDAAAAALAgwAAAACwIMAADAggADAACwIMAAAAAsCDAAAAALAgwAAMCCAAMAALAgwAAAACwIMAAAAAsCDAAAwIIAAwAAsCDAAAAALAgwAAAACwIMAADAggADAACwIMAAAAAsCDAAAAALAgwAAMCCAAMAALAgwAAAACwIMAAAAAsCDAAAwIIAAwAAsCDAAAAALAgwAAAACwIMAADAggADAACwIMAAAAAsCDAAAAALAgwAAMCCAAMAALAgwAAAACwIMAAAAAsCDAAAwIIAAwAAsCDAAAAALAgwAAAACwIMAADAggADAACwIMAAAAAsCDAAAAALAgwAAMCCAAMAALAgwAAAACwIMAAAAAsCDAAAwIIAAwAAsCDAAAAALAgwAAAACwIMAADAggADAACwIMAAAAAsCDAAAAALAgwAAMCCAAMAALAgwAAAACwIMAAAAAsCDAAAwIIAAwAAsCDAAAAALAgwAAAACwIMAADAggADAACwIMAAAAAsCDAAAAALAgwAAMCCAAMAALAgwAAAACwIMAAAAAsCDAAAwIIAAwAAsCDAAAAALAgwAAAACwIMAADAggADAACwIMAAAAAsCFXXM0sAAAP+SURBVDAAAAALAgwAAMCCAAMAALAgwAAAACwIMAAAAAsCDAAAwIIAAwAAsCDAAAAALAgwAAAACwIMAADAggADAACwIMAAAAAsCDAAAAALAgwAAMCCAAMAALAgwAAAACwIMAAAAAsCDAAAwIIAAwAAsCDAAAAALAgwAAAACwIMAADAggADAACwIMAAAAAsCDAAAAALAgwAAMCCAAMAALAgwAAAACwIMAAAAAsCDAAAwIIAAwAAsCDAAAAALAgwAAAACwIMAADAggADAACwIMAAAAAsCDAAAAALAgwAAMCCAAMAALAgwAAAACwIMAAAAAsCDAAAwIIAAwAAsCDAAAAALAgwAAAACwIMAADAggADAACwIMAAAAAsCDAAAAALAgwAAMCCAAMAALAgwAAAACwIMAAAAAsCDAAAwIIAAwAAsCDAAAAALAgwAAAACwIMAADAggADAACwIMAAAAAsCDAAAAALAgwAAMCCAAMAALAgwAAAACwIMAAAAAsCDAAAwIIAAwAAsCDAAAAALAgwAAAACwIMAADAggADAACwIMAAAAAsCDAAAAALAgwAAMCCAAMAALAgwAAAACwIMAAAAAsCDAAAwIIAAwAAsCDAAAAALAgwAAAACwIMAADAggADAACwIMAAAAAsCDAAAAALAgwAAMCCAAMAALAgwAAAACwIMAAAAAsCDAAAwIIAAwAAsCDAAAAALAgwAAAACwIMAADAggADAACwIMAAAAAsCDAAAAALAgwAAMCCAAMAALAgwAAAACwIMAAAAAsCDAAAwIIAAwAAsCDAAAAALAgwAAAACwIMAADAggADAACwIMAAAAAsCDAAAAALAgwAAMCCAAMAALAgwAAAACwIMAAAAAsCDAAAwIIAAwAAsCDAAAAALAgwAAAACwIMAADAggADAACwIMAAAAAsCDAAAAALAgwAAMCCAAMAALAgwAAAACwIMAAAAAsCDAAAwIIAAwAAsCDAAAAALAgwAAAACwIMAADAggADAACwIMAAAAAsCDAAAAALAgwAAMCCAAMAALAgwAAAACwIMAAAAAsCDAAAwIIAAwAAsCDAAAAALAgwAAAACwIMAADAggADAACwIMAAAAAsCDAAAAALAgwAAMCCAAMAALAgwAAAACwIMAAAAAsCDAAAwIIAAwAAsCDAAAAALAgwAAAACwIMAADAggADAACwIMAAAAAsCDAAAAALAgwAAMCCAAMAALAgwAAAACwIMAAAAAsCDAAAwIIAAwAAsCDAAAAALAgwAAAACwIMAADAggADAACwIMAAAAAsCDAAAAALAgwAAMCCAAMAALAgwAAAACwIMAAAAAsCDAAAwIIAAwAAsCDAAAAALAgwAAAACwETz24MzchSqgAAAABJRU5ErkJggg==">
+        <div class="gss-overlay-layer" id="bbox-overlay"></div>
+      </div>
+    </div>
+  </section>
+  <!-- Right Pane: Categorized Node Attributes & Properties -->
+  <section class="gss-pane" style="border-inline-end:none;" aria-label="Node Attributes Inspector">
+    <div class="gss-pane-header">
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <span>ATTRIBUTES &amp; PROPERTIES</span>
+        <button type="button" class="gss-btn" id="btn-copy-node">Copy Node JSON</button>
+      </div>
+      <input type="search" id="prop-search" class="gss-search" placeholder="Filter properties or values...">
+    </div>
+    <div class="gss-props-scroll" id="props-container">
+      <div tabindex="0" role="region" aria-labelledby="gss-props-caption" class="table-wrapper">
+        <table class="gss-prop-table">
+          <caption id="gss-props-caption">Selected Node Properties</caption>
+          <thead><tr><th>Property</th><th>Value</th><th>Category</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+<script id="gss-data-payload" type="application/json">{"flat_nodes":[{"all_properties":{"accessibility_controls_nodes":[],"accessibility_described_by_nodes":[],"accessibility_description":"","accessibility_flow_to_nodes":[],"accessibility_labeled_by_nodes":[],"accessibility_live":0,"accessibility_name":"","anchor_bottom":0.0,"anchor_left":0.0,"anchor_right":0.0,"anchor_top":0.0,"anchors_preset":0,"auto_translate_mode":0,"clip_children":0,"clip_contents":false,"color":{"a":1.0,"b":1.0,"g":0.9745,"hex":"#faf9ffff","r":0.9788},"custom_maximum_size":{"x":-1.0,"y":-1.0},"custom_minimum_size":{"x":0.0,"y":0.0},"editor_description":"","focus_behavior_recursive":0,"focus_mode":0,"focus_neighbor_bottom":"","focus_neighbor_left":"","focus_neighbor_right":"","focus_neighbor_top":"","focus_next":"","focus_previous":"","grow_horizontal":1,"grow_vertical":1,"layout_direction":0,"layout_mode":3,"light_mask":1,"localize_numeral_system":true,"material":null,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"mouse_behavior_recursive":0,"mouse_default_cursor_shape":0,"mouse_filter":2,"mouse_force_pass_scroll_events":true,"offset_bottom":720.0,"offset_left":0.0,"offset_right":1280.0,"offset_top":0.0,"offset_transform_enabled":false,"offset_transform_pivot":{"x":0.0,"y":0.0},"offset_transform_pivot_ratio":{"x":0.5,"y":0.5},"offset_transform_position":{"x":0.0,"y":0.0},"offset_transform_position_ratio":{"x":0.0,"y":0.0},"offset_transform_rotation":0.0,"offset_transform_scale":{"x":1.0,"y":1.0},"offset_transform_visual_only":true,"oversampling_with_scale":0,"physics_interpolation_mode":2,"pivot_offset":{"x":0.0,"y":0.0},"pivot_offset_ratio":{"x":0.0,"y":0.0},"position":{"x":0.0,"y":0.0},"process_mode":0,"process_physics_priority":0,"process_priority":0,"process_thread_group":0,"propagate_maximum_size":false,"rotation":0.0,"scale":{"x":1.0,"y":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"shortcut_context":null,"show_behind_parent":false,"size":{"x":1280.0,"y":720.0},"size_flags_horizontal":1,"size_flags_stretch_ratio":1.0,"size_flags_vertical":1,"texture_filter":0,"texture_repeat":0,"theme":null,"theme_type_variation":"","tooltip_auto_translate_mode":0,"tooltip_text":"","top_level":false,"translation_context":"","unique_name_in_owner":false,"use_parent_material":false,"visibility_layer":1,"visible":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"category":"control","children_count":3,"class":"ColorRect","depth":0,"groups":[],"id":"node_0","index_in_parent":0,"name":"TextFieldExtendedVariants","parent_id":"","path":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants","physics":{},"process_mode":0,"screen_rect":{"has_bounds":true,"height":720.0,"on_screen":true,"width":1280.0,"x":0.0,"y":0.0},"script":"","script_variables":{},"signals":[{"method":"Viewport::canvas_parent_mark_dirty","signal":"child_order_changed","target":"/root/@Node@83/GSSStageViewport"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField"}],"transforms":{"anchors":{"bottom":0.0,"left":0.0,"right":0.0,"top":0.0},"custom_minimum_size":{"x":0.0,"y":0.0},"global_position":{"x":0.0,"y":0.0},"offsets":{"bottom":720.0,"left":0.0,"right":1280.0,"top":0.0},"pivot_offset":{"x":0.0,"y":0.0},"position":{"x":0.0,"y":0.0},"rotation_deg":0.0,"scale":{"x":1.0,"y":1.0},"size":{"x":1280.0,"y":720.0},"size_flags_horizontal":1,"size_flags_vertical":1},"ui_and_content":{"color":{"a":1.0,"b":1.0,"g":0.9745,"hex":"#faf9ffff","r":0.9788},"focus_mode":0,"mouse_filter":2,"tooltip_text":""},"visibility":{"clip_children":0,"light_mask":1,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"show_behind_parent":false,"top_level":false,"visibility_layer":1,"visible":true,"visible_in_tree":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"visible":true},{"all_properties":{"accessibility_controls_nodes":[],"accessibility_described_by_nodes":[],"accessibility_description":"","accessibility_flow_to_nodes":[],"accessibility_labeled_by_nodes":[],"accessibility_live":0,"accessibility_name":"","anchor_bottom":0.0,"anchor_left":0.0,"anchor_right":0.0,"anchor_top":0.0,"anchors_preset":0,"auto_translate_mode":0,"clip_children":0,"clip_contents":false,"current_state":0,"custom_corner_radius":-1.0,"custom_maximum_size":{"x":-1.0,"y":-1.0},"custom_minimum_size":{"x":96.0,"y":56.0},"density_override":99,"disabled":false,"editor_description":"","error_text":"","field_type":1,"focus_behavior_recursive":0,"focus_mode":2,"focus_neighbor_bottom":"","focus_neighbor_left":"","focus_neighbor_right":"","focus_neighbor_top":"","focus_next":"","focus_previous":"","grow_horizontal":1,"grow_vertical":1,"helper_text":"","is_error":false,"is_password":false,"label":"Amount","label_text":"Amount","layout_direction":0,"layout_mode":0,"leading_icon":"","leading_icon_texture":null,"light_mask":1,"localize_numeral_system":true,"material":null,"max_characters":0,"max_length":0,"max_lines":6,"min_lines":3,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"mouse_behavior_recursive":0,"mouse_default_cursor_shape":2,"mouse_filter":0,"mouse_force_pass_scroll_events":true,"multiline":false,"offset_bottom":104.0,"offset_left":40.0,"offset_right":300.0,"offset_top":48.0,"offset_transform_enabled":false,"offset_transform_pivot":{"x":0.0,"y":0.0},"offset_transform_pivot_ratio":{"x":0.5,"y":0.5},"offset_transform_position":{"x":0.0,"y":0.0},"offset_transform_position_ratio":{"x":0.0,"y":0.0},"offset_transform_rotation":0.0,"offset_transform_scale":{"x":1.0,"y":1.0},"offset_transform_visual_only":true,"oversampling_with_scale":0,"physics_interpolation_mode":2,"pivot_offset":{"x":0.0,"y":0.0},"pivot_offset_ratio":{"x":0.0,"y":0.0},"placeholder":"","position":{"x":40.0,"y":48.0},"prefix_text":"$","process_mode":0,"process_physics_priority":0,"process_priority":0,"process_thread_group":0,"propagate_maximum_size":false,"ripple_enabled":true,"rotation":0.0,"scale":{"x":1.0,"y":1.0},"secret":false,"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"shape_token":0,"shortcut_context":null,"show_behind_parent":false,"show_clear_button":false,"show_counter":false,"show_password_toggle":false,"size":{"x":260.0,"y":56.0},"size_flags_horizontal":1,"size_flags_stretch_ratio":1.0,"size_flags_vertical":1,"suffix_text":"USD","supporting_text":"","text":"","texture_filter":0,"texture_repeat":0,"theme":null,"theme_type_variation":"","tooltip_auto_translate_mode":0,"tooltip_text":"","top_level":false,"touch_target_min_size":{"x":48.0,"y":48.0},"trailing_icon":"","trailing_icon_texture":null,"translation_context":"","unique_name_in_owner":false,"use_parent_material":false,"variant":1,"visibility_layer":1,"visible":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"category":"control","children_count":0,"class":"Control","depth":1,"groups":[],"id":"node_1","index_in_parent":0,"name":"AffixCurrencyField","parent_id":"node_0","path":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField","physics":{},"process_mode":0,"screen_rect":{"has_bounds":true,"height":56.0,"on_screen":true,"width":260.0,"x":40.0,"y":48.0},"script":"res://addons/material3/components/inputs/m3_text_field.gd","script_variables":{"_active_height":56.0,"_focus_progress":0.0,"_focus_tween":null,"_font":"<FontFile>","_font_size_float":12,"_font_size_helper":12,"_font_size_rest":16,"_height_tween":null,"_is_focused_internal":false,"_is_pointer_down":false,"_label_float_progress":0.0,"_label_progress":0.0,"_label_tween":null,"_line_edit":"<Node:M3InternalLineEdit (LineEdit)>","_pointer_inside":false,"_ripple":"<Node:M3Ripple (Control)>","_ripple_wave_alpha":0.0,"_ripple_wave_count":0,"_ripple_wave_radius":0.0,"_state_layer_alpha":0.0,"_text_edit":"<Node:M3InternalTextEdit (TextEdit)>","_theme_connected":true,"current_state":0,"custom_corner_radius":-1.0,"density_override":99,"disabled":false,"error_text":"","field_type":1,"helper_text":"","is_error":false,"is_password":false,"label":"Amount","label_text":"Amount","leading_icon":"","leading_icon_texture":null,"max_characters":0,"max_length":0,"max_lines":6,"min_lines":3,"multiline":false,"placeholder":"","prefix_text":"$","ripple_enabled":true,"secret":false,"shape_token":0,"show_clear_button":false,"show_counter":false,"show_password_toggle":false,"suffix_text":"USD","supporting_text":"","text":"","touch_target_min_size":{"x":48.0,"y":48.0},"trailing_icon":"","trailing_icon_texture":null,"variant":1},"signals":[{"method":"Viewport::canvas_parent_mark_dirty","signal":"child_order_changed","target":"/root/@Node@83/GSSStageViewport"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField/M3Ripple"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField/M3InternalLineEdit"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField/M3InternalTextEdit"},{"method":"_on_resized","signal":"resized","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField"},{"method":"_on_mouse_entered","signal":"mouse_entered","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField"},{"method":"_on_mouse_exited","signal":"mouse_exited","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField"},{"method":"_on_focus_entered","signal":"focus_entered","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField"},{"method":"_on_focus_exited","signal":"focus_exited","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField"}],"transforms":{"anchors":{"bottom":0.0,"left":0.0,"right":0.0,"top":0.0},"custom_minimum_size":{"x":96.0,"y":56.0},"global_position":{"x":40.0,"y":48.0},"offsets":{"bottom":104.0,"left":40.0,"right":300.0,"top":48.0},"pivot_offset":{"x":0.0,"y":0.0},"position":{"x":40.0,"y":48.0},"rotation_deg":0.0,"scale":{"x":1.0,"y":1.0},"size":{"x":260.0,"y":56.0},"size_flags_horizontal":1,"size_flags_vertical":1},"ui_and_content":{"focus_mode":2,"mouse_filter":0,"tooltip_text":""},"visibility":{"clip_children":0,"light_mask":1,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"show_behind_parent":false,"top_level":false,"visibility_layer":1,"visible":true,"visible_in_tree":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"visible":true},{"all_properties":{"accessibility_controls_nodes":[],"accessibility_described_by_nodes":[],"accessibility_description":"","accessibility_flow_to_nodes":[],"accessibility_labeled_by_nodes":[],"accessibility_live":0,"accessibility_name":"","anchor_bottom":0.0,"anchor_left":0.0,"anchor_right":0.0,"anchor_top":0.0,"anchors_preset":0,"auto_translate_mode":0,"clip_children":0,"clip_contents":false,"current_state":0,"custom_corner_radius":-1.0,"custom_maximum_size":{"x":-1.0,"y":-1.0},"custom_minimum_size":{"x":96.0,"y":76.0},"density_override":99,"disabled":false,"editor_description":"","error_text":"","field_type":0,"focus_behavior_recursive":0,"focus_mode":2,"focus_neighbor_bottom":"","focus_neighbor_left":"","focus_neighbor_right":"","focus_neighbor_top":"","focus_next":"","focus_previous":"","grow_horizontal":1,"grow_vertical":1,"helper_text":"Metric weight","is_error":false,"is_password":false,"label":"Package Weight","label_text":"Package Weight","layout_direction":0,"layout_mode":0,"leading_icon":"","leading_icon_texture":null,"light_mask":1,"localize_numeral_system":true,"material":null,"max_characters":0,"max_length":0,"max_lines":6,"min_lines":3,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"mouse_behavior_recursive":0,"mouse_default_cursor_shape":2,"mouse_filter":0,"mouse_force_pass_scroll_events":true,"multiline":false,"offset_bottom":124.0,"offset_left":340.0,"offset_right":600.0,"offset_top":48.0,"offset_transform_enabled":false,"offset_transform_pivot":{"x":0.0,"y":0.0},"offset_transform_pivot_ratio":{"x":0.5,"y":0.5},"offset_transform_position":{"x":0.0,"y":0.0},"offset_transform_position_ratio":{"x":0.0,"y":0.0},"offset_transform_rotation":0.0,"offset_transform_scale":{"x":1.0,"y":1.0},"offset_transform_visual_only":true,"oversampling_with_scale":0,"physics_interpolation_mode":2,"pivot_offset":{"x":0.0,"y":0.0},"pivot_offset_ratio":{"x":0.0,"y":0.0},"placeholder":"","position":{"x":340.0,"y":48.0},"prefix_text":"","process_mode":0,"process_physics_priority":0,"process_priority":0,"process_thread_group":0,"propagate_maximum_size":false,"ripple_enabled":true,"rotation":0.0,"scale":{"x":1.0,"y":1.0},"secret":false,"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"shape_token":0,"shortcut_context":null,"show_behind_parent":false,"show_clear_button":false,"show_counter":false,"show_password_toggle":false,"size":{"x":260.0,"y":76.0},"size_flags_horizontal":1,"size_flags_stretch_ratio":1.0,"size_flags_vertical":1,"suffix_text":"kg","supporting_text":"Metric weight","text":"14.5","texture_filter":0,"texture_repeat":0,"theme":null,"theme_type_variation":"","tooltip_auto_translate_mode":0,"tooltip_text":"","top_level":false,"touch_target_min_size":{"x":48.0,"y":48.0},"trailing_icon":"","trailing_icon_texture":null,"translation_context":"","unique_name_in_owner":false,"use_parent_material":false,"variant":0,"visibility_layer":1,"visible":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"category":"control","children_count":0,"class":"Control","depth":1,"groups":[],"id":"node_2","index_in_parent":1,"name":"AffixWeightField","parent_id":"node_0","path":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField","physics":{},"process_mode":0,"screen_rect":{"has_bounds":true,"height":76.0,"on_screen":true,"width":260.0,"x":340.0,"y":48.0},"script":"res://addons/material3/components/inputs/m3_text_field.gd","script_variables":{"_active_height":56.0,"_focus_progress":0.0,"_focus_tween":null,"_font":"<FontFile>","_font_size_float":12,"_font_size_helper":12,"_font_size_rest":16,"_height_tween":null,"_is_focused_internal":false,"_is_pointer_down":false,"_label_float_progress":1.0,"_label_progress":1.0,"_label_tween":null,"_line_edit":"<Node:M3InternalLineEdit (LineEdit)>","_pointer_inside":false,"_ripple":"<Node:M3Ripple (Control)>","_ripple_wave_alpha":0.0,"_ripple_wave_count":0,"_ripple_wave_radius":0.0,"_state_layer_alpha":0.0,"_text_edit":"<Node:M3InternalTextEdit (TextEdit)>","_theme_connected":true,"current_state":0,"custom_corner_radius":-1.0,"density_override":99,"disabled":false,"error_text":"","field_type":0,"helper_text":"Metric weight","is_error":false,"is_password":false,"label":"Package Weight","label_text":"Package Weight","leading_icon":"","leading_icon_texture":null,"max_characters":0,"max_length":0,"max_lines":6,"min_lines":3,"multiline":false,"placeholder":"","prefix_text":"","ripple_enabled":true,"secret":false,"shape_token":0,"show_clear_button":false,"show_counter":false,"show_password_toggle":false,"suffix_text":"kg","supporting_text":"Metric weight","text":"14.5","touch_target_min_size":{"x":48.0,"y":48.0},"trailing_icon":"","trailing_icon_texture":null,"variant":0},"signals":[{"method":"Viewport::canvas_parent_mark_dirty","signal":"child_order_changed","target":"/root/@Node@83/GSSStageViewport"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField/M3Ripple"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField/M3InternalLineEdit"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField/M3InternalTextEdit"},{"method":"_on_resized","signal":"resized","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField"},{"method":"_on_mouse_entered","signal":"mouse_entered","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField"},{"method":"_on_mouse_exited","signal":"mouse_exited","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField"},{"method":"_on_focus_entered","signal":"focus_entered","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField"},{"method":"_on_focus_exited","signal":"focus_exited","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField"}],"transforms":{"anchors":{"bottom":0.0,"left":0.0,"right":0.0,"top":0.0},"custom_minimum_size":{"x":96.0,"y":76.0},"global_position":{"x":340.0,"y":48.0},"offsets":{"bottom":124.0,"left":340.0,"right":600.0,"top":48.0},"pivot_offset":{"x":0.0,"y":0.0},"position":{"x":340.0,"y":48.0},"rotation_deg":0.0,"scale":{"x":1.0,"y":1.0},"size":{"x":260.0,"y":76.0},"size_flags_horizontal":1,"size_flags_vertical":1},"ui_and_content":{"focus_mode":2,"mouse_filter":0,"tooltip_text":""},"visibility":{"clip_children":0,"light_mask":1,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"show_behind_parent":false,"top_level":false,"visibility_layer":1,"visible":true,"visible_in_tree":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"visible":true},{"all_properties":{"accessibility_controls_nodes":[],"accessibility_described_by_nodes":[],"accessibility_description":"","accessibility_flow_to_nodes":[],"accessibility_labeled_by_nodes":[],"accessibility_live":0,"accessibility_name":"","anchor_bottom":0.0,"anchor_left":0.0,"anchor_right":0.0,"anchor_top":0.0,"anchors_preset":0,"auto_translate_mode":0,"clip_children":0,"clip_contents":false,"current_state":0,"custom_corner_radius":-1.0,"custom_maximum_size":{"x":-1.0,"y":-1.0},"custom_minimum_size":{"x":96.0,"y":122.0},"density_override":99,"disabled":false,"editor_description":"","error_text":"","field_type":1,"focus_behavior_recursive":0,"focus_mode":2,"focus_neighbor_bottom":"","focus_neighbor_left":"","focus_neighbor_right":"","focus_neighbor_top":"","focus_next":"","focus_previous":"","grow_horizontal":1,"grow_vertical":1,"helper_text":"Auto-growing 3..6 lines","is_error":false,"is_password":false,"label":"Release Notes","label_text":"Release Notes","layout_direction":0,"layout_mode":0,"leading_icon":"","leading_icon_texture":null,"light_mask":1,"localize_numeral_system":true,"material":null,"max_characters":0,"max_length":0,"max_lines":6,"min_lines":3,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"mouse_behavior_recursive":0,"mouse_default_cursor_shape":2,"mouse_filter":0,"mouse_force_pass_scroll_events":true,"multiline":true,"offset_bottom":170.0,"offset_left":640.0,"offset_right":960.0,"offset_top":48.0,"offset_transform_enabled":false,"offset_transform_pivot":{"x":0.0,"y":0.0},"offset_transform_pivot_ratio":{"x":0.5,"y":0.5},"offset_transform_position":{"x":0.0,"y":0.0},"offset_transform_position_ratio":{"x":0.0,"y":0.0},"offset_transform_rotation":0.0,"offset_transform_scale":{"x":1.0,"y":1.0},"offset_transform_visual_only":true,"oversampling_with_scale":0,"physics_interpolation_mode":2,"pivot_offset":{"x":0.0,"y":0.0},"pivot_offset_ratio":{"x":0.0,"y":0.0},"placeholder":"","position":{"x":640.0,"y":48.0},"prefix_text":"","process_mode":0,"process_physics_priority":0,"process_priority":0,"process_thread_group":0,"propagate_maximum_size":false,"ripple_enabled":true,"rotation":0.0,"scale":{"x":1.0,"y":1.0},"secret":false,"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"shape_token":0,"shortcut_context":null,"show_behind_parent":false,"show_clear_button":false,"show_counter":true,"show_password_toggle":false,"size":{"x":320.0,"y":122.0},"size_flags_horizontal":1,"size_flags_stretch_ratio":1.0,"size_flags_vertical":1,"suffix_text":"","supporting_text":"Auto-growing 3..6 lines","text":"Line 1\nLine 2\nLine 3","texture_filter":0,"texture_repeat":0,"theme":null,"theme_type_variation":"","tooltip_auto_translate_mode":0,"tooltip_text":"","top_level":false,"touch_target_min_size":{"x":48.0,"y":48.0},"trailing_icon":"","trailing_icon_texture":null,"translation_context":"","unique_name_in_owner":false,"use_parent_material":false,"variant":1,"visibility_layer":1,"visible":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"category":"control","children_count":0,"class":"Control","depth":1,"groups":[],"id":"node_3","index_in_parent":2,"name":"MultilineNotesField","parent_id":"node_0","path":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField","physics":{},"process_mode":0,"screen_rect":{"has_bounds":true,"height":122.0,"on_screen":true,"width":320.0,"x":640.0,"y":48.0},"script":"res://addons/material3/components/inputs/m3_text_field.gd","script_variables":{"_active_height":102.0,"_focus_progress":0.0,"_focus_tween":null,"_font":"<FontFile>","_font_size_float":12,"_font_size_helper":12,"_font_size_rest":16,"_height_tween":null,"_is_focused_internal":false,"_is_pointer_down":false,"_label_float_progress":1.0,"_label_progress":1.0,"_label_tween":null,"_line_edit":"<Node:M3InternalLineEdit (LineEdit)>","_pointer_inside":false,"_ripple":"<Node:M3Ripple (Control)>","_ripple_wave_alpha":0.0,"_ripple_wave_count":0,"_ripple_wave_radius":0.0,"_state_layer_alpha":0.0,"_text_edit":"<Node:M3InternalTextEdit (TextEdit)>","_theme_connected":true,"current_state":0,"custom_corner_radius":-1.0,"density_override":99,"disabled":false,"error_text":"","field_type":1,"helper_text":"Auto-growing 3..6 lines","is_error":false,"is_password":false,"label":"Release Notes","label_text":"Release Notes","leading_icon":"","leading_icon_texture":null,"max_characters":0,"max_length":0,"max_lines":6,"min_lines":3,"multiline":true,"placeholder":"","prefix_text":"","ripple_enabled":true,"secret":false,"shape_token":0,"show_clear_button":false,"show_counter":true,"show_password_toggle":false,"suffix_text":"","supporting_text":"Auto-growing 3..6 lines","text":"Line 1\nLine 2\nLine 3","touch_target_min_size":{"x":48.0,"y":48.0},"trailing_icon":"","trailing_icon_texture":null,"variant":1},"signals":[{"method":"Viewport::canvas_parent_mark_dirty","signal":"child_order_changed","target":"/root/@Node@83/GSSStageViewport"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField/M3Ripple"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField/M3InternalLineEdit"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField/M3InternalTextEdit"},{"method":"_on_resized","signal":"resized","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField"},{"method":"_on_mouse_entered","signal":"mouse_entered","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField"},{"method":"_on_mouse_exited","signal":"mouse_exited","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField"},{"method":"_on_focus_entered","signal":"focus_entered","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField"},{"method":"_on_focus_exited","signal":"focus_exited","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField"}],"transforms":{"anchors":{"bottom":0.0,"left":0.0,"right":0.0,"top":0.0},"custom_minimum_size":{"x":96.0,"y":122.0},"global_position":{"x":640.0,"y":48.0},"offsets":{"bottom":170.0,"left":640.0,"right":960.0,"top":48.0},"pivot_offset":{"x":0.0,"y":0.0},"position":{"x":640.0,"y":48.0},"rotation_deg":0.0,"scale":{"x":1.0,"y":1.0},"size":{"x":320.0,"y":122.0},"size_flags_horizontal":1,"size_flags_vertical":1},"ui_and_content":{"focus_mode":2,"mouse_filter":0,"tooltip_text":""},"visibility":{"clip_children":0,"light_mask":1,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"show_behind_parent":false,"top_level":false,"visibility_layer":1,"visible":true,"visible_in_tree":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"visible":true}],"hierarchy":{"all_properties":{"accessibility_controls_nodes":[],"accessibility_described_by_nodes":[],"accessibility_description":"","accessibility_flow_to_nodes":[],"accessibility_labeled_by_nodes":[],"accessibility_live":0,"accessibility_name":"","anchor_bottom":0.0,"anchor_left":0.0,"anchor_right":0.0,"anchor_top":0.0,"anchors_preset":0,"auto_translate_mode":0,"clip_children":0,"clip_contents":false,"color":{"a":1.0,"b":1.0,"g":0.9745,"hex":"#faf9ffff","r":0.9788},"custom_maximum_size":{"x":-1.0,"y":-1.0},"custom_minimum_size":{"x":0.0,"y":0.0},"editor_description":"","focus_behavior_recursive":0,"focus_mode":0,"focus_neighbor_bottom":"","focus_neighbor_left":"","focus_neighbor_right":"","focus_neighbor_top":"","focus_next":"","focus_previous":"","grow_horizontal":1,"grow_vertical":1,"layout_direction":0,"layout_mode":3,"light_mask":1,"localize_numeral_system":true,"material":null,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"mouse_behavior_recursive":0,"mouse_default_cursor_shape":0,"mouse_filter":2,"mouse_force_pass_scroll_events":true,"offset_bottom":720.0,"offset_left":0.0,"offset_right":1280.0,"offset_top":0.0,"offset_transform_enabled":false,"offset_transform_pivot":{"x":0.0,"y":0.0},"offset_transform_pivot_ratio":{"x":0.5,"y":0.5},"offset_transform_position":{"x":0.0,"y":0.0},"offset_transform_position_ratio":{"x":0.0,"y":0.0},"offset_transform_rotation":0.0,"offset_transform_scale":{"x":1.0,"y":1.0},"offset_transform_visual_only":true,"oversampling_with_scale":0,"physics_interpolation_mode":2,"pivot_offset":{"x":0.0,"y":0.0},"pivot_offset_ratio":{"x":0.0,"y":0.0},"position":{"x":0.0,"y":0.0},"process_mode":0,"process_physics_priority":0,"process_priority":0,"process_thread_group":0,"propagate_maximum_size":false,"rotation":0.0,"scale":{"x":1.0,"y":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"shortcut_context":null,"show_behind_parent":false,"size":{"x":1280.0,"y":720.0},"size_flags_horizontal":1,"size_flags_stretch_ratio":1.0,"size_flags_vertical":1,"texture_filter":0,"texture_repeat":0,"theme":null,"theme_type_variation":"","tooltip_auto_translate_mode":0,"tooltip_text":"","top_level":false,"translation_context":"","unique_name_in_owner":false,"use_parent_material":false,"visibility_layer":1,"visible":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"category":"control","children":[{"all_properties":{"accessibility_controls_nodes":[],"accessibility_described_by_nodes":[],"accessibility_description":"","accessibility_flow_to_nodes":[],"accessibility_labeled_by_nodes":[],"accessibility_live":0,"accessibility_name":"","anchor_bottom":0.0,"anchor_left":0.0,"anchor_right":0.0,"anchor_top":0.0,"anchors_preset":0,"auto_translate_mode":0,"clip_children":0,"clip_contents":false,"current_state":0,"custom_corner_radius":-1.0,"custom_maximum_size":{"x":-1.0,"y":-1.0},"custom_minimum_size":{"x":96.0,"y":56.0},"density_override":99,"disabled":false,"editor_description":"","error_text":"","field_type":1,"focus_behavior_recursive":0,"focus_mode":2,"focus_neighbor_bottom":"","focus_neighbor_left":"","focus_neighbor_right":"","focus_neighbor_top":"","focus_next":"","focus_previous":"","grow_horizontal":1,"grow_vertical":1,"helper_text":"","is_error":false,"is_password":false,"label":"Amount","label_text":"Amount","layout_direction":0,"layout_mode":0,"leading_icon":"","leading_icon_texture":null,"light_mask":1,"localize_numeral_system":true,"material":null,"max_characters":0,"max_length":0,"max_lines":6,"min_lines":3,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"mouse_behavior_recursive":0,"mouse_default_cursor_shape":2,"mouse_filter":0,"mouse_force_pass_scroll_events":true,"multiline":false,"offset_bottom":104.0,"offset_left":40.0,"offset_right":300.0,"offset_top":48.0,"offset_transform_enabled":false,"offset_transform_pivot":{"x":0.0,"y":0.0},"offset_transform_pivot_ratio":{"x":0.5,"y":0.5},"offset_transform_position":{"x":0.0,"y":0.0},"offset_transform_position_ratio":{"x":0.0,"y":0.0},"offset_transform_rotation":0.0,"offset_transform_scale":{"x":1.0,"y":1.0},"offset_transform_visual_only":true,"oversampling_with_scale":0,"physics_interpolation_mode":2,"pivot_offset":{"x":0.0,"y":0.0},"pivot_offset_ratio":{"x":0.0,"y":0.0},"placeholder":"","position":{"x":40.0,"y":48.0},"prefix_text":"$","process_mode":0,"process_physics_priority":0,"process_priority":0,"process_thread_group":0,"propagate_maximum_size":false,"ripple_enabled":true,"rotation":0.0,"scale":{"x":1.0,"y":1.0},"secret":false,"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"shape_token":0,"shortcut_context":null,"show_behind_parent":false,"show_clear_button":false,"show_counter":false,"show_password_toggle":false,"size":{"x":260.0,"y":56.0},"size_flags_horizontal":1,"size_flags_stretch_ratio":1.0,"size_flags_vertical":1,"suffix_text":"USD","supporting_text":"","text":"","texture_filter":0,"texture_repeat":0,"theme":null,"theme_type_variation":"","tooltip_auto_translate_mode":0,"tooltip_text":"","top_level":false,"touch_target_min_size":{"x":48.0,"y":48.0},"trailing_icon":"","trailing_icon_texture":null,"translation_context":"","unique_name_in_owner":false,"use_parent_material":false,"variant":1,"visibility_layer":1,"visible":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"category":"control","children":[],"children_count":0,"class":"Control","depth":1,"groups":[],"id":"node_1","index_in_parent":0,"name":"AffixCurrencyField","parent_id":"node_0","path":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField","physics":{},"process_mode":0,"screen_rect":{"has_bounds":true,"height":56.0,"on_screen":true,"width":260.0,"x":40.0,"y":48.0},"script":"res://addons/material3/components/inputs/m3_text_field.gd","script_variables":{"_active_height":56.0,"_focus_progress":0.0,"_focus_tween":null,"_font":"<FontFile>","_font_size_float":12,"_font_size_helper":12,"_font_size_rest":16,"_height_tween":null,"_is_focused_internal":false,"_is_pointer_down":false,"_label_float_progress":0.0,"_label_progress":0.0,"_label_tween":null,"_line_edit":"<Node:M3InternalLineEdit (LineEdit)>","_pointer_inside":false,"_ripple":"<Node:M3Ripple (Control)>","_ripple_wave_alpha":0.0,"_ripple_wave_count":0,"_ripple_wave_radius":0.0,"_state_layer_alpha":0.0,"_text_edit":"<Node:M3InternalTextEdit (TextEdit)>","_theme_connected":true,"current_state":0,"custom_corner_radius":-1.0,"density_override":99,"disabled":false,"error_text":"","field_type":1,"helper_text":"","is_error":false,"is_password":false,"label":"Amount","label_text":"Amount","leading_icon":"","leading_icon_texture":null,"max_characters":0,"max_length":0,"max_lines":6,"min_lines":3,"multiline":false,"placeholder":"","prefix_text":"$","ripple_enabled":true,"secret":false,"shape_token":0,"show_clear_button":false,"show_counter":false,"show_password_toggle":false,"suffix_text":"USD","supporting_text":"","text":"","touch_target_min_size":{"x":48.0,"y":48.0},"trailing_icon":"","trailing_icon_texture":null,"variant":1},"signals":[{"method":"Viewport::canvas_parent_mark_dirty","signal":"child_order_changed","target":"/root/@Node@83/GSSStageViewport"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField/M3Ripple"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField/M3InternalLineEdit"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField/M3InternalTextEdit"},{"method":"_on_resized","signal":"resized","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField"},{"method":"_on_mouse_entered","signal":"mouse_entered","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField"},{"method":"_on_mouse_exited","signal":"mouse_exited","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField"},{"method":"_on_focus_entered","signal":"focus_entered","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField"},{"method":"_on_focus_exited","signal":"focus_exited","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField"}],"transforms":{"anchors":{"bottom":0.0,"left":0.0,"right":0.0,"top":0.0},"custom_minimum_size":{"x":96.0,"y":56.0},"global_position":{"x":40.0,"y":48.0},"offsets":{"bottom":104.0,"left":40.0,"right":300.0,"top":48.0},"pivot_offset":{"x":0.0,"y":0.0},"position":{"x":40.0,"y":48.0},"rotation_deg":0.0,"scale":{"x":1.0,"y":1.0},"size":{"x":260.0,"y":56.0},"size_flags_horizontal":1,"size_flags_vertical":1},"ui_and_content":{"focus_mode":2,"mouse_filter":0,"tooltip_text":""},"visibility":{"clip_children":0,"light_mask":1,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"show_behind_parent":false,"top_level":false,"visibility_layer":1,"visible":true,"visible_in_tree":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"visible":true},{"all_properties":{"accessibility_controls_nodes":[],"accessibility_described_by_nodes":[],"accessibility_description":"","accessibility_flow_to_nodes":[],"accessibility_labeled_by_nodes":[],"accessibility_live":0,"accessibility_name":"","anchor_bottom":0.0,"anchor_left":0.0,"anchor_right":0.0,"anchor_top":0.0,"anchors_preset":0,"auto_translate_mode":0,"clip_children":0,"clip_contents":false,"current_state":0,"custom_corner_radius":-1.0,"custom_maximum_size":{"x":-1.0,"y":-1.0},"custom_minimum_size":{"x":96.0,"y":76.0},"density_override":99,"disabled":false,"editor_description":"","error_text":"","field_type":0,"focus_behavior_recursive":0,"focus_mode":2,"focus_neighbor_bottom":"","focus_neighbor_left":"","focus_neighbor_right":"","focus_neighbor_top":"","focus_next":"","focus_previous":"","grow_horizontal":1,"grow_vertical":1,"helper_text":"Metric weight","is_error":false,"is_password":false,"label":"Package Weight","label_text":"Package Weight","layout_direction":0,"layout_mode":0,"leading_icon":"","leading_icon_texture":null,"light_mask":1,"localize_numeral_system":true,"material":null,"max_characters":0,"max_length":0,"max_lines":6,"min_lines":3,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"mouse_behavior_recursive":0,"mouse_default_cursor_shape":2,"mouse_filter":0,"mouse_force_pass_scroll_events":true,"multiline":false,"offset_bottom":124.0,"offset_left":340.0,"offset_right":600.0,"offset_top":48.0,"offset_transform_enabled":false,"offset_transform_pivot":{"x":0.0,"y":0.0},"offset_transform_pivot_ratio":{"x":0.5,"y":0.5},"offset_transform_position":{"x":0.0,"y":0.0},"offset_transform_position_ratio":{"x":0.0,"y":0.0},"offset_transform_rotation":0.0,"offset_transform_scale":{"x":1.0,"y":1.0},"offset_transform_visual_only":true,"oversampling_with_scale":0,"physics_interpolation_mode":2,"pivot_offset":{"x":0.0,"y":0.0},"pivot_offset_ratio":{"x":0.0,"y":0.0},"placeholder":"","position":{"x":340.0,"y":48.0},"prefix_text":"","process_mode":0,"process_physics_priority":0,"process_priority":0,"process_thread_group":0,"propagate_maximum_size":false,"ripple_enabled":true,"rotation":0.0,"scale":{"x":1.0,"y":1.0},"secret":false,"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"shape_token":0,"shortcut_context":null,"show_behind_parent":false,"show_clear_button":false,"show_counter":false,"show_password_toggle":false,"size":{"x":260.0,"y":76.0},"size_flags_horizontal":1,"size_flags_stretch_ratio":1.0,"size_flags_vertical":1,"suffix_text":"kg","supporting_text":"Metric weight","text":"14.5","texture_filter":0,"texture_repeat":0,"theme":null,"theme_type_variation":"","tooltip_auto_translate_mode":0,"tooltip_text":"","top_level":false,"touch_target_min_size":{"x":48.0,"y":48.0},"trailing_icon":"","trailing_icon_texture":null,"translation_context":"","unique_name_in_owner":false,"use_parent_material":false,"variant":0,"visibility_layer":1,"visible":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"category":"control","children":[],"children_count":0,"class":"Control","depth":1,"groups":[],"id":"node_2","index_in_parent":1,"name":"AffixWeightField","parent_id":"node_0","path":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField","physics":{},"process_mode":0,"screen_rect":{"has_bounds":true,"height":76.0,"on_screen":true,"width":260.0,"x":340.0,"y":48.0},"script":"res://addons/material3/components/inputs/m3_text_field.gd","script_variables":{"_active_height":56.0,"_focus_progress":0.0,"_focus_tween":null,"_font":"<FontFile>","_font_size_float":12,"_font_size_helper":12,"_font_size_rest":16,"_height_tween":null,"_is_focused_internal":false,"_is_pointer_down":false,"_label_float_progress":1.0,"_label_progress":1.0,"_label_tween":null,"_line_edit":"<Node:M3InternalLineEdit (LineEdit)>","_pointer_inside":false,"_ripple":"<Node:M3Ripple (Control)>","_ripple_wave_alpha":0.0,"_ripple_wave_count":0,"_ripple_wave_radius":0.0,"_state_layer_alpha":0.0,"_text_edit":"<Node:M3InternalTextEdit (TextEdit)>","_theme_connected":true,"current_state":0,"custom_corner_radius":-1.0,"density_override":99,"disabled":false,"error_text":"","field_type":0,"helper_text":"Metric weight","is_error":false,"is_password":false,"label":"Package Weight","label_text":"Package Weight","leading_icon":"","leading_icon_texture":null,"max_characters":0,"max_length":0,"max_lines":6,"min_lines":3,"multiline":false,"placeholder":"","prefix_text":"","ripple_enabled":true,"secret":false,"shape_token":0,"show_clear_button":false,"show_counter":false,"show_password_toggle":false,"suffix_text":"kg","supporting_text":"Metric weight","text":"14.5","touch_target_min_size":{"x":48.0,"y":48.0},"trailing_icon":"","trailing_icon_texture":null,"variant":0},"signals":[{"method":"Viewport::canvas_parent_mark_dirty","signal":"child_order_changed","target":"/root/@Node@83/GSSStageViewport"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField/M3Ripple"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField/M3InternalLineEdit"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField/M3InternalTextEdit"},{"method":"_on_resized","signal":"resized","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField"},{"method":"_on_mouse_entered","signal":"mouse_entered","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField"},{"method":"_on_mouse_exited","signal":"mouse_exited","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField"},{"method":"_on_focus_entered","signal":"focus_entered","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField"},{"method":"_on_focus_exited","signal":"focus_exited","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField"}],"transforms":{"anchors":{"bottom":0.0,"left":0.0,"right":0.0,"top":0.0},"custom_minimum_size":{"x":96.0,"y":76.0},"global_position":{"x":340.0,"y":48.0},"offsets":{"bottom":124.0,"left":340.0,"right":600.0,"top":48.0},"pivot_offset":{"x":0.0,"y":0.0},"position":{"x":340.0,"y":48.0},"rotation_deg":0.0,"scale":{"x":1.0,"y":1.0},"size":{"x":260.0,"y":76.0},"size_flags_horizontal":1,"size_flags_vertical":1},"ui_and_content":{"focus_mode":2,"mouse_filter":0,"tooltip_text":""},"visibility":{"clip_children":0,"light_mask":1,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"show_behind_parent":false,"top_level":false,"visibility_layer":1,"visible":true,"visible_in_tree":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"visible":true},{"all_properties":{"accessibility_controls_nodes":[],"accessibility_described_by_nodes":[],"accessibility_description":"","accessibility_flow_to_nodes":[],"accessibility_labeled_by_nodes":[],"accessibility_live":0,"accessibility_name":"","anchor_bottom":0.0,"anchor_left":0.0,"anchor_right":0.0,"anchor_top":0.0,"anchors_preset":0,"auto_translate_mode":0,"clip_children":0,"clip_contents":false,"current_state":0,"custom_corner_radius":-1.0,"custom_maximum_size":{"x":-1.0,"y":-1.0},"custom_minimum_size":{"x":96.0,"y":122.0},"density_override":99,"disabled":false,"editor_description":"","error_text":"","field_type":1,"focus_behavior_recursive":0,"focus_mode":2,"focus_neighbor_bottom":"","focus_neighbor_left":"","focus_neighbor_right":"","focus_neighbor_top":"","focus_next":"","focus_previous":"","grow_horizontal":1,"grow_vertical":1,"helper_text":"Auto-growing 3..6 lines","is_error":false,"is_password":false,"label":"Release Notes","label_text":"Release Notes","layout_direction":0,"layout_mode":0,"leading_icon":"","leading_icon_texture":null,"light_mask":1,"localize_numeral_system":true,"material":null,"max_characters":0,"max_length":0,"max_lines":6,"min_lines":3,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"mouse_behavior_recursive":0,"mouse_default_cursor_shape":2,"mouse_filter":0,"mouse_force_pass_scroll_events":true,"multiline":true,"offset_bottom":170.0,"offset_left":640.0,"offset_right":960.0,"offset_top":48.0,"offset_transform_enabled":false,"offset_transform_pivot":{"x":0.0,"y":0.0},"offset_transform_pivot_ratio":{"x":0.5,"y":0.5},"offset_transform_position":{"x":0.0,"y":0.0},"offset_transform_position_ratio":{"x":0.0,"y":0.0},"offset_transform_rotation":0.0,"offset_transform_scale":{"x":1.0,"y":1.0},"offset_transform_visual_only":true,"oversampling_with_scale":0,"physics_interpolation_mode":2,"pivot_offset":{"x":0.0,"y":0.0},"pivot_offset_ratio":{"x":0.0,"y":0.0},"placeholder":"","position":{"x":640.0,"y":48.0},"prefix_text":"","process_mode":0,"process_physics_priority":0,"process_priority":0,"process_thread_group":0,"propagate_maximum_size":false,"ripple_enabled":true,"rotation":0.0,"scale":{"x":1.0,"y":1.0},"secret":false,"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"shape_token":0,"shortcut_context":null,"show_behind_parent":false,"show_clear_button":false,"show_counter":true,"show_password_toggle":false,"size":{"x":320.0,"y":122.0},"size_flags_horizontal":1,"size_flags_stretch_ratio":1.0,"size_flags_vertical":1,"suffix_text":"","supporting_text":"Auto-growing 3..6 lines","text":"Line 1\nLine 2\nLine 3","texture_filter":0,"texture_repeat":0,"theme":null,"theme_type_variation":"","tooltip_auto_translate_mode":0,"tooltip_text":"","top_level":false,"touch_target_min_size":{"x":48.0,"y":48.0},"trailing_icon":"","trailing_icon_texture":null,"translation_context":"","unique_name_in_owner":false,"use_parent_material":false,"variant":1,"visibility_layer":1,"visible":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"category":"control","children":[],"children_count":0,"class":"Control","depth":1,"groups":[],"id":"node_3","index_in_parent":2,"name":"MultilineNotesField","parent_id":"node_0","path":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField","physics":{},"process_mode":0,"screen_rect":{"has_bounds":true,"height":122.0,"on_screen":true,"width":320.0,"x":640.0,"y":48.0},"script":"res://addons/material3/components/inputs/m3_text_field.gd","script_variables":{"_active_height":102.0,"_focus_progress":0.0,"_focus_tween":null,"_font":"<FontFile>","_font_size_float":12,"_font_size_helper":12,"_font_size_rest":16,"_height_tween":null,"_is_focused_internal":false,"_is_pointer_down":false,"_label_float_progress":1.0,"_label_progress":1.0,"_label_tween":null,"_line_edit":"<Node:M3InternalLineEdit (LineEdit)>","_pointer_inside":false,"_ripple":"<Node:M3Ripple (Control)>","_ripple_wave_alpha":0.0,"_ripple_wave_count":0,"_ripple_wave_radius":0.0,"_state_layer_alpha":0.0,"_text_edit":"<Node:M3InternalTextEdit (TextEdit)>","_theme_connected":true,"current_state":0,"custom_corner_radius":-1.0,"density_override":99,"disabled":false,"error_text":"","field_type":1,"helper_text":"Auto-growing 3..6 lines","is_error":false,"is_password":false,"label":"Release Notes","label_text":"Release Notes","leading_icon":"","leading_icon_texture":null,"max_characters":0,"max_length":0,"max_lines":6,"min_lines":3,"multiline":true,"placeholder":"","prefix_text":"","ripple_enabled":true,"secret":false,"shape_token":0,"show_clear_button":false,"show_counter":true,"show_password_toggle":false,"suffix_text":"","supporting_text":"Auto-growing 3..6 lines","text":"Line 1\nLine 2\nLine 3","touch_target_min_size":{"x":48.0,"y":48.0},"trailing_icon":"","trailing_icon_texture":null,"variant":1},"signals":[{"method":"Viewport::canvas_parent_mark_dirty","signal":"child_order_changed","target":"/root/@Node@83/GSSStageViewport"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField/M3Ripple"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField/M3InternalLineEdit"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField/M3InternalTextEdit"},{"method":"_on_resized","signal":"resized","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField"},{"method":"_on_mouse_entered","signal":"mouse_entered","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField"},{"method":"_on_mouse_exited","signal":"mouse_exited","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField"},{"method":"_on_focus_entered","signal":"focus_entered","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField"},{"method":"_on_focus_exited","signal":"focus_exited","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField"}],"transforms":{"anchors":{"bottom":0.0,"left":0.0,"right":0.0,"top":0.0},"custom_minimum_size":{"x":96.0,"y":122.0},"global_position":{"x":640.0,"y":48.0},"offsets":{"bottom":170.0,"left":640.0,"right":960.0,"top":48.0},"pivot_offset":{"x":0.0,"y":0.0},"position":{"x":640.0,"y":48.0},"rotation_deg":0.0,"scale":{"x":1.0,"y":1.0},"size":{"x":320.0,"y":122.0},"size_flags_horizontal":1,"size_flags_vertical":1},"ui_and_content":{"focus_mode":2,"mouse_filter":0,"tooltip_text":""},"visibility":{"clip_children":0,"light_mask":1,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"show_behind_parent":false,"top_level":false,"visibility_layer":1,"visible":true,"visible_in_tree":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"visible":true}],"children_count":3,"class":"ColorRect","depth":0,"groups":[],"id":"node_0","index_in_parent":0,"name":"TextFieldExtendedVariants","parent_id":"","path":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants","physics":{},"process_mode":0,"screen_rect":{"has_bounds":true,"height":720.0,"on_screen":true,"width":1280.0,"x":0.0,"y":0.0},"script":"","script_variables":{},"signals":[{"method":"Viewport::canvas_parent_mark_dirty","signal":"child_order_changed","target":"/root/@Node@83/GSSStageViewport"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixCurrencyField"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/AffixWeightField"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@83/GSSStageViewport/TextFieldExtendedVariants/MultilineNotesField"}],"transforms":{"anchors":{"bottom":0.0,"left":0.0,"right":0.0,"top":0.0},"custom_minimum_size":{"x":0.0,"y":0.0},"global_position":{"x":0.0,"y":0.0},"offsets":{"bottom":720.0,"left":0.0,"right":1280.0,"top":0.0},"pivot_offset":{"x":0.0,"y":0.0},"position":{"x":0.0,"y":0.0},"rotation_deg":0.0,"scale":{"x":1.0,"y":1.0},"size":{"x":1280.0,"y":720.0},"size_flags_horizontal":1,"size_flags_vertical":1},"ui_and_content":{"color":{"a":1.0,"b":1.0,"g":0.9745,"hex":"#faf9ffff","r":0.9788},"focus_mode":0,"mouse_filter":2,"tooltip_text":""},"visibility":{"clip_children":0,"light_mask":1,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"show_behind_parent":false,"top_level":false,"visibility_layer":1,"visible":true,"visible_in_tree":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"visible":true},"metadata":{"camera_2d":{},"camera_3d":{},"class_counts":{"ColorRect":1,"Control":3},"display_server":"macOS","engine_version":"4.7.2-stable (official)","files":{"global_html":"/Users/rnewquist/Documents/Godot/material3/artifacts/gss/inputs/inputs.text_field.extended__affixes_and_multiline_light.gss.html","global_json":"/Users/rnewquist/Documents/Godot/material3/artifacts/gss/inputs/inputs.text_field.extended__affixes_and_multiline_light.gss.json","global_png":"/Users/rnewquist/Documents/Godot/material3/artifacts/gss/inputs/inputs.text_field.extended__affixes_and_multiline_light.png","html":"res://artifacts/gss/inputs/inputs.text_field.extended__affixes_and_multiline_light.gss.html","json":"res://artifacts/gss/inputs/inputs.text_field.extended__affixes_and_multiline_light.gss.json","png":"res://artifacts/gss/inputs/inputs.text_field.extended__affixes_and_multiline_light.png"},"format":"godot_scene_snapshot","is_synthetic_preview":false,"performance":{"fps":57.0,"memory_static_bytes":66907033,"node_count":32,"object_count":1760,"physics_frames":2623,"process_frames":2326},"short_name":"GSS","snapshot_name":"inputs.text_field.extended__affixes_and_multiline_light","timestamp_iso":"2026-11-24T01:45:55","timestamp_ticks_ms":45474,"total_nodes":4,"version":"1.0","viewport_size":{"height":720,"width":1280},"visible_nodes":4}}</script>
+<script>
+(() => {
+  const rawJson = document.getElementById('gss-data-payload').textContent;
+  const SNAPSHOT = JSON.parse(rawJson);
+  const meta = SNAPSHOT.metadata || {};
+  const flatNodes = SNAPSHOT.flat_nodes || [];
+  const nodeMap = new Map(flatNodes.map(n => [n.id, n]));
+  let selectedId = flatNodes.length ? flatNodes[0].id : null;
+  let showBoxes = true;
+  let mode3D = false;
+  const catColor = (cat) => ({
+    control: 'var(--cat-control)',
+    node2d: 'var(--cat-node2d)',
+    node3d: 'var(--cat-node3d)',
+    physics: 'var(--cat-physics)'
+  }[cat] || 'var(--cat-other)');
+  // Header metadata pills
+  const pillsEl = document.getElementById('hdr-meta-pills');
+  const vpW = (meta.viewport_size && meta.viewport_size.width) || 1280;
+  const vpH = (meta.viewport_size && meta.viewport_size.height) || 720;
+  [
+    `Viewport: ${vpW}x${vpH}`,
+    `Nodes: ${meta.total_nodes || flatNodes.length} (${meta.visible_nodes || 0} visible)`,
+    `Engine: Godot ${meta.engine_version || '4.x'}`,
+    `Captured: ${meta.timestamp_iso || ''}`
+  ].forEach(txt => {
+    const span = document.createElement('span');
+    span.className = 'gss-meta-pill';
+    span.textContent = txt;
+    pillsEl.appendChild(span);
+  });
+  const wrapper = document.getElementById('screen-wrapper');
+  const imgEl = document.getElementById('screenshot-img');
+  wrapper.style.width = vpW + 'px';
+  wrapper.style.height = vpH + 'px';
+  imgEl.style.width = vpW + 'px';
+  imgEl.style.height = vpH + 'px';
+  const treeContainer = document.getElementById('tree-container');
+  const bboxOverlay = document.getElementById('bbox-overlay');
+  const propsContainer = document.getElementById('props-container');
+  function formatValue(val) {
+    if (val === null || val === undefined) return 'null';
+    if (typeof val === 'object') return JSON.stringify(val);
+    return String(val);
+  }
+  function renderTree(filterText = '') {
+    treeContainer.replaceChildren();
+    const q = filterText.trim().toLowerCase();
+    let shown = 0;
+    flatNodes.forEach(node => {
+      const matchStr = `${node.name} ${node.class} ${node.path} ${(node.groups || []).join(' ')}`.toLowerCase();
+      if (q && !matchStr.includes(q)) return;
+      shown++;
+      const row = document.createElement('div');
+      row.className = 'gss-tree-row' + (node.id === selectedId ? ' selected' : '') + (!node.visible ? ' hidden-node' : '');
+      row.dataset.id = node.id;
+      row.style.paddingInlineStart = (10 + (node.depth || 0) * 14) + 'px';
+      const dot = document.createElement('span');
+      dot.className = 'gss-cat-dot';
+      dot.style.background = catColor(node.category);
+      const nameSpan = document.createElement('span');
+      nameSpan.textContent = node.name + (node.script ? ' 📜' : '');
+      const clsSpan = document.createElement('span');
+      clsSpan.className = 'gss-class-tag';
+      clsSpan.textContent = node.class;
+      row.append(dot, nameSpan, clsSpan);
+      row.addEventListener('click', () => selectNode(node.id));
+      treeContainer.appendChild(row);
+    });
+    document.getElementById('tree-count-label').textContent = `${shown} / ${flatNodes.length} nodes`;
+  }
+  function renderBoundingBoxes() {
+    bboxOverlay.replaceChildren();
+    if (!showBoxes) return;
+    const zSpace = Number(document.getElementById('rng-z-space').value || 16);
+    flatNodes.forEach(node => {
+      if (!node.visible || !node.screen_rect || !node.screen_rect.has_bounds) return;
+      const sr = node.screen_rect;
+      if (sr.width <= 0 || sr.height <= 0) return;
+      const box = document.createElement('div');
+      box.className = 'gss-bbox' + (node.id === selectedId ? ' selected' : '');
+      box.dataset.id = node.id;
+      box.style.left = sr.x + 'px';
+      box.style.top = sr.y + 'px';
+      box.style.width = sr.width + 'px';
+      box.style.height = sr.height + 'px';
+      if (node.id !== selectedId) box.style.borderColor = catColor(node.category);
+      if (mode3D) box.style.transform = `translateZ(${(node.depth || 0) * zSpace}px)`;
+      const lbl = document.createElement('span');
+      lbl.className = 'gss-bbox-label';
+      lbl.textContent = `${node.name} (${node.class}) [${Math.round(sr.x)},${Math.round(sr.y)} ${Math.round(sr.width)}x${Math.round(sr.height)}]`;
+      box.appendChild(lbl);
+      box.addEventListener('click', (e) => { e.stopPropagation(); selectNode(node.id); });
+      bboxOverlay.appendChild(box);
+    });
+  }
+  function buildPropertySection(title, dataObj, propFilter, openByDefault = true) {
+    const keys = Object.keys(dataObj || {});
+    const filtered = keys.filter(k => {
+      if (!propFilter) return true;
+      const vStr = formatValue(dataObj[k]).toLowerCase();
+      return k.toLowerCase().includes(propFilter) || vStr.includes(propFilter);
+    });
+    if (!filtered.length) return null;
+    const details = document.createElement('details');
+    details.className = 'gss-section-details';
+    if (openByDefault) details.open = true;
+    const summary = document.createElement('summary');
+    summary.textContent = `${title} (${filtered.length})`;
+    details.appendChild(summary);
+    const wrap = document.createElement('div');
+    wrap.className = 'table-wrapper';
+    wrap.tabIndex = 0;
+    wrap.setAttribute('role', 'region');
+    wrap.setAttribute('aria-label', title);
+    const table = document.createElement('table');
+    table.className = 'gss-prop-table';
+    const thead = document.createElement('thead');
+    const htr = document.createElement('tr');
+    ['Property', 'Value', 'Category'].forEach(h => { const th = document.createElement('th'); th.textContent = h; htr.appendChild(th); });
+    thead.appendChild(htr);
+    const tbody = document.createElement('tbody');
+    filtered.forEach(k => {
+      const val = dataObj[k];
+      const tr = document.createElement('tr');
+      const th = document.createElement('th');
+      th.scope = 'row';
+      th.textContent = k;
+      const tdVal = document.createElement('td');
+      if (val && typeof val === 'object' && typeof val.hex === 'string') {
+        const sw = document.createElement('span');
+        sw.className = 'gss-swatch';
+        sw.style.background = val.hex;
+        tdVal.appendChild(sw);
+      }
+      tdVal.appendChild(document.createTextNode(formatValue(val)));
+      const tdCat = document.createElement('td');
+      tdCat.textContent = title;
+      tr.append(th, tdVal, tdCat);
+      tbody.appendChild(tr);
+    });
+    table.append(thead, tbody);
+    wrap.appendChild(table);
+    details.appendChild(wrap);
+    return details;
+  }
+  function renderProperties() {
+    propsContainer.replaceChildren();
+    const node = nodeMap.get(selectedId);
+    if (!node) return;
+    const q = document.getElementById('prop-search').value.trim().toLowerCase();
+    const card = document.createElement('div');
+    card.className = 'gss-node-summary';
+    const sr = node.screen_rect || {};
+    [
+      ['Node', `${node.name} (${node.class})`],
+      ['Path', node.path],
+      ['Screen Rect', sr.has_bounds ? `x:${sr.x}, y:${sr.y}, w:${sr.width}, h:${sr.height}` : 'N/A'],
+      ['Script', node.script || 'None'],
+      ['Groups', (node.groups && node.groups.length) ? node.groups.join(', ') : 'None']
+    ].forEach(([k, v]) => {
+      const row = document.createElement('div');
+      const b = document.createElement('strong');
+      b.textContent = k + ': ';
+      row.append(b, document.createTextNode(v));
+      card.appendChild(row);
+    });
+    propsContainer.appendChild(card);
+    [
+      ['Script Variables', node.script_variables, true],
+      ['Transforms & Bounds', node.transforms, true],
+      ['Visibility & Layers', node.visibility, true],
+      ['Physics & Collision', node.physics, true],
+      ['UI & Node Content', node.ui_and_content, true],
+      ['All Properties', node.all_properties, false]
+    ].forEach(([title, obj, openDef]) => {
+      const sec = buildPropertySection(title, obj, q, openDef);
+      if (sec) propsContainer.appendChild(sec);
+    });
+  }
+  function selectNode(id) {
+    selectedId = id;
+    renderTree(document.getElementById('tree-search').value);
+    renderBoundingBoxes();
+    renderProperties();
+  }
+  document.getElementById('tree-search').addEventListener('input', (e) => renderTree(e.target.value));
+  document.getElementById('prop-search').addEventListener('input', () => renderProperties());
+  document.getElementById('btn-boxes').addEventListener('click', (e) => {
+    showBoxes = !showBoxes;
+    e.currentTarget.classList.toggle('active', showBoxes);
+    renderBoundingBoxes();
+  });
+  function updateTransform() {
+    const z = Number(document.getElementById('sel-zoom').value || 1);
+    if (mode3D) {
+      wrapper.style.transform = `scale(${z * 0.8}) rotateX(24deg) rotateY(-28deg)`;
+    } else {
+      wrapper.style.transform = `scale(${z})`;
+    }
+  }
+  document.getElementById('btn-3d').addEventListener('click', (e) => {
+    mode3D = !mode3D;
+    e.currentTarget.classList.toggle('active', mode3D);
+    document.getElementById('lbl-depth-slider').style.display = mode3D ? 'inline-flex' : 'none';
+    updateTransform();
+    renderBoundingBoxes();
+  });
+  document.getElementById('rng-z-space').addEventListener('input', () => renderBoundingBoxes());
+  document.getElementById('sel-zoom').addEventListener('change', () => updateTransform());
+  document.getElementById('sel-filter').addEventListener('change', (e) => {
+    imgEl.className = 'gss-screenshot-img ' + (e.target.value || '');
+  });
+  document.getElementById('btn-copy-node').addEventListener('click', () => {
+    const node = nodeMap.get(selectedId);
+    if (node && navigator.clipboard) navigator.clipboard.writeText(JSON.stringify(node, null, 2));
+  });
+  renderTree('');
+  renderBoundingBoxes();
+  renderProperties();
+})();
+</script>
+</body>
+</html>

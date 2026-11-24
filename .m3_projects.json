@@ -1,0 +1,35 @@
+{
+  "version": "1.0",
+  "canonical_source": "addons/material3",
+  "canonical_source_fallbacks": [
+    "./addons/material3",
+    "addons/material3",
+    "packages/material3/addons/material3",
+    "$HOME/Documents/Godot/material3/addons/material3"
+  ],
+  "projects": {
+    "material3": {
+      "path": ".",
+      "fallbacks": [
+        "~/Documents/Godot/material3",
+        "$HOME/Documents/Godot/material3",
+        "../material3",
+        "./material3"
+      ],
+      "runners": [
+        "tests/gdtest_runner.gd",
+        "tests/test_runner.gd",
+        "tests/audit/audit_runner.gd"
+      ],
+      "description": "Material 3 UI Component Library for Godot 4"
+    },
+    "package_material3": {
+      "path": "packages/material3",
+      "fallbacks": [
+        "./packages/material3",
+        "packages/material3"
+      ],
+      "description": "Standalone godot-material3 distribution package"
+    }
+  }
+}

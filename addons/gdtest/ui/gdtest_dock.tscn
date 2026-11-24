@@ -1,0 +1,323 @@
+[gd_scene load_steps=3 format=3 uid="uid://c3q4r8s7v1gd"]
+
+[ext_resource type="Script" path="res://addons/gdtest/ui/gdtest_dock.gd" id="1_dock"]
+[ext_resource type="PackedScene" uid="uid://new_suite_dialog_001" path="res://addons/gdtest/ui/new_suite_dialog.tscn" id="2_new_dialog"]
+
+[node name="GDTestDock" type="VBoxContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+custom_minimum_size = Vector2(0, 260)
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_dock")
+
+[node name="Toolbar" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="NewSuiteButton" type="Button" parent="Toolbar"]
+layout_mode = 2
+text = "➕ New Suite"
+tooltip_text = "Create a new GDTest suite wizard"
+
+[node name="RunAllButton" type="Button" parent="Toolbar"]
+layout_mode = 2
+text = "▶ Run All"
+tooltip_text = "Run all discovered test suites"
+
+[node name="RunSelectedButton" type="Button" parent="Toolbar"]
+layout_mode = 2
+text = "▶ Run Selected"
+tooltip_text = "Run currently selected test or suite"
+
+[node name="RunFailedButton" type="Button" parent="Toolbar"]
+layout_mode = 2
+text = "🔁 Run Failed"
+tooltip_text = "Re-run only failed tests from the last execution"
+
+[node name="WatchModeButton" type="Button" parent="Toolbar"]
+layout_mode = 2
+toggle_mode = true
+text = "⚡ Watch Mode"
+tooltip_text = "Automatically re-run tests on file changes (300ms debounce)"
+
+[node name="StopButton" type="Button" parent="Toolbar"]
+layout_mode = 2
+text = "⏹ Stop"
+tooltip_text = "Stop running test execution"
+
+[node name="RescanButton" type="Button" parent="Toolbar"]
+layout_mode = 2
+text = "🔄 Rescan"
+tooltip_text = "Rescan tests directory"
+
+[node name="VSeparator1" type="VSeparator" parent="Toolbar"]
+layout_mode = 2
+
+[node name="TierFilter" type="OptionButton" parent="Toolbar"]
+layout_mode = 2
+tooltip_text = "Filter by test tier"
+
+[node name="SearchEdit" type="LineEdit" parent="Toolbar"]
+custom_minimum_size = Vector2(160, 0)
+layout_mode = 2
+placeholder_text = "Filter tests..."
+clear_button_enabled = true
+
+[node name="VSeparator2" type="VSeparator" parent="Toolbar"]
+layout_mode = 2
+
+[node name="IsolationCheck" type="CheckBox" parent="Toolbar"]
+layout_mode = 2
+button_pressed = true
+text = "Process Isolation"
+tooltip_text = "Run tests in isolated external Godot process"
+
+[node name="WindowedCheck" type="CheckBox" parent="Toolbar"]
+layout_mode = 2
+text = "Windowed"
+tooltip_text = "Open visible window when running in isolated process"
+
+[node name="StatusLabel" type="Label" parent="Toolbar"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Ready"
+
+[node name="SummaryLabel" type="Label" parent="Toolbar"]
+layout_mode = 2
+text = "0 Suites | 0 Tests"
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+custom_minimum_size = Vector2(0, 6)
+layout_mode = 2
+show_percentage = false
+
+[node name="MainSplit" type="HSplitContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+split_offset = 360
+
+[node name="LeftPanel" type="VBoxContainer" parent="MainSplit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 1.0
+
+[node name="TreeHeader" type="HBoxContainer" parent="MainSplit/LeftPanel"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MainSplit/LeftPanel/TreeHeader"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Test Hierarchy"
+
+[node name="CollapseAllButton" type="Button" parent="MainSplit/LeftPanel/TreeHeader"]
+layout_mode = 2
+text = "Collapse"
+
+[node name="ExpandAllButton" type="Button" parent="MainSplit/LeftPanel/TreeHeader"]
+layout_mode = 2
+text = "Expand"
+
+[node name="TestTree" type="Tree" parent="MainSplit/LeftPanel"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="RightTabs" type="TabContainer" parent="MainSplit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 1.6
+current_tab = 0
+
+[node name="ConsoleOutput" type="VBoxContainer" parent="MainSplit/RightTabs"]
+layout_mode = 2
+metadata/_tab_title = "💻 Console Output"
+
+[node name="ConsoleToolbar" type="HBoxContainer" parent="MainSplit/RightTabs/ConsoleOutput"]
+layout_mode = 2
+
+[node name="ClearConsoleButton" type="Button" parent="MainSplit/RightTabs/ConsoleOutput/ConsoleToolbar"]
+layout_mode = 2
+text = "Clear Console"
+
+[node name="CopyConsoleButton" type="Button" parent="MainSplit/RightTabs/ConsoleOutput/ConsoleToolbar"]
+layout_mode = 2
+text = "Copy Output"
+
+[node name="AutoScrollCheck" type="CheckBox" parent="MainSplit/RightTabs/ConsoleOutput/ConsoleToolbar"]
+layout_mode = 2
+button_pressed = true
+text = "Auto-scroll"
+
+[node name="ConsoleText" type="RichTextLabel" parent="MainSplit/RightTabs/ConsoleOutput"]
+layout_mode = 2
+size_flags_vertical = 3
+focus_mode = 2
+bbcode_enabled = true
+scroll_following = true
+selection_enabled = true
+
+[node name="FailureInspector" type="VBoxContainer" parent="MainSplit/RightTabs"]
+visible = false
+layout_mode = 2
+metadata/_tab_title = "📋 Failure Inspector"
+
+[node name="FailureToolbar" type="HBoxContainer" parent="MainSplit/RightTabs/FailureInspector"]
+layout_mode = 2
+
+[node name="FailureSummaryLabel" type="Label" parent="MainSplit/RightTabs/FailureInspector/FailureToolbar"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "0 Failures"
+
+[node name="ReRunFailedTabButton" type="Button" parent="MainSplit/RightTabs/FailureInspector/FailureToolbar"]
+layout_mode = 2
+text = "🔁 Re-run Failed"
+
+[node name="ClearFailuresButton" type="Button" parent="MainSplit/RightTabs/FailureInspector/FailureToolbar"]
+layout_mode = 2
+text = "Clear"
+
+[node name="FailureScroll" type="ScrollContainer" parent="MainSplit/RightTabs/FailureInspector"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="FailureListContainer" type="VBoxContainer" parent="MainSplit/RightTabs/FailureInspector/FailureScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="VisualCheckpoints" type="VBoxContainer" parent="MainSplit/RightTabs"]
+visible = false
+layout_mode = 2
+metadata/_tab_title = "🖼️ Visual Checkpoints & Diff Viewer"
+
+[node name="VisualToolbar" type="HBoxContainer" parent="MainSplit/RightTabs/VisualCheckpoints"]
+layout_mode = 2
+
+[node name="RefreshGalleryButton" type="Button" parent="MainSplit/RightTabs/VisualCheckpoints/VisualToolbar"]
+layout_mode = 2
+text = "🔄 Refresh Gallery"
+
+[node name="GallerySearchEdit" type="LineEdit" parent="MainSplit/RightTabs/VisualCheckpoints/VisualToolbar"]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+placeholder_text = "Filter checkpoints..."
+clear_button_enabled = true
+
+[node name="CheckpointCountLabel" type="Label" parent="MainSplit/RightTabs/VisualCheckpoints/VisualToolbar"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "0 visual checkpoints"
+
+[node name="OpenArtifactsDirButton" type="Button" parent="MainSplit/RightTabs/VisualCheckpoints/VisualToolbar"]
+layout_mode = 2
+text = "📂 Open Artifacts Dir"
+
+[node name="GalleryView" type="VBoxContainer" parent="MainSplit/RightTabs/VisualCheckpoints"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="CheckpointScroll" type="ScrollContainer" parent="MainSplit/RightTabs/VisualCheckpoints/GalleryView"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="CheckpointGrid" type="GridContainer" parent="MainSplit/RightTabs/VisualCheckpoints/GalleryView/CheckpointScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 3
+
+[node name="DiffDetailView" type="VBoxContainer" parent="MainSplit/RightTabs/VisualCheckpoints"]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="DetailHeader" type="HBoxContainer" parent="MainSplit/RightTabs/VisualCheckpoints/DiffDetailView"]
+layout_mode = 2
+
+[node name="BackToGalleryButton" type="Button" parent="MainSplit/RightTabs/VisualCheckpoints/DiffDetailView/DetailHeader"]
+layout_mode = 2
+text = "⬅ Back to Gallery"
+
+[node name="DetailTitleLabel" type="Label" parent="MainSplit/RightTabs/VisualCheckpoints/DiffDetailView/DetailHeader"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Checkpoint Title"
+
+[node name="ApproveGoldenMasterButton" type="Button" parent="MainSplit/RightTabs/VisualCheckpoints/DiffDetailView/DetailHeader"]
+layout_mode = 2
+text = "⭐ Approve as Golden Master"
+
+[node name="OpenExternalButton" type="Button" parent="MainSplit/RightTabs/VisualCheckpoints/DiffDetailView/DetailHeader"]
+layout_mode = 2
+text = "🔍 System Viewer"
+
+[node name="DiffModeBar" type="HBoxContainer" parent="MainSplit/RightTabs/VisualCheckpoints/DiffDetailView"]
+layout_mode = 2
+
+[node name="ModeSideBySideButton" type="Button" parent="MainSplit/RightTabs/VisualCheckpoints/DiffDetailView/DiffModeBar"]
+layout_mode = 2
+toggle_mode = true
+button_pressed = true
+text = "Side-by-Side"
+
+[node name="ModeSplitSliderButton" type="Button" parent="MainSplit/RightTabs/VisualCheckpoints/DiffDetailView/DiffModeBar"]
+layout_mode = 2
+toggle_mode = true
+text = "Diff Slider"
+
+[node name="ModeDiffOverlayButton" type="Button" parent="MainSplit/RightTabs/VisualCheckpoints/DiffDetailView/DiffModeBar"]
+layout_mode = 2
+toggle_mode = true
+text = "Diff Heatmap"
+
+[node name="ModeSingleZoomButton" type="Button" parent="MainSplit/RightTabs/VisualCheckpoints/DiffDetailView/DiffModeBar"]
+layout_mode = 2
+toggle_mode = true
+text = "Zoom / Pan"
+
+[node name="VSeparator" type="VSeparator" parent="MainSplit/RightTabs/VisualCheckpoints/DiffDetailView/DiffModeBar"]
+layout_mode = 2
+
+[node name="SliderLabel" type="Label" parent="MainSplit/RightTabs/VisualCheckpoints/DiffDetailView/DiffModeBar"]
+layout_mode = 2
+text = "Split:"
+
+[node name="DiffSlider" type="HSlider" parent="MainSplit/RightTabs/VisualCheckpoints/DiffDetailView/DiffModeBar"]
+custom_minimum_size = Vector2(120, 0)
+layout_mode = 2
+size_flags_vertical = 4
+value = 50.0
+
+[node name="ZoomInButton" type="Button" parent="MainSplit/RightTabs/VisualCheckpoints/DiffDetailView/DiffModeBar"]
+layout_mode = 2
+text = "➕"
+
+[node name="ZoomOutButton" type="Button" parent="MainSplit/RightTabs/VisualCheckpoints/DiffDetailView/DiffModeBar"]
+layout_mode = 2
+text = "➖"
+
+[node name="ZoomResetButton" type="Button" parent="MainSplit/RightTabs/VisualCheckpoints/DiffDetailView/DiffModeBar"]
+layout_mode = 2
+text = "1:1"
+
+[node name="DiffDisplayContainer" type="PanelContainer" parent="MainSplit/RightTabs/VisualCheckpoints/DiffDetailView"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="CriteriaContainer" type="PanelContainer" parent="MainSplit/RightTabs/VisualCheckpoints/DiffDetailView"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+
+[node name="CriteriaLabel" type="RichTextLabel" parent="MainSplit/RightTabs/VisualCheckpoints/DiffDetailView/CriteriaContainer"]
+layout_mode = 2
+bbcode_enabled = true
+text = "Visual Audit Criteria..."
+
+[node name="SandboxContainer" type="Control" parent="."]
+visible = false
+layout_mode = 2
+
+[node name="NewSuiteDialog" parent="." instance=ExtResource("2_new_dialog")]

@@ -1,0 +1,4628 @@
+{
+  "format": "godot_scene_snapshot_live",
+  "short_name": "GSS_LIVE",
+  "version": "1.0",
+  "recording_name": "communication.progress.linear__animate_progress",
+  "metadata": {
+    "recording_name": "communication.progress.linear__animate_progress",
+    "timestamp_iso": "2026-11-24T01:45:25",
+    "total_frames": 28,
+    "delta_frames": 27,
+    "viewport_size": {
+      "width": 1280,
+      "height": 720
+    },
+    "duration_ms": 434,
+    "active_node_count": 2,
+    "bounces_detected": 0,
+    "files": {
+      "png": "res://artifacts/gss/communication/communication.progress.linear__animate_progress.png",
+      "json": "res://artifacts/gss/communication/communication.progress.linear__animate_progress.gss.live.json",
+      "html": "res://artifacts/gss/communication/communication.progress.linear__animate_progress.gss.live.html",
+      "global_png": "/Users/rnewquist/Documents/Godot/material3/artifacts/gss/communication/communication.progress.linear__animate_progress.png",
+      "global_json": "/Users/rnewquist/Documents/Godot/material3/artifacts/gss/communication/communication.progress.linear__animate_progress.gss.live.json",
+      "global_html": "/Users/rnewquist/Documents/Godot/material3/artifacts/gss/communication/communication.progress.linear__animate_progress.gss.live.html"
+    }
+  },
+  "initial_snapshot": {
+    "metadata": {
+      "format": "godot_scene_snapshot",
+      "short_name": "GSS",
+      "version": "1.0",
+      "snapshot_name": "communication.progress.linear__animate_progress_frame_0",
+      "timestamp_iso": "2026-11-24T01:45:24",
+      "timestamp_ticks_ms": 14939,
+      "engine_version": "4.7.2-stable (official)",
+      "display_server": "macOS",
+      "viewport_size": {
+        "width": 1280,
+        "height": 720
+      },
+      "total_nodes": 5,
+      "visible_nodes": 3,
+      "class_counts": {
+        "ColorRect": 1,
+        "Control": 4
+      },
+      "camera_3d": {},
+      "camera_2d": {},
+      "performance": {
+        "fps": 53.0,
+        "process_frames": 786,
+        "physics_frames": 851,
+        "memory_static_bytes": 56058252,
+        "object_count": 1635,
+        "node_count": 10
+      },
+      "frame_index": 0,
+      "elapsed_ms": 0
+    },
+    "hierarchy": {
+      "id": "node_0",
+      "parent_id": "",
+      "name": "LinearProgress",
+      "class": "ColorRect",
+      "category": "control",
+      "path": "/root/@Node@3/GSSStageViewport/LinearProgress",
+      "depth": 0,
+      "index_in_parent": 0,
+      "children_count": 2,
+      "groups": [],
+      "script": "",
+      "process_mode": 0,
+      "visible": true,
+      "screen_rect": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 1280.0,
+        "height": 720.0,
+        "has_bounds": true,
+        "on_screen": true
+      },
+      "script_variables": {},
+      "transforms": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "global_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "size": {
+          "x": 1280.0,
+          "y": 720.0
+        },
+        "custom_minimum_size": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "rotation_deg": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "anchors": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 0.0,
+          "bottom": 0.0
+        },
+        "offsets": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 1280.0,
+          "bottom": 720.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_vertical": 1
+      },
+      "visibility": {
+        "visible": true,
+        "visible_in_tree": true,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "top_level": false,
+        "show_behind_parent": false,
+        "clip_children": 0,
+        "light_mask": 1,
+        "visibility_layer": 1,
+        "z_index": 0,
+        "z_as_relative": true,
+        "y_sort_enabled": false
+      },
+      "physics": {},
+      "ui_and_content": {
+        "focus_mode": 0,
+        "mouse_filter": 2,
+        "tooltip_text": "",
+        "color": {
+          "r": 0.9788,
+          "g": 0.9745,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#faf9ffff"
+        }
+      },
+      "signals": [
+        {
+          "signal": "child_order_changed",
+          "target": "/root/@Node@3/GSSStageViewport",
+          "method": "Viewport::canvas_parent_mark_dirty"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+          "method": "Control::_size_changed"
+        }
+      ],
+      "all_properties": {
+        "accessibility_controls_nodes": [],
+        "accessibility_described_by_nodes": [],
+        "accessibility_description": "",
+        "accessibility_flow_to_nodes": [],
+        "accessibility_labeled_by_nodes": [],
+        "accessibility_live": 0,
+        "accessibility_name": "",
+        "anchor_bottom": 0.0,
+        "anchor_left": 0.0,
+        "anchor_right": 0.0,
+        "anchor_top": 0.0,
+        "anchors_preset": 0,
+        "auto_translate_mode": 0,
+        "clip_children": 0,
+        "clip_contents": false,
+        "color": {
+          "r": 0.9788,
+          "g": 0.9745,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#faf9ffff"
+        },
+        "custom_maximum_size": {
+          "x": -1.0,
+          "y": -1.0
+        },
+        "custom_minimum_size": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "editor_description": "",
+        "focus_behavior_recursive": 0,
+        "focus_mode": 0,
+        "focus_neighbor_bottom": "",
+        "focus_neighbor_left": "",
+        "focus_neighbor_right": "",
+        "focus_neighbor_top": "",
+        "focus_next": "",
+        "focus_previous": "",
+        "grow_horizontal": 1,
+        "grow_vertical": 1,
+        "layout_direction": 0,
+        "layout_mode": 3,
+        "light_mask": 1,
+        "localize_numeral_system": true,
+        "material": null,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "mouse_behavior_recursive": 0,
+        "mouse_default_cursor_shape": 0,
+        "mouse_filter": 2,
+        "mouse_force_pass_scroll_events": true,
+        "offset_bottom": 720.0,
+        "offset_left": 0.0,
+        "offset_right": 1280.0,
+        "offset_top": 0.0,
+        "offset_transform_enabled": false,
+        "offset_transform_pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_pivot_ratio": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "offset_transform_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_position_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_rotation": 0.0,
+        "offset_transform_scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "offset_transform_visual_only": true,
+        "oversampling_with_scale": 0,
+        "physics_interpolation_mode": 2,
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "pivot_offset_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "process_mode": 0,
+        "process_physics_priority": 0,
+        "process_priority": 0,
+        "process_thread_group": 0,
+        "propagate_maximum_size": false,
+        "rotation": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "shortcut_context": null,
+        "show_behind_parent": false,
+        "size": {
+          "x": 1280.0,
+          "y": 720.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_stretch_ratio": 1.0,
+        "size_flags_vertical": 1,
+        "texture_filter": 0,
+        "texture_repeat": 0,
+        "theme": null,
+        "theme_type_variation": "",
+        "tooltip_auto_translate_mode": 0,
+        "tooltip_text": "",
+        "top_level": false,
+        "translation_context": "",
+        "unique_name_in_owner": false,
+        "use_parent_material": false,
+        "visibility_layer": 1,
+        "visible": true,
+        "y_sort_enabled": false,
+        "z_as_relative": true,
+        "z_index": 0
+      },
+      "children": [
+        {
+          "id": "node_1",
+          "parent_id": "node_0",
+          "name": "LinearDeterminate",
+          "class": "Control",
+          "category": "control",
+          "path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate",
+          "depth": 1,
+          "index_in_parent": 0,
+          "children_count": 1,
+          "groups": [],
+          "script": "res://addons/material3/components/feedback/m3_linear_progress.gd",
+          "process_mode": 0,
+          "visible": true,
+          "screen_rect": {
+            "x": 120.0,
+            "y": 140.0,
+            "width": 280.0,
+            "height": 4.0,
+            "has_bounds": true,
+            "on_screen": true
+          },
+          "script_variables": {
+            "_anim_time": 0.0,
+            "_animated_val": 0.5,
+            "_indeterminate_phase": 0.0,
+            "_indeterminate_time": 0.0,
+            "_ripple_effect": "<Node:@Control (Control)>",
+            "_suppress_tween": false,
+            "_tween": null,
+            "_wave_phase": 0.0,
+            "disabled": false,
+            "displayed_value": 0.5,
+            "indeterminate": false,
+            "is_focused": false,
+            "is_hovered": false,
+            "is_pressed": false,
+            "show_stop_indicator": true,
+            "stop_indicator_size": 4.0,
+            "track_gap": 4.0,
+            "track_height": 4.0,
+            "value": 0.5,
+            "wave_amplitude": 3.0,
+            "wave_speed": 6.0,
+            "wave_wavelength": 24.0,
+            "wavy": false
+          },
+          "transforms": {
+            "position": {
+              "x": 120.0,
+              "y": 140.0
+            },
+            "global_position": {
+              "x": 120.0,
+              "y": 140.0
+            },
+            "size": {
+              "x": 280.0,
+              "y": 4.0
+            },
+            "custom_minimum_size": {
+              "x": 200.0,
+              "y": 4.0
+            },
+            "rotation_deg": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "anchors": {
+              "left": 0.0,
+              "top": 0.0,
+              "right": 0.0,
+              "bottom": 0.0
+            },
+            "offsets": {
+              "left": 120.0,
+              "top": 140.0,
+              "right": 400.0,
+              "bottom": 144.0
+            },
+            "size_flags_horizontal": 3,
+            "size_flags_vertical": 1
+          },
+          "visibility": {
+            "visible": true,
+            "visible_in_tree": true,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "top_level": false,
+            "show_behind_parent": false,
+            "clip_children": 0,
+            "light_mask": 1,
+            "visibility_layer": 1,
+            "z_index": 0,
+            "z_as_relative": true,
+            "y_sort_enabled": false
+          },
+          "physics": {},
+          "ui_and_content": {
+            "focus_mode": 0,
+            "mouse_filter": 2,
+            "tooltip_text": ""
+          },
+          "signals": [
+            {
+              "signal": "child_order_changed",
+              "target": "/root/@Node@3/GSSStageViewport",
+              "method": "Viewport::canvas_parent_mark_dirty"
+            },
+            {
+              "signal": "item_rect_changed",
+              "target": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate/@Control@11",
+              "method": "Control::_size_changed"
+            }
+          ],
+          "all_properties": {
+            "accessibility_controls_nodes": [],
+            "accessibility_described_by_nodes": [],
+            "accessibility_description": "",
+            "accessibility_flow_to_nodes": [],
+            "accessibility_labeled_by_nodes": [],
+            "accessibility_live": 0,
+            "accessibility_name": "",
+            "anchor_bottom": 0.0,
+            "anchor_left": 0.0,
+            "anchor_right": 0.0,
+            "anchor_top": 0.0,
+            "anchors_preset": 0,
+            "auto_translate_mode": 0,
+            "clip_children": 0,
+            "clip_contents": false,
+            "custom_maximum_size": {
+              "x": -1.0,
+              "y": -1.0
+            },
+            "custom_minimum_size": {
+              "x": 200.0,
+              "y": 4.0
+            },
+            "disabled": false,
+            "displayed_value": 0.5,
+            "editor_description": "",
+            "focus_behavior_recursive": 0,
+            "focus_mode": 0,
+            "focus_neighbor_bottom": "",
+            "focus_neighbor_left": "",
+            "focus_neighbor_right": "",
+            "focus_neighbor_top": "",
+            "focus_next": "",
+            "focus_previous": "",
+            "grow_horizontal": 1,
+            "grow_vertical": 1,
+            "indeterminate": false,
+            "is_focused": false,
+            "is_hovered": false,
+            "is_pressed": false,
+            "layout_direction": 0,
+            "layout_mode": 0,
+            "light_mask": 1,
+            "localize_numeral_system": true,
+            "material": null,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "mouse_behavior_recursive": 0,
+            "mouse_default_cursor_shape": 0,
+            "mouse_filter": 2,
+            "mouse_force_pass_scroll_events": true,
+            "offset_bottom": 144.0,
+            "offset_left": 120.0,
+            "offset_right": 400.0,
+            "offset_top": 140.0,
+            "offset_transform_enabled": false,
+            "offset_transform_pivot": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_pivot_ratio": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "offset_transform_position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_position_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_rotation": 0.0,
+            "offset_transform_scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "offset_transform_visual_only": true,
+            "oversampling_with_scale": 0,
+            "physics_interpolation_mode": 2,
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "pivot_offset_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "position": {
+              "x": 120.0,
+              "y": 140.0
+            },
+            "process_mode": 0,
+            "process_physics_priority": 0,
+            "process_priority": 0,
+            "process_thread_group": 0,
+            "propagate_maximum_size": false,
+            "rotation": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "shortcut_context": null,
+            "show_behind_parent": false,
+            "show_stop_indicator": true,
+            "size": {
+              "x": 280.0,
+              "y": 4.0
+            },
+            "size_flags_horizontal": 3,
+            "size_flags_stretch_ratio": 1.0,
+            "size_flags_vertical": 1,
+            "stop_indicator_size": 4.0,
+            "texture_filter": 0,
+            "texture_repeat": 0,
+            "theme": null,
+            "theme_type_variation": "",
+            "tooltip_auto_translate_mode": 0,
+            "tooltip_text": "",
+            "top_level": false,
+            "track_gap": 4.0,
+            "track_height": 4.0,
+            "translation_context": "",
+            "unique_name_in_owner": false,
+            "use_parent_material": false,
+            "value": 0.5,
+            "visibility_layer": 1,
+            "visible": true,
+            "wave_amplitude": 3.0,
+            "wave_speed": 6.0,
+            "wave_wavelength": 24.0,
+            "wavy": false,
+            "y_sort_enabled": false,
+            "z_as_relative": true,
+            "z_index": 0
+          },
+          "children": [
+            {
+              "id": "node_2",
+              "parent_id": "node_1",
+              "name": "@Control",
+              "class": "Control",
+              "category": "control",
+              "path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate/@Control@11",
+              "depth": 2,
+              "index_in_parent": 0,
+              "children_count": 0,
+              "groups": [],
+              "script": "res://addons/material3/components/base/m3_ripple.gd",
+              "process_mode": 0,
+              "visible": false,
+              "screen_rect": {
+                "x": 120.0,
+                "y": 140.0,
+                "width": 280.0,
+                "height": 4.0,
+                "has_bounds": true,
+                "on_screen": true
+              },
+              "script_variables": {
+                "_active_waves": [],
+                "_is_dragged": false,
+                "_is_focused": false,
+                "_is_hovered": false,
+                "_is_pressed": false,
+                "_state_layer_alpha": 0.0,
+                "_state_tween": null,
+                "_wave_alpha": 0.0,
+                "_wave_count": 0,
+                "_wave_radius": 0.0,
+                "_waves": [],
+                "bounded": true,
+                "corner_radius": 0.0,
+                "dragged_opacity": 0.16,
+                "focus_opacity": 0.1,
+                "hover_opacity": 0.08,
+                "press_opacity": 0.1,
+                "ripple_color": {
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0,
+                  "a": 1.0,
+                  "hex": "#ffffffff"
+                }
+              },
+              "transforms": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "global_position": {
+                  "x": 120.0,
+                  "y": 140.0
+                },
+                "size": {
+                  "x": 280.0,
+                  "y": 4.0
+                },
+                "custom_minimum_size": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "rotation_deg": 0.0,
+                "scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "pivot_offset": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "anchors": {
+                  "left": 0.0,
+                  "top": 0.0,
+                  "right": 1.0,
+                  "bottom": 1.0
+                },
+                "offsets": {
+                  "left": 0.0,
+                  "top": 0.0,
+                  "right": 0.0,
+                  "bottom": 0.0
+                },
+                "size_flags_horizontal": 1,
+                "size_flags_vertical": 1
+              },
+              "visibility": {
+                "visible": false,
+                "visible_in_tree": false,
+                "modulate": {
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0,
+                  "a": 1.0,
+                  "hex": "#ffffffff"
+                },
+                "self_modulate": {
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0,
+                  "a": 1.0,
+                  "hex": "#ffffffff"
+                },
+                "top_level": false,
+                "show_behind_parent": false,
+                "clip_children": 0,
+                "light_mask": 1,
+                "visibility_layer": 1,
+                "z_index": 0,
+                "z_as_relative": true,
+                "y_sort_enabled": false
+              },
+              "physics": {},
+              "ui_and_content": {
+                "focus_mode": 0,
+                "mouse_filter": 2,
+                "tooltip_text": ""
+              },
+              "signals": [],
+              "all_properties": {
+                "accessibility_controls_nodes": [],
+                "accessibility_described_by_nodes": [],
+                "accessibility_description": "",
+                "accessibility_flow_to_nodes": [],
+                "accessibility_labeled_by_nodes": [],
+                "accessibility_live": 0,
+                "accessibility_name": "",
+                "anchor_bottom": 1.0,
+                "anchor_left": 0.0,
+                "anchor_right": 1.0,
+                "anchor_top": 0.0,
+                "anchors_preset": 0,
+                "auto_translate_mode": 0,
+                "bounded": true,
+                "clip_children": 0,
+                "clip_contents": true,
+                "corner_radius": 0.0,
+                "custom_maximum_size": {
+                  "x": -1.0,
+                  "y": -1.0
+                },
+                "custom_minimum_size": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "dragged_opacity": 0.16,
+                "editor_description": "",
+                "focus_behavior_recursive": 0,
+                "focus_mode": 0,
+                "focus_neighbor_bottom": "",
+                "focus_neighbor_left": "",
+                "focus_neighbor_right": "",
+                "focus_neighbor_top": "",
+                "focus_next": "",
+                "focus_opacity": 0.1,
+                "focus_previous": "",
+                "grow_horizontal": 1,
+                "grow_vertical": 1,
+                "hover_opacity": 0.08,
+                "layout_direction": 0,
+                "layout_mode": 0,
+                "light_mask": 1,
+                "localize_numeral_system": true,
+                "material": null,
+                "modulate": {
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0,
+                  "a": 1.0,
+                  "hex": "#ffffffff"
+                },
+                "mouse_behavior_recursive": 0,
+                "mouse_default_cursor_shape": 0,
+                "mouse_filter": 2,
+                "mouse_force_pass_scroll_events": true,
+                "offset_bottom": 0.0,
+                "offset_left": 0.0,
+                "offset_right": 0.0,
+                "offset_top": 0.0,
+                "offset_transform_enabled": false,
+                "offset_transform_pivot": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "offset_transform_pivot_ratio": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "offset_transform_position": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "offset_transform_position_ratio": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "offset_transform_rotation": 0.0,
+                "offset_transform_scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "offset_transform_visual_only": true,
+                "oversampling_with_scale": 0,
+                "physics_interpolation_mode": 2,
+                "pivot_offset": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "pivot_offset_ratio": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "press_opacity": 0.1,
+                "process_mode": 0,
+                "process_physics_priority": 0,
+                "process_priority": 0,
+                "process_thread_group": 0,
+                "propagate_maximum_size": false,
+                "ripple_color": {
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0,
+                  "a": 1.0,
+                  "hex": "#ffffffff"
+                },
+                "rotation": 0.0,
+                "scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "self_modulate": {
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0,
+                  "a": 1.0,
+                  "hex": "#ffffffff"
+                },
+                "shortcut_context": null,
+                "show_behind_parent": false,
+                "size": {
+                  "x": 280.0,
+                  "y": 4.0
+                },
+                "size_flags_horizontal": 1,
+                "size_flags_stretch_ratio": 1.0,
+                "size_flags_vertical": 1,
+                "texture_filter": 0,
+                "texture_repeat": 0,
+                "theme": null,
+                "theme_type_variation": "",
+                "tooltip_auto_translate_mode": 0,
+                "tooltip_text": "",
+                "top_level": false,
+                "translation_context": "",
+                "unique_name_in_owner": false,
+                "use_parent_material": false,
+                "visibility_layer": 1,
+                "visible": false,
+                "y_sort_enabled": false,
+                "z_as_relative": true,
+                "z_index": 0
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "node_3",
+          "parent_id": "node_0",
+          "name": "LinearIndeterminate",
+          "class": "Control",
+          "category": "control",
+          "path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+          "depth": 1,
+          "index_in_parent": 1,
+          "children_count": 1,
+          "groups": [],
+          "script": "res://addons/material3/components/feedback/m3_linear_progress.gd",
+          "process_mode": 0,
+          "visible": true,
+          "screen_rect": {
+            "x": 120.0,
+            "y": 200.0,
+            "width": 280.0,
+            "height": 4.0,
+            "has_bounds": true,
+            "on_screen": true
+          },
+          "script_variables": {
+            "_anim_time": 0.2708,
+            "_animated_val": 0.0,
+            "_indeterminate_phase": 0.1354,
+            "_indeterminate_time": 0.2708,
+            "_ripple_effect": "<Node:@Control (Control)>",
+            "_suppress_tween": false,
+            "_tween": null,
+            "_wave_phase": 0.0,
+            "disabled": false,
+            "displayed_value": 0.0,
+            "indeterminate": true,
+            "is_focused": false,
+            "is_hovered": false,
+            "is_pressed": false,
+            "show_stop_indicator": true,
+            "stop_indicator_size": 4.0,
+            "track_gap": 4.0,
+            "track_height": 4.0,
+            "value": 0.0,
+            "wave_amplitude": 3.0,
+            "wave_speed": 6.0,
+            "wave_wavelength": 24.0,
+            "wavy": false
+          },
+          "transforms": {
+            "position": {
+              "x": 120.0,
+              "y": 200.0
+            },
+            "global_position": {
+              "x": 120.0,
+              "y": 200.0
+            },
+            "size": {
+              "x": 280.0,
+              "y": 4.0
+            },
+            "custom_minimum_size": {
+              "x": 200.0,
+              "y": 4.0
+            },
+            "rotation_deg": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "anchors": {
+              "left": 0.0,
+              "top": 0.0,
+              "right": 0.0,
+              "bottom": 0.0
+            },
+            "offsets": {
+              "left": 120.0,
+              "top": 200.0,
+              "right": 400.0,
+              "bottom": 204.0
+            },
+            "size_flags_horizontal": 3,
+            "size_flags_vertical": 1
+          },
+          "visibility": {
+            "visible": true,
+            "visible_in_tree": true,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "top_level": false,
+            "show_behind_parent": false,
+            "clip_children": 0,
+            "light_mask": 1,
+            "visibility_layer": 1,
+            "z_index": 0,
+            "z_as_relative": true,
+            "y_sort_enabled": false
+          },
+          "physics": {},
+          "ui_and_content": {
+            "focus_mode": 0,
+            "mouse_filter": 2,
+            "tooltip_text": ""
+          },
+          "signals": [
+            {
+              "signal": "child_order_changed",
+              "target": "/root/@Node@3/GSSStageViewport",
+              "method": "Viewport::canvas_parent_mark_dirty"
+            },
+            {
+              "signal": "item_rect_changed",
+              "target": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate/@Control@12",
+              "method": "Control::_size_changed"
+            }
+          ],
+          "all_properties": {
+            "accessibility_controls_nodes": [],
+            "accessibility_described_by_nodes": [],
+            "accessibility_description": "",
+            "accessibility_flow_to_nodes": [],
+            "accessibility_labeled_by_nodes": [],
+            "accessibility_live": 0,
+            "accessibility_name": "",
+            "anchor_bottom": 0.0,
+            "anchor_left": 0.0,
+            "anchor_right": 0.0,
+            "anchor_top": 0.0,
+            "anchors_preset": 0,
+            "auto_translate_mode": 0,
+            "clip_children": 0,
+            "clip_contents": false,
+            "custom_maximum_size": {
+              "x": -1.0,
+              "y": -1.0
+            },
+            "custom_minimum_size": {
+              "x": 200.0,
+              "y": 4.0
+            },
+            "disabled": false,
+            "displayed_value": 0.0,
+            "editor_description": "",
+            "focus_behavior_recursive": 0,
+            "focus_mode": 0,
+            "focus_neighbor_bottom": "",
+            "focus_neighbor_left": "",
+            "focus_neighbor_right": "",
+            "focus_neighbor_top": "",
+            "focus_next": "",
+            "focus_previous": "",
+            "grow_horizontal": 1,
+            "grow_vertical": 1,
+            "indeterminate": true,
+            "is_focused": false,
+            "is_hovered": false,
+            "is_pressed": false,
+            "layout_direction": 0,
+            "layout_mode": 0,
+            "light_mask": 1,
+            "localize_numeral_system": true,
+            "material": null,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "mouse_behavior_recursive": 0,
+            "mouse_default_cursor_shape": 0,
+            "mouse_filter": 2,
+            "mouse_force_pass_scroll_events": true,
+            "offset_bottom": 204.0,
+            "offset_left": 120.0,
+            "offset_right": 400.0,
+            "offset_top": 200.0,
+            "offset_transform_enabled": false,
+            "offset_transform_pivot": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_pivot_ratio": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "offset_transform_position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_position_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_rotation": 0.0,
+            "offset_transform_scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "offset_transform_visual_only": true,
+            "oversampling_with_scale": 0,
+            "physics_interpolation_mode": 2,
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "pivot_offset_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "position": {
+              "x": 120.0,
+              "y": 200.0
+            },
+            "process_mode": 0,
+            "process_physics_priority": 0,
+            "process_priority": 0,
+            "process_thread_group": 0,
+            "propagate_maximum_size": false,
+            "rotation": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "shortcut_context": null,
+            "show_behind_parent": false,
+            "show_stop_indicator": true,
+            "size": {
+              "x": 280.0,
+              "y": 4.0
+            },
+            "size_flags_horizontal": 3,
+            "size_flags_stretch_ratio": 1.0,
+            "size_flags_vertical": 1,
+            "stop_indicator_size": 4.0,
+            "texture_filter": 0,
+            "texture_repeat": 0,
+            "theme": null,
+            "theme_type_variation": "",
+            "tooltip_auto_translate_mode": 0,
+            "tooltip_text": "",
+            "top_level": false,
+            "track_gap": 4.0,
+            "track_height": 4.0,
+            "translation_context": "",
+            "unique_name_in_owner": false,
+            "use_parent_material": false,
+            "value": 0.0,
+            "visibility_layer": 1,
+            "visible": true,
+            "wave_amplitude": 3.0,
+            "wave_speed": 6.0,
+            "wave_wavelength": 24.0,
+            "wavy": false,
+            "y_sort_enabled": false,
+            "z_as_relative": true,
+            "z_index": 0
+          },
+          "children": [
+            {
+              "id": "node_4",
+              "parent_id": "node_3",
+              "name": "@Control",
+              "class": "Control",
+              "category": "control",
+              "path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate/@Control@12",
+              "depth": 2,
+              "index_in_parent": 0,
+              "children_count": 0,
+              "groups": [],
+              "script": "res://addons/material3/components/base/m3_ripple.gd",
+              "process_mode": 0,
+              "visible": false,
+              "screen_rect": {
+                "x": 120.0,
+                "y": 200.0,
+                "width": 280.0,
+                "height": 4.0,
+                "has_bounds": true,
+                "on_screen": true
+              },
+              "script_variables": {
+                "_active_waves": [],
+                "_is_dragged": false,
+                "_is_focused": false,
+                "_is_hovered": false,
+                "_is_pressed": false,
+                "_state_layer_alpha": 0.0,
+                "_state_tween": null,
+                "_wave_alpha": 0.0,
+                "_wave_count": 0,
+                "_wave_radius": 0.0,
+                "_waves": [],
+                "bounded": true,
+                "corner_radius": 0.0,
+                "dragged_opacity": 0.16,
+                "focus_opacity": 0.1,
+                "hover_opacity": 0.08,
+                "press_opacity": 0.1,
+                "ripple_color": {
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0,
+                  "a": 1.0,
+                  "hex": "#ffffffff"
+                }
+              },
+              "transforms": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "global_position": {
+                  "x": 120.0,
+                  "y": 200.0
+                },
+                "size": {
+                  "x": 280.0,
+                  "y": 4.0
+                },
+                "custom_minimum_size": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "rotation_deg": 0.0,
+                "scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "pivot_offset": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "anchors": {
+                  "left": 0.0,
+                  "top": 0.0,
+                  "right": 1.0,
+                  "bottom": 1.0
+                },
+                "offsets": {
+                  "left": 0.0,
+                  "top": 0.0,
+                  "right": 0.0,
+                  "bottom": 0.0
+                },
+                "size_flags_horizontal": 1,
+                "size_flags_vertical": 1
+              },
+              "visibility": {
+                "visible": false,
+                "visible_in_tree": false,
+                "modulate": {
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0,
+                  "a": 1.0,
+                  "hex": "#ffffffff"
+                },
+                "self_modulate": {
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0,
+                  "a": 1.0,
+                  "hex": "#ffffffff"
+                },
+                "top_level": false,
+                "show_behind_parent": false,
+                "clip_children": 0,
+                "light_mask": 1,
+                "visibility_layer": 1,
+                "z_index": 0,
+                "z_as_relative": true,
+                "y_sort_enabled": false
+              },
+              "physics": {},
+              "ui_and_content": {
+                "focus_mode": 0,
+                "mouse_filter": 2,
+                "tooltip_text": ""
+              },
+              "signals": [],
+              "all_properties": {
+                "accessibility_controls_nodes": [],
+                "accessibility_described_by_nodes": [],
+                "accessibility_description": "",
+                "accessibility_flow_to_nodes": [],
+                "accessibility_labeled_by_nodes": [],
+                "accessibility_live": 0,
+                "accessibility_name": "",
+                "anchor_bottom": 1.0,
+                "anchor_left": 0.0,
+                "anchor_right": 1.0,
+                "anchor_top": 0.0,
+                "anchors_preset": 0,
+                "auto_translate_mode": 0,
+                "bounded": true,
+                "clip_children": 0,
+                "clip_contents": true,
+                "corner_radius": 0.0,
+                "custom_maximum_size": {
+                  "x": -1.0,
+                  "y": -1.0
+                },
+                "custom_minimum_size": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "dragged_opacity": 0.16,
+                "editor_description": "",
+                "focus_behavior_recursive": 0,
+                "focus_mode": 0,
+                "focus_neighbor_bottom": "",
+                "focus_neighbor_left": "",
+                "focus_neighbor_right": "",
+                "focus_neighbor_top": "",
+                "focus_next": "",
+                "focus_opacity": 0.1,
+                "focus_previous": "",
+                "grow_horizontal": 1,
+                "grow_vertical": 1,
+                "hover_opacity": 0.08,
+                "layout_direction": 0,
+                "layout_mode": 0,
+                "light_mask": 1,
+                "localize_numeral_system": true,
+                "material": null,
+                "modulate": {
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0,
+                  "a": 1.0,
+                  "hex": "#ffffffff"
+                },
+                "mouse_behavior_recursive": 0,
+                "mouse_default_cursor_shape": 0,
+                "mouse_filter": 2,
+                "mouse_force_pass_scroll_events": true,
+                "offset_bottom": 0.0,
+                "offset_left": 0.0,
+                "offset_right": 0.0,
+                "offset_top": 0.0,
+                "offset_transform_enabled": false,
+                "offset_transform_pivot": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "offset_transform_pivot_ratio": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "offset_transform_position": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "offset_transform_position_ratio": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "offset_transform_rotation": 0.0,
+                "offset_transform_scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "offset_transform_visual_only": true,
+                "oversampling_with_scale": 0,
+                "physics_interpolation_mode": 2,
+                "pivot_offset": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "pivot_offset_ratio": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "press_opacity": 0.1,
+                "process_mode": 0,
+                "process_physics_priority": 0,
+                "process_priority": 0,
+                "process_thread_group": 0,
+                "propagate_maximum_size": false,
+                "ripple_color": {
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0,
+                  "a": 1.0,
+                  "hex": "#ffffffff"
+                },
+                "rotation": 0.0,
+                "scale": {
+                  "x": 1.0,
+                  "y": 1.0
+                },
+                "self_modulate": {
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0,
+                  "a": 1.0,
+                  "hex": "#ffffffff"
+                },
+                "shortcut_context": null,
+                "show_behind_parent": false,
+                "size": {
+                  "x": 280.0,
+                  "y": 4.0
+                },
+                "size_flags_horizontal": 1,
+                "size_flags_stretch_ratio": 1.0,
+                "size_flags_vertical": 1,
+                "texture_filter": 0,
+                "texture_repeat": 0,
+                "theme": null,
+                "theme_type_variation": "",
+                "tooltip_auto_translate_mode": 0,
+                "tooltip_text": "",
+                "top_level": false,
+                "translation_context": "",
+                "unique_name_in_owner": false,
+                "use_parent_material": false,
+                "visibility_layer": 1,
+                "visible": false,
+                "y_sort_enabled": false,
+                "z_as_relative": true,
+                "z_index": 0
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    "flat_nodes": [
+      {
+        "id": "node_0",
+        "parent_id": "",
+        "name": "LinearProgress",
+        "class": "ColorRect",
+        "category": "control",
+        "path": "/root/@Node@3/GSSStageViewport/LinearProgress",
+        "depth": 0,
+        "index_in_parent": 0,
+        "children_count": 2,
+        "groups": [],
+        "script": "",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 1280.0,
+          "height": 720.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {},
+        "transforms": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "global_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "size": {
+            "x": 1280.0,
+            "y": 720.0
+          },
+          "custom_minimum_size": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 1280.0,
+            "bottom": 720.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 0,
+          "mouse_filter": 2,
+          "tooltip_text": "",
+          "color": {
+            "r": 0.9788,
+            "g": 0.9745,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#faf9ffff"
+          }
+        },
+        "signals": [
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@3/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+            "method": "Control::_size_changed"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "clip_children": 0,
+          "clip_contents": false,
+          "color": {
+            "r": 0.9788,
+            "g": 0.9745,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#faf9ffff"
+          },
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "editor_description": "",
+          "focus_behavior_recursive": 0,
+          "focus_mode": 0,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "layout_direction": 0,
+          "layout_mode": 3,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 0,
+          "mouse_filter": 2,
+          "mouse_force_pass_scroll_events": true,
+          "offset_bottom": 720.0,
+          "offset_left": 0.0,
+          "offset_right": 1280.0,
+          "offset_top": 0.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "size": {
+            "x": 1280.0,
+            "y": 720.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "visibility_layer": 1,
+          "visible": true,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        }
+      },
+      {
+        "id": "node_1",
+        "parent_id": "node_0",
+        "name": "LinearDeterminate",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate",
+        "depth": 1,
+        "index_in_parent": 0,
+        "children_count": 1,
+        "groups": [],
+        "script": "res://addons/material3/components/feedback/m3_linear_progress.gd",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 120.0,
+          "y": 140.0,
+          "width": 280.0,
+          "height": 4.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {
+          "_anim_time": 0.0,
+          "_animated_val": 0.5,
+          "_indeterminate_phase": 0.0,
+          "_indeterminate_time": 0.0,
+          "_ripple_effect": "<Node:@Control (Control)>",
+          "_suppress_tween": false,
+          "_tween": null,
+          "_wave_phase": 0.0,
+          "disabled": false,
+          "displayed_value": 0.5,
+          "indeterminate": false,
+          "is_focused": false,
+          "is_hovered": false,
+          "is_pressed": false,
+          "show_stop_indicator": true,
+          "stop_indicator_size": 4.0,
+          "track_gap": 4.0,
+          "track_height": 4.0,
+          "value": 0.5,
+          "wave_amplitude": 3.0,
+          "wave_speed": 6.0,
+          "wave_wavelength": 24.0,
+          "wavy": false
+        },
+        "transforms": {
+          "position": {
+            "x": 120.0,
+            "y": 140.0
+          },
+          "global_position": {
+            "x": 120.0,
+            "y": 140.0
+          },
+          "size": {
+            "x": 280.0,
+            "y": 4.0
+          },
+          "custom_minimum_size": {
+            "x": 200.0,
+            "y": 4.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 120.0,
+            "top": 140.0,
+            "right": 400.0,
+            "bottom": 144.0
+          },
+          "size_flags_horizontal": 3,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 0,
+          "mouse_filter": 2,
+          "tooltip_text": ""
+        },
+        "signals": [
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@3/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate/@Control@11",
+            "method": "Control::_size_changed"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "clip_children": 0,
+          "clip_contents": false,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 200.0,
+            "y": 4.0
+          },
+          "disabled": false,
+          "displayed_value": 0.5,
+          "editor_description": "",
+          "focus_behavior_recursive": 0,
+          "focus_mode": 0,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "indeterminate": false,
+          "is_focused": false,
+          "is_hovered": false,
+          "is_pressed": false,
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 0,
+          "mouse_filter": 2,
+          "mouse_force_pass_scroll_events": true,
+          "offset_bottom": 144.0,
+          "offset_left": 120.0,
+          "offset_right": 400.0,
+          "offset_top": 140.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "position": {
+            "x": 120.0,
+            "y": 140.0
+          },
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "show_stop_indicator": true,
+          "size": {
+            "x": 280.0,
+            "y": 4.0
+          },
+          "size_flags_horizontal": 3,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "stop_indicator_size": 4.0,
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "track_gap": 4.0,
+          "track_height": 4.0,
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "value": 0.5,
+          "visibility_layer": 1,
+          "visible": true,
+          "wave_amplitude": 3.0,
+          "wave_speed": 6.0,
+          "wave_wavelength": 24.0,
+          "wavy": false,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        }
+      },
+      {
+        "id": "node_2",
+        "parent_id": "node_1",
+        "name": "@Control",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate/@Control@11",
+        "depth": 2,
+        "index_in_parent": 0,
+        "children_count": 0,
+        "groups": [],
+        "script": "res://addons/material3/components/base/m3_ripple.gd",
+        "process_mode": 0,
+        "visible": false,
+        "screen_rect": {
+          "x": 120.0,
+          "y": 140.0,
+          "width": 280.0,
+          "height": 4.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {
+          "_active_waves": [],
+          "_is_dragged": false,
+          "_is_focused": false,
+          "_is_hovered": false,
+          "_is_pressed": false,
+          "_state_layer_alpha": 0.0,
+          "_state_tween": null,
+          "_wave_alpha": 0.0,
+          "_wave_count": 0,
+          "_wave_radius": 0.0,
+          "_waves": [],
+          "bounded": true,
+          "corner_radius": 0.0,
+          "dragged_opacity": 0.16,
+          "focus_opacity": 0.1,
+          "hover_opacity": 0.08,
+          "press_opacity": 0.1,
+          "ripple_color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          }
+        },
+        "transforms": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "global_position": {
+            "x": 120.0,
+            "y": 140.0
+          },
+          "size": {
+            "x": 280.0,
+            "y": 4.0
+          },
+          "custom_minimum_size": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 1.0,
+            "bottom": 1.0
+          },
+          "offsets": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": false,
+          "visible_in_tree": false,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 0,
+          "mouse_filter": 2,
+          "tooltip_text": ""
+        },
+        "signals": [],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 1.0,
+          "anchor_left": 0.0,
+          "anchor_right": 1.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "bounded": true,
+          "clip_children": 0,
+          "clip_contents": true,
+          "corner_radius": 0.0,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "dragged_opacity": 0.16,
+          "editor_description": "",
+          "focus_behavior_recursive": 0,
+          "focus_mode": 0,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_opacity": 0.1,
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "hover_opacity": 0.08,
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 0,
+          "mouse_filter": 2,
+          "mouse_force_pass_scroll_events": true,
+          "offset_bottom": 0.0,
+          "offset_left": 0.0,
+          "offset_right": 0.0,
+          "offset_top": 0.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "press_opacity": 0.1,
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "ripple_color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "size": {
+            "x": 280.0,
+            "y": 4.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "visibility_layer": 1,
+          "visible": false,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        }
+      },
+      {
+        "id": "node_3",
+        "parent_id": "node_0",
+        "name": "LinearIndeterminate",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "depth": 1,
+        "index_in_parent": 1,
+        "children_count": 1,
+        "groups": [],
+        "script": "res://addons/material3/components/feedback/m3_linear_progress.gd",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 120.0,
+          "y": 200.0,
+          "width": 280.0,
+          "height": 4.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {
+          "_anim_time": 0.2708,
+          "_animated_val": 0.0,
+          "_indeterminate_phase": 0.1354,
+          "_indeterminate_time": 0.2708,
+          "_ripple_effect": "<Node:@Control (Control)>",
+          "_suppress_tween": false,
+          "_tween": null,
+          "_wave_phase": 0.0,
+          "disabled": false,
+          "displayed_value": 0.0,
+          "indeterminate": true,
+          "is_focused": false,
+          "is_hovered": false,
+          "is_pressed": false,
+          "show_stop_indicator": true,
+          "stop_indicator_size": 4.0,
+          "track_gap": 4.0,
+          "track_height": 4.0,
+          "value": 0.0,
+          "wave_amplitude": 3.0,
+          "wave_speed": 6.0,
+          "wave_wavelength": 24.0,
+          "wavy": false
+        },
+        "transforms": {
+          "position": {
+            "x": 120.0,
+            "y": 200.0
+          },
+          "global_position": {
+            "x": 120.0,
+            "y": 200.0
+          },
+          "size": {
+            "x": 280.0,
+            "y": 4.0
+          },
+          "custom_minimum_size": {
+            "x": 200.0,
+            "y": 4.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 120.0,
+            "top": 200.0,
+            "right": 400.0,
+            "bottom": 204.0
+          },
+          "size_flags_horizontal": 3,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 0,
+          "mouse_filter": 2,
+          "tooltip_text": ""
+        },
+        "signals": [
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@3/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate/@Control@12",
+            "method": "Control::_size_changed"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "clip_children": 0,
+          "clip_contents": false,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 200.0,
+            "y": 4.0
+          },
+          "disabled": false,
+          "displayed_value": 0.0,
+          "editor_description": "",
+          "focus_behavior_recursive": 0,
+          "focus_mode": 0,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "indeterminate": true,
+          "is_focused": false,
+          "is_hovered": false,
+          "is_pressed": false,
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 0,
+          "mouse_filter": 2,
+          "mouse_force_pass_scroll_events": true,
+          "offset_bottom": 204.0,
+          "offset_left": 120.0,
+          "offset_right": 400.0,
+          "offset_top": 200.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "position": {
+            "x": 120.0,
+            "y": 200.0
+          },
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "show_stop_indicator": true,
+          "size": {
+            "x": 280.0,
+            "y": 4.0
+          },
+          "size_flags_horizontal": 3,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "stop_indicator_size": 4.0,
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "track_gap": 4.0,
+          "track_height": 4.0,
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "value": 0.0,
+          "visibility_layer": 1,
+          "visible": true,
+          "wave_amplitude": 3.0,
+          "wave_speed": 6.0,
+          "wave_wavelength": 24.0,
+          "wavy": false,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        }
+      },
+      {
+        "id": "node_4",
+        "parent_id": "node_3",
+        "name": "@Control",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate/@Control@12",
+        "depth": 2,
+        "index_in_parent": 0,
+        "children_count": 0,
+        "groups": [],
+        "script": "res://addons/material3/components/base/m3_ripple.gd",
+        "process_mode": 0,
+        "visible": false,
+        "screen_rect": {
+          "x": 120.0,
+          "y": 200.0,
+          "width": 280.0,
+          "height": 4.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {
+          "_active_waves": [],
+          "_is_dragged": false,
+          "_is_focused": false,
+          "_is_hovered": false,
+          "_is_pressed": false,
+          "_state_layer_alpha": 0.0,
+          "_state_tween": null,
+          "_wave_alpha": 0.0,
+          "_wave_count": 0,
+          "_wave_radius": 0.0,
+          "_waves": [],
+          "bounded": true,
+          "corner_radius": 0.0,
+          "dragged_opacity": 0.16,
+          "focus_opacity": 0.1,
+          "hover_opacity": 0.08,
+          "press_opacity": 0.1,
+          "ripple_color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          }
+        },
+        "transforms": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "global_position": {
+            "x": 120.0,
+            "y": 200.0
+          },
+          "size": {
+            "x": 280.0,
+            "y": 4.0
+          },
+          "custom_minimum_size": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 1.0,
+            "bottom": 1.0
+          },
+          "offsets": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": false,
+          "visible_in_tree": false,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 0,
+          "mouse_filter": 2,
+          "tooltip_text": ""
+        },
+        "signals": [],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 1.0,
+          "anchor_left": 0.0,
+          "anchor_right": 1.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "bounded": true,
+          "clip_children": 0,
+          "clip_contents": true,
+          "corner_radius": 0.0,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "dragged_opacity": 0.16,
+          "editor_description": "",
+          "focus_behavior_recursive": 0,
+          "focus_mode": 0,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_opacity": 0.1,
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "hover_opacity": 0.08,
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 0,
+          "mouse_filter": 2,
+          "mouse_force_pass_scroll_events": true,
+          "offset_bottom": 0.0,
+          "offset_left": 0.0,
+          "offset_right": 0.0,
+          "offset_top": 0.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "press_opacity": 0.1,
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "ripple_color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "size": {
+            "x": 280.0,
+            "y": 4.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "visibility_layer": 1,
+          "visible": false,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        }
+      }
+    ]
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "elapsed_ms": 4,
+      "delta_sec": 0.0181,
+      "process_frame": 787,
+      "physics_frame": 852,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate": {
+          "script_variables": {
+            "_tween": "<Tween>",
+            "value": 0.9
+          }
+        },
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate": {
+          "script_variables": {
+            "_anim_time": 0.2979,
+            "_indeterminate_phase": 0.149,
+            "_indeterminate_time": 0.2979
+          }
+        }
+      },
+      "changed_count": 2
+    },
+    {
+      "frame_index": 2,
+      "elapsed_ms": 18,
+      "delta_sec": 0.0181,
+      "process_frame": 788,
+      "physics_frame": 853,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate": {
+          "script_variables": {
+            "_animated_val": 0.563,
+            "displayed_value": 0.563
+          }
+        },
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate": {
+          "script_variables": {
+            "_anim_time": 0.325,
+            "_indeterminate_phase": 0.1625,
+            "_indeterminate_time": 0.325
+          }
+        }
+      },
+      "changed_count": 2
+    },
+    {
+      "frame_index": 3,
+      "elapsed_ms": 34,
+      "delta_sec": 0.0181,
+      "process_frame": 789,
+      "physics_frame": 854,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate": {
+          "script_variables": {
+            "_animated_val": 0.6205,
+            "displayed_value": 0.6205
+          }
+        },
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate": {
+          "script_variables": {
+            "_anim_time": 0.3521,
+            "_indeterminate_phase": 0.176,
+            "_indeterminate_time": 0.3521
+          }
+        }
+      },
+      "changed_count": 2
+    },
+    {
+      "frame_index": 4,
+      "elapsed_ms": 51,
+      "delta_sec": 0.0181,
+      "process_frame": 790,
+      "physics_frame": 855,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate": {
+          "script_variables": {
+            "_animated_val": 0.6727,
+            "displayed_value": 0.6727
+          }
+        },
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate": {
+          "script_variables": {
+            "_anim_time": 0.3792,
+            "_indeterminate_phase": 0.1896,
+            "_indeterminate_time": 0.3792
+          }
+        }
+      },
+      "changed_count": 2
+    },
+    {
+      "frame_index": 5,
+      "elapsed_ms": 68,
+      "delta_sec": 0.0181,
+      "process_frame": 791,
+      "physics_frame": 856,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate": {
+          "script_variables": {
+            "_animated_val": 0.7195,
+            "displayed_value": 0.7195
+          }
+        },
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate": {
+          "script_variables": {
+            "_anim_time": 0.4063,
+            "_indeterminate_phase": 0.2031,
+            "_indeterminate_time": 0.4063
+          }
+        }
+      },
+      "changed_count": 2
+    },
+    {
+      "frame_index": 6,
+      "elapsed_ms": 84,
+      "delta_sec": 0.0181,
+      "process_frame": 792,
+      "physics_frame": 857,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate": {
+          "script_variables": {
+            "_animated_val": 0.7609,
+            "displayed_value": 0.7609
+          }
+        },
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate": {
+          "script_variables": {
+            "_anim_time": 0.4333,
+            "_indeterminate_phase": 0.2167,
+            "_indeterminate_time": 0.4333
+          }
+        }
+      },
+      "changed_count": 2
+    },
+    {
+      "frame_index": 7,
+      "elapsed_ms": 101,
+      "delta_sec": 0.0181,
+      "process_frame": 793,
+      "physics_frame": 858,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate": {
+          "script_variables": {
+            "_animated_val": 0.7969,
+            "displayed_value": 0.7969
+          }
+        },
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate": {
+          "script_variables": {
+            "_anim_time": 0.4604,
+            "_indeterminate_phase": 0.2302,
+            "_indeterminate_time": 0.4604
+          }
+        }
+      },
+      "changed_count": 2
+    },
+    {
+      "frame_index": 8,
+      "elapsed_ms": 118,
+      "delta_sec": 0.0181,
+      "process_frame": 794,
+      "physics_frame": 859,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate": {
+          "script_variables": {
+            "_animated_val": 0.8276,
+            "displayed_value": 0.8276
+          }
+        },
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate": {
+          "script_variables": {
+            "_anim_time": 0.4875,
+            "_indeterminate_phase": 0.2438,
+            "_indeterminate_time": 0.4875
+          }
+        }
+      },
+      "changed_count": 2
+    },
+    {
+      "frame_index": 9,
+      "elapsed_ms": 134,
+      "delta_sec": 0.0181,
+      "process_frame": 795,
+      "physics_frame": 861,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate": {
+          "script_variables": {
+            "_animated_val": 0.8528,
+            "displayed_value": 0.8528
+          }
+        },
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate": {
+          "script_variables": {
+            "_anim_time": 0.5146,
+            "_indeterminate_phase": 0.2573,
+            "_indeterminate_time": 0.5146
+          }
+        }
+      },
+      "changed_count": 2
+    },
+    {
+      "frame_index": 10,
+      "elapsed_ms": 151,
+      "delta_sec": 0.0181,
+      "process_frame": 796,
+      "physics_frame": 862,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate": {
+          "script_variables": {
+            "_animated_val": 0.8727,
+            "displayed_value": 0.8727
+          }
+        },
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate": {
+          "script_variables": {
+            "_anim_time": 0.5417,
+            "_indeterminate_phase": 0.2708,
+            "_indeterminate_time": 0.5417
+          }
+        }
+      },
+      "changed_count": 2
+    },
+    {
+      "frame_index": 11,
+      "elapsed_ms": 168,
+      "delta_sec": 0.0181,
+      "process_frame": 797,
+      "physics_frame": 863,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate": {
+          "script_variables": {
+            "_animated_val": 0.8871,
+            "displayed_value": 0.8871
+          }
+        },
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate": {
+          "script_variables": {
+            "_anim_time": 0.5688,
+            "_indeterminate_phase": 0.2844,
+            "_indeterminate_time": 0.5688
+          }
+        }
+      },
+      "changed_count": 2
+    },
+    {
+      "frame_index": 12,
+      "elapsed_ms": 185,
+      "delta_sec": 0.0181,
+      "process_frame": 798,
+      "physics_frame": 864,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate": {
+          "script_variables": {
+            "_animated_val": 0.8962,
+            "displayed_value": 0.8962
+          }
+        },
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate": {
+          "script_variables": {
+            "_anim_time": 0.5958,
+            "_indeterminate_phase": 0.2979,
+            "_indeterminate_time": 0.5958
+          }
+        }
+      },
+      "changed_count": 2
+    },
+    {
+      "frame_index": 13,
+      "elapsed_ms": 201,
+      "delta_sec": 0.0181,
+      "process_frame": 799,
+      "physics_frame": 865,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate": {
+          "script_variables": {
+            "_animated_val": 0.8999,
+            "displayed_value": 0.8999
+          }
+        },
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate": {
+          "script_variables": {
+            "_anim_time": 0.6229,
+            "_indeterminate_phase": 0.3115,
+            "_indeterminate_time": 0.6229
+          }
+        }
+      },
+      "changed_count": 2
+    },
+    {
+      "frame_index": 14,
+      "elapsed_ms": 218,
+      "delta_sec": 0.0181,
+      "process_frame": 800,
+      "physics_frame": 866,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate": {
+          "script_variables": {
+            "_animated_val": 0.9,
+            "displayed_value": 0.9
+          }
+        },
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate": {
+          "script_variables": {
+            "_anim_time": 0.65,
+            "_indeterminate_phase": 0.325,
+            "_indeterminate_time": 0.65
+          }
+        }
+      },
+      "changed_count": 2
+    },
+    {
+      "frame_index": 15,
+      "elapsed_ms": 234,
+      "delta_sec": 0.0181,
+      "process_frame": 801,
+      "physics_frame": 867,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate": {
+          "script_variables": {
+            "_anim_time": 0.6771,
+            "_indeterminate_phase": 0.3385,
+            "_indeterminate_time": 0.6771
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 16,
+      "elapsed_ms": 251,
+      "delta_sec": 0.0181,
+      "process_frame": 802,
+      "physics_frame": 868,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate": {
+          "script_variables": {
+            "_anim_time": 0.7042,
+            "_indeterminate_phase": 0.3521,
+            "_indeterminate_time": 0.7042
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 17,
+      "elapsed_ms": 268,
+      "delta_sec": 0.0181,
+      "process_frame": 803,
+      "physics_frame": 869,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate": {
+          "script_variables": {
+            "_anim_time": 0.7313,
+            "_indeterminate_phase": 0.3656,
+            "_indeterminate_time": 0.7313
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 18,
+      "elapsed_ms": 284,
+      "delta_sec": 0.0181,
+      "process_frame": 804,
+      "physics_frame": 870,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate": {
+          "script_variables": {
+            "_anim_time": 0.7583,
+            "_indeterminate_phase": 0.3792,
+            "_indeterminate_time": 0.7583
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 19,
+      "elapsed_ms": 301,
+      "delta_sec": 0.0181,
+      "process_frame": 805,
+      "physics_frame": 871,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate": {
+          "script_variables": {
+            "_anim_time": 0.7854,
+            "_indeterminate_phase": 0.3927,
+            "_indeterminate_time": 0.7854
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 20,
+      "elapsed_ms": 318,
+      "delta_sec": 0.0181,
+      "process_frame": 806,
+      "physics_frame": 872,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate": {
+          "script_variables": {
+            "_anim_time": 0.8125,
+            "_indeterminate_phase": 0.4063,
+            "_indeterminate_time": 0.8125
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 21,
+      "elapsed_ms": 334,
+      "delta_sec": 0.0181,
+      "process_frame": 807,
+      "physics_frame": 874,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate": {
+          "script_variables": {
+            "_anim_time": 0.8396,
+            "_indeterminate_phase": 0.4198,
+            "_indeterminate_time": 0.8396
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 22,
+      "elapsed_ms": 351,
+      "delta_sec": 0.0181,
+      "process_frame": 808,
+      "physics_frame": 875,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate": {
+          "script_variables": {
+            "_anim_time": 0.8667,
+            "_indeterminate_phase": 0.4333,
+            "_indeterminate_time": 0.8667
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 23,
+      "elapsed_ms": 368,
+      "delta_sec": 0.0181,
+      "process_frame": 809,
+      "physics_frame": 876,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate": {
+          "script_variables": {
+            "_anim_time": 0.8938,
+            "_indeterminate_phase": 0.4469,
+            "_indeterminate_time": 0.8938
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 24,
+      "elapsed_ms": 384,
+      "delta_sec": 0.0181,
+      "process_frame": 810,
+      "physics_frame": 877,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate": {
+          "script_variables": {
+            "_anim_time": 0.9208,
+            "_indeterminate_phase": 0.4604,
+            "_indeterminate_time": 0.9208
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 25,
+      "elapsed_ms": 401,
+      "delta_sec": 0.0181,
+      "process_frame": 811,
+      "physics_frame": 878,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate": {
+          "script_variables": {
+            "_anim_time": 0.9479,
+            "_indeterminate_phase": 0.474,
+            "_indeterminate_time": 0.9479
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 26,
+      "elapsed_ms": 418,
+      "delta_sec": 0.0181,
+      "process_frame": 812,
+      "physics_frame": 879,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate": {
+          "script_variables": {
+            "_anim_time": 0.975,
+            "_indeterminate_phase": 0.4875,
+            "_indeterminate_time": 0.975
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 27,
+      "elapsed_ms": 434,
+      "delta_sec": 0.0181,
+      "process_frame": 813,
+      "physics_frame": 880,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate": {
+          "script_variables": {
+            "_anim_time": 1.0021,
+            "_indeterminate_phase": 0.501,
+            "_indeterminate_time": 1.0021
+          }
+        }
+      },
+      "changed_count": 1
+    }
+  ],
+  "analysis": {
+    "summary": {
+      "total_frames": 28,
+      "delta_frames": 27,
+      "duration_ms": 434,
+      "initial_node_count": 5,
+      "active_node_count": 2,
+      "static_node_count": 3,
+      "spawned_node_count": 0,
+      "removed_node_count": 0,
+      "bounces_detected": 0,
+      "floor_contacts_detected": 0,
+      "total_events": 109
+    },
+    "node_trajectories": {
+      "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate": {
+        "name": "LinearDeterminate",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate",
+        "frames_changed": 14,
+        "is_3d": false,
+        "start_position": {
+          "x": 120.0,
+          "y": 140.0
+        },
+        "end_position": {
+          "x": 120.0,
+          "y": 140.0
+        },
+        "min_position": {
+          "x": 120.0,
+          "y": 140.0
+        },
+        "max_position": {
+          "x": 120.0,
+          "y": 140.0
+        },
+        "total_distance": 0.0,
+        "peak_speed": 0.0,
+        "peak_speed_frame": 0,
+        "bounce_frames": [],
+        "bounces": [],
+        "screen_trail": [
+          {
+            "x": 260.0,
+            "y": 142.0
+          }
+        ],
+        "mutated_properties": {
+          "script_variables._tween": {
+            "initial": null,
+            "final": "<Tween>",
+            "change_count": 1
+          },
+          "script_variables.value": {
+            "initial": 0.5,
+            "final": 0.9,
+            "change_count": 1
+          },
+          "script_variables._animated_val": {
+            "initial": 0.5,
+            "final": 0.9,
+            "change_count": 13
+          },
+          "script_variables.displayed_value": {
+            "initial": 0.5,
+            "final": 0.9,
+            "change_count": 13
+          }
+        },
+        "displacement": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate": {
+        "name": "LinearIndeterminate",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "frames_changed": 27,
+        "is_3d": false,
+        "start_position": {
+          "x": 120.0,
+          "y": 200.0
+        },
+        "end_position": {
+          "x": 120.0,
+          "y": 200.0
+        },
+        "min_position": {
+          "x": 120.0,
+          "y": 200.0
+        },
+        "max_position": {
+          "x": 120.0,
+          "y": 200.0
+        },
+        "total_distance": 0.0,
+        "peak_speed": 0.0,
+        "peak_speed_frame": 0,
+        "bounce_frames": [],
+        "bounces": [],
+        "screen_trail": [
+          {
+            "x": 260.0,
+            "y": 202.0
+          }
+        ],
+        "mutated_properties": {
+          "script_variables._anim_time": {
+            "initial": 0.2708,
+            "final": 1.0021,
+            "change_count": 27
+          },
+          "script_variables._indeterminate_phase": {
+            "initial": 0.1354,
+            "final": 0.501,
+            "change_count": 27
+          },
+          "script_variables._indeterminate_time": {
+            "initial": 0.2708,
+            "final": 1.0021,
+            "change_count": 27
+          }
+        },
+        "displacement": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      }
+    },
+    "events": [
+      {
+        "frame_index": 1,
+        "elapsed_ms": 4,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate",
+        "node_name": "LinearDeterminate",
+        "property": "_tween",
+        "old_value": null,
+        "new_value": "<Tween>"
+      },
+      {
+        "frame_index": 1,
+        "elapsed_ms": 4,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate",
+        "node_name": "LinearDeterminate",
+        "property": "value",
+        "old_value": 0.5,
+        "new_value": 0.9
+      },
+      {
+        "frame_index": 1,
+        "elapsed_ms": 4,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_anim_time",
+        "old_value": 0.2708,
+        "new_value": 0.2979
+      },
+      {
+        "frame_index": 1,
+        "elapsed_ms": 4,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_phase",
+        "old_value": 0.1354,
+        "new_value": 0.149
+      },
+      {
+        "frame_index": 1,
+        "elapsed_ms": 4,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_time",
+        "old_value": 0.2708,
+        "new_value": 0.2979
+      },
+      {
+        "frame_index": 2,
+        "elapsed_ms": 18,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate",
+        "node_name": "LinearDeterminate",
+        "property": "_animated_val",
+        "old_value": 0.5,
+        "new_value": 0.563
+      },
+      {
+        "frame_index": 2,
+        "elapsed_ms": 18,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate",
+        "node_name": "LinearDeterminate",
+        "property": "displayed_value",
+        "old_value": 0.5,
+        "new_value": 0.563
+      },
+      {
+        "frame_index": 2,
+        "elapsed_ms": 18,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_anim_time",
+        "old_value": 0.2979,
+        "new_value": 0.325
+      },
+      {
+        "frame_index": 2,
+        "elapsed_ms": 18,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_phase",
+        "old_value": 0.149,
+        "new_value": 0.1625
+      },
+      {
+        "frame_index": 2,
+        "elapsed_ms": 18,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_time",
+        "old_value": 0.2979,
+        "new_value": 0.325
+      },
+      {
+        "frame_index": 3,
+        "elapsed_ms": 34,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate",
+        "node_name": "LinearDeterminate",
+        "property": "_animated_val",
+        "old_value": 0.563,
+        "new_value": 0.6205
+      },
+      {
+        "frame_index": 3,
+        "elapsed_ms": 34,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate",
+        "node_name": "LinearDeterminate",
+        "property": "displayed_value",
+        "old_value": 0.563,
+        "new_value": 0.6205
+      },
+      {
+        "frame_index": 3,
+        "elapsed_ms": 34,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_anim_time",
+        "old_value": 0.325,
+        "new_value": 0.3521
+      },
+      {
+        "frame_index": 3,
+        "elapsed_ms": 34,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_phase",
+        "old_value": 0.1625,
+        "new_value": 0.176
+      },
+      {
+        "frame_index": 3,
+        "elapsed_ms": 34,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_time",
+        "old_value": 0.325,
+        "new_value": 0.3521
+      },
+      {
+        "frame_index": 4,
+        "elapsed_ms": 51,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate",
+        "node_name": "LinearDeterminate",
+        "property": "_animated_val",
+        "old_value": 0.6205,
+        "new_value": 0.6727
+      },
+      {
+        "frame_index": 4,
+        "elapsed_ms": 51,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate",
+        "node_name": "LinearDeterminate",
+        "property": "displayed_value",
+        "old_value": 0.6205,
+        "new_value": 0.6727
+      },
+      {
+        "frame_index": 4,
+        "elapsed_ms": 51,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_anim_time",
+        "old_value": 0.3521,
+        "new_value": 0.3792
+      },
+      {
+        "frame_index": 4,
+        "elapsed_ms": 51,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_phase",
+        "old_value": 0.176,
+        "new_value": 0.1896
+      },
+      {
+        "frame_index": 4,
+        "elapsed_ms": 51,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_time",
+        "old_value": 0.3521,
+        "new_value": 0.3792
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 68,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate",
+        "node_name": "LinearDeterminate",
+        "property": "_animated_val",
+        "old_value": 0.6727,
+        "new_value": 0.7195
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 68,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate",
+        "node_name": "LinearDeterminate",
+        "property": "displayed_value",
+        "old_value": 0.6727,
+        "new_value": 0.7195
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 68,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_anim_time",
+        "old_value": 0.3792,
+        "new_value": 0.4063
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 68,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_phase",
+        "old_value": 0.1896,
+        "new_value": 0.2031
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 68,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_time",
+        "old_value": 0.3792,
+        "new_value": 0.4063
+      },
+      {
+        "frame_index": 6,
+        "elapsed_ms": 84,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate",
+        "node_name": "LinearDeterminate",
+        "property": "_animated_val",
+        "old_value": 0.7195,
+        "new_value": 0.7609
+      },
+      {
+        "frame_index": 6,
+        "elapsed_ms": 84,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate",
+        "node_name": "LinearDeterminate",
+        "property": "displayed_value",
+        "old_value": 0.7195,
+        "new_value": 0.7609
+      },
+      {
+        "frame_index": 6,
+        "elapsed_ms": 84,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_anim_time",
+        "old_value": 0.4063,
+        "new_value": 0.4333
+      },
+      {
+        "frame_index": 6,
+        "elapsed_ms": 84,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_phase",
+        "old_value": 0.2031,
+        "new_value": 0.2167
+      },
+      {
+        "frame_index": 6,
+        "elapsed_ms": 84,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_time",
+        "old_value": 0.4063,
+        "new_value": 0.4333
+      },
+      {
+        "frame_index": 7,
+        "elapsed_ms": 101,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate",
+        "node_name": "LinearDeterminate",
+        "property": "_animated_val",
+        "old_value": 0.7609,
+        "new_value": 0.7969
+      },
+      {
+        "frame_index": 7,
+        "elapsed_ms": 101,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate",
+        "node_name": "LinearDeterminate",
+        "property": "displayed_value",
+        "old_value": 0.7609,
+        "new_value": 0.7969
+      },
+      {
+        "frame_index": 7,
+        "elapsed_ms": 101,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_anim_time",
+        "old_value": 0.4333,
+        "new_value": 0.4604
+      },
+      {
+        "frame_index": 7,
+        "elapsed_ms": 101,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_phase",
+        "old_value": 0.2167,
+        "new_value": 0.2302
+      },
+      {
+        "frame_index": 7,
+        "elapsed_ms": 101,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_time",
+        "old_value": 0.4333,
+        "new_value": 0.4604
+      },
+      {
+        "frame_index": 8,
+        "elapsed_ms": 118,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate",
+        "node_name": "LinearDeterminate",
+        "property": "_animated_val",
+        "old_value": 0.7969,
+        "new_value": 0.8276
+      },
+      {
+        "frame_index": 8,
+        "elapsed_ms": 118,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate",
+        "node_name": "LinearDeterminate",
+        "property": "displayed_value",
+        "old_value": 0.7969,
+        "new_value": 0.8276
+      },
+      {
+        "frame_index": 8,
+        "elapsed_ms": 118,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_anim_time",
+        "old_value": 0.4604,
+        "new_value": 0.4875
+      },
+      {
+        "frame_index": 8,
+        "elapsed_ms": 118,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_phase",
+        "old_value": 0.2302,
+        "new_value": 0.2438
+      },
+      {
+        "frame_index": 8,
+        "elapsed_ms": 118,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_time",
+        "old_value": 0.4604,
+        "new_value": 0.4875
+      },
+      {
+        "frame_index": 9,
+        "elapsed_ms": 134,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate",
+        "node_name": "LinearDeterminate",
+        "property": "_animated_val",
+        "old_value": 0.8276,
+        "new_value": 0.8528
+      },
+      {
+        "frame_index": 9,
+        "elapsed_ms": 134,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate",
+        "node_name": "LinearDeterminate",
+        "property": "displayed_value",
+        "old_value": 0.8276,
+        "new_value": 0.8528
+      },
+      {
+        "frame_index": 9,
+        "elapsed_ms": 134,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_anim_time",
+        "old_value": 0.4875,
+        "new_value": 0.5146
+      },
+      {
+        "frame_index": 9,
+        "elapsed_ms": 134,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_phase",
+        "old_value": 0.2438,
+        "new_value": 0.2573
+      },
+      {
+        "frame_index": 9,
+        "elapsed_ms": 134,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_time",
+        "old_value": 0.4875,
+        "new_value": 0.5146
+      },
+      {
+        "frame_index": 10,
+        "elapsed_ms": 151,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate",
+        "node_name": "LinearDeterminate",
+        "property": "_animated_val",
+        "old_value": 0.8528,
+        "new_value": 0.8727
+      },
+      {
+        "frame_index": 10,
+        "elapsed_ms": 151,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate",
+        "node_name": "LinearDeterminate",
+        "property": "displayed_value",
+        "old_value": 0.8528,
+        "new_value": 0.8727
+      },
+      {
+        "frame_index": 10,
+        "elapsed_ms": 151,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_anim_time",
+        "old_value": 0.5146,
+        "new_value": 0.5417
+      },
+      {
+        "frame_index": 10,
+        "elapsed_ms": 151,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_phase",
+        "old_value": 0.2573,
+        "new_value": 0.2708
+      },
+      {
+        "frame_index": 10,
+        "elapsed_ms": 151,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_time",
+        "old_value": 0.5146,
+        "new_value": 0.5417
+      },
+      {
+        "frame_index": 11,
+        "elapsed_ms": 168,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate",
+        "node_name": "LinearDeterminate",
+        "property": "_animated_val",
+        "old_value": 0.8727,
+        "new_value": 0.8871
+      },
+      {
+        "frame_index": 11,
+        "elapsed_ms": 168,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate",
+        "node_name": "LinearDeterminate",
+        "property": "displayed_value",
+        "old_value": 0.8727,
+        "new_value": 0.8871
+      },
+      {
+        "frame_index": 11,
+        "elapsed_ms": 168,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_anim_time",
+        "old_value": 0.5417,
+        "new_value": 0.5688
+      },
+      {
+        "frame_index": 11,
+        "elapsed_ms": 168,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_phase",
+        "old_value": 0.2708,
+        "new_value": 0.2844
+      },
+      {
+        "frame_index": 11,
+        "elapsed_ms": 168,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_time",
+        "old_value": 0.5417,
+        "new_value": 0.5688
+      },
+      {
+        "frame_index": 12,
+        "elapsed_ms": 185,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate",
+        "node_name": "LinearDeterminate",
+        "property": "_animated_val",
+        "old_value": 0.8871,
+        "new_value": 0.8962
+      },
+      {
+        "frame_index": 12,
+        "elapsed_ms": 185,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate",
+        "node_name": "LinearDeterminate",
+        "property": "displayed_value",
+        "old_value": 0.8871,
+        "new_value": 0.8962
+      },
+      {
+        "frame_index": 12,
+        "elapsed_ms": 185,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_anim_time",
+        "old_value": 0.5688,
+        "new_value": 0.5958
+      },
+      {
+        "frame_index": 12,
+        "elapsed_ms": 185,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_phase",
+        "old_value": 0.2844,
+        "new_value": 0.2979
+      },
+      {
+        "frame_index": 12,
+        "elapsed_ms": 185,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_time",
+        "old_value": 0.5688,
+        "new_value": 0.5958
+      },
+      {
+        "frame_index": 13,
+        "elapsed_ms": 201,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate",
+        "node_name": "LinearDeterminate",
+        "property": "_animated_val",
+        "old_value": 0.8962,
+        "new_value": 0.8999
+      },
+      {
+        "frame_index": 13,
+        "elapsed_ms": 201,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate",
+        "node_name": "LinearDeterminate",
+        "property": "displayed_value",
+        "old_value": 0.8962,
+        "new_value": 0.8999
+      },
+      {
+        "frame_index": 13,
+        "elapsed_ms": 201,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_anim_time",
+        "old_value": 0.5958,
+        "new_value": 0.6229
+      },
+      {
+        "frame_index": 13,
+        "elapsed_ms": 201,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_phase",
+        "old_value": 0.2979,
+        "new_value": 0.3115
+      },
+      {
+        "frame_index": 13,
+        "elapsed_ms": 201,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_time",
+        "old_value": 0.5958,
+        "new_value": 0.6229
+      },
+      {
+        "frame_index": 14,
+        "elapsed_ms": 218,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate",
+        "node_name": "LinearDeterminate",
+        "property": "_animated_val",
+        "old_value": 0.8999,
+        "new_value": 0.9
+      },
+      {
+        "frame_index": 14,
+        "elapsed_ms": 218,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearDeterminate",
+        "node_name": "LinearDeterminate",
+        "property": "displayed_value",
+        "old_value": 0.8999,
+        "new_value": 0.9
+      },
+      {
+        "frame_index": 14,
+        "elapsed_ms": 218,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_anim_time",
+        "old_value": 0.6229,
+        "new_value": 0.65
+      },
+      {
+        "frame_index": 14,
+        "elapsed_ms": 218,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_phase",
+        "old_value": 0.3115,
+        "new_value": 0.325
+      },
+      {
+        "frame_index": 14,
+        "elapsed_ms": 218,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_time",
+        "old_value": 0.6229,
+        "new_value": 0.65
+      },
+      {
+        "frame_index": 15,
+        "elapsed_ms": 234,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_anim_time",
+        "old_value": 0.65,
+        "new_value": 0.6771
+      },
+      {
+        "frame_index": 15,
+        "elapsed_ms": 234,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_phase",
+        "old_value": 0.325,
+        "new_value": 0.3385
+      },
+      {
+        "frame_index": 15,
+        "elapsed_ms": 234,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_time",
+        "old_value": 0.65,
+        "new_value": 0.6771
+      },
+      {
+        "frame_index": 16,
+        "elapsed_ms": 251,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_anim_time",
+        "old_value": 0.6771,
+        "new_value": 0.7042
+      },
+      {
+        "frame_index": 16,
+        "elapsed_ms": 251,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_phase",
+        "old_value": 0.3385,
+        "new_value": 0.3521
+      },
+      {
+        "frame_index": 16,
+        "elapsed_ms": 251,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_time",
+        "old_value": 0.6771,
+        "new_value": 0.7042
+      },
+      {
+        "frame_index": 17,
+        "elapsed_ms": 268,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_anim_time",
+        "old_value": 0.7042,
+        "new_value": 0.7313
+      },
+      {
+        "frame_index": 17,
+        "elapsed_ms": 268,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_phase",
+        "old_value": 0.3521,
+        "new_value": 0.3656
+      },
+      {
+        "frame_index": 17,
+        "elapsed_ms": 268,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_time",
+        "old_value": 0.7042,
+        "new_value": 0.7313
+      },
+      {
+        "frame_index": 18,
+        "elapsed_ms": 284,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_anim_time",
+        "old_value": 0.7313,
+        "new_value": 0.7583
+      },
+      {
+        "frame_index": 18,
+        "elapsed_ms": 284,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_phase",
+        "old_value": 0.3656,
+        "new_value": 0.3792
+      },
+      {
+        "frame_index": 18,
+        "elapsed_ms": 284,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_time",
+        "old_value": 0.7313,
+        "new_value": 0.7583
+      },
+      {
+        "frame_index": 19,
+        "elapsed_ms": 301,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_anim_time",
+        "old_value": 0.7583,
+        "new_value": 0.7854
+      },
+      {
+        "frame_index": 19,
+        "elapsed_ms": 301,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_phase",
+        "old_value": 0.3792,
+        "new_value": 0.3927
+      },
+      {
+        "frame_index": 19,
+        "elapsed_ms": 301,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_time",
+        "old_value": 0.7583,
+        "new_value": 0.7854
+      },
+      {
+        "frame_index": 20,
+        "elapsed_ms": 318,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_anim_time",
+        "old_value": 0.7854,
+        "new_value": 0.8125
+      },
+      {
+        "frame_index": 20,
+        "elapsed_ms": 318,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_phase",
+        "old_value": 0.3927,
+        "new_value": 0.4063
+      },
+      {
+        "frame_index": 20,
+        "elapsed_ms": 318,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_time",
+        "old_value": 0.7854,
+        "new_value": 0.8125
+      },
+      {
+        "frame_index": 21,
+        "elapsed_ms": 334,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_anim_time",
+        "old_value": 0.8125,
+        "new_value": 0.8396
+      },
+      {
+        "frame_index": 21,
+        "elapsed_ms": 334,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_phase",
+        "old_value": 0.4063,
+        "new_value": 0.4198
+      },
+      {
+        "frame_index": 21,
+        "elapsed_ms": 334,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_time",
+        "old_value": 0.8125,
+        "new_value": 0.8396
+      },
+      {
+        "frame_index": 22,
+        "elapsed_ms": 351,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_anim_time",
+        "old_value": 0.8396,
+        "new_value": 0.8667
+      },
+      {
+        "frame_index": 22,
+        "elapsed_ms": 351,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_phase",
+        "old_value": 0.4198,
+        "new_value": 0.4333
+      },
+      {
+        "frame_index": 22,
+        "elapsed_ms": 351,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_time",
+        "old_value": 0.8396,
+        "new_value": 0.8667
+      },
+      {
+        "frame_index": 23,
+        "elapsed_ms": 368,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_anim_time",
+        "old_value": 0.8667,
+        "new_value": 0.8938
+      },
+      {
+        "frame_index": 23,
+        "elapsed_ms": 368,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_phase",
+        "old_value": 0.4333,
+        "new_value": 0.4469
+      },
+      {
+        "frame_index": 23,
+        "elapsed_ms": 368,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_time",
+        "old_value": 0.8667,
+        "new_value": 0.8938
+      },
+      {
+        "frame_index": 24,
+        "elapsed_ms": 384,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_anim_time",
+        "old_value": 0.8938,
+        "new_value": 0.9208
+      },
+      {
+        "frame_index": 24,
+        "elapsed_ms": 384,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_phase",
+        "old_value": 0.4469,
+        "new_value": 0.4604
+      },
+      {
+        "frame_index": 24,
+        "elapsed_ms": 384,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_time",
+        "old_value": 0.8938,
+        "new_value": 0.9208
+      },
+      {
+        "frame_index": 25,
+        "elapsed_ms": 401,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_anim_time",
+        "old_value": 0.9208,
+        "new_value": 0.9479
+      },
+      {
+        "frame_index": 25,
+        "elapsed_ms": 401,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_phase",
+        "old_value": 0.4604,
+        "new_value": 0.474
+      },
+      {
+        "frame_index": 25,
+        "elapsed_ms": 401,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_time",
+        "old_value": 0.9208,
+        "new_value": 0.9479
+      },
+      {
+        "frame_index": 26,
+        "elapsed_ms": 418,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_anim_time",
+        "old_value": 0.9479,
+        "new_value": 0.975
+      },
+      {
+        "frame_index": 26,
+        "elapsed_ms": 418,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_phase",
+        "old_value": 0.474,
+        "new_value": 0.4875
+      },
+      {
+        "frame_index": 26,
+        "elapsed_ms": 418,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_time",
+        "old_value": 0.9479,
+        "new_value": 0.975
+      },
+      {
+        "frame_index": 27,
+        "elapsed_ms": 434,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_anim_time",
+        "old_value": 0.975,
+        "new_value": 1.0021
+      },
+      {
+        "frame_index": 27,
+        "elapsed_ms": 434,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_phase",
+        "old_value": 0.4875,
+        "new_value": 0.501
+      },
+      {
+        "frame_index": 27,
+        "elapsed_ms": 434,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@3/GSSStageViewport/LinearProgress/LinearIndeterminate",
+        "node_name": "LinearIndeterminate",
+        "property": "_indeterminate_time",
+        "old_value": 0.975,
+        "new_value": 1.0021
+      }
+    ]
+  }
+}

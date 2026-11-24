@@ -1,0 +1,36 @@
+# Godot 4+ specific ignores
+.godot/
+*.translation
+export_presets.cfg
+
+# Imported assets
+*.import/
+
+# Mono / .NET specific ignores
+.mono/
+[Bb]in/
+[Oo]bj/
+
+# OS specific ignores
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Python / Tools
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.bak
+
+# Temporary / Log files
+godot.log
+*.log
+artifacts/gss_headless/
+packages/
+Library/

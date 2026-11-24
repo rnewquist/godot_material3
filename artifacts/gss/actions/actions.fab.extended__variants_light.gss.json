@@ -1,0 +1,1907 @@
+{
+  "metadata": {
+    "format": "godot_scene_snapshot",
+    "short_name": "GSS",
+    "version": "1.0",
+    "snapshot_name": "actions.fab.extended__variants_light",
+    "timestamp_iso": "2026-11-24T01:45:18",
+    "timestamp_ticks_ms": 8555,
+    "engine_version": "4.7.2-stable (official)",
+    "display_server": "macOS",
+    "viewport_size": {
+      "width": 1280,
+      "height": 720
+    },
+    "total_nodes": 3,
+    "visible_nodes": 3,
+    "class_counts": {
+      "ColorRect": 1,
+      "Control": 2
+    },
+    "camera_3d": {},
+    "camera_2d": {},
+    "performance": {
+      "fps": 59.0,
+      "process_frames": 427,
+      "physics_frames": 468,
+      "memory_static_bytes": 54609398,
+      "object_count": 1613,
+      "node_count": 9
+    },
+    "is_synthetic_preview": false,
+    "files": {
+      "png": "res://artifacts/gss/actions/actions.fab.extended__variants_light.png",
+      "json": "res://artifacts/gss/actions/actions.fab.extended__variants_light.gss.json",
+      "html": "res://artifacts/gss/actions/actions.fab.extended__variants_light.gss.html",
+      "global_png": "/Users/rnewquist/Documents/Godot/material3/artifacts/gss/actions/actions.fab.extended__variants_light.png",
+      "global_json": "/Users/rnewquist/Documents/Godot/material3/artifacts/gss/actions/actions.fab.extended__variants_light.gss.json",
+      "global_html": "/Users/rnewquist/Documents/Godot/material3/artifacts/gss/actions/actions.fab.extended__variants_light.gss.html"
+    }
+  },
+  "hierarchy": {
+    "id": "node_0",
+    "parent_id": "",
+    "name": "FabExtended",
+    "class": "ColorRect",
+    "category": "control",
+    "path": "/root/@Node@2/GSSStageViewport/FabExtended",
+    "depth": 0,
+    "index_in_parent": 0,
+    "children_count": 2,
+    "groups": [],
+    "script": "",
+    "process_mode": 0,
+    "visible": true,
+    "screen_rect": {
+      "x": 0.0,
+      "y": 0.0,
+      "width": 1280.0,
+      "height": 720.0,
+      "has_bounds": true,
+      "on_screen": true
+    },
+    "script_variables": {},
+    "transforms": {
+      "position": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "global_position": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "size": {
+        "x": 1280.0,
+        "y": 720.0
+      },
+      "custom_minimum_size": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "rotation_deg": 0.0,
+      "scale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "pivot_offset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "anchors": {
+        "left": 0.0,
+        "top": 0.0,
+        "right": 0.0,
+        "bottom": 0.0
+      },
+      "offsets": {
+        "left": 0.0,
+        "top": 0.0,
+        "right": 1280.0,
+        "bottom": 720.0
+      },
+      "size_flags_horizontal": 1,
+      "size_flags_vertical": 1
+    },
+    "visibility": {
+      "visible": true,
+      "visible_in_tree": true,
+      "modulate": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0,
+        "hex": "#ffffffff"
+      },
+      "self_modulate": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0,
+        "hex": "#ffffffff"
+      },
+      "top_level": false,
+      "show_behind_parent": false,
+      "clip_children": 0,
+      "light_mask": 1,
+      "visibility_layer": 1,
+      "z_index": 0,
+      "z_as_relative": true,
+      "y_sort_enabled": false
+    },
+    "physics": {},
+    "ui_and_content": {
+      "focus_mode": 0,
+      "mouse_filter": 2,
+      "tooltip_text": "",
+      "color": {
+        "r": 0.9788,
+        "g": 0.9745,
+        "b": 1.0,
+        "a": 1.0,
+        "hex": "#faf9ffff"
+      }
+    },
+    "signals": [
+      {
+        "signal": "child_order_changed",
+        "target": "/root/@Node@2/GSSStageViewport",
+        "method": "Viewport::canvas_parent_mark_dirty"
+      },
+      {
+        "signal": "item_rect_changed",
+        "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "method": "Control::_size_changed"
+      },
+      {
+        "signal": "item_rect_changed",
+        "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabLabelOnly",
+        "method": "Control::_size_changed"
+      }
+    ],
+    "all_properties": {
+      "accessibility_controls_nodes": [],
+      "accessibility_described_by_nodes": [],
+      "accessibility_description": "",
+      "accessibility_flow_to_nodes": [],
+      "accessibility_labeled_by_nodes": [],
+      "accessibility_live": 0,
+      "accessibility_name": "",
+      "anchor_bottom": 0.0,
+      "anchor_left": 0.0,
+      "anchor_right": 0.0,
+      "anchor_top": 0.0,
+      "anchors_preset": 0,
+      "auto_translate_mode": 0,
+      "clip_children": 0,
+      "clip_contents": false,
+      "color": {
+        "r": 0.9788,
+        "g": 0.9745,
+        "b": 1.0,
+        "a": 1.0,
+        "hex": "#faf9ffff"
+      },
+      "custom_maximum_size": {
+        "x": -1.0,
+        "y": -1.0
+      },
+      "custom_minimum_size": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "editor_description": "",
+      "focus_behavior_recursive": 0,
+      "focus_mode": 0,
+      "focus_neighbor_bottom": "",
+      "focus_neighbor_left": "",
+      "focus_neighbor_right": "",
+      "focus_neighbor_top": "",
+      "focus_next": "",
+      "focus_previous": "",
+      "grow_horizontal": 1,
+      "grow_vertical": 1,
+      "layout_direction": 0,
+      "layout_mode": 3,
+      "light_mask": 1,
+      "localize_numeral_system": true,
+      "material": null,
+      "modulate": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0,
+        "hex": "#ffffffff"
+      },
+      "mouse_behavior_recursive": 0,
+      "mouse_default_cursor_shape": 0,
+      "mouse_filter": 2,
+      "mouse_force_pass_scroll_events": true,
+      "offset_bottom": 720.0,
+      "offset_left": 0.0,
+      "offset_right": 1280.0,
+      "offset_top": 0.0,
+      "offset_transform_enabled": false,
+      "offset_transform_pivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "offset_transform_pivot_ratio": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "offset_transform_position": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "offset_transform_position_ratio": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "offset_transform_rotation": 0.0,
+      "offset_transform_scale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "offset_transform_visual_only": true,
+      "oversampling_with_scale": 0,
+      "physics_interpolation_mode": 2,
+      "pivot_offset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "pivot_offset_ratio": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "process_mode": 0,
+      "process_physics_priority": 0,
+      "process_priority": 0,
+      "process_thread_group": 0,
+      "propagate_maximum_size": false,
+      "rotation": 0.0,
+      "scale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "self_modulate": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0,
+        "hex": "#ffffffff"
+      },
+      "shortcut_context": null,
+      "show_behind_parent": false,
+      "size": {
+        "x": 1280.0,
+        "y": 720.0
+      },
+      "size_flags_horizontal": 1,
+      "size_flags_stretch_ratio": 1.0,
+      "size_flags_vertical": 1,
+      "texture_filter": 0,
+      "texture_repeat": 0,
+      "theme": null,
+      "theme_type_variation": "",
+      "tooltip_auto_translate_mode": 0,
+      "tooltip_text": "",
+      "top_level": false,
+      "translation_context": "",
+      "unique_name_in_owner": false,
+      "use_parent_material": false,
+      "visibility_layer": 1,
+      "visible": true,
+      "y_sort_enabled": false,
+      "z_as_relative": true,
+      "z_index": 0
+    },
+    "children": [
+      {
+        "id": "node_1",
+        "parent_id": "node_0",
+        "name": "ExtendedFabIconLabel",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "depth": 1,
+        "index_in_parent": 0,
+        "children_count": 0,
+        "groups": [],
+        "script": "res://addons/material3/components/buttons/m3_fab.gd",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 80.0,
+          "y": 100.0,
+          "width": 135.0,
+          "height": 56.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {
+          "_current_elevation": 3,
+          "_elevation_tween": null,
+          "_extend_progress": 1.0,
+          "_extend_tween": null,
+          "_font": "<FontFile>",
+          "_font_size": 14,
+          "_hover_progress": 0.0,
+          "_is_pointer_down": false,
+          "_motion_tween": null,
+          "_pointer_inside": false,
+          "_press_progress": 0.0,
+          "_ripple": "<Node:M3Ripple (Control)>",
+          "_ripple_wave_alpha": 0.0,
+          "_ripple_wave_count": 0,
+          "_ripple_wave_radius": 0.0,
+          "_state_layer_alpha": 0.0,
+          "_target_elevation": 3,
+          "_theme_connected": true,
+          "_updating_variant_flag": false,
+          "collapse_on_scroll": false,
+          "color_palette": 0,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "custom_icon_size": -1.0,
+          "density_override": 99,
+          "disabled": false,
+          "extend_progress": 1.0,
+          "extended": true,
+          "fab_size": 3,
+          "fab_variant": 3,
+          "icon_name": "edit",
+          "icon_rotation_deg": 0.0,
+          "icon_texture": null,
+          "label": "Compose",
+          "ripple_enabled": true,
+          "shape_token": 16,
+          "text": "Compose",
+          "toggle_extended_on_press": true,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          }
+        },
+        "transforms": {
+          "position": {
+            "x": 80.0,
+            "y": 100.0
+          },
+          "global_position": {
+            "x": 80.0,
+            "y": 100.0
+          },
+          "size": {
+            "x": 135.0,
+            "y": 56.0
+          },
+          "custom_minimum_size": {
+            "x": 135.0,
+            "y": 56.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 80.0,
+            "top": 100.0,
+            "right": 215.0,
+            "bottom": 156.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 2,
+          "mouse_filter": 0,
+          "tooltip_text": ""
+        },
+        "signals": [
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@2/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel/M3Ripple",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "resized",
+            "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+            "method": "_on_resized"
+          },
+          {
+            "signal": "mouse_entered",
+            "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+            "method": "_on_mouse_entered"
+          },
+          {
+            "signal": "mouse_exited",
+            "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+            "method": "_on_mouse_exited"
+          },
+          {
+            "signal": "focus_entered",
+            "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+            "method": "_on_focus_entered"
+          },
+          {
+            "signal": "focus_exited",
+            "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+            "method": "_on_focus_exited"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "clip_children": 0,
+          "clip_contents": false,
+          "collapse_on_scroll": false,
+          "color_palette": 0,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "custom_icon_size": -1.0,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 135.0,
+            "y": 56.0
+          },
+          "density_override": 99,
+          "disabled": false,
+          "editor_description": "",
+          "extend_progress": 1.0,
+          "extended": true,
+          "fab_size": 3,
+          "fab_variant": 3,
+          "focus_behavior_recursive": 0,
+          "focus_mode": 2,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "icon_name": "edit",
+          "icon_rotation_deg": 0.0,
+          "icon_texture": null,
+          "label": "Compose",
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 2,
+          "mouse_filter": 0,
+          "mouse_force_pass_scroll_events": true,
+          "offset_bottom": 156.0,
+          "offset_left": 80.0,
+          "offset_right": 215.0,
+          "offset_top": 100.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "position": {
+            "x": 80.0,
+            "y": 100.0
+          },
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "ripple_enabled": true,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shape_token": 16,
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "size": {
+            "x": 135.0,
+            "y": 56.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "text": "Compose",
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "toggle_extended_on_press": true,
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "visibility_layer": 1,
+          "visible": true,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        },
+        "children": []
+      },
+      {
+        "id": "node_2",
+        "parent_id": "node_0",
+        "name": "ExtendedFabLabelOnly",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabLabelOnly",
+        "depth": 1,
+        "index_in_parent": 1,
+        "children_count": 0,
+        "groups": [],
+        "script": "res://addons/material3/components/buttons/m3_fab.gd",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 260.0,
+          "y": 100.0,
+          "width": 141.0,
+          "height": 56.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {
+          "_current_elevation": 3,
+          "_elevation_tween": null,
+          "_extend_progress": 1.0,
+          "_extend_tween": null,
+          "_font": "<FontFile>",
+          "_font_size": 14,
+          "_hover_progress": 0.0,
+          "_is_pointer_down": false,
+          "_motion_tween": null,
+          "_pointer_inside": false,
+          "_press_progress": 0.0,
+          "_ripple": "<Node:M3Ripple (Control)>",
+          "_ripple_wave_alpha": 0.0,
+          "_ripple_wave_count": 0,
+          "_ripple_wave_radius": 0.0,
+          "_state_layer_alpha": 0.0,
+          "_target_elevation": 3,
+          "_theme_connected": true,
+          "_updating_variant_flag": false,
+          "collapse_on_scroll": false,
+          "color_palette": 0,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "custom_icon_size": -1.0,
+          "density_override": 99,
+          "disabled": false,
+          "extend_progress": 1.0,
+          "extended": true,
+          "fab_size": 3,
+          "fab_variant": 3,
+          "icon_name": "",
+          "icon_rotation_deg": 0.0,
+          "icon_texture": null,
+          "label": "New Message",
+          "ripple_enabled": true,
+          "shape_token": 16,
+          "text": "New Message",
+          "toggle_extended_on_press": false,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          }
+        },
+        "transforms": {
+          "position": {
+            "x": 260.0,
+            "y": 100.0
+          },
+          "global_position": {
+            "x": 260.0,
+            "y": 100.0
+          },
+          "size": {
+            "x": 141.0,
+            "y": 56.0
+          },
+          "custom_minimum_size": {
+            "x": 141.0,
+            "y": 56.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 260.0,
+            "top": 100.0,
+            "right": 401.0,
+            "bottom": 156.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 2,
+          "mouse_filter": 0,
+          "tooltip_text": ""
+        },
+        "signals": [
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@2/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabLabelOnly/M3Ripple",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "resized",
+            "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabLabelOnly",
+            "method": "_on_resized"
+          },
+          {
+            "signal": "mouse_entered",
+            "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabLabelOnly",
+            "method": "_on_mouse_entered"
+          },
+          {
+            "signal": "mouse_exited",
+            "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabLabelOnly",
+            "method": "_on_mouse_exited"
+          },
+          {
+            "signal": "focus_entered",
+            "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabLabelOnly",
+            "method": "_on_focus_entered"
+          },
+          {
+            "signal": "focus_exited",
+            "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabLabelOnly",
+            "method": "_on_focus_exited"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "clip_children": 0,
+          "clip_contents": false,
+          "collapse_on_scroll": false,
+          "color_palette": 0,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "custom_icon_size": -1.0,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 141.0,
+            "y": 56.0
+          },
+          "density_override": 99,
+          "disabled": false,
+          "editor_description": "",
+          "extend_progress": 1.0,
+          "extended": true,
+          "fab_size": 3,
+          "fab_variant": 3,
+          "focus_behavior_recursive": 0,
+          "focus_mode": 2,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "icon_name": "",
+          "icon_rotation_deg": 0.0,
+          "icon_texture": null,
+          "label": "New Message",
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 2,
+          "mouse_filter": 0,
+          "mouse_force_pass_scroll_events": true,
+          "offset_bottom": 156.0,
+          "offset_left": 260.0,
+          "offset_right": 401.0,
+          "offset_top": 100.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "position": {
+            "x": 260.0,
+            "y": 100.0
+          },
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "ripple_enabled": true,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shape_token": 16,
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "size": {
+            "x": 141.0,
+            "y": 56.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "text": "New Message",
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "toggle_extended_on_press": false,
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "visibility_layer": 1,
+          "visible": true,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        },
+        "children": []
+      }
+    ]
+  },
+  "flat_nodes": [
+    {
+      "id": "node_0",
+      "parent_id": "",
+      "name": "FabExtended",
+      "class": "ColorRect",
+      "category": "control",
+      "path": "/root/@Node@2/GSSStageViewport/FabExtended",
+      "depth": 0,
+      "index_in_parent": 0,
+      "children_count": 2,
+      "groups": [],
+      "script": "",
+      "process_mode": 0,
+      "visible": true,
+      "screen_rect": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 1280.0,
+        "height": 720.0,
+        "has_bounds": true,
+        "on_screen": true
+      },
+      "script_variables": {},
+      "transforms": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "global_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "size": {
+          "x": 1280.0,
+          "y": 720.0
+        },
+        "custom_minimum_size": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "rotation_deg": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "anchors": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 0.0,
+          "bottom": 0.0
+        },
+        "offsets": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 1280.0,
+          "bottom": 720.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_vertical": 1
+      },
+      "visibility": {
+        "visible": true,
+        "visible_in_tree": true,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "top_level": false,
+        "show_behind_parent": false,
+        "clip_children": 0,
+        "light_mask": 1,
+        "visibility_layer": 1,
+        "z_index": 0,
+        "z_as_relative": true,
+        "y_sort_enabled": false
+      },
+      "physics": {},
+      "ui_and_content": {
+        "focus_mode": 0,
+        "mouse_filter": 2,
+        "tooltip_text": "",
+        "color": {
+          "r": 0.9788,
+          "g": 0.9745,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#faf9ffff"
+        }
+      },
+      "signals": [
+        {
+          "signal": "child_order_changed",
+          "target": "/root/@Node@2/GSSStageViewport",
+          "method": "Viewport::canvas_parent_mark_dirty"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabLabelOnly",
+          "method": "Control::_size_changed"
+        }
+      ],
+      "all_properties": {
+        "accessibility_controls_nodes": [],
+        "accessibility_described_by_nodes": [],
+        "accessibility_description": "",
+        "accessibility_flow_to_nodes": [],
+        "accessibility_labeled_by_nodes": [],
+        "accessibility_live": 0,
+        "accessibility_name": "",
+        "anchor_bottom": 0.0,
+        "anchor_left": 0.0,
+        "anchor_right": 0.0,
+        "anchor_top": 0.0,
+        "anchors_preset": 0,
+        "auto_translate_mode": 0,
+        "clip_children": 0,
+        "clip_contents": false,
+        "color": {
+          "r": 0.9788,
+          "g": 0.9745,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#faf9ffff"
+        },
+        "custom_maximum_size": {
+          "x": -1.0,
+          "y": -1.0
+        },
+        "custom_minimum_size": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "editor_description": "",
+        "focus_behavior_recursive": 0,
+        "focus_mode": 0,
+        "focus_neighbor_bottom": "",
+        "focus_neighbor_left": "",
+        "focus_neighbor_right": "",
+        "focus_neighbor_top": "",
+        "focus_next": "",
+        "focus_previous": "",
+        "grow_horizontal": 1,
+        "grow_vertical": 1,
+        "layout_direction": 0,
+        "layout_mode": 3,
+        "light_mask": 1,
+        "localize_numeral_system": true,
+        "material": null,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "mouse_behavior_recursive": 0,
+        "mouse_default_cursor_shape": 0,
+        "mouse_filter": 2,
+        "mouse_force_pass_scroll_events": true,
+        "offset_bottom": 720.0,
+        "offset_left": 0.0,
+        "offset_right": 1280.0,
+        "offset_top": 0.0,
+        "offset_transform_enabled": false,
+        "offset_transform_pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_pivot_ratio": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "offset_transform_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_position_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_rotation": 0.0,
+        "offset_transform_scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "offset_transform_visual_only": true,
+        "oversampling_with_scale": 0,
+        "physics_interpolation_mode": 2,
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "pivot_offset_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "process_mode": 0,
+        "process_physics_priority": 0,
+        "process_priority": 0,
+        "process_thread_group": 0,
+        "propagate_maximum_size": false,
+        "rotation": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "shortcut_context": null,
+        "show_behind_parent": false,
+        "size": {
+          "x": 1280.0,
+          "y": 720.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_stretch_ratio": 1.0,
+        "size_flags_vertical": 1,
+        "texture_filter": 0,
+        "texture_repeat": 0,
+        "theme": null,
+        "theme_type_variation": "",
+        "tooltip_auto_translate_mode": 0,
+        "tooltip_text": "",
+        "top_level": false,
+        "translation_context": "",
+        "unique_name_in_owner": false,
+        "use_parent_material": false,
+        "visibility_layer": 1,
+        "visible": true,
+        "y_sort_enabled": false,
+        "z_as_relative": true,
+        "z_index": 0
+      }
+    },
+    {
+      "id": "node_1",
+      "parent_id": "node_0",
+      "name": "ExtendedFabIconLabel",
+      "class": "Control",
+      "category": "control",
+      "path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+      "depth": 1,
+      "index_in_parent": 0,
+      "children_count": 0,
+      "groups": [],
+      "script": "res://addons/material3/components/buttons/m3_fab.gd",
+      "process_mode": 0,
+      "visible": true,
+      "screen_rect": {
+        "x": 80.0,
+        "y": 100.0,
+        "width": 135.0,
+        "height": 56.0,
+        "has_bounds": true,
+        "on_screen": true
+      },
+      "script_variables": {
+        "_current_elevation": 3,
+        "_elevation_tween": null,
+        "_extend_progress": 1.0,
+        "_extend_tween": null,
+        "_font": "<FontFile>",
+        "_font_size": 14,
+        "_hover_progress": 0.0,
+        "_is_pointer_down": false,
+        "_motion_tween": null,
+        "_pointer_inside": false,
+        "_press_progress": 0.0,
+        "_ripple": "<Node:M3Ripple (Control)>",
+        "_ripple_wave_alpha": 0.0,
+        "_ripple_wave_count": 0,
+        "_ripple_wave_radius": 0.0,
+        "_state_layer_alpha": 0.0,
+        "_target_elevation": 3,
+        "_theme_connected": true,
+        "_updating_variant_flag": false,
+        "collapse_on_scroll": false,
+        "color_palette": 0,
+        "current_state": 0,
+        "custom_corner_radius": -1.0,
+        "custom_icon_size": -1.0,
+        "density_override": 99,
+        "disabled": false,
+        "extend_progress": 1.0,
+        "extended": true,
+        "fab_size": 3,
+        "fab_variant": 3,
+        "icon_name": "edit",
+        "icon_rotation_deg": 0.0,
+        "icon_texture": null,
+        "label": "Compose",
+        "ripple_enabled": true,
+        "shape_token": 16,
+        "text": "Compose",
+        "toggle_extended_on_press": true,
+        "touch_target_min_size": {
+          "x": 48.0,
+          "y": 48.0
+        }
+      },
+      "transforms": {
+        "position": {
+          "x": 80.0,
+          "y": 100.0
+        },
+        "global_position": {
+          "x": 80.0,
+          "y": 100.0
+        },
+        "size": {
+          "x": 135.0,
+          "y": 56.0
+        },
+        "custom_minimum_size": {
+          "x": 135.0,
+          "y": 56.0
+        },
+        "rotation_deg": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "anchors": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 0.0,
+          "bottom": 0.0
+        },
+        "offsets": {
+          "left": 80.0,
+          "top": 100.0,
+          "right": 215.0,
+          "bottom": 156.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_vertical": 1
+      },
+      "visibility": {
+        "visible": true,
+        "visible_in_tree": true,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "top_level": false,
+        "show_behind_parent": false,
+        "clip_children": 0,
+        "light_mask": 1,
+        "visibility_layer": 1,
+        "z_index": 0,
+        "z_as_relative": true,
+        "y_sort_enabled": false
+      },
+      "physics": {},
+      "ui_and_content": {
+        "focus_mode": 2,
+        "mouse_filter": 0,
+        "tooltip_text": ""
+      },
+      "signals": [
+        {
+          "signal": "child_order_changed",
+          "target": "/root/@Node@2/GSSStageViewport",
+          "method": "Viewport::canvas_parent_mark_dirty"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel/M3Ripple",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "resized",
+          "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+          "method": "_on_resized"
+        },
+        {
+          "signal": "mouse_entered",
+          "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+          "method": "_on_mouse_entered"
+        },
+        {
+          "signal": "mouse_exited",
+          "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+          "method": "_on_mouse_exited"
+        },
+        {
+          "signal": "focus_entered",
+          "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+          "method": "_on_focus_entered"
+        },
+        {
+          "signal": "focus_exited",
+          "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+          "method": "_on_focus_exited"
+        }
+      ],
+      "all_properties": {
+        "accessibility_controls_nodes": [],
+        "accessibility_described_by_nodes": [],
+        "accessibility_description": "",
+        "accessibility_flow_to_nodes": [],
+        "accessibility_labeled_by_nodes": [],
+        "accessibility_live": 0,
+        "accessibility_name": "",
+        "anchor_bottom": 0.0,
+        "anchor_left": 0.0,
+        "anchor_right": 0.0,
+        "anchor_top": 0.0,
+        "anchors_preset": 0,
+        "auto_translate_mode": 0,
+        "clip_children": 0,
+        "clip_contents": false,
+        "collapse_on_scroll": false,
+        "color_palette": 0,
+        "current_state": 0,
+        "custom_corner_radius": -1.0,
+        "custom_icon_size": -1.0,
+        "custom_maximum_size": {
+          "x": -1.0,
+          "y": -1.0
+        },
+        "custom_minimum_size": {
+          "x": 135.0,
+          "y": 56.0
+        },
+        "density_override": 99,
+        "disabled": false,
+        "editor_description": "",
+        "extend_progress": 1.0,
+        "extended": true,
+        "fab_size": 3,
+        "fab_variant": 3,
+        "focus_behavior_recursive": 0,
+        "focus_mode": 2,
+        "focus_neighbor_bottom": "",
+        "focus_neighbor_left": "",
+        "focus_neighbor_right": "",
+        "focus_neighbor_top": "",
+        "focus_next": "",
+        "focus_previous": "",
+        "grow_horizontal": 1,
+        "grow_vertical": 1,
+        "icon_name": "edit",
+        "icon_rotation_deg": 0.0,
+        "icon_texture": null,
+        "label": "Compose",
+        "layout_direction": 0,
+        "layout_mode": 0,
+        "light_mask": 1,
+        "localize_numeral_system": true,
+        "material": null,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "mouse_behavior_recursive": 0,
+        "mouse_default_cursor_shape": 2,
+        "mouse_filter": 0,
+        "mouse_force_pass_scroll_events": true,
+        "offset_bottom": 156.0,
+        "offset_left": 80.0,
+        "offset_right": 215.0,
+        "offset_top": 100.0,
+        "offset_transform_enabled": false,
+        "offset_transform_pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_pivot_ratio": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "offset_transform_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_position_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_rotation": 0.0,
+        "offset_transform_scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "offset_transform_visual_only": true,
+        "oversampling_with_scale": 0,
+        "physics_interpolation_mode": 2,
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "pivot_offset_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "position": {
+          "x": 80.0,
+          "y": 100.0
+        },
+        "process_mode": 0,
+        "process_physics_priority": 0,
+        "process_priority": 0,
+        "process_thread_group": 0,
+        "propagate_maximum_size": false,
+        "ripple_enabled": true,
+        "rotation": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "shape_token": 16,
+        "shortcut_context": null,
+        "show_behind_parent": false,
+        "size": {
+          "x": 135.0,
+          "y": 56.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_stretch_ratio": 1.0,
+        "size_flags_vertical": 1,
+        "text": "Compose",
+        "texture_filter": 0,
+        "texture_repeat": 0,
+        "theme": null,
+        "theme_type_variation": "",
+        "toggle_extended_on_press": true,
+        "tooltip_auto_translate_mode": 0,
+        "tooltip_text": "",
+        "top_level": false,
+        "touch_target_min_size": {
+          "x": 48.0,
+          "y": 48.0
+        },
+        "translation_context": "",
+        "unique_name_in_owner": false,
+        "use_parent_material": false,
+        "visibility_layer": 1,
+        "visible": true,
+        "y_sort_enabled": false,
+        "z_as_relative": true,
+        "z_index": 0
+      }
+    },
+    {
+      "id": "node_2",
+      "parent_id": "node_0",
+      "name": "ExtendedFabLabelOnly",
+      "class": "Control",
+      "category": "control",
+      "path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabLabelOnly",
+      "depth": 1,
+      "index_in_parent": 1,
+      "children_count": 0,
+      "groups": [],
+      "script": "res://addons/material3/components/buttons/m3_fab.gd",
+      "process_mode": 0,
+      "visible": true,
+      "screen_rect": {
+        "x": 260.0,
+        "y": 100.0,
+        "width": 141.0,
+        "height": 56.0,
+        "has_bounds": true,
+        "on_screen": true
+      },
+      "script_variables": {
+        "_current_elevation": 3,
+        "_elevation_tween": null,
+        "_extend_progress": 1.0,
+        "_extend_tween": null,
+        "_font": "<FontFile>",
+        "_font_size": 14,
+        "_hover_progress": 0.0,
+        "_is_pointer_down": false,
+        "_motion_tween": null,
+        "_pointer_inside": false,
+        "_press_progress": 0.0,
+        "_ripple": "<Node:M3Ripple (Control)>",
+        "_ripple_wave_alpha": 0.0,
+        "_ripple_wave_count": 0,
+        "_ripple_wave_radius": 0.0,
+        "_state_layer_alpha": 0.0,
+        "_target_elevation": 3,
+        "_theme_connected": true,
+        "_updating_variant_flag": false,
+        "collapse_on_scroll": false,
+        "color_palette": 0,
+        "current_state": 0,
+        "custom_corner_radius": -1.0,
+        "custom_icon_size": -1.0,
+        "density_override": 99,
+        "disabled": false,
+        "extend_progress": 1.0,
+        "extended": true,
+        "fab_size": 3,
+        "fab_variant": 3,
+        "icon_name": "",
+        "icon_rotation_deg": 0.0,
+        "icon_texture": null,
+        "label": "New Message",
+        "ripple_enabled": true,
+        "shape_token": 16,
+        "text": "New Message",
+        "toggle_extended_on_press": false,
+        "touch_target_min_size": {
+          "x": 48.0,
+          "y": 48.0
+        }
+      },
+      "transforms": {
+        "position": {
+          "x": 260.0,
+          "y": 100.0
+        },
+        "global_position": {
+          "x": 260.0,
+          "y": 100.0
+        },
+        "size": {
+          "x": 141.0,
+          "y": 56.0
+        },
+        "custom_minimum_size": {
+          "x": 141.0,
+          "y": 56.0
+        },
+        "rotation_deg": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "anchors": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 0.0,
+          "bottom": 0.0
+        },
+        "offsets": {
+          "left": 260.0,
+          "top": 100.0,
+          "right": 401.0,
+          "bottom": 156.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_vertical": 1
+      },
+      "visibility": {
+        "visible": true,
+        "visible_in_tree": true,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "top_level": false,
+        "show_behind_parent": false,
+        "clip_children": 0,
+        "light_mask": 1,
+        "visibility_layer": 1,
+        "z_index": 0,
+        "z_as_relative": true,
+        "y_sort_enabled": false
+      },
+      "physics": {},
+      "ui_and_content": {
+        "focus_mode": 2,
+        "mouse_filter": 0,
+        "tooltip_text": ""
+      },
+      "signals": [
+        {
+          "signal": "child_order_changed",
+          "target": "/root/@Node@2/GSSStageViewport",
+          "method": "Viewport::canvas_parent_mark_dirty"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabLabelOnly/M3Ripple",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "resized",
+          "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabLabelOnly",
+          "method": "_on_resized"
+        },
+        {
+          "signal": "mouse_entered",
+          "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabLabelOnly",
+          "method": "_on_mouse_entered"
+        },
+        {
+          "signal": "mouse_exited",
+          "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabLabelOnly",
+          "method": "_on_mouse_exited"
+        },
+        {
+          "signal": "focus_entered",
+          "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabLabelOnly",
+          "method": "_on_focus_entered"
+        },
+        {
+          "signal": "focus_exited",
+          "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabLabelOnly",
+          "method": "_on_focus_exited"
+        }
+      ],
+      "all_properties": {
+        "accessibility_controls_nodes": [],
+        "accessibility_described_by_nodes": [],
+        "accessibility_description": "",
+        "accessibility_flow_to_nodes": [],
+        "accessibility_labeled_by_nodes": [],
+        "accessibility_live": 0,
+        "accessibility_name": "",
+        "anchor_bottom": 0.0,
+        "anchor_left": 0.0,
+        "anchor_right": 0.0,
+        "anchor_top": 0.0,
+        "anchors_preset": 0,
+        "auto_translate_mode": 0,
+        "clip_children": 0,
+        "clip_contents": false,
+        "collapse_on_scroll": false,
+        "color_palette": 0,
+        "current_state": 0,
+        "custom_corner_radius": -1.0,
+        "custom_icon_size": -1.0,
+        "custom_maximum_size": {
+          "x": -1.0,
+          "y": -1.0
+        },
+        "custom_minimum_size": {
+          "x": 141.0,
+          "y": 56.0
+        },
+        "density_override": 99,
+        "disabled": false,
+        "editor_description": "",
+        "extend_progress": 1.0,
+        "extended": true,
+        "fab_size": 3,
+        "fab_variant": 3,
+        "focus_behavior_recursive": 0,
+        "focus_mode": 2,
+        "focus_neighbor_bottom": "",
+        "focus_neighbor_left": "",
+        "focus_neighbor_right": "",
+        "focus_neighbor_top": "",
+        "focus_next": "",
+        "focus_previous": "",
+        "grow_horizontal": 1,
+        "grow_vertical": 1,
+        "icon_name": "",
+        "icon_rotation_deg": 0.0,
+        "icon_texture": null,
+        "label": "New Message",
+        "layout_direction": 0,
+        "layout_mode": 0,
+        "light_mask": 1,
+        "localize_numeral_system": true,
+        "material": null,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "mouse_behavior_recursive": 0,
+        "mouse_default_cursor_shape": 2,
+        "mouse_filter": 0,
+        "mouse_force_pass_scroll_events": true,
+        "offset_bottom": 156.0,
+        "offset_left": 260.0,
+        "offset_right": 401.0,
+        "offset_top": 100.0,
+        "offset_transform_enabled": false,
+        "offset_transform_pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_pivot_ratio": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "offset_transform_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_position_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_rotation": 0.0,
+        "offset_transform_scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "offset_transform_visual_only": true,
+        "oversampling_with_scale": 0,
+        "physics_interpolation_mode": 2,
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "pivot_offset_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "position": {
+          "x": 260.0,
+          "y": 100.0
+        },
+        "process_mode": 0,
+        "process_physics_priority": 0,
+        "process_priority": 0,
+        "process_thread_group": 0,
+        "propagate_maximum_size": false,
+        "ripple_enabled": true,
+        "rotation": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "shape_token": 16,
+        "shortcut_context": null,
+        "show_behind_parent": false,
+        "size": {
+          "x": 141.0,
+          "y": 56.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_stretch_ratio": 1.0,
+        "size_flags_vertical": 1,
+        "text": "New Message",
+        "texture_filter": 0,
+        "texture_repeat": 0,
+        "theme": null,
+        "theme_type_variation": "",
+        "toggle_extended_on_press": false,
+        "tooltip_auto_translate_mode": 0,
+        "tooltip_text": "",
+        "top_level": false,
+        "touch_target_min_size": {
+          "x": 48.0,
+          "y": 48.0
+        },
+        "translation_context": "",
+        "unique_name_in_owner": false,
+        "use_parent_material": false,
+        "visibility_layer": 1,
+        "visible": true,
+        "y_sort_enabled": false,
+        "z_as_relative": true,
+        "z_index": 0
+      }
+    }
+  ]
+}

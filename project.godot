@@ -1,0 +1,36 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; but it is also ok to edit manually.
+
+config_version=5
+
+[application]
+
+config/name="Material 3 Godot"
+config/description="Production-grade Material Design 3 component library for Godot 4"
+run/main_scene="res://scenes/showcase/showcase_main.tscn"
+config/features=PackedStringArray("4.3", "4.4", "4.5", "4.6", "Forward Plus")
+
+[debug]
+
+file_logging/enable_file_logging=false
+
+[autoload]
+
+M3Theme="*res://addons/material3/tokens/m3_theme.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/size/resizable=true
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/material3/plugin.cfg")
+
+[gui]
+
+theme/custom_font=""

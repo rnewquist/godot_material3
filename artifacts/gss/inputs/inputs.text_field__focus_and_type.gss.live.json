@@ -1,0 +1,5547 @@
+{
+  "format": "godot_scene_snapshot_live",
+  "short_name": "GSS_LIVE",
+  "version": "1.0",
+  "recording_name": "inputs.text_field__focus_and_type",
+  "metadata": {
+    "recording_name": "inputs.text_field__focus_and_type",
+    "timestamp_iso": "2026-11-24T01:45:57",
+    "total_frames": 47,
+    "delta_frames": 46,
+    "viewport_size": {
+      "width": 1280,
+      "height": 720
+    },
+    "duration_ms": 753,
+    "active_node_count": 1,
+    "bounces_detected": 0,
+    "files": {
+      "png": "res://artifacts/gss/inputs/inputs.text_field__focus_and_type.png",
+      "json": "res://artifacts/gss/inputs/inputs.text_field__focus_and_type.gss.live.json",
+      "html": "res://artifacts/gss/inputs/inputs.text_field__focus_and_type.gss.live.html",
+      "global_png": "/Users/rnewquist/Documents/Godot/material3/artifacts/gss/inputs/inputs.text_field__focus_and_type.png",
+      "global_json": "/Users/rnewquist/Documents/Godot/material3/artifacts/gss/inputs/inputs.text_field__focus_and_type.gss.live.json",
+      "global_html": "/Users/rnewquist/Documents/Godot/material3/artifacts/gss/inputs/inputs.text_field__focus_and_type.gss.live.html"
+    }
+  },
+  "initial_snapshot": {
+    "metadata": {
+      "format": "godot_scene_snapshot",
+      "short_name": "GSS",
+      "version": "1.0",
+      "snapshot_name": "inputs.text_field__focus_and_type_frame_0",
+      "timestamp_iso": "2026-11-24T01:45:56",
+      "timestamp_ticks_ms": 46741,
+      "engine_version": "4.7.2-stable (official)",
+      "display_server": "macOS",
+      "viewport_size": {
+        "width": 1280,
+        "height": 720
+      },
+      "total_nodes": 6,
+      "visible_nodes": 6,
+      "class_counts": {
+        "ColorRect": 1,
+        "Control": 5
+      },
+      "camera_3d": {},
+      "camera_2d": {},
+      "performance": {
+        "fps": 58.0,
+        "process_frames": 2397,
+        "physics_frames": 2701,
+        "memory_static_bytes": 67667081,
+        "object_count": 1798,
+        "node_count": 51
+      },
+      "frame_index": 0,
+      "elapsed_ms": 0
+    },
+    "hierarchy": {
+      "id": "node_0",
+      "parent_id": "",
+      "name": "TextFieldVariants",
+      "class": "ColorRect",
+      "category": "control",
+      "path": "/root/@Node@83/GSSStageViewport/TextFieldVariants",
+      "depth": 0,
+      "index_in_parent": 0,
+      "children_count": 5,
+      "groups": [],
+      "script": "",
+      "process_mode": 0,
+      "visible": true,
+      "screen_rect": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 1280.0,
+        "height": 720.0,
+        "has_bounds": true,
+        "on_screen": true
+      },
+      "script_variables": {},
+      "transforms": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "global_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "size": {
+          "x": 1280.0,
+          "y": 720.0
+        },
+        "custom_minimum_size": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "rotation_deg": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "anchors": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 0.0,
+          "bottom": 0.0
+        },
+        "offsets": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 1280.0,
+          "bottom": 720.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_vertical": 1
+      },
+      "visibility": {
+        "visible": true,
+        "visible_in_tree": true,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "top_level": false,
+        "show_behind_parent": false,
+        "clip_children": 0,
+        "light_mask": 1,
+        "visibility_layer": 1,
+        "z_index": 0,
+        "z_as_relative": true,
+        "y_sort_enabled": false
+      },
+      "physics": {},
+      "ui_and_content": {
+        "focus_mode": 0,
+        "mouse_filter": 2,
+        "tooltip_text": "",
+        "color": {
+          "r": 0.9788,
+          "g": 0.9745,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#faf9ffff"
+        }
+      },
+      "signals": [
+        {
+          "signal": "child_order_changed",
+          "target": "/root/@Node@83/GSSStageViewport",
+          "method": "Viewport::canvas_parent_mark_dirty"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/ClearableField",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedCounterField",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedErrorField",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/PasswordField",
+          "method": "Control::_size_changed"
+        }
+      ],
+      "all_properties": {
+        "accessibility_controls_nodes": [],
+        "accessibility_described_by_nodes": [],
+        "accessibility_description": "",
+        "accessibility_flow_to_nodes": [],
+        "accessibility_labeled_by_nodes": [],
+        "accessibility_live": 0,
+        "accessibility_name": "",
+        "anchor_bottom": 0.0,
+        "anchor_left": 0.0,
+        "anchor_right": 0.0,
+        "anchor_top": 0.0,
+        "anchors_preset": 0,
+        "auto_translate_mode": 0,
+        "clip_children": 0,
+        "clip_contents": false,
+        "color": {
+          "r": 0.9788,
+          "g": 0.9745,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#faf9ffff"
+        },
+        "custom_maximum_size": {
+          "x": -1.0,
+          "y": -1.0
+        },
+        "custom_minimum_size": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "editor_description": "",
+        "focus_behavior_recursive": 0,
+        "focus_mode": 0,
+        "focus_neighbor_bottom": "",
+        "focus_neighbor_left": "",
+        "focus_neighbor_right": "",
+        "focus_neighbor_top": "",
+        "focus_next": "",
+        "focus_previous": "",
+        "grow_horizontal": 1,
+        "grow_vertical": 1,
+        "layout_direction": 0,
+        "layout_mode": 3,
+        "light_mask": 1,
+        "localize_numeral_system": true,
+        "material": null,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "mouse_behavior_recursive": 0,
+        "mouse_default_cursor_shape": 0,
+        "mouse_filter": 2,
+        "mouse_force_pass_scroll_events": true,
+        "offset_bottom": 720.0,
+        "offset_left": 0.0,
+        "offset_right": 1280.0,
+        "offset_top": 0.0,
+        "offset_transform_enabled": false,
+        "offset_transform_pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_pivot_ratio": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "offset_transform_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_position_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_rotation": 0.0,
+        "offset_transform_scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "offset_transform_visual_only": true,
+        "oversampling_with_scale": 0,
+        "physics_interpolation_mode": 2,
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "pivot_offset_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "process_mode": 0,
+        "process_physics_priority": 0,
+        "process_priority": 0,
+        "process_thread_group": 0,
+        "propagate_maximum_size": false,
+        "rotation": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "shortcut_context": null,
+        "show_behind_parent": false,
+        "size": {
+          "x": 1280.0,
+          "y": 720.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_stretch_ratio": 1.0,
+        "size_flags_vertical": 1,
+        "texture_filter": 0,
+        "texture_repeat": 0,
+        "theme": null,
+        "theme_type_variation": "",
+        "tooltip_auto_translate_mode": 0,
+        "tooltip_text": "",
+        "top_level": false,
+        "translation_context": "",
+        "unique_name_in_owner": false,
+        "use_parent_material": false,
+        "visibility_layer": 1,
+        "visible": true,
+        "y_sort_enabled": false,
+        "z_as_relative": true,
+        "z_index": 0
+      },
+      "children": [
+        {
+          "id": "node_1",
+          "parent_id": "node_0",
+          "name": "FilledEmptyField",
+          "class": "Control",
+          "category": "control",
+          "path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+          "depth": 1,
+          "index_in_parent": 0,
+          "children_count": 0,
+          "groups": [],
+          "script": "res://addons/material3/components/inputs/m3_text_field.gd",
+          "process_mode": 0,
+          "visible": true,
+          "screen_rect": {
+            "x": 40.0,
+            "y": 40.0,
+            "width": 260.0,
+            "height": 56.0,
+            "has_bounds": true,
+            "on_screen": true
+          },
+          "script_variables": {
+            "_active_height": 56.0,
+            "_focus_progress": 0.0,
+            "_focus_tween": null,
+            "_font": "<FontFile>",
+            "_font_size_float": 12,
+            "_font_size_helper": 12,
+            "_font_size_rest": 16,
+            "_height_tween": null,
+            "_is_focused_internal": false,
+            "_is_pointer_down": false,
+            "_label_float_progress": 0.0,
+            "_label_progress": 0.0,
+            "_label_tween": null,
+            "_line_edit": "<Node:M3InternalLineEdit (LineEdit)>",
+            "_pointer_inside": false,
+            "_ripple": "<Node:M3Ripple (Control)>",
+            "_ripple_wave_alpha": 0.0,
+            "_ripple_wave_count": 0,
+            "_ripple_wave_radius": 0.0,
+            "_state_layer_alpha": 0.0,
+            "_text_edit": "<Node:M3InternalTextEdit (TextEdit)>",
+            "_theme_connected": true,
+            "current_state": 0,
+            "custom_corner_radius": -1.0,
+            "density_override": 99,
+            "disabled": false,
+            "error_text": "",
+            "field_type": 0,
+            "helper_text": "",
+            "is_error": false,
+            "is_password": false,
+            "label": "Username",
+            "label_text": "Username",
+            "leading_icon": "person",
+            "leading_icon_texture": null,
+            "max_characters": 0,
+            "max_length": 0,
+            "max_lines": 6,
+            "min_lines": 3,
+            "multiline": false,
+            "placeholder": "",
+            "prefix_text": "",
+            "ripple_enabled": true,
+            "secret": false,
+            "shape_token": 0,
+            "show_clear_button": false,
+            "show_counter": false,
+            "show_password_toggle": false,
+            "suffix_text": "",
+            "supporting_text": "",
+            "text": "",
+            "touch_target_min_size": {
+              "x": 48.0,
+              "y": 48.0
+            },
+            "trailing_icon": "",
+            "trailing_icon_texture": null,
+            "variant": 0
+          },
+          "transforms": {
+            "position": {
+              "x": 40.0,
+              "y": 40.0
+            },
+            "global_position": {
+              "x": 40.0,
+              "y": 40.0
+            },
+            "size": {
+              "x": 260.0,
+              "y": 56.0
+            },
+            "custom_minimum_size": {
+              "x": 96.0,
+              "y": 56.0
+            },
+            "rotation_deg": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "anchors": {
+              "left": 0.0,
+              "top": 0.0,
+              "right": 0.0,
+              "bottom": 0.0
+            },
+            "offsets": {
+              "left": 40.0,
+              "top": 40.0,
+              "right": 300.0,
+              "bottom": 96.0
+            },
+            "size_flags_horizontal": 1,
+            "size_flags_vertical": 1
+          },
+          "visibility": {
+            "visible": true,
+            "visible_in_tree": true,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "top_level": false,
+            "show_behind_parent": false,
+            "clip_children": 0,
+            "light_mask": 1,
+            "visibility_layer": 1,
+            "z_index": 0,
+            "z_as_relative": true,
+            "y_sort_enabled": false
+          },
+          "physics": {},
+          "ui_and_content": {
+            "focus_mode": 2,
+            "mouse_filter": 0,
+            "tooltip_text": ""
+          },
+          "signals": [
+            {
+              "signal": "text_changed",
+              "target": "<GDScript>",
+              "method": "<anonymous lambda>"
+            },
+            {
+              "signal": "child_order_changed",
+              "target": "/root/@Node@83/GSSStageViewport",
+              "method": "Viewport::canvas_parent_mark_dirty"
+            },
+            {
+              "signal": "item_rect_changed",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField/M3Ripple",
+              "method": "Control::_size_changed"
+            },
+            {
+              "signal": "item_rect_changed",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField/M3InternalLineEdit",
+              "method": "Control::_size_changed"
+            },
+            {
+              "signal": "item_rect_changed",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField/M3InternalTextEdit",
+              "method": "Control::_size_changed"
+            },
+            {
+              "signal": "resized",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+              "method": "_on_resized"
+            },
+            {
+              "signal": "mouse_entered",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+              "method": "_on_mouse_entered"
+            },
+            {
+              "signal": "mouse_exited",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+              "method": "_on_mouse_exited"
+            },
+            {
+              "signal": "focus_entered",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+              "method": "_on_focus_entered"
+            },
+            {
+              "signal": "focus_exited",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+              "method": "_on_focus_exited"
+            }
+          ],
+          "all_properties": {
+            "accessibility_controls_nodes": [],
+            "accessibility_described_by_nodes": [],
+            "accessibility_description": "",
+            "accessibility_flow_to_nodes": [],
+            "accessibility_labeled_by_nodes": [],
+            "accessibility_live": 0,
+            "accessibility_name": "",
+            "anchor_bottom": 0.0,
+            "anchor_left": 0.0,
+            "anchor_right": 0.0,
+            "anchor_top": 0.0,
+            "anchors_preset": 0,
+            "auto_translate_mode": 0,
+            "clip_children": 0,
+            "clip_contents": false,
+            "current_state": 0,
+            "custom_corner_radius": -1.0,
+            "custom_maximum_size": {
+              "x": -1.0,
+              "y": -1.0
+            },
+            "custom_minimum_size": {
+              "x": 96.0,
+              "y": 56.0
+            },
+            "density_override": 99,
+            "disabled": false,
+            "editor_description": "",
+            "error_text": "",
+            "field_type": 0,
+            "focus_behavior_recursive": 0,
+            "focus_mode": 2,
+            "focus_neighbor_bottom": "",
+            "focus_neighbor_left": "",
+            "focus_neighbor_right": "",
+            "focus_neighbor_top": "",
+            "focus_next": "",
+            "focus_previous": "",
+            "grow_horizontal": 1,
+            "grow_vertical": 1,
+            "helper_text": "",
+            "is_error": false,
+            "is_password": false,
+            "label": "Username",
+            "label_text": "Username",
+            "layout_direction": 0,
+            "layout_mode": 0,
+            "leading_icon": "person",
+            "leading_icon_texture": null,
+            "light_mask": 1,
+            "localize_numeral_system": true,
+            "material": null,
+            "max_characters": 0,
+            "max_length": 0,
+            "max_lines": 6,
+            "min_lines": 3,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "mouse_behavior_recursive": 0,
+            "mouse_default_cursor_shape": 2,
+            "mouse_filter": 0,
+            "mouse_force_pass_scroll_events": true,
+            "multiline": false,
+            "offset_bottom": 96.0,
+            "offset_left": 40.0,
+            "offset_right": 300.0,
+            "offset_top": 40.0,
+            "offset_transform_enabled": false,
+            "offset_transform_pivot": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_pivot_ratio": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "offset_transform_position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_position_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_rotation": 0.0,
+            "offset_transform_scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "offset_transform_visual_only": true,
+            "oversampling_with_scale": 0,
+            "physics_interpolation_mode": 2,
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "pivot_offset_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "placeholder": "",
+            "position": {
+              "x": 40.0,
+              "y": 40.0
+            },
+            "prefix_text": "",
+            "process_mode": 0,
+            "process_physics_priority": 0,
+            "process_priority": 0,
+            "process_thread_group": 0,
+            "propagate_maximum_size": false,
+            "ripple_enabled": true,
+            "rotation": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "secret": false,
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "shape_token": 0,
+            "shortcut_context": null,
+            "show_behind_parent": false,
+            "show_clear_button": false,
+            "show_counter": false,
+            "show_password_toggle": false,
+            "size": {
+              "x": 260.0,
+              "y": 56.0
+            },
+            "size_flags_horizontal": 1,
+            "size_flags_stretch_ratio": 1.0,
+            "size_flags_vertical": 1,
+            "suffix_text": "",
+            "supporting_text": "",
+            "text": "",
+            "texture_filter": 0,
+            "texture_repeat": 0,
+            "theme": null,
+            "theme_type_variation": "",
+            "tooltip_auto_translate_mode": 0,
+            "tooltip_text": "",
+            "top_level": false,
+            "touch_target_min_size": {
+              "x": 48.0,
+              "y": 48.0
+            },
+            "trailing_icon": "",
+            "trailing_icon_texture": null,
+            "translation_context": "",
+            "unique_name_in_owner": false,
+            "use_parent_material": false,
+            "variant": 0,
+            "visibility_layer": 1,
+            "visible": true,
+            "y_sort_enabled": false,
+            "z_as_relative": true,
+            "z_index": 0
+          },
+          "children": []
+        },
+        {
+          "id": "node_2",
+          "parent_id": "node_0",
+          "name": "ClearableField",
+          "class": "Control",
+          "category": "control",
+          "path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/ClearableField",
+          "depth": 1,
+          "index_in_parent": 1,
+          "children_count": 0,
+          "groups": [],
+          "script": "res://addons/material3/components/inputs/m3_text_field.gd",
+          "process_mode": 0,
+          "visible": true,
+          "screen_rect": {
+            "x": 340.0,
+            "y": 40.0,
+            "width": 260.0,
+            "height": 76.0,
+            "has_bounds": true,
+            "on_screen": true
+          },
+          "script_variables": {
+            "_active_height": 56.0,
+            "_focus_progress": 0.0,
+            "_focus_tween": null,
+            "_font": "<FontFile>",
+            "_font_size_float": 12,
+            "_font_size_helper": 12,
+            "_font_size_rest": 16,
+            "_height_tween": null,
+            "_is_focused_internal": false,
+            "_is_pointer_down": false,
+            "_label_float_progress": 1.0,
+            "_label_progress": 1.0,
+            "_label_tween": null,
+            "_line_edit": "<Node:M3InternalLineEdit (LineEdit)>",
+            "_pointer_inside": false,
+            "_ripple": "<Node:M3Ripple (Control)>",
+            "_ripple_wave_alpha": 0.0,
+            "_ripple_wave_count": 0,
+            "_ripple_wave_radius": 0.0,
+            "_state_layer_alpha": 0.0,
+            "_text_edit": "<Node:M3InternalTextEdit (TextEdit)>",
+            "_theme_connected": true,
+            "current_state": 0,
+            "custom_corner_radius": -1.0,
+            "density_override": 99,
+            "disabled": false,
+            "error_text": "",
+            "field_type": 0,
+            "helper_text": "Click trailing X to clear",
+            "is_error": false,
+            "is_password": false,
+            "label": "Search query",
+            "label_text": "Search query",
+            "leading_icon": "search",
+            "leading_icon_texture": null,
+            "max_characters": 0,
+            "max_length": 0,
+            "max_lines": 6,
+            "min_lines": 3,
+            "multiline": false,
+            "placeholder": "",
+            "prefix_text": "",
+            "ripple_enabled": true,
+            "secret": false,
+            "shape_token": 0,
+            "show_clear_button": true,
+            "show_counter": false,
+            "show_password_toggle": false,
+            "suffix_text": "",
+            "supporting_text": "Click trailing X to clear",
+            "text": "Material 3",
+            "touch_target_min_size": {
+              "x": 48.0,
+              "y": 48.0
+            },
+            "trailing_icon": "",
+            "trailing_icon_texture": null,
+            "variant": 0
+          },
+          "transforms": {
+            "position": {
+              "x": 340.0,
+              "y": 40.0
+            },
+            "global_position": {
+              "x": 340.0,
+              "y": 40.0
+            },
+            "size": {
+              "x": 260.0,
+              "y": 76.0
+            },
+            "custom_minimum_size": {
+              "x": 96.0,
+              "y": 76.0
+            },
+            "rotation_deg": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "anchors": {
+              "left": 0.0,
+              "top": 0.0,
+              "right": 0.0,
+              "bottom": 0.0
+            },
+            "offsets": {
+              "left": 340.0,
+              "top": 40.0,
+              "right": 600.0,
+              "bottom": 116.0
+            },
+            "size_flags_horizontal": 1,
+            "size_flags_vertical": 1
+          },
+          "visibility": {
+            "visible": true,
+            "visible_in_tree": true,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "top_level": false,
+            "show_behind_parent": false,
+            "clip_children": 0,
+            "light_mask": 1,
+            "visibility_layer": 1,
+            "z_index": 0,
+            "z_as_relative": true,
+            "y_sort_enabled": false
+          },
+          "physics": {},
+          "ui_and_content": {
+            "focus_mode": 2,
+            "mouse_filter": 0,
+            "tooltip_text": ""
+          },
+          "signals": [
+            {
+              "signal": "child_order_changed",
+              "target": "/root/@Node@83/GSSStageViewport",
+              "method": "Viewport::canvas_parent_mark_dirty"
+            },
+            {
+              "signal": "item_rect_changed",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/ClearableField/M3Ripple",
+              "method": "Control::_size_changed"
+            },
+            {
+              "signal": "item_rect_changed",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/ClearableField/M3InternalLineEdit",
+              "method": "Control::_size_changed"
+            },
+            {
+              "signal": "item_rect_changed",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/ClearableField/M3InternalTextEdit",
+              "method": "Control::_size_changed"
+            },
+            {
+              "signal": "resized",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/ClearableField",
+              "method": "_on_resized"
+            },
+            {
+              "signal": "mouse_entered",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/ClearableField",
+              "method": "_on_mouse_entered"
+            },
+            {
+              "signal": "mouse_exited",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/ClearableField",
+              "method": "_on_mouse_exited"
+            },
+            {
+              "signal": "focus_entered",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/ClearableField",
+              "method": "_on_focus_entered"
+            },
+            {
+              "signal": "focus_exited",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/ClearableField",
+              "method": "_on_focus_exited"
+            }
+          ],
+          "all_properties": {
+            "accessibility_controls_nodes": [],
+            "accessibility_described_by_nodes": [],
+            "accessibility_description": "",
+            "accessibility_flow_to_nodes": [],
+            "accessibility_labeled_by_nodes": [],
+            "accessibility_live": 0,
+            "accessibility_name": "",
+            "anchor_bottom": 0.0,
+            "anchor_left": 0.0,
+            "anchor_right": 0.0,
+            "anchor_top": 0.0,
+            "anchors_preset": 0,
+            "auto_translate_mode": 0,
+            "clip_children": 0,
+            "clip_contents": false,
+            "current_state": 0,
+            "custom_corner_radius": -1.0,
+            "custom_maximum_size": {
+              "x": -1.0,
+              "y": -1.0
+            },
+            "custom_minimum_size": {
+              "x": 96.0,
+              "y": 76.0
+            },
+            "density_override": 99,
+            "disabled": false,
+            "editor_description": "",
+            "error_text": "",
+            "field_type": 0,
+            "focus_behavior_recursive": 0,
+            "focus_mode": 2,
+            "focus_neighbor_bottom": "",
+            "focus_neighbor_left": "",
+            "focus_neighbor_right": "",
+            "focus_neighbor_top": "",
+            "focus_next": "",
+            "focus_previous": "",
+            "grow_horizontal": 1,
+            "grow_vertical": 1,
+            "helper_text": "Click trailing X to clear",
+            "is_error": false,
+            "is_password": false,
+            "label": "Search query",
+            "label_text": "Search query",
+            "layout_direction": 0,
+            "layout_mode": 0,
+            "leading_icon": "search",
+            "leading_icon_texture": null,
+            "light_mask": 1,
+            "localize_numeral_system": true,
+            "material": null,
+            "max_characters": 0,
+            "max_length": 0,
+            "max_lines": 6,
+            "min_lines": 3,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "mouse_behavior_recursive": 0,
+            "mouse_default_cursor_shape": 2,
+            "mouse_filter": 0,
+            "mouse_force_pass_scroll_events": true,
+            "multiline": false,
+            "offset_bottom": 116.0,
+            "offset_left": 340.0,
+            "offset_right": 600.0,
+            "offset_top": 40.0,
+            "offset_transform_enabled": false,
+            "offset_transform_pivot": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_pivot_ratio": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "offset_transform_position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_position_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_rotation": 0.0,
+            "offset_transform_scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "offset_transform_visual_only": true,
+            "oversampling_with_scale": 0,
+            "physics_interpolation_mode": 2,
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "pivot_offset_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "placeholder": "",
+            "position": {
+              "x": 340.0,
+              "y": 40.0
+            },
+            "prefix_text": "",
+            "process_mode": 0,
+            "process_physics_priority": 0,
+            "process_priority": 0,
+            "process_thread_group": 0,
+            "propagate_maximum_size": false,
+            "ripple_enabled": true,
+            "rotation": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "secret": false,
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "shape_token": 0,
+            "shortcut_context": null,
+            "show_behind_parent": false,
+            "show_clear_button": true,
+            "show_counter": false,
+            "show_password_toggle": false,
+            "size": {
+              "x": 260.0,
+              "y": 76.0
+            },
+            "size_flags_horizontal": 1,
+            "size_flags_stretch_ratio": 1.0,
+            "size_flags_vertical": 1,
+            "suffix_text": "",
+            "supporting_text": "Click trailing X to clear",
+            "text": "Material 3",
+            "texture_filter": 0,
+            "texture_repeat": 0,
+            "theme": null,
+            "theme_type_variation": "",
+            "tooltip_auto_translate_mode": 0,
+            "tooltip_text": "",
+            "top_level": false,
+            "touch_target_min_size": {
+              "x": 48.0,
+              "y": 48.0
+            },
+            "trailing_icon": "",
+            "trailing_icon_texture": null,
+            "translation_context": "",
+            "unique_name_in_owner": false,
+            "use_parent_material": false,
+            "variant": 0,
+            "visibility_layer": 1,
+            "visible": true,
+            "y_sort_enabled": false,
+            "z_as_relative": true,
+            "z_index": 0
+          },
+          "children": []
+        },
+        {
+          "id": "node_3",
+          "parent_id": "node_0",
+          "name": "OutlinedCounterField",
+          "class": "Control",
+          "category": "control",
+          "path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedCounterField",
+          "depth": 1,
+          "index_in_parent": 2,
+          "children_count": 0,
+          "groups": [],
+          "script": "res://addons/material3/components/inputs/m3_text_field.gd",
+          "process_mode": 0,
+          "visible": true,
+          "screen_rect": {
+            "x": 640.0,
+            "y": 40.0,
+            "width": 260.0,
+            "height": 76.0,
+            "has_bounds": true,
+            "on_screen": true
+          },
+          "script_variables": {
+            "_active_height": 56.0,
+            "_focus_progress": 0.0,
+            "_focus_tween": null,
+            "_font": "<FontFile>",
+            "_font_size_float": 12,
+            "_font_size_helper": 12,
+            "_font_size_rest": 16,
+            "_height_tween": null,
+            "_is_focused_internal": false,
+            "_is_pointer_down": false,
+            "_label_float_progress": 1.0,
+            "_label_progress": 1.0,
+            "_label_tween": null,
+            "_line_edit": "<Node:M3InternalLineEdit (LineEdit)>",
+            "_pointer_inside": false,
+            "_ripple": "<Node:M3Ripple (Control)>",
+            "_ripple_wave_alpha": 0.0,
+            "_ripple_wave_count": 0,
+            "_ripple_wave_radius": 0.0,
+            "_state_layer_alpha": 0.0,
+            "_text_edit": "<Node:M3InternalTextEdit (TextEdit)>",
+            "_theme_connected": true,
+            "current_state": 0,
+            "custom_corner_radius": -1.0,
+            "density_override": 99,
+            "disabled": false,
+            "error_text": "",
+            "field_type": 1,
+            "helper_text": "Short bio",
+            "is_error": false,
+            "is_password": false,
+            "label": "Bio",
+            "label_text": "Bio",
+            "leading_icon": "",
+            "leading_icon_texture": null,
+            "max_characters": 40,
+            "max_length": 40,
+            "max_lines": 6,
+            "min_lines": 3,
+            "multiline": false,
+            "placeholder": "",
+            "prefix_text": "",
+            "ripple_enabled": true,
+            "secret": false,
+            "shape_token": 0,
+            "show_clear_button": false,
+            "show_counter": true,
+            "show_password_toggle": false,
+            "suffix_text": "",
+            "supporting_text": "Short bio",
+            "text": "Godot UI developer",
+            "touch_target_min_size": {
+              "x": 48.0,
+              "y": 48.0
+            },
+            "trailing_icon": "",
+            "trailing_icon_texture": null,
+            "variant": 1
+          },
+          "transforms": {
+            "position": {
+              "x": 640.0,
+              "y": 40.0
+            },
+            "global_position": {
+              "x": 640.0,
+              "y": 40.0
+            },
+            "size": {
+              "x": 260.0,
+              "y": 76.0
+            },
+            "custom_minimum_size": {
+              "x": 96.0,
+              "y": 76.0
+            },
+            "rotation_deg": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "anchors": {
+              "left": 0.0,
+              "top": 0.0,
+              "right": 0.0,
+              "bottom": 0.0
+            },
+            "offsets": {
+              "left": 640.0,
+              "top": 40.0,
+              "right": 900.0,
+              "bottom": 116.0
+            },
+            "size_flags_horizontal": 1,
+            "size_flags_vertical": 1
+          },
+          "visibility": {
+            "visible": true,
+            "visible_in_tree": true,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "top_level": false,
+            "show_behind_parent": false,
+            "clip_children": 0,
+            "light_mask": 1,
+            "visibility_layer": 1,
+            "z_index": 0,
+            "z_as_relative": true,
+            "y_sort_enabled": false
+          },
+          "physics": {},
+          "ui_and_content": {
+            "focus_mode": 2,
+            "mouse_filter": 0,
+            "tooltip_text": ""
+          },
+          "signals": [
+            {
+              "signal": "child_order_changed",
+              "target": "/root/@Node@83/GSSStageViewport",
+              "method": "Viewport::canvas_parent_mark_dirty"
+            },
+            {
+              "signal": "item_rect_changed",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedCounterField/M3Ripple",
+              "method": "Control::_size_changed"
+            },
+            {
+              "signal": "item_rect_changed",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedCounterField/M3InternalLineEdit",
+              "method": "Control::_size_changed"
+            },
+            {
+              "signal": "item_rect_changed",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedCounterField/M3InternalTextEdit",
+              "method": "Control::_size_changed"
+            },
+            {
+              "signal": "resized",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedCounterField",
+              "method": "_on_resized"
+            },
+            {
+              "signal": "mouse_entered",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedCounterField",
+              "method": "_on_mouse_entered"
+            },
+            {
+              "signal": "mouse_exited",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedCounterField",
+              "method": "_on_mouse_exited"
+            },
+            {
+              "signal": "focus_entered",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedCounterField",
+              "method": "_on_focus_entered"
+            },
+            {
+              "signal": "focus_exited",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedCounterField",
+              "method": "_on_focus_exited"
+            }
+          ],
+          "all_properties": {
+            "accessibility_controls_nodes": [],
+            "accessibility_described_by_nodes": [],
+            "accessibility_description": "",
+            "accessibility_flow_to_nodes": [],
+            "accessibility_labeled_by_nodes": [],
+            "accessibility_live": 0,
+            "accessibility_name": "",
+            "anchor_bottom": 0.0,
+            "anchor_left": 0.0,
+            "anchor_right": 0.0,
+            "anchor_top": 0.0,
+            "anchors_preset": 0,
+            "auto_translate_mode": 0,
+            "clip_children": 0,
+            "clip_contents": false,
+            "current_state": 0,
+            "custom_corner_radius": -1.0,
+            "custom_maximum_size": {
+              "x": -1.0,
+              "y": -1.0
+            },
+            "custom_minimum_size": {
+              "x": 96.0,
+              "y": 76.0
+            },
+            "density_override": 99,
+            "disabled": false,
+            "editor_description": "",
+            "error_text": "",
+            "field_type": 1,
+            "focus_behavior_recursive": 0,
+            "focus_mode": 2,
+            "focus_neighbor_bottom": "",
+            "focus_neighbor_left": "",
+            "focus_neighbor_right": "",
+            "focus_neighbor_top": "",
+            "focus_next": "",
+            "focus_previous": "",
+            "grow_horizontal": 1,
+            "grow_vertical": 1,
+            "helper_text": "Short bio",
+            "is_error": false,
+            "is_password": false,
+            "label": "Bio",
+            "label_text": "Bio",
+            "layout_direction": 0,
+            "layout_mode": 0,
+            "leading_icon": "",
+            "leading_icon_texture": null,
+            "light_mask": 1,
+            "localize_numeral_system": true,
+            "material": null,
+            "max_characters": 40,
+            "max_length": 40,
+            "max_lines": 6,
+            "min_lines": 3,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "mouse_behavior_recursive": 0,
+            "mouse_default_cursor_shape": 2,
+            "mouse_filter": 0,
+            "mouse_force_pass_scroll_events": true,
+            "multiline": false,
+            "offset_bottom": 116.0,
+            "offset_left": 640.0,
+            "offset_right": 900.0,
+            "offset_top": 40.0,
+            "offset_transform_enabled": false,
+            "offset_transform_pivot": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_pivot_ratio": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "offset_transform_position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_position_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_rotation": 0.0,
+            "offset_transform_scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "offset_transform_visual_only": true,
+            "oversampling_with_scale": 0,
+            "physics_interpolation_mode": 2,
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "pivot_offset_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "placeholder": "",
+            "position": {
+              "x": 640.0,
+              "y": 40.0
+            },
+            "prefix_text": "",
+            "process_mode": 0,
+            "process_physics_priority": 0,
+            "process_priority": 0,
+            "process_thread_group": 0,
+            "propagate_maximum_size": false,
+            "ripple_enabled": true,
+            "rotation": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "secret": false,
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "shape_token": 0,
+            "shortcut_context": null,
+            "show_behind_parent": false,
+            "show_clear_button": false,
+            "show_counter": true,
+            "show_password_toggle": false,
+            "size": {
+              "x": 260.0,
+              "y": 76.0
+            },
+            "size_flags_horizontal": 1,
+            "size_flags_stretch_ratio": 1.0,
+            "size_flags_vertical": 1,
+            "suffix_text": "",
+            "supporting_text": "Short bio",
+            "text": "Godot UI developer",
+            "texture_filter": 0,
+            "texture_repeat": 0,
+            "theme": null,
+            "theme_type_variation": "",
+            "tooltip_auto_translate_mode": 0,
+            "tooltip_text": "",
+            "top_level": false,
+            "touch_target_min_size": {
+              "x": 48.0,
+              "y": 48.0
+            },
+            "trailing_icon": "",
+            "trailing_icon_texture": null,
+            "translation_context": "",
+            "unique_name_in_owner": false,
+            "use_parent_material": false,
+            "variant": 1,
+            "visibility_layer": 1,
+            "visible": true,
+            "y_sort_enabled": false,
+            "z_as_relative": true,
+            "z_index": 0
+          },
+          "children": []
+        },
+        {
+          "id": "node_4",
+          "parent_id": "node_0",
+          "name": "OutlinedErrorField",
+          "class": "Control",
+          "category": "control",
+          "path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedErrorField",
+          "depth": 1,
+          "index_in_parent": 3,
+          "children_count": 0,
+          "groups": [],
+          "script": "res://addons/material3/components/inputs/m3_text_field.gd",
+          "process_mode": 0,
+          "visible": true,
+          "screen_rect": {
+            "x": 40.0,
+            "y": 160.0,
+            "width": 260.0,
+            "height": 76.0,
+            "has_bounds": true,
+            "on_screen": true
+          },
+          "script_variables": {
+            "_active_height": 56.0,
+            "_focus_progress": 0.0,
+            "_focus_tween": null,
+            "_font": "<FontFile>",
+            "_font_size_float": 12,
+            "_font_size_helper": 12,
+            "_font_size_rest": 16,
+            "_height_tween": null,
+            "_is_focused_internal": false,
+            "_is_pointer_down": false,
+            "_label_float_progress": 1.0,
+            "_label_progress": 1.0,
+            "_label_tween": null,
+            "_line_edit": "<Node:M3InternalLineEdit (LineEdit)>",
+            "_pointer_inside": false,
+            "_ripple": "<Node:M3Ripple (Control)>",
+            "_ripple_wave_alpha": 0.0,
+            "_ripple_wave_count": 0,
+            "_ripple_wave_radius": 0.0,
+            "_state_layer_alpha": 0.0,
+            "_text_edit": "<Node:M3InternalTextEdit (TextEdit)>",
+            "_theme_connected": true,
+            "current_state": 0,
+            "custom_corner_radius": -1.0,
+            "density_override": 99,
+            "disabled": false,
+            "error_text": "Enter a valid email address",
+            "field_type": 1,
+            "helper_text": "",
+            "is_error": true,
+            "is_password": false,
+            "label": "Email",
+            "label_text": "Email",
+            "leading_icon": "",
+            "leading_icon_texture": null,
+            "max_characters": 0,
+            "max_length": 0,
+            "max_lines": 6,
+            "min_lines": 3,
+            "multiline": false,
+            "placeholder": "",
+            "prefix_text": "",
+            "ripple_enabled": true,
+            "secret": false,
+            "shape_token": 0,
+            "show_clear_button": false,
+            "show_counter": false,
+            "show_password_toggle": false,
+            "suffix_text": "",
+            "supporting_text": "",
+            "text": "invalid-email",
+            "touch_target_min_size": {
+              "x": 48.0,
+              "y": 48.0
+            },
+            "trailing_icon": "clear",
+            "trailing_icon_texture": null,
+            "variant": 1
+          },
+          "transforms": {
+            "position": {
+              "x": 40.0,
+              "y": 160.0
+            },
+            "global_position": {
+              "x": 40.0,
+              "y": 160.0
+            },
+            "size": {
+              "x": 260.0,
+              "y": 76.0
+            },
+            "custom_minimum_size": {
+              "x": 96.0,
+              "y": 76.0
+            },
+            "rotation_deg": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "anchors": {
+              "left": 0.0,
+              "top": 0.0,
+              "right": 0.0,
+              "bottom": 0.0
+            },
+            "offsets": {
+              "left": 40.0,
+              "top": 160.0,
+              "right": 300.0,
+              "bottom": 236.0
+            },
+            "size_flags_horizontal": 1,
+            "size_flags_vertical": 1
+          },
+          "visibility": {
+            "visible": true,
+            "visible_in_tree": true,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "top_level": false,
+            "show_behind_parent": false,
+            "clip_children": 0,
+            "light_mask": 1,
+            "visibility_layer": 1,
+            "z_index": 0,
+            "z_as_relative": true,
+            "y_sort_enabled": false
+          },
+          "physics": {},
+          "ui_and_content": {
+            "focus_mode": 2,
+            "mouse_filter": 0,
+            "tooltip_text": ""
+          },
+          "signals": [
+            {
+              "signal": "child_order_changed",
+              "target": "/root/@Node@83/GSSStageViewport",
+              "method": "Viewport::canvas_parent_mark_dirty"
+            },
+            {
+              "signal": "item_rect_changed",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedErrorField/M3Ripple",
+              "method": "Control::_size_changed"
+            },
+            {
+              "signal": "item_rect_changed",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedErrorField/M3InternalLineEdit",
+              "method": "Control::_size_changed"
+            },
+            {
+              "signal": "item_rect_changed",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedErrorField/M3InternalTextEdit",
+              "method": "Control::_size_changed"
+            },
+            {
+              "signal": "resized",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedErrorField",
+              "method": "_on_resized"
+            },
+            {
+              "signal": "mouse_entered",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedErrorField",
+              "method": "_on_mouse_entered"
+            },
+            {
+              "signal": "mouse_exited",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedErrorField",
+              "method": "_on_mouse_exited"
+            },
+            {
+              "signal": "focus_entered",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedErrorField",
+              "method": "_on_focus_entered"
+            },
+            {
+              "signal": "focus_exited",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedErrorField",
+              "method": "_on_focus_exited"
+            }
+          ],
+          "all_properties": {
+            "accessibility_controls_nodes": [],
+            "accessibility_described_by_nodes": [],
+            "accessibility_description": "",
+            "accessibility_flow_to_nodes": [],
+            "accessibility_labeled_by_nodes": [],
+            "accessibility_live": 0,
+            "accessibility_name": "",
+            "anchor_bottom": 0.0,
+            "anchor_left": 0.0,
+            "anchor_right": 0.0,
+            "anchor_top": 0.0,
+            "anchors_preset": 0,
+            "auto_translate_mode": 0,
+            "clip_children": 0,
+            "clip_contents": false,
+            "current_state": 0,
+            "custom_corner_radius": -1.0,
+            "custom_maximum_size": {
+              "x": -1.0,
+              "y": -1.0
+            },
+            "custom_minimum_size": {
+              "x": 96.0,
+              "y": 76.0
+            },
+            "density_override": 99,
+            "disabled": false,
+            "editor_description": "",
+            "error_text": "Enter a valid email address",
+            "field_type": 1,
+            "focus_behavior_recursive": 0,
+            "focus_mode": 2,
+            "focus_neighbor_bottom": "",
+            "focus_neighbor_left": "",
+            "focus_neighbor_right": "",
+            "focus_neighbor_top": "",
+            "focus_next": "",
+            "focus_previous": "",
+            "grow_horizontal": 1,
+            "grow_vertical": 1,
+            "helper_text": "",
+            "is_error": true,
+            "is_password": false,
+            "label": "Email",
+            "label_text": "Email",
+            "layout_direction": 0,
+            "layout_mode": 0,
+            "leading_icon": "",
+            "leading_icon_texture": null,
+            "light_mask": 1,
+            "localize_numeral_system": true,
+            "material": null,
+            "max_characters": 0,
+            "max_length": 0,
+            "max_lines": 6,
+            "min_lines": 3,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "mouse_behavior_recursive": 0,
+            "mouse_default_cursor_shape": 2,
+            "mouse_filter": 0,
+            "mouse_force_pass_scroll_events": true,
+            "multiline": false,
+            "offset_bottom": 236.0,
+            "offset_left": 40.0,
+            "offset_right": 300.0,
+            "offset_top": 160.0,
+            "offset_transform_enabled": false,
+            "offset_transform_pivot": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_pivot_ratio": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "offset_transform_position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_position_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_rotation": 0.0,
+            "offset_transform_scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "offset_transform_visual_only": true,
+            "oversampling_with_scale": 0,
+            "physics_interpolation_mode": 2,
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "pivot_offset_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "placeholder": "",
+            "position": {
+              "x": 40.0,
+              "y": 160.0
+            },
+            "prefix_text": "",
+            "process_mode": 0,
+            "process_physics_priority": 0,
+            "process_priority": 0,
+            "process_thread_group": 0,
+            "propagate_maximum_size": false,
+            "ripple_enabled": true,
+            "rotation": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "secret": false,
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "shape_token": 0,
+            "shortcut_context": null,
+            "show_behind_parent": false,
+            "show_clear_button": false,
+            "show_counter": false,
+            "show_password_toggle": false,
+            "size": {
+              "x": 260.0,
+              "y": 76.0
+            },
+            "size_flags_horizontal": 1,
+            "size_flags_stretch_ratio": 1.0,
+            "size_flags_vertical": 1,
+            "suffix_text": "",
+            "supporting_text": "",
+            "text": "invalid-email",
+            "texture_filter": 0,
+            "texture_repeat": 0,
+            "theme": null,
+            "theme_type_variation": "",
+            "tooltip_auto_translate_mode": 0,
+            "tooltip_text": "",
+            "top_level": false,
+            "touch_target_min_size": {
+              "x": 48.0,
+              "y": 48.0
+            },
+            "trailing_icon": "clear",
+            "trailing_icon_texture": null,
+            "translation_context": "",
+            "unique_name_in_owner": false,
+            "use_parent_material": false,
+            "variant": 1,
+            "visibility_layer": 1,
+            "visible": true,
+            "y_sort_enabled": false,
+            "z_as_relative": true,
+            "z_index": 0
+          },
+          "children": []
+        },
+        {
+          "id": "node_5",
+          "parent_id": "node_0",
+          "name": "PasswordField",
+          "class": "Control",
+          "category": "control",
+          "path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/PasswordField",
+          "depth": 1,
+          "index_in_parent": 4,
+          "children_count": 0,
+          "groups": [],
+          "script": "res://addons/material3/components/inputs/m3_text_field.gd",
+          "process_mode": 0,
+          "visible": true,
+          "screen_rect": {
+            "x": 340.0,
+            "y": 160.0,
+            "width": 260.0,
+            "height": 76.0,
+            "has_bounds": true,
+            "on_screen": true
+          },
+          "script_variables": {
+            "_active_height": 56.0,
+            "_focus_progress": 0.0,
+            "_focus_tween": null,
+            "_font": "<FontFile>",
+            "_font_size_float": 12,
+            "_font_size_helper": 12,
+            "_font_size_rest": 16,
+            "_height_tween": null,
+            "_is_focused_internal": false,
+            "_is_pointer_down": false,
+            "_label_float_progress": 1.0,
+            "_label_progress": 1.0,
+            "_label_tween": null,
+            "_line_edit": "<Node:M3InternalLineEdit (LineEdit)>",
+            "_pointer_inside": false,
+            "_ripple": "<Node:M3Ripple (Control)>",
+            "_ripple_wave_alpha": 0.0,
+            "_ripple_wave_count": 0,
+            "_ripple_wave_radius": 0.0,
+            "_state_layer_alpha": 0.0,
+            "_text_edit": "<Node:M3InternalTextEdit (TextEdit)>",
+            "_theme_connected": true,
+            "current_state": 0,
+            "custom_corner_radius": -1.0,
+            "density_override": 99,
+            "disabled": false,
+            "error_text": "",
+            "field_type": 1,
+            "helper_text": "Toggle eye icon",
+            "is_error": false,
+            "is_password": true,
+            "label": "Password",
+            "label_text": "Password",
+            "leading_icon": "",
+            "leading_icon_texture": null,
+            "max_characters": 0,
+            "max_length": 0,
+            "max_lines": 6,
+            "min_lines": 3,
+            "multiline": false,
+            "placeholder": "",
+            "prefix_text": "",
+            "ripple_enabled": true,
+            "secret": true,
+            "shape_token": 0,
+            "show_clear_button": false,
+            "show_counter": false,
+            "show_password_toggle": true,
+            "suffix_text": "",
+            "supporting_text": "Toggle eye icon",
+            "text": "hunter2",
+            "touch_target_min_size": {
+              "x": 48.0,
+              "y": 48.0
+            },
+            "trailing_icon": "",
+            "trailing_icon_texture": null,
+            "variant": 1
+          },
+          "transforms": {
+            "position": {
+              "x": 340.0,
+              "y": 160.0
+            },
+            "global_position": {
+              "x": 340.0,
+              "y": 160.0
+            },
+            "size": {
+              "x": 260.0,
+              "y": 76.0
+            },
+            "custom_minimum_size": {
+              "x": 96.0,
+              "y": 76.0
+            },
+            "rotation_deg": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "anchors": {
+              "left": 0.0,
+              "top": 0.0,
+              "right": 0.0,
+              "bottom": 0.0
+            },
+            "offsets": {
+              "left": 340.0,
+              "top": 160.0,
+              "right": 600.0,
+              "bottom": 236.0
+            },
+            "size_flags_horizontal": 1,
+            "size_flags_vertical": 1
+          },
+          "visibility": {
+            "visible": true,
+            "visible_in_tree": true,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "top_level": false,
+            "show_behind_parent": false,
+            "clip_children": 0,
+            "light_mask": 1,
+            "visibility_layer": 1,
+            "z_index": 0,
+            "z_as_relative": true,
+            "y_sort_enabled": false
+          },
+          "physics": {},
+          "ui_and_content": {
+            "focus_mode": 2,
+            "mouse_filter": 0,
+            "tooltip_text": ""
+          },
+          "signals": [
+            {
+              "signal": "child_order_changed",
+              "target": "/root/@Node@83/GSSStageViewport",
+              "method": "Viewport::canvas_parent_mark_dirty"
+            },
+            {
+              "signal": "item_rect_changed",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/PasswordField/M3Ripple",
+              "method": "Control::_size_changed"
+            },
+            {
+              "signal": "item_rect_changed",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/PasswordField/M3InternalLineEdit",
+              "method": "Control::_size_changed"
+            },
+            {
+              "signal": "item_rect_changed",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/PasswordField/M3InternalTextEdit",
+              "method": "Control::_size_changed"
+            },
+            {
+              "signal": "resized",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/PasswordField",
+              "method": "_on_resized"
+            },
+            {
+              "signal": "mouse_entered",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/PasswordField",
+              "method": "_on_mouse_entered"
+            },
+            {
+              "signal": "mouse_exited",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/PasswordField",
+              "method": "_on_mouse_exited"
+            },
+            {
+              "signal": "focus_entered",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/PasswordField",
+              "method": "_on_focus_entered"
+            },
+            {
+              "signal": "focus_exited",
+              "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/PasswordField",
+              "method": "_on_focus_exited"
+            }
+          ],
+          "all_properties": {
+            "accessibility_controls_nodes": [],
+            "accessibility_described_by_nodes": [],
+            "accessibility_description": "",
+            "accessibility_flow_to_nodes": [],
+            "accessibility_labeled_by_nodes": [],
+            "accessibility_live": 0,
+            "accessibility_name": "",
+            "anchor_bottom": 0.0,
+            "anchor_left": 0.0,
+            "anchor_right": 0.0,
+            "anchor_top": 0.0,
+            "anchors_preset": 0,
+            "auto_translate_mode": 0,
+            "clip_children": 0,
+            "clip_contents": false,
+            "current_state": 0,
+            "custom_corner_radius": -1.0,
+            "custom_maximum_size": {
+              "x": -1.0,
+              "y": -1.0
+            },
+            "custom_minimum_size": {
+              "x": 96.0,
+              "y": 76.0
+            },
+            "density_override": 99,
+            "disabled": false,
+            "editor_description": "",
+            "error_text": "",
+            "field_type": 1,
+            "focus_behavior_recursive": 0,
+            "focus_mode": 2,
+            "focus_neighbor_bottom": "",
+            "focus_neighbor_left": "",
+            "focus_neighbor_right": "",
+            "focus_neighbor_top": "",
+            "focus_next": "",
+            "focus_previous": "",
+            "grow_horizontal": 1,
+            "grow_vertical": 1,
+            "helper_text": "Toggle eye icon",
+            "is_error": false,
+            "is_password": true,
+            "label": "Password",
+            "label_text": "Password",
+            "layout_direction": 0,
+            "layout_mode": 0,
+            "leading_icon": "",
+            "leading_icon_texture": null,
+            "light_mask": 1,
+            "localize_numeral_system": true,
+            "material": null,
+            "max_characters": 0,
+            "max_length": 0,
+            "max_lines": 6,
+            "min_lines": 3,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "mouse_behavior_recursive": 0,
+            "mouse_default_cursor_shape": 2,
+            "mouse_filter": 0,
+            "mouse_force_pass_scroll_events": true,
+            "multiline": false,
+            "offset_bottom": 236.0,
+            "offset_left": 340.0,
+            "offset_right": 600.0,
+            "offset_top": 160.0,
+            "offset_transform_enabled": false,
+            "offset_transform_pivot": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_pivot_ratio": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "offset_transform_position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_position_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_rotation": 0.0,
+            "offset_transform_scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "offset_transform_visual_only": true,
+            "oversampling_with_scale": 0,
+            "physics_interpolation_mode": 2,
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "pivot_offset_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "placeholder": "",
+            "position": {
+              "x": 340.0,
+              "y": 160.0
+            },
+            "prefix_text": "",
+            "process_mode": 0,
+            "process_physics_priority": 0,
+            "process_priority": 0,
+            "process_thread_group": 0,
+            "propagate_maximum_size": false,
+            "ripple_enabled": true,
+            "rotation": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "secret": true,
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "shape_token": 0,
+            "shortcut_context": null,
+            "show_behind_parent": false,
+            "show_clear_button": false,
+            "show_counter": false,
+            "show_password_toggle": true,
+            "size": {
+              "x": 260.0,
+              "y": 76.0
+            },
+            "size_flags_horizontal": 1,
+            "size_flags_stretch_ratio": 1.0,
+            "size_flags_vertical": 1,
+            "suffix_text": "",
+            "supporting_text": "Toggle eye icon",
+            "text": "hunter2",
+            "texture_filter": 0,
+            "texture_repeat": 0,
+            "theme": null,
+            "theme_type_variation": "",
+            "tooltip_auto_translate_mode": 0,
+            "tooltip_text": "",
+            "top_level": false,
+            "touch_target_min_size": {
+              "x": 48.0,
+              "y": 48.0
+            },
+            "trailing_icon": "",
+            "trailing_icon_texture": null,
+            "translation_context": "",
+            "unique_name_in_owner": false,
+            "use_parent_material": false,
+            "variant": 1,
+            "visibility_layer": 1,
+            "visible": true,
+            "y_sort_enabled": false,
+            "z_as_relative": true,
+            "z_index": 0
+          },
+          "children": []
+        }
+      ]
+    },
+    "flat_nodes": [
+      {
+        "id": "node_0",
+        "parent_id": "",
+        "name": "TextFieldVariants",
+        "class": "ColorRect",
+        "category": "control",
+        "path": "/root/@Node@83/GSSStageViewport/TextFieldVariants",
+        "depth": 0,
+        "index_in_parent": 0,
+        "children_count": 5,
+        "groups": [],
+        "script": "",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 1280.0,
+          "height": 720.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {},
+        "transforms": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "global_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "size": {
+            "x": 1280.0,
+            "y": 720.0
+          },
+          "custom_minimum_size": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 1280.0,
+            "bottom": 720.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 0,
+          "mouse_filter": 2,
+          "tooltip_text": "",
+          "color": {
+            "r": 0.9788,
+            "g": 0.9745,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#faf9ffff"
+          }
+        },
+        "signals": [
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@83/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/ClearableField",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedCounterField",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedErrorField",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/PasswordField",
+            "method": "Control::_size_changed"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "clip_children": 0,
+          "clip_contents": false,
+          "color": {
+            "r": 0.9788,
+            "g": 0.9745,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#faf9ffff"
+          },
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "editor_description": "",
+          "focus_behavior_recursive": 0,
+          "focus_mode": 0,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "layout_direction": 0,
+          "layout_mode": 3,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 0,
+          "mouse_filter": 2,
+          "mouse_force_pass_scroll_events": true,
+          "offset_bottom": 720.0,
+          "offset_left": 0.0,
+          "offset_right": 1280.0,
+          "offset_top": 0.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "size": {
+            "x": 1280.0,
+            "y": 720.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "visibility_layer": 1,
+          "visible": true,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        }
+      },
+      {
+        "id": "node_1",
+        "parent_id": "node_0",
+        "name": "FilledEmptyField",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "depth": 1,
+        "index_in_parent": 0,
+        "children_count": 0,
+        "groups": [],
+        "script": "res://addons/material3/components/inputs/m3_text_field.gd",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 40.0,
+          "y": 40.0,
+          "width": 260.0,
+          "height": 56.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {
+          "_active_height": 56.0,
+          "_focus_progress": 0.0,
+          "_focus_tween": null,
+          "_font": "<FontFile>",
+          "_font_size_float": 12,
+          "_font_size_helper": 12,
+          "_font_size_rest": 16,
+          "_height_tween": null,
+          "_is_focused_internal": false,
+          "_is_pointer_down": false,
+          "_label_float_progress": 0.0,
+          "_label_progress": 0.0,
+          "_label_tween": null,
+          "_line_edit": "<Node:M3InternalLineEdit (LineEdit)>",
+          "_pointer_inside": false,
+          "_ripple": "<Node:M3Ripple (Control)>",
+          "_ripple_wave_alpha": 0.0,
+          "_ripple_wave_count": 0,
+          "_ripple_wave_radius": 0.0,
+          "_state_layer_alpha": 0.0,
+          "_text_edit": "<Node:M3InternalTextEdit (TextEdit)>",
+          "_theme_connected": true,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "density_override": 99,
+          "disabled": false,
+          "error_text": "",
+          "field_type": 0,
+          "helper_text": "",
+          "is_error": false,
+          "is_password": false,
+          "label": "Username",
+          "label_text": "Username",
+          "leading_icon": "person",
+          "leading_icon_texture": null,
+          "max_characters": 0,
+          "max_length": 0,
+          "max_lines": 6,
+          "min_lines": 3,
+          "multiline": false,
+          "placeholder": "",
+          "prefix_text": "",
+          "ripple_enabled": true,
+          "secret": false,
+          "shape_token": 0,
+          "show_clear_button": false,
+          "show_counter": false,
+          "show_password_toggle": false,
+          "suffix_text": "",
+          "supporting_text": "",
+          "text": "",
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "trailing_icon": "",
+          "trailing_icon_texture": null,
+          "variant": 0
+        },
+        "transforms": {
+          "position": {
+            "x": 40.0,
+            "y": 40.0
+          },
+          "global_position": {
+            "x": 40.0,
+            "y": 40.0
+          },
+          "size": {
+            "x": 260.0,
+            "y": 56.0
+          },
+          "custom_minimum_size": {
+            "x": 96.0,
+            "y": 56.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 40.0,
+            "top": 40.0,
+            "right": 300.0,
+            "bottom": 96.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 2,
+          "mouse_filter": 0,
+          "tooltip_text": ""
+        },
+        "signals": [
+          {
+            "signal": "text_changed",
+            "target": "<GDScript>",
+            "method": "<anonymous lambda>"
+          },
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@83/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField/M3Ripple",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField/M3InternalLineEdit",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField/M3InternalTextEdit",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "resized",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+            "method": "_on_resized"
+          },
+          {
+            "signal": "mouse_entered",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+            "method": "_on_mouse_entered"
+          },
+          {
+            "signal": "mouse_exited",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+            "method": "_on_mouse_exited"
+          },
+          {
+            "signal": "focus_entered",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+            "method": "_on_focus_entered"
+          },
+          {
+            "signal": "focus_exited",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+            "method": "_on_focus_exited"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "clip_children": 0,
+          "clip_contents": false,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 96.0,
+            "y": 56.0
+          },
+          "density_override": 99,
+          "disabled": false,
+          "editor_description": "",
+          "error_text": "",
+          "field_type": 0,
+          "focus_behavior_recursive": 0,
+          "focus_mode": 2,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "helper_text": "",
+          "is_error": false,
+          "is_password": false,
+          "label": "Username",
+          "label_text": "Username",
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "leading_icon": "person",
+          "leading_icon_texture": null,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "max_characters": 0,
+          "max_length": 0,
+          "max_lines": 6,
+          "min_lines": 3,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 2,
+          "mouse_filter": 0,
+          "mouse_force_pass_scroll_events": true,
+          "multiline": false,
+          "offset_bottom": 96.0,
+          "offset_left": 40.0,
+          "offset_right": 300.0,
+          "offset_top": 40.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "placeholder": "",
+          "position": {
+            "x": 40.0,
+            "y": 40.0
+          },
+          "prefix_text": "",
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "ripple_enabled": true,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "secret": false,
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shape_token": 0,
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "show_clear_button": false,
+          "show_counter": false,
+          "show_password_toggle": false,
+          "size": {
+            "x": 260.0,
+            "y": 56.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "suffix_text": "",
+          "supporting_text": "",
+          "text": "",
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "trailing_icon": "",
+          "trailing_icon_texture": null,
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "variant": 0,
+          "visibility_layer": 1,
+          "visible": true,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        }
+      },
+      {
+        "id": "node_2",
+        "parent_id": "node_0",
+        "name": "ClearableField",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/ClearableField",
+        "depth": 1,
+        "index_in_parent": 1,
+        "children_count": 0,
+        "groups": [],
+        "script": "res://addons/material3/components/inputs/m3_text_field.gd",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 340.0,
+          "y": 40.0,
+          "width": 260.0,
+          "height": 76.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {
+          "_active_height": 56.0,
+          "_focus_progress": 0.0,
+          "_focus_tween": null,
+          "_font": "<FontFile>",
+          "_font_size_float": 12,
+          "_font_size_helper": 12,
+          "_font_size_rest": 16,
+          "_height_tween": null,
+          "_is_focused_internal": false,
+          "_is_pointer_down": false,
+          "_label_float_progress": 1.0,
+          "_label_progress": 1.0,
+          "_label_tween": null,
+          "_line_edit": "<Node:M3InternalLineEdit (LineEdit)>",
+          "_pointer_inside": false,
+          "_ripple": "<Node:M3Ripple (Control)>",
+          "_ripple_wave_alpha": 0.0,
+          "_ripple_wave_count": 0,
+          "_ripple_wave_radius": 0.0,
+          "_state_layer_alpha": 0.0,
+          "_text_edit": "<Node:M3InternalTextEdit (TextEdit)>",
+          "_theme_connected": true,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "density_override": 99,
+          "disabled": false,
+          "error_text": "",
+          "field_type": 0,
+          "helper_text": "Click trailing X to clear",
+          "is_error": false,
+          "is_password": false,
+          "label": "Search query",
+          "label_text": "Search query",
+          "leading_icon": "search",
+          "leading_icon_texture": null,
+          "max_characters": 0,
+          "max_length": 0,
+          "max_lines": 6,
+          "min_lines": 3,
+          "multiline": false,
+          "placeholder": "",
+          "prefix_text": "",
+          "ripple_enabled": true,
+          "secret": false,
+          "shape_token": 0,
+          "show_clear_button": true,
+          "show_counter": false,
+          "show_password_toggle": false,
+          "suffix_text": "",
+          "supporting_text": "Click trailing X to clear",
+          "text": "Material 3",
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "trailing_icon": "",
+          "trailing_icon_texture": null,
+          "variant": 0
+        },
+        "transforms": {
+          "position": {
+            "x": 340.0,
+            "y": 40.0
+          },
+          "global_position": {
+            "x": 340.0,
+            "y": 40.0
+          },
+          "size": {
+            "x": 260.0,
+            "y": 76.0
+          },
+          "custom_minimum_size": {
+            "x": 96.0,
+            "y": 76.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 340.0,
+            "top": 40.0,
+            "right": 600.0,
+            "bottom": 116.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 2,
+          "mouse_filter": 0,
+          "tooltip_text": ""
+        },
+        "signals": [
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@83/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/ClearableField/M3Ripple",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/ClearableField/M3InternalLineEdit",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/ClearableField/M3InternalTextEdit",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "resized",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/ClearableField",
+            "method": "_on_resized"
+          },
+          {
+            "signal": "mouse_entered",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/ClearableField",
+            "method": "_on_mouse_entered"
+          },
+          {
+            "signal": "mouse_exited",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/ClearableField",
+            "method": "_on_mouse_exited"
+          },
+          {
+            "signal": "focus_entered",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/ClearableField",
+            "method": "_on_focus_entered"
+          },
+          {
+            "signal": "focus_exited",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/ClearableField",
+            "method": "_on_focus_exited"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "clip_children": 0,
+          "clip_contents": false,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 96.0,
+            "y": 76.0
+          },
+          "density_override": 99,
+          "disabled": false,
+          "editor_description": "",
+          "error_text": "",
+          "field_type": 0,
+          "focus_behavior_recursive": 0,
+          "focus_mode": 2,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "helper_text": "Click trailing X to clear",
+          "is_error": false,
+          "is_password": false,
+          "label": "Search query",
+          "label_text": "Search query",
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "leading_icon": "search",
+          "leading_icon_texture": null,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "max_characters": 0,
+          "max_length": 0,
+          "max_lines": 6,
+          "min_lines": 3,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 2,
+          "mouse_filter": 0,
+          "mouse_force_pass_scroll_events": true,
+          "multiline": false,
+          "offset_bottom": 116.0,
+          "offset_left": 340.0,
+          "offset_right": 600.0,
+          "offset_top": 40.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "placeholder": "",
+          "position": {
+            "x": 340.0,
+            "y": 40.0
+          },
+          "prefix_text": "",
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "ripple_enabled": true,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "secret": false,
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shape_token": 0,
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "show_clear_button": true,
+          "show_counter": false,
+          "show_password_toggle": false,
+          "size": {
+            "x": 260.0,
+            "y": 76.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "suffix_text": "",
+          "supporting_text": "Click trailing X to clear",
+          "text": "Material 3",
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "trailing_icon": "",
+          "trailing_icon_texture": null,
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "variant": 0,
+          "visibility_layer": 1,
+          "visible": true,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        }
+      },
+      {
+        "id": "node_3",
+        "parent_id": "node_0",
+        "name": "OutlinedCounterField",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedCounterField",
+        "depth": 1,
+        "index_in_parent": 2,
+        "children_count": 0,
+        "groups": [],
+        "script": "res://addons/material3/components/inputs/m3_text_field.gd",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 640.0,
+          "y": 40.0,
+          "width": 260.0,
+          "height": 76.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {
+          "_active_height": 56.0,
+          "_focus_progress": 0.0,
+          "_focus_tween": null,
+          "_font": "<FontFile>",
+          "_font_size_float": 12,
+          "_font_size_helper": 12,
+          "_font_size_rest": 16,
+          "_height_tween": null,
+          "_is_focused_internal": false,
+          "_is_pointer_down": false,
+          "_label_float_progress": 1.0,
+          "_label_progress": 1.0,
+          "_label_tween": null,
+          "_line_edit": "<Node:M3InternalLineEdit (LineEdit)>",
+          "_pointer_inside": false,
+          "_ripple": "<Node:M3Ripple (Control)>",
+          "_ripple_wave_alpha": 0.0,
+          "_ripple_wave_count": 0,
+          "_ripple_wave_radius": 0.0,
+          "_state_layer_alpha": 0.0,
+          "_text_edit": "<Node:M3InternalTextEdit (TextEdit)>",
+          "_theme_connected": true,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "density_override": 99,
+          "disabled": false,
+          "error_text": "",
+          "field_type": 1,
+          "helper_text": "Short bio",
+          "is_error": false,
+          "is_password": false,
+          "label": "Bio",
+          "label_text": "Bio",
+          "leading_icon": "",
+          "leading_icon_texture": null,
+          "max_characters": 40,
+          "max_length": 40,
+          "max_lines": 6,
+          "min_lines": 3,
+          "multiline": false,
+          "placeholder": "",
+          "prefix_text": "",
+          "ripple_enabled": true,
+          "secret": false,
+          "shape_token": 0,
+          "show_clear_button": false,
+          "show_counter": true,
+          "show_password_toggle": false,
+          "suffix_text": "",
+          "supporting_text": "Short bio",
+          "text": "Godot UI developer",
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "trailing_icon": "",
+          "trailing_icon_texture": null,
+          "variant": 1
+        },
+        "transforms": {
+          "position": {
+            "x": 640.0,
+            "y": 40.0
+          },
+          "global_position": {
+            "x": 640.0,
+            "y": 40.0
+          },
+          "size": {
+            "x": 260.0,
+            "y": 76.0
+          },
+          "custom_minimum_size": {
+            "x": 96.0,
+            "y": 76.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 640.0,
+            "top": 40.0,
+            "right": 900.0,
+            "bottom": 116.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 2,
+          "mouse_filter": 0,
+          "tooltip_text": ""
+        },
+        "signals": [
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@83/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedCounterField/M3Ripple",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedCounterField/M3InternalLineEdit",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedCounterField/M3InternalTextEdit",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "resized",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedCounterField",
+            "method": "_on_resized"
+          },
+          {
+            "signal": "mouse_entered",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedCounterField",
+            "method": "_on_mouse_entered"
+          },
+          {
+            "signal": "mouse_exited",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedCounterField",
+            "method": "_on_mouse_exited"
+          },
+          {
+            "signal": "focus_entered",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedCounterField",
+            "method": "_on_focus_entered"
+          },
+          {
+            "signal": "focus_exited",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedCounterField",
+            "method": "_on_focus_exited"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "clip_children": 0,
+          "clip_contents": false,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 96.0,
+            "y": 76.0
+          },
+          "density_override": 99,
+          "disabled": false,
+          "editor_description": "",
+          "error_text": "",
+          "field_type": 1,
+          "focus_behavior_recursive": 0,
+          "focus_mode": 2,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "helper_text": "Short bio",
+          "is_error": false,
+          "is_password": false,
+          "label": "Bio",
+          "label_text": "Bio",
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "leading_icon": "",
+          "leading_icon_texture": null,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "max_characters": 40,
+          "max_length": 40,
+          "max_lines": 6,
+          "min_lines": 3,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 2,
+          "mouse_filter": 0,
+          "mouse_force_pass_scroll_events": true,
+          "multiline": false,
+          "offset_bottom": 116.0,
+          "offset_left": 640.0,
+          "offset_right": 900.0,
+          "offset_top": 40.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "placeholder": "",
+          "position": {
+            "x": 640.0,
+            "y": 40.0
+          },
+          "prefix_text": "",
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "ripple_enabled": true,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "secret": false,
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shape_token": 0,
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "show_clear_button": false,
+          "show_counter": true,
+          "show_password_toggle": false,
+          "size": {
+            "x": 260.0,
+            "y": 76.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "suffix_text": "",
+          "supporting_text": "Short bio",
+          "text": "Godot UI developer",
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "trailing_icon": "",
+          "trailing_icon_texture": null,
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "variant": 1,
+          "visibility_layer": 1,
+          "visible": true,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        }
+      },
+      {
+        "id": "node_4",
+        "parent_id": "node_0",
+        "name": "OutlinedErrorField",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedErrorField",
+        "depth": 1,
+        "index_in_parent": 3,
+        "children_count": 0,
+        "groups": [],
+        "script": "res://addons/material3/components/inputs/m3_text_field.gd",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 40.0,
+          "y": 160.0,
+          "width": 260.0,
+          "height": 76.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {
+          "_active_height": 56.0,
+          "_focus_progress": 0.0,
+          "_focus_tween": null,
+          "_font": "<FontFile>",
+          "_font_size_float": 12,
+          "_font_size_helper": 12,
+          "_font_size_rest": 16,
+          "_height_tween": null,
+          "_is_focused_internal": false,
+          "_is_pointer_down": false,
+          "_label_float_progress": 1.0,
+          "_label_progress": 1.0,
+          "_label_tween": null,
+          "_line_edit": "<Node:M3InternalLineEdit (LineEdit)>",
+          "_pointer_inside": false,
+          "_ripple": "<Node:M3Ripple (Control)>",
+          "_ripple_wave_alpha": 0.0,
+          "_ripple_wave_count": 0,
+          "_ripple_wave_radius": 0.0,
+          "_state_layer_alpha": 0.0,
+          "_text_edit": "<Node:M3InternalTextEdit (TextEdit)>",
+          "_theme_connected": true,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "density_override": 99,
+          "disabled": false,
+          "error_text": "Enter a valid email address",
+          "field_type": 1,
+          "helper_text": "",
+          "is_error": true,
+          "is_password": false,
+          "label": "Email",
+          "label_text": "Email",
+          "leading_icon": "",
+          "leading_icon_texture": null,
+          "max_characters": 0,
+          "max_length": 0,
+          "max_lines": 6,
+          "min_lines": 3,
+          "multiline": false,
+          "placeholder": "",
+          "prefix_text": "",
+          "ripple_enabled": true,
+          "secret": false,
+          "shape_token": 0,
+          "show_clear_button": false,
+          "show_counter": false,
+          "show_password_toggle": false,
+          "suffix_text": "",
+          "supporting_text": "",
+          "text": "invalid-email",
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "trailing_icon": "clear",
+          "trailing_icon_texture": null,
+          "variant": 1
+        },
+        "transforms": {
+          "position": {
+            "x": 40.0,
+            "y": 160.0
+          },
+          "global_position": {
+            "x": 40.0,
+            "y": 160.0
+          },
+          "size": {
+            "x": 260.0,
+            "y": 76.0
+          },
+          "custom_minimum_size": {
+            "x": 96.0,
+            "y": 76.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 40.0,
+            "top": 160.0,
+            "right": 300.0,
+            "bottom": 236.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 2,
+          "mouse_filter": 0,
+          "tooltip_text": ""
+        },
+        "signals": [
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@83/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedErrorField/M3Ripple",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedErrorField/M3InternalLineEdit",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedErrorField/M3InternalTextEdit",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "resized",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedErrorField",
+            "method": "_on_resized"
+          },
+          {
+            "signal": "mouse_entered",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedErrorField",
+            "method": "_on_mouse_entered"
+          },
+          {
+            "signal": "mouse_exited",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedErrorField",
+            "method": "_on_mouse_exited"
+          },
+          {
+            "signal": "focus_entered",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedErrorField",
+            "method": "_on_focus_entered"
+          },
+          {
+            "signal": "focus_exited",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/OutlinedErrorField",
+            "method": "_on_focus_exited"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "clip_children": 0,
+          "clip_contents": false,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 96.0,
+            "y": 76.0
+          },
+          "density_override": 99,
+          "disabled": false,
+          "editor_description": "",
+          "error_text": "Enter a valid email address",
+          "field_type": 1,
+          "focus_behavior_recursive": 0,
+          "focus_mode": 2,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "helper_text": "",
+          "is_error": true,
+          "is_password": false,
+          "label": "Email",
+          "label_text": "Email",
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "leading_icon": "",
+          "leading_icon_texture": null,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "max_characters": 0,
+          "max_length": 0,
+          "max_lines": 6,
+          "min_lines": 3,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 2,
+          "mouse_filter": 0,
+          "mouse_force_pass_scroll_events": true,
+          "multiline": false,
+          "offset_bottom": 236.0,
+          "offset_left": 40.0,
+          "offset_right": 300.0,
+          "offset_top": 160.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "placeholder": "",
+          "position": {
+            "x": 40.0,
+            "y": 160.0
+          },
+          "prefix_text": "",
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "ripple_enabled": true,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "secret": false,
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shape_token": 0,
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "show_clear_button": false,
+          "show_counter": false,
+          "show_password_toggle": false,
+          "size": {
+            "x": 260.0,
+            "y": 76.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "suffix_text": "",
+          "supporting_text": "",
+          "text": "invalid-email",
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "trailing_icon": "clear",
+          "trailing_icon_texture": null,
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "variant": 1,
+          "visibility_layer": 1,
+          "visible": true,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        }
+      },
+      {
+        "id": "node_5",
+        "parent_id": "node_0",
+        "name": "PasswordField",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/PasswordField",
+        "depth": 1,
+        "index_in_parent": 4,
+        "children_count": 0,
+        "groups": [],
+        "script": "res://addons/material3/components/inputs/m3_text_field.gd",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 340.0,
+          "y": 160.0,
+          "width": 260.0,
+          "height": 76.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {
+          "_active_height": 56.0,
+          "_focus_progress": 0.0,
+          "_focus_tween": null,
+          "_font": "<FontFile>",
+          "_font_size_float": 12,
+          "_font_size_helper": 12,
+          "_font_size_rest": 16,
+          "_height_tween": null,
+          "_is_focused_internal": false,
+          "_is_pointer_down": false,
+          "_label_float_progress": 1.0,
+          "_label_progress": 1.0,
+          "_label_tween": null,
+          "_line_edit": "<Node:M3InternalLineEdit (LineEdit)>",
+          "_pointer_inside": false,
+          "_ripple": "<Node:M3Ripple (Control)>",
+          "_ripple_wave_alpha": 0.0,
+          "_ripple_wave_count": 0,
+          "_ripple_wave_radius": 0.0,
+          "_state_layer_alpha": 0.0,
+          "_text_edit": "<Node:M3InternalTextEdit (TextEdit)>",
+          "_theme_connected": true,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "density_override": 99,
+          "disabled": false,
+          "error_text": "",
+          "field_type": 1,
+          "helper_text": "Toggle eye icon",
+          "is_error": false,
+          "is_password": true,
+          "label": "Password",
+          "label_text": "Password",
+          "leading_icon": "",
+          "leading_icon_texture": null,
+          "max_characters": 0,
+          "max_length": 0,
+          "max_lines": 6,
+          "min_lines": 3,
+          "multiline": false,
+          "placeholder": "",
+          "prefix_text": "",
+          "ripple_enabled": true,
+          "secret": true,
+          "shape_token": 0,
+          "show_clear_button": false,
+          "show_counter": false,
+          "show_password_toggle": true,
+          "suffix_text": "",
+          "supporting_text": "Toggle eye icon",
+          "text": "hunter2",
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "trailing_icon": "",
+          "trailing_icon_texture": null,
+          "variant": 1
+        },
+        "transforms": {
+          "position": {
+            "x": 340.0,
+            "y": 160.0
+          },
+          "global_position": {
+            "x": 340.0,
+            "y": 160.0
+          },
+          "size": {
+            "x": 260.0,
+            "y": 76.0
+          },
+          "custom_minimum_size": {
+            "x": 96.0,
+            "y": 76.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 340.0,
+            "top": 160.0,
+            "right": 600.0,
+            "bottom": 236.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 2,
+          "mouse_filter": 0,
+          "tooltip_text": ""
+        },
+        "signals": [
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@83/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/PasswordField/M3Ripple",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/PasswordField/M3InternalLineEdit",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/PasswordField/M3InternalTextEdit",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "resized",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/PasswordField",
+            "method": "_on_resized"
+          },
+          {
+            "signal": "mouse_entered",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/PasswordField",
+            "method": "_on_mouse_entered"
+          },
+          {
+            "signal": "mouse_exited",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/PasswordField",
+            "method": "_on_mouse_exited"
+          },
+          {
+            "signal": "focus_entered",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/PasswordField",
+            "method": "_on_focus_entered"
+          },
+          {
+            "signal": "focus_exited",
+            "target": "/root/@Node@83/GSSStageViewport/TextFieldVariants/PasswordField",
+            "method": "_on_focus_exited"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "clip_children": 0,
+          "clip_contents": false,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 96.0,
+            "y": 76.0
+          },
+          "density_override": 99,
+          "disabled": false,
+          "editor_description": "",
+          "error_text": "",
+          "field_type": 1,
+          "focus_behavior_recursive": 0,
+          "focus_mode": 2,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "helper_text": "Toggle eye icon",
+          "is_error": false,
+          "is_password": true,
+          "label": "Password",
+          "label_text": "Password",
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "leading_icon": "",
+          "leading_icon_texture": null,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "max_characters": 0,
+          "max_length": 0,
+          "max_lines": 6,
+          "min_lines": 3,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 2,
+          "mouse_filter": 0,
+          "mouse_force_pass_scroll_events": true,
+          "multiline": false,
+          "offset_bottom": 236.0,
+          "offset_left": 340.0,
+          "offset_right": 600.0,
+          "offset_top": 160.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "placeholder": "",
+          "position": {
+            "x": 340.0,
+            "y": 160.0
+          },
+          "prefix_text": "",
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "ripple_enabled": true,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "secret": true,
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shape_token": 0,
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "show_clear_button": false,
+          "show_counter": false,
+          "show_password_toggle": true,
+          "size": {
+            "x": 260.0,
+            "y": 76.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "suffix_text": "",
+          "supporting_text": "Toggle eye icon",
+          "text": "hunter2",
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "trailing_icon": "",
+          "trailing_icon_texture": null,
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "variant": 1,
+          "visibility_layer": 1,
+          "visible": true,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        }
+      }
+    ]
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "elapsed_ms": 7,
+      "delta_sec": 0.0134,
+      "process_frame": 2398,
+      "physics_frame": 2702,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField": {
+          "script_variables": {
+            "_focus_tween": "<Tween>",
+            "_is_focused_internal": true,
+            "_label_tween": "<Tween>"
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 2,
+      "elapsed_ms": 19,
+      "delta_sec": 0.0115,
+      "process_frame": 2399,
+      "physics_frame": 2702,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField": {
+          "script_variables": {
+            "_focus_progress": 0.1882,
+            "_label_float_progress": 0.1882,
+            "_label_progress": 0.1882
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 3,
+      "elapsed_ms": 35,
+      "delta_sec": 0.0166,
+      "process_frame": 2400,
+      "physics_frame": 2703,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField": {
+          "script_variables": {
+            "_focus_progress": 0.3298,
+            "_label_float_progress": 0.3298,
+            "_label_progress": 0.3298
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 4,
+      "elapsed_ms": 52,
+      "delta_sec": 0.0167,
+      "process_frame": 2401,
+      "physics_frame": 2704,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField": {
+          "script_variables": {
+            "_focus_progress": 0.503,
+            "_label_float_progress": 0.503,
+            "_label_progress": 0.503
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 5,
+      "elapsed_ms": 69,
+      "delta_sec": 0.0167,
+      "process_frame": 2402,
+      "physics_frame": 2705,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField": {
+          "script_variables": {
+            "_focus_progress": 0.6443,
+            "_label_float_progress": 0.6443,
+            "_label_progress": 0.6443
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 6,
+      "elapsed_ms": 86,
+      "delta_sec": 0.0166,
+      "process_frame": 2403,
+      "physics_frame": 2706,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField": {
+          "script_variables": {
+            "_focus_progress": 0.7558,
+            "_label_float_progress": 0.7558,
+            "_label_progress": 0.7558
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 7,
+      "elapsed_ms": 103,
+      "delta_sec": 0.0167,
+      "process_frame": 2404,
+      "physics_frame": 2707,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField": {
+          "script_variables": {
+            "_focus_progress": 0.8406,
+            "_label_float_progress": 0.8406,
+            "_label_progress": 0.8406
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 8,
+      "elapsed_ms": 119,
+      "delta_sec": 0.0167,
+      "process_frame": 2405,
+      "physics_frame": 2708,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField": {
+          "script_variables": {
+            "_focus_progress": 0.9034,
+            "_label_float_progress": 0.9034,
+            "_label_progress": 0.9034
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 9,
+      "elapsed_ms": 136,
+      "delta_sec": 0.0166,
+      "process_frame": 2406,
+      "physics_frame": 2709,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField": {
+          "script_variables": {
+            "_focus_progress": 0.9471,
+            "_label_float_progress": 0.9471,
+            "_label_progress": 0.9471
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 10,
+      "elapsed_ms": 153,
+      "delta_sec": 0.0168,
+      "process_frame": 2407,
+      "physics_frame": 2710,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField": {
+          "script_variables": {
+            "_focus_progress": 0.975,
+            "_label_float_progress": 0.975,
+            "_label_progress": 0.975
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 11,
+      "elapsed_ms": 170,
+      "delta_sec": 0.0166,
+      "process_frame": 2408,
+      "physics_frame": 2711,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField": {
+          "script_variables": {
+            "_focus_progress": 0.9909,
+            "_label_float_progress": 0.9909,
+            "_label_progress": 0.9909
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 12,
+      "elapsed_ms": 186,
+      "delta_sec": 0.0166,
+      "process_frame": 2409,
+      "physics_frame": 2712,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField": {
+          "script_variables": {
+            "_focus_progress": 0.998,
+            "_label_float_progress": 0.998,
+            "_label_progress": 0.998
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 13,
+      "elapsed_ms": 203,
+      "delta_sec": 0.0167,
+      "process_frame": 2410,
+      "physics_frame": 2713,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField": {
+          "script_variables": {
+            "_focus_progress": 0.9999,
+            "_label_float_progress": 0.9999,
+            "_label_progress": 0.9999
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 14,
+      "elapsed_ms": 220,
+      "delta_sec": 0.0167,
+      "process_frame": 2411,
+      "physics_frame": 2714,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField": {
+          "script_variables": {
+            "_focus_progress": 1.0,
+            "_label_float_progress": 1.0,
+            "_label_progress": 1.0
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 15,
+      "elapsed_ms": 237,
+      "delta_sec": 0.0167,
+      "process_frame": 2412,
+      "physics_frame": 2715,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 16,
+      "elapsed_ms": 253,
+      "delta_sec": 0.0167,
+      "process_frame": 2413,
+      "physics_frame": 2716,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 17,
+      "elapsed_ms": 269,
+      "delta_sec": 0.0168,
+      "process_frame": 2414,
+      "physics_frame": 2717,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 18,
+      "elapsed_ms": 286,
+      "delta_sec": 0.0167,
+      "process_frame": 2415,
+      "physics_frame": 2718,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 19,
+      "elapsed_ms": 302,
+      "delta_sec": 0.0167,
+      "process_frame": 2416,
+      "physics_frame": 2719,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 20,
+      "elapsed_ms": 319,
+      "delta_sec": 0.0167,
+      "process_frame": 2417,
+      "physics_frame": 2720,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 21,
+      "elapsed_ms": 336,
+      "delta_sec": 0.0167,
+      "process_frame": 2418,
+      "physics_frame": 2721,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField": {
+          "script_variables": {
+            "text": "A"
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 22,
+      "elapsed_ms": 353,
+      "delta_sec": 0.0167,
+      "process_frame": 2419,
+      "physics_frame": 2722,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 23,
+      "elapsed_ms": 370,
+      "delta_sec": 0.0167,
+      "process_frame": 2420,
+      "physics_frame": 2723,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField": {
+          "script_variables": {
+            "text": "Ad"
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 24,
+      "elapsed_ms": 386,
+      "delta_sec": 0.0167,
+      "process_frame": 2421,
+      "physics_frame": 2724,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 25,
+      "elapsed_ms": 403,
+      "delta_sec": 0.0167,
+      "process_frame": 2422,
+      "physics_frame": 2725,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField": {
+          "script_variables": {
+            "text": "Ada"
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 26,
+      "elapsed_ms": 420,
+      "delta_sec": 0.0167,
+      "process_frame": 2423,
+      "physics_frame": 2726,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 27,
+      "elapsed_ms": 437,
+      "delta_sec": 0.0167,
+      "process_frame": 2424,
+      "physics_frame": 2727,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 28,
+      "elapsed_ms": 453,
+      "delta_sec": 0.0167,
+      "process_frame": 2425,
+      "physics_frame": 2728,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 29,
+      "elapsed_ms": 470,
+      "delta_sec": 0.0167,
+      "process_frame": 2426,
+      "physics_frame": 2729,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 30,
+      "elapsed_ms": 487,
+      "delta_sec": 0.0167,
+      "process_frame": 2427,
+      "physics_frame": 2730,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 31,
+      "elapsed_ms": 503,
+      "delta_sec": 0.0167,
+      "process_frame": 2428,
+      "physics_frame": 2731,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 32,
+      "elapsed_ms": 520,
+      "delta_sec": 0.0167,
+      "process_frame": 2429,
+      "physics_frame": 2732,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 33,
+      "elapsed_ms": 537,
+      "delta_sec": 0.0167,
+      "process_frame": 2430,
+      "physics_frame": 2733,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 34,
+      "elapsed_ms": 553,
+      "delta_sec": 0.0181,
+      "process_frame": 2431,
+      "physics_frame": 2734,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 35,
+      "elapsed_ms": 570,
+      "delta_sec": 0.0182,
+      "process_frame": 2432,
+      "physics_frame": 2736,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 36,
+      "elapsed_ms": 587,
+      "delta_sec": 0.0182,
+      "process_frame": 2433,
+      "physics_frame": 2737,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 37,
+      "elapsed_ms": 603,
+      "delta_sec": 0.0182,
+      "process_frame": 2434,
+      "physics_frame": 2738,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 38,
+      "elapsed_ms": 620,
+      "delta_sec": 0.0182,
+      "process_frame": 2435,
+      "physics_frame": 2739,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 39,
+      "elapsed_ms": 637,
+      "delta_sec": 0.0182,
+      "process_frame": 2436,
+      "physics_frame": 2740,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 40,
+      "elapsed_ms": 654,
+      "delta_sec": 0.0182,
+      "process_frame": 2437,
+      "physics_frame": 2741,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 41,
+      "elapsed_ms": 670,
+      "delta_sec": 0.0182,
+      "process_frame": 2438,
+      "physics_frame": 2742,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 42,
+      "elapsed_ms": 687,
+      "delta_sec": 0.0182,
+      "process_frame": 2439,
+      "physics_frame": 2743,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 43,
+      "elapsed_ms": 703,
+      "delta_sec": 0.0182,
+      "process_frame": 2440,
+      "physics_frame": 2744,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 44,
+      "elapsed_ms": 720,
+      "delta_sec": 0.0182,
+      "process_frame": 2441,
+      "physics_frame": 2745,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 45,
+      "elapsed_ms": 737,
+      "delta_sec": 0.0182,
+      "process_frame": 2442,
+      "physics_frame": 2746,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 46,
+      "elapsed_ms": 753,
+      "delta_sec": 0.0182,
+      "process_frame": 2443,
+      "physics_frame": 2748,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    }
+  ],
+  "analysis": {
+    "summary": {
+      "total_frames": 47,
+      "delta_frames": 46,
+      "duration_ms": 753,
+      "initial_node_count": 6,
+      "active_node_count": 1,
+      "static_node_count": 5,
+      "spawned_node_count": 0,
+      "removed_node_count": 0,
+      "bounces_detected": 0,
+      "floor_contacts_detected": 0,
+      "total_events": 45
+    },
+    "node_trajectories": {
+      "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField": {
+        "name": "FilledEmptyField",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "frames_changed": 17,
+        "is_3d": false,
+        "start_position": {
+          "x": 40.0,
+          "y": 40.0
+        },
+        "end_position": {
+          "x": 40.0,
+          "y": 40.0
+        },
+        "min_position": {
+          "x": 40.0,
+          "y": 40.0
+        },
+        "max_position": {
+          "x": 40.0,
+          "y": 40.0
+        },
+        "total_distance": 0.0,
+        "peak_speed": 0.0,
+        "peak_speed_frame": 0,
+        "bounce_frames": [],
+        "bounces": [],
+        "screen_trail": [
+          {
+            "x": 170.0,
+            "y": 68.0
+          }
+        ],
+        "mutated_properties": {
+          "script_variables._focus_tween": {
+            "initial": null,
+            "final": "<Tween>",
+            "change_count": 1
+          },
+          "script_variables._is_focused_internal": {
+            "initial": false,
+            "final": true,
+            "change_count": 1
+          },
+          "script_variables._label_tween": {
+            "initial": null,
+            "final": "<Tween>",
+            "change_count": 1
+          },
+          "script_variables._focus_progress": {
+            "initial": 0.0,
+            "final": 1.0,
+            "change_count": 13
+          },
+          "script_variables._label_float_progress": {
+            "initial": 0.0,
+            "final": 1.0,
+            "change_count": 13
+          },
+          "script_variables._label_progress": {
+            "initial": 0.0,
+            "final": 1.0,
+            "change_count": 13
+          },
+          "script_variables.text": {
+            "initial": "",
+            "final": "Ada",
+            "change_count": 3
+          }
+        },
+        "displacement": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      }
+    },
+    "events": [
+      {
+        "frame_index": 1,
+        "elapsed_ms": 7,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_focus_tween",
+        "old_value": null,
+        "new_value": "<Tween>"
+      },
+      {
+        "frame_index": 1,
+        "elapsed_ms": 7,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_is_focused_internal",
+        "old_value": false,
+        "new_value": true
+      },
+      {
+        "frame_index": 1,
+        "elapsed_ms": 7,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_label_tween",
+        "old_value": null,
+        "new_value": "<Tween>"
+      },
+      {
+        "frame_index": 2,
+        "elapsed_ms": 19,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_focus_progress",
+        "old_value": 0.0,
+        "new_value": 0.1882
+      },
+      {
+        "frame_index": 2,
+        "elapsed_ms": 19,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_label_float_progress",
+        "old_value": 0.0,
+        "new_value": 0.1882
+      },
+      {
+        "frame_index": 2,
+        "elapsed_ms": 19,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_label_progress",
+        "old_value": 0.0,
+        "new_value": 0.1882
+      },
+      {
+        "frame_index": 3,
+        "elapsed_ms": 35,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_focus_progress",
+        "old_value": 0.1882,
+        "new_value": 0.3298
+      },
+      {
+        "frame_index": 3,
+        "elapsed_ms": 35,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_label_float_progress",
+        "old_value": 0.1882,
+        "new_value": 0.3298
+      },
+      {
+        "frame_index": 3,
+        "elapsed_ms": 35,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_label_progress",
+        "old_value": 0.1882,
+        "new_value": 0.3298
+      },
+      {
+        "frame_index": 4,
+        "elapsed_ms": 52,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_focus_progress",
+        "old_value": 0.3298,
+        "new_value": 0.503
+      },
+      {
+        "frame_index": 4,
+        "elapsed_ms": 52,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_label_float_progress",
+        "old_value": 0.3298,
+        "new_value": 0.503
+      },
+      {
+        "frame_index": 4,
+        "elapsed_ms": 52,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_label_progress",
+        "old_value": 0.3298,
+        "new_value": 0.503
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 69,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_focus_progress",
+        "old_value": 0.503,
+        "new_value": 0.6443
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 69,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_label_float_progress",
+        "old_value": 0.503,
+        "new_value": 0.6443
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 69,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_label_progress",
+        "old_value": 0.503,
+        "new_value": 0.6443
+      },
+      {
+        "frame_index": 6,
+        "elapsed_ms": 86,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_focus_progress",
+        "old_value": 0.6443,
+        "new_value": 0.7558
+      },
+      {
+        "frame_index": 6,
+        "elapsed_ms": 86,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_label_float_progress",
+        "old_value": 0.6443,
+        "new_value": 0.7558
+      },
+      {
+        "frame_index": 6,
+        "elapsed_ms": 86,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_label_progress",
+        "old_value": 0.6443,
+        "new_value": 0.7558
+      },
+      {
+        "frame_index": 7,
+        "elapsed_ms": 103,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_focus_progress",
+        "old_value": 0.7558,
+        "new_value": 0.8406
+      },
+      {
+        "frame_index": 7,
+        "elapsed_ms": 103,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_label_float_progress",
+        "old_value": 0.7558,
+        "new_value": 0.8406
+      },
+      {
+        "frame_index": 7,
+        "elapsed_ms": 103,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_label_progress",
+        "old_value": 0.7558,
+        "new_value": 0.8406
+      },
+      {
+        "frame_index": 8,
+        "elapsed_ms": 119,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_focus_progress",
+        "old_value": 0.8406,
+        "new_value": 0.9034
+      },
+      {
+        "frame_index": 8,
+        "elapsed_ms": 119,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_label_float_progress",
+        "old_value": 0.8406,
+        "new_value": 0.9034
+      },
+      {
+        "frame_index": 8,
+        "elapsed_ms": 119,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_label_progress",
+        "old_value": 0.8406,
+        "new_value": 0.9034
+      },
+      {
+        "frame_index": 9,
+        "elapsed_ms": 136,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_focus_progress",
+        "old_value": 0.9034,
+        "new_value": 0.9471
+      },
+      {
+        "frame_index": 9,
+        "elapsed_ms": 136,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_label_float_progress",
+        "old_value": 0.9034,
+        "new_value": 0.9471
+      },
+      {
+        "frame_index": 9,
+        "elapsed_ms": 136,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_label_progress",
+        "old_value": 0.9034,
+        "new_value": 0.9471
+      },
+      {
+        "frame_index": 10,
+        "elapsed_ms": 153,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_focus_progress",
+        "old_value": 0.9471,
+        "new_value": 0.975
+      },
+      {
+        "frame_index": 10,
+        "elapsed_ms": 153,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_label_float_progress",
+        "old_value": 0.9471,
+        "new_value": 0.975
+      },
+      {
+        "frame_index": 10,
+        "elapsed_ms": 153,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_label_progress",
+        "old_value": 0.9471,
+        "new_value": 0.975
+      },
+      {
+        "frame_index": 11,
+        "elapsed_ms": 170,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_focus_progress",
+        "old_value": 0.975,
+        "new_value": 0.9909
+      },
+      {
+        "frame_index": 11,
+        "elapsed_ms": 170,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_label_float_progress",
+        "old_value": 0.975,
+        "new_value": 0.9909
+      },
+      {
+        "frame_index": 11,
+        "elapsed_ms": 170,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_label_progress",
+        "old_value": 0.975,
+        "new_value": 0.9909
+      },
+      {
+        "frame_index": 12,
+        "elapsed_ms": 186,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_focus_progress",
+        "old_value": 0.9909,
+        "new_value": 0.998
+      },
+      {
+        "frame_index": 12,
+        "elapsed_ms": 186,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_label_float_progress",
+        "old_value": 0.9909,
+        "new_value": 0.998
+      },
+      {
+        "frame_index": 12,
+        "elapsed_ms": 186,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_label_progress",
+        "old_value": 0.9909,
+        "new_value": 0.998
+      },
+      {
+        "frame_index": 13,
+        "elapsed_ms": 203,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_focus_progress",
+        "old_value": 0.998,
+        "new_value": 0.9999
+      },
+      {
+        "frame_index": 13,
+        "elapsed_ms": 203,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_label_float_progress",
+        "old_value": 0.998,
+        "new_value": 0.9999
+      },
+      {
+        "frame_index": 13,
+        "elapsed_ms": 203,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_label_progress",
+        "old_value": 0.998,
+        "new_value": 0.9999
+      },
+      {
+        "frame_index": 14,
+        "elapsed_ms": 220,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_focus_progress",
+        "old_value": 0.9999,
+        "new_value": 1.0
+      },
+      {
+        "frame_index": 14,
+        "elapsed_ms": 220,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_label_float_progress",
+        "old_value": 0.9999,
+        "new_value": 1.0
+      },
+      {
+        "frame_index": 14,
+        "elapsed_ms": 220,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "_label_progress",
+        "old_value": 0.9999,
+        "new_value": 1.0
+      },
+      {
+        "frame_index": 21,
+        "elapsed_ms": 336,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "text",
+        "old_value": "",
+        "new_value": "A"
+      },
+      {
+        "frame_index": 23,
+        "elapsed_ms": 370,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "text",
+        "old_value": "A",
+        "new_value": "Ad"
+      },
+      {
+        "frame_index": 25,
+        "elapsed_ms": 403,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@83/GSSStageViewport/TextFieldVariants/FilledEmptyField",
+        "node_name": "FilledEmptyField",
+        "property": "text",
+        "old_value": "Ad",
+        "new_value": "Ada"
+      }
+    ]
+  }
+}

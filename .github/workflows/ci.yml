@@ -1,0 +1,42 @@
+name: CI (Automated Test & Spec Audit)
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+env:
+  GODOT_VERSION: "4.3"
+
+jobs:
+  test-headless:
+    name: Headless Automated Tests (Linux / Godot 4.x)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Setup Godot Engine
+        uses: chickensoft-games/setup-godot@v1
+        with:
+          version: ${{ env.GODOT_VERSION }}
+          use-dotnet: false
+
+      - name: Run Unit Tests (GDTest 3.0)
+        run: |
+          godot --headless --path . --log-file godot.log --script res://tests/gdtest_runner.gd
+
+      - name: Run Full Component Integration Tests
+        run: |
+          godot --headless --path . --log-file godot.log --script res://tests/test_runner.gd
+
+      - name: Run Visual & Spec Compliance Audits
+        run: |
+          godot --headless --path . --log-file godot.log --script res://tests/audit/audit_runner.gd
+
+      - name: Verify Python CLI Sync Tooling Unit Tests
+        run: |
+          python3 -m unittest discover -s tests/tools -p "test_*.py" -v

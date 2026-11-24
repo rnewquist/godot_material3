@@ -1,0 +1,5869 @@
+{
+  "metadata": {
+    "format": "godot_scene_snapshot",
+    "short_name": "GSS",
+    "version": "1.0",
+    "snapshot_name": "actions.button.icon.expressive__sizes_widths_shapes",
+    "timestamp_iso": "2026-11-24T01:45:13",
+    "timestamp_ticks_ms": 4011,
+    "engine_version": "4.7.2-stable (official)",
+    "display_server": "macOS",
+    "viewport_size": {
+      "width": 1280,
+      "height": 720
+    },
+    "total_nodes": 9,
+    "visible_nodes": 9,
+    "class_counts": {
+      "ColorRect": 1,
+      "Control": 8
+    },
+    "camera_3d": {},
+    "camera_2d": {},
+    "performance": {
+      "fps": 56.0,
+      "process_frames": 171,
+      "physics_frames": 192,
+      "memory_static_bytes": 54961058,
+      "object_count": 1617,
+      "node_count": 21
+    },
+    "is_synthetic_preview": false,
+    "files": {
+      "png": "res://artifacts/gss/actions/actions.button.icon.expressive__sizes_widths_shapes.png",
+      "json": "res://artifacts/gss/actions/actions.button.icon.expressive__sizes_widths_shapes.gss.json",
+      "html": "res://artifacts/gss/actions/actions.button.icon.expressive__sizes_widths_shapes.gss.html",
+      "global_png": "/Users/rnewquist/Documents/Godot/material3/artifacts/gss/actions/actions.button.icon.expressive__sizes_widths_shapes.png",
+      "global_json": "/Users/rnewquist/Documents/Godot/material3/artifacts/gss/actions/actions.button.icon.expressive__sizes_widths_shapes.gss.json",
+      "global_html": "/Users/rnewquist/Documents/Godot/material3/artifacts/gss/actions/actions.button.icon.expressive__sizes_widths_shapes.gss.html"
+    }
+  },
+  "hierarchy": {
+    "id": "node_0",
+    "parent_id": "",
+    "name": "ButtonIconExpressive",
+    "class": "ColorRect",
+    "category": "control",
+    "path": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive",
+    "depth": 0,
+    "index_in_parent": 0,
+    "children_count": 8,
+    "groups": [],
+    "script": "",
+    "process_mode": 0,
+    "visible": true,
+    "screen_rect": {
+      "x": 0.0,
+      "y": 0.0,
+      "width": 1280.0,
+      "height": 720.0,
+      "has_bounds": true,
+      "on_screen": true
+    },
+    "script_variables": {},
+    "transforms": {
+      "position": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "global_position": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "size": {
+        "x": 1280.0,
+        "y": 720.0
+      },
+      "custom_minimum_size": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "rotation_deg": 0.0,
+      "scale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "pivot_offset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "anchors": {
+        "left": 0.0,
+        "top": 0.0,
+        "right": 0.0,
+        "bottom": 0.0
+      },
+      "offsets": {
+        "left": 0.0,
+        "top": 0.0,
+        "right": 1280.0,
+        "bottom": 720.0
+      },
+      "size_flags_horizontal": 1,
+      "size_flags_vertical": 1
+    },
+    "visibility": {
+      "visible": true,
+      "visible_in_tree": true,
+      "modulate": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0,
+        "hex": "#ffffffff"
+      },
+      "self_modulate": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0,
+        "hex": "#ffffffff"
+      },
+      "top_level": false,
+      "show_behind_parent": false,
+      "clip_children": 0,
+      "light_mask": 1,
+      "visibility_layer": 1,
+      "z_index": 0,
+      "z_as_relative": true,
+      "y_sort_enabled": false
+    },
+    "physics": {},
+    "ui_and_content": {
+      "focus_mode": 0,
+      "mouse_filter": 2,
+      "tooltip_text": "",
+      "color": {
+        "r": 0.9788,
+        "g": 0.9745,
+        "b": 1.0,
+        "a": 1.0,
+        "hex": "#faf9ffff"
+      }
+    },
+    "signals": [
+      {
+        "signal": "child_order_changed",
+        "target": "/root/@Node@2/GSSStageViewport",
+        "method": "Viewport::canvas_parent_mark_dirty"
+      },
+      {
+        "signal": "item_rect_changed",
+        "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_XS",
+        "method": "Control::_size_changed"
+      },
+      {
+        "signal": "item_rect_changed",
+        "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_S",
+        "method": "Control::_size_changed"
+      },
+      {
+        "signal": "item_rect_changed",
+        "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_M",
+        "method": "Control::_size_changed"
+      },
+      {
+        "signal": "item_rect_changed",
+        "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_L",
+        "method": "Control::_size_changed"
+      },
+      {
+        "signal": "item_rect_changed",
+        "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_XL",
+        "method": "Control::_size_changed"
+      },
+      {
+        "signal": "item_rect_changed",
+        "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumNarrow",
+        "method": "Control::_size_changed"
+      },
+      {
+        "signal": "item_rect_changed",
+        "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumDefault",
+        "method": "Control::_size_changed"
+      },
+      {
+        "signal": "item_rect_changed",
+        "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumWide",
+        "method": "Control::_size_changed"
+      }
+    ],
+    "all_properties": {
+      "accessibility_controls_nodes": [],
+      "accessibility_described_by_nodes": [],
+      "accessibility_description": "",
+      "accessibility_flow_to_nodes": [],
+      "accessibility_labeled_by_nodes": [],
+      "accessibility_live": 0,
+      "accessibility_name": "",
+      "anchor_bottom": 0.0,
+      "anchor_left": 0.0,
+      "anchor_right": 0.0,
+      "anchor_top": 0.0,
+      "anchors_preset": 0,
+      "auto_translate_mode": 0,
+      "clip_children": 0,
+      "clip_contents": false,
+      "color": {
+        "r": 0.9788,
+        "g": 0.9745,
+        "b": 1.0,
+        "a": 1.0,
+        "hex": "#faf9ffff"
+      },
+      "custom_maximum_size": {
+        "x": -1.0,
+        "y": -1.0
+      },
+      "custom_minimum_size": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "editor_description": "",
+      "focus_behavior_recursive": 0,
+      "focus_mode": 0,
+      "focus_neighbor_bottom": "",
+      "focus_neighbor_left": "",
+      "focus_neighbor_right": "",
+      "focus_neighbor_top": "",
+      "focus_next": "",
+      "focus_previous": "",
+      "grow_horizontal": 1,
+      "grow_vertical": 1,
+      "layout_direction": 0,
+      "layout_mode": 3,
+      "light_mask": 1,
+      "localize_numeral_system": true,
+      "material": null,
+      "modulate": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0,
+        "hex": "#ffffffff"
+      },
+      "mouse_behavior_recursive": 0,
+      "mouse_default_cursor_shape": 0,
+      "mouse_filter": 2,
+      "mouse_force_pass_scroll_events": true,
+      "offset_bottom": 720.0,
+      "offset_left": 0.0,
+      "offset_right": 1280.0,
+      "offset_top": 0.0,
+      "offset_transform_enabled": false,
+      "offset_transform_pivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "offset_transform_pivot_ratio": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "offset_transform_position": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "offset_transform_position_ratio": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "offset_transform_rotation": 0.0,
+      "offset_transform_scale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "offset_transform_visual_only": true,
+      "oversampling_with_scale": 0,
+      "physics_interpolation_mode": 2,
+      "pivot_offset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "pivot_offset_ratio": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "process_mode": 0,
+      "process_physics_priority": 0,
+      "process_priority": 0,
+      "process_thread_group": 0,
+      "propagate_maximum_size": false,
+      "rotation": 0.0,
+      "scale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "self_modulate": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0,
+        "hex": "#ffffffff"
+      },
+      "shortcut_context": null,
+      "show_behind_parent": false,
+      "size": {
+        "x": 1280.0,
+        "y": 720.0
+      },
+      "size_flags_horizontal": 1,
+      "size_flags_stretch_ratio": 1.0,
+      "size_flags_vertical": 1,
+      "texture_filter": 0,
+      "texture_repeat": 0,
+      "theme": null,
+      "theme_type_variation": "",
+      "tooltip_auto_translate_mode": 0,
+      "tooltip_text": "",
+      "top_level": false,
+      "translation_context": "",
+      "unique_name_in_owner": false,
+      "use_parent_material": false,
+      "visibility_layer": 1,
+      "visible": true,
+      "y_sort_enabled": false,
+      "z_as_relative": true,
+      "z_index": 0
+    },
+    "children": [
+      {
+        "id": "node_1",
+        "parent_id": "node_0",
+        "name": "IconSize_XS",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_XS",
+        "depth": 1,
+        "index_in_parent": 0,
+        "children_count": 0,
+        "groups": [],
+        "script": "res://addons/material3/components/buttons/m3_icon_button.gd",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 40.0,
+          "y": 40.0,
+          "width": 32.0,
+          "height": 32.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {
+          "_active_corner_radius": 16.0,
+          "_hover_progress": 0.0,
+          "_is_pointer_down": false,
+          "_motion_tween": null,
+          "_pointer_inside": false,
+          "_press_progress": 0.0,
+          "_ripple": "<Node:M3Ripple (Control)>",
+          "_ripple_wave_alpha": 0.0,
+          "_ripple_wave_count": 0,
+          "_ripple_wave_radius": 0.0,
+          "_selection_progress": 0.0,
+          "_selection_tween": null,
+          "_state_layer_alpha": 0.0,
+          "_theme_connected": true,
+          "button_pressed": false,
+          "button_shape": 0,
+          "button_size": 0,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "density_override": 99,
+          "disabled": false,
+          "icon_button_type": 1,
+          "icon_name": "favorite",
+          "icon_size": 20.0,
+          "icon_texture": null,
+          "ripple_enabled": true,
+          "selected_icon_name": "",
+          "selected_icon_texture": null,
+          "shape_token": 9999,
+          "toggle_mode": false,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "variant": 1,
+          "width_mode": 1
+        },
+        "transforms": {
+          "position": {
+            "x": 40.0,
+            "y": 40.0
+          },
+          "global_position": {
+            "x": 40.0,
+            "y": 40.0
+          },
+          "size": {
+            "x": 32.0,
+            "y": 32.0
+          },
+          "custom_minimum_size": {
+            "x": 32.0,
+            "y": 32.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 40.0,
+            "top": 40.0,
+            "right": 72.0,
+            "bottom": 72.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 2,
+          "mouse_filter": 0,
+          "tooltip_text": ""
+        },
+        "signals": [
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@2/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_XS/M3Ripple",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "resized",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_XS",
+            "method": "_on_resized"
+          },
+          {
+            "signal": "mouse_entered",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_XS",
+            "method": "_on_mouse_entered"
+          },
+          {
+            "signal": "mouse_exited",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_XS",
+            "method": "_on_mouse_exited"
+          },
+          {
+            "signal": "focus_entered",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_XS",
+            "method": "_on_focus_entered"
+          },
+          {
+            "signal": "focus_exited",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_XS",
+            "method": "_on_focus_exited"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "button_pressed": false,
+          "button_shape": 0,
+          "button_size": 0,
+          "clip_children": 0,
+          "clip_contents": false,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 32.0,
+            "y": 32.0
+          },
+          "density_override": 99,
+          "disabled": false,
+          "editor_description": "",
+          "focus_behavior_recursive": 0,
+          "focus_mode": 2,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "icon_button_type": 1,
+          "icon_name": "favorite",
+          "icon_size": 20.0,
+          "icon_texture": null,
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 2,
+          "mouse_filter": 0,
+          "mouse_force_pass_scroll_events": true,
+          "offset_bottom": 72.0,
+          "offset_left": 40.0,
+          "offset_right": 72.0,
+          "offset_top": 40.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "position": {
+            "x": 40.0,
+            "y": 40.0
+          },
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "ripple_enabled": true,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "selected_icon_name": "",
+          "selected_icon_texture": null,
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shape_token": 9999,
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "size": {
+            "x": 32.0,
+            "y": 32.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "toggle_mode": false,
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "variant": 1,
+          "visibility_layer": 1,
+          "visible": true,
+          "width_mode": 1,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        },
+        "children": []
+      },
+      {
+        "id": "node_2",
+        "parent_id": "node_0",
+        "name": "IconSize_S",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_S",
+        "depth": 1,
+        "index_in_parent": 1,
+        "children_count": 0,
+        "groups": [],
+        "script": "res://addons/material3/components/buttons/m3_icon_button.gd",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 96.0,
+          "y": 40.0,
+          "width": 40.0,
+          "height": 40.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {
+          "_active_corner_radius": 12.0,
+          "_hover_progress": 0.0,
+          "_is_pointer_down": false,
+          "_motion_tween": null,
+          "_pointer_inside": false,
+          "_press_progress": 0.0,
+          "_ripple": "<Node:M3Ripple (Control)>",
+          "_ripple_wave_alpha": 0.0,
+          "_ripple_wave_count": 0,
+          "_ripple_wave_radius": 0.0,
+          "_selection_progress": 0.0,
+          "_selection_tween": null,
+          "_state_layer_alpha": 0.0,
+          "_theme_connected": true,
+          "button_pressed": false,
+          "button_shape": 1,
+          "button_size": 1,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "density_override": 99,
+          "disabled": false,
+          "icon_button_type": 2,
+          "icon_name": "favorite",
+          "icon_size": 24.0,
+          "icon_texture": null,
+          "ripple_enabled": true,
+          "selected_icon_name": "",
+          "selected_icon_texture": null,
+          "shape_token": 9999,
+          "toggle_mode": false,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "variant": 2,
+          "width_mode": 1
+        },
+        "transforms": {
+          "position": {
+            "x": 96.0,
+            "y": 40.0
+          },
+          "global_position": {
+            "x": 96.0,
+            "y": 40.0
+          },
+          "size": {
+            "x": 40.0,
+            "y": 40.0
+          },
+          "custom_minimum_size": {
+            "x": 40.0,
+            "y": 40.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 96.0,
+            "top": 40.0,
+            "right": 136.0,
+            "bottom": 80.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 2,
+          "mouse_filter": 0,
+          "tooltip_text": ""
+        },
+        "signals": [
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@2/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_S/M3Ripple",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "resized",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_S",
+            "method": "_on_resized"
+          },
+          {
+            "signal": "mouse_entered",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_S",
+            "method": "_on_mouse_entered"
+          },
+          {
+            "signal": "mouse_exited",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_S",
+            "method": "_on_mouse_exited"
+          },
+          {
+            "signal": "focus_entered",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_S",
+            "method": "_on_focus_entered"
+          },
+          {
+            "signal": "focus_exited",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_S",
+            "method": "_on_focus_exited"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "button_pressed": false,
+          "button_shape": 1,
+          "button_size": 1,
+          "clip_children": 0,
+          "clip_contents": false,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 40.0,
+            "y": 40.0
+          },
+          "density_override": 99,
+          "disabled": false,
+          "editor_description": "",
+          "focus_behavior_recursive": 0,
+          "focus_mode": 2,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "icon_button_type": 2,
+          "icon_name": "favorite",
+          "icon_size": 24.0,
+          "icon_texture": null,
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 2,
+          "mouse_filter": 0,
+          "mouse_force_pass_scroll_events": true,
+          "offset_bottom": 80.0,
+          "offset_left": 96.0,
+          "offset_right": 136.0,
+          "offset_top": 40.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "position": {
+            "x": 96.0,
+            "y": 40.0
+          },
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "ripple_enabled": true,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "selected_icon_name": "",
+          "selected_icon_texture": null,
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shape_token": 9999,
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "size": {
+            "x": 40.0,
+            "y": 40.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "toggle_mode": false,
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "variant": 2,
+          "visibility_layer": 1,
+          "visible": true,
+          "width_mode": 1,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        },
+        "children": []
+      },
+      {
+        "id": "node_3",
+        "parent_id": "node_0",
+        "name": "IconSize_M",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_M",
+        "depth": 1,
+        "index_in_parent": 2,
+        "children_count": 0,
+        "groups": [],
+        "script": "res://addons/material3/components/buttons/m3_icon_button.gd",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 160.0,
+          "y": 40.0,
+          "width": 56.0,
+          "height": 56.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {
+          "_active_corner_radius": 28.0,
+          "_hover_progress": 0.0,
+          "_is_pointer_down": false,
+          "_motion_tween": null,
+          "_pointer_inside": false,
+          "_press_progress": 0.0,
+          "_ripple": "<Node:M3Ripple (Control)>",
+          "_ripple_wave_alpha": 0.0,
+          "_ripple_wave_count": 0,
+          "_ripple_wave_radius": 0.0,
+          "_selection_progress": 0.0,
+          "_selection_tween": null,
+          "_state_layer_alpha": 0.0,
+          "_theme_connected": true,
+          "button_pressed": false,
+          "button_shape": 0,
+          "button_size": 2,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "density_override": 99,
+          "disabled": false,
+          "icon_button_type": 1,
+          "icon_name": "favorite",
+          "icon_size": 24.0,
+          "icon_texture": null,
+          "ripple_enabled": true,
+          "selected_icon_name": "",
+          "selected_icon_texture": null,
+          "shape_token": 9999,
+          "toggle_mode": false,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "variant": 1,
+          "width_mode": 1
+        },
+        "transforms": {
+          "position": {
+            "x": 160.0,
+            "y": 40.0
+          },
+          "global_position": {
+            "x": 160.0,
+            "y": 40.0
+          },
+          "size": {
+            "x": 56.0,
+            "y": 56.0
+          },
+          "custom_minimum_size": {
+            "x": 56.0,
+            "y": 56.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 160.0,
+            "top": 40.0,
+            "right": 216.0,
+            "bottom": 96.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 2,
+          "mouse_filter": 0,
+          "tooltip_text": ""
+        },
+        "signals": [
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@2/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_M/M3Ripple",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "resized",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_M",
+            "method": "_on_resized"
+          },
+          {
+            "signal": "mouse_entered",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_M",
+            "method": "_on_mouse_entered"
+          },
+          {
+            "signal": "mouse_exited",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_M",
+            "method": "_on_mouse_exited"
+          },
+          {
+            "signal": "focus_entered",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_M",
+            "method": "_on_focus_entered"
+          },
+          {
+            "signal": "focus_exited",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_M",
+            "method": "_on_focus_exited"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "button_pressed": false,
+          "button_shape": 0,
+          "button_size": 2,
+          "clip_children": 0,
+          "clip_contents": false,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 56.0,
+            "y": 56.0
+          },
+          "density_override": 99,
+          "disabled": false,
+          "editor_description": "",
+          "focus_behavior_recursive": 0,
+          "focus_mode": 2,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "icon_button_type": 1,
+          "icon_name": "favorite",
+          "icon_size": 24.0,
+          "icon_texture": null,
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 2,
+          "mouse_filter": 0,
+          "mouse_force_pass_scroll_events": true,
+          "offset_bottom": 96.0,
+          "offset_left": 160.0,
+          "offset_right": 216.0,
+          "offset_top": 40.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "position": {
+            "x": 160.0,
+            "y": 40.0
+          },
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "ripple_enabled": true,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "selected_icon_name": "",
+          "selected_icon_texture": null,
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shape_token": 9999,
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "size": {
+            "x": 56.0,
+            "y": 56.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "toggle_mode": false,
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "variant": 1,
+          "visibility_layer": 1,
+          "visible": true,
+          "width_mode": 1,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        },
+        "children": []
+      },
+      {
+        "id": "node_4",
+        "parent_id": "node_0",
+        "name": "IconSize_L",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_L",
+        "depth": 1,
+        "index_in_parent": 3,
+        "children_count": 0,
+        "groups": [],
+        "script": "res://addons/material3/components/buttons/m3_icon_button.gd",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 240.0,
+          "y": 40.0,
+          "width": 96.0,
+          "height": 96.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {
+          "_active_corner_radius": 28.0,
+          "_hover_progress": 0.0,
+          "_is_pointer_down": false,
+          "_motion_tween": null,
+          "_pointer_inside": false,
+          "_press_progress": 0.0,
+          "_ripple": "<Node:M3Ripple (Control)>",
+          "_ripple_wave_alpha": 0.0,
+          "_ripple_wave_count": 0,
+          "_ripple_wave_radius": 0.0,
+          "_selection_progress": 0.0,
+          "_selection_tween": null,
+          "_state_layer_alpha": 0.0,
+          "_theme_connected": true,
+          "button_pressed": false,
+          "button_shape": 1,
+          "button_size": 3,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "density_override": 99,
+          "disabled": false,
+          "icon_button_type": 2,
+          "icon_name": "favorite",
+          "icon_size": 32.0,
+          "icon_texture": null,
+          "ripple_enabled": true,
+          "selected_icon_name": "",
+          "selected_icon_texture": null,
+          "shape_token": 9999,
+          "toggle_mode": false,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "variant": 2,
+          "width_mode": 1
+        },
+        "transforms": {
+          "position": {
+            "x": 240.0,
+            "y": 40.0
+          },
+          "global_position": {
+            "x": 240.0,
+            "y": 40.0
+          },
+          "size": {
+            "x": 96.0,
+            "y": 96.0
+          },
+          "custom_minimum_size": {
+            "x": 96.0,
+            "y": 96.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 240.0,
+            "top": 40.0,
+            "right": 336.0,
+            "bottom": 136.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 2,
+          "mouse_filter": 0,
+          "tooltip_text": ""
+        },
+        "signals": [
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@2/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_L/M3Ripple",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "resized",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_L",
+            "method": "_on_resized"
+          },
+          {
+            "signal": "mouse_entered",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_L",
+            "method": "_on_mouse_entered"
+          },
+          {
+            "signal": "mouse_exited",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_L",
+            "method": "_on_mouse_exited"
+          },
+          {
+            "signal": "focus_entered",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_L",
+            "method": "_on_focus_entered"
+          },
+          {
+            "signal": "focus_exited",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_L",
+            "method": "_on_focus_exited"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "button_pressed": false,
+          "button_shape": 1,
+          "button_size": 3,
+          "clip_children": 0,
+          "clip_contents": false,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 96.0,
+            "y": 96.0
+          },
+          "density_override": 99,
+          "disabled": false,
+          "editor_description": "",
+          "focus_behavior_recursive": 0,
+          "focus_mode": 2,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "icon_button_type": 2,
+          "icon_name": "favorite",
+          "icon_size": 32.0,
+          "icon_texture": null,
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 2,
+          "mouse_filter": 0,
+          "mouse_force_pass_scroll_events": true,
+          "offset_bottom": 136.0,
+          "offset_left": 240.0,
+          "offset_right": 336.0,
+          "offset_top": 40.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "position": {
+            "x": 240.0,
+            "y": 40.0
+          },
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "ripple_enabled": true,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "selected_icon_name": "",
+          "selected_icon_texture": null,
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shape_token": 9999,
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "size": {
+            "x": 96.0,
+            "y": 96.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "toggle_mode": false,
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "variant": 2,
+          "visibility_layer": 1,
+          "visible": true,
+          "width_mode": 1,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        },
+        "children": []
+      },
+      {
+        "id": "node_5",
+        "parent_id": "node_0",
+        "name": "IconSize_XL",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_XL",
+        "depth": 1,
+        "index_in_parent": 4,
+        "children_count": 0,
+        "groups": [],
+        "script": "res://addons/material3/components/buttons/m3_icon_button.gd",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 360.0,
+          "y": 40.0,
+          "width": 136.0,
+          "height": 136.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {
+          "_active_corner_radius": 68.0,
+          "_hover_progress": 0.0,
+          "_is_pointer_down": false,
+          "_motion_tween": null,
+          "_pointer_inside": false,
+          "_press_progress": 0.0,
+          "_ripple": "<Node:M3Ripple (Control)>",
+          "_ripple_wave_alpha": 0.0,
+          "_ripple_wave_count": 0,
+          "_ripple_wave_radius": 0.0,
+          "_selection_progress": 0.0,
+          "_selection_tween": null,
+          "_state_layer_alpha": 0.0,
+          "_theme_connected": true,
+          "button_pressed": false,
+          "button_shape": 0,
+          "button_size": 4,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "density_override": 99,
+          "disabled": false,
+          "icon_button_type": 1,
+          "icon_name": "favorite",
+          "icon_size": 40.0,
+          "icon_texture": null,
+          "ripple_enabled": true,
+          "selected_icon_name": "",
+          "selected_icon_texture": null,
+          "shape_token": 9999,
+          "toggle_mode": false,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "variant": 1,
+          "width_mode": 1
+        },
+        "transforms": {
+          "position": {
+            "x": 360.0,
+            "y": 40.0
+          },
+          "global_position": {
+            "x": 360.0,
+            "y": 40.0
+          },
+          "size": {
+            "x": 136.0,
+            "y": 136.0
+          },
+          "custom_minimum_size": {
+            "x": 136.0,
+            "y": 136.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 360.0,
+            "top": 40.0,
+            "right": 496.0,
+            "bottom": 176.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 2,
+          "mouse_filter": 0,
+          "tooltip_text": ""
+        },
+        "signals": [
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@2/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_XL/M3Ripple",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "resized",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_XL",
+            "method": "_on_resized"
+          },
+          {
+            "signal": "mouse_entered",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_XL",
+            "method": "_on_mouse_entered"
+          },
+          {
+            "signal": "mouse_exited",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_XL",
+            "method": "_on_mouse_exited"
+          },
+          {
+            "signal": "focus_entered",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_XL",
+            "method": "_on_focus_entered"
+          },
+          {
+            "signal": "focus_exited",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_XL",
+            "method": "_on_focus_exited"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "button_pressed": false,
+          "button_shape": 0,
+          "button_size": 4,
+          "clip_children": 0,
+          "clip_contents": false,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 136.0,
+            "y": 136.0
+          },
+          "density_override": 99,
+          "disabled": false,
+          "editor_description": "",
+          "focus_behavior_recursive": 0,
+          "focus_mode": 2,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "icon_button_type": 1,
+          "icon_name": "favorite",
+          "icon_size": 40.0,
+          "icon_texture": null,
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 2,
+          "mouse_filter": 0,
+          "mouse_force_pass_scroll_events": true,
+          "offset_bottom": 176.0,
+          "offset_left": 360.0,
+          "offset_right": 496.0,
+          "offset_top": 40.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "position": {
+            "x": 360.0,
+            "y": 40.0
+          },
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "ripple_enabled": true,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "selected_icon_name": "",
+          "selected_icon_texture": null,
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shape_token": 9999,
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "size": {
+            "x": 136.0,
+            "y": 136.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "toggle_mode": false,
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "variant": 1,
+          "visibility_layer": 1,
+          "visible": true,
+          "width_mode": 1,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        },
+        "children": []
+      },
+      {
+        "id": "node_6",
+        "parent_id": "node_0",
+        "name": "IconMediumNarrow",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumNarrow",
+        "depth": 1,
+        "index_in_parent": 5,
+        "children_count": 0,
+        "groups": [],
+        "script": "res://addons/material3/components/buttons/m3_icon_button.gd",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 40.0,
+          "y": 210.0,
+          "width": 48.0,
+          "height": 56.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {
+          "_active_corner_radius": 24.0,
+          "_hover_progress": 0.0,
+          "_is_pointer_down": false,
+          "_motion_tween": null,
+          "_pointer_inside": false,
+          "_press_progress": 0.0,
+          "_ripple": "<Node:M3Ripple (Control)>",
+          "_ripple_wave_alpha": 0.0,
+          "_ripple_wave_count": 0,
+          "_ripple_wave_radius": 0.0,
+          "_selection_progress": 0.0,
+          "_selection_tween": null,
+          "_state_layer_alpha": 0.0,
+          "_theme_connected": true,
+          "button_pressed": false,
+          "button_shape": 0,
+          "button_size": 2,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "density_override": 99,
+          "disabled": false,
+          "icon_button_type": 2,
+          "icon_name": "edit",
+          "icon_size": 24.0,
+          "icon_texture": null,
+          "ripple_enabled": true,
+          "selected_icon_name": "",
+          "selected_icon_texture": null,
+          "shape_token": 9999,
+          "toggle_mode": false,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "variant": 2,
+          "width_mode": 0
+        },
+        "transforms": {
+          "position": {
+            "x": 40.0,
+            "y": 210.0
+          },
+          "global_position": {
+            "x": 40.0,
+            "y": 210.0
+          },
+          "size": {
+            "x": 48.0,
+            "y": 56.0
+          },
+          "custom_minimum_size": {
+            "x": 48.0,
+            "y": 56.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 40.0,
+            "top": 210.0,
+            "right": 88.0,
+            "bottom": 266.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 2,
+          "mouse_filter": 0,
+          "tooltip_text": ""
+        },
+        "signals": [
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@2/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumNarrow/M3Ripple",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "resized",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumNarrow",
+            "method": "_on_resized"
+          },
+          {
+            "signal": "mouse_entered",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumNarrow",
+            "method": "_on_mouse_entered"
+          },
+          {
+            "signal": "mouse_exited",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumNarrow",
+            "method": "_on_mouse_exited"
+          },
+          {
+            "signal": "focus_entered",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumNarrow",
+            "method": "_on_focus_entered"
+          },
+          {
+            "signal": "focus_exited",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumNarrow",
+            "method": "_on_focus_exited"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "button_pressed": false,
+          "button_shape": 0,
+          "button_size": 2,
+          "clip_children": 0,
+          "clip_contents": false,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 48.0,
+            "y": 56.0
+          },
+          "density_override": 99,
+          "disabled": false,
+          "editor_description": "",
+          "focus_behavior_recursive": 0,
+          "focus_mode": 2,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "icon_button_type": 2,
+          "icon_name": "edit",
+          "icon_size": 24.0,
+          "icon_texture": null,
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 2,
+          "mouse_filter": 0,
+          "mouse_force_pass_scroll_events": true,
+          "offset_bottom": 266.0,
+          "offset_left": 40.0,
+          "offset_right": 88.0,
+          "offset_top": 210.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "position": {
+            "x": 40.0,
+            "y": 210.0
+          },
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "ripple_enabled": true,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "selected_icon_name": "",
+          "selected_icon_texture": null,
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shape_token": 9999,
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "size": {
+            "x": 48.0,
+            "y": 56.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "toggle_mode": false,
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "variant": 2,
+          "visibility_layer": 1,
+          "visible": true,
+          "width_mode": 0,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        },
+        "children": []
+      },
+      {
+        "id": "node_7",
+        "parent_id": "node_0",
+        "name": "IconMediumDefault",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumDefault",
+        "depth": 1,
+        "index_in_parent": 6,
+        "children_count": 0,
+        "groups": [],
+        "script": "res://addons/material3/components/buttons/m3_icon_button.gd",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 120.0,
+          "y": 210.0,
+          "width": 56.0,
+          "height": 56.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {
+          "_active_corner_radius": 28.0,
+          "_hover_progress": 0.0,
+          "_is_pointer_down": false,
+          "_motion_tween": null,
+          "_pointer_inside": false,
+          "_press_progress": 0.0,
+          "_ripple": "<Node:M3Ripple (Control)>",
+          "_ripple_wave_alpha": 0.0,
+          "_ripple_wave_count": 0,
+          "_ripple_wave_radius": 0.0,
+          "_selection_progress": 0.0,
+          "_selection_tween": null,
+          "_state_layer_alpha": 0.0,
+          "_theme_connected": true,
+          "button_pressed": false,
+          "button_shape": 0,
+          "button_size": 2,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "density_override": 99,
+          "disabled": false,
+          "icon_button_type": 1,
+          "icon_name": "favorite",
+          "icon_size": 24.0,
+          "icon_texture": null,
+          "ripple_enabled": true,
+          "selected_icon_name": "checkmark",
+          "selected_icon_texture": null,
+          "shape_token": 9999,
+          "toggle_mode": true,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "variant": 1,
+          "width_mode": 1
+        },
+        "transforms": {
+          "position": {
+            "x": 120.0,
+            "y": 210.0
+          },
+          "global_position": {
+            "x": 120.0,
+            "y": 210.0
+          },
+          "size": {
+            "x": 56.0,
+            "y": 56.0
+          },
+          "custom_minimum_size": {
+            "x": 56.0,
+            "y": 56.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 120.0,
+            "top": 210.0,
+            "right": 176.0,
+            "bottom": 266.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 2,
+          "mouse_filter": 0,
+          "tooltip_text": ""
+        },
+        "signals": [
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@2/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumDefault/M3Ripple",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "resized",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumDefault",
+            "method": "_on_resized"
+          },
+          {
+            "signal": "mouse_entered",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumDefault",
+            "method": "_on_mouse_entered"
+          },
+          {
+            "signal": "mouse_exited",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumDefault",
+            "method": "_on_mouse_exited"
+          },
+          {
+            "signal": "focus_entered",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumDefault",
+            "method": "_on_focus_entered"
+          },
+          {
+            "signal": "focus_exited",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumDefault",
+            "method": "_on_focus_exited"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "button_pressed": false,
+          "button_shape": 0,
+          "button_size": 2,
+          "clip_children": 0,
+          "clip_contents": false,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 56.0,
+            "y": 56.0
+          },
+          "density_override": 99,
+          "disabled": false,
+          "editor_description": "",
+          "focus_behavior_recursive": 0,
+          "focus_mode": 2,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "icon_button_type": 1,
+          "icon_name": "favorite",
+          "icon_size": 24.0,
+          "icon_texture": null,
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 2,
+          "mouse_filter": 0,
+          "mouse_force_pass_scroll_events": true,
+          "offset_bottom": 266.0,
+          "offset_left": 120.0,
+          "offset_right": 176.0,
+          "offset_top": 210.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "position": {
+            "x": 120.0,
+            "y": 210.0
+          },
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "ripple_enabled": true,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "selected_icon_name": "checkmark",
+          "selected_icon_texture": null,
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shape_token": 9999,
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "size": {
+            "x": 56.0,
+            "y": 56.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "toggle_mode": true,
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "variant": 1,
+          "visibility_layer": 1,
+          "visible": true,
+          "width_mode": 1,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        },
+        "children": []
+      },
+      {
+        "id": "node_8",
+        "parent_id": "node_0",
+        "name": "IconMediumWide",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumWide",
+        "depth": 1,
+        "index_in_parent": 7,
+        "children_count": 0,
+        "groups": [],
+        "script": "res://addons/material3/components/buttons/m3_icon_button.gd",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 210.0,
+          "y": 210.0,
+          "width": 72.0,
+          "height": 56.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {
+          "_active_corner_radius": 16.0,
+          "_hover_progress": 0.0,
+          "_is_pointer_down": false,
+          "_motion_tween": null,
+          "_pointer_inside": false,
+          "_press_progress": 0.0,
+          "_ripple": "<Node:M3Ripple (Control)>",
+          "_ripple_wave_alpha": 0.0,
+          "_ripple_wave_count": 0,
+          "_ripple_wave_radius": 0.0,
+          "_selection_progress": 0.0,
+          "_selection_tween": null,
+          "_state_layer_alpha": 0.0,
+          "_theme_connected": true,
+          "button_pressed": false,
+          "button_shape": 1,
+          "button_size": 2,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "density_override": 99,
+          "disabled": false,
+          "icon_button_type": 3,
+          "icon_name": "settings",
+          "icon_size": 24.0,
+          "icon_texture": null,
+          "ripple_enabled": true,
+          "selected_icon_name": "",
+          "selected_icon_texture": null,
+          "shape_token": 9999,
+          "toggle_mode": false,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "variant": 3,
+          "width_mode": 2
+        },
+        "transforms": {
+          "position": {
+            "x": 210.0,
+            "y": 210.0
+          },
+          "global_position": {
+            "x": 210.0,
+            "y": 210.0
+          },
+          "size": {
+            "x": 72.0,
+            "y": 56.0
+          },
+          "custom_minimum_size": {
+            "x": 72.0,
+            "y": 56.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 210.0,
+            "top": 210.0,
+            "right": 282.0,
+            "bottom": 266.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 2,
+          "mouse_filter": 0,
+          "tooltip_text": ""
+        },
+        "signals": [
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@2/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumWide/M3Ripple",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "resized",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumWide",
+            "method": "_on_resized"
+          },
+          {
+            "signal": "mouse_entered",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumWide",
+            "method": "_on_mouse_entered"
+          },
+          {
+            "signal": "mouse_exited",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumWide",
+            "method": "_on_mouse_exited"
+          },
+          {
+            "signal": "focus_entered",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumWide",
+            "method": "_on_focus_entered"
+          },
+          {
+            "signal": "focus_exited",
+            "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumWide",
+            "method": "_on_focus_exited"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "button_pressed": false,
+          "button_shape": 1,
+          "button_size": 2,
+          "clip_children": 0,
+          "clip_contents": false,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 72.0,
+            "y": 56.0
+          },
+          "density_override": 99,
+          "disabled": false,
+          "editor_description": "",
+          "focus_behavior_recursive": 0,
+          "focus_mode": 2,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "icon_button_type": 3,
+          "icon_name": "settings",
+          "icon_size": 24.0,
+          "icon_texture": null,
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 2,
+          "mouse_filter": 0,
+          "mouse_force_pass_scroll_events": true,
+          "offset_bottom": 266.0,
+          "offset_left": 210.0,
+          "offset_right": 282.0,
+          "offset_top": 210.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "position": {
+            "x": 210.0,
+            "y": 210.0
+          },
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "ripple_enabled": true,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "selected_icon_name": "",
+          "selected_icon_texture": null,
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shape_token": 9999,
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "size": {
+            "x": 72.0,
+            "y": 56.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "toggle_mode": false,
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "variant": 3,
+          "visibility_layer": 1,
+          "visible": true,
+          "width_mode": 2,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        },
+        "children": []
+      }
+    ]
+  },
+  "flat_nodes": [
+    {
+      "id": "node_0",
+      "parent_id": "",
+      "name": "ButtonIconExpressive",
+      "class": "ColorRect",
+      "category": "control",
+      "path": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive",
+      "depth": 0,
+      "index_in_parent": 0,
+      "children_count": 8,
+      "groups": [],
+      "script": "",
+      "process_mode": 0,
+      "visible": true,
+      "screen_rect": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 1280.0,
+        "height": 720.0,
+        "has_bounds": true,
+        "on_screen": true
+      },
+      "script_variables": {},
+      "transforms": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "global_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "size": {
+          "x": 1280.0,
+          "y": 720.0
+        },
+        "custom_minimum_size": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "rotation_deg": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "anchors": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 0.0,
+          "bottom": 0.0
+        },
+        "offsets": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 1280.0,
+          "bottom": 720.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_vertical": 1
+      },
+      "visibility": {
+        "visible": true,
+        "visible_in_tree": true,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "top_level": false,
+        "show_behind_parent": false,
+        "clip_children": 0,
+        "light_mask": 1,
+        "visibility_layer": 1,
+        "z_index": 0,
+        "z_as_relative": true,
+        "y_sort_enabled": false
+      },
+      "physics": {},
+      "ui_and_content": {
+        "focus_mode": 0,
+        "mouse_filter": 2,
+        "tooltip_text": "",
+        "color": {
+          "r": 0.9788,
+          "g": 0.9745,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#faf9ffff"
+        }
+      },
+      "signals": [
+        {
+          "signal": "child_order_changed",
+          "target": "/root/@Node@2/GSSStageViewport",
+          "method": "Viewport::canvas_parent_mark_dirty"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_XS",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_S",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_M",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_L",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_XL",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumNarrow",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumDefault",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumWide",
+          "method": "Control::_size_changed"
+        }
+      ],
+      "all_properties": {
+        "accessibility_controls_nodes": [],
+        "accessibility_described_by_nodes": [],
+        "accessibility_description": "",
+        "accessibility_flow_to_nodes": [],
+        "accessibility_labeled_by_nodes": [],
+        "accessibility_live": 0,
+        "accessibility_name": "",
+        "anchor_bottom": 0.0,
+        "anchor_left": 0.0,
+        "anchor_right": 0.0,
+        "anchor_top": 0.0,
+        "anchors_preset": 0,
+        "auto_translate_mode": 0,
+        "clip_children": 0,
+        "clip_contents": false,
+        "color": {
+          "r": 0.9788,
+          "g": 0.9745,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#faf9ffff"
+        },
+        "custom_maximum_size": {
+          "x": -1.0,
+          "y": -1.0
+        },
+        "custom_minimum_size": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "editor_description": "",
+        "focus_behavior_recursive": 0,
+        "focus_mode": 0,
+        "focus_neighbor_bottom": "",
+        "focus_neighbor_left": "",
+        "focus_neighbor_right": "",
+        "focus_neighbor_top": "",
+        "focus_next": "",
+        "focus_previous": "",
+        "grow_horizontal": 1,
+        "grow_vertical": 1,
+        "layout_direction": 0,
+        "layout_mode": 3,
+        "light_mask": 1,
+        "localize_numeral_system": true,
+        "material": null,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "mouse_behavior_recursive": 0,
+        "mouse_default_cursor_shape": 0,
+        "mouse_filter": 2,
+        "mouse_force_pass_scroll_events": true,
+        "offset_bottom": 720.0,
+        "offset_left": 0.0,
+        "offset_right": 1280.0,
+        "offset_top": 0.0,
+        "offset_transform_enabled": false,
+        "offset_transform_pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_pivot_ratio": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "offset_transform_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_position_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_rotation": 0.0,
+        "offset_transform_scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "offset_transform_visual_only": true,
+        "oversampling_with_scale": 0,
+        "physics_interpolation_mode": 2,
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "pivot_offset_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "process_mode": 0,
+        "process_physics_priority": 0,
+        "process_priority": 0,
+        "process_thread_group": 0,
+        "propagate_maximum_size": false,
+        "rotation": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "shortcut_context": null,
+        "show_behind_parent": false,
+        "size": {
+          "x": 1280.0,
+          "y": 720.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_stretch_ratio": 1.0,
+        "size_flags_vertical": 1,
+        "texture_filter": 0,
+        "texture_repeat": 0,
+        "theme": null,
+        "theme_type_variation": "",
+        "tooltip_auto_translate_mode": 0,
+        "tooltip_text": "",
+        "top_level": false,
+        "translation_context": "",
+        "unique_name_in_owner": false,
+        "use_parent_material": false,
+        "visibility_layer": 1,
+        "visible": true,
+        "y_sort_enabled": false,
+        "z_as_relative": true,
+        "z_index": 0
+      }
+    },
+    {
+      "id": "node_1",
+      "parent_id": "node_0",
+      "name": "IconSize_XS",
+      "class": "Control",
+      "category": "control",
+      "path": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_XS",
+      "depth": 1,
+      "index_in_parent": 0,
+      "children_count": 0,
+      "groups": [],
+      "script": "res://addons/material3/components/buttons/m3_icon_button.gd",
+      "process_mode": 0,
+      "visible": true,
+      "screen_rect": {
+        "x": 40.0,
+        "y": 40.0,
+        "width": 32.0,
+        "height": 32.0,
+        "has_bounds": true,
+        "on_screen": true
+      },
+      "script_variables": {
+        "_active_corner_radius": 16.0,
+        "_hover_progress": 0.0,
+        "_is_pointer_down": false,
+        "_motion_tween": null,
+        "_pointer_inside": false,
+        "_press_progress": 0.0,
+        "_ripple": "<Node:M3Ripple (Control)>",
+        "_ripple_wave_alpha": 0.0,
+        "_ripple_wave_count": 0,
+        "_ripple_wave_radius": 0.0,
+        "_selection_progress": 0.0,
+        "_selection_tween": null,
+        "_state_layer_alpha": 0.0,
+        "_theme_connected": true,
+        "button_pressed": false,
+        "button_shape": 0,
+        "button_size": 0,
+        "current_state": 0,
+        "custom_corner_radius": -1.0,
+        "density_override": 99,
+        "disabled": false,
+        "icon_button_type": 1,
+        "icon_name": "favorite",
+        "icon_size": 20.0,
+        "icon_texture": null,
+        "ripple_enabled": true,
+        "selected_icon_name": "",
+        "selected_icon_texture": null,
+        "shape_token": 9999,
+        "toggle_mode": false,
+        "touch_target_min_size": {
+          "x": 48.0,
+          "y": 48.0
+        },
+        "variant": 1,
+        "width_mode": 1
+      },
+      "transforms": {
+        "position": {
+          "x": 40.0,
+          "y": 40.0
+        },
+        "global_position": {
+          "x": 40.0,
+          "y": 40.0
+        },
+        "size": {
+          "x": 32.0,
+          "y": 32.0
+        },
+        "custom_minimum_size": {
+          "x": 32.0,
+          "y": 32.0
+        },
+        "rotation_deg": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "anchors": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 0.0,
+          "bottom": 0.0
+        },
+        "offsets": {
+          "left": 40.0,
+          "top": 40.0,
+          "right": 72.0,
+          "bottom": 72.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_vertical": 1
+      },
+      "visibility": {
+        "visible": true,
+        "visible_in_tree": true,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "top_level": false,
+        "show_behind_parent": false,
+        "clip_children": 0,
+        "light_mask": 1,
+        "visibility_layer": 1,
+        "z_index": 0,
+        "z_as_relative": true,
+        "y_sort_enabled": false
+      },
+      "physics": {},
+      "ui_and_content": {
+        "focus_mode": 2,
+        "mouse_filter": 0,
+        "tooltip_text": ""
+      },
+      "signals": [
+        {
+          "signal": "child_order_changed",
+          "target": "/root/@Node@2/GSSStageViewport",
+          "method": "Viewport::canvas_parent_mark_dirty"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_XS/M3Ripple",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "resized",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_XS",
+          "method": "_on_resized"
+        },
+        {
+          "signal": "mouse_entered",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_XS",
+          "method": "_on_mouse_entered"
+        },
+        {
+          "signal": "mouse_exited",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_XS",
+          "method": "_on_mouse_exited"
+        },
+        {
+          "signal": "focus_entered",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_XS",
+          "method": "_on_focus_entered"
+        },
+        {
+          "signal": "focus_exited",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_XS",
+          "method": "_on_focus_exited"
+        }
+      ],
+      "all_properties": {
+        "accessibility_controls_nodes": [],
+        "accessibility_described_by_nodes": [],
+        "accessibility_description": "",
+        "accessibility_flow_to_nodes": [],
+        "accessibility_labeled_by_nodes": [],
+        "accessibility_live": 0,
+        "accessibility_name": "",
+        "anchor_bottom": 0.0,
+        "anchor_left": 0.0,
+        "anchor_right": 0.0,
+        "anchor_top": 0.0,
+        "anchors_preset": 0,
+        "auto_translate_mode": 0,
+        "button_pressed": false,
+        "button_shape": 0,
+        "button_size": 0,
+        "clip_children": 0,
+        "clip_contents": false,
+        "current_state": 0,
+        "custom_corner_radius": -1.0,
+        "custom_maximum_size": {
+          "x": -1.0,
+          "y": -1.0
+        },
+        "custom_minimum_size": {
+          "x": 32.0,
+          "y": 32.0
+        },
+        "density_override": 99,
+        "disabled": false,
+        "editor_description": "",
+        "focus_behavior_recursive": 0,
+        "focus_mode": 2,
+        "focus_neighbor_bottom": "",
+        "focus_neighbor_left": "",
+        "focus_neighbor_right": "",
+        "focus_neighbor_top": "",
+        "focus_next": "",
+        "focus_previous": "",
+        "grow_horizontal": 1,
+        "grow_vertical": 1,
+        "icon_button_type": 1,
+        "icon_name": "favorite",
+        "icon_size": 20.0,
+        "icon_texture": null,
+        "layout_direction": 0,
+        "layout_mode": 0,
+        "light_mask": 1,
+        "localize_numeral_system": true,
+        "material": null,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "mouse_behavior_recursive": 0,
+        "mouse_default_cursor_shape": 2,
+        "mouse_filter": 0,
+        "mouse_force_pass_scroll_events": true,
+        "offset_bottom": 72.0,
+        "offset_left": 40.0,
+        "offset_right": 72.0,
+        "offset_top": 40.0,
+        "offset_transform_enabled": false,
+        "offset_transform_pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_pivot_ratio": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "offset_transform_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_position_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_rotation": 0.0,
+        "offset_transform_scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "offset_transform_visual_only": true,
+        "oversampling_with_scale": 0,
+        "physics_interpolation_mode": 2,
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "pivot_offset_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "position": {
+          "x": 40.0,
+          "y": 40.0
+        },
+        "process_mode": 0,
+        "process_physics_priority": 0,
+        "process_priority": 0,
+        "process_thread_group": 0,
+        "propagate_maximum_size": false,
+        "ripple_enabled": true,
+        "rotation": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "selected_icon_name": "",
+        "selected_icon_texture": null,
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "shape_token": 9999,
+        "shortcut_context": null,
+        "show_behind_parent": false,
+        "size": {
+          "x": 32.0,
+          "y": 32.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_stretch_ratio": 1.0,
+        "size_flags_vertical": 1,
+        "texture_filter": 0,
+        "texture_repeat": 0,
+        "theme": null,
+        "theme_type_variation": "",
+        "toggle_mode": false,
+        "tooltip_auto_translate_mode": 0,
+        "tooltip_text": "",
+        "top_level": false,
+        "touch_target_min_size": {
+          "x": 48.0,
+          "y": 48.0
+        },
+        "translation_context": "",
+        "unique_name_in_owner": false,
+        "use_parent_material": false,
+        "variant": 1,
+        "visibility_layer": 1,
+        "visible": true,
+        "width_mode": 1,
+        "y_sort_enabled": false,
+        "z_as_relative": true,
+        "z_index": 0
+      }
+    },
+    {
+      "id": "node_2",
+      "parent_id": "node_0",
+      "name": "IconSize_S",
+      "class": "Control",
+      "category": "control",
+      "path": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_S",
+      "depth": 1,
+      "index_in_parent": 1,
+      "children_count": 0,
+      "groups": [],
+      "script": "res://addons/material3/components/buttons/m3_icon_button.gd",
+      "process_mode": 0,
+      "visible": true,
+      "screen_rect": {
+        "x": 96.0,
+        "y": 40.0,
+        "width": 40.0,
+        "height": 40.0,
+        "has_bounds": true,
+        "on_screen": true
+      },
+      "script_variables": {
+        "_active_corner_radius": 12.0,
+        "_hover_progress": 0.0,
+        "_is_pointer_down": false,
+        "_motion_tween": null,
+        "_pointer_inside": false,
+        "_press_progress": 0.0,
+        "_ripple": "<Node:M3Ripple (Control)>",
+        "_ripple_wave_alpha": 0.0,
+        "_ripple_wave_count": 0,
+        "_ripple_wave_radius": 0.0,
+        "_selection_progress": 0.0,
+        "_selection_tween": null,
+        "_state_layer_alpha": 0.0,
+        "_theme_connected": true,
+        "button_pressed": false,
+        "button_shape": 1,
+        "button_size": 1,
+        "current_state": 0,
+        "custom_corner_radius": -1.0,
+        "density_override": 99,
+        "disabled": false,
+        "icon_button_type": 2,
+        "icon_name": "favorite",
+        "icon_size": 24.0,
+        "icon_texture": null,
+        "ripple_enabled": true,
+        "selected_icon_name": "",
+        "selected_icon_texture": null,
+        "shape_token": 9999,
+        "toggle_mode": false,
+        "touch_target_min_size": {
+          "x": 48.0,
+          "y": 48.0
+        },
+        "variant": 2,
+        "width_mode": 1
+      },
+      "transforms": {
+        "position": {
+          "x": 96.0,
+          "y": 40.0
+        },
+        "global_position": {
+          "x": 96.0,
+          "y": 40.0
+        },
+        "size": {
+          "x": 40.0,
+          "y": 40.0
+        },
+        "custom_minimum_size": {
+          "x": 40.0,
+          "y": 40.0
+        },
+        "rotation_deg": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "anchors": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 0.0,
+          "bottom": 0.0
+        },
+        "offsets": {
+          "left": 96.0,
+          "top": 40.0,
+          "right": 136.0,
+          "bottom": 80.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_vertical": 1
+      },
+      "visibility": {
+        "visible": true,
+        "visible_in_tree": true,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "top_level": false,
+        "show_behind_parent": false,
+        "clip_children": 0,
+        "light_mask": 1,
+        "visibility_layer": 1,
+        "z_index": 0,
+        "z_as_relative": true,
+        "y_sort_enabled": false
+      },
+      "physics": {},
+      "ui_and_content": {
+        "focus_mode": 2,
+        "mouse_filter": 0,
+        "tooltip_text": ""
+      },
+      "signals": [
+        {
+          "signal": "child_order_changed",
+          "target": "/root/@Node@2/GSSStageViewport",
+          "method": "Viewport::canvas_parent_mark_dirty"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_S/M3Ripple",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "resized",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_S",
+          "method": "_on_resized"
+        },
+        {
+          "signal": "mouse_entered",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_S",
+          "method": "_on_mouse_entered"
+        },
+        {
+          "signal": "mouse_exited",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_S",
+          "method": "_on_mouse_exited"
+        },
+        {
+          "signal": "focus_entered",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_S",
+          "method": "_on_focus_entered"
+        },
+        {
+          "signal": "focus_exited",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_S",
+          "method": "_on_focus_exited"
+        }
+      ],
+      "all_properties": {
+        "accessibility_controls_nodes": [],
+        "accessibility_described_by_nodes": [],
+        "accessibility_description": "",
+        "accessibility_flow_to_nodes": [],
+        "accessibility_labeled_by_nodes": [],
+        "accessibility_live": 0,
+        "accessibility_name": "",
+        "anchor_bottom": 0.0,
+        "anchor_left": 0.0,
+        "anchor_right": 0.0,
+        "anchor_top": 0.0,
+        "anchors_preset": 0,
+        "auto_translate_mode": 0,
+        "button_pressed": false,
+        "button_shape": 1,
+        "button_size": 1,
+        "clip_children": 0,
+        "clip_contents": false,
+        "current_state": 0,
+        "custom_corner_radius": -1.0,
+        "custom_maximum_size": {
+          "x": -1.0,
+          "y": -1.0
+        },
+        "custom_minimum_size": {
+          "x": 40.0,
+          "y": 40.0
+        },
+        "density_override": 99,
+        "disabled": false,
+        "editor_description": "",
+        "focus_behavior_recursive": 0,
+        "focus_mode": 2,
+        "focus_neighbor_bottom": "",
+        "focus_neighbor_left": "",
+        "focus_neighbor_right": "",
+        "focus_neighbor_top": "",
+        "focus_next": "",
+        "focus_previous": "",
+        "grow_horizontal": 1,
+        "grow_vertical": 1,
+        "icon_button_type": 2,
+        "icon_name": "favorite",
+        "icon_size": 24.0,
+        "icon_texture": null,
+        "layout_direction": 0,
+        "layout_mode": 0,
+        "light_mask": 1,
+        "localize_numeral_system": true,
+        "material": null,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "mouse_behavior_recursive": 0,
+        "mouse_default_cursor_shape": 2,
+        "mouse_filter": 0,
+        "mouse_force_pass_scroll_events": true,
+        "offset_bottom": 80.0,
+        "offset_left": 96.0,
+        "offset_right": 136.0,
+        "offset_top": 40.0,
+        "offset_transform_enabled": false,
+        "offset_transform_pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_pivot_ratio": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "offset_transform_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_position_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_rotation": 0.0,
+        "offset_transform_scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "offset_transform_visual_only": true,
+        "oversampling_with_scale": 0,
+        "physics_interpolation_mode": 2,
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "pivot_offset_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "position": {
+          "x": 96.0,
+          "y": 40.0
+        },
+        "process_mode": 0,
+        "process_physics_priority": 0,
+        "process_priority": 0,
+        "process_thread_group": 0,
+        "propagate_maximum_size": false,
+        "ripple_enabled": true,
+        "rotation": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "selected_icon_name": "",
+        "selected_icon_texture": null,
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "shape_token": 9999,
+        "shortcut_context": null,
+        "show_behind_parent": false,
+        "size": {
+          "x": 40.0,
+          "y": 40.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_stretch_ratio": 1.0,
+        "size_flags_vertical": 1,
+        "texture_filter": 0,
+        "texture_repeat": 0,
+        "theme": null,
+        "theme_type_variation": "",
+        "toggle_mode": false,
+        "tooltip_auto_translate_mode": 0,
+        "tooltip_text": "",
+        "top_level": false,
+        "touch_target_min_size": {
+          "x": 48.0,
+          "y": 48.0
+        },
+        "translation_context": "",
+        "unique_name_in_owner": false,
+        "use_parent_material": false,
+        "variant": 2,
+        "visibility_layer": 1,
+        "visible": true,
+        "width_mode": 1,
+        "y_sort_enabled": false,
+        "z_as_relative": true,
+        "z_index": 0
+      }
+    },
+    {
+      "id": "node_3",
+      "parent_id": "node_0",
+      "name": "IconSize_M",
+      "class": "Control",
+      "category": "control",
+      "path": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_M",
+      "depth": 1,
+      "index_in_parent": 2,
+      "children_count": 0,
+      "groups": [],
+      "script": "res://addons/material3/components/buttons/m3_icon_button.gd",
+      "process_mode": 0,
+      "visible": true,
+      "screen_rect": {
+        "x": 160.0,
+        "y": 40.0,
+        "width": 56.0,
+        "height": 56.0,
+        "has_bounds": true,
+        "on_screen": true
+      },
+      "script_variables": {
+        "_active_corner_radius": 28.0,
+        "_hover_progress": 0.0,
+        "_is_pointer_down": false,
+        "_motion_tween": null,
+        "_pointer_inside": false,
+        "_press_progress": 0.0,
+        "_ripple": "<Node:M3Ripple (Control)>",
+        "_ripple_wave_alpha": 0.0,
+        "_ripple_wave_count": 0,
+        "_ripple_wave_radius": 0.0,
+        "_selection_progress": 0.0,
+        "_selection_tween": null,
+        "_state_layer_alpha": 0.0,
+        "_theme_connected": true,
+        "button_pressed": false,
+        "button_shape": 0,
+        "button_size": 2,
+        "current_state": 0,
+        "custom_corner_radius": -1.0,
+        "density_override": 99,
+        "disabled": false,
+        "icon_button_type": 1,
+        "icon_name": "favorite",
+        "icon_size": 24.0,
+        "icon_texture": null,
+        "ripple_enabled": true,
+        "selected_icon_name": "",
+        "selected_icon_texture": null,
+        "shape_token": 9999,
+        "toggle_mode": false,
+        "touch_target_min_size": {
+          "x": 48.0,
+          "y": 48.0
+        },
+        "variant": 1,
+        "width_mode": 1
+      },
+      "transforms": {
+        "position": {
+          "x": 160.0,
+          "y": 40.0
+        },
+        "global_position": {
+          "x": 160.0,
+          "y": 40.0
+        },
+        "size": {
+          "x": 56.0,
+          "y": 56.0
+        },
+        "custom_minimum_size": {
+          "x": 56.0,
+          "y": 56.0
+        },
+        "rotation_deg": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "anchors": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 0.0,
+          "bottom": 0.0
+        },
+        "offsets": {
+          "left": 160.0,
+          "top": 40.0,
+          "right": 216.0,
+          "bottom": 96.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_vertical": 1
+      },
+      "visibility": {
+        "visible": true,
+        "visible_in_tree": true,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "top_level": false,
+        "show_behind_parent": false,
+        "clip_children": 0,
+        "light_mask": 1,
+        "visibility_layer": 1,
+        "z_index": 0,
+        "z_as_relative": true,
+        "y_sort_enabled": false
+      },
+      "physics": {},
+      "ui_and_content": {
+        "focus_mode": 2,
+        "mouse_filter": 0,
+        "tooltip_text": ""
+      },
+      "signals": [
+        {
+          "signal": "child_order_changed",
+          "target": "/root/@Node@2/GSSStageViewport",
+          "method": "Viewport::canvas_parent_mark_dirty"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_M/M3Ripple",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "resized",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_M",
+          "method": "_on_resized"
+        },
+        {
+          "signal": "mouse_entered",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_M",
+          "method": "_on_mouse_entered"
+        },
+        {
+          "signal": "mouse_exited",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_M",
+          "method": "_on_mouse_exited"
+        },
+        {
+          "signal": "focus_entered",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_M",
+          "method": "_on_focus_entered"
+        },
+        {
+          "signal": "focus_exited",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_M",
+          "method": "_on_focus_exited"
+        }
+      ],
+      "all_properties": {
+        "accessibility_controls_nodes": [],
+        "accessibility_described_by_nodes": [],
+        "accessibility_description": "",
+        "accessibility_flow_to_nodes": [],
+        "accessibility_labeled_by_nodes": [],
+        "accessibility_live": 0,
+        "accessibility_name": "",
+        "anchor_bottom": 0.0,
+        "anchor_left": 0.0,
+        "anchor_right": 0.0,
+        "anchor_top": 0.0,
+        "anchors_preset": 0,
+        "auto_translate_mode": 0,
+        "button_pressed": false,
+        "button_shape": 0,
+        "button_size": 2,
+        "clip_children": 0,
+        "clip_contents": false,
+        "current_state": 0,
+        "custom_corner_radius": -1.0,
+        "custom_maximum_size": {
+          "x": -1.0,
+          "y": -1.0
+        },
+        "custom_minimum_size": {
+          "x": 56.0,
+          "y": 56.0
+        },
+        "density_override": 99,
+        "disabled": false,
+        "editor_description": "",
+        "focus_behavior_recursive": 0,
+        "focus_mode": 2,
+        "focus_neighbor_bottom": "",
+        "focus_neighbor_left": "",
+        "focus_neighbor_right": "",
+        "focus_neighbor_top": "",
+        "focus_next": "",
+        "focus_previous": "",
+        "grow_horizontal": 1,
+        "grow_vertical": 1,
+        "icon_button_type": 1,
+        "icon_name": "favorite",
+        "icon_size": 24.0,
+        "icon_texture": null,
+        "layout_direction": 0,
+        "layout_mode": 0,
+        "light_mask": 1,
+        "localize_numeral_system": true,
+        "material": null,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "mouse_behavior_recursive": 0,
+        "mouse_default_cursor_shape": 2,
+        "mouse_filter": 0,
+        "mouse_force_pass_scroll_events": true,
+        "offset_bottom": 96.0,
+        "offset_left": 160.0,
+        "offset_right": 216.0,
+        "offset_top": 40.0,
+        "offset_transform_enabled": false,
+        "offset_transform_pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_pivot_ratio": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "offset_transform_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_position_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_rotation": 0.0,
+        "offset_transform_scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "offset_transform_visual_only": true,
+        "oversampling_with_scale": 0,
+        "physics_interpolation_mode": 2,
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "pivot_offset_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "position": {
+          "x": 160.0,
+          "y": 40.0
+        },
+        "process_mode": 0,
+        "process_physics_priority": 0,
+        "process_priority": 0,
+        "process_thread_group": 0,
+        "propagate_maximum_size": false,
+        "ripple_enabled": true,
+        "rotation": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "selected_icon_name": "",
+        "selected_icon_texture": null,
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "shape_token": 9999,
+        "shortcut_context": null,
+        "show_behind_parent": false,
+        "size": {
+          "x": 56.0,
+          "y": 56.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_stretch_ratio": 1.0,
+        "size_flags_vertical": 1,
+        "texture_filter": 0,
+        "texture_repeat": 0,
+        "theme": null,
+        "theme_type_variation": "",
+        "toggle_mode": false,
+        "tooltip_auto_translate_mode": 0,
+        "tooltip_text": "",
+        "top_level": false,
+        "touch_target_min_size": {
+          "x": 48.0,
+          "y": 48.0
+        },
+        "translation_context": "",
+        "unique_name_in_owner": false,
+        "use_parent_material": false,
+        "variant": 1,
+        "visibility_layer": 1,
+        "visible": true,
+        "width_mode": 1,
+        "y_sort_enabled": false,
+        "z_as_relative": true,
+        "z_index": 0
+      }
+    },
+    {
+      "id": "node_4",
+      "parent_id": "node_0",
+      "name": "IconSize_L",
+      "class": "Control",
+      "category": "control",
+      "path": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_L",
+      "depth": 1,
+      "index_in_parent": 3,
+      "children_count": 0,
+      "groups": [],
+      "script": "res://addons/material3/components/buttons/m3_icon_button.gd",
+      "process_mode": 0,
+      "visible": true,
+      "screen_rect": {
+        "x": 240.0,
+        "y": 40.0,
+        "width": 96.0,
+        "height": 96.0,
+        "has_bounds": true,
+        "on_screen": true
+      },
+      "script_variables": {
+        "_active_corner_radius": 28.0,
+        "_hover_progress": 0.0,
+        "_is_pointer_down": false,
+        "_motion_tween": null,
+        "_pointer_inside": false,
+        "_press_progress": 0.0,
+        "_ripple": "<Node:M3Ripple (Control)>",
+        "_ripple_wave_alpha": 0.0,
+        "_ripple_wave_count": 0,
+        "_ripple_wave_radius": 0.0,
+        "_selection_progress": 0.0,
+        "_selection_tween": null,
+        "_state_layer_alpha": 0.0,
+        "_theme_connected": true,
+        "button_pressed": false,
+        "button_shape": 1,
+        "button_size": 3,
+        "current_state": 0,
+        "custom_corner_radius": -1.0,
+        "density_override": 99,
+        "disabled": false,
+        "icon_button_type": 2,
+        "icon_name": "favorite",
+        "icon_size": 32.0,
+        "icon_texture": null,
+        "ripple_enabled": true,
+        "selected_icon_name": "",
+        "selected_icon_texture": null,
+        "shape_token": 9999,
+        "toggle_mode": false,
+        "touch_target_min_size": {
+          "x": 48.0,
+          "y": 48.0
+        },
+        "variant": 2,
+        "width_mode": 1
+      },
+      "transforms": {
+        "position": {
+          "x": 240.0,
+          "y": 40.0
+        },
+        "global_position": {
+          "x": 240.0,
+          "y": 40.0
+        },
+        "size": {
+          "x": 96.0,
+          "y": 96.0
+        },
+        "custom_minimum_size": {
+          "x": 96.0,
+          "y": 96.0
+        },
+        "rotation_deg": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "anchors": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 0.0,
+          "bottom": 0.0
+        },
+        "offsets": {
+          "left": 240.0,
+          "top": 40.0,
+          "right": 336.0,
+          "bottom": 136.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_vertical": 1
+      },
+      "visibility": {
+        "visible": true,
+        "visible_in_tree": true,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "top_level": false,
+        "show_behind_parent": false,
+        "clip_children": 0,
+        "light_mask": 1,
+        "visibility_layer": 1,
+        "z_index": 0,
+        "z_as_relative": true,
+        "y_sort_enabled": false
+      },
+      "physics": {},
+      "ui_and_content": {
+        "focus_mode": 2,
+        "mouse_filter": 0,
+        "tooltip_text": ""
+      },
+      "signals": [
+        {
+          "signal": "child_order_changed",
+          "target": "/root/@Node@2/GSSStageViewport",
+          "method": "Viewport::canvas_parent_mark_dirty"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_L/M3Ripple",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "resized",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_L",
+          "method": "_on_resized"
+        },
+        {
+          "signal": "mouse_entered",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_L",
+          "method": "_on_mouse_entered"
+        },
+        {
+          "signal": "mouse_exited",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_L",
+          "method": "_on_mouse_exited"
+        },
+        {
+          "signal": "focus_entered",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_L",
+          "method": "_on_focus_entered"
+        },
+        {
+          "signal": "focus_exited",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_L",
+          "method": "_on_focus_exited"
+        }
+      ],
+      "all_properties": {
+        "accessibility_controls_nodes": [],
+        "accessibility_described_by_nodes": [],
+        "accessibility_description": "",
+        "accessibility_flow_to_nodes": [],
+        "accessibility_labeled_by_nodes": [],
+        "accessibility_live": 0,
+        "accessibility_name": "",
+        "anchor_bottom": 0.0,
+        "anchor_left": 0.0,
+        "anchor_right": 0.0,
+        "anchor_top": 0.0,
+        "anchors_preset": 0,
+        "auto_translate_mode": 0,
+        "button_pressed": false,
+        "button_shape": 1,
+        "button_size": 3,
+        "clip_children": 0,
+        "clip_contents": false,
+        "current_state": 0,
+        "custom_corner_radius": -1.0,
+        "custom_maximum_size": {
+          "x": -1.0,
+          "y": -1.0
+        },
+        "custom_minimum_size": {
+          "x": 96.0,
+          "y": 96.0
+        },
+        "density_override": 99,
+        "disabled": false,
+        "editor_description": "",
+        "focus_behavior_recursive": 0,
+        "focus_mode": 2,
+        "focus_neighbor_bottom": "",
+        "focus_neighbor_left": "",
+        "focus_neighbor_right": "",
+        "focus_neighbor_top": "",
+        "focus_next": "",
+        "focus_previous": "",
+        "grow_horizontal": 1,
+        "grow_vertical": 1,
+        "icon_button_type": 2,
+        "icon_name": "favorite",
+        "icon_size": 32.0,
+        "icon_texture": null,
+        "layout_direction": 0,
+        "layout_mode": 0,
+        "light_mask": 1,
+        "localize_numeral_system": true,
+        "material": null,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "mouse_behavior_recursive": 0,
+        "mouse_default_cursor_shape": 2,
+        "mouse_filter": 0,
+        "mouse_force_pass_scroll_events": true,
+        "offset_bottom": 136.0,
+        "offset_left": 240.0,
+        "offset_right": 336.0,
+        "offset_top": 40.0,
+        "offset_transform_enabled": false,
+        "offset_transform_pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_pivot_ratio": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "offset_transform_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_position_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_rotation": 0.0,
+        "offset_transform_scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "offset_transform_visual_only": true,
+        "oversampling_with_scale": 0,
+        "physics_interpolation_mode": 2,
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "pivot_offset_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "position": {
+          "x": 240.0,
+          "y": 40.0
+        },
+        "process_mode": 0,
+        "process_physics_priority": 0,
+        "process_priority": 0,
+        "process_thread_group": 0,
+        "propagate_maximum_size": false,
+        "ripple_enabled": true,
+        "rotation": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "selected_icon_name": "",
+        "selected_icon_texture": null,
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "shape_token": 9999,
+        "shortcut_context": null,
+        "show_behind_parent": false,
+        "size": {
+          "x": 96.0,
+          "y": 96.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_stretch_ratio": 1.0,
+        "size_flags_vertical": 1,
+        "texture_filter": 0,
+        "texture_repeat": 0,
+        "theme": null,
+        "theme_type_variation": "",
+        "toggle_mode": false,
+        "tooltip_auto_translate_mode": 0,
+        "tooltip_text": "",
+        "top_level": false,
+        "touch_target_min_size": {
+          "x": 48.0,
+          "y": 48.0
+        },
+        "translation_context": "",
+        "unique_name_in_owner": false,
+        "use_parent_material": false,
+        "variant": 2,
+        "visibility_layer": 1,
+        "visible": true,
+        "width_mode": 1,
+        "y_sort_enabled": false,
+        "z_as_relative": true,
+        "z_index": 0
+      }
+    },
+    {
+      "id": "node_5",
+      "parent_id": "node_0",
+      "name": "IconSize_XL",
+      "class": "Control",
+      "category": "control",
+      "path": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_XL",
+      "depth": 1,
+      "index_in_parent": 4,
+      "children_count": 0,
+      "groups": [],
+      "script": "res://addons/material3/components/buttons/m3_icon_button.gd",
+      "process_mode": 0,
+      "visible": true,
+      "screen_rect": {
+        "x": 360.0,
+        "y": 40.0,
+        "width": 136.0,
+        "height": 136.0,
+        "has_bounds": true,
+        "on_screen": true
+      },
+      "script_variables": {
+        "_active_corner_radius": 68.0,
+        "_hover_progress": 0.0,
+        "_is_pointer_down": false,
+        "_motion_tween": null,
+        "_pointer_inside": false,
+        "_press_progress": 0.0,
+        "_ripple": "<Node:M3Ripple (Control)>",
+        "_ripple_wave_alpha": 0.0,
+        "_ripple_wave_count": 0,
+        "_ripple_wave_radius": 0.0,
+        "_selection_progress": 0.0,
+        "_selection_tween": null,
+        "_state_layer_alpha": 0.0,
+        "_theme_connected": true,
+        "button_pressed": false,
+        "button_shape": 0,
+        "button_size": 4,
+        "current_state": 0,
+        "custom_corner_radius": -1.0,
+        "density_override": 99,
+        "disabled": false,
+        "icon_button_type": 1,
+        "icon_name": "favorite",
+        "icon_size": 40.0,
+        "icon_texture": null,
+        "ripple_enabled": true,
+        "selected_icon_name": "",
+        "selected_icon_texture": null,
+        "shape_token": 9999,
+        "toggle_mode": false,
+        "touch_target_min_size": {
+          "x": 48.0,
+          "y": 48.0
+        },
+        "variant": 1,
+        "width_mode": 1
+      },
+      "transforms": {
+        "position": {
+          "x": 360.0,
+          "y": 40.0
+        },
+        "global_position": {
+          "x": 360.0,
+          "y": 40.0
+        },
+        "size": {
+          "x": 136.0,
+          "y": 136.0
+        },
+        "custom_minimum_size": {
+          "x": 136.0,
+          "y": 136.0
+        },
+        "rotation_deg": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "anchors": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 0.0,
+          "bottom": 0.0
+        },
+        "offsets": {
+          "left": 360.0,
+          "top": 40.0,
+          "right": 496.0,
+          "bottom": 176.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_vertical": 1
+      },
+      "visibility": {
+        "visible": true,
+        "visible_in_tree": true,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "top_level": false,
+        "show_behind_parent": false,
+        "clip_children": 0,
+        "light_mask": 1,
+        "visibility_layer": 1,
+        "z_index": 0,
+        "z_as_relative": true,
+        "y_sort_enabled": false
+      },
+      "physics": {},
+      "ui_and_content": {
+        "focus_mode": 2,
+        "mouse_filter": 0,
+        "tooltip_text": ""
+      },
+      "signals": [
+        {
+          "signal": "child_order_changed",
+          "target": "/root/@Node@2/GSSStageViewport",
+          "method": "Viewport::canvas_parent_mark_dirty"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_XL/M3Ripple",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "resized",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_XL",
+          "method": "_on_resized"
+        },
+        {
+          "signal": "mouse_entered",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_XL",
+          "method": "_on_mouse_entered"
+        },
+        {
+          "signal": "mouse_exited",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_XL",
+          "method": "_on_mouse_exited"
+        },
+        {
+          "signal": "focus_entered",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_XL",
+          "method": "_on_focus_entered"
+        },
+        {
+          "signal": "focus_exited",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconSize_XL",
+          "method": "_on_focus_exited"
+        }
+      ],
+      "all_properties": {
+        "accessibility_controls_nodes": [],
+        "accessibility_described_by_nodes": [],
+        "accessibility_description": "",
+        "accessibility_flow_to_nodes": [],
+        "accessibility_labeled_by_nodes": [],
+        "accessibility_live": 0,
+        "accessibility_name": "",
+        "anchor_bottom": 0.0,
+        "anchor_left": 0.0,
+        "anchor_right": 0.0,
+        "anchor_top": 0.0,
+        "anchors_preset": 0,
+        "auto_translate_mode": 0,
+        "button_pressed": false,
+        "button_shape": 0,
+        "button_size": 4,
+        "clip_children": 0,
+        "clip_contents": false,
+        "current_state": 0,
+        "custom_corner_radius": -1.0,
+        "custom_maximum_size": {
+          "x": -1.0,
+          "y": -1.0
+        },
+        "custom_minimum_size": {
+          "x": 136.0,
+          "y": 136.0
+        },
+        "density_override": 99,
+        "disabled": false,
+        "editor_description": "",
+        "focus_behavior_recursive": 0,
+        "focus_mode": 2,
+        "focus_neighbor_bottom": "",
+        "focus_neighbor_left": "",
+        "focus_neighbor_right": "",
+        "focus_neighbor_top": "",
+        "focus_next": "",
+        "focus_previous": "",
+        "grow_horizontal": 1,
+        "grow_vertical": 1,
+        "icon_button_type": 1,
+        "icon_name": "favorite",
+        "icon_size": 40.0,
+        "icon_texture": null,
+        "layout_direction": 0,
+        "layout_mode": 0,
+        "light_mask": 1,
+        "localize_numeral_system": true,
+        "material": null,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "mouse_behavior_recursive": 0,
+        "mouse_default_cursor_shape": 2,
+        "mouse_filter": 0,
+        "mouse_force_pass_scroll_events": true,
+        "offset_bottom": 176.0,
+        "offset_left": 360.0,
+        "offset_right": 496.0,
+        "offset_top": 40.0,
+        "offset_transform_enabled": false,
+        "offset_transform_pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_pivot_ratio": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "offset_transform_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_position_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_rotation": 0.0,
+        "offset_transform_scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "offset_transform_visual_only": true,
+        "oversampling_with_scale": 0,
+        "physics_interpolation_mode": 2,
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "pivot_offset_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "position": {
+          "x": 360.0,
+          "y": 40.0
+        },
+        "process_mode": 0,
+        "process_physics_priority": 0,
+        "process_priority": 0,
+        "process_thread_group": 0,
+        "propagate_maximum_size": false,
+        "ripple_enabled": true,
+        "rotation": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "selected_icon_name": "",
+        "selected_icon_texture": null,
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "shape_token": 9999,
+        "shortcut_context": null,
+        "show_behind_parent": false,
+        "size": {
+          "x": 136.0,
+          "y": 136.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_stretch_ratio": 1.0,
+        "size_flags_vertical": 1,
+        "texture_filter": 0,
+        "texture_repeat": 0,
+        "theme": null,
+        "theme_type_variation": "",
+        "toggle_mode": false,
+        "tooltip_auto_translate_mode": 0,
+        "tooltip_text": "",
+        "top_level": false,
+        "touch_target_min_size": {
+          "x": 48.0,
+          "y": 48.0
+        },
+        "translation_context": "",
+        "unique_name_in_owner": false,
+        "use_parent_material": false,
+        "variant": 1,
+        "visibility_layer": 1,
+        "visible": true,
+        "width_mode": 1,
+        "y_sort_enabled": false,
+        "z_as_relative": true,
+        "z_index": 0
+      }
+    },
+    {
+      "id": "node_6",
+      "parent_id": "node_0",
+      "name": "IconMediumNarrow",
+      "class": "Control",
+      "category": "control",
+      "path": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumNarrow",
+      "depth": 1,
+      "index_in_parent": 5,
+      "children_count": 0,
+      "groups": [],
+      "script": "res://addons/material3/components/buttons/m3_icon_button.gd",
+      "process_mode": 0,
+      "visible": true,
+      "screen_rect": {
+        "x": 40.0,
+        "y": 210.0,
+        "width": 48.0,
+        "height": 56.0,
+        "has_bounds": true,
+        "on_screen": true
+      },
+      "script_variables": {
+        "_active_corner_radius": 24.0,
+        "_hover_progress": 0.0,
+        "_is_pointer_down": false,
+        "_motion_tween": null,
+        "_pointer_inside": false,
+        "_press_progress": 0.0,
+        "_ripple": "<Node:M3Ripple (Control)>",
+        "_ripple_wave_alpha": 0.0,
+        "_ripple_wave_count": 0,
+        "_ripple_wave_radius": 0.0,
+        "_selection_progress": 0.0,
+        "_selection_tween": null,
+        "_state_layer_alpha": 0.0,
+        "_theme_connected": true,
+        "button_pressed": false,
+        "button_shape": 0,
+        "button_size": 2,
+        "current_state": 0,
+        "custom_corner_radius": -1.0,
+        "density_override": 99,
+        "disabled": false,
+        "icon_button_type": 2,
+        "icon_name": "edit",
+        "icon_size": 24.0,
+        "icon_texture": null,
+        "ripple_enabled": true,
+        "selected_icon_name": "",
+        "selected_icon_texture": null,
+        "shape_token": 9999,
+        "toggle_mode": false,
+        "touch_target_min_size": {
+          "x": 48.0,
+          "y": 48.0
+        },
+        "variant": 2,
+        "width_mode": 0
+      },
+      "transforms": {
+        "position": {
+          "x": 40.0,
+          "y": 210.0
+        },
+        "global_position": {
+          "x": 40.0,
+          "y": 210.0
+        },
+        "size": {
+          "x": 48.0,
+          "y": 56.0
+        },
+        "custom_minimum_size": {
+          "x": 48.0,
+          "y": 56.0
+        },
+        "rotation_deg": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "anchors": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 0.0,
+          "bottom": 0.0
+        },
+        "offsets": {
+          "left": 40.0,
+          "top": 210.0,
+          "right": 88.0,
+          "bottom": 266.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_vertical": 1
+      },
+      "visibility": {
+        "visible": true,
+        "visible_in_tree": true,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "top_level": false,
+        "show_behind_parent": false,
+        "clip_children": 0,
+        "light_mask": 1,
+        "visibility_layer": 1,
+        "z_index": 0,
+        "z_as_relative": true,
+        "y_sort_enabled": false
+      },
+      "physics": {},
+      "ui_and_content": {
+        "focus_mode": 2,
+        "mouse_filter": 0,
+        "tooltip_text": ""
+      },
+      "signals": [
+        {
+          "signal": "child_order_changed",
+          "target": "/root/@Node@2/GSSStageViewport",
+          "method": "Viewport::canvas_parent_mark_dirty"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumNarrow/M3Ripple",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "resized",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumNarrow",
+          "method": "_on_resized"
+        },
+        {
+          "signal": "mouse_entered",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumNarrow",
+          "method": "_on_mouse_entered"
+        },
+        {
+          "signal": "mouse_exited",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumNarrow",
+          "method": "_on_mouse_exited"
+        },
+        {
+          "signal": "focus_entered",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumNarrow",
+          "method": "_on_focus_entered"
+        },
+        {
+          "signal": "focus_exited",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumNarrow",
+          "method": "_on_focus_exited"
+        }
+      ],
+      "all_properties": {
+        "accessibility_controls_nodes": [],
+        "accessibility_described_by_nodes": [],
+        "accessibility_description": "",
+        "accessibility_flow_to_nodes": [],
+        "accessibility_labeled_by_nodes": [],
+        "accessibility_live": 0,
+        "accessibility_name": "",
+        "anchor_bottom": 0.0,
+        "anchor_left": 0.0,
+        "anchor_right": 0.0,
+        "anchor_top": 0.0,
+        "anchors_preset": 0,
+        "auto_translate_mode": 0,
+        "button_pressed": false,
+        "button_shape": 0,
+        "button_size": 2,
+        "clip_children": 0,
+        "clip_contents": false,
+        "current_state": 0,
+        "custom_corner_radius": -1.0,
+        "custom_maximum_size": {
+          "x": -1.0,
+          "y": -1.0
+        },
+        "custom_minimum_size": {
+          "x": 48.0,
+          "y": 56.0
+        },
+        "density_override": 99,
+        "disabled": false,
+        "editor_description": "",
+        "focus_behavior_recursive": 0,
+        "focus_mode": 2,
+        "focus_neighbor_bottom": "",
+        "focus_neighbor_left": "",
+        "focus_neighbor_right": "",
+        "focus_neighbor_top": "",
+        "focus_next": "",
+        "focus_previous": "",
+        "grow_horizontal": 1,
+        "grow_vertical": 1,
+        "icon_button_type": 2,
+        "icon_name": "edit",
+        "icon_size": 24.0,
+        "icon_texture": null,
+        "layout_direction": 0,
+        "layout_mode": 0,
+        "light_mask": 1,
+        "localize_numeral_system": true,
+        "material": null,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "mouse_behavior_recursive": 0,
+        "mouse_default_cursor_shape": 2,
+        "mouse_filter": 0,
+        "mouse_force_pass_scroll_events": true,
+        "offset_bottom": 266.0,
+        "offset_left": 40.0,
+        "offset_right": 88.0,
+        "offset_top": 210.0,
+        "offset_transform_enabled": false,
+        "offset_transform_pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_pivot_ratio": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "offset_transform_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_position_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_rotation": 0.0,
+        "offset_transform_scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "offset_transform_visual_only": true,
+        "oversampling_with_scale": 0,
+        "physics_interpolation_mode": 2,
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "pivot_offset_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "position": {
+          "x": 40.0,
+          "y": 210.0
+        },
+        "process_mode": 0,
+        "process_physics_priority": 0,
+        "process_priority": 0,
+        "process_thread_group": 0,
+        "propagate_maximum_size": false,
+        "ripple_enabled": true,
+        "rotation": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "selected_icon_name": "",
+        "selected_icon_texture": null,
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "shape_token": 9999,
+        "shortcut_context": null,
+        "show_behind_parent": false,
+        "size": {
+          "x": 48.0,
+          "y": 56.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_stretch_ratio": 1.0,
+        "size_flags_vertical": 1,
+        "texture_filter": 0,
+        "texture_repeat": 0,
+        "theme": null,
+        "theme_type_variation": "",
+        "toggle_mode": false,
+        "tooltip_auto_translate_mode": 0,
+        "tooltip_text": "",
+        "top_level": false,
+        "touch_target_min_size": {
+          "x": 48.0,
+          "y": 48.0
+        },
+        "translation_context": "",
+        "unique_name_in_owner": false,
+        "use_parent_material": false,
+        "variant": 2,
+        "visibility_layer": 1,
+        "visible": true,
+        "width_mode": 0,
+        "y_sort_enabled": false,
+        "z_as_relative": true,
+        "z_index": 0
+      }
+    },
+    {
+      "id": "node_7",
+      "parent_id": "node_0",
+      "name": "IconMediumDefault",
+      "class": "Control",
+      "category": "control",
+      "path": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumDefault",
+      "depth": 1,
+      "index_in_parent": 6,
+      "children_count": 0,
+      "groups": [],
+      "script": "res://addons/material3/components/buttons/m3_icon_button.gd",
+      "process_mode": 0,
+      "visible": true,
+      "screen_rect": {
+        "x": 120.0,
+        "y": 210.0,
+        "width": 56.0,
+        "height": 56.0,
+        "has_bounds": true,
+        "on_screen": true
+      },
+      "script_variables": {
+        "_active_corner_radius": 28.0,
+        "_hover_progress": 0.0,
+        "_is_pointer_down": false,
+        "_motion_tween": null,
+        "_pointer_inside": false,
+        "_press_progress": 0.0,
+        "_ripple": "<Node:M3Ripple (Control)>",
+        "_ripple_wave_alpha": 0.0,
+        "_ripple_wave_count": 0,
+        "_ripple_wave_radius": 0.0,
+        "_selection_progress": 0.0,
+        "_selection_tween": null,
+        "_state_layer_alpha": 0.0,
+        "_theme_connected": true,
+        "button_pressed": false,
+        "button_shape": 0,
+        "button_size": 2,
+        "current_state": 0,
+        "custom_corner_radius": -1.0,
+        "density_override": 99,
+        "disabled": false,
+        "icon_button_type": 1,
+        "icon_name": "favorite",
+        "icon_size": 24.0,
+        "icon_texture": null,
+        "ripple_enabled": true,
+        "selected_icon_name": "checkmark",
+        "selected_icon_texture": null,
+        "shape_token": 9999,
+        "toggle_mode": true,
+        "touch_target_min_size": {
+          "x": 48.0,
+          "y": 48.0
+        },
+        "variant": 1,
+        "width_mode": 1
+      },
+      "transforms": {
+        "position": {
+          "x": 120.0,
+          "y": 210.0
+        },
+        "global_position": {
+          "x": 120.0,
+          "y": 210.0
+        },
+        "size": {
+          "x": 56.0,
+          "y": 56.0
+        },
+        "custom_minimum_size": {
+          "x": 56.0,
+          "y": 56.0
+        },
+        "rotation_deg": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "anchors": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 0.0,
+          "bottom": 0.0
+        },
+        "offsets": {
+          "left": 120.0,
+          "top": 210.0,
+          "right": 176.0,
+          "bottom": 266.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_vertical": 1
+      },
+      "visibility": {
+        "visible": true,
+        "visible_in_tree": true,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "top_level": false,
+        "show_behind_parent": false,
+        "clip_children": 0,
+        "light_mask": 1,
+        "visibility_layer": 1,
+        "z_index": 0,
+        "z_as_relative": true,
+        "y_sort_enabled": false
+      },
+      "physics": {},
+      "ui_and_content": {
+        "focus_mode": 2,
+        "mouse_filter": 0,
+        "tooltip_text": ""
+      },
+      "signals": [
+        {
+          "signal": "child_order_changed",
+          "target": "/root/@Node@2/GSSStageViewport",
+          "method": "Viewport::canvas_parent_mark_dirty"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumDefault/M3Ripple",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "resized",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumDefault",
+          "method": "_on_resized"
+        },
+        {
+          "signal": "mouse_entered",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumDefault",
+          "method": "_on_mouse_entered"
+        },
+        {
+          "signal": "mouse_exited",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumDefault",
+          "method": "_on_mouse_exited"
+        },
+        {
+          "signal": "focus_entered",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumDefault",
+          "method": "_on_focus_entered"
+        },
+        {
+          "signal": "focus_exited",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumDefault",
+          "method": "_on_focus_exited"
+        }
+      ],
+      "all_properties": {
+        "accessibility_controls_nodes": [],
+        "accessibility_described_by_nodes": [],
+        "accessibility_description": "",
+        "accessibility_flow_to_nodes": [],
+        "accessibility_labeled_by_nodes": [],
+        "accessibility_live": 0,
+        "accessibility_name": "",
+        "anchor_bottom": 0.0,
+        "anchor_left": 0.0,
+        "anchor_right": 0.0,
+        "anchor_top": 0.0,
+        "anchors_preset": 0,
+        "auto_translate_mode": 0,
+        "button_pressed": false,
+        "button_shape": 0,
+        "button_size": 2,
+        "clip_children": 0,
+        "clip_contents": false,
+        "current_state": 0,
+        "custom_corner_radius": -1.0,
+        "custom_maximum_size": {
+          "x": -1.0,
+          "y": -1.0
+        },
+        "custom_minimum_size": {
+          "x": 56.0,
+          "y": 56.0
+        },
+        "density_override": 99,
+        "disabled": false,
+        "editor_description": "",
+        "focus_behavior_recursive": 0,
+        "focus_mode": 2,
+        "focus_neighbor_bottom": "",
+        "focus_neighbor_left": "",
+        "focus_neighbor_right": "",
+        "focus_neighbor_top": "",
+        "focus_next": "",
+        "focus_previous": "",
+        "grow_horizontal": 1,
+        "grow_vertical": 1,
+        "icon_button_type": 1,
+        "icon_name": "favorite",
+        "icon_size": 24.0,
+        "icon_texture": null,
+        "layout_direction": 0,
+        "layout_mode": 0,
+        "light_mask": 1,
+        "localize_numeral_system": true,
+        "material": null,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "mouse_behavior_recursive": 0,
+        "mouse_default_cursor_shape": 2,
+        "mouse_filter": 0,
+        "mouse_force_pass_scroll_events": true,
+        "offset_bottom": 266.0,
+        "offset_left": 120.0,
+        "offset_right": 176.0,
+        "offset_top": 210.0,
+        "offset_transform_enabled": false,
+        "offset_transform_pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_pivot_ratio": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "offset_transform_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_position_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_rotation": 0.0,
+        "offset_transform_scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "offset_transform_visual_only": true,
+        "oversampling_with_scale": 0,
+        "physics_interpolation_mode": 2,
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "pivot_offset_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "position": {
+          "x": 120.0,
+          "y": 210.0
+        },
+        "process_mode": 0,
+        "process_physics_priority": 0,
+        "process_priority": 0,
+        "process_thread_group": 0,
+        "propagate_maximum_size": false,
+        "ripple_enabled": true,
+        "rotation": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "selected_icon_name": "checkmark",
+        "selected_icon_texture": null,
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "shape_token": 9999,
+        "shortcut_context": null,
+        "show_behind_parent": false,
+        "size": {
+          "x": 56.0,
+          "y": 56.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_stretch_ratio": 1.0,
+        "size_flags_vertical": 1,
+        "texture_filter": 0,
+        "texture_repeat": 0,
+        "theme": null,
+        "theme_type_variation": "",
+        "toggle_mode": true,
+        "tooltip_auto_translate_mode": 0,
+        "tooltip_text": "",
+        "top_level": false,
+        "touch_target_min_size": {
+          "x": 48.0,
+          "y": 48.0
+        },
+        "translation_context": "",
+        "unique_name_in_owner": false,
+        "use_parent_material": false,
+        "variant": 1,
+        "visibility_layer": 1,
+        "visible": true,
+        "width_mode": 1,
+        "y_sort_enabled": false,
+        "z_as_relative": true,
+        "z_index": 0
+      }
+    },
+    {
+      "id": "node_8",
+      "parent_id": "node_0",
+      "name": "IconMediumWide",
+      "class": "Control",
+      "category": "control",
+      "path": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumWide",
+      "depth": 1,
+      "index_in_parent": 7,
+      "children_count": 0,
+      "groups": [],
+      "script": "res://addons/material3/components/buttons/m3_icon_button.gd",
+      "process_mode": 0,
+      "visible": true,
+      "screen_rect": {
+        "x": 210.0,
+        "y": 210.0,
+        "width": 72.0,
+        "height": 56.0,
+        "has_bounds": true,
+        "on_screen": true
+      },
+      "script_variables": {
+        "_active_corner_radius": 16.0,
+        "_hover_progress": 0.0,
+        "_is_pointer_down": false,
+        "_motion_tween": null,
+        "_pointer_inside": false,
+        "_press_progress": 0.0,
+        "_ripple": "<Node:M3Ripple (Control)>",
+        "_ripple_wave_alpha": 0.0,
+        "_ripple_wave_count": 0,
+        "_ripple_wave_radius": 0.0,
+        "_selection_progress": 0.0,
+        "_selection_tween": null,
+        "_state_layer_alpha": 0.0,
+        "_theme_connected": true,
+        "button_pressed": false,
+        "button_shape": 1,
+        "button_size": 2,
+        "current_state": 0,
+        "custom_corner_radius": -1.0,
+        "density_override": 99,
+        "disabled": false,
+        "icon_button_type": 3,
+        "icon_name": "settings",
+        "icon_size": 24.0,
+        "icon_texture": null,
+        "ripple_enabled": true,
+        "selected_icon_name": "",
+        "selected_icon_texture": null,
+        "shape_token": 9999,
+        "toggle_mode": false,
+        "touch_target_min_size": {
+          "x": 48.0,
+          "y": 48.0
+        },
+        "variant": 3,
+        "width_mode": 2
+      },
+      "transforms": {
+        "position": {
+          "x": 210.0,
+          "y": 210.0
+        },
+        "global_position": {
+          "x": 210.0,
+          "y": 210.0
+        },
+        "size": {
+          "x": 72.0,
+          "y": 56.0
+        },
+        "custom_minimum_size": {
+          "x": 72.0,
+          "y": 56.0
+        },
+        "rotation_deg": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "anchors": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 0.0,
+          "bottom": 0.0
+        },
+        "offsets": {
+          "left": 210.0,
+          "top": 210.0,
+          "right": 282.0,
+          "bottom": 266.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_vertical": 1
+      },
+      "visibility": {
+        "visible": true,
+        "visible_in_tree": true,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "top_level": false,
+        "show_behind_parent": false,
+        "clip_children": 0,
+        "light_mask": 1,
+        "visibility_layer": 1,
+        "z_index": 0,
+        "z_as_relative": true,
+        "y_sort_enabled": false
+      },
+      "physics": {},
+      "ui_and_content": {
+        "focus_mode": 2,
+        "mouse_filter": 0,
+        "tooltip_text": ""
+      },
+      "signals": [
+        {
+          "signal": "child_order_changed",
+          "target": "/root/@Node@2/GSSStageViewport",
+          "method": "Viewport::canvas_parent_mark_dirty"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumWide/M3Ripple",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "resized",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumWide",
+          "method": "_on_resized"
+        },
+        {
+          "signal": "mouse_entered",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumWide",
+          "method": "_on_mouse_entered"
+        },
+        {
+          "signal": "mouse_exited",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumWide",
+          "method": "_on_mouse_exited"
+        },
+        {
+          "signal": "focus_entered",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumWide",
+          "method": "_on_focus_entered"
+        },
+        {
+          "signal": "focus_exited",
+          "target": "/root/@Node@2/GSSStageViewport/ButtonIconExpressive/IconMediumWide",
+          "method": "_on_focus_exited"
+        }
+      ],
+      "all_properties": {
+        "accessibility_controls_nodes": [],
+        "accessibility_described_by_nodes": [],
+        "accessibility_description": "",
+        "accessibility_flow_to_nodes": [],
+        "accessibility_labeled_by_nodes": [],
+        "accessibility_live": 0,
+        "accessibility_name": "",
+        "anchor_bottom": 0.0,
+        "anchor_left": 0.0,
+        "anchor_right": 0.0,
+        "anchor_top": 0.0,
+        "anchors_preset": 0,
+        "auto_translate_mode": 0,
+        "button_pressed": false,
+        "button_shape": 1,
+        "button_size": 2,
+        "clip_children": 0,
+        "clip_contents": false,
+        "current_state": 0,
+        "custom_corner_radius": -1.0,
+        "custom_maximum_size": {
+          "x": -1.0,
+          "y": -1.0
+        },
+        "custom_minimum_size": {
+          "x": 72.0,
+          "y": 56.0
+        },
+        "density_override": 99,
+        "disabled": false,
+        "editor_description": "",
+        "focus_behavior_recursive": 0,
+        "focus_mode": 2,
+        "focus_neighbor_bottom": "",
+        "focus_neighbor_left": "",
+        "focus_neighbor_right": "",
+        "focus_neighbor_top": "",
+        "focus_next": "",
+        "focus_previous": "",
+        "grow_horizontal": 1,
+        "grow_vertical": 1,
+        "icon_button_type": 3,
+        "icon_name": "settings",
+        "icon_size": 24.0,
+        "icon_texture": null,
+        "layout_direction": 0,
+        "layout_mode": 0,
+        "light_mask": 1,
+        "localize_numeral_system": true,
+        "material": null,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "mouse_behavior_recursive": 0,
+        "mouse_default_cursor_shape": 2,
+        "mouse_filter": 0,
+        "mouse_force_pass_scroll_events": true,
+        "offset_bottom": 266.0,
+        "offset_left": 210.0,
+        "offset_right": 282.0,
+        "offset_top": 210.0,
+        "offset_transform_enabled": false,
+        "offset_transform_pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_pivot_ratio": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "offset_transform_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_position_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_rotation": 0.0,
+        "offset_transform_scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "offset_transform_visual_only": true,
+        "oversampling_with_scale": 0,
+        "physics_interpolation_mode": 2,
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "pivot_offset_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "position": {
+          "x": 210.0,
+          "y": 210.0
+        },
+        "process_mode": 0,
+        "process_physics_priority": 0,
+        "process_priority": 0,
+        "process_thread_group": 0,
+        "propagate_maximum_size": false,
+        "ripple_enabled": true,
+        "rotation": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "selected_icon_name": "",
+        "selected_icon_texture": null,
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "shape_token": 9999,
+        "shortcut_context": null,
+        "show_behind_parent": false,
+        "size": {
+          "x": 72.0,
+          "y": 56.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_stretch_ratio": 1.0,
+        "size_flags_vertical": 1,
+        "texture_filter": 0,
+        "texture_repeat": 0,
+        "theme": null,
+        "theme_type_variation": "",
+        "toggle_mode": false,
+        "tooltip_auto_translate_mode": 0,
+        "tooltip_text": "",
+        "top_level": false,
+        "touch_target_min_size": {
+          "x": 48.0,
+          "y": 48.0
+        },
+        "translation_context": "",
+        "unique_name_in_owner": false,
+        "use_parent_material": false,
+        "variant": 3,
+        "visibility_layer": 1,
+        "visible": true,
+        "width_mode": 2,
+        "y_sort_enabled": false,
+        "z_as_relative": true,
+        "z_index": 0
+      }
+    }
+  ]
+}

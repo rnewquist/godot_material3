@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GSS — Godot Scene Snapshot — navigation.bar__variants_light</title>
+<style>
+:root {
+  color-scheme: dark;
+  --bg-app: #0d1117;
+  --bg-pane: #161b22;
+  --bg-header: #1f2630;
+  --bg-hover: #262e3a;
+  --bg-selected: #1f3a5f;
+  --border: #30363d;
+  --text-main: #e6edf3;
+  --text-muted: #8b949e;
+  --accent: #58a6ff;
+  --cat-control: #29c7f5;
+  --cat-node2d: #3ddc7a;
+  --cat-node3d: #ad73fa;
+  --cat-physics: #fa9433;
+  --cat-other: #9eaec7;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace;
+  background: var(--bg-app);
+  color: var(--text-main);
+  block-size: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  overflow: hidden;
+}
+header.gss-topbar {
+  background: var(--bg-header);
+  border-block-end: 1px solid var(--border);
+  padding: 0.6rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.gss-brand { display: flex; align-items: center; gap: 0.75rem; font-weight: 700; font-size: 0.95rem; }
+.gss-badge { background: #238636; color: #fff; padding: 0.15rem 0.5rem; border-radius: 999px; font-size: 0.75rem; }
+.gss-meta-pills { display: flex; gap: 0.6rem; font-size: 0.8rem; color: var(--text-muted); flex-wrap: wrap; }
+.gss-meta-pill { background: var(--bg-pane); border: 1px solid var(--border); padding: 0.2rem 0.55rem; border-radius: 6px; }
+.gss-workspace {
+  display: grid;
+  grid-template-columns: 320px 1fr 440px;
+  overflow: hidden;
+  block-size: 100%;
+}
+/* Isolate layout/style/paint recalculations per pane (modern-web-guidance: interactions-in-complex-layouts) */
+.gss-pane {
+  background: var(--bg-pane);
+  border-inline-end: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 360px auto 800px;
+}
+@supports not (content-visibility: auto) {
+  .gss-pane { contain: layout style paint; }
+}
+.gss-pane-header {
+  padding: 0.6rem 0.75rem;
+  background: var(--bg-header);
+  border-block-end: 1px solid var(--border);
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+.gss-search {
+  inline-size: 100%;
+  background: var(--bg-app);
+  color: var(--text-main);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 0.38rem 0.6rem;
+  font-size: 0.8rem;
+}
+.gss-tree-list { flex: 1; overflow: auto; padding: 0.4rem 0; font-size: 0.82rem; }
+.gss-tree-row {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.28rem 0.6rem;
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+}
+.gss-tree-row:hover { background: var(--bg-hover); }
+.gss-tree-row.selected { background: var(--bg-selected); outline: 1px solid var(--accent); }
+.gss-tree-row.hidden-node { opacity: 0.45; }
+.gss-cat-dot { inline-size: 8px; block-size: 8px; border-radius: 50%; flex-shrink: 0; }
+.gss-class-tag { color: var(--text-muted); font-size: 0.72rem; margin-inline-start: auto; padding-inline-start: 0.5rem; }
+/* Center Screenshot & 3D Layer Canvas */
+.gss-canvas-pane { background: #090c10; position: relative; display: flex; flex-direction: column; overflow: hidden; }
+.gss-toolbar {
+  padding: 0.5rem 0.75rem;
+  background: var(--bg-header);
+  border-block-end: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  font-size: 0.78rem;
+}
+.gss-btn, .gss-select {
+  background: var(--bg-pane);
+  color: var(--text-main);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 0.28rem 0.55rem;
+  font-size: 0.76rem;
+  cursor: pointer;
+}
+.gss-btn.active { background: var(--bg-selected); border-color: var(--accent); color: var(--accent); }
+.gss-viewport-stage {
+  flex: 1;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  perspective: 1400px;
+}
+.gss-screen-wrapper {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.2s ease;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.65);
+  border: 1px solid var(--border);
+}
+.gss-screenshot-img {
+  display: block;
+  max-inline-size: none;
+  user-select: none;
+  pointer-events: none;
+}
+.gss-overlay-layer {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+}
+.gss-bbox {
+  position: absolute;
+  border: 1.5px solid rgba(88, 166, 255, 0.55);
+  cursor: pointer;
+  transition: background 0.1s ease, border-color 0.1s ease, transform 0.2s ease;
+}
+.gss-bbox:hover { background: rgba(88, 166, 255, 0.18); border-color: #fff; z-index: 20; }
+.gss-bbox.selected {
+  background: rgba(88, 166, 255, 0.26);
+  border: 2px solid #ffea00;
+  box-shadow: 0 0 0 1px #000;
+  z-index: 30;
+}
+.gss-bbox-label {
+  position: absolute;
+  inset-block-start: -18px;
+  inset-inline-start: -1px;
+  background: #ffea00;
+  color: #000;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 1px 5px;
+  border-radius: 3px;
+  white-space: nowrap;
+  pointer-events: none;
+  display: none;
+}
+.gss-bbox.selected .gss-bbox-label, .gss-bbox:hover .gss-bbox-label { display: block; }
+/* Visual Detail Filter Presets */
+.filter-luma { filter: saturate(0) contrast(1.35) brightness(1.05); }
+.filter-detail { filter: contrast(2.2) saturate(0.25) brightness(1.1); }
+.filter-dim { filter: brightness(0.32) saturate(0.3); }
+.filter-invert { filter: invert(1) hue-rotate(180deg) contrast(1.2); }
+/* Right Attributes & Properties Inspector (modern-web-guidance: responsive-table) */
+.gss-props-scroll { flex: 1; overflow-y: auto; padding: 0.65rem; display: flex; flex-direction: column; gap: 0.75rem; }
+.gss-node-summary {
+  background: var(--bg-app);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.65rem;
+  font-size: 0.8rem;
+  display: grid;
+  gap: 0.3rem;
+}
+.gss-section-details {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg-app);
+  overflow: hidden;
+}
+.gss-section-details summary {
+  padding: 0.5rem 0.7rem;
+  background: var(--bg-header);
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+}
+.table-wrapper {
+  overflow: auto;
+  max-inline-size: 100%;
+  max-block-size: min(420px, 70vh);
+  container-type: inline-size;
+}
+table.gss-prop-table {
+  inline-size: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.76rem;
+  --label-2: "Value";
+  --label-3: "Category";
+}
+table.gss-prop-table thead {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 1;
+  background: var(--bg-header);
+}
+table.gss-prop-table th, table.gss-prop-table td {
+  padding: 0.38rem 0.6rem;
+  border-block-end: 1px solid var(--border);
+  text-align: start;
+  vertical-align: top;
+  word-break: break-word;
+}
+table.gss-prop-table tbody th {
+  position: sticky;
+  inset-inline-start: 0;
+  background: var(--bg-app);
+  color: #79c0ff;
+  font-weight: 600;
+  inline-size: 40%;
+}
+table.gss-prop-table tbody td { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+@container (width < 600px) {
+  table.gss-prop-table, table.gss-prop-table thead, table.gss-prop-table tbody, table.gss-prop-table tr, table.gss-prop-table th, table.gss-prop-table td {
+    display: block;
+    inline-size: 100%;
+  }
+  table.gss-prop-table thead { display: none; }
+  table.gss-prop-table tr { margin-block-end: 0.5rem; border: 1px solid var(--border); }
+  table.gss-prop-table tbody th { position: sticky; inset-block-start: 0; z-index: 2; background: var(--bg-header); }
+  table.gss-prop-table td:nth-child(2)::before { content: var(--label-2) ": "; color: var(--text-muted); }
+  table.gss-prop-table td:nth-child(3)::before { content: var(--label-3) ": "; color: var(--text-muted); }
+}
+.gss-swatch { display: inline-block; inline-size: 11px; block-size: 11px; border-radius: 2px; border: 1px solid #fff; vertical-align: middle; margin-inline-end: 5px; }
+</style>
+</head>
+<body>
+<header class="gss-topbar">
+  <div class="gss-brand">
+    <span>🔬 GSS — Godot Scene Snapshot Inspector</span>
+    <span class="gss-badge" id="hdr-snap-name">navigation.bar__variants_light</span>
+  </div>
+  <div class="gss-meta-pills" id="hdr-meta-pills"></div>
+</header>
+<main class="gss-workspace">
+  <!-- Left Pane: Component Hierarchy Tree -->
+  <section class="gss-pane" aria-label="Scene Component Tree">
+    <div class="gss-pane-header">
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <span>COMPONENT TREE</span>
+        <span id="tree-count-label" style="color:var(--text-muted);">0 nodes</span>
+      </div>
+      <input type="search" id="tree-search" class="gss-search" placeholder="Filter nodes by name, class, path, or group...">
+    </div>
+    <div class="gss-tree-list" id="tree-container" role="tree"></div>
+  </section>
+  <!-- Center Pane: Interactive Screenshot & 2D/3D Wireframe Canvas -->
+  <section class="gss-pane gss-canvas-pane" aria-label="Interactive Screenshot Viewport">
+    <div class="gss-toolbar">
+      <button type="button" class="gss-btn active" id="btn-boxes">Wireframe Boxes</button>
+      <button type="button" class="gss-btn" id="btn-3d">3D Layer Stack</button>
+      <label>Detail Filter:
+        <select id="sel-filter" class="gss-select">
+          <option value="">Original RGB</option>
+          <option value="filter-luma">Perceptual Lightness (L*)</option>
+          <option value="filter-detail">High-Contrast Detail</option>
+          <option value="filter-dim">Dimmed + Wireframes</option>
+          <option value="filter-invert">Inverted Contrast</option>
+        </select>
+      </label>
+      <label>Zoom:
+        <select id="sel-zoom" class="gss-select">
+          <option value="0.5">50%</option>
+          <option value="0.75">75%</option>
+          <option value="1" selected>100%</option>
+          <option value="1.5">150%</option>
+          <option value="2">200%</option>
+        </select>
+      </label>
+      <label id="lbl-depth-slider" style="display:none;align-items:center;gap:4px;">Z-Spacing:
+        <input type="range" id="rng-z-space" min="4" max="40" value="16" style="inline-size:70px;">
+      </label>
+    </div>
+    <div class="gss-viewport-stage" id="viewport-stage">
+      <div class="gss-screen-wrapper" id="screen-wrapper">
+        <img id="screenshot-img" class="gss-screenshot-img" alt="Captured Scene Screenshot" src="data:image/png;base64,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rQo9IhpQ9x7duvfoVuhRAABQ/wTwOpLLZW+88c8PPfRg5eLKwdsNOfvs89q1azdlyotnnfWrY475yR/+eF0+lzvmmJ80b97iD3+4NpNJH374j44++tgQwtKlSy+99OLnn3+udevWP/3ZcXvusVehNyVGvXr1SKVS/fv3ffKJp+fNmx9CuG/suIqKik26bvzg/eNHH3LQDjsOnzB+4uSnnl22rGrAgH5H/viIsrLWF194eZu2Zcef8JNsNvvjI4/b8DtdLrn0vBDCKSefsc02W43caYcbrr/5/fc/SJWUbLXVFsf+5Kh8Pj/uwYcnP/VMJpsdNmzwqIMPSCado1EA940d9+LfX7r6mstr77489ZWHHnqkKJHYY8/v7/6DXUMI55936YgRQ2fMmPny1OmXXnZ+s2bNbvzzrbM/+Ecun99qqy2OOfaoZLKo7hGy735733vPA4cdcfAuu4wMIUwYP3HC+InX3/D70tKSQm4nAEB8/Hpd/9Lpmurq6urq6pqamhULH3jg/ptu+vMxx/zk6quu+fCfH55++qm1yz9d+OnjTzx+9VXXDB06/Morr5gw4aHf/Oa3u31/9+uu+/3HH38cQrj00otnzZp58823/fRnx51z9pnvvvtOYbYqetls9pVXXk2n0z179ahd8ur015+Z/NwBB+3br3+fp558evxDE/fZd6+TTj5+/vxPrv399SGEfv37zpr5Tgjh3XfeLytr9a9/fvT5Z58vWbJ0/ryP+/Xv+/CER5csWXrRJeeefMoJW3xv8xDC5KeefeThR48+dswpp5zw7DPPP/nE5AJuLyu8+urrJ574sxHbD73rznvff3927cJ777n/88+XH37E6Pbt27Vu3bpXrx5nnn3acccd8/xzL77495f+/cL/HCFbDfzeFlsMmPL3qbXLp059ZauBW6pfAIB1zwxw/Rs8ZNuvLnzssb/usOPIfffdP4Tws59+fsqpJ9b2bQjhZz89bsstt0qlUo/+9ZGjjz524MCtO3bsNHbsPXPmfNShQ4e//b9JZ55xdu/evXv37n3LzTc+/fTkXr16r9PtIYQjDjum9sb3d9+lb99Na29XVX122RUXlZe3DSH8+YZbB2695Q47Dg8h7PfFD6+5+g8VFYv69+9z/33jPvlkwVtvzejXv+97734wc+bb6UwmlSru3bvne+++X1FR8d67HwwdNjiV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jUIIU6ZMnfjwYzXp9PDhQw4/YvTfX5hy911j0+n06FFjdthh+JijDrv15junTp2WzWa7dt3k5FNOaNmq5brevCbro4/m3n7rXbNn/6OsrGyfffcaPmLISrv36GPHzJkz95ab7vjww39uuGGXo358xHe7da27hkmPPT7xkceWLavq1KnjUT8+ovemPQu0KY3anI/m9uvXZ8jQ7UII2223Te3Cv0164m+Tnli0aFGHDu2PGHNo//59Tz/t7O49uh1z7JEhhA/en33O2Redf+FZPXt2H/fgw5OfeiaTzQ4bNnjUwQckk0U1NTW33nzn1KmvlLdru/XWWxVy25qCduVt+/Tt3adv7zffnPmP2R+GEO4bO66iomKTrhs/eP/40YcctMOOwyeMnzj5qWeXLasaMKDfkT8+oqys9S033/HmGzPy+fzoUWMuvOjsiRMnpWvSp51+Yt01r/7dAQA0KDOcq5DLZaurq6urq9PpdAjhzDPPrli48Lbbbpk48ZHX33jt/PMurJ0ZvvHGG0aO3Pma3107/+P5F154/korufjiC6a/Ov3iiy795Wm/uv/+sTfeeEPt8mefefqh8eOOP+EX22677T/+MfuUU0/ae+8f3n33vYsXL77o4gvX7YY2drlcLp1Op9PpTCazyif888N/3X3X2OOOP+bPN17bvn273Xbbaffdd619aNrU6cf//Cd77LHbpMcenzFj1ve23HzLrbbo2bP7dX+8avShB7788vRnnnn+tNNPOvf8MwYP2Vb9rtKK/Z9Op2v/vhBCSKczv7n86lQqdcppvxg+Ysifrr9p1sx3Vtq9mUzmyit+V9am7JJfn9+zV4/fXvn72rdSrSVLlt5x+1/23Gv3S399/h577tapc4cCbV9jt/kWm02dOu3RiZOqq/97Dm15eduDRx/w68su7Nix48033h5CGDxk0LSXp2ezuRDC1KnTOnRo36tXj8lPPfvIw48efeyYU0454dlnnn/yickhhMf++v9eeGHKYYePOvjgA5579oVCbVdTkQ/5mpqa9959/9133vu//0zkvjr99WcmP3fAQfv269/nqSefHv/QxH323eukk4+fP/+Ta39/fQhh/wP26dW7x1Zbfe+6P17V9burOGV99e8OAKChmQFehdtuv/W2228NIXxviy1vv/2ujh07/eIXJ135299ssMEGRx15dI8e/56tGjhw63322TeEcNhhR/zmisvqRlomk3n8icfPOvOc4cNHhBDeeOP1hx+e8JOf/CyEsGTpkgcfHN+xY6cQwvXX/6FdefmYMUeFEA455LAzzvhlLpdz3vUKD0949OEJj4YQ+vTtfc65v/rqE+bMmZtIJPr03TSRSHT97iaLlyxZ8dABB+7bp2/vPn16PzTu4blz5/VvnEgrAAATM0lEQVTr16e0tKQ4VVxe3jaE0LZtm1wu98q06T/Y4/s77exzlas2ceKkiRMnrbjbvn27EMJ77763cGHFGWee2mXDzv369Xnx71Ofe+6FPn171929M2e+vWDBwtN/dUqXLp332Xevv016YvYHH/bo2b12Pc2bN2vWrPSN19/q37+vU6ZXY5999youLn5o3MMTH3ls1MH7j9h+WAhh623+PXM7aLut/3T9Tfl8fsjQ7e4b++CMGTMHDOj/8tRXBg/ZNoTwwgsvbjVwy8033yyEMGi7baa9PH2XXUdOn/7aVgO/t/0Ow0MIc+fOG3vvg4XbuCbgkYcfe+Thx0IIffttuuIzF1VVn112xUW1x/mfb7h14NZb7rDj8BDCfl/88Jqr/1BRsahdu/JUcaqkJFX7nK969933v/rucBIEAKwzAngV9txjr4MOOjiEsMEG/54Y/OEP97nq6isXV1bWLq9VXv7v05U7deqUy+cWL1684qGKiopcLtu5c+fau126dKlYtLD2dseOnWrrN4TwyScfVyxaNHz44BBCJpNJZ9KLFy9esVpGjBg6cqftQwjNmzdf5RO6dOmcz+dnvDWr63c3+fAf/9x5lx1XPNShY/sQQiKRSKVS2Ux2pRduummvnx13zAP3j/vbpCf23Gv3/fb/YUNtQ1M2bNjgFbv0ySeenjFjVghh0aLFIYTydv8+Stu3L1+yeOlKL1xUURlCOO/ci1d80rSy8r8X5S4pKTnr7F/eeee9vzztrG22GXjsT3/crFlpA29Kk5RIJPba+wc77bzjw+Mn3vCnW1ps0GLgwC3HPThhypSXl3++PJ1O5/Mhl8u3b9+uZ6+eU1+aVlZW9vHHC2pPmV5UUfn+e7OPOfqEEEJNdXWHDu1DCEuXLOvdu1ftymv/nMFqDB8x5Pvf36WsTVnd6+2Vl7ddUbaViyp79OhWe7t9u/IQwpIlS9u1W8P/wFf/7gAAGpoAXoUOHToOGLB53SV/vvGGZs2ad+rU+dprf3fBBRfXLvzkk09qb8yfN6+oKNm27X//3t+mTVlxcfH8j+fX3p03f17nTl1qbxcnk3We1rZz586333ZXnSVtGmCDmqq25W1XTBuuUrfu391+h2FXXH51y5YbbLnVFrt9f5cVD311Ij0RvnTZn6HDths8ZNu/TXrizjvu2WxA/9or1lBX27ZtVuz/6dNfr71RGwMVFRUbbtglhPDpwoo+fXqHL+/eVq1bhhB+deapK8qhZcsN6q65e49u519w5swZs3575e//NunxvX+4R4NvTJPVokXzUaMPmDJl6nvvfpBJZx58YMLZ557et++mzz37wvV/vKn2OUOGDHpo3MNt27bdeOON/u//vhNCaNWqZfce3x19yEG1T0gmk7ULK//z9WBLlqz8ZwtW0qasbJOuG6+0sO7/WMralFX850r1tZesX2P9hrV4dwAADcrZtqswb/68KVNenDLlxalTXwohvP/+e7feevPJJ5161pnnjB//UO3CEMIr018ZO/ae559/7q677hg2dFiyTtmWljbbaaddbr315hdeeH7SpL8+OvGRPffc66s/aNddd/v4448feOC+ysWV8+bNnT59mvOfv5FsNvfi3186ePQBvzjxuJ123mH1T27VquXcOfPefHPGP//50duz3pn60rQFCz6tnRlzQdy1t2mfXu3bt7vz9nvenvXO+IcemTtn3tCh24Uv794+fXq3bdvmoXEPVy6qXFy5ePorr6ZSqRVrWLSo8sknnv7oo7ktNmhRWmru92v96fqbnnh88uuvvzlh/MRPP63o2bN7dXV17RfzLF269Jk636g8aLttli1b9tyzLwwZOqh2yeAhg16Z9trMGW9XVVXN+Wju3DlzQwibb7HZyy+/8sLzL77xxlv/729PFmar1iPDhg2eNu3VZ55+7q23Zo57cMJmm/UrK1vzlbpX/+4AABqaGeBVmDTpr5Mm/TWEUFSUnP7K6+dfcO5m/QfstdfeiURil112veCC88aNGx9C2GXnXR5/4vHXX39t8823OOusc1daybnnnHfRxReecsqJLVu1OvDAUT/60ZFf/UF9+vS94vIrr7/+ultuualV69b773fAOti69UlNTXXnzp3uvOOe2rvt27e7+NLzvu7JO4wc8frrb155xTU777LjgM37333X2EWLKlu1arnf/nv3NP271oqLi3/5q5NuuvH2X1/62/Yd2v3suGN69e4Zvrx7Dz1s1OlnnHzbrXdfeMFlxcXFPXt1H7nTf/88kUgknnhi8h23/yVVktp8QP9dd9u5cFvTqCWTyQcfGP/ZZ5+3a1d+yKEHbb3NVl98UT3lxZfPOP3c8vLyffbda9bMt2uf2apVy80G9H/9tTe2G7xt7ZJdd9upqqrq3nvuX7p0WXl520MOPSiEsMee3/94/ie33HxHebvyffbb64brby7Ytq0Xdhw5YvHiJffc80A2k+nfv++PjjxsbV5VUlKymncHANDQEjXV+UKP4UuqllUXeghr5YgjDt14400uuuiSQg8kaldcfnVZ69ZH/vjwVCq1cGHFKSedcfwJx664ShAAa69lK2dkALD+c8Lt/y4fGtffDiK0ZPGSEEK6Jv3ZZ5/NeGtmPp/faOP/K/SgAACARsop0DRhPxpz6B23/+VnPz2xOJXaeKP/O/W0X3Tu3KnQgwIAABopp0ADAE6BBiAKToEGAAAgCgIYAACAKAhgAAAAoiCAAQAAiIIABgAAIAoCGAAAgCgIYAAAAKIggAEAAIiCAAYAACAKAhgAAIAoCGAAAACiIIABAACIggAGAAAgCgIYAACAKCRqqvOFHgMAAAA0ODPAAAAAREEAAwAAEAUBDAAAQBQEMAAAAFEQwAAAAERBAAMAABAFAQwAAEAUBDAAAABREMAAAABEQQADAAAQBQEMAABAFAQwAAAAURDAAAAAREEAAwAAEAUBDAAAQBQEMAAAAFEQwAAAAERBAAMAABAFAQwAAEAUBDAAAABREMAAAABEQQADAAAQBQEMAABAFAQwAAAAURDAAAAAREEAAwAAEAUBDAAAQBQEMAAAAFEQwAAAAERBAAMAABAFAQwAAEAUBDAAAABREMAAAABEQQADAAAQBQEMAABAFAQwAAAAURDAAAAAREEAAwAAEAUBDAAAQBQEMAAAAFEQwAAAAERBAAMAABAFAQwAAEAUBDAAAABREMAAAABEQQADAAAQBQEMAABAFAQwAAAAURDAAAAAREEAAwAAEAUBDAAAQBQEMAAAAFEQwAAAAERBAAMAABAFAQwAAEAUBDAAAABREMAAAABEQQADAAAQBQEMAABAFAQwAAAAURDAAAAAREEAAwAAEAUBDAAAQBQEMAAAAFEQwAAAAERBAAMAABAFAQwAAEAUBDAAAABREMAAAABEQQADAAAQBQEMAABAFAQwAAAAURDAAAAAREEAAwAAEAUBDAAAQBQEMAAAAFEQwAAAAERBAAMAABAFAQwAAEAUBDAAAABREMAAAABEQQADAAAQBQEMAABAFAQwAAAAURDAAAAAREEAAwAAEAUBDAAAQBQEMAAAAFEQwAAAAERBAAMAABAFAQwAAEAUBDAAAABREMAAAABEQQADAAAQBQEMAABAFAQwAAAAURDAAAAAREEAAwAAEAUBDAAAQBQEMAAAAFEQwAAAAERBAAMAABAFAQwAAEAUBDAAAABREMAAAABEQQADAAAQBQEMAABAFAQwAAAAURDAAAAAREEAAwAAEAUBDAAAQBQEMAAAAFEQwAAAAERBAAMAABAFAQwAAEAUBDAAAABREMAAAABEQQADAAAQBQEMAABAFAQwAAAAURDAAAAAREEAAwAAEAUBDAAAQBQEMAAAAFEQwAAAAERBAAMAABAFAQwAAEAUBDAAAABREMAAAABEQQADAAAQBQEMAABAFAQwAAAAURDAAAAAREEAAwAAEAUBDAAAQBQEMAAAAFEQwAAAAERBAAMAABAFAQwAAEAUBDAAAABREMAAAABEQQADAAAQBQEMAABAFAQwAAAAURDAAAAAREEAAwAAEAUBDAAAQBQEMAAAAFEQwAAAAERBAAMAABAFAQwAAEAUBDAAAABREMAAAABEQQADAAAQBQEMAABAFAQwAAAAURDAAAAAREEAAwAAEAUBDAAAQBQEMAAAAFEQwAAAAERBAAMAABAFAQwAAEAUBDAAAABREMAAAABEQQADAAAQBQEMAABAFAQwAAAAURDAAAAAREEAAwAAEAUBDAAAQBQEMAAAAFEQwAAAAERBAAMAABAFAQwAAEAUBDAAAABREMAAAABEQQADAAAQBQEMAABAFAQwAAAAURDAAAAAREEAAwAAEAUBDAAAQBQEMAAAAFEQwAAAAERBAAMAABAFAQwAAEAUBDAAAABREMAAAABEQQADAAAQBQEMAABAFAQwAAAAURDAAAAAREEAAwAAEAUBDAAAQBQEMAAAAFEQwAAAAERBAAMAABAFAQwAAEAUBDAAAABREMAAAABEQQADAAAQBQEMAABAFAQwAAAAURDAAAAAREEAAwAAEAUBDAAAQBQEMAAAAFEQwAAAAERBAAMAABAFAQwAAEAUBDAAAABREMAAAABEQQADAAAQBQEMAABAFAQwAAAAURDAAAAAREEAAwAAEAUBDAAAQBQEMAAAAFEQwAAAAERBAAMAABAFAQwAAEAUBDAAAABREMAAAABEQQADAAAQBQEMAABAFAQwAAAAURDAAAAAREEAAwAAEAUBDAAAQBQEMAAAAFEQwAAAAERBAAMAABAFAQwAAEAUBDAAAABREMAAAABEQQADAAAQBQEMAABAFAQwAAAAURDAAAAAREEAAwAAEAUBDAAAQBQEMAAAAFEQwAAAAERBAAMAABAFAQwAAEAUBDAAAABREMAAAABEQQADAAAQBQEMAABAFAQwAAAAURDAAAAAREEAAwAAEAUBDAAAQBQEMAAAAFEQwAAAAERBAAMAABAFAQwAAEAUBDAAAABREMAAAABEQQADAAAQBQEMAABAFAQwAAAAURDAAAAAREEAAwAAEAUBDAAAQBQEMAAAAFEQwAAAAERBAAMAABAFAQwAAEAUBDAAAABREMAAAABEQQADAAAQBQEMAABAFAQwAAAAURDAAAAAREEAAwAAEAUBDAAAQBQEMAAAAFEQwAAAAERBAAMAABAFAQwAAEAUBDAAAABREMAAAABEQQADAAAQBQEMAABAFAQwAAAAURDAAAAAREEAAwAAEAUBDAAAQBQEMAAAAFEQwAAAAERBAAMAABAFAQwAAEAUBDAAAABREMAAAABEQQADAAAQBQEMAABAFAQwAAAAURDAAAAAREEAAwAAEAUBDAAAQBQEMAAAAFEQwAAAAERBAAMAABAFAQwAAEAUBDAAAABREMAAAABEQQADAAAQBQEMAABAFAQwAAAAURDAAAAAREEAAwAAEAUBDAAAQBQEMAAAAFEQwAAAAERBAAMAABAFAQwAAEAUBDAAAABREMAAAABEQQADAAAQBQEMAABAFAQwAAAAURDAAAAAREEAAwAAEAUBDAAAQBQEMAAAAFEQwAAAAERBAAMAABAFAQwAAEAUBDAAAABREMAAAABEQQADAAAQBQEMAABAFAQwAAAAURDAAAAAREEAAwAAEAUBDAAAQBQEMAAAAFEQwAAAAERBAAMAABAFAQwAAEAUBDAAAABREMAAAABEQQADAAAQBQEMAABAFAQwAAAAURDAAAAAREEAAwAAEAUBDAAAQBQEMAAAAFEQwAAAAERBAAMAABAFAQwAAEAUBDAAAABREMAAAABEQQADAAAQBQEMAABAFAQwAAAAURDAAAAAREEAAwAAEAUBDAAAQBQEMAAAAFEQwAAAAERBAAMAABAFAQwAAEAUBDAAAABREMAAAABEQQADAAAQBQEMAABAFAQwAAAAURDAAAAAREEAAwAAEAUBDAAAQBQEMAAAAFEQwAAAAERBAAMAABAFAQwAAEAUBDAAAABREMAAAABEQQADAAAQBQEMAABAFAQwAAAAURDAAAAAREEAAwAAEAUBDAAAQBQEMAAAAFEQwAAAAERBAAMAABAFAQwAAEAUBPD/b78OBAAAAAAE+VsPclkEAADAggADAACwIMAAAAAsCDAAAAALAgwAAMCCAAMAALAgwAAAACwIMAAAAAsCDAAAwIIAAwAAsCDAAAAALAgwAAAACwIMAADAggADAACwIMAAAAAsCDAAAAALAgwAAMCCAAMAALAgwAAAACwIMAAAAAsCDAAAwIIAAwAAsCDAAAAALAgwAAAACwIMAADAggADAACwIMAAAAAsCDAAAAALAgwAAMCCAAMAALAgwAAAACwIMAAAAAsCDAAAwIIAAwAAsCDAAAAALAgwAAAACwIMAADAggADAACwIMAAAAAsCDAAAAALAgwAAMCCAAMAALAgwAAAACwIMAAAAAsCDAAAwIIAAwAAsCDAAAAALAgwAAAACwIMAADAggADAACwIMAAAAAsCDAAAAALAgwAAMCCAAMAALAgwAAAACwIMAAAAAsCDAAAwIIAAwAAsBBX3jaoO7v+rQAAAABJRU5ErkJggg==">
+        <div class="gss-overlay-layer" id="bbox-overlay"></div>
+      </div>
+    </div>
+  </section>
+  <!-- Right Pane: Categorized Node Attributes & Properties -->
+  <section class="gss-pane" style="border-inline-end:none;" aria-label="Node Attributes Inspector">
+    <div class="gss-pane-header">
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <span>ATTRIBUTES &amp; PROPERTIES</span>
+        <button type="button" class="gss-btn" id="btn-copy-node">Copy Node JSON</button>
+      </div>
+      <input type="search" id="prop-search" class="gss-search" placeholder="Filter properties or values...">
+    </div>
+    <div class="gss-props-scroll" id="props-container">
+      <div tabindex="0" role="region" aria-labelledby="gss-props-caption" class="table-wrapper">
+        <table class="gss-prop-table">
+          <caption id="gss-props-caption">Selected Node Properties</caption>
+          <thead><tr><th>Property</th><th>Value</th><th>Category</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+<script id="gss-data-payload" type="application/json">{"flat_nodes":[{"all_properties":{"accessibility_controls_nodes":[],"accessibility_described_by_nodes":[],"accessibility_description":"","accessibility_flow_to_nodes":[],"accessibility_labeled_by_nodes":[],"accessibility_live":0,"accessibility_name":"","anchor_bottom":0.0,"anchor_left":0.0,"anchor_right":0.0,"anchor_top":0.0,"anchors_preset":0,"auto_translate_mode":0,"clip_children":0,"clip_contents":false,"color":{"a":1.0,"b":1.0,"g":0.9745,"hex":"#faf9ffff","r":0.9788},"custom_maximum_size":{"x":-1.0,"y":-1.0},"custom_minimum_size":{"x":0.0,"y":0.0},"editor_description":"","focus_behavior_recursive":0,"focus_mode":0,"focus_neighbor_bottom":"","focus_neighbor_left":"","focus_neighbor_right":"","focus_neighbor_top":"","focus_next":"","focus_previous":"","grow_horizontal":1,"grow_vertical":1,"layout_direction":0,"layout_mode":3,"light_mask":1,"localize_numeral_system":true,"material":null,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"mouse_behavior_recursive":0,"mouse_default_cursor_shape":0,"mouse_filter":2,"mouse_force_pass_scroll_events":true,"offset_bottom":720.0,"offset_left":0.0,"offset_right":1280.0,"offset_top":0.0,"offset_transform_enabled":false,"offset_transform_pivot":{"x":0.0,"y":0.0},"offset_transform_pivot_ratio":{"x":0.5,"y":0.5},"offset_transform_position":{"x":0.0,"y":0.0},"offset_transform_position_ratio":{"x":0.0,"y":0.0},"offset_transform_rotation":0.0,"offset_transform_scale":{"x":1.0,"y":1.0},"offset_transform_visual_only":true,"oversampling_with_scale":0,"physics_interpolation_mode":2,"pivot_offset":{"x":0.0,"y":0.0},"pivot_offset_ratio":{"x":0.0,"y":0.0},"position":{"x":0.0,"y":0.0},"process_mode":0,"process_physics_priority":0,"process_priority":0,"process_thread_group":0,"propagate_maximum_size":false,"rotation":0.0,"scale":{"x":1.0,"y":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"shortcut_context":null,"show_behind_parent":false,"size":{"x":1280.0,"y":720.0},"size_flags_horizontal":1,"size_flags_stretch_ratio":1.0,"size_flags_vertical":1,"texture_filter":0,"texture_repeat":0,"theme":null,"theme_type_variation":"","tooltip_auto_translate_mode":0,"tooltip_text":"","top_level":false,"translation_context":"","unique_name_in_owner":false,"use_parent_material":false,"visibility_layer":1,"visible":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"category":"control","children_count":2,"class":"ColorRect","depth":0,"groups":[],"id":"node_0","index_in_parent":0,"name":"NavigationBar","parent_id":"","path":"/root/@Node@217/GSSStageViewport/NavigationBar","physics":{},"process_mode":0,"screen_rect":{"has_bounds":true,"height":720.0,"on_screen":true,"width":1280.0,"x":0.0,"y":0.0},"script":"","script_variables":{},"signals":[{"method":"Viewport::canvas_parent_mark_dirty","signal":"child_order_changed","target":"/root/@Node@217/GSSStageViewport"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@217/GSSStageViewport/NavigationBar/NavBar3Dest"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@217/GSSStageViewport/NavigationBar/NavBar5Dest"}],"transforms":{"anchors":{"bottom":0.0,"left":0.0,"right":0.0,"top":0.0},"custom_minimum_size":{"x":0.0,"y":0.0},"global_position":{"x":0.0,"y":0.0},"offsets":{"bottom":720.0,"left":0.0,"right":1280.0,"top":0.0},"pivot_offset":{"x":0.0,"y":0.0},"position":{"x":0.0,"y":0.0},"rotation_deg":0.0,"scale":{"x":1.0,"y":1.0},"size":{"x":1280.0,"y":720.0},"size_flags_horizontal":1,"size_flags_vertical":1},"ui_and_content":{"color":{"a":1.0,"b":1.0,"g":0.9745,"hex":"#faf9ffff","r":0.9788},"focus_mode":0,"mouse_filter":2,"tooltip_text":""},"visibility":{"clip_children":0,"light_mask":1,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"show_behind_parent":false,"top_level":false,"visibility_layer":1,"visible":true,"visible_in_tree":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"visible":true},{"all_properties":{"accessibility_controls_nodes":[],"accessibility_described_by_nodes":[],"accessibility_description":"","accessibility_flow_to_nodes":[],"accessibility_labeled_by_nodes":[],"accessibility_live":0,"accessibility_name":"","anchor_bottom":0.0,"anchor_left":0.0,"anchor_right":0.0,"anchor_top":0.0,"anchors_preset":0,"auto_translate_mode":0,"clip_children":0,"clip_contents":false,"custom_maximum_size":{"x":-1.0,"y":-1.0},"custom_minimum_size":{"x":0.0,"y":80.0},"destinations":[{"badge":0,"icon":null,"label":"Home"},{"badge":-1,"icon":null,"label":"Browse"},{"badge":0,"icon":null,"label":"Library"}],"disabled":false,"editor_description":"","focus_behavior_recursive":0,"focus_mode":2,"focus_neighbor_bottom":"","focus_neighbor_left":"","focus_neighbor_right":"","focus_neighbor_top":"","focus_next":"","focus_previous":"","grow_horizontal":1,"grow_vertical":1,"is_focused":false,"is_hovered":false,"is_pressed":false,"layout_direction":0,"layout_mode":0,"light_mask":1,"localize_numeral_system":true,"material":null,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"mouse_behavior_recursive":0,"mouse_default_cursor_shape":0,"mouse_filter":0,"mouse_force_pass_scroll_events":true,"offset_bottom":140.0,"offset_left":48.0,"offset_right":528.0,"offset_top":60.0,"offset_transform_enabled":false,"offset_transform_pivot":{"x":0.0,"y":0.0},"offset_transform_pivot_ratio":{"x":0.5,"y":0.5},"offset_transform_position":{"x":0.0,"y":0.0},"offset_transform_position_ratio":{"x":0.0,"y":0.0},"offset_transform_rotation":0.0,"offset_transform_scale":{"x":1.0,"y":1.0},"offset_transform_visual_only":true,"oversampling_with_scale":0,"physics_interpolation_mode":2,"pivot_offset":{"x":0.0,"y":0.0},"pivot_offset_ratio":{"x":0.0,"y":0.0},"position":{"x":48.0,"y":60.0},"process_mode":0,"process_physics_priority":0,"process_priority":0,"process_thread_group":0,"propagate_maximum_size":false,"rotation":0.0,"scale":{"x":1.0,"y":1.0},"selected_index":0,"selection_progress":1.0,"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"shortcut_context":null,"show_behind_parent":false,"size":{"x":480.0,"y":80.0},"size_flags_horizontal":3,"size_flags_stretch_ratio":1.0,"size_flags_vertical":1,"texture_filter":0,"texture_repeat":0,"theme":null,"theme_type_variation":"","tooltip_auto_translate_mode":0,"tooltip_text":"","top_level":false,"translation_context":"","unique_name_in_owner":false,"use_parent_material":false,"visibility_layer":1,"visible":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"category":"control","children_count":1,"class":"Control","depth":1,"groups":[],"id":"node_1","index_in_parent":0,"name":"NavBar3Dest","parent_id":"node_0","path":"/root/@Node@217/GSSStageViewport/NavigationBar/NavBar3Dest","physics":{},"process_mode":0,"screen_rect":{"has_bounds":true,"height":80.0,"on_screen":true,"width":480.0,"x":48.0,"y":60.0},"script":"res://addons/material3/components/navigation/m3_navigation_bar.gd","script_variables":{"_indicator_width":64.0,"_indicator_x":48.0,"_ripple_effect":"<Node:@Control (Control)>","_tween":null,"destinations":[{"badge":0,"icon":null,"label":"Home"},{"badge":-1,"icon":null,"label":"Browse"},{"badge":0,"icon":null,"label":"Library"}],"disabled":false,"is_focused":false,"is_hovered":false,"is_pressed":false,"selected_index":0,"selection_progress":1.0},"signals":[{"method":"Viewport::canvas_parent_mark_dirty","signal":"child_order_changed","target":"/root/@Node@217/GSSStageViewport"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@217/GSSStageViewport/NavigationBar/NavBar3Dest/@Control@263"}],"transforms":{"anchors":{"bottom":0.0,"left":0.0,"right":0.0,"top":0.0},"custom_minimum_size":{"x":0.0,"y":80.0},"global_position":{"x":48.0,"y":60.0},"offsets":{"bottom":140.0,"left":48.0,"right":528.0,"top":60.0},"pivot_offset":{"x":0.0,"y":0.0},"position":{"x":48.0,"y":60.0},"rotation_deg":0.0,"scale":{"x":1.0,"y":1.0},"size":{"x":480.0,"y":80.0},"size_flags_horizontal":3,"size_flags_vertical":1},"ui_and_content":{"focus_mode":2,"mouse_filter":0,"tooltip_text":""},"visibility":{"clip_children":0,"light_mask":1,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"show_behind_parent":false,"top_level":false,"visibility_layer":1,"visible":true,"visible_in_tree":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"visible":true},{"all_properties":{"accessibility_controls_nodes":[],"accessibility_described_by_nodes":[],"accessibility_description":"","accessibility_flow_to_nodes":[],"accessibility_labeled_by_nodes":[],"accessibility_live":0,"accessibility_name":"","anchor_bottom":1.0,"anchor_left":0.0,"anchor_right":1.0,"anchor_top":0.0,"anchors_preset":0,"auto_translate_mode":0,"bounded":true,"clip_children":0,"clip_contents":true,"corner_radius":0.0,"custom_maximum_size":{"x":-1.0,"y":-1.0},"custom_minimum_size":{"x":0.0,"y":0.0},"dragged_opacity":0.16,"editor_description":"","focus_behavior_recursive":0,"focus_mode":0,"focus_neighbor_bottom":"","focus_neighbor_left":"","focus_neighbor_right":"","focus_neighbor_top":"","focus_next":"","focus_opacity":0.1,"focus_previous":"","grow_horizontal":1,"grow_vertical":1,"hover_opacity":0.08,"layout_direction":0,"layout_mode":0,"light_mask":1,"localize_numeral_system":true,"material":null,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"mouse_behavior_recursive":0,"mouse_default_cursor_shape":0,"mouse_filter":2,"mouse_force_pass_scroll_events":true,"offset_bottom":0.0,"offset_left":0.0,"offset_right":0.0,"offset_top":0.0,"offset_transform_enabled":false,"offset_transform_pivot":{"x":0.0,"y":0.0},"offset_transform_pivot_ratio":{"x":0.5,"y":0.5},"offset_transform_position":{"x":0.0,"y":0.0},"offset_transform_position_ratio":{"x":0.0,"y":0.0},"offset_transform_rotation":0.0,"offset_transform_scale":{"x":1.0,"y":1.0},"offset_transform_visual_only":true,"oversampling_with_scale":0,"physics_interpolation_mode":2,"pivot_offset":{"x":0.0,"y":0.0},"pivot_offset_ratio":{"x":0.0,"y":0.0},"position":{"x":0.0,"y":0.0},"press_opacity":0.1,"process_mode":0,"process_physics_priority":0,"process_priority":0,"process_thread_group":0,"propagate_maximum_size":false,"ripple_color":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"rotation":0.0,"scale":{"x":1.0,"y":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"shortcut_context":null,"show_behind_parent":false,"size":{"x":480.0,"y":80.0},"size_flags_horizontal":1,"size_flags_stretch_ratio":1.0,"size_flags_vertical":1,"texture_filter":0,"texture_repeat":0,"theme":null,"theme_type_variation":"","tooltip_auto_translate_mode":0,"tooltip_text":"","top_level":false,"translation_context":"","unique_name_in_owner":false,"use_parent_material":false,"visibility_layer":1,"visible":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"category":"control","children_count":0,"class":"Control","depth":2,"groups":[],"id":"node_2","index_in_parent":0,"name":"@Control","parent_id":"node_1","path":"/root/@Node@217/GSSStageViewport/NavigationBar/NavBar3Dest/@Control@263","physics":{},"process_mode":0,"screen_rect":{"has_bounds":true,"height":80.0,"on_screen":true,"width":480.0,"x":48.0,"y":60.0},"script":"res://addons/material3/components/base/m3_ripple.gd","script_variables":{"_active_waves":[],"_is_dragged":false,"_is_focused":false,"_is_hovered":false,"_is_pressed":false,"_state_layer_alpha":0.0,"_state_tween":null,"_wave_alpha":0.0,"_wave_count":0,"_wave_radius":0.0,"_waves":[],"bounded":true,"corner_radius":0.0,"dragged_opacity":0.16,"focus_opacity":0.1,"hover_opacity":0.08,"press_opacity":0.1,"ripple_color":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0}},"signals":[],"transforms":{"anchors":{"bottom":1.0,"left":0.0,"right":1.0,"top":0.0},"custom_minimum_size":{"x":0.0,"y":0.0},"global_position":{"x":48.0,"y":60.0},"offsets":{"bottom":0.0,"left":0.0,"right":0.0,"top":0.0},"pivot_offset":{"x":0.0,"y":0.0},"position":{"x":0.0,"y":0.0},"rotation_deg":0.0,"scale":{"x":1.0,"y":1.0},"size":{"x":480.0,"y":80.0},"size_flags_horizontal":1,"size_flags_vertical":1},"ui_and_content":{"focus_mode":0,"mouse_filter":2,"tooltip_text":""},"visibility":{"clip_children":0,"light_mask":1,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"show_behind_parent":false,"top_level":false,"visibility_layer":1,"visible":true,"visible_in_tree":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"visible":true},{"all_properties":{"accessibility_controls_nodes":[],"accessibility_described_by_nodes":[],"accessibility_description":"","accessibility_flow_to_nodes":[],"accessibility_labeled_by_nodes":[],"accessibility_live":0,"accessibility_name":"","anchor_bottom":0.0,"anchor_left":0.0,"anchor_right":0.0,"anchor_top":0.0,"anchors_preset":0,"auto_translate_mode":0,"clip_children":0,"clip_contents":false,"custom_maximum_size":{"x":-1.0,"y":-1.0},"custom_minimum_size":{"x":0.0,"y":80.0},"destinations":[{"badge":0,"icon":null,"label":"Explore"},{"badge":4,"icon":null,"label":"Flights"},{"badge":0,"icon":null,"label":"Hotels"},{"badge":1200,"icon":null,"label":"Saved"},{"badge":0,"icon":null,"label":"Profile"}],"disabled":false,"editor_description":"","focus_behavior_recursive":0,"focus_mode":2,"focus_neighbor_bottom":"","focus_neighbor_left":"","focus_neighbor_right":"","focus_neighbor_top":"","focus_next":"","focus_previous":"","grow_horizontal":1,"grow_vertical":1,"is_focused":false,"is_hovered":false,"is_pressed":false,"layout_direction":0,"layout_mode":0,"light_mask":1,"localize_numeral_system":true,"material":null,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"mouse_behavior_recursive":0,"mouse_default_cursor_shape":0,"mouse_filter":0,"mouse_force_pass_scroll_events":true,"offset_bottom":270.0,"offset_left":48.0,"offset_right":688.0,"offset_top":190.0,"offset_transform_enabled":false,"offset_transform_pivot":{"x":0.0,"y":0.0},"offset_transform_pivot_ratio":{"x":0.5,"y":0.5},"offset_transform_position":{"x":0.0,"y":0.0},"offset_transform_position_ratio":{"x":0.0,"y":0.0},"offset_transform_rotation":0.0,"offset_transform_scale":{"x":1.0,"y":1.0},"offset_transform_visual_only":true,"oversampling_with_scale":0,"physics_interpolation_mode":2,"pivot_offset":{"x":0.0,"y":0.0},"pivot_offset_ratio":{"x":0.0,"y":0.0},"position":{"x":48.0,"y":190.0},"process_mode":0,"process_physics_priority":0,"process_priority":0,"process_thread_group":0,"propagate_maximum_size":false,"rotation":0.0,"scale":{"x":1.0,"y":1.0},"selected_index":0,"selection_progress":1.0,"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"shortcut_context":null,"show_behind_parent":false,"size":{"x":640.0,"y":80.0},"size_flags_horizontal":3,"size_flags_stretch_ratio":1.0,"size_flags_vertical":1,"texture_filter":0,"texture_repeat":0,"theme":null,"theme_type_variation":"","tooltip_auto_translate_mode":0,"tooltip_text":"","top_level":false,"translation_context":"","unique_name_in_owner":false,"use_parent_material":false,"visibility_layer":1,"visible":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"category":"control","children_count":1,"class":"Control","depth":1,"groups":[],"id":"node_3","index_in_parent":1,"name":"NavBar5Dest","parent_id":"node_0","path":"/root/@Node@217/GSSStageViewport/NavigationBar/NavBar5Dest","physics":{},"process_mode":0,"screen_rect":{"has_bounds":true,"height":80.0,"on_screen":true,"width":640.0,"x":48.0,"y":190.0},"script":"res://addons/material3/components/navigation/m3_navigation_bar.gd","script_variables":{"_indicator_width":64.0,"_indicator_x":32.0,"_ripple_effect":"<Node:@Control (Control)>","_tween":null,"destinations":[{"badge":0,"icon":null,"label":"Explore"},{"badge":4,"icon":null,"label":"Flights"},{"badge":0,"icon":null,"label":"Hotels"},{"badge":1200,"icon":null,"label":"Saved"},{"badge":0,"icon":null,"label":"Profile"}],"disabled":false,"is_focused":false,"is_hovered":false,"is_pressed":false,"selected_index":0,"selection_progress":1.0},"signals":[{"method":"Viewport::canvas_parent_mark_dirty","signal":"child_order_changed","target":"/root/@Node@217/GSSStageViewport"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@217/GSSStageViewport/NavigationBar/NavBar5Dest/@Control@264"}],"transforms":{"anchors":{"bottom":0.0,"left":0.0,"right":0.0,"top":0.0},"custom_minimum_size":{"x":0.0,"y":80.0},"global_position":{"x":48.0,"y":190.0},"offsets":{"bottom":270.0,"left":48.0,"right":688.0,"top":190.0},"pivot_offset":{"x":0.0,"y":0.0},"position":{"x":48.0,"y":190.0},"rotation_deg":0.0,"scale":{"x":1.0,"y":1.0},"size":{"x":640.0,"y":80.0},"size_flags_horizontal":3,"size_flags_vertical":1},"ui_and_content":{"focus_mode":2,"mouse_filter":0,"tooltip_text":""},"visibility":{"clip_children":0,"light_mask":1,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"show_behind_parent":false,"top_level":false,"visibility_layer":1,"visible":true,"visible_in_tree":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"visible":true},{"all_properties":{"accessibility_controls_nodes":[],"accessibility_described_by_nodes":[],"accessibility_description":"","accessibility_flow_to_nodes":[],"accessibility_labeled_by_nodes":[],"accessibility_live":0,"accessibility_name":"","anchor_bottom":1.0,"anchor_left":0.0,"anchor_right":1.0,"anchor_top":0.0,"anchors_preset":0,"auto_translate_mode":0,"bounded":true,"clip_children":0,"clip_contents":true,"corner_radius":0.0,"custom_maximum_size":{"x":-1.0,"y":-1.0},"custom_minimum_size":{"x":0.0,"y":0.0},"dragged_opacity":0.16,"editor_description":"","focus_behavior_recursive":0,"focus_mode":0,"focus_neighbor_bottom":"","focus_neighbor_left":"","focus_neighbor_right":"","focus_neighbor_top":"","focus_next":"","focus_opacity":0.1,"focus_previous":"","grow_horizontal":1,"grow_vertical":1,"hover_opacity":0.08,"layout_direction":0,"layout_mode":0,"light_mask":1,"localize_numeral_system":true,"material":null,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"mouse_behavior_recursive":0,"mouse_default_cursor_shape":0,"mouse_filter":2,"mouse_force_pass_scroll_events":true,"offset_bottom":0.0,"offset_left":0.0,"offset_right":0.0,"offset_top":0.0,"offset_transform_enabled":false,"offset_transform_pivot":{"x":0.0,"y":0.0},"offset_transform_pivot_ratio":{"x":0.5,"y":0.5},"offset_transform_position":{"x":0.0,"y":0.0},"offset_transform_position_ratio":{"x":0.0,"y":0.0},"offset_transform_rotation":0.0,"offset_transform_scale":{"x":1.0,"y":1.0},"offset_transform_visual_only":true,"oversampling_with_scale":0,"physics_interpolation_mode":2,"pivot_offset":{"x":0.0,"y":0.0},"pivot_offset_ratio":{"x":0.0,"y":0.0},"position":{"x":0.0,"y":0.0},"press_opacity":0.1,"process_mode":0,"process_physics_priority":0,"process_priority":0,"process_thread_group":0,"propagate_maximum_size":false,"ripple_color":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"rotation":0.0,"scale":{"x":1.0,"y":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"shortcut_context":null,"show_behind_parent":false,"size":{"x":640.0,"y":80.0},"size_flags_horizontal":1,"size_flags_stretch_ratio":1.0,"size_flags_vertical":1,"texture_filter":0,"texture_repeat":0,"theme":null,"theme_type_variation":"","tooltip_auto_translate_mode":0,"tooltip_text":"","top_level":false,"translation_context":"","unique_name_in_owner":false,"use_parent_material":false,"visibility_layer":1,"visible":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"category":"control","children_count":0,"class":"Control","depth":2,"groups":[],"id":"node_4","index_in_parent":0,"name":"@Control","parent_id":"node_3","path":"/root/@Node@217/GSSStageViewport/NavigationBar/NavBar5Dest/@Control@264","physics":{},"process_mode":0,"screen_rect":{"has_bounds":true,"height":80.0,"on_screen":true,"width":640.0,"x":48.0,"y":190.0},"script":"res://addons/material3/components/base/m3_ripple.gd","script_variables":{"_active_waves":[],"_is_dragged":false,"_is_focused":false,"_is_hovered":false,"_is_pressed":false,"_state_layer_alpha":0.0,"_state_tween":null,"_wave_alpha":0.0,"_wave_count":0,"_wave_radius":0.0,"_waves":[],"bounded":true,"corner_radius":0.0,"dragged_opacity":0.16,"focus_opacity":0.1,"hover_opacity":0.08,"press_opacity":0.1,"ripple_color":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0}},"signals":[],"transforms":{"anchors":{"bottom":1.0,"left":0.0,"right":1.0,"top":0.0},"custom_minimum_size":{"x":0.0,"y":0.0},"global_position":{"x":48.0,"y":190.0},"offsets":{"bottom":0.0,"left":0.0,"right":0.0,"top":0.0},"pivot_offset":{"x":0.0,"y":0.0},"position":{"x":0.0,"y":0.0},"rotation_deg":0.0,"scale":{"x":1.0,"y":1.0},"size":{"x":640.0,"y":80.0},"size_flags_horizontal":1,"size_flags_vertical":1},"ui_and_content":{"focus_mode":0,"mouse_filter":2,"tooltip_text":""},"visibility":{"clip_children":0,"light_mask":1,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"show_behind_parent":false,"top_level":false,"visibility_layer":1,"visible":true,"visible_in_tree":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"visible":true}],"hierarchy":{"all_properties":{"accessibility_controls_nodes":[],"accessibility_described_by_nodes":[],"accessibility_description":"","accessibility_flow_to_nodes":[],"accessibility_labeled_by_nodes":[],"accessibility_live":0,"accessibility_name":"","anchor_bottom":0.0,"anchor_left":0.0,"anchor_right":0.0,"anchor_top":0.0,"anchors_preset":0,"auto_translate_mode":0,"clip_children":0,"clip_contents":false,"color":{"a":1.0,"b":1.0,"g":0.9745,"hex":"#faf9ffff","r":0.9788},"custom_maximum_size":{"x":-1.0,"y":-1.0},"custom_minimum_size":{"x":0.0,"y":0.0},"editor_description":"","focus_behavior_recursive":0,"focus_mode":0,"focus_neighbor_bottom":"","focus_neighbor_left":"","focus_neighbor_right":"","focus_neighbor_top":"","focus_next":"","focus_previous":"","grow_horizontal":1,"grow_vertical":1,"layout_direction":0,"layout_mode":3,"light_mask":1,"localize_numeral_system":true,"material":null,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"mouse_behavior_recursive":0,"mouse_default_cursor_shape":0,"mouse_filter":2,"mouse_force_pass_scroll_events":true,"offset_bottom":720.0,"offset_left":0.0,"offset_right":1280.0,"offset_top":0.0,"offset_transform_enabled":false,"offset_transform_pivot":{"x":0.0,"y":0.0},"offset_transform_pivot_ratio":{"x":0.5,"y":0.5},"offset_transform_position":{"x":0.0,"y":0.0},"offset_transform_position_ratio":{"x":0.0,"y":0.0},"offset_transform_rotation":0.0,"offset_transform_scale":{"x":1.0,"y":1.0},"offset_transform_visual_only":true,"oversampling_with_scale":0,"physics_interpolation_mode":2,"pivot_offset":{"x":0.0,"y":0.0},"pivot_offset_ratio":{"x":0.0,"y":0.0},"position":{"x":0.0,"y":0.0},"process_mode":0,"process_physics_priority":0,"process_priority":0,"process_thread_group":0,"propagate_maximum_size":false,"rotation":0.0,"scale":{"x":1.0,"y":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"shortcut_context":null,"show_behind_parent":false,"size":{"x":1280.0,"y":720.0},"size_flags_horizontal":1,"size_flags_stretch_ratio":1.0,"size_flags_vertical":1,"texture_filter":0,"texture_repeat":0,"theme":null,"theme_type_variation":"","tooltip_auto_translate_mode":0,"tooltip_text":"","top_level":false,"translation_context":"","unique_name_in_owner":false,"use_parent_material":false,"visibility_layer":1,"visible":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"category":"control","children":[{"all_properties":{"accessibility_controls_nodes":[],"accessibility_described_by_nodes":[],"accessibility_description":"","accessibility_flow_to_nodes":[],"accessibility_labeled_by_nodes":[],"accessibility_live":0,"accessibility_name":"","anchor_bottom":0.0,"anchor_left":0.0,"anchor_right":0.0,"anchor_top":0.0,"anchors_preset":0,"auto_translate_mode":0,"clip_children":0,"clip_contents":false,"custom_maximum_size":{"x":-1.0,"y":-1.0},"custom_minimum_size":{"x":0.0,"y":80.0},"destinations":[{"badge":0,"icon":null,"label":"Home"},{"badge":-1,"icon":null,"label":"Browse"},{"badge":0,"icon":null,"label":"Library"}],"disabled":false,"editor_description":"","focus_behavior_recursive":0,"focus_mode":2,"focus_neighbor_bottom":"","focus_neighbor_left":"","focus_neighbor_right":"","focus_neighbor_top":"","focus_next":"","focus_previous":"","grow_horizontal":1,"grow_vertical":1,"is_focused":false,"is_hovered":false,"is_pressed":false,"layout_direction":0,"layout_mode":0,"light_mask":1,"localize_numeral_system":true,"material":null,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"mouse_behavior_recursive":0,"mouse_default_cursor_shape":0,"mouse_filter":0,"mouse_force_pass_scroll_events":true,"offset_bottom":140.0,"offset_left":48.0,"offset_right":528.0,"offset_top":60.0,"offset_transform_enabled":false,"offset_transform_pivot":{"x":0.0,"y":0.0},"offset_transform_pivot_ratio":{"x":0.5,"y":0.5},"offset_transform_position":{"x":0.0,"y":0.0},"offset_transform_position_ratio":{"x":0.0,"y":0.0},"offset_transform_rotation":0.0,"offset_transform_scale":{"x":1.0,"y":1.0},"offset_transform_visual_only":true,"oversampling_with_scale":0,"physics_interpolation_mode":2,"pivot_offset":{"x":0.0,"y":0.0},"pivot_offset_ratio":{"x":0.0,"y":0.0},"position":{"x":48.0,"y":60.0},"process_mode":0,"process_physics_priority":0,"process_priority":0,"process_thread_group":0,"propagate_maximum_size":false,"rotation":0.0,"scale":{"x":1.0,"y":1.0},"selected_index":0,"selection_progress":1.0,"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"shortcut_context":null,"show_behind_parent":false,"size":{"x":480.0,"y":80.0},"size_flags_horizontal":3,"size_flags_stretch_ratio":1.0,"size_flags_vertical":1,"texture_filter":0,"texture_repeat":0,"theme":null,"theme_type_variation":"","tooltip_auto_translate_mode":0,"tooltip_text":"","top_level":false,"translation_context":"","unique_name_in_owner":false,"use_parent_material":false,"visibility_layer":1,"visible":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"category":"control","children":[{"all_properties":{"accessibility_controls_nodes":[],"accessibility_described_by_nodes":[],"accessibility_description":"","accessibility_flow_to_nodes":[],"accessibility_labeled_by_nodes":[],"accessibility_live":0,"accessibility_name":"","anchor_bottom":1.0,"anchor_left":0.0,"anchor_right":1.0,"anchor_top":0.0,"anchors_preset":0,"auto_translate_mode":0,"bounded":true,"clip_children":0,"clip_contents":true,"corner_radius":0.0,"custom_maximum_size":{"x":-1.0,"y":-1.0},"custom_minimum_size":{"x":0.0,"y":0.0},"dragged_opacity":0.16,"editor_description":"","focus_behavior_recursive":0,"focus_mode":0,"focus_neighbor_bottom":"","focus_neighbor_left":"","focus_neighbor_right":"","focus_neighbor_top":"","focus_next":"","focus_opacity":0.1,"focus_previous":"","grow_horizontal":1,"grow_vertical":1,"hover_opacity":0.08,"layout_direction":0,"layout_mode":0,"light_mask":1,"localize_numeral_system":true,"material":null,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"mouse_behavior_recursive":0,"mouse_default_cursor_shape":0,"mouse_filter":2,"mouse_force_pass_scroll_events":true,"offset_bottom":0.0,"offset_left":0.0,"offset_right":0.0,"offset_top":0.0,"offset_transform_enabled":false,"offset_transform_pivot":{"x":0.0,"y":0.0},"offset_transform_pivot_ratio":{"x":0.5,"y":0.5},"offset_transform_position":{"x":0.0,"y":0.0},"offset_transform_position_ratio":{"x":0.0,"y":0.0},"offset_transform_rotation":0.0,"offset_transform_scale":{"x":1.0,"y":1.0},"offset_transform_visual_only":true,"oversampling_with_scale":0,"physics_interpolation_mode":2,"pivot_offset":{"x":0.0,"y":0.0},"pivot_offset_ratio":{"x":0.0,"y":0.0},"position":{"x":0.0,"y":0.0},"press_opacity":0.1,"process_mode":0,"process_physics_priority":0,"process_priority":0,"process_thread_group":0,"propagate_maximum_size":false,"ripple_color":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"rotation":0.0,"scale":{"x":1.0,"y":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"shortcut_context":null,"show_behind_parent":false,"size":{"x":480.0,"y":80.0},"size_flags_horizontal":1,"size_flags_stretch_ratio":1.0,"size_flags_vertical":1,"texture_filter":0,"texture_repeat":0,"theme":null,"theme_type_variation":"","tooltip_auto_translate_mode":0,"tooltip_text":"","top_level":false,"translation_context":"","unique_name_in_owner":false,"use_parent_material":false,"visibility_layer":1,"visible":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"category":"control","children":[],"children_count":0,"class":"Control","depth":2,"groups":[],"id":"node_2","index_in_parent":0,"name":"@Control","parent_id":"node_1","path":"/root/@Node@217/GSSStageViewport/NavigationBar/NavBar3Dest/@Control@263","physics":{},"process_mode":0,"screen_rect":{"has_bounds":true,"height":80.0,"on_screen":true,"width":480.0,"x":48.0,"y":60.0},"script":"res://addons/material3/components/base/m3_ripple.gd","script_variables":{"_active_waves":[],"_is_dragged":false,"_is_focused":false,"_is_hovered":false,"_is_pressed":false,"_state_layer_alpha":0.0,"_state_tween":null,"_wave_alpha":0.0,"_wave_count":0,"_wave_radius":0.0,"_waves":[],"bounded":true,"corner_radius":0.0,"dragged_opacity":0.16,"focus_opacity":0.1,"hover_opacity":0.08,"press_opacity":0.1,"ripple_color":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0}},"signals":[],"transforms":{"anchors":{"bottom":1.0,"left":0.0,"right":1.0,"top":0.0},"custom_minimum_size":{"x":0.0,"y":0.0},"global_position":{"x":48.0,"y":60.0},"offsets":{"bottom":0.0,"left":0.0,"right":0.0,"top":0.0},"pivot_offset":{"x":0.0,"y":0.0},"position":{"x":0.0,"y":0.0},"rotation_deg":0.0,"scale":{"x":1.0,"y":1.0},"size":{"x":480.0,"y":80.0},"size_flags_horizontal":1,"size_flags_vertical":1},"ui_and_content":{"focus_mode":0,"mouse_filter":2,"tooltip_text":""},"visibility":{"clip_children":0,"light_mask":1,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"show_behind_parent":false,"top_level":false,"visibility_layer":1,"visible":true,"visible_in_tree":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"visible":true}],"children_count":1,"class":"Control","depth":1,"groups":[],"id":"node_1","index_in_parent":0,"name":"NavBar3Dest","parent_id":"node_0","path":"/root/@Node@217/GSSStageViewport/NavigationBar/NavBar3Dest","physics":{},"process_mode":0,"screen_rect":{"has_bounds":true,"height":80.0,"on_screen":true,"width":480.0,"x":48.0,"y":60.0},"script":"res://addons/material3/components/navigation/m3_navigation_bar.gd","script_variables":{"_indicator_width":64.0,"_indicator_x":48.0,"_ripple_effect":"<Node:@Control (Control)>","_tween":null,"destinations":[{"badge":0,"icon":null,"label":"Home"},{"badge":-1,"icon":null,"label":"Browse"},{"badge":0,"icon":null,"label":"Library"}],"disabled":false,"is_focused":false,"is_hovered":false,"is_pressed":false,"selected_index":0,"selection_progress":1.0},"signals":[{"method":"Viewport::canvas_parent_mark_dirty","signal":"child_order_changed","target":"/root/@Node@217/GSSStageViewport"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@217/GSSStageViewport/NavigationBar/NavBar3Dest/@Control@263"}],"transforms":{"anchors":{"bottom":0.0,"left":0.0,"right":0.0,"top":0.0},"custom_minimum_size":{"x":0.0,"y":80.0},"global_position":{"x":48.0,"y":60.0},"offsets":{"bottom":140.0,"left":48.0,"right":528.0,"top":60.0},"pivot_offset":{"x":0.0,"y":0.0},"position":{"x":48.0,"y":60.0},"rotation_deg":0.0,"scale":{"x":1.0,"y":1.0},"size":{"x":480.0,"y":80.0},"size_flags_horizontal":3,"size_flags_vertical":1},"ui_and_content":{"focus_mode":2,"mouse_filter":0,"tooltip_text":""},"visibility":{"clip_children":0,"light_mask":1,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"show_behind_parent":false,"top_level":false,"visibility_layer":1,"visible":true,"visible_in_tree":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"visible":true},{"all_properties":{"accessibility_controls_nodes":[],"accessibility_described_by_nodes":[],"accessibility_description":"","accessibility_flow_to_nodes":[],"accessibility_labeled_by_nodes":[],"accessibility_live":0,"accessibility_name":"","anchor_bottom":0.0,"anchor_left":0.0,"anchor_right":0.0,"anchor_top":0.0,"anchors_preset":0,"auto_translate_mode":0,"clip_children":0,"clip_contents":false,"custom_maximum_size":{"x":-1.0,"y":-1.0},"custom_minimum_size":{"x":0.0,"y":80.0},"destinations":[{"badge":0,"icon":null,"label":"Explore"},{"badge":4,"icon":null,"label":"Flights"},{"badge":0,"icon":null,"label":"Hotels"},{"badge":1200,"icon":null,"label":"Saved"},{"badge":0,"icon":null,"label":"Profile"}],"disabled":false,"editor_description":"","focus_behavior_recursive":0,"focus_mode":2,"focus_neighbor_bottom":"","focus_neighbor_left":"","focus_neighbor_right":"","focus_neighbor_top":"","focus_next":"","focus_previous":"","grow_horizontal":1,"grow_vertical":1,"is_focused":false,"is_hovered":false,"is_pressed":false,"layout_direction":0,"layout_mode":0,"light_mask":1,"localize_numeral_system":true,"material":null,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"mouse_behavior_recursive":0,"mouse_default_cursor_shape":0,"mouse_filter":0,"mouse_force_pass_scroll_events":true,"offset_bottom":270.0,"offset_left":48.0,"offset_right":688.0,"offset_top":190.0,"offset_transform_enabled":false,"offset_transform_pivot":{"x":0.0,"y":0.0},"offset_transform_pivot_ratio":{"x":0.5,"y":0.5},"offset_transform_position":{"x":0.0,"y":0.0},"offset_transform_position_ratio":{"x":0.0,"y":0.0},"offset_transform_rotation":0.0,"offset_transform_scale":{"x":1.0,"y":1.0},"offset_transform_visual_only":true,"oversampling_with_scale":0,"physics_interpolation_mode":2,"pivot_offset":{"x":0.0,"y":0.0},"pivot_offset_ratio":{"x":0.0,"y":0.0},"position":{"x":48.0,"y":190.0},"process_mode":0,"process_physics_priority":0,"process_priority":0,"process_thread_group":0,"propagate_maximum_size":false,"rotation":0.0,"scale":{"x":1.0,"y":1.0},"selected_index":0,"selection_progress":1.0,"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"shortcut_context":null,"show_behind_parent":false,"size":{"x":640.0,"y":80.0},"size_flags_horizontal":3,"size_flags_stretch_ratio":1.0,"size_flags_vertical":1,"texture_filter":0,"texture_repeat":0,"theme":null,"theme_type_variation":"","tooltip_auto_translate_mode":0,"tooltip_text":"","top_level":false,"translation_context":"","unique_name_in_owner":false,"use_parent_material":false,"visibility_layer":1,"visible":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"category":"control","children":[{"all_properties":{"accessibility_controls_nodes":[],"accessibility_described_by_nodes":[],"accessibility_description":"","accessibility_flow_to_nodes":[],"accessibility_labeled_by_nodes":[],"accessibility_live":0,"accessibility_name":"","anchor_bottom":1.0,"anchor_left":0.0,"anchor_right":1.0,"anchor_top":0.0,"anchors_preset":0,"auto_translate_mode":0,"bounded":true,"clip_children":0,"clip_contents":true,"corner_radius":0.0,"custom_maximum_size":{"x":-1.0,"y":-1.0},"custom_minimum_size":{"x":0.0,"y":0.0},"dragged_opacity":0.16,"editor_description":"","focus_behavior_recursive":0,"focus_mode":0,"focus_neighbor_bottom":"","focus_neighbor_left":"","focus_neighbor_right":"","focus_neighbor_top":"","focus_next":"","focus_opacity":0.1,"focus_previous":"","grow_horizontal":1,"grow_vertical":1,"hover_opacity":0.08,"layout_direction":0,"layout_mode":0,"light_mask":1,"localize_numeral_system":true,"material":null,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"mouse_behavior_recursive":0,"mouse_default_cursor_shape":0,"mouse_filter":2,"mouse_force_pass_scroll_events":true,"offset_bottom":0.0,"offset_left":0.0,"offset_right":0.0,"offset_top":0.0,"offset_transform_enabled":false,"offset_transform_pivot":{"x":0.0,"y":0.0},"offset_transform_pivot_ratio":{"x":0.5,"y":0.5},"offset_transform_position":{"x":0.0,"y":0.0},"offset_transform_position_ratio":{"x":0.0,"y":0.0},"offset_transform_rotation":0.0,"offset_transform_scale":{"x":1.0,"y":1.0},"offset_transform_visual_only":true,"oversampling_with_scale":0,"physics_interpolation_mode":2,"pivot_offset":{"x":0.0,"y":0.0},"pivot_offset_ratio":{"x":0.0,"y":0.0},"position":{"x":0.0,"y":0.0},"press_opacity":0.1,"process_mode":0,"process_physics_priority":0,"process_priority":0,"process_thread_group":0,"propagate_maximum_size":false,"ripple_color":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"rotation":0.0,"scale":{"x":1.0,"y":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"shortcut_context":null,"show_behind_parent":false,"size":{"x":640.0,"y":80.0},"size_flags_horizontal":1,"size_flags_stretch_ratio":1.0,"size_flags_vertical":1,"texture_filter":0,"texture_repeat":0,"theme":null,"theme_type_variation":"","tooltip_auto_translate_mode":0,"tooltip_text":"","top_level":false,"translation_context":"","unique_name_in_owner":false,"use_parent_material":false,"visibility_layer":1,"visible":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"category":"control","children":[],"children_count":0,"class":"Control","depth":2,"groups":[],"id":"node_4","index_in_parent":0,"name":"@Control","parent_id":"node_3","path":"/root/@Node@217/GSSStageViewport/NavigationBar/NavBar5Dest/@Control@264","physics":{},"process_mode":0,"screen_rect":{"has_bounds":true,"height":80.0,"on_screen":true,"width":640.0,"x":48.0,"y":190.0},"script":"res://addons/material3/components/base/m3_ripple.gd","script_variables":{"_active_waves":[],"_is_dragged":false,"_is_focused":false,"_is_hovered":false,"_is_pressed":false,"_state_layer_alpha":0.0,"_state_tween":null,"_wave_alpha":0.0,"_wave_count":0,"_wave_radius":0.0,"_waves":[],"bounded":true,"corner_radius":0.0,"dragged_opacity":0.16,"focus_opacity":0.1,"hover_opacity":0.08,"press_opacity":0.1,"ripple_color":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0}},"signals":[],"transforms":{"anchors":{"bottom":1.0,"left":0.0,"right":1.0,"top":0.0},"custom_minimum_size":{"x":0.0,"y":0.0},"global_position":{"x":48.0,"y":190.0},"offsets":{"bottom":0.0,"left":0.0,"right":0.0,"top":0.0},"pivot_offset":{"x":0.0,"y":0.0},"position":{"x":0.0,"y":0.0},"rotation_deg":0.0,"scale":{"x":1.0,"y":1.0},"size":{"x":640.0,"y":80.0},"size_flags_horizontal":1,"size_flags_vertical":1},"ui_and_content":{"focus_mode":0,"mouse_filter":2,"tooltip_text":""},"visibility":{"clip_children":0,"light_mask":1,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"show_behind_parent":false,"top_level":false,"visibility_layer":1,"visible":true,"visible_in_tree":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"visible":true}],"children_count":1,"class":"Control","depth":1,"groups":[],"id":"node_3","index_in_parent":1,"name":"NavBar5Dest","parent_id":"node_0","path":"/root/@Node@217/GSSStageViewport/NavigationBar/NavBar5Dest","physics":{},"process_mode":0,"screen_rect":{"has_bounds":true,"height":80.0,"on_screen":true,"width":640.0,"x":48.0,"y":190.0},"script":"res://addons/material3/components/navigation/m3_navigation_bar.gd","script_variables":{"_indicator_width":64.0,"_indicator_x":32.0,"_ripple_effect":"<Node:@Control (Control)>","_tween":null,"destinations":[{"badge":0,"icon":null,"label":"Explore"},{"badge":4,"icon":null,"label":"Flights"},{"badge":0,"icon":null,"label":"Hotels"},{"badge":1200,"icon":null,"label":"Saved"},{"badge":0,"icon":null,"label":"Profile"}],"disabled":false,"is_focused":false,"is_hovered":false,"is_pressed":false,"selected_index":0,"selection_progress":1.0},"signals":[{"method":"Viewport::canvas_parent_mark_dirty","signal":"child_order_changed","target":"/root/@Node@217/GSSStageViewport"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@217/GSSStageViewport/NavigationBar/NavBar5Dest/@Control@264"}],"transforms":{"anchors":{"bottom":0.0,"left":0.0,"right":0.0,"top":0.0},"custom_minimum_size":{"x":0.0,"y":80.0},"global_position":{"x":48.0,"y":190.0},"offsets":{"bottom":270.0,"left":48.0,"right":688.0,"top":190.0},"pivot_offset":{"x":0.0,"y":0.0},"position":{"x":48.0,"y":190.0},"rotation_deg":0.0,"scale":{"x":1.0,"y":1.0},"size":{"x":640.0,"y":80.0},"size_flags_horizontal":3,"size_flags_vertical":1},"ui_and_content":{"focus_mode":2,"mouse_filter":0,"tooltip_text":""},"visibility":{"clip_children":0,"light_mask":1,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"show_behind_parent":false,"top_level":false,"visibility_layer":1,"visible":true,"visible_in_tree":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"visible":true}],"children_count":2,"class":"ColorRect","depth":0,"groups":[],"id":"node_0","index_in_parent":0,"name":"NavigationBar","parent_id":"","path":"/root/@Node@217/GSSStageViewport/NavigationBar","physics":{},"process_mode":0,"screen_rect":{"has_bounds":true,"height":720.0,"on_screen":true,"width":1280.0,"x":0.0,"y":0.0},"script":"","script_variables":{},"signals":[{"method":"Viewport::canvas_parent_mark_dirty","signal":"child_order_changed","target":"/root/@Node@217/GSSStageViewport"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@217/GSSStageViewport/NavigationBar/NavBar3Dest"},{"method":"Control::_size_changed","signal":"item_rect_changed","target":"/root/@Node@217/GSSStageViewport/NavigationBar/NavBar5Dest"}],"transforms":{"anchors":{"bottom":0.0,"left":0.0,"right":0.0,"top":0.0},"custom_minimum_size":{"x":0.0,"y":0.0},"global_position":{"x":0.0,"y":0.0},"offsets":{"bottom":720.0,"left":0.0,"right":1280.0,"top":0.0},"pivot_offset":{"x":0.0,"y":0.0},"position":{"x":0.0,"y":0.0},"rotation_deg":0.0,"scale":{"x":1.0,"y":1.0},"size":{"x":1280.0,"y":720.0},"size_flags_horizontal":1,"size_flags_vertical":1},"ui_and_content":{"color":{"a":1.0,"b":1.0,"g":0.9745,"hex":"#faf9ffff","r":0.9788},"focus_mode":0,"mouse_filter":2,"tooltip_text":""},"visibility":{"clip_children":0,"light_mask":1,"modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"self_modulate":{"a":1.0,"b":1.0,"g":1.0,"hex":"#ffffffff","r":1.0},"show_behind_parent":false,"top_level":false,"visibility_layer":1,"visible":true,"visible_in_tree":true,"y_sort_enabled":false,"z_as_relative":true,"z_index":0},"visible":true},"metadata":{"camera_2d":{},"camera_3d":{},"class_counts":{"ColorRect":1,"Control":4},"display_server":"macOS","engine_version":"4.7.2-stable (official)","files":{"global_html":"/Users/rnewquist/Documents/Godot/material3/artifacts/gss/navigation/navigation.bar__variants_light.gss.html","global_json":"/Users/rnewquist/Documents/Godot/material3/artifacts/gss/navigation/navigation.bar__variants_light.gss.json","global_png":"/Users/rnewquist/Documents/Godot/material3/artifacts/gss/navigation/navigation.bar__variants_light.png","html":"res://artifacts/gss/navigation/navigation.bar__variants_light.gss.html","json":"res://artifacts/gss/navigation/navigation.bar__variants_light.gss.json","png":"res://artifacts/gss/navigation/navigation.bar__variants_light.png"},"format":"godot_scene_snapshot","is_synthetic_preview":false,"performance":{"fps":24.0,"memory_static_bytes":68801313,"node_count":9,"object_count":1728,"physics_frames":3117,"process_frames":2742},"short_name":"GSS","snapshot_name":"navigation.bar__variants_light","timestamp_iso":"2026-11-24T01:46:03","timestamp_ticks_ms":54257,"total_nodes":5,"version":"1.0","viewport_size":{"height":720,"width":1280},"visible_nodes":5}}</script>
+<script>
+(() => {
+  const rawJson = document.getElementById('gss-data-payload').textContent;
+  const SNAPSHOT = JSON.parse(rawJson);
+  const meta = SNAPSHOT.metadata || {};
+  const flatNodes = SNAPSHOT.flat_nodes || [];
+  const nodeMap = new Map(flatNodes.map(n => [n.id, n]));
+  let selectedId = flatNodes.length ? flatNodes[0].id : null;
+  let showBoxes = true;
+  let mode3D = false;
+  const catColor = (cat) => ({
+    control: 'var(--cat-control)',
+    node2d: 'var(--cat-node2d)',
+    node3d: 'var(--cat-node3d)',
+    physics: 'var(--cat-physics)'
+  }[cat] || 'var(--cat-other)');
+  // Header metadata pills
+  const pillsEl = document.getElementById('hdr-meta-pills');
+  const vpW = (meta.viewport_size && meta.viewport_size.width) || 1280;
+  const vpH = (meta.viewport_size && meta.viewport_size.height) || 720;
+  [
+    `Viewport: ${vpW}x${vpH}`,
+    `Nodes: ${meta.total_nodes || flatNodes.length} (${meta.visible_nodes || 0} visible)`,
+    `Engine: Godot ${meta.engine_version || '4.x'}`,
+    `Captured: ${meta.timestamp_iso || ''}`
+  ].forEach(txt => {
+    const span = document.createElement('span');
+    span.className = 'gss-meta-pill';
+    span.textContent = txt;
+    pillsEl.appendChild(span);
+  });
+  const wrapper = document.getElementById('screen-wrapper');
+  const imgEl = document.getElementById('screenshot-img');
+  wrapper.style.width = vpW + 'px';
+  wrapper.style.height = vpH + 'px';
+  imgEl.style.width = vpW + 'px';
+  imgEl.style.height = vpH + 'px';
+  const treeContainer = document.getElementById('tree-container');
+  const bboxOverlay = document.getElementById('bbox-overlay');
+  const propsContainer = document.getElementById('props-container');
+  function formatValue(val) {
+    if (val === null || val === undefined) return 'null';
+    if (typeof val === 'object') return JSON.stringify(val);
+    return String(val);
+  }
+  function renderTree(filterText = '') {
+    treeContainer.replaceChildren();
+    const q = filterText.trim().toLowerCase();
+    let shown = 0;
+    flatNodes.forEach(node => {
+      const matchStr = `${node.name} ${node.class} ${node.path} ${(node.groups || []).join(' ')}`.toLowerCase();
+      if (q && !matchStr.includes(q)) return;
+      shown++;
+      const row = document.createElement('div');
+      row.className = 'gss-tree-row' + (node.id === selectedId ? ' selected' : '') + (!node.visible ? ' hidden-node' : '');
+      row.dataset.id = node.id;
+      row.style.paddingInlineStart = (10 + (node.depth || 0) * 14) + 'px';
+      const dot = document.createElement('span');
+      dot.className = 'gss-cat-dot';
+      dot.style.background = catColor(node.category);
+      const nameSpan = document.createElement('span');
+      nameSpan.textContent = node.name + (node.script ? ' 📜' : '');
+      const clsSpan = document.createElement('span');
+      clsSpan.className = 'gss-class-tag';
+      clsSpan.textContent = node.class;
+      row.append(dot, nameSpan, clsSpan);
+      row.addEventListener('click', () => selectNode(node.id));
+      treeContainer.appendChild(row);
+    });
+    document.getElementById('tree-count-label').textContent = `${shown} / ${flatNodes.length} nodes`;
+  }
+  function renderBoundingBoxes() {
+    bboxOverlay.replaceChildren();
+    if (!showBoxes) return;
+    const zSpace = Number(document.getElementById('rng-z-space').value || 16);
+    flatNodes.forEach(node => {
+      if (!node.visible || !node.screen_rect || !node.screen_rect.has_bounds) return;
+      const sr = node.screen_rect;
+      if (sr.width <= 0 || sr.height <= 0) return;
+      const box = document.createElement('div');
+      box.className = 'gss-bbox' + (node.id === selectedId ? ' selected' : '');
+      box.dataset.id = node.id;
+      box.style.left = sr.x + 'px';
+      box.style.top = sr.y + 'px';
+      box.style.width = sr.width + 'px';
+      box.style.height = sr.height + 'px';
+      if (node.id !== selectedId) box.style.borderColor = catColor(node.category);
+      if (mode3D) box.style.transform = `translateZ(${(node.depth || 0) * zSpace}px)`;
+      const lbl = document.createElement('span');
+      lbl.className = 'gss-bbox-label';
+      lbl.textContent = `${node.name} (${node.class}) [${Math.round(sr.x)},${Math.round(sr.y)} ${Math.round(sr.width)}x${Math.round(sr.height)}]`;
+      box.appendChild(lbl);
+      box.addEventListener('click', (e) => { e.stopPropagation(); selectNode(node.id); });
+      bboxOverlay.appendChild(box);
+    });
+  }
+  function buildPropertySection(title, dataObj, propFilter, openByDefault = true) {
+    const keys = Object.keys(dataObj || {});
+    const filtered = keys.filter(k => {
+      if (!propFilter) return true;
+      const vStr = formatValue(dataObj[k]).toLowerCase();
+      return k.toLowerCase().includes(propFilter) || vStr.includes(propFilter);
+    });
+    if (!filtered.length) return null;
+    const details = document.createElement('details');
+    details.className = 'gss-section-details';
+    if (openByDefault) details.open = true;
+    const summary = document.createElement('summary');
+    summary.textContent = `${title} (${filtered.length})`;
+    details.appendChild(summary);
+    const wrap = document.createElement('div');
+    wrap.className = 'table-wrapper';
+    wrap.tabIndex = 0;
+    wrap.setAttribute('role', 'region');
+    wrap.setAttribute('aria-label', title);
+    const table = document.createElement('table');
+    table.className = 'gss-prop-table';
+    const thead = document.createElement('thead');
+    const htr = document.createElement('tr');
+    ['Property', 'Value', 'Category'].forEach(h => { const th = document.createElement('th'); th.textContent = h; htr.appendChild(th); });
+    thead.appendChild(htr);
+    const tbody = document.createElement('tbody');
+    filtered.forEach(k => {
+      const val = dataObj[k];
+      const tr = document.createElement('tr');
+      const th = document.createElement('th');
+      th.scope = 'row';
+      th.textContent = k;
+      const tdVal = document.createElement('td');
+      if (val && typeof val === 'object' && typeof val.hex === 'string') {
+        const sw = document.createElement('span');
+        sw.className = 'gss-swatch';
+        sw.style.background = val.hex;
+        tdVal.appendChild(sw);
+      }
+      tdVal.appendChild(document.createTextNode(formatValue(val)));
+      const tdCat = document.createElement('td');
+      tdCat.textContent = title;
+      tr.append(th, tdVal, tdCat);
+      tbody.appendChild(tr);
+    });
+    table.append(thead, tbody);
+    wrap.appendChild(table);
+    details.appendChild(wrap);
+    return details;
+  }
+  function renderProperties() {
+    propsContainer.replaceChildren();
+    const node = nodeMap.get(selectedId);
+    if (!node) return;
+    const q = document.getElementById('prop-search').value.trim().toLowerCase();
+    const card = document.createElement('div');
+    card.className = 'gss-node-summary';
+    const sr = node.screen_rect || {};
+    [
+      ['Node', `${node.name} (${node.class})`],
+      ['Path', node.path],
+      ['Screen Rect', sr.has_bounds ? `x:${sr.x}, y:${sr.y}, w:${sr.width}, h:${sr.height}` : 'N/A'],
+      ['Script', node.script || 'None'],
+      ['Groups', (node.groups && node.groups.length) ? node.groups.join(', ') : 'None']
+    ].forEach(([k, v]) => {
+      const row = document.createElement('div');
+      const b = document.createElement('strong');
+      b.textContent = k + ': ';
+      row.append(b, document.createTextNode(v));
+      card.appendChild(row);
+    });
+    propsContainer.appendChild(card);
+    [
+      ['Script Variables', node.script_variables, true],
+      ['Transforms & Bounds', node.transforms, true],
+      ['Visibility & Layers', node.visibility, true],
+      ['Physics & Collision', node.physics, true],
+      ['UI & Node Content', node.ui_and_content, true],
+      ['All Properties', node.all_properties, false]
+    ].forEach(([title, obj, openDef]) => {
+      const sec = buildPropertySection(title, obj, q, openDef);
+      if (sec) propsContainer.appendChild(sec);
+    });
+  }
+  function selectNode(id) {
+    selectedId = id;
+    renderTree(document.getElementById('tree-search').value);
+    renderBoundingBoxes();
+    renderProperties();
+  }
+  document.getElementById('tree-search').addEventListener('input', (e) => renderTree(e.target.value));
+  document.getElementById('prop-search').addEventListener('input', () => renderProperties());
+  document.getElementById('btn-boxes').addEventListener('click', (e) => {
+    showBoxes = !showBoxes;
+    e.currentTarget.classList.toggle('active', showBoxes);
+    renderBoundingBoxes();
+  });
+  function updateTransform() {
+    const z = Number(document.getElementById('sel-zoom').value || 1);
+    if (mode3D) {
+      wrapper.style.transform = `scale(${z * 0.8}) rotateX(24deg) rotateY(-28deg)`;
+    } else {
+      wrapper.style.transform = `scale(${z})`;
+    }
+  }
+  document.getElementById('btn-3d').addEventListener('click', (e) => {
+    mode3D = !mode3D;
+    e.currentTarget.classList.toggle('active', mode3D);
+    document.getElementById('lbl-depth-slider').style.display = mode3D ? 'inline-flex' : 'none';
+    updateTransform();
+    renderBoundingBoxes();
+  });
+  document.getElementById('rng-z-space').addEventListener('input', () => renderBoundingBoxes());
+  document.getElementById('sel-zoom').addEventListener('change', () => updateTransform());
+  document.getElementById('sel-filter').addEventListener('change', (e) => {
+    imgEl.className = 'gss-screenshot-img ' + (e.target.value || '');
+  });
+  document.getElementById('btn-copy-node').addEventListener('click', () => {
+    const node = nodeMap.get(selectedId);
+    if (node && navigator.clipboard) navigator.clipboard.writeText(JSON.stringify(node, null, 2));
+  });
+  renderTree('');
+  renderBoundingBoxes();
+  renderProperties();
+})();
+</script>
+</body>
+</html>

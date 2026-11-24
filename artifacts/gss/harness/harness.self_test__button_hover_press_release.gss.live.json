@@ -1,0 +1,3360 @@
+{
+  "format": "godot_scene_snapshot_live",
+  "short_name": "GSS_LIVE",
+  "version": "1.0",
+  "recording_name": "harness.self_test__button_hover_press_release",
+  "metadata": {
+    "recording_name": "harness.self_test__button_hover_press_release",
+    "timestamp_iso": "2026-11-24T01:45:48",
+    "total_frames": 44,
+    "delta_frames": 43,
+    "viewport_size": {
+      "width": 1280,
+      "height": 720
+    },
+    "duration_ms": 702,
+    "active_node_count": 1,
+    "bounces_detected": 0,
+    "files": {
+      "png": "res://artifacts/gss/harness/harness.self_test__button_hover_press_release.png",
+      "json": "res://artifacts/gss/harness/harness.self_test__button_hover_press_release.gss.live.json",
+      "html": "res://artifacts/gss/harness/harness.self_test__button_hover_press_release.gss.live.html",
+      "global_png": "/Users/rnewquist/Documents/Godot/material3/artifacts/gss/harness/harness.self_test__button_hover_press_release.png",
+      "global_json": "/Users/rnewquist/Documents/Godot/material3/artifacts/gss/harness/harness.self_test__button_hover_press_release.gss.live.json",
+      "global_html": "/Users/rnewquist/Documents/Godot/material3/artifacts/gss/harness/harness.self_test__button_hover_press_release.gss.live.html"
+    }
+  },
+  "initial_snapshot": {
+    "metadata": {
+      "format": "godot_scene_snapshot",
+      "short_name": "GSS",
+      "version": "1.0",
+      "snapshot_name": "harness.self_test__button_hover_press_release_frame_0",
+      "timestamp_iso": "2026-11-24T01:45:47",
+      "timestamp_ticks_ms": 38156,
+      "engine_version": "4.7.2-stable (official)",
+      "display_server": "macOS",
+      "viewport_size": {
+        "width": 1280,
+        "height": 720
+      },
+      "total_nodes": 2,
+      "visible_nodes": 2,
+      "class_counts": {
+        "ColorRect": 1,
+        "Control": 1
+      },
+      "camera_3d": {},
+      "camera_2d": {},
+      "performance": {
+        "fps": 53.0,
+        "process_frames": 2009,
+        "physics_frames": 2231,
+        "memory_static_bytes": 64744003,
+        "object_count": 1699,
+        "node_count": 8
+      },
+      "frame_index": 0,
+      "elapsed_ms": 0
+    },
+    "hierarchy": {
+      "id": "node_0",
+      "parent_id": "",
+      "name": "HarnessButton",
+      "class": "ColorRect",
+      "category": "control",
+      "path": "/root/@Node@82/GSSStageViewport/HarnessButton",
+      "depth": 0,
+      "index_in_parent": 0,
+      "children_count": 1,
+      "groups": [],
+      "script": "",
+      "process_mode": 0,
+      "visible": true,
+      "screen_rect": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 1280.0,
+        "height": 720.0,
+        "has_bounds": true,
+        "on_screen": true
+      },
+      "script_variables": {},
+      "transforms": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "global_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "size": {
+          "x": 1280.0,
+          "y": 720.0
+        },
+        "custom_minimum_size": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "rotation_deg": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "anchors": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 0.0,
+          "bottom": 0.0
+        },
+        "offsets": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 1280.0,
+          "bottom": 720.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_vertical": 1
+      },
+      "visibility": {
+        "visible": true,
+        "visible_in_tree": true,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "top_level": false,
+        "show_behind_parent": false,
+        "clip_children": 0,
+        "light_mask": 1,
+        "visibility_layer": 1,
+        "z_index": 0,
+        "z_as_relative": true,
+        "y_sort_enabled": false
+      },
+      "physics": {},
+      "ui_and_content": {
+        "focus_mode": 0,
+        "mouse_filter": 2,
+        "tooltip_text": "",
+        "color": {
+          "r": 0.9788,
+          "g": 0.9745,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#faf9ffff"
+        }
+      },
+      "signals": [
+        {
+          "signal": "child_order_changed",
+          "target": "/root/@Node@82/GSSStageViewport",
+          "method": "Viewport::canvas_parent_mark_dirty"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+          "method": "Control::_size_changed"
+        }
+      ],
+      "all_properties": {
+        "accessibility_controls_nodes": [],
+        "accessibility_described_by_nodes": [],
+        "accessibility_description": "",
+        "accessibility_flow_to_nodes": [],
+        "accessibility_labeled_by_nodes": [],
+        "accessibility_live": 0,
+        "accessibility_name": "",
+        "anchor_bottom": 0.0,
+        "anchor_left": 0.0,
+        "anchor_right": 0.0,
+        "anchor_top": 0.0,
+        "anchors_preset": 0,
+        "auto_translate_mode": 0,
+        "clip_children": 0,
+        "clip_contents": false,
+        "color": {
+          "r": 0.9788,
+          "g": 0.9745,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#faf9ffff"
+        },
+        "custom_maximum_size": {
+          "x": -1.0,
+          "y": -1.0
+        },
+        "custom_minimum_size": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "editor_description": "",
+        "focus_behavior_recursive": 0,
+        "focus_mode": 0,
+        "focus_neighbor_bottom": "",
+        "focus_neighbor_left": "",
+        "focus_neighbor_right": "",
+        "focus_neighbor_top": "",
+        "focus_next": "",
+        "focus_previous": "",
+        "grow_horizontal": 1,
+        "grow_vertical": 1,
+        "layout_direction": 0,
+        "layout_mode": 3,
+        "light_mask": 1,
+        "localize_numeral_system": true,
+        "material": null,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "mouse_behavior_recursive": 0,
+        "mouse_default_cursor_shape": 0,
+        "mouse_filter": 2,
+        "mouse_force_pass_scroll_events": true,
+        "offset_bottom": 720.0,
+        "offset_left": 0.0,
+        "offset_right": 1280.0,
+        "offset_top": 0.0,
+        "offset_transform_enabled": false,
+        "offset_transform_pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_pivot_ratio": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "offset_transform_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_position_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_rotation": 0.0,
+        "offset_transform_scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "offset_transform_visual_only": true,
+        "oversampling_with_scale": 0,
+        "physics_interpolation_mode": 2,
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "pivot_offset_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "process_mode": 0,
+        "process_physics_priority": 0,
+        "process_priority": 0,
+        "process_thread_group": 0,
+        "propagate_maximum_size": false,
+        "rotation": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "shortcut_context": null,
+        "show_behind_parent": false,
+        "size": {
+          "x": 1280.0,
+          "y": 720.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_stretch_ratio": 1.0,
+        "size_flags_vertical": 1,
+        "texture_filter": 0,
+        "texture_repeat": 0,
+        "theme": null,
+        "theme_type_variation": "",
+        "tooltip_auto_translate_mode": 0,
+        "tooltip_text": "",
+        "top_level": false,
+        "translation_context": "",
+        "unique_name_in_owner": false,
+        "use_parent_material": false,
+        "visibility_layer": 1,
+        "visible": true,
+        "y_sort_enabled": false,
+        "z_as_relative": true,
+        "z_index": 0
+      },
+      "children": [
+        {
+          "id": "node_1",
+          "parent_id": "node_0",
+          "name": "ProbeButton",
+          "class": "Control",
+          "category": "control",
+          "path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+          "depth": 1,
+          "index_in_parent": 0,
+          "children_count": 0,
+          "groups": [],
+          "script": "res://addons/material3/components/buttons/m3_button.gd",
+          "process_mode": 0,
+          "visible": true,
+          "screen_rect": {
+            "x": 200.0,
+            "y": 160.0,
+            "width": 88.0,
+            "height": 40.0,
+            "has_bounds": true,
+            "on_screen": true
+          },
+          "script_variables": {
+            "_current_elevation": 0,
+            "_elevation_tween": null,
+            "_font": "<FontFile>",
+            "_font_size": 14,
+            "_hover_progress": 0.0,
+            "_is_pointer_down": false,
+            "_motion_tween": null,
+            "_pointer_inside": false,
+            "_press_progress": 0.0,
+            "_ripple": "<Node:M3Ripple (Control)>",
+            "_ripple_wave_alpha": 0.0,
+            "_ripple_wave_count": 0,
+            "_ripple_wave_radius": 0.0,
+            "_state_layer_alpha": 0.0,
+            "_target_elevation": 0,
+            "_theme_connected": true,
+            "button_pressed": false,
+            "button_shape": 0,
+            "button_size": 1,
+            "button_type": 1,
+            "corner_bottom_left": -1.0,
+            "corner_bottom_right": -1.0,
+            "corner_top_left": -1.0,
+            "corner_top_right": -1.0,
+            "current_state": 0,
+            "custom_corner_radius": -1.0,
+            "custom_primary_color": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.0,
+              "hex": "#ffffff00"
+            },
+            "density_override": 99,
+            "disabled": false,
+            "icon_size": 18.0,
+            "leading_icon": "",
+            "leading_icon_texture": null,
+            "ripple_enabled": true,
+            "shape_token": 9999,
+            "text": "Probe",
+            "toggle_mode": false,
+            "touch_target_min_size": {
+              "x": 48.0,
+              "y": 48.0
+            },
+            "trailing_icon": "",
+            "trailing_icon_texture": null,
+            "variant": 0,
+            "width_bonus": 0.0
+          },
+          "transforms": {
+            "position": {
+              "x": 200.0,
+              "y": 160.0
+            },
+            "global_position": {
+              "x": 200.0,
+              "y": 160.0
+            },
+            "size": {
+              "x": 88.0,
+              "y": 40.0
+            },
+            "custom_minimum_size": {
+              "x": 88.0,
+              "y": 40.0
+            },
+            "rotation_deg": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "anchors": {
+              "left": 0.0,
+              "top": 0.0,
+              "right": 0.0,
+              "bottom": 0.0
+            },
+            "offsets": {
+              "left": 200.0,
+              "top": 160.0,
+              "right": 288.0,
+              "bottom": 200.0
+            },
+            "size_flags_horizontal": 1,
+            "size_flags_vertical": 1
+          },
+          "visibility": {
+            "visible": true,
+            "visible_in_tree": true,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "top_level": false,
+            "show_behind_parent": false,
+            "clip_children": 0,
+            "light_mask": 1,
+            "visibility_layer": 1,
+            "z_index": 0,
+            "z_as_relative": true,
+            "y_sort_enabled": false
+          },
+          "physics": {},
+          "ui_and_content": {
+            "focus_mode": 2,
+            "mouse_filter": 0,
+            "tooltip_text": ""
+          },
+          "signals": [
+            {
+              "signal": "pressed",
+              "target": "<GDScript>",
+              "method": "<anonymous lambda>"
+            },
+            {
+              "signal": "child_order_changed",
+              "target": "/root/@Node@82/GSSStageViewport",
+              "method": "Viewport::canvas_parent_mark_dirty"
+            },
+            {
+              "signal": "item_rect_changed",
+              "target": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton/M3Ripple",
+              "method": "Control::_size_changed"
+            },
+            {
+              "signal": "resized",
+              "target": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+              "method": "_on_resized"
+            },
+            {
+              "signal": "mouse_entered",
+              "target": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+              "method": "_on_mouse_entered"
+            },
+            {
+              "signal": "mouse_exited",
+              "target": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+              "method": "_on_mouse_exited"
+            },
+            {
+              "signal": "focus_entered",
+              "target": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+              "method": "_on_focus_entered"
+            },
+            {
+              "signal": "focus_exited",
+              "target": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+              "method": "_on_focus_exited"
+            }
+          ],
+          "all_properties": {
+            "accessibility_controls_nodes": [],
+            "accessibility_described_by_nodes": [],
+            "accessibility_description": "",
+            "accessibility_flow_to_nodes": [],
+            "accessibility_labeled_by_nodes": [],
+            "accessibility_live": 0,
+            "accessibility_name": "",
+            "anchor_bottom": 0.0,
+            "anchor_left": 0.0,
+            "anchor_right": 0.0,
+            "anchor_top": 0.0,
+            "anchors_preset": 0,
+            "auto_translate_mode": 0,
+            "button_pressed": false,
+            "button_shape": 0,
+            "button_size": 1,
+            "button_type": 1,
+            "clip_children": 0,
+            "clip_contents": false,
+            "corner_bottom_left": -1.0,
+            "corner_bottom_right": -1.0,
+            "corner_top_left": -1.0,
+            "corner_top_right": -1.0,
+            "current_state": 0,
+            "custom_corner_radius": -1.0,
+            "custom_maximum_size": {
+              "x": -1.0,
+              "y": -1.0
+            },
+            "custom_minimum_size": {
+              "x": 88.0,
+              "y": 40.0
+            },
+            "custom_primary_color": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.0,
+              "hex": "#ffffff00"
+            },
+            "density_override": 99,
+            "disabled": false,
+            "editor_description": "",
+            "focus_behavior_recursive": 0,
+            "focus_mode": 2,
+            "focus_neighbor_bottom": "",
+            "focus_neighbor_left": "",
+            "focus_neighbor_right": "",
+            "focus_neighbor_top": "",
+            "focus_next": "",
+            "focus_previous": "",
+            "grow_horizontal": 1,
+            "grow_vertical": 1,
+            "icon_size": 18.0,
+            "layout_direction": 0,
+            "layout_mode": 0,
+            "leading_icon": "",
+            "leading_icon_texture": null,
+            "light_mask": 1,
+            "localize_numeral_system": true,
+            "material": null,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "mouse_behavior_recursive": 0,
+            "mouse_default_cursor_shape": 2,
+            "mouse_filter": 0,
+            "mouse_force_pass_scroll_events": true,
+            "offset_bottom": 200.0,
+            "offset_left": 200.0,
+            "offset_right": 288.0,
+            "offset_top": 160.0,
+            "offset_transform_enabled": false,
+            "offset_transform_pivot": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_pivot_ratio": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "offset_transform_position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_position_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_rotation": 0.0,
+            "offset_transform_scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "offset_transform_visual_only": true,
+            "oversampling_with_scale": 0,
+            "physics_interpolation_mode": 2,
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "pivot_offset_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "position": {
+              "x": 200.0,
+              "y": 160.0
+            },
+            "process_mode": 0,
+            "process_physics_priority": 0,
+            "process_priority": 0,
+            "process_thread_group": 0,
+            "propagate_maximum_size": false,
+            "ripple_enabled": true,
+            "rotation": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "shape_token": 9999,
+            "shortcut_context": null,
+            "show_behind_parent": false,
+            "size": {
+              "x": 88.0,
+              "y": 40.0
+            },
+            "size_flags_horizontal": 1,
+            "size_flags_stretch_ratio": 1.0,
+            "size_flags_vertical": 1,
+            "text": "Probe",
+            "texture_filter": 0,
+            "texture_repeat": 0,
+            "theme": null,
+            "theme_type_variation": "",
+            "toggle_mode": false,
+            "tooltip_auto_translate_mode": 0,
+            "tooltip_text": "",
+            "top_level": false,
+            "touch_target_min_size": {
+              "x": 48.0,
+              "y": 48.0
+            },
+            "trailing_icon": "",
+            "trailing_icon_texture": null,
+            "translation_context": "",
+            "unique_name_in_owner": false,
+            "use_parent_material": false,
+            "variant": 0,
+            "visibility_layer": 1,
+            "visible": true,
+            "width_bonus": 0.0,
+            "y_sort_enabled": false,
+            "z_as_relative": true,
+            "z_index": 0
+          },
+          "children": []
+        }
+      ]
+    },
+    "flat_nodes": [
+      {
+        "id": "node_0",
+        "parent_id": "",
+        "name": "HarnessButton",
+        "class": "ColorRect",
+        "category": "control",
+        "path": "/root/@Node@82/GSSStageViewport/HarnessButton",
+        "depth": 0,
+        "index_in_parent": 0,
+        "children_count": 1,
+        "groups": [],
+        "script": "",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 1280.0,
+          "height": 720.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {},
+        "transforms": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "global_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "size": {
+            "x": 1280.0,
+            "y": 720.0
+          },
+          "custom_minimum_size": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 1280.0,
+            "bottom": 720.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 0,
+          "mouse_filter": 2,
+          "tooltip_text": "",
+          "color": {
+            "r": 0.9788,
+            "g": 0.9745,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#faf9ffff"
+          }
+        },
+        "signals": [
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@82/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+            "method": "Control::_size_changed"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "clip_children": 0,
+          "clip_contents": false,
+          "color": {
+            "r": 0.9788,
+            "g": 0.9745,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#faf9ffff"
+          },
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "editor_description": "",
+          "focus_behavior_recursive": 0,
+          "focus_mode": 0,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "layout_direction": 0,
+          "layout_mode": 3,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 0,
+          "mouse_filter": 2,
+          "mouse_force_pass_scroll_events": true,
+          "offset_bottom": 720.0,
+          "offset_left": 0.0,
+          "offset_right": 1280.0,
+          "offset_top": 0.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "size": {
+            "x": 1280.0,
+            "y": 720.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "visibility_layer": 1,
+          "visible": true,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        }
+      },
+      {
+        "id": "node_1",
+        "parent_id": "node_0",
+        "name": "ProbeButton",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "depth": 1,
+        "index_in_parent": 0,
+        "children_count": 0,
+        "groups": [],
+        "script": "res://addons/material3/components/buttons/m3_button.gd",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 200.0,
+          "y": 160.0,
+          "width": 88.0,
+          "height": 40.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {
+          "_current_elevation": 0,
+          "_elevation_tween": null,
+          "_font": "<FontFile>",
+          "_font_size": 14,
+          "_hover_progress": 0.0,
+          "_is_pointer_down": false,
+          "_motion_tween": null,
+          "_pointer_inside": false,
+          "_press_progress": 0.0,
+          "_ripple": "<Node:M3Ripple (Control)>",
+          "_ripple_wave_alpha": 0.0,
+          "_ripple_wave_count": 0,
+          "_ripple_wave_radius": 0.0,
+          "_state_layer_alpha": 0.0,
+          "_target_elevation": 0,
+          "_theme_connected": true,
+          "button_pressed": false,
+          "button_shape": 0,
+          "button_size": 1,
+          "button_type": 1,
+          "corner_bottom_left": -1.0,
+          "corner_bottom_right": -1.0,
+          "corner_top_left": -1.0,
+          "corner_top_right": -1.0,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "custom_primary_color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 0.0,
+            "hex": "#ffffff00"
+          },
+          "density_override": 99,
+          "disabled": false,
+          "icon_size": 18.0,
+          "leading_icon": "",
+          "leading_icon_texture": null,
+          "ripple_enabled": true,
+          "shape_token": 9999,
+          "text": "Probe",
+          "toggle_mode": false,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "trailing_icon": "",
+          "trailing_icon_texture": null,
+          "variant": 0,
+          "width_bonus": 0.0
+        },
+        "transforms": {
+          "position": {
+            "x": 200.0,
+            "y": 160.0
+          },
+          "global_position": {
+            "x": 200.0,
+            "y": 160.0
+          },
+          "size": {
+            "x": 88.0,
+            "y": 40.0
+          },
+          "custom_minimum_size": {
+            "x": 88.0,
+            "y": 40.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 200.0,
+            "top": 160.0,
+            "right": 288.0,
+            "bottom": 200.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 2,
+          "mouse_filter": 0,
+          "tooltip_text": ""
+        },
+        "signals": [
+          {
+            "signal": "pressed",
+            "target": "<GDScript>",
+            "method": "<anonymous lambda>"
+          },
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@82/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton/M3Ripple",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "resized",
+            "target": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+            "method": "_on_resized"
+          },
+          {
+            "signal": "mouse_entered",
+            "target": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+            "method": "_on_mouse_entered"
+          },
+          {
+            "signal": "mouse_exited",
+            "target": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+            "method": "_on_mouse_exited"
+          },
+          {
+            "signal": "focus_entered",
+            "target": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+            "method": "_on_focus_entered"
+          },
+          {
+            "signal": "focus_exited",
+            "target": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+            "method": "_on_focus_exited"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "button_pressed": false,
+          "button_shape": 0,
+          "button_size": 1,
+          "button_type": 1,
+          "clip_children": 0,
+          "clip_contents": false,
+          "corner_bottom_left": -1.0,
+          "corner_bottom_right": -1.0,
+          "corner_top_left": -1.0,
+          "corner_top_right": -1.0,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 88.0,
+            "y": 40.0
+          },
+          "custom_primary_color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 0.0,
+            "hex": "#ffffff00"
+          },
+          "density_override": 99,
+          "disabled": false,
+          "editor_description": "",
+          "focus_behavior_recursive": 0,
+          "focus_mode": 2,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "icon_size": 18.0,
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "leading_icon": "",
+          "leading_icon_texture": null,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 2,
+          "mouse_filter": 0,
+          "mouse_force_pass_scroll_events": true,
+          "offset_bottom": 200.0,
+          "offset_left": 200.0,
+          "offset_right": 288.0,
+          "offset_top": 160.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "position": {
+            "x": 200.0,
+            "y": 160.0
+          },
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "ripple_enabled": true,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shape_token": 9999,
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "size": {
+            "x": 88.0,
+            "y": 40.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "text": "Probe",
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "toggle_mode": false,
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "trailing_icon": "",
+          "trailing_icon_texture": null,
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "variant": 0,
+          "visibility_layer": 1,
+          "visible": true,
+          "width_bonus": 0.0,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        }
+      }
+    ]
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "elapsed_ms": 3,
+      "delta_sec": 0.0167,
+      "process_frame": 2010,
+      "physics_frame": 2232,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton": {
+          "script_variables": {
+            "_elevation_tween": "<Tween>",
+            "_motion_tween": "<Tween>",
+            "_pointer_inside": true,
+            "_target_elevation": 1,
+            "current_state": 1
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 2,
+      "elapsed_ms": 16,
+      "delta_sec": 0.0167,
+      "process_frame": 2011,
+      "physics_frame": 2233,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton": {
+          "script_variables": {
+            "_hover_progress": 0.2811,
+            "_state_layer_alpha": 0.0238
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 3,
+      "elapsed_ms": 33,
+      "delta_sec": 0.0167,
+      "process_frame": 2012,
+      "physics_frame": 2234,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton": {
+          "script_variables": {
+            "_current_elevation": 1,
+            "_hover_progress": 0.5038,
+            "_state_layer_alpha": 0.0424
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 4,
+      "elapsed_ms": 50,
+      "delta_sec": 0.0167,
+      "process_frame": 2013,
+      "physics_frame": 2235,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton": {
+          "script_variables": {
+            "_hover_progress": 0.675,
+            "_state_layer_alpha": 0.0563
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 5,
+      "elapsed_ms": 66,
+      "delta_sec": 0.0175,
+      "process_frame": 2014,
+      "physics_frame": 2236,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton": {
+          "script_variables": {
+            "_hover_progress": 0.8015,
+            "_state_layer_alpha": 0.0663
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 6,
+      "elapsed_ms": 84,
+      "delta_sec": 0.0181,
+      "process_frame": 2015,
+      "physics_frame": 2237,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton": {
+          "script_variables": {
+            "_hover_progress": 0.8936,
+            "_state_layer_alpha": 0.0732
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 7,
+      "elapsed_ms": 100,
+      "delta_sec": 0.0181,
+      "process_frame": 2016,
+      "physics_frame": 2238,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton": {
+          "script_variables": {
+            "_hover_progress": 0.9529,
+            "_state_layer_alpha": 0.0774
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 8,
+      "elapsed_ms": 118,
+      "delta_sec": 0.0181,
+      "process_frame": 2017,
+      "physics_frame": 2239,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton": {
+          "script_variables": {
+            "_hover_progress": 0.9847,
+            "_is_pointer_down": true,
+            "_ripple_wave_alpha": 0.1,
+            "_ripple_wave_count": 1,
+            "_state_layer_alpha": 0.0794,
+            "_target_elevation": 0,
+            "current_state": 3
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 9,
+      "elapsed_ms": 134,
+      "delta_sec": 0.0181,
+      "process_frame": 2018,
+      "physics_frame": 2241,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton": {
+          "script_variables": {
+            "_hover_progress": 0.9893,
+            "_press_progress": 0.3018,
+            "_ripple_wave_radius": 8.1659,
+            "_state_layer_alpha": 0.086
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 10,
+      "elapsed_ms": 151,
+      "delta_sec": 0.0181,
+      "process_frame": 2019,
+      "physics_frame": 2242,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton": {
+          "script_variables": {
+            "_current_elevation": 0,
+            "_hover_progress": 0.9929,
+            "_press_progress": 0.5358,
+            "_ripple_wave_radius": 15.49,
+            "_state_layer_alpha": 0.091
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 11,
+      "elapsed_ms": 167,
+      "delta_sec": 0.0181,
+      "process_frame": 2020,
+      "physics_frame": 2243,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton": {
+          "script_variables": {
+            "_hover_progress": 0.9956,
+            "_press_progress": 0.7106,
+            "_ripple_wave_radius": 22.0182,
+            "_state_layer_alpha": 0.0946
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 12,
+      "elapsed_ms": 185,
+      "delta_sec": 0.0181,
+      "process_frame": 2021,
+      "physics_frame": 2244,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton": {
+          "script_variables": {
+            "_hover_progress": 0.9975,
+            "_press_progress": 0.8349,
+            "_ripple_wave_radius": 27.7962,
+            "_state_layer_alpha": 0.0971
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 13,
+      "elapsed_ms": 202,
+      "delta_sec": 0.0181,
+      "process_frame": 2022,
+      "physics_frame": 2245,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton": {
+          "script_variables": {
+            "_hover_progress": 0.9987,
+            "_press_progress": 0.9173,
+            "_ripple_wave_radius": 32.8699,
+            "_state_layer_alpha": 0.0987
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 14,
+      "elapsed_ms": 217,
+      "delta_sec": 0.0181,
+      "process_frame": 2023,
+      "physics_frame": 2246,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton": {
+          "script_variables": {
+            "_hover_progress": 0.9995,
+            "_press_progress": 0.9663,
+            "_ripple_wave_radius": 37.285,
+            "_state_layer_alpha": 0.0996
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 15,
+      "elapsed_ms": 235,
+      "delta_sec": 0.0181,
+      "process_frame": 2024,
+      "physics_frame": 2247,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton": {
+          "script_variables": {
+            "_hover_progress": 0.9999,
+            "_press_progress": 0.9907,
+            "_ripple_wave_radius": 41.0873,
+            "_state_layer_alpha": 0.0999
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 16,
+      "elapsed_ms": 251,
+      "delta_sec": 0.0181,
+      "process_frame": 2025,
+      "physics_frame": 2248,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton": {
+          "script_variables": {
+            "_hover_progress": 1.0,
+            "_press_progress": 0.9991,
+            "_ripple_wave_radius": 44.3225,
+            "_state_layer_alpha": 0.1
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 17,
+      "elapsed_ms": 268,
+      "delta_sec": 0.0181,
+      "process_frame": 2026,
+      "physics_frame": 2249,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton": {
+          "script_variables": {
+            "_is_pointer_down": false,
+            "_press_progress": 1.0,
+            "_ripple_wave_radius": 47.0366,
+            "_target_elevation": 1,
+            "current_state": 1
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 18,
+      "elapsed_ms": 284,
+      "delta_sec": 0.0181,
+      "process_frame": 2027,
+      "physics_frame": 2250,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton": {
+          "script_variables": {
+            "_press_progress": 0.6982,
+            "_ripple_wave_alpha": 0.0799,
+            "_state_layer_alpha": 0.0936
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 19,
+      "elapsed_ms": 301,
+      "delta_sec": 0.0181,
+      "process_frame": 2028,
+      "physics_frame": 2251,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton": {
+          "script_variables": {
+            "_current_elevation": 1,
+            "_press_progress": 0.4642,
+            "_ripple_wave_alpha": 0.0626,
+            "_state_layer_alpha": 0.0888
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 20,
+      "elapsed_ms": 318,
+      "delta_sec": 0.0181,
+      "process_frame": 2029,
+      "physics_frame": 2252,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton": {
+          "script_variables": {
+            "_press_progress": 0.2894,
+            "_ripple_wave_alpha": 0.0481,
+            "_state_layer_alpha": 0.0852
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 21,
+      "elapsed_ms": 334,
+      "delta_sec": 0.0181,
+      "process_frame": 2030,
+      "physics_frame": 2254,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton": {
+          "script_variables": {
+            "_press_progress": 0.1651,
+            "_ripple_wave_alpha": 0.036,
+            "_state_layer_alpha": 0.0828
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 22,
+      "elapsed_ms": 352,
+      "delta_sec": 0.0181,
+      "process_frame": 2031,
+      "physics_frame": 2255,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton": {
+          "script_variables": {
+            "_pointer_inside": false,
+            "_press_progress": 0.0827,
+            "_ripple_wave_alpha": 0.0261,
+            "_state_layer_alpha": 0.0813,
+            "_target_elevation": 0,
+            "current_state": 2
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 23,
+      "elapsed_ms": 368,
+      "delta_sec": 0.0181,
+      "process_frame": 2032,
+      "physics_frame": 2256,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton": {
+          "script_variables": {
+            "_hover_progress": 0.6982,
+            "_press_progress": 0.0578,
+            "_ripple_wave_alpha": 0.0182,
+            "_state_layer_alpha": 0.0872
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 24,
+      "elapsed_ms": 384,
+      "delta_sec": 0.0181,
+      "process_frame": 2033,
+      "physics_frame": 2257,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton": {
+          "script_variables": {
+            "_current_elevation": 0,
+            "_hover_progress": 0.4642,
+            "_press_progress": 0.0384,
+            "_ripple_wave_alpha": 0.0121,
+            "_state_layer_alpha": 0.0918
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 25,
+      "elapsed_ms": 401,
+      "delta_sec": 0.0181,
+      "process_frame": 2034,
+      "physics_frame": 2258,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton": {
+          "script_variables": {
+            "_hover_progress": 0.2894,
+            "_press_progress": 0.0239,
+            "_ripple_wave_alpha": 0.0075,
+            "_state_layer_alpha": 0.0951
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 26,
+      "elapsed_ms": 418,
+      "delta_sec": 0.0181,
+      "process_frame": 2035,
+      "physics_frame": 2259,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton": {
+          "script_variables": {
+            "_hover_progress": 0.1651,
+            "_press_progress": 0.0137,
+            "_ripple_wave_alpha": 0.0043,
+            "_state_layer_alpha": 0.0974
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 27,
+      "elapsed_ms": 434,
+      "delta_sec": 0.0181,
+      "process_frame": 2036,
+      "physics_frame": 2260,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton": {
+          "script_variables": {
+            "_hover_progress": 0.0827,
+            "_press_progress": 0.0068,
+            "_ripple_wave_alpha": 0.0021,
+            "_state_layer_alpha": 0.0988
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 28,
+      "elapsed_ms": 451,
+      "delta_sec": 0.0181,
+      "process_frame": 2037,
+      "physics_frame": 2261,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton": {
+          "script_variables": {
+            "_hover_progress": 0.0337,
+            "_press_progress": 0.0028,
+            "_ripple_wave_alpha": 0.0009,
+            "_state_layer_alpha": 0.0996
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 29,
+      "elapsed_ms": 468,
+      "delta_sec": 0.0181,
+      "process_frame": 2038,
+      "physics_frame": 2262,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton": {
+          "script_variables": {
+            "_hover_progress": 0.0093,
+            "_press_progress": 0.0008,
+            "_ripple_wave_alpha": 0.0002,
+            "_state_layer_alpha": 0.0999
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 30,
+      "elapsed_ms": 485,
+      "delta_sec": 0.0181,
+      "process_frame": 2039,
+      "physics_frame": 2263,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton": {
+          "script_variables": {
+            "_hover_progress": 0.0009,
+            "_press_progress": 0.0001,
+            "_ripple_wave_alpha": 0.0,
+            "_state_layer_alpha": 0.1
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 31,
+      "elapsed_ms": 501,
+      "delta_sec": 0.0181,
+      "process_frame": 2040,
+      "physics_frame": 2264,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton": {
+          "script_variables": {
+            "_hover_progress": 0.0,
+            "_press_progress": 0.0,
+            "_ripple_wave_count": 0,
+            "_ripple_wave_radius": 0.0
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 32,
+      "elapsed_ms": 518,
+      "delta_sec": 0.0181,
+      "process_frame": 2041,
+      "physics_frame": 2265,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 33,
+      "elapsed_ms": 535,
+      "delta_sec": 0.0181,
+      "process_frame": 2042,
+      "physics_frame": 2267,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 34,
+      "elapsed_ms": 552,
+      "delta_sec": 0.0181,
+      "process_frame": 2043,
+      "physics_frame": 2268,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 35,
+      "elapsed_ms": 569,
+      "delta_sec": 0.0181,
+      "process_frame": 2044,
+      "physics_frame": 2269,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 36,
+      "elapsed_ms": 585,
+      "delta_sec": 0.0181,
+      "process_frame": 2045,
+      "physics_frame": 2270,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 37,
+      "elapsed_ms": 602,
+      "delta_sec": 0.0181,
+      "process_frame": 2046,
+      "physics_frame": 2271,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 38,
+      "elapsed_ms": 618,
+      "delta_sec": 0.0181,
+      "process_frame": 2047,
+      "physics_frame": 2272,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 39,
+      "elapsed_ms": 635,
+      "delta_sec": 0.0181,
+      "process_frame": 2048,
+      "physics_frame": 2273,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 40,
+      "elapsed_ms": 652,
+      "delta_sec": 0.0181,
+      "process_frame": 2049,
+      "physics_frame": 2274,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 41,
+      "elapsed_ms": 669,
+      "delta_sec": 0.0181,
+      "process_frame": 2050,
+      "physics_frame": 2275,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 42,
+      "elapsed_ms": 685,
+      "delta_sec": 0.0181,
+      "process_frame": 2051,
+      "physics_frame": 2276,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 43,
+      "elapsed_ms": 702,
+      "delta_sec": 0.0181,
+      "process_frame": 2052,
+      "physics_frame": 2277,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    }
+  ],
+  "analysis": {
+    "summary": {
+      "total_frames": 44,
+      "delta_frames": 43,
+      "duration_ms": 702,
+      "initial_node_count": 2,
+      "active_node_count": 1,
+      "static_node_count": 1,
+      "spawned_node_count": 0,
+      "removed_node_count": 0,
+      "bounces_detected": 0,
+      "floor_contacts_detected": 0,
+      "total_events": 119
+    },
+    "node_trajectories": {
+      "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton": {
+        "name": "ProbeButton",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "frames_changed": 31,
+        "is_3d": false,
+        "start_position": {
+          "x": 200.0,
+          "y": 160.0
+        },
+        "end_position": {
+          "x": 200.0,
+          "y": 160.0
+        },
+        "min_position": {
+          "x": 200.0,
+          "y": 160.0
+        },
+        "max_position": {
+          "x": 200.0,
+          "y": 160.0
+        },
+        "total_distance": 0.0,
+        "peak_speed": 0.0,
+        "peak_speed_frame": 0,
+        "bounce_frames": [],
+        "bounces": [],
+        "screen_trail": [
+          {
+            "x": 244.0,
+            "y": 180.0
+          }
+        ],
+        "mutated_properties": {
+          "script_variables._elevation_tween": {
+            "initial": null,
+            "final": "<Tween>",
+            "change_count": 1
+          },
+          "script_variables._motion_tween": {
+            "initial": null,
+            "final": "<Tween>",
+            "change_count": 1
+          },
+          "script_variables._pointer_inside": {
+            "initial": false,
+            "final": false,
+            "change_count": 2
+          },
+          "script_variables._target_elevation": {
+            "initial": 0,
+            "final": 0,
+            "change_count": 4
+          },
+          "script_variables.current_state": {
+            "initial": 0,
+            "final": 2,
+            "change_count": 4
+          },
+          "script_variables._hover_progress": {
+            "initial": 0.0,
+            "final": 0.0,
+            "change_count": 24
+          },
+          "script_variables._state_layer_alpha": {
+            "initial": 0.0,
+            "final": 0.1,
+            "change_count": 28
+          },
+          "script_variables._current_elevation": {
+            "initial": 0,
+            "final": 0,
+            "change_count": 4
+          },
+          "script_variables._is_pointer_down": {
+            "initial": false,
+            "final": false,
+            "change_count": 2
+          },
+          "script_variables._ripple_wave_alpha": {
+            "initial": 0.0,
+            "final": 0.0,
+            "change_count": 14
+          },
+          "script_variables._ripple_wave_count": {
+            "initial": 0,
+            "final": 0,
+            "change_count": 2
+          },
+          "script_variables._press_progress": {
+            "initial": 0.0,
+            "final": 0.0,
+            "change_count": 23
+          },
+          "script_variables._ripple_wave_radius": {
+            "initial": 0.0,
+            "final": 0.0,
+            "change_count": 10
+          }
+        },
+        "displacement": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      }
+    },
+    "events": [
+      {
+        "frame_index": 1,
+        "elapsed_ms": 3,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_elevation_tween",
+        "old_value": null,
+        "new_value": "<Tween>"
+      },
+      {
+        "frame_index": 1,
+        "elapsed_ms": 3,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_motion_tween",
+        "old_value": null,
+        "new_value": "<Tween>"
+      },
+      {
+        "frame_index": 1,
+        "elapsed_ms": 3,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_pointer_inside",
+        "old_value": false,
+        "new_value": true
+      },
+      {
+        "frame_index": 1,
+        "elapsed_ms": 3,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_target_elevation",
+        "old_value": 0,
+        "new_value": 1
+      },
+      {
+        "frame_index": 1,
+        "elapsed_ms": 3,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "current_state",
+        "old_value": 0,
+        "new_value": 1
+      },
+      {
+        "frame_index": 2,
+        "elapsed_ms": 16,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_hover_progress",
+        "old_value": 0.0,
+        "new_value": 0.2811
+      },
+      {
+        "frame_index": 2,
+        "elapsed_ms": 16,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0,
+        "new_value": 0.0238
+      },
+      {
+        "frame_index": 3,
+        "elapsed_ms": 33,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_current_elevation",
+        "old_value": 0,
+        "new_value": 1
+      },
+      {
+        "frame_index": 3,
+        "elapsed_ms": 33,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_hover_progress",
+        "old_value": 0.2811,
+        "new_value": 0.5038
+      },
+      {
+        "frame_index": 3,
+        "elapsed_ms": 33,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0238,
+        "new_value": 0.0424
+      },
+      {
+        "frame_index": 4,
+        "elapsed_ms": 50,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_hover_progress",
+        "old_value": 0.5038,
+        "new_value": 0.675
+      },
+      {
+        "frame_index": 4,
+        "elapsed_ms": 50,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0424,
+        "new_value": 0.0563
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 66,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_hover_progress",
+        "old_value": 0.675,
+        "new_value": 0.8015
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 66,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0563,
+        "new_value": 0.0663
+      },
+      {
+        "frame_index": 6,
+        "elapsed_ms": 84,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_hover_progress",
+        "old_value": 0.8015,
+        "new_value": 0.8936
+      },
+      {
+        "frame_index": 6,
+        "elapsed_ms": 84,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0663,
+        "new_value": 0.0732
+      },
+      {
+        "frame_index": 7,
+        "elapsed_ms": 100,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_hover_progress",
+        "old_value": 0.8936,
+        "new_value": 0.9529
+      },
+      {
+        "frame_index": 7,
+        "elapsed_ms": 100,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0732,
+        "new_value": 0.0774
+      },
+      {
+        "frame_index": 8,
+        "elapsed_ms": 118,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_hover_progress",
+        "old_value": 0.9529,
+        "new_value": 0.9847
+      },
+      {
+        "frame_index": 8,
+        "elapsed_ms": 118,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_is_pointer_down",
+        "old_value": false,
+        "new_value": true
+      },
+      {
+        "frame_index": 8,
+        "elapsed_ms": 118,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0,
+        "new_value": 0.1
+      },
+      {
+        "frame_index": 8,
+        "elapsed_ms": 118,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_ripple_wave_count",
+        "old_value": 0,
+        "new_value": 1
+      },
+      {
+        "frame_index": 8,
+        "elapsed_ms": 118,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0774,
+        "new_value": 0.0794
+      },
+      {
+        "frame_index": 8,
+        "elapsed_ms": 118,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_target_elevation",
+        "old_value": 1,
+        "new_value": 0
+      },
+      {
+        "frame_index": 8,
+        "elapsed_ms": 118,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "current_state",
+        "old_value": 1,
+        "new_value": 3
+      },
+      {
+        "frame_index": 9,
+        "elapsed_ms": 134,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_hover_progress",
+        "old_value": 0.9847,
+        "new_value": 0.9893
+      },
+      {
+        "frame_index": 9,
+        "elapsed_ms": 134,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_press_progress",
+        "old_value": 0.0,
+        "new_value": 0.3018
+      },
+      {
+        "frame_index": 9,
+        "elapsed_ms": 134,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_ripple_wave_radius",
+        "old_value": 0.0,
+        "new_value": 8.1659
+      },
+      {
+        "frame_index": 9,
+        "elapsed_ms": 134,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0794,
+        "new_value": 0.086
+      },
+      {
+        "frame_index": 10,
+        "elapsed_ms": 151,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_current_elevation",
+        "old_value": 1,
+        "new_value": 0
+      },
+      {
+        "frame_index": 10,
+        "elapsed_ms": 151,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_hover_progress",
+        "old_value": 0.9893,
+        "new_value": 0.9929
+      },
+      {
+        "frame_index": 10,
+        "elapsed_ms": 151,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_press_progress",
+        "old_value": 0.3018,
+        "new_value": 0.5358
+      },
+      {
+        "frame_index": 10,
+        "elapsed_ms": 151,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_ripple_wave_radius",
+        "old_value": 8.1659,
+        "new_value": 15.49
+      },
+      {
+        "frame_index": 10,
+        "elapsed_ms": 151,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_state_layer_alpha",
+        "old_value": 0.086,
+        "new_value": 0.091
+      },
+      {
+        "frame_index": 11,
+        "elapsed_ms": 167,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_hover_progress",
+        "old_value": 0.9929,
+        "new_value": 0.9956
+      },
+      {
+        "frame_index": 11,
+        "elapsed_ms": 167,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_press_progress",
+        "old_value": 0.5358,
+        "new_value": 0.7106
+      },
+      {
+        "frame_index": 11,
+        "elapsed_ms": 167,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_ripple_wave_radius",
+        "old_value": 15.49,
+        "new_value": 22.0182
+      },
+      {
+        "frame_index": 11,
+        "elapsed_ms": 167,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_state_layer_alpha",
+        "old_value": 0.091,
+        "new_value": 0.0946
+      },
+      {
+        "frame_index": 12,
+        "elapsed_ms": 185,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_hover_progress",
+        "old_value": 0.9956,
+        "new_value": 0.9975
+      },
+      {
+        "frame_index": 12,
+        "elapsed_ms": 185,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_press_progress",
+        "old_value": 0.7106,
+        "new_value": 0.8349
+      },
+      {
+        "frame_index": 12,
+        "elapsed_ms": 185,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_ripple_wave_radius",
+        "old_value": 22.0182,
+        "new_value": 27.7962
+      },
+      {
+        "frame_index": 12,
+        "elapsed_ms": 185,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0946,
+        "new_value": 0.0971
+      },
+      {
+        "frame_index": 13,
+        "elapsed_ms": 202,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_hover_progress",
+        "old_value": 0.9975,
+        "new_value": 0.9987
+      },
+      {
+        "frame_index": 13,
+        "elapsed_ms": 202,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_press_progress",
+        "old_value": 0.8349,
+        "new_value": 0.9173
+      },
+      {
+        "frame_index": 13,
+        "elapsed_ms": 202,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_ripple_wave_radius",
+        "old_value": 27.7962,
+        "new_value": 32.8699
+      },
+      {
+        "frame_index": 13,
+        "elapsed_ms": 202,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0971,
+        "new_value": 0.0987
+      },
+      {
+        "frame_index": 14,
+        "elapsed_ms": 217,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_hover_progress",
+        "old_value": 0.9987,
+        "new_value": 0.9995
+      },
+      {
+        "frame_index": 14,
+        "elapsed_ms": 217,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_press_progress",
+        "old_value": 0.9173,
+        "new_value": 0.9663
+      },
+      {
+        "frame_index": 14,
+        "elapsed_ms": 217,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_ripple_wave_radius",
+        "old_value": 32.8699,
+        "new_value": 37.285
+      },
+      {
+        "frame_index": 14,
+        "elapsed_ms": 217,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0987,
+        "new_value": 0.0996
+      },
+      {
+        "frame_index": 15,
+        "elapsed_ms": 235,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_hover_progress",
+        "old_value": 0.9995,
+        "new_value": 0.9999
+      },
+      {
+        "frame_index": 15,
+        "elapsed_ms": 235,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_press_progress",
+        "old_value": 0.9663,
+        "new_value": 0.9907
+      },
+      {
+        "frame_index": 15,
+        "elapsed_ms": 235,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_ripple_wave_radius",
+        "old_value": 37.285,
+        "new_value": 41.0873
+      },
+      {
+        "frame_index": 15,
+        "elapsed_ms": 235,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0996,
+        "new_value": 0.0999
+      },
+      {
+        "frame_index": 16,
+        "elapsed_ms": 251,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_hover_progress",
+        "old_value": 0.9999,
+        "new_value": 1.0
+      },
+      {
+        "frame_index": 16,
+        "elapsed_ms": 251,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_press_progress",
+        "old_value": 0.9907,
+        "new_value": 0.9991
+      },
+      {
+        "frame_index": 16,
+        "elapsed_ms": 251,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_ripple_wave_radius",
+        "old_value": 41.0873,
+        "new_value": 44.3225
+      },
+      {
+        "frame_index": 16,
+        "elapsed_ms": 251,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0999,
+        "new_value": 0.1
+      },
+      {
+        "frame_index": 17,
+        "elapsed_ms": 268,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_is_pointer_down",
+        "old_value": true,
+        "new_value": false
+      },
+      {
+        "frame_index": 17,
+        "elapsed_ms": 268,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_press_progress",
+        "old_value": 0.9991,
+        "new_value": 1.0
+      },
+      {
+        "frame_index": 17,
+        "elapsed_ms": 268,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_ripple_wave_radius",
+        "old_value": 44.3225,
+        "new_value": 47.0366
+      },
+      {
+        "frame_index": 17,
+        "elapsed_ms": 268,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_target_elevation",
+        "old_value": 0,
+        "new_value": 1
+      },
+      {
+        "frame_index": 17,
+        "elapsed_ms": 268,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "current_state",
+        "old_value": 3,
+        "new_value": 1
+      },
+      {
+        "frame_index": 18,
+        "elapsed_ms": 284,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_press_progress",
+        "old_value": 1.0,
+        "new_value": 0.6982
+      },
+      {
+        "frame_index": 18,
+        "elapsed_ms": 284,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.1,
+        "new_value": 0.0799
+      },
+      {
+        "frame_index": 18,
+        "elapsed_ms": 284,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_state_layer_alpha",
+        "old_value": 0.1,
+        "new_value": 0.0936
+      },
+      {
+        "frame_index": 19,
+        "elapsed_ms": 301,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_current_elevation",
+        "old_value": 0,
+        "new_value": 1
+      },
+      {
+        "frame_index": 19,
+        "elapsed_ms": 301,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_press_progress",
+        "old_value": 0.6982,
+        "new_value": 0.4642
+      },
+      {
+        "frame_index": 19,
+        "elapsed_ms": 301,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0799,
+        "new_value": 0.0626
+      },
+      {
+        "frame_index": 19,
+        "elapsed_ms": 301,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0936,
+        "new_value": 0.0888
+      },
+      {
+        "frame_index": 20,
+        "elapsed_ms": 318,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_press_progress",
+        "old_value": 0.4642,
+        "new_value": 0.2894
+      },
+      {
+        "frame_index": 20,
+        "elapsed_ms": 318,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0626,
+        "new_value": 0.0481
+      },
+      {
+        "frame_index": 20,
+        "elapsed_ms": 318,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0888,
+        "new_value": 0.0852
+      },
+      {
+        "frame_index": 21,
+        "elapsed_ms": 334,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_press_progress",
+        "old_value": 0.2894,
+        "new_value": 0.1651
+      },
+      {
+        "frame_index": 21,
+        "elapsed_ms": 334,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0481,
+        "new_value": 0.036
+      },
+      {
+        "frame_index": 21,
+        "elapsed_ms": 334,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0852,
+        "new_value": 0.0828
+      },
+      {
+        "frame_index": 22,
+        "elapsed_ms": 352,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_pointer_inside",
+        "old_value": true,
+        "new_value": false
+      },
+      {
+        "frame_index": 22,
+        "elapsed_ms": 352,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_press_progress",
+        "old_value": 0.1651,
+        "new_value": 0.0827
+      },
+      {
+        "frame_index": 22,
+        "elapsed_ms": 352,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.036,
+        "new_value": 0.0261
+      },
+      {
+        "frame_index": 22,
+        "elapsed_ms": 352,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0828,
+        "new_value": 0.0813
+      },
+      {
+        "frame_index": 22,
+        "elapsed_ms": 352,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_target_elevation",
+        "old_value": 1,
+        "new_value": 0
+      },
+      {
+        "frame_index": 22,
+        "elapsed_ms": 352,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "current_state",
+        "old_value": 1,
+        "new_value": 2
+      },
+      {
+        "frame_index": 23,
+        "elapsed_ms": 368,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_hover_progress",
+        "old_value": 1.0,
+        "new_value": 0.6982
+      },
+      {
+        "frame_index": 23,
+        "elapsed_ms": 368,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_press_progress",
+        "old_value": 0.0827,
+        "new_value": 0.0578
+      },
+      {
+        "frame_index": 23,
+        "elapsed_ms": 368,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0261,
+        "new_value": 0.0182
+      },
+      {
+        "frame_index": 23,
+        "elapsed_ms": 368,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0813,
+        "new_value": 0.0872
+      },
+      {
+        "frame_index": 24,
+        "elapsed_ms": 384,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_current_elevation",
+        "old_value": 1,
+        "new_value": 0
+      },
+      {
+        "frame_index": 24,
+        "elapsed_ms": 384,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_hover_progress",
+        "old_value": 0.6982,
+        "new_value": 0.4642
+      },
+      {
+        "frame_index": 24,
+        "elapsed_ms": 384,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_press_progress",
+        "old_value": 0.0578,
+        "new_value": 0.0384
+      },
+      {
+        "frame_index": 24,
+        "elapsed_ms": 384,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0182,
+        "new_value": 0.0121
+      },
+      {
+        "frame_index": 24,
+        "elapsed_ms": 384,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0872,
+        "new_value": 0.0918
+      },
+      {
+        "frame_index": 25,
+        "elapsed_ms": 401,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_hover_progress",
+        "old_value": 0.4642,
+        "new_value": 0.2894
+      },
+      {
+        "frame_index": 25,
+        "elapsed_ms": 401,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_press_progress",
+        "old_value": 0.0384,
+        "new_value": 0.0239
+      },
+      {
+        "frame_index": 25,
+        "elapsed_ms": 401,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0121,
+        "new_value": 0.0075
+      },
+      {
+        "frame_index": 25,
+        "elapsed_ms": 401,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0918,
+        "new_value": 0.0951
+      },
+      {
+        "frame_index": 26,
+        "elapsed_ms": 418,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_hover_progress",
+        "old_value": 0.2894,
+        "new_value": 0.1651
+      },
+      {
+        "frame_index": 26,
+        "elapsed_ms": 418,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_press_progress",
+        "old_value": 0.0239,
+        "new_value": 0.0137
+      },
+      {
+        "frame_index": 26,
+        "elapsed_ms": 418,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0075,
+        "new_value": 0.0043
+      },
+      {
+        "frame_index": 26,
+        "elapsed_ms": 418,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0951,
+        "new_value": 0.0974
+      },
+      {
+        "frame_index": 27,
+        "elapsed_ms": 434,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_hover_progress",
+        "old_value": 0.1651,
+        "new_value": 0.0827
+      },
+      {
+        "frame_index": 27,
+        "elapsed_ms": 434,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_press_progress",
+        "old_value": 0.0137,
+        "new_value": 0.0068
+      },
+      {
+        "frame_index": 27,
+        "elapsed_ms": 434,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0043,
+        "new_value": 0.0021
+      },
+      {
+        "frame_index": 27,
+        "elapsed_ms": 434,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0974,
+        "new_value": 0.0988
+      },
+      {
+        "frame_index": 28,
+        "elapsed_ms": 451,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_hover_progress",
+        "old_value": 0.0827,
+        "new_value": 0.0337
+      },
+      {
+        "frame_index": 28,
+        "elapsed_ms": 451,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_press_progress",
+        "old_value": 0.0068,
+        "new_value": 0.0028
+      },
+      {
+        "frame_index": 28,
+        "elapsed_ms": 451,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0021,
+        "new_value": 0.0009
+      },
+      {
+        "frame_index": 28,
+        "elapsed_ms": 451,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0988,
+        "new_value": 0.0996
+      },
+      {
+        "frame_index": 29,
+        "elapsed_ms": 468,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_hover_progress",
+        "old_value": 0.0337,
+        "new_value": 0.0093
+      },
+      {
+        "frame_index": 29,
+        "elapsed_ms": 468,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_press_progress",
+        "old_value": 0.0028,
+        "new_value": 0.0008
+      },
+      {
+        "frame_index": 29,
+        "elapsed_ms": 468,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0009,
+        "new_value": 0.0002
+      },
+      {
+        "frame_index": 29,
+        "elapsed_ms": 468,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0996,
+        "new_value": 0.0999
+      },
+      {
+        "frame_index": 30,
+        "elapsed_ms": 485,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_hover_progress",
+        "old_value": 0.0093,
+        "new_value": 0.0009
+      },
+      {
+        "frame_index": 30,
+        "elapsed_ms": 485,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_press_progress",
+        "old_value": 0.0008,
+        "new_value": 0.0001
+      },
+      {
+        "frame_index": 30,
+        "elapsed_ms": 485,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0002,
+        "new_value": 0.0
+      },
+      {
+        "frame_index": 30,
+        "elapsed_ms": 485,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0999,
+        "new_value": 0.1
+      },
+      {
+        "frame_index": 31,
+        "elapsed_ms": 501,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_hover_progress",
+        "old_value": 0.0009,
+        "new_value": 0.0
+      },
+      {
+        "frame_index": 31,
+        "elapsed_ms": 501,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_press_progress",
+        "old_value": 0.0001,
+        "new_value": 0.0
+      },
+      {
+        "frame_index": 31,
+        "elapsed_ms": 501,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_ripple_wave_count",
+        "old_value": 1,
+        "new_value": 0
+      },
+      {
+        "frame_index": 31,
+        "elapsed_ms": 501,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@82/GSSStageViewport/HarnessButton/ProbeButton",
+        "node_name": "ProbeButton",
+        "property": "_ripple_wave_radius",
+        "old_value": 47.0366,
+        "new_value": 0.0
+      }
+    ]
+  }
+}

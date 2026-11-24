@@ -1,0 +1,5563 @@
+{
+  "format": "godot_scene_snapshot_live",
+  "short_name": "GSS_LIVE",
+  "version": "1.0",
+  "recording_name": "actions.fab.extended__collapse_and_expand",
+  "metadata": {
+    "recording_name": "actions.fab.extended__collapse_and_expand",
+    "timestamp_iso": "2026-11-24T01:45:19",
+    "total_frames": 62,
+    "delta_frames": 61,
+    "viewport_size": {
+      "width": 1280,
+      "height": 720
+    },
+    "duration_ms": 1038,
+    "active_node_count": 1,
+    "bounces_detected": 0,
+    "files": {
+      "png": "res://artifacts/gss/actions/actions.fab.extended__collapse_and_expand.png",
+      "json": "res://artifacts/gss/actions/actions.fab.extended__collapse_and_expand.gss.live.json",
+      "html": "res://artifacts/gss/actions/actions.fab.extended__collapse_and_expand.gss.live.html",
+      "global_png": "/Users/rnewquist/Documents/Godot/material3/artifacts/gss/actions/actions.fab.extended__collapse_and_expand.png",
+      "global_json": "/Users/rnewquist/Documents/Godot/material3/artifacts/gss/actions/actions.fab.extended__collapse_and_expand.gss.live.json",
+      "global_html": "/Users/rnewquist/Documents/Godot/material3/artifacts/gss/actions/actions.fab.extended__collapse_and_expand.gss.live.html"
+    }
+  },
+  "initial_snapshot": {
+    "metadata": {
+      "format": "godot_scene_snapshot",
+      "short_name": "GSS",
+      "version": "1.0",
+      "snapshot_name": "actions.fab.extended__collapse_and_expand_frame_0",
+      "timestamp_iso": "2026-11-24T01:45:18",
+      "timestamp_ticks_ms": 8605,
+      "engine_version": "4.7.2-stable (official)",
+      "display_server": "macOS",
+      "viewport_size": {
+        "width": 1280,
+        "height": 720
+      },
+      "total_nodes": 3,
+      "visible_nodes": 3,
+      "class_counts": {
+        "ColorRect": 1,
+        "Control": 2
+      },
+      "camera_3d": {},
+      "camera_2d": {},
+      "performance": {
+        "fps": 59.0,
+        "process_frames": 430,
+        "physics_frames": 470,
+        "memory_static_bytes": 54746818,
+        "object_count": 1615,
+        "node_count": 10
+      },
+      "frame_index": 0,
+      "elapsed_ms": 0
+    },
+    "hierarchy": {
+      "id": "node_0",
+      "parent_id": "",
+      "name": "FabExtended",
+      "class": "ColorRect",
+      "category": "control",
+      "path": "/root/@Node@2/GSSStageViewport/FabExtended",
+      "depth": 0,
+      "index_in_parent": 0,
+      "children_count": 2,
+      "groups": [],
+      "script": "",
+      "process_mode": 0,
+      "visible": true,
+      "screen_rect": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 1280.0,
+        "height": 720.0,
+        "has_bounds": true,
+        "on_screen": true
+      },
+      "script_variables": {},
+      "transforms": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "global_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "size": {
+          "x": 1280.0,
+          "y": 720.0
+        },
+        "custom_minimum_size": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "rotation_deg": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "anchors": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 0.0,
+          "bottom": 0.0
+        },
+        "offsets": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 1280.0,
+          "bottom": 720.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_vertical": 1
+      },
+      "visibility": {
+        "visible": true,
+        "visible_in_tree": true,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "top_level": false,
+        "show_behind_parent": false,
+        "clip_children": 0,
+        "light_mask": 1,
+        "visibility_layer": 1,
+        "z_index": 0,
+        "z_as_relative": true,
+        "y_sort_enabled": false
+      },
+      "physics": {},
+      "ui_and_content": {
+        "focus_mode": 0,
+        "mouse_filter": 2,
+        "tooltip_text": "",
+        "color": {
+          "r": 0.9788,
+          "g": 0.9745,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#faf9ffff"
+        }
+      },
+      "signals": [
+        {
+          "signal": "child_order_changed",
+          "target": "/root/@Node@2/GSSStageViewport",
+          "method": "Viewport::canvas_parent_mark_dirty"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabLabelOnly",
+          "method": "Control::_size_changed"
+        }
+      ],
+      "all_properties": {
+        "accessibility_controls_nodes": [],
+        "accessibility_described_by_nodes": [],
+        "accessibility_description": "",
+        "accessibility_flow_to_nodes": [],
+        "accessibility_labeled_by_nodes": [],
+        "accessibility_live": 0,
+        "accessibility_name": "",
+        "anchor_bottom": 0.0,
+        "anchor_left": 0.0,
+        "anchor_right": 0.0,
+        "anchor_top": 0.0,
+        "anchors_preset": 0,
+        "auto_translate_mode": 0,
+        "clip_children": 0,
+        "clip_contents": false,
+        "color": {
+          "r": 0.9788,
+          "g": 0.9745,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#faf9ffff"
+        },
+        "custom_maximum_size": {
+          "x": -1.0,
+          "y": -1.0
+        },
+        "custom_minimum_size": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "editor_description": "",
+        "focus_behavior_recursive": 0,
+        "focus_mode": 0,
+        "focus_neighbor_bottom": "",
+        "focus_neighbor_left": "",
+        "focus_neighbor_right": "",
+        "focus_neighbor_top": "",
+        "focus_next": "",
+        "focus_previous": "",
+        "grow_horizontal": 1,
+        "grow_vertical": 1,
+        "layout_direction": 0,
+        "layout_mode": 3,
+        "light_mask": 1,
+        "localize_numeral_system": true,
+        "material": null,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "mouse_behavior_recursive": 0,
+        "mouse_default_cursor_shape": 0,
+        "mouse_filter": 2,
+        "mouse_force_pass_scroll_events": true,
+        "offset_bottom": 720.0,
+        "offset_left": 0.0,
+        "offset_right": 1280.0,
+        "offset_top": 0.0,
+        "offset_transform_enabled": false,
+        "offset_transform_pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_pivot_ratio": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "offset_transform_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_position_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_rotation": 0.0,
+        "offset_transform_scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "offset_transform_visual_only": true,
+        "oversampling_with_scale": 0,
+        "physics_interpolation_mode": 2,
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "pivot_offset_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "process_mode": 0,
+        "process_physics_priority": 0,
+        "process_priority": 0,
+        "process_thread_group": 0,
+        "propagate_maximum_size": false,
+        "rotation": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "shortcut_context": null,
+        "show_behind_parent": false,
+        "size": {
+          "x": 1280.0,
+          "y": 720.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_stretch_ratio": 1.0,
+        "size_flags_vertical": 1,
+        "texture_filter": 0,
+        "texture_repeat": 0,
+        "theme": null,
+        "theme_type_variation": "",
+        "tooltip_auto_translate_mode": 0,
+        "tooltip_text": "",
+        "top_level": false,
+        "translation_context": "",
+        "unique_name_in_owner": false,
+        "use_parent_material": false,
+        "visibility_layer": 1,
+        "visible": true,
+        "y_sort_enabled": false,
+        "z_as_relative": true,
+        "z_index": 0
+      },
+      "children": [
+        {
+          "id": "node_1",
+          "parent_id": "node_0",
+          "name": "ExtendedFabIconLabel",
+          "class": "Control",
+          "category": "control",
+          "path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+          "depth": 1,
+          "index_in_parent": 0,
+          "children_count": 0,
+          "groups": [],
+          "script": "res://addons/material3/components/buttons/m3_fab.gd",
+          "process_mode": 0,
+          "visible": true,
+          "screen_rect": {
+            "x": 80.0,
+            "y": 100.0,
+            "width": 135.0,
+            "height": 56.0,
+            "has_bounds": true,
+            "on_screen": true
+          },
+          "script_variables": {
+            "_current_elevation": 3,
+            "_elevation_tween": null,
+            "_extend_progress": 1.0,
+            "_extend_tween": null,
+            "_font": "<FontFile>",
+            "_font_size": 14,
+            "_hover_progress": 0.0,
+            "_is_pointer_down": false,
+            "_motion_tween": null,
+            "_pointer_inside": false,
+            "_press_progress": 0.0,
+            "_ripple": "<Node:M3Ripple (Control)>",
+            "_ripple_wave_alpha": 0.0,
+            "_ripple_wave_count": 0,
+            "_ripple_wave_radius": 0.0,
+            "_state_layer_alpha": 0.0,
+            "_target_elevation": 3,
+            "_theme_connected": true,
+            "_updating_variant_flag": false,
+            "collapse_on_scroll": false,
+            "color_palette": 0,
+            "current_state": 0,
+            "custom_corner_radius": -1.0,
+            "custom_icon_size": -1.0,
+            "density_override": 99,
+            "disabled": false,
+            "extend_progress": 1.0,
+            "extended": true,
+            "fab_size": 3,
+            "fab_variant": 3,
+            "icon_name": "edit",
+            "icon_rotation_deg": 0.0,
+            "icon_texture": null,
+            "label": "Compose",
+            "ripple_enabled": true,
+            "shape_token": 16,
+            "text": "Compose",
+            "toggle_extended_on_press": true,
+            "touch_target_min_size": {
+              "x": 48.0,
+              "y": 48.0
+            }
+          },
+          "transforms": {
+            "position": {
+              "x": 80.0,
+              "y": 100.0
+            },
+            "global_position": {
+              "x": 80.0,
+              "y": 100.0
+            },
+            "size": {
+              "x": 135.0,
+              "y": 56.0
+            },
+            "custom_minimum_size": {
+              "x": 135.0,
+              "y": 56.0
+            },
+            "rotation_deg": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "anchors": {
+              "left": 0.0,
+              "top": 0.0,
+              "right": 0.0,
+              "bottom": 0.0
+            },
+            "offsets": {
+              "left": 80.0,
+              "top": 100.0,
+              "right": 215.0,
+              "bottom": 156.0
+            },
+            "size_flags_horizontal": 1,
+            "size_flags_vertical": 1
+          },
+          "visibility": {
+            "visible": true,
+            "visible_in_tree": true,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "top_level": false,
+            "show_behind_parent": false,
+            "clip_children": 0,
+            "light_mask": 1,
+            "visibility_layer": 1,
+            "z_index": 0,
+            "z_as_relative": true,
+            "y_sort_enabled": false
+          },
+          "physics": {},
+          "ui_and_content": {
+            "focus_mode": 2,
+            "mouse_filter": 0,
+            "tooltip_text": ""
+          },
+          "signals": [
+            {
+              "signal": "child_order_changed",
+              "target": "/root/@Node@2/GSSStageViewport",
+              "method": "Viewport::canvas_parent_mark_dirty"
+            },
+            {
+              "signal": "item_rect_changed",
+              "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel/M3Ripple",
+              "method": "Control::_size_changed"
+            },
+            {
+              "signal": "resized",
+              "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+              "method": "_on_resized"
+            },
+            {
+              "signal": "mouse_entered",
+              "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+              "method": "_on_mouse_entered"
+            },
+            {
+              "signal": "mouse_exited",
+              "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+              "method": "_on_mouse_exited"
+            },
+            {
+              "signal": "focus_entered",
+              "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+              "method": "_on_focus_entered"
+            },
+            {
+              "signal": "focus_exited",
+              "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+              "method": "_on_focus_exited"
+            }
+          ],
+          "all_properties": {
+            "accessibility_controls_nodes": [],
+            "accessibility_described_by_nodes": [],
+            "accessibility_description": "",
+            "accessibility_flow_to_nodes": [],
+            "accessibility_labeled_by_nodes": [],
+            "accessibility_live": 0,
+            "accessibility_name": "",
+            "anchor_bottom": 0.0,
+            "anchor_left": 0.0,
+            "anchor_right": 0.0,
+            "anchor_top": 0.0,
+            "anchors_preset": 0,
+            "auto_translate_mode": 0,
+            "clip_children": 0,
+            "clip_contents": false,
+            "collapse_on_scroll": false,
+            "color_palette": 0,
+            "current_state": 0,
+            "custom_corner_radius": -1.0,
+            "custom_icon_size": -1.0,
+            "custom_maximum_size": {
+              "x": -1.0,
+              "y": -1.0
+            },
+            "custom_minimum_size": {
+              "x": 135.0,
+              "y": 56.0
+            },
+            "density_override": 99,
+            "disabled": false,
+            "editor_description": "",
+            "extend_progress": 1.0,
+            "extended": true,
+            "fab_size": 3,
+            "fab_variant": 3,
+            "focus_behavior_recursive": 0,
+            "focus_mode": 2,
+            "focus_neighbor_bottom": "",
+            "focus_neighbor_left": "",
+            "focus_neighbor_right": "",
+            "focus_neighbor_top": "",
+            "focus_next": "",
+            "focus_previous": "",
+            "grow_horizontal": 1,
+            "grow_vertical": 1,
+            "icon_name": "edit",
+            "icon_rotation_deg": 0.0,
+            "icon_texture": null,
+            "label": "Compose",
+            "layout_direction": 0,
+            "layout_mode": 0,
+            "light_mask": 1,
+            "localize_numeral_system": true,
+            "material": null,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "mouse_behavior_recursive": 0,
+            "mouse_default_cursor_shape": 2,
+            "mouse_filter": 0,
+            "mouse_force_pass_scroll_events": true,
+            "offset_bottom": 156.0,
+            "offset_left": 80.0,
+            "offset_right": 215.0,
+            "offset_top": 100.0,
+            "offset_transform_enabled": false,
+            "offset_transform_pivot": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_pivot_ratio": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "offset_transform_position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_position_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_rotation": 0.0,
+            "offset_transform_scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "offset_transform_visual_only": true,
+            "oversampling_with_scale": 0,
+            "physics_interpolation_mode": 2,
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "pivot_offset_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "position": {
+              "x": 80.0,
+              "y": 100.0
+            },
+            "process_mode": 0,
+            "process_physics_priority": 0,
+            "process_priority": 0,
+            "process_thread_group": 0,
+            "propagate_maximum_size": false,
+            "ripple_enabled": true,
+            "rotation": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "shape_token": 16,
+            "shortcut_context": null,
+            "show_behind_parent": false,
+            "size": {
+              "x": 135.0,
+              "y": 56.0
+            },
+            "size_flags_horizontal": 1,
+            "size_flags_stretch_ratio": 1.0,
+            "size_flags_vertical": 1,
+            "text": "Compose",
+            "texture_filter": 0,
+            "texture_repeat": 0,
+            "theme": null,
+            "theme_type_variation": "",
+            "toggle_extended_on_press": true,
+            "tooltip_auto_translate_mode": 0,
+            "tooltip_text": "",
+            "top_level": false,
+            "touch_target_min_size": {
+              "x": 48.0,
+              "y": 48.0
+            },
+            "translation_context": "",
+            "unique_name_in_owner": false,
+            "use_parent_material": false,
+            "visibility_layer": 1,
+            "visible": true,
+            "y_sort_enabled": false,
+            "z_as_relative": true,
+            "z_index": 0
+          },
+          "children": []
+        },
+        {
+          "id": "node_2",
+          "parent_id": "node_0",
+          "name": "ExtendedFabLabelOnly",
+          "class": "Control",
+          "category": "control",
+          "path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabLabelOnly",
+          "depth": 1,
+          "index_in_parent": 1,
+          "children_count": 0,
+          "groups": [],
+          "script": "res://addons/material3/components/buttons/m3_fab.gd",
+          "process_mode": 0,
+          "visible": true,
+          "screen_rect": {
+            "x": 260.0,
+            "y": 100.0,
+            "width": 141.0,
+            "height": 56.0,
+            "has_bounds": true,
+            "on_screen": true
+          },
+          "script_variables": {
+            "_current_elevation": 3,
+            "_elevation_tween": null,
+            "_extend_progress": 1.0,
+            "_extend_tween": null,
+            "_font": "<FontFile>",
+            "_font_size": 14,
+            "_hover_progress": 0.0,
+            "_is_pointer_down": false,
+            "_motion_tween": null,
+            "_pointer_inside": false,
+            "_press_progress": 0.0,
+            "_ripple": "<Node:M3Ripple (Control)>",
+            "_ripple_wave_alpha": 0.0,
+            "_ripple_wave_count": 0,
+            "_ripple_wave_radius": 0.0,
+            "_state_layer_alpha": 0.0,
+            "_target_elevation": 3,
+            "_theme_connected": true,
+            "_updating_variant_flag": false,
+            "collapse_on_scroll": false,
+            "color_palette": 0,
+            "current_state": 0,
+            "custom_corner_radius": -1.0,
+            "custom_icon_size": -1.0,
+            "density_override": 99,
+            "disabled": false,
+            "extend_progress": 1.0,
+            "extended": true,
+            "fab_size": 3,
+            "fab_variant": 3,
+            "icon_name": "",
+            "icon_rotation_deg": 0.0,
+            "icon_texture": null,
+            "label": "New Message",
+            "ripple_enabled": true,
+            "shape_token": 16,
+            "text": "New Message",
+            "toggle_extended_on_press": false,
+            "touch_target_min_size": {
+              "x": 48.0,
+              "y": 48.0
+            }
+          },
+          "transforms": {
+            "position": {
+              "x": 260.0,
+              "y": 100.0
+            },
+            "global_position": {
+              "x": 260.0,
+              "y": 100.0
+            },
+            "size": {
+              "x": 141.0,
+              "y": 56.0
+            },
+            "custom_minimum_size": {
+              "x": 141.0,
+              "y": 56.0
+            },
+            "rotation_deg": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "anchors": {
+              "left": 0.0,
+              "top": 0.0,
+              "right": 0.0,
+              "bottom": 0.0
+            },
+            "offsets": {
+              "left": 260.0,
+              "top": 100.0,
+              "right": 401.0,
+              "bottom": 156.0
+            },
+            "size_flags_horizontal": 1,
+            "size_flags_vertical": 1
+          },
+          "visibility": {
+            "visible": true,
+            "visible_in_tree": true,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "top_level": false,
+            "show_behind_parent": false,
+            "clip_children": 0,
+            "light_mask": 1,
+            "visibility_layer": 1,
+            "z_index": 0,
+            "z_as_relative": true,
+            "y_sort_enabled": false
+          },
+          "physics": {},
+          "ui_and_content": {
+            "focus_mode": 2,
+            "mouse_filter": 0,
+            "tooltip_text": ""
+          },
+          "signals": [
+            {
+              "signal": "child_order_changed",
+              "target": "/root/@Node@2/GSSStageViewport",
+              "method": "Viewport::canvas_parent_mark_dirty"
+            },
+            {
+              "signal": "item_rect_changed",
+              "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabLabelOnly/M3Ripple",
+              "method": "Control::_size_changed"
+            },
+            {
+              "signal": "resized",
+              "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabLabelOnly",
+              "method": "_on_resized"
+            },
+            {
+              "signal": "mouse_entered",
+              "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabLabelOnly",
+              "method": "_on_mouse_entered"
+            },
+            {
+              "signal": "mouse_exited",
+              "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabLabelOnly",
+              "method": "_on_mouse_exited"
+            },
+            {
+              "signal": "focus_entered",
+              "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabLabelOnly",
+              "method": "_on_focus_entered"
+            },
+            {
+              "signal": "focus_exited",
+              "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabLabelOnly",
+              "method": "_on_focus_exited"
+            }
+          ],
+          "all_properties": {
+            "accessibility_controls_nodes": [],
+            "accessibility_described_by_nodes": [],
+            "accessibility_description": "",
+            "accessibility_flow_to_nodes": [],
+            "accessibility_labeled_by_nodes": [],
+            "accessibility_live": 0,
+            "accessibility_name": "",
+            "anchor_bottom": 0.0,
+            "anchor_left": 0.0,
+            "anchor_right": 0.0,
+            "anchor_top": 0.0,
+            "anchors_preset": 0,
+            "auto_translate_mode": 0,
+            "clip_children": 0,
+            "clip_contents": false,
+            "collapse_on_scroll": false,
+            "color_palette": 0,
+            "current_state": 0,
+            "custom_corner_radius": -1.0,
+            "custom_icon_size": -1.0,
+            "custom_maximum_size": {
+              "x": -1.0,
+              "y": -1.0
+            },
+            "custom_minimum_size": {
+              "x": 141.0,
+              "y": 56.0
+            },
+            "density_override": 99,
+            "disabled": false,
+            "editor_description": "",
+            "extend_progress": 1.0,
+            "extended": true,
+            "fab_size": 3,
+            "fab_variant": 3,
+            "focus_behavior_recursive": 0,
+            "focus_mode": 2,
+            "focus_neighbor_bottom": "",
+            "focus_neighbor_left": "",
+            "focus_neighbor_right": "",
+            "focus_neighbor_top": "",
+            "focus_next": "",
+            "focus_previous": "",
+            "grow_horizontal": 1,
+            "grow_vertical": 1,
+            "icon_name": "",
+            "icon_rotation_deg": 0.0,
+            "icon_texture": null,
+            "label": "New Message",
+            "layout_direction": 0,
+            "layout_mode": 0,
+            "light_mask": 1,
+            "localize_numeral_system": true,
+            "material": null,
+            "modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "mouse_behavior_recursive": 0,
+            "mouse_default_cursor_shape": 2,
+            "mouse_filter": 0,
+            "mouse_force_pass_scroll_events": true,
+            "offset_bottom": 156.0,
+            "offset_left": 260.0,
+            "offset_right": 401.0,
+            "offset_top": 100.0,
+            "offset_transform_enabled": false,
+            "offset_transform_pivot": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_pivot_ratio": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "offset_transform_position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_position_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "offset_transform_rotation": 0.0,
+            "offset_transform_scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "offset_transform_visual_only": true,
+            "oversampling_with_scale": 0,
+            "physics_interpolation_mode": 2,
+            "pivot_offset": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "pivot_offset_ratio": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "position": {
+              "x": 260.0,
+              "y": 100.0
+            },
+            "process_mode": 0,
+            "process_physics_priority": 0,
+            "process_priority": 0,
+            "process_thread_group": 0,
+            "propagate_maximum_size": false,
+            "ripple_enabled": true,
+            "rotation": 0.0,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "self_modulate": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0,
+              "hex": "#ffffffff"
+            },
+            "shape_token": 16,
+            "shortcut_context": null,
+            "show_behind_parent": false,
+            "size": {
+              "x": 141.0,
+              "y": 56.0
+            },
+            "size_flags_horizontal": 1,
+            "size_flags_stretch_ratio": 1.0,
+            "size_flags_vertical": 1,
+            "text": "New Message",
+            "texture_filter": 0,
+            "texture_repeat": 0,
+            "theme": null,
+            "theme_type_variation": "",
+            "toggle_extended_on_press": false,
+            "tooltip_auto_translate_mode": 0,
+            "tooltip_text": "",
+            "top_level": false,
+            "touch_target_min_size": {
+              "x": 48.0,
+              "y": 48.0
+            },
+            "translation_context": "",
+            "unique_name_in_owner": false,
+            "use_parent_material": false,
+            "visibility_layer": 1,
+            "visible": true,
+            "y_sort_enabled": false,
+            "z_as_relative": true,
+            "z_index": 0
+          },
+          "children": []
+        }
+      ]
+    },
+    "flat_nodes": [
+      {
+        "id": "node_0",
+        "parent_id": "",
+        "name": "FabExtended",
+        "class": "ColorRect",
+        "category": "control",
+        "path": "/root/@Node@2/GSSStageViewport/FabExtended",
+        "depth": 0,
+        "index_in_parent": 0,
+        "children_count": 2,
+        "groups": [],
+        "script": "",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 1280.0,
+          "height": 720.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {},
+        "transforms": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "global_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "size": {
+            "x": 1280.0,
+            "y": 720.0
+          },
+          "custom_minimum_size": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 1280.0,
+            "bottom": 720.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 0,
+          "mouse_filter": 2,
+          "tooltip_text": "",
+          "color": {
+            "r": 0.9788,
+            "g": 0.9745,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#faf9ffff"
+          }
+        },
+        "signals": [
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@2/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabLabelOnly",
+            "method": "Control::_size_changed"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "clip_children": 0,
+          "clip_contents": false,
+          "color": {
+            "r": 0.9788,
+            "g": 0.9745,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#faf9ffff"
+          },
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "editor_description": "",
+          "focus_behavior_recursive": 0,
+          "focus_mode": 0,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "layout_direction": 0,
+          "layout_mode": 3,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 0,
+          "mouse_filter": 2,
+          "mouse_force_pass_scroll_events": true,
+          "offset_bottom": 720.0,
+          "offset_left": 0.0,
+          "offset_right": 1280.0,
+          "offset_top": 0.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "size": {
+            "x": 1280.0,
+            "y": 720.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "visibility_layer": 1,
+          "visible": true,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        }
+      },
+      {
+        "id": "node_1",
+        "parent_id": "node_0",
+        "name": "ExtendedFabIconLabel",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "depth": 1,
+        "index_in_parent": 0,
+        "children_count": 0,
+        "groups": [],
+        "script": "res://addons/material3/components/buttons/m3_fab.gd",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 80.0,
+          "y": 100.0,
+          "width": 135.0,
+          "height": 56.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {
+          "_current_elevation": 3,
+          "_elevation_tween": null,
+          "_extend_progress": 1.0,
+          "_extend_tween": null,
+          "_font": "<FontFile>",
+          "_font_size": 14,
+          "_hover_progress": 0.0,
+          "_is_pointer_down": false,
+          "_motion_tween": null,
+          "_pointer_inside": false,
+          "_press_progress": 0.0,
+          "_ripple": "<Node:M3Ripple (Control)>",
+          "_ripple_wave_alpha": 0.0,
+          "_ripple_wave_count": 0,
+          "_ripple_wave_radius": 0.0,
+          "_state_layer_alpha": 0.0,
+          "_target_elevation": 3,
+          "_theme_connected": true,
+          "_updating_variant_flag": false,
+          "collapse_on_scroll": false,
+          "color_palette": 0,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "custom_icon_size": -1.0,
+          "density_override": 99,
+          "disabled": false,
+          "extend_progress": 1.0,
+          "extended": true,
+          "fab_size": 3,
+          "fab_variant": 3,
+          "icon_name": "edit",
+          "icon_rotation_deg": 0.0,
+          "icon_texture": null,
+          "label": "Compose",
+          "ripple_enabled": true,
+          "shape_token": 16,
+          "text": "Compose",
+          "toggle_extended_on_press": true,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          }
+        },
+        "transforms": {
+          "position": {
+            "x": 80.0,
+            "y": 100.0
+          },
+          "global_position": {
+            "x": 80.0,
+            "y": 100.0
+          },
+          "size": {
+            "x": 135.0,
+            "y": 56.0
+          },
+          "custom_minimum_size": {
+            "x": 135.0,
+            "y": 56.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 80.0,
+            "top": 100.0,
+            "right": 215.0,
+            "bottom": 156.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 2,
+          "mouse_filter": 0,
+          "tooltip_text": ""
+        },
+        "signals": [
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@2/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel/M3Ripple",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "resized",
+            "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+            "method": "_on_resized"
+          },
+          {
+            "signal": "mouse_entered",
+            "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+            "method": "_on_mouse_entered"
+          },
+          {
+            "signal": "mouse_exited",
+            "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+            "method": "_on_mouse_exited"
+          },
+          {
+            "signal": "focus_entered",
+            "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+            "method": "_on_focus_entered"
+          },
+          {
+            "signal": "focus_exited",
+            "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+            "method": "_on_focus_exited"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "clip_children": 0,
+          "clip_contents": false,
+          "collapse_on_scroll": false,
+          "color_palette": 0,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "custom_icon_size": -1.0,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 135.0,
+            "y": 56.0
+          },
+          "density_override": 99,
+          "disabled": false,
+          "editor_description": "",
+          "extend_progress": 1.0,
+          "extended": true,
+          "fab_size": 3,
+          "fab_variant": 3,
+          "focus_behavior_recursive": 0,
+          "focus_mode": 2,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "icon_name": "edit",
+          "icon_rotation_deg": 0.0,
+          "icon_texture": null,
+          "label": "Compose",
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 2,
+          "mouse_filter": 0,
+          "mouse_force_pass_scroll_events": true,
+          "offset_bottom": 156.0,
+          "offset_left": 80.0,
+          "offset_right": 215.0,
+          "offset_top": 100.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "position": {
+            "x": 80.0,
+            "y": 100.0
+          },
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "ripple_enabled": true,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shape_token": 16,
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "size": {
+            "x": 135.0,
+            "y": 56.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "text": "Compose",
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "toggle_extended_on_press": true,
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "visibility_layer": 1,
+          "visible": true,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        }
+      },
+      {
+        "id": "node_2",
+        "parent_id": "node_0",
+        "name": "ExtendedFabLabelOnly",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabLabelOnly",
+        "depth": 1,
+        "index_in_parent": 1,
+        "children_count": 0,
+        "groups": [],
+        "script": "res://addons/material3/components/buttons/m3_fab.gd",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 260.0,
+          "y": 100.0,
+          "width": 141.0,
+          "height": 56.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {
+          "_current_elevation": 3,
+          "_elevation_tween": null,
+          "_extend_progress": 1.0,
+          "_extend_tween": null,
+          "_font": "<FontFile>",
+          "_font_size": 14,
+          "_hover_progress": 0.0,
+          "_is_pointer_down": false,
+          "_motion_tween": null,
+          "_pointer_inside": false,
+          "_press_progress": 0.0,
+          "_ripple": "<Node:M3Ripple (Control)>",
+          "_ripple_wave_alpha": 0.0,
+          "_ripple_wave_count": 0,
+          "_ripple_wave_radius": 0.0,
+          "_state_layer_alpha": 0.0,
+          "_target_elevation": 3,
+          "_theme_connected": true,
+          "_updating_variant_flag": false,
+          "collapse_on_scroll": false,
+          "color_palette": 0,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "custom_icon_size": -1.0,
+          "density_override": 99,
+          "disabled": false,
+          "extend_progress": 1.0,
+          "extended": true,
+          "fab_size": 3,
+          "fab_variant": 3,
+          "icon_name": "",
+          "icon_rotation_deg": 0.0,
+          "icon_texture": null,
+          "label": "New Message",
+          "ripple_enabled": true,
+          "shape_token": 16,
+          "text": "New Message",
+          "toggle_extended_on_press": false,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          }
+        },
+        "transforms": {
+          "position": {
+            "x": 260.0,
+            "y": 100.0
+          },
+          "global_position": {
+            "x": 260.0,
+            "y": 100.0
+          },
+          "size": {
+            "x": 141.0,
+            "y": 56.0
+          },
+          "custom_minimum_size": {
+            "x": 141.0,
+            "y": 56.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 260.0,
+            "top": 100.0,
+            "right": 401.0,
+            "bottom": 156.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 2,
+          "mouse_filter": 0,
+          "tooltip_text": ""
+        },
+        "signals": [
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@2/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabLabelOnly/M3Ripple",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "resized",
+            "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabLabelOnly",
+            "method": "_on_resized"
+          },
+          {
+            "signal": "mouse_entered",
+            "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabLabelOnly",
+            "method": "_on_mouse_entered"
+          },
+          {
+            "signal": "mouse_exited",
+            "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabLabelOnly",
+            "method": "_on_mouse_exited"
+          },
+          {
+            "signal": "focus_entered",
+            "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabLabelOnly",
+            "method": "_on_focus_entered"
+          },
+          {
+            "signal": "focus_exited",
+            "target": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabLabelOnly",
+            "method": "_on_focus_exited"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "clip_children": 0,
+          "clip_contents": false,
+          "collapse_on_scroll": false,
+          "color_palette": 0,
+          "current_state": 0,
+          "custom_corner_radius": -1.0,
+          "custom_icon_size": -1.0,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 141.0,
+            "y": 56.0
+          },
+          "density_override": 99,
+          "disabled": false,
+          "editor_description": "",
+          "extend_progress": 1.0,
+          "extended": true,
+          "fab_size": 3,
+          "fab_variant": 3,
+          "focus_behavior_recursive": 0,
+          "focus_mode": 2,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "icon_name": "",
+          "icon_rotation_deg": 0.0,
+          "icon_texture": null,
+          "label": "New Message",
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 2,
+          "mouse_filter": 0,
+          "mouse_force_pass_scroll_events": true,
+          "offset_bottom": 156.0,
+          "offset_left": 260.0,
+          "offset_right": 401.0,
+          "offset_top": 100.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "position": {
+            "x": 260.0,
+            "y": 100.0
+          },
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": false,
+          "ripple_enabled": true,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shape_token": 16,
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "size": {
+            "x": 141.0,
+            "y": 56.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "text": "New Message",
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_type_variation": "",
+          "toggle_extended_on_press": false,
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "touch_target_min_size": {
+            "x": 48.0,
+            "y": 48.0
+          },
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "visibility_layer": 1,
+          "visible": true,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        }
+      }
+    ]
+  },
+  "frames": [
+    {
+      "frame_index": 1,
+      "elapsed_ms": 3,
+      "delta_sec": 0.0153,
+      "process_frame": 431,
+      "physics_frame": 471,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "script_variables": {
+            "_elevation_tween": "<Tween>",
+            "_is_pointer_down": true,
+            "_motion_tween": "<Tween>",
+            "_pointer_inside": true,
+            "_ripple_wave_alpha": 0.1,
+            "_ripple_wave_count": 1,
+            "current_state": 3
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 2,
+      "elapsed_ms": 16,
+      "delta_sec": 0.0157,
+      "process_frame": 432,
+      "physics_frame": 472,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "script_variables": {
+            "_hover_progress": 0.26,
+            "_press_progress": 0.26,
+            "_ripple_wave_radius": 15.9398,
+            "_state_layer_alpha": 0.0275
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 3,
+      "elapsed_ms": 33,
+      "delta_sec": 0.0167,
+      "process_frame": 433,
+      "physics_frame": 473,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "script_variables": {
+            "_hover_progress": 0.4751,
+            "_press_progress": 0.4751,
+            "_ripple_wave_radius": 30.8303,
+            "_state_layer_alpha": 0.05
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 4,
+      "elapsed_ms": 50,
+      "delta_sec": 0.0167,
+      "process_frame": 434,
+      "physics_frame": 474,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "script_variables": {
+            "_hover_progress": 0.6533,
+            "_press_progress": 0.6533,
+            "_ripple_wave_radius": 45.1559,
+            "_state_layer_alpha": 0.0682
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 5,
+      "elapsed_ms": 67,
+      "delta_sec": 0.0167,
+      "process_frame": 435,
+      "physics_frame": 475,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "transforms": {
+            "custom_minimum_size": {
+              "x": 56.0,
+              "y": 56.0
+            }
+          },
+          "script_variables": {
+            "_extend_tween": "<Tween>",
+            "_hover_progress": 0.7858,
+            "_is_pointer_down": false,
+            "_press_progress": 0.7858,
+            "_ripple_wave_radius": 57.9864,
+            "_state_layer_alpha": 0.0813,
+            "_target_elevation": 4,
+            "current_state": 1,
+            "extended": false,
+            "fab_size": 1,
+            "fab_variant": 1
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 6,
+      "elapsed_ms": 83,
+      "delta_sec": 0.0167,
+      "process_frame": 436,
+      "physics_frame": 476,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "screen_rect": {
+            "width": 118.3713
+          },
+          "transforms": {
+            "size": {
+              "x": 118.3713,
+              "y": 56.0
+            },
+            "custom_minimum_size": {
+              "x": 118.3713,
+              "y": 56.0
+            },
+            "offsets": {
+              "left": 80.0,
+              "top": 100.0,
+              "right": 198.3713,
+              "bottom": 156.0
+            }
+          },
+          "script_variables": {
+            "_extend_progress": 0.7895,
+            "_hover_progress": 0.846,
+            "_press_progress": 0.5649,
+            "_ripple_wave_alpha": 0.0813,
+            "_state_layer_alpha": 0.0809,
+            "extend_progress": 0.7895
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 7,
+      "elapsed_ms": 100,
+      "delta_sec": 0.0167,
+      "process_frame": 437,
+      "physics_frame": 477,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "screen_rect": {
+            "width": 104.2569
+          },
+          "transforms": {
+            "size": {
+              "x": 104.2569,
+              "y": 56.0
+            },
+            "custom_minimum_size": {
+              "x": 104.2569,
+              "y": 56.0
+            },
+            "offsets": {
+              "left": 80.0,
+              "top": 100.0,
+              "right": 184.2569,
+              "bottom": 156.0
+            }
+          },
+          "script_variables": {
+            "_current_elevation": 4,
+            "_extend_progress": 0.6108,
+            "_hover_progress": 0.8937,
+            "_press_progress": 0.3899,
+            "_ripple_wave_alpha": 0.0651,
+            "_state_layer_alpha": 0.0806,
+            "extend_progress": 0.6108
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 8,
+      "elapsed_ms": 116,
+      "delta_sec": 0.0174,
+      "process_frame": 438,
+      "physics_frame": 478,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "screen_rect": {
+            "width": 92.4507
+          },
+          "transforms": {
+            "size": {
+              "x": 92.4507,
+              "y": 56.0
+            },
+            "custom_minimum_size": {
+              "x": 92.4507,
+              "y": 56.0
+            },
+            "offsets": {
+              "left": 80.0,
+              "top": 100.0,
+              "right": 172.4507,
+              "bottom": 156.0
+            }
+          },
+          "script_variables": {
+            "_extend_progress": 0.4614,
+            "_hover_progress": 0.9304,
+            "_press_progress": 0.2553,
+            "_ripple_wave_alpha": 0.0512,
+            "_state_layer_alpha": 0.0804,
+            "extend_progress": 0.4614
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 9,
+      "elapsed_ms": 135,
+      "delta_sec": 0.0182,
+      "process_frame": 439,
+      "physics_frame": 479,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "screen_rect": {
+            "width": 82.3547
+          },
+          "transforms": {
+            "size": {
+              "x": 82.3547,
+              "y": 56.0
+            },
+            "custom_minimum_size": {
+              "x": 82.3547,
+              "y": 56.0
+            },
+            "offsets": {
+              "left": 80.0,
+              "top": 100.0,
+              "right": 162.3547,
+              "bottom": 156.0
+            }
+          },
+          "script_variables": {
+            "_extend_progress": 0.3336,
+            "_hover_progress": 0.9585,
+            "_press_progress": 0.1522,
+            "_ripple_wave_alpha": 0.039,
+            "_state_layer_alpha": 0.0802,
+            "extend_progress": 0.3336
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 10,
+      "elapsed_ms": 152,
+      "delta_sec": 0.0182,
+      "process_frame": 440,
+      "physics_frame": 480,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "screen_rect": {
+            "width": 74.0117
+          },
+          "transforms": {
+            "size": {
+              "x": 74.0117,
+              "y": 56.0
+            },
+            "custom_minimum_size": {
+              "x": 74.0117,
+              "y": 56.0
+            },
+            "offsets": {
+              "left": 80.0,
+              "top": 100.0,
+              "right": 154.0117,
+              "bottom": 156.0
+            }
+          },
+          "script_variables": {
+            "_extend_progress": 0.228,
+            "_hover_progress": 0.9785,
+            "_press_progress": 0.079,
+            "_ripple_wave_alpha": 0.0284,
+            "_state_layer_alpha": 0.0801,
+            "extend_progress": 0.228
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 11,
+      "elapsed_ms": 169,
+      "delta_sec": 0.0182,
+      "process_frame": 441,
+      "physics_frame": 482,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "screen_rect": {
+            "width": 67.6463
+          },
+          "transforms": {
+            "size": {
+              "x": 67.6463,
+              "y": 56.0
+            },
+            "custom_minimum_size": {
+              "x": 67.6463,
+              "y": 56.0
+            },
+            "offsets": {
+              "left": 80.0,
+              "top": 100.0,
+              "right": 147.6463,
+              "bottom": 156.0
+            }
+          },
+          "script_variables": {
+            "_extend_progress": 0.1474,
+            "_hover_progress": 0.9907,
+            "_press_progress": 0.0341,
+            "_ripple_wave_alpha": 0.02,
+            "_state_layer_alpha": 0.08,
+            "extend_progress": 0.1474
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 12,
+      "elapsed_ms": 185,
+      "delta_sec": 0.0182,
+      "process_frame": 442,
+      "physics_frame": 483,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "screen_rect": {
+            "width": 62.991
+          },
+          "transforms": {
+            "size": {
+              "x": 62.991,
+              "y": 56.0
+            },
+            "custom_minimum_size": {
+              "x": 62.991,
+              "y": 56.0
+            },
+            "offsets": {
+              "left": 80.0,
+              "top": 100.0,
+              "right": 142.991,
+              "bottom": 156.0
+            }
+          },
+          "script_variables": {
+            "_extend_progress": 0.0885,
+            "_hover_progress": 0.9971,
+            "_press_progress": 0.0106,
+            "_ripple_wave_alpha": 0.0134,
+            "extend_progress": 0.0885
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 13,
+      "elapsed_ms": 202,
+      "delta_sec": 0.0182,
+      "process_frame": 443,
+      "physics_frame": 484,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "screen_rect": {
+            "width": 59.7783
+          },
+          "transforms": {
+            "size": {
+              "x": 59.7783,
+              "y": 56.0
+            },
+            "custom_minimum_size": {
+              "x": 59.7783,
+              "y": 56.0
+            },
+            "offsets": {
+              "left": 80.0,
+              "top": 100.0,
+              "right": 139.7783,
+              "bottom": 156.0
+            }
+          },
+          "script_variables": {
+            "_extend_progress": 0.0478,
+            "_hover_progress": 0.9996,
+            "_press_progress": 0.0015,
+            "_ripple_wave_alpha": 0.0085,
+            "extend_progress": 0.0478
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 14,
+      "elapsed_ms": 218,
+      "delta_sec": 0.0182,
+      "process_frame": 444,
+      "physics_frame": 485,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "screen_rect": {
+            "width": 57.7406
+          },
+          "transforms": {
+            "size": {
+              "x": 57.7406,
+              "y": 56.0
+            },
+            "custom_minimum_size": {
+              "x": 57.7406,
+              "y": 56.0
+            },
+            "offsets": {
+              "left": 80.0,
+              "top": 100.0,
+              "right": 137.7406,
+              "bottom": 156.0
+            }
+          },
+          "script_variables": {
+            "_extend_progress": 0.022,
+            "_hover_progress": 1.0,
+            "_press_progress": 0.0,
+            "_ripple_wave_alpha": 0.0049,
+            "extend_progress": 0.022
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 15,
+      "elapsed_ms": 235,
+      "delta_sec": 0.0182,
+      "process_frame": 445,
+      "physics_frame": 486,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "screen_rect": {
+            "width": 56.6105
+          },
+          "transforms": {
+            "size": {
+              "x": 56.6105,
+              "y": 56.0
+            },
+            "custom_minimum_size": {
+              "x": 56.6105,
+              "y": 56.0
+            },
+            "offsets": {
+              "left": 80.0,
+              "top": 100.0,
+              "right": 136.6105,
+              "bottom": 156.0
+            }
+          },
+          "script_variables": {
+            "_extend_progress": 0.0077,
+            "_ripple_wave_alpha": 0.0025,
+            "extend_progress": 0.0077
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 16,
+      "elapsed_ms": 252,
+      "delta_sec": 0.0182,
+      "process_frame": 446,
+      "physics_frame": 487,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "screen_rect": {
+            "width": 56.1203
+          },
+          "transforms": {
+            "size": {
+              "x": 56.1203,
+              "y": 56.0
+            },
+            "custom_minimum_size": {
+              "x": 56.1203,
+              "y": 56.0
+            },
+            "offsets": {
+              "left": 80.0,
+              "top": 100.0,
+              "right": 136.1203,
+              "bottom": 156.0
+            }
+          },
+          "script_variables": {
+            "_extend_progress": 0.0015,
+            "_ripple_wave_alpha": 0.0011,
+            "extend_progress": 0.0015
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 17,
+      "elapsed_ms": 268,
+      "delta_sec": 0.0181,
+      "process_frame": 447,
+      "physics_frame": 488,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "screen_rect": {
+            "width": 56.0027
+          },
+          "transforms": {
+            "size": {
+              "x": 56.0027,
+              "y": 56.0
+            },
+            "custom_minimum_size": {
+              "x": 56.0027,
+              "y": 56.0
+            },
+            "offsets": {
+              "left": 80.0,
+              "top": 100.0,
+              "right": 136.0027,
+              "bottom": 156.0
+            }
+          },
+          "script_variables": {
+            "_extend_progress": 0.0,
+            "_ripple_wave_alpha": 0.0003,
+            "extend_progress": 0.0
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 18,
+      "elapsed_ms": 285,
+      "delta_sec": 0.0181,
+      "process_frame": 448,
+      "physics_frame": 489,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "screen_rect": {
+            "width": 56.0
+          },
+          "transforms": {
+            "size": {
+              "x": 56.0,
+              "y": 56.0
+            },
+            "custom_minimum_size": {
+              "x": 56.0,
+              "y": 56.0
+            },
+            "offsets": {
+              "left": 80.0,
+              "top": 100.0,
+              "right": 136.0,
+              "bottom": 156.0
+            }
+          },
+          "script_variables": {
+            "_ripple_wave_alpha": 0.0
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 19,
+      "elapsed_ms": 302,
+      "delta_sec": 0.0181,
+      "process_frame": 449,
+      "physics_frame": 490,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 20,
+      "elapsed_ms": 318,
+      "delta_sec": 0.0181,
+      "process_frame": 450,
+      "physics_frame": 491,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "script_variables": {
+            "_ripple_wave_count": 0,
+            "_ripple_wave_radius": 0.0
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 21,
+      "elapsed_ms": 333,
+      "delta_sec": 0.0181,
+      "process_frame": 451,
+      "physics_frame": 492,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 22,
+      "elapsed_ms": 352,
+      "delta_sec": 0.0179,
+      "process_frame": 452,
+      "physics_frame": 493,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 23,
+      "elapsed_ms": 369,
+      "delta_sec": 0.0167,
+      "process_frame": 453,
+      "physics_frame": 494,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 24,
+      "elapsed_ms": 385,
+      "delta_sec": 0.0167,
+      "process_frame": 454,
+      "physics_frame": 495,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "script_variables": {
+            "_is_pointer_down": true,
+            "_ripple_wave_alpha": 0.1,
+            "_ripple_wave_count": 1,
+            "_target_elevation": 3,
+            "current_state": 3
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 25,
+      "elapsed_ms": 402,
+      "delta_sec": 0.0167,
+      "process_frame": 455,
+      "physics_frame": 496,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "script_variables": {
+            "_press_progress": 0.2811,
+            "_ripple_wave_radius": 6.2005,
+            "_state_layer_alpha": 0.086
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 26,
+      "elapsed_ms": 418,
+      "delta_sec": 0.0168,
+      "process_frame": 456,
+      "physics_frame": 497,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "script_variables": {
+            "_current_elevation": 3,
+            "_press_progress": 0.5038,
+            "_ripple_wave_radius": 11.811,
+            "_state_layer_alpha": 0.0906
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 27,
+      "elapsed_ms": 435,
+      "delta_sec": 0.0167,
+      "process_frame": 457,
+      "physics_frame": 498,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "script_variables": {
+            "_press_progress": 0.6763,
+            "_ripple_wave_radius": 16.9023,
+            "_state_layer_alpha": 0.0941
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 28,
+      "elapsed_ms": 453,
+      "delta_sec": 0.0167,
+      "process_frame": 458,
+      "physics_frame": 499,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "screen_rect": {
+            "width": 135.0
+          },
+          "transforms": {
+            "size": {
+              "x": 135.0,
+              "y": 56.0
+            },
+            "custom_minimum_size": {
+              "x": 135.0,
+              "y": 56.0
+            }
+          },
+          "script_variables": {
+            "_is_pointer_down": false,
+            "_press_progress": 0.8024,
+            "_ripple_wave_radius": 21.4166,
+            "_state_layer_alpha": 0.0966,
+            "_target_elevation": 4,
+            "current_state": 1,
+            "extended": true,
+            "fab_size": 3,
+            "fab_variant": 3
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 29,
+      "elapsed_ms": 469,
+      "delta_sec": 0.0167,
+      "process_frame": 459,
+      "physics_frame": 500,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "screen_rect": {
+            "width": 72.6287
+          },
+          "transforms": {
+            "size": {
+              "x": 72.6287,
+              "y": 56.0
+            },
+            "custom_minimum_size": {
+              "x": 72.6287,
+              "y": 56.0
+            },
+            "offsets": {
+              "left": 80.0,
+              "top": 100.0,
+              "right": 152.6287,
+              "bottom": 156.0
+            }
+          },
+          "script_variables": {
+            "_extend_progress": 0.2105,
+            "_press_progress": 0.5769,
+            "_ripple_wave_alpha": 0.0813,
+            "_state_layer_alpha": 0.0917,
+            "extend_progress": 0.2105
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 30,
+      "elapsed_ms": 485,
+      "delta_sec": 0.0167,
+      "process_frame": 460,
+      "physics_frame": 501,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "screen_rect": {
+            "width": 86.7431
+          },
+          "transforms": {
+            "size": {
+              "x": 86.7431,
+              "y": 56.0
+            },
+            "custom_minimum_size": {
+              "x": 86.7431,
+              "y": 56.0
+            },
+            "offsets": {
+              "left": 80.0,
+              "top": 100.0,
+              "right": 166.7431,
+              "bottom": 156.0
+            }
+          },
+          "script_variables": {
+            "_current_elevation": 4,
+            "_extend_progress": 0.3892,
+            "_press_progress": 0.3981,
+            "_ripple_wave_alpha": 0.0651,
+            "_state_layer_alpha": 0.0878,
+            "extend_progress": 0.3892
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 31,
+      "elapsed_ms": 501,
+      "delta_sec": 0.0167,
+      "process_frame": 461,
+      "physics_frame": 502,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "screen_rect": {
+            "width": 98.5493
+          },
+          "transforms": {
+            "size": {
+              "x": 98.5493,
+              "y": 56.0
+            },
+            "custom_minimum_size": {
+              "x": 98.5493,
+              "y": 56.0
+            },
+            "offsets": {
+              "left": 80.0,
+              "top": 100.0,
+              "right": 178.5493,
+              "bottom": 156.0
+            }
+          },
+          "script_variables": {
+            "_extend_progress": 0.5386,
+            "_press_progress": 0.2607,
+            "_ripple_wave_alpha": 0.0512,
+            "_state_layer_alpha": 0.0849,
+            "extend_progress": 0.5386
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 32,
+      "elapsed_ms": 519,
+      "delta_sec": 0.0167,
+      "process_frame": 462,
+      "physics_frame": 503,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "screen_rect": {
+            "width": 108.2534
+          },
+          "transforms": {
+            "size": {
+              "x": 108.2534,
+              "y": 56.0
+            },
+            "custom_minimum_size": {
+              "x": 108.2534,
+              "y": 56.0
+            },
+            "offsets": {
+              "left": 80.0,
+              "top": 100.0,
+              "right": 188.2534,
+              "bottom": 156.0
+            }
+          },
+          "script_variables": {
+            "_extend_progress": 0.6614,
+            "_press_progress": 0.1593,
+            "_ripple_wave_alpha": 0.0394,
+            "_state_layer_alpha": 0.0828,
+            "extend_progress": 0.6614
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 33,
+      "elapsed_ms": 534,
+      "delta_sec": 0.0167,
+      "process_frame": 463,
+      "physics_frame": 504,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "screen_rect": {
+            "width": 116.0614
+          },
+          "transforms": {
+            "size": {
+              "x": 116.0614,
+              "y": 56.0
+            },
+            "custom_minimum_size": {
+              "x": 116.0614,
+              "y": 56.0
+            },
+            "offsets": {
+              "left": 80.0,
+              "top": 100.0,
+              "right": 196.0614,
+              "bottom": 156.0
+            }
+          },
+          "script_variables": {
+            "_extend_progress": 0.7603,
+            "_press_progress": 0.0883,
+            "_ripple_wave_alpha": 0.0296,
+            "_state_layer_alpha": 0.0815,
+            "extend_progress": 0.7603
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 34,
+      "elapsed_ms": 550,
+      "delta_sec": 0.0167,
+      "process_frame": 464,
+      "physics_frame": 505,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "screen_rect": {
+            "width": 122.1796
+          },
+          "transforms": {
+            "size": {
+              "x": 122.1796,
+              "y": 56.0
+            },
+            "custom_minimum_size": {
+              "x": 122.1796,
+              "y": 56.0
+            },
+            "offsets": {
+              "left": 80.0,
+              "top": 100.0,
+              "right": 202.1796,
+              "bottom": 156.0
+            }
+          },
+          "script_variables": {
+            "_extend_progress": 0.8377,
+            "_press_progress": 0.0423,
+            "_ripple_wave_alpha": 0.0216,
+            "_state_layer_alpha": 0.0806,
+            "extend_progress": 0.8377
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 35,
+      "elapsed_ms": 567,
+      "delta_sec": 0.0167,
+      "process_frame": 465,
+      "physics_frame": 506,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "screen_rect": {
+            "width": 126.8138
+          },
+          "transforms": {
+            "size": {
+              "x": 126.8138,
+              "y": 56.0
+            },
+            "custom_minimum_size": {
+              "x": 126.8138,
+              "y": 56.0
+            },
+            "offsets": {
+              "left": 80.0,
+              "top": 100.0,
+              "right": 206.8138,
+              "bottom": 156.0
+            }
+          },
+          "script_variables": {
+            "_extend_progress": 0.8964,
+            "_press_progress": 0.0159,
+            "_ripple_wave_alpha": 0.0152,
+            "_state_layer_alpha": 0.0802,
+            "extend_progress": 0.8964
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 36,
+      "elapsed_ms": 584,
+      "delta_sec": 0.0167,
+      "process_frame": 466,
+      "physics_frame": 507,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "screen_rect": {
+            "width": 130.1703
+          },
+          "transforms": {
+            "size": {
+              "x": 130.1703,
+              "y": 56.0
+            },
+            "custom_minimum_size": {
+              "x": 130.1703,
+              "y": 56.0
+            },
+            "offsets": {
+              "left": 80.0,
+              "top": 100.0,
+              "right": 210.1703,
+              "bottom": 156.0
+            }
+          },
+          "script_variables": {
+            "_extend_progress": 0.9389,
+            "_press_progress": 0.0037,
+            "_ripple_wave_alpha": 0.0102,
+            "_state_layer_alpha": 0.08,
+            "extend_progress": 0.9389
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 37,
+      "elapsed_ms": 600,
+      "delta_sec": 0.0167,
+      "process_frame": 467,
+      "physics_frame": 508,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "screen_rect": {
+            "width": 132.4552
+          },
+          "transforms": {
+            "size": {
+              "x": 132.4552,
+              "y": 56.0
+            },
+            "custom_minimum_size": {
+              "x": 132.4552,
+              "y": 56.0
+            },
+            "offsets": {
+              "left": 80.0,
+              "top": 100.0,
+              "right": 212.4552,
+              "bottom": 156.0
+            }
+          },
+          "script_variables": {
+            "_extend_progress": 0.9678,
+            "_press_progress": 0.0002,
+            "_ripple_wave_alpha": 0.0064,
+            "extend_progress": 0.9678
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 38,
+      "elapsed_ms": 617,
+      "delta_sec": 0.0167,
+      "process_frame": 468,
+      "physics_frame": 509,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "screen_rect": {
+            "width": 133.8745
+          },
+          "transforms": {
+            "size": {
+              "x": 133.8745,
+              "y": 56.0
+            },
+            "custom_minimum_size": {
+              "x": 133.8745,
+              "y": 56.0
+            },
+            "offsets": {
+              "left": 80.0,
+              "top": 100.0,
+              "right": 213.8745,
+              "bottom": 156.0
+            }
+          },
+          "script_variables": {
+            "_extend_progress": 0.9858,
+            "_press_progress": 0.0,
+            "_ripple_wave_alpha": 0.0037,
+            "extend_progress": 0.9858
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 39,
+      "elapsed_ms": 633,
+      "delta_sec": 0.0167,
+      "process_frame": 469,
+      "physics_frame": 510,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "screen_rect": {
+            "width": 134.6343
+          },
+          "transforms": {
+            "size": {
+              "x": 134.6343,
+              "y": 56.0
+            },
+            "custom_minimum_size": {
+              "x": 134.6343,
+              "y": 56.0
+            },
+            "offsets": {
+              "left": 80.0,
+              "top": 100.0,
+              "right": 214.6343,
+              "bottom": 156.0
+            }
+          },
+          "script_variables": {
+            "_extend_progress": 0.9954,
+            "_ripple_wave_alpha": 0.0019,
+            "extend_progress": 0.9954
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 40,
+      "elapsed_ms": 650,
+      "delta_sec": 0.0167,
+      "process_frame": 470,
+      "physics_frame": 511,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "screen_rect": {
+            "width": 134.9406
+          },
+          "transforms": {
+            "size": {
+              "x": 134.9406,
+              "y": 56.0
+            },
+            "custom_minimum_size": {
+              "x": 134.9406,
+              "y": 56.0
+            },
+            "offsets": {
+              "left": 80.0,
+              "top": 100.0,
+              "right": 214.9406,
+              "bottom": 156.0
+            }
+          },
+          "script_variables": {
+            "_extend_progress": 0.9992,
+            "_ripple_wave_alpha": 0.0008,
+            "extend_progress": 0.9992
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 41,
+      "elapsed_ms": 667,
+      "delta_sec": 0.0167,
+      "process_frame": 471,
+      "physics_frame": 512,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "screen_rect": {
+            "width": 134.9997
+          },
+          "transforms": {
+            "size": {
+              "x": 134.9997,
+              "y": 56.0
+            },
+            "custom_minimum_size": {
+              "x": 134.9997,
+              "y": 56.0
+            },
+            "offsets": {
+              "left": 80.0,
+              "top": 100.0,
+              "right": 214.9997,
+              "bottom": 156.0
+            }
+          },
+          "script_variables": {
+            "_extend_progress": 1.0,
+            "_ripple_wave_alpha": 0.0002,
+            "extend_progress": 1.0
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 42,
+      "elapsed_ms": 691,
+      "delta_sec": 0.0181,
+      "process_frame": 472,
+      "physics_frame": 514,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "screen_rect": {
+            "width": 135.0
+          },
+          "transforms": {
+            "size": {
+              "x": 135.0,
+              "y": 56.0
+            },
+            "custom_minimum_size": {
+              "x": 135.0,
+              "y": 56.0
+            },
+            "offsets": {
+              "left": 80.0,
+              "top": 100.0,
+              "right": 215.0,
+              "bottom": 156.0
+            }
+          },
+          "script_variables": {
+            "_ripple_wave_alpha": 0.0
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 43,
+      "elapsed_ms": 700,
+      "delta_sec": 0.0167,
+      "process_frame": 473,
+      "physics_frame": 515,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {
+        "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+          "script_variables": {
+            "_ripple_wave_count": 0,
+            "_ripple_wave_radius": 0.0
+          }
+        }
+      },
+      "changed_count": 1
+    },
+    {
+      "frame_index": 44,
+      "elapsed_ms": 717,
+      "delta_sec": 0.0167,
+      "process_frame": 474,
+      "physics_frame": 516,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 45,
+      "elapsed_ms": 734,
+      "delta_sec": 0.0167,
+      "process_frame": 475,
+      "physics_frame": 517,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 46,
+      "elapsed_ms": 784,
+      "delta_sec": 0.0399,
+      "process_frame": 476,
+      "physics_frame": 519,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 47,
+      "elapsed_ms": 800,
+      "delta_sec": 0.02,
+      "process_frame": 477,
+      "physics_frame": 520,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 48,
+      "elapsed_ms": 816,
+      "delta_sec": 0.02,
+      "process_frame": 478,
+      "physics_frame": 521,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 49,
+      "elapsed_ms": 833,
+      "delta_sec": 0.0191,
+      "process_frame": 479,
+      "physics_frame": 522,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 50,
+      "elapsed_ms": 850,
+      "delta_sec": 0.0167,
+      "process_frame": 480,
+      "physics_frame": 523,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 51,
+      "elapsed_ms": 866,
+      "delta_sec": 0.02,
+      "process_frame": 481,
+      "physics_frame": 525,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 52,
+      "elapsed_ms": 883,
+      "delta_sec": 0.02,
+      "process_frame": 482,
+      "physics_frame": 526,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 53,
+      "elapsed_ms": 900,
+      "delta_sec": 0.0174,
+      "process_frame": 483,
+      "physics_frame": 527,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 54,
+      "elapsed_ms": 920,
+      "delta_sec": 0.0199,
+      "process_frame": 484,
+      "physics_frame": 528,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 55,
+      "elapsed_ms": 933,
+      "delta_sec": 0.0134,
+      "process_frame": 485,
+      "physics_frame": 529,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 56,
+      "elapsed_ms": 950,
+      "delta_sec": 0.017,
+      "process_frame": 486,
+      "physics_frame": 530,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 57,
+      "elapsed_ms": 967,
+      "delta_sec": 0.0163,
+      "process_frame": 487,
+      "physics_frame": 531,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 58,
+      "elapsed_ms": 983,
+      "delta_sec": 0.017,
+      "process_frame": 488,
+      "physics_frame": 532,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 59,
+      "elapsed_ms": 1000,
+      "delta_sec": 0.0166,
+      "process_frame": 489,
+      "physics_frame": 533,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 60,
+      "elapsed_ms": 1017,
+      "delta_sec": 0.0167,
+      "process_frame": 490,
+      "physics_frame": 534,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    },
+    {
+      "frame_index": 61,
+      "elapsed_ms": 1038,
+      "delta_sec": 0.0182,
+      "process_frame": 491,
+      "physics_frame": 535,
+      "added_nodes": [],
+      "removed_nodes": [],
+      "changed_nodes": {},
+      "changed_count": 0
+    }
+  ],
+  "analysis": {
+    "summary": {
+      "total_frames": 62,
+      "delta_frames": 61,
+      "duration_ms": 1038,
+      "initial_node_count": 3,
+      "active_node_count": 1,
+      "static_node_count": 2,
+      "spawned_node_count": 0,
+      "removed_node_count": 0,
+      "bounces_detected": 0,
+      "floor_contacts_detected": 0,
+      "total_events": 179
+    },
+    "node_trajectories": {
+      "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel": {
+        "name": "ExtendedFabIconLabel",
+        "class": "Control",
+        "category": "control",
+        "path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "frames_changed": 39,
+        "is_3d": false,
+        "start_position": {
+          "x": 80.0,
+          "y": 100.0
+        },
+        "end_position": {
+          "x": 80.0,
+          "y": 100.0
+        },
+        "min_position": {
+          "x": 80.0,
+          "y": 100.0
+        },
+        "max_position": {
+          "x": 80.0,
+          "y": 100.0
+        },
+        "total_distance": 0.0,
+        "peak_speed": 0.0,
+        "peak_speed_frame": 0,
+        "bounce_frames": [],
+        "bounces": [],
+        "screen_trail": [
+          {
+            "x": 147.5,
+            "y": 128.0
+          },
+          {
+            "x": 139.1857,
+            "y": 128.0
+          },
+          {
+            "x": 132.1284,
+            "y": 128.0
+          },
+          {
+            "x": 126.2253,
+            "y": 128.0
+          },
+          {
+            "x": 121.1774,
+            "y": 128.0
+          },
+          {
+            "x": 117.0059,
+            "y": 128.0
+          },
+          {
+            "x": 113.8232,
+            "y": 128.0
+          },
+          {
+            "x": 111.4955,
+            "y": 128.0
+          },
+          {
+            "x": 109.8892,
+            "y": 128.0
+          },
+          {
+            "x": 108.8703,
+            "y": 128.0
+          },
+          {
+            "x": 108.3053,
+            "y": 128.0
+          },
+          {
+            "x": 108.0601,
+            "y": 128.0
+          },
+          {
+            "x": 108.0014,
+            "y": 128.0
+          },
+          {
+            "x": 108.0,
+            "y": 128.0
+          },
+          {
+            "x": 147.5,
+            "y": 128.0
+          },
+          {
+            "x": 116.3144,
+            "y": 128.0
+          },
+          {
+            "x": 123.3716,
+            "y": 128.0
+          },
+          {
+            "x": 129.2747,
+            "y": 128.0
+          },
+          {
+            "x": 134.1267,
+            "y": 128.0
+          },
+          {
+            "x": 138.0307,
+            "y": 128.0
+          },
+          {
+            "x": 141.0898,
+            "y": 128.0
+          },
+          {
+            "x": 143.4069,
+            "y": 128.0
+          },
+          {
+            "x": 145.0852,
+            "y": 128.0
+          },
+          {
+            "x": 146.2276,
+            "y": 128.0
+          },
+          {
+            "x": 146.9373,
+            "y": 128.0
+          },
+          {
+            "x": 147.3172,
+            "y": 128.0
+          },
+          {
+            "x": 147.4703,
+            "y": 128.0
+          },
+          {
+            "x": 147.4999,
+            "y": 128.0
+          },
+          {
+            "x": 147.5,
+            "y": 128.0
+          }
+        ],
+        "mutated_properties": {
+          "script_variables._elevation_tween": {
+            "initial": null,
+            "final": "<Tween>",
+            "change_count": 1
+          },
+          "script_variables._is_pointer_down": {
+            "initial": false,
+            "final": false,
+            "change_count": 4
+          },
+          "script_variables._motion_tween": {
+            "initial": null,
+            "final": "<Tween>",
+            "change_count": 1
+          },
+          "script_variables._pointer_inside": {
+            "initial": false,
+            "final": true,
+            "change_count": 1
+          },
+          "script_variables._ripple_wave_alpha": {
+            "initial": 0.0,
+            "final": 0.0,
+            "change_count": 29
+          },
+          "script_variables._ripple_wave_count": {
+            "initial": 0,
+            "final": 0,
+            "change_count": 4
+          },
+          "script_variables.current_state": {
+            "initial": 0,
+            "final": 1,
+            "change_count": 4
+          },
+          "script_variables._hover_progress": {
+            "initial": 0.0,
+            "final": 1.0,
+            "change_count": 13
+          },
+          "script_variables._press_progress": {
+            "initial": 0.0,
+            "final": 0.0,
+            "change_count": 27
+          },
+          "script_variables._ripple_wave_radius": {
+            "initial": 0.0,
+            "final": 0.0,
+            "change_count": 10
+          },
+          "script_variables._state_layer_alpha": {
+            "initial": 0.0,
+            "final": 0.08,
+            "change_count": 22
+          },
+          "script_variables._extend_tween": {
+            "initial": null,
+            "final": "<Tween>",
+            "change_count": 1
+          },
+          "script_variables._target_elevation": {
+            "initial": 3,
+            "final": 4,
+            "change_count": 3
+          },
+          "script_variables.extended": {
+            "initial": true,
+            "final": true,
+            "change_count": 2
+          },
+          "script_variables.fab_size": {
+            "initial": 3,
+            "final": 3,
+            "change_count": 2
+          },
+          "script_variables.fab_variant": {
+            "initial": 3,
+            "final": 3,
+            "change_count": 2
+          },
+          "script_variables._extend_progress": {
+            "initial": 1.0,
+            "final": 1.0,
+            "change_count": 25
+          },
+          "script_variables.extend_progress": {
+            "initial": 1.0,
+            "final": 1.0,
+            "change_count": 25
+          },
+          "script_variables._current_elevation": {
+            "initial": 3,
+            "final": 4,
+            "change_count": 3
+          }
+        },
+        "displacement": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      }
+    },
+    "events": [
+      {
+        "frame_index": 1,
+        "elapsed_ms": 3,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_elevation_tween",
+        "old_value": null,
+        "new_value": "<Tween>"
+      },
+      {
+        "frame_index": 1,
+        "elapsed_ms": 3,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_is_pointer_down",
+        "old_value": false,
+        "new_value": true
+      },
+      {
+        "frame_index": 1,
+        "elapsed_ms": 3,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_motion_tween",
+        "old_value": null,
+        "new_value": "<Tween>"
+      },
+      {
+        "frame_index": 1,
+        "elapsed_ms": 3,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_pointer_inside",
+        "old_value": false,
+        "new_value": true
+      },
+      {
+        "frame_index": 1,
+        "elapsed_ms": 3,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0,
+        "new_value": 0.1
+      },
+      {
+        "frame_index": 1,
+        "elapsed_ms": 3,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_count",
+        "old_value": 0,
+        "new_value": 1
+      },
+      {
+        "frame_index": 1,
+        "elapsed_ms": 3,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "current_state",
+        "old_value": 0,
+        "new_value": 3
+      },
+      {
+        "frame_index": 2,
+        "elapsed_ms": 16,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_hover_progress",
+        "old_value": 0.0,
+        "new_value": 0.26
+      },
+      {
+        "frame_index": 2,
+        "elapsed_ms": 16,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_press_progress",
+        "old_value": 0.0,
+        "new_value": 0.26
+      },
+      {
+        "frame_index": 2,
+        "elapsed_ms": 16,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_radius",
+        "old_value": 0.0,
+        "new_value": 15.9398
+      },
+      {
+        "frame_index": 2,
+        "elapsed_ms": 16,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0,
+        "new_value": 0.0275
+      },
+      {
+        "frame_index": 3,
+        "elapsed_ms": 33,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_hover_progress",
+        "old_value": 0.26,
+        "new_value": 0.4751
+      },
+      {
+        "frame_index": 3,
+        "elapsed_ms": 33,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_press_progress",
+        "old_value": 0.26,
+        "new_value": 0.4751
+      },
+      {
+        "frame_index": 3,
+        "elapsed_ms": 33,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_radius",
+        "old_value": 15.9398,
+        "new_value": 30.8303
+      },
+      {
+        "frame_index": 3,
+        "elapsed_ms": 33,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0275,
+        "new_value": 0.05
+      },
+      {
+        "frame_index": 4,
+        "elapsed_ms": 50,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_hover_progress",
+        "old_value": 0.4751,
+        "new_value": 0.6533
+      },
+      {
+        "frame_index": 4,
+        "elapsed_ms": 50,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_press_progress",
+        "old_value": 0.4751,
+        "new_value": 0.6533
+      },
+      {
+        "frame_index": 4,
+        "elapsed_ms": 50,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_radius",
+        "old_value": 30.8303,
+        "new_value": 45.1559
+      },
+      {
+        "frame_index": 4,
+        "elapsed_ms": 50,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_state_layer_alpha",
+        "old_value": 0.05,
+        "new_value": 0.0682
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 67,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_extend_tween",
+        "old_value": null,
+        "new_value": "<Tween>"
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 67,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_hover_progress",
+        "old_value": 0.6533,
+        "new_value": 0.7858
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 67,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_is_pointer_down",
+        "old_value": true,
+        "new_value": false
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 67,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_press_progress",
+        "old_value": 0.6533,
+        "new_value": 0.7858
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 67,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_radius",
+        "old_value": 45.1559,
+        "new_value": 57.9864
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 67,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0682,
+        "new_value": 0.0813
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 67,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_target_elevation",
+        "old_value": 3,
+        "new_value": 4
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 67,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "current_state",
+        "old_value": 3,
+        "new_value": 1
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 67,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "extended",
+        "old_value": true,
+        "new_value": false
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 67,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "fab_size",
+        "old_value": 3,
+        "new_value": 1
+      },
+      {
+        "frame_index": 5,
+        "elapsed_ms": 67,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "fab_variant",
+        "old_value": 3,
+        "new_value": 1
+      },
+      {
+        "frame_index": 6,
+        "elapsed_ms": 83,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_extend_progress",
+        "old_value": 1.0,
+        "new_value": 0.7895
+      },
+      {
+        "frame_index": 6,
+        "elapsed_ms": 83,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_hover_progress",
+        "old_value": 0.7858,
+        "new_value": 0.846
+      },
+      {
+        "frame_index": 6,
+        "elapsed_ms": 83,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_press_progress",
+        "old_value": 0.7858,
+        "new_value": 0.5649
+      },
+      {
+        "frame_index": 6,
+        "elapsed_ms": 83,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.1,
+        "new_value": 0.0813
+      },
+      {
+        "frame_index": 6,
+        "elapsed_ms": 83,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0813,
+        "new_value": 0.0809
+      },
+      {
+        "frame_index": 6,
+        "elapsed_ms": 83,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "extend_progress",
+        "old_value": 1.0,
+        "new_value": 0.7895
+      },
+      {
+        "frame_index": 7,
+        "elapsed_ms": 100,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_current_elevation",
+        "old_value": 3,
+        "new_value": 4
+      },
+      {
+        "frame_index": 7,
+        "elapsed_ms": 100,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_extend_progress",
+        "old_value": 0.7895,
+        "new_value": 0.6108
+      },
+      {
+        "frame_index": 7,
+        "elapsed_ms": 100,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_hover_progress",
+        "old_value": 0.846,
+        "new_value": 0.8937
+      },
+      {
+        "frame_index": 7,
+        "elapsed_ms": 100,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_press_progress",
+        "old_value": 0.5649,
+        "new_value": 0.3899
+      },
+      {
+        "frame_index": 7,
+        "elapsed_ms": 100,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0813,
+        "new_value": 0.0651
+      },
+      {
+        "frame_index": 7,
+        "elapsed_ms": 100,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0809,
+        "new_value": 0.0806
+      },
+      {
+        "frame_index": 7,
+        "elapsed_ms": 100,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "extend_progress",
+        "old_value": 0.7895,
+        "new_value": 0.6108
+      },
+      {
+        "frame_index": 8,
+        "elapsed_ms": 116,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_extend_progress",
+        "old_value": 0.6108,
+        "new_value": 0.4614
+      },
+      {
+        "frame_index": 8,
+        "elapsed_ms": 116,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_hover_progress",
+        "old_value": 0.8937,
+        "new_value": 0.9304
+      },
+      {
+        "frame_index": 8,
+        "elapsed_ms": 116,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_press_progress",
+        "old_value": 0.3899,
+        "new_value": 0.2553
+      },
+      {
+        "frame_index": 8,
+        "elapsed_ms": 116,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0651,
+        "new_value": 0.0512
+      },
+      {
+        "frame_index": 8,
+        "elapsed_ms": 116,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0806,
+        "new_value": 0.0804
+      },
+      {
+        "frame_index": 8,
+        "elapsed_ms": 116,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "extend_progress",
+        "old_value": 0.6108,
+        "new_value": 0.4614
+      },
+      {
+        "frame_index": 9,
+        "elapsed_ms": 135,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_extend_progress",
+        "old_value": 0.4614,
+        "new_value": 0.3336
+      },
+      {
+        "frame_index": 9,
+        "elapsed_ms": 135,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_hover_progress",
+        "old_value": 0.9304,
+        "new_value": 0.9585
+      },
+      {
+        "frame_index": 9,
+        "elapsed_ms": 135,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_press_progress",
+        "old_value": 0.2553,
+        "new_value": 0.1522
+      },
+      {
+        "frame_index": 9,
+        "elapsed_ms": 135,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0512,
+        "new_value": 0.039
+      },
+      {
+        "frame_index": 9,
+        "elapsed_ms": 135,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0804,
+        "new_value": 0.0802
+      },
+      {
+        "frame_index": 9,
+        "elapsed_ms": 135,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "extend_progress",
+        "old_value": 0.4614,
+        "new_value": 0.3336
+      },
+      {
+        "frame_index": 10,
+        "elapsed_ms": 152,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_extend_progress",
+        "old_value": 0.3336,
+        "new_value": 0.228
+      },
+      {
+        "frame_index": 10,
+        "elapsed_ms": 152,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_hover_progress",
+        "old_value": 0.9585,
+        "new_value": 0.9785
+      },
+      {
+        "frame_index": 10,
+        "elapsed_ms": 152,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_press_progress",
+        "old_value": 0.1522,
+        "new_value": 0.079
+      },
+      {
+        "frame_index": 10,
+        "elapsed_ms": 152,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.039,
+        "new_value": 0.0284
+      },
+      {
+        "frame_index": 10,
+        "elapsed_ms": 152,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0802,
+        "new_value": 0.0801
+      },
+      {
+        "frame_index": 10,
+        "elapsed_ms": 152,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "extend_progress",
+        "old_value": 0.3336,
+        "new_value": 0.228
+      },
+      {
+        "frame_index": 11,
+        "elapsed_ms": 169,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_extend_progress",
+        "old_value": 0.228,
+        "new_value": 0.1474
+      },
+      {
+        "frame_index": 11,
+        "elapsed_ms": 169,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_hover_progress",
+        "old_value": 0.9785,
+        "new_value": 0.9907
+      },
+      {
+        "frame_index": 11,
+        "elapsed_ms": 169,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_press_progress",
+        "old_value": 0.079,
+        "new_value": 0.0341
+      },
+      {
+        "frame_index": 11,
+        "elapsed_ms": 169,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0284,
+        "new_value": 0.02
+      },
+      {
+        "frame_index": 11,
+        "elapsed_ms": 169,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0801,
+        "new_value": 0.08
+      },
+      {
+        "frame_index": 11,
+        "elapsed_ms": 169,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "extend_progress",
+        "old_value": 0.228,
+        "new_value": 0.1474
+      },
+      {
+        "frame_index": 12,
+        "elapsed_ms": 185,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_extend_progress",
+        "old_value": 0.1474,
+        "new_value": 0.0885
+      },
+      {
+        "frame_index": 12,
+        "elapsed_ms": 185,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_hover_progress",
+        "old_value": 0.9907,
+        "new_value": 0.9971
+      },
+      {
+        "frame_index": 12,
+        "elapsed_ms": 185,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_press_progress",
+        "old_value": 0.0341,
+        "new_value": 0.0106
+      },
+      {
+        "frame_index": 12,
+        "elapsed_ms": 185,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.02,
+        "new_value": 0.0134
+      },
+      {
+        "frame_index": 12,
+        "elapsed_ms": 185,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "extend_progress",
+        "old_value": 0.1474,
+        "new_value": 0.0885
+      },
+      {
+        "frame_index": 13,
+        "elapsed_ms": 202,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_extend_progress",
+        "old_value": 0.0885,
+        "new_value": 0.0478
+      },
+      {
+        "frame_index": 13,
+        "elapsed_ms": 202,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_hover_progress",
+        "old_value": 0.9971,
+        "new_value": 0.9996
+      },
+      {
+        "frame_index": 13,
+        "elapsed_ms": 202,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_press_progress",
+        "old_value": 0.0106,
+        "new_value": 0.0015
+      },
+      {
+        "frame_index": 13,
+        "elapsed_ms": 202,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0134,
+        "new_value": 0.0085
+      },
+      {
+        "frame_index": 13,
+        "elapsed_ms": 202,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "extend_progress",
+        "old_value": 0.0885,
+        "new_value": 0.0478
+      },
+      {
+        "frame_index": 14,
+        "elapsed_ms": 218,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_extend_progress",
+        "old_value": 0.0478,
+        "new_value": 0.022
+      },
+      {
+        "frame_index": 14,
+        "elapsed_ms": 218,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_hover_progress",
+        "old_value": 0.9996,
+        "new_value": 1.0
+      },
+      {
+        "frame_index": 14,
+        "elapsed_ms": 218,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_press_progress",
+        "old_value": 0.0015,
+        "new_value": 0.0
+      },
+      {
+        "frame_index": 14,
+        "elapsed_ms": 218,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0085,
+        "new_value": 0.0049
+      },
+      {
+        "frame_index": 14,
+        "elapsed_ms": 218,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "extend_progress",
+        "old_value": 0.0478,
+        "new_value": 0.022
+      },
+      {
+        "frame_index": 15,
+        "elapsed_ms": 235,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_extend_progress",
+        "old_value": 0.022,
+        "new_value": 0.0077
+      },
+      {
+        "frame_index": 15,
+        "elapsed_ms": 235,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0049,
+        "new_value": 0.0025
+      },
+      {
+        "frame_index": 15,
+        "elapsed_ms": 235,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "extend_progress",
+        "old_value": 0.022,
+        "new_value": 0.0077
+      },
+      {
+        "frame_index": 16,
+        "elapsed_ms": 252,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_extend_progress",
+        "old_value": 0.0077,
+        "new_value": 0.0015
+      },
+      {
+        "frame_index": 16,
+        "elapsed_ms": 252,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0025,
+        "new_value": 0.0011
+      },
+      {
+        "frame_index": 16,
+        "elapsed_ms": 252,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "extend_progress",
+        "old_value": 0.0077,
+        "new_value": 0.0015
+      },
+      {
+        "frame_index": 17,
+        "elapsed_ms": 268,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_extend_progress",
+        "old_value": 0.0015,
+        "new_value": 0.0
+      },
+      {
+        "frame_index": 17,
+        "elapsed_ms": 268,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0011,
+        "new_value": 0.0003
+      },
+      {
+        "frame_index": 17,
+        "elapsed_ms": 268,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "extend_progress",
+        "old_value": 0.0015,
+        "new_value": 0.0
+      },
+      {
+        "frame_index": 18,
+        "elapsed_ms": 285,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0003,
+        "new_value": 0.0
+      },
+      {
+        "frame_index": 20,
+        "elapsed_ms": 318,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_count",
+        "old_value": 1,
+        "new_value": 0
+      },
+      {
+        "frame_index": 20,
+        "elapsed_ms": 318,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_radius",
+        "old_value": 57.9864,
+        "new_value": 0.0
+      },
+      {
+        "frame_index": 24,
+        "elapsed_ms": 385,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_is_pointer_down",
+        "old_value": false,
+        "new_value": true
+      },
+      {
+        "frame_index": 24,
+        "elapsed_ms": 385,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0,
+        "new_value": 0.1
+      },
+      {
+        "frame_index": 24,
+        "elapsed_ms": 385,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_count",
+        "old_value": 0,
+        "new_value": 1
+      },
+      {
+        "frame_index": 24,
+        "elapsed_ms": 385,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_target_elevation",
+        "old_value": 4,
+        "new_value": 3
+      },
+      {
+        "frame_index": 24,
+        "elapsed_ms": 385,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "current_state",
+        "old_value": 1,
+        "new_value": 3
+      },
+      {
+        "frame_index": 25,
+        "elapsed_ms": 402,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_press_progress",
+        "old_value": 0.0,
+        "new_value": 0.2811
+      },
+      {
+        "frame_index": 25,
+        "elapsed_ms": 402,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_radius",
+        "old_value": 0.0,
+        "new_value": 6.2005
+      },
+      {
+        "frame_index": 25,
+        "elapsed_ms": 402,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_state_layer_alpha",
+        "old_value": 0.08,
+        "new_value": 0.086
+      },
+      {
+        "frame_index": 26,
+        "elapsed_ms": 418,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_current_elevation",
+        "old_value": 4,
+        "new_value": 3
+      },
+      {
+        "frame_index": 26,
+        "elapsed_ms": 418,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_press_progress",
+        "old_value": 0.2811,
+        "new_value": 0.5038
+      },
+      {
+        "frame_index": 26,
+        "elapsed_ms": 418,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_radius",
+        "old_value": 6.2005,
+        "new_value": 11.811
+      },
+      {
+        "frame_index": 26,
+        "elapsed_ms": 418,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_state_layer_alpha",
+        "old_value": 0.086,
+        "new_value": 0.0906
+      },
+      {
+        "frame_index": 27,
+        "elapsed_ms": 435,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_press_progress",
+        "old_value": 0.5038,
+        "new_value": 0.6763
+      },
+      {
+        "frame_index": 27,
+        "elapsed_ms": 435,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_radius",
+        "old_value": 11.811,
+        "new_value": 16.9023
+      },
+      {
+        "frame_index": 27,
+        "elapsed_ms": 435,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0906,
+        "new_value": 0.0941
+      },
+      {
+        "frame_index": 28,
+        "elapsed_ms": 453,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_is_pointer_down",
+        "old_value": true,
+        "new_value": false
+      },
+      {
+        "frame_index": 28,
+        "elapsed_ms": 453,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_press_progress",
+        "old_value": 0.6763,
+        "new_value": 0.8024
+      },
+      {
+        "frame_index": 28,
+        "elapsed_ms": 453,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_radius",
+        "old_value": 16.9023,
+        "new_value": 21.4166
+      },
+      {
+        "frame_index": 28,
+        "elapsed_ms": 453,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0941,
+        "new_value": 0.0966
+      },
+      {
+        "frame_index": 28,
+        "elapsed_ms": 453,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_target_elevation",
+        "old_value": 3,
+        "new_value": 4
+      },
+      {
+        "frame_index": 28,
+        "elapsed_ms": 453,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "current_state",
+        "old_value": 3,
+        "new_value": 1
+      },
+      {
+        "frame_index": 28,
+        "elapsed_ms": 453,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "extended",
+        "old_value": false,
+        "new_value": true
+      },
+      {
+        "frame_index": 28,
+        "elapsed_ms": 453,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "fab_size",
+        "old_value": 1,
+        "new_value": 3
+      },
+      {
+        "frame_index": 28,
+        "elapsed_ms": 453,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "fab_variant",
+        "old_value": 1,
+        "new_value": 3
+      },
+      {
+        "frame_index": 29,
+        "elapsed_ms": 469,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_extend_progress",
+        "old_value": 0.0,
+        "new_value": 0.2105
+      },
+      {
+        "frame_index": 29,
+        "elapsed_ms": 469,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_press_progress",
+        "old_value": 0.8024,
+        "new_value": 0.5769
+      },
+      {
+        "frame_index": 29,
+        "elapsed_ms": 469,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.1,
+        "new_value": 0.0813
+      },
+      {
+        "frame_index": 29,
+        "elapsed_ms": 469,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0966,
+        "new_value": 0.0917
+      },
+      {
+        "frame_index": 29,
+        "elapsed_ms": 469,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "extend_progress",
+        "old_value": 0.0,
+        "new_value": 0.2105
+      },
+      {
+        "frame_index": 30,
+        "elapsed_ms": 485,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_current_elevation",
+        "old_value": 3,
+        "new_value": 4
+      },
+      {
+        "frame_index": 30,
+        "elapsed_ms": 485,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_extend_progress",
+        "old_value": 0.2105,
+        "new_value": 0.3892
+      },
+      {
+        "frame_index": 30,
+        "elapsed_ms": 485,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_press_progress",
+        "old_value": 0.5769,
+        "new_value": 0.3981
+      },
+      {
+        "frame_index": 30,
+        "elapsed_ms": 485,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0813,
+        "new_value": 0.0651
+      },
+      {
+        "frame_index": 30,
+        "elapsed_ms": 485,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0917,
+        "new_value": 0.0878
+      },
+      {
+        "frame_index": 30,
+        "elapsed_ms": 485,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "extend_progress",
+        "old_value": 0.2105,
+        "new_value": 0.3892
+      },
+      {
+        "frame_index": 31,
+        "elapsed_ms": 501,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_extend_progress",
+        "old_value": 0.3892,
+        "new_value": 0.5386
+      },
+      {
+        "frame_index": 31,
+        "elapsed_ms": 501,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_press_progress",
+        "old_value": 0.3981,
+        "new_value": 0.2607
+      },
+      {
+        "frame_index": 31,
+        "elapsed_ms": 501,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0651,
+        "new_value": 0.0512
+      },
+      {
+        "frame_index": 31,
+        "elapsed_ms": 501,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0878,
+        "new_value": 0.0849
+      },
+      {
+        "frame_index": 31,
+        "elapsed_ms": 501,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "extend_progress",
+        "old_value": 0.3892,
+        "new_value": 0.5386
+      },
+      {
+        "frame_index": 32,
+        "elapsed_ms": 519,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_extend_progress",
+        "old_value": 0.5386,
+        "new_value": 0.6614
+      },
+      {
+        "frame_index": 32,
+        "elapsed_ms": 519,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_press_progress",
+        "old_value": 0.2607,
+        "new_value": 0.1593
+      },
+      {
+        "frame_index": 32,
+        "elapsed_ms": 519,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0512,
+        "new_value": 0.0394
+      },
+      {
+        "frame_index": 32,
+        "elapsed_ms": 519,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0849,
+        "new_value": 0.0828
+      },
+      {
+        "frame_index": 32,
+        "elapsed_ms": 519,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "extend_progress",
+        "old_value": 0.5386,
+        "new_value": 0.6614
+      },
+      {
+        "frame_index": 33,
+        "elapsed_ms": 534,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_extend_progress",
+        "old_value": 0.6614,
+        "new_value": 0.7603
+      },
+      {
+        "frame_index": 33,
+        "elapsed_ms": 534,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_press_progress",
+        "old_value": 0.1593,
+        "new_value": 0.0883
+      },
+      {
+        "frame_index": 33,
+        "elapsed_ms": 534,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0394,
+        "new_value": 0.0296
+      },
+      {
+        "frame_index": 33,
+        "elapsed_ms": 534,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0828,
+        "new_value": 0.0815
+      },
+      {
+        "frame_index": 33,
+        "elapsed_ms": 534,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "extend_progress",
+        "old_value": 0.6614,
+        "new_value": 0.7603
+      },
+      {
+        "frame_index": 34,
+        "elapsed_ms": 550,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_extend_progress",
+        "old_value": 0.7603,
+        "new_value": 0.8377
+      },
+      {
+        "frame_index": 34,
+        "elapsed_ms": 550,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_press_progress",
+        "old_value": 0.0883,
+        "new_value": 0.0423
+      },
+      {
+        "frame_index": 34,
+        "elapsed_ms": 550,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0296,
+        "new_value": 0.0216
+      },
+      {
+        "frame_index": 34,
+        "elapsed_ms": 550,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0815,
+        "new_value": 0.0806
+      },
+      {
+        "frame_index": 34,
+        "elapsed_ms": 550,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "extend_progress",
+        "old_value": 0.7603,
+        "new_value": 0.8377
+      },
+      {
+        "frame_index": 35,
+        "elapsed_ms": 567,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_extend_progress",
+        "old_value": 0.8377,
+        "new_value": 0.8964
+      },
+      {
+        "frame_index": 35,
+        "elapsed_ms": 567,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_press_progress",
+        "old_value": 0.0423,
+        "new_value": 0.0159
+      },
+      {
+        "frame_index": 35,
+        "elapsed_ms": 567,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0216,
+        "new_value": 0.0152
+      },
+      {
+        "frame_index": 35,
+        "elapsed_ms": 567,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0806,
+        "new_value": 0.0802
+      },
+      {
+        "frame_index": 35,
+        "elapsed_ms": 567,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "extend_progress",
+        "old_value": 0.8377,
+        "new_value": 0.8964
+      },
+      {
+        "frame_index": 36,
+        "elapsed_ms": 584,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_extend_progress",
+        "old_value": 0.8964,
+        "new_value": 0.9389
+      },
+      {
+        "frame_index": 36,
+        "elapsed_ms": 584,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_press_progress",
+        "old_value": 0.0159,
+        "new_value": 0.0037
+      },
+      {
+        "frame_index": 36,
+        "elapsed_ms": 584,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0152,
+        "new_value": 0.0102
+      },
+      {
+        "frame_index": 36,
+        "elapsed_ms": 584,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_state_layer_alpha",
+        "old_value": 0.0802,
+        "new_value": 0.08
+      },
+      {
+        "frame_index": 36,
+        "elapsed_ms": 584,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "extend_progress",
+        "old_value": 0.8964,
+        "new_value": 0.9389
+      },
+      {
+        "frame_index": 37,
+        "elapsed_ms": 600,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_extend_progress",
+        "old_value": 0.9389,
+        "new_value": 0.9678
+      },
+      {
+        "frame_index": 37,
+        "elapsed_ms": 600,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_press_progress",
+        "old_value": 0.0037,
+        "new_value": 0.0002
+      },
+      {
+        "frame_index": 37,
+        "elapsed_ms": 600,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0102,
+        "new_value": 0.0064
+      },
+      {
+        "frame_index": 37,
+        "elapsed_ms": 600,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "extend_progress",
+        "old_value": 0.9389,
+        "new_value": 0.9678
+      },
+      {
+        "frame_index": 38,
+        "elapsed_ms": 617,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_extend_progress",
+        "old_value": 0.9678,
+        "new_value": 0.9858
+      },
+      {
+        "frame_index": 38,
+        "elapsed_ms": 617,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_press_progress",
+        "old_value": 0.0002,
+        "new_value": 0.0
+      },
+      {
+        "frame_index": 38,
+        "elapsed_ms": 617,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0064,
+        "new_value": 0.0037
+      },
+      {
+        "frame_index": 38,
+        "elapsed_ms": 617,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "extend_progress",
+        "old_value": 0.9678,
+        "new_value": 0.9858
+      },
+      {
+        "frame_index": 39,
+        "elapsed_ms": 633,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_extend_progress",
+        "old_value": 0.9858,
+        "new_value": 0.9954
+      },
+      {
+        "frame_index": 39,
+        "elapsed_ms": 633,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0037,
+        "new_value": 0.0019
+      },
+      {
+        "frame_index": 39,
+        "elapsed_ms": 633,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "extend_progress",
+        "old_value": 0.9858,
+        "new_value": 0.9954
+      },
+      {
+        "frame_index": 40,
+        "elapsed_ms": 650,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_extend_progress",
+        "old_value": 0.9954,
+        "new_value": 0.9992
+      },
+      {
+        "frame_index": 40,
+        "elapsed_ms": 650,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0019,
+        "new_value": 0.0008
+      },
+      {
+        "frame_index": 40,
+        "elapsed_ms": 650,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "extend_progress",
+        "old_value": 0.9954,
+        "new_value": 0.9992
+      },
+      {
+        "frame_index": 41,
+        "elapsed_ms": 667,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_extend_progress",
+        "old_value": 0.9992,
+        "new_value": 1.0
+      },
+      {
+        "frame_index": 41,
+        "elapsed_ms": 667,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0008,
+        "new_value": 0.0002
+      },
+      {
+        "frame_index": 41,
+        "elapsed_ms": 667,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "extend_progress",
+        "old_value": 0.9992,
+        "new_value": 1.0
+      },
+      {
+        "frame_index": 42,
+        "elapsed_ms": 691,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_alpha",
+        "old_value": 0.0002,
+        "new_value": 0.0
+      },
+      {
+        "frame_index": 43,
+        "elapsed_ms": 700,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_count",
+        "old_value": 1,
+        "new_value": 0
+      },
+      {
+        "frame_index": 43,
+        "elapsed_ms": 700,
+        "type": "script_variable_changed",
+        "node_path": "/root/@Node@2/GSSStageViewport/FabExtended/ExtendedFabIconLabel",
+        "node_name": "ExtendedFabIconLabel",
+        "property": "_ripple_wave_radius",
+        "old_value": 21.4166,
+        "new_value": 0.0
+      }
+    ]
+  }
+}

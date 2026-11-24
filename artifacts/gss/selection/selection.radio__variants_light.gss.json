@@ -1,0 +1,3109 @@
+{
+  "metadata": {
+    "format": "godot_scene_snapshot",
+    "short_name": "GSS",
+    "version": "1.0",
+    "snapshot_name": "selection.radio__variants_light",
+    "timestamp_iso": "2026-11-24T01:46:16",
+    "timestamp_ticks_ms": 66941,
+    "engine_version": "4.7.2-stable (official)",
+    "display_server": "macOS",
+    "viewport_size": {
+      "width": 1280,
+      "height": 720
+    },
+    "total_nodes": 5,
+    "visible_nodes": 5,
+    "class_counts": {
+      "ColorRect": 1,
+      "VBoxContainer": 1,
+      "Control": 3
+    },
+    "camera_3d": {},
+    "camera_2d": {},
+    "performance": {
+      "fps": 58.0,
+      "process_frames": 3422,
+      "physics_frames": 3868,
+      "memory_static_bytes": 70299145,
+      "object_count": 1752,
+      "node_count": 12
+    },
+    "is_synthetic_preview": false,
+    "files": {
+      "png": "res://artifacts/gss/selection/selection.radio__variants_light.png",
+      "json": "res://artifacts/gss/selection/selection.radio__variants_light.gss.json",
+      "html": "res://artifacts/gss/selection/selection.radio__variants_light.gss.html",
+      "global_png": "/Users/rnewquist/Documents/Godot/material3/artifacts/gss/selection/selection.radio__variants_light.png",
+      "global_json": "/Users/rnewquist/Documents/Godot/material3/artifacts/gss/selection/selection.radio__variants_light.gss.json",
+      "global_html": "/Users/rnewquist/Documents/Godot/material3/artifacts/gss/selection/selection.radio__variants_light.gss.html"
+    }
+  },
+  "hierarchy": {
+    "id": "node_0",
+    "parent_id": "",
+    "name": "RadioVariants",
+    "class": "ColorRect",
+    "category": "control",
+    "path": "/root/@Node@304/GSSStageViewport/RadioVariants",
+    "depth": 0,
+    "index_in_parent": 0,
+    "children_count": 1,
+    "groups": [],
+    "script": "",
+    "process_mode": 0,
+    "visible": true,
+    "screen_rect": {
+      "x": 0.0,
+      "y": 0.0,
+      "width": 1280.0,
+      "height": 720.0,
+      "has_bounds": true,
+      "on_screen": true
+    },
+    "script_variables": {},
+    "transforms": {
+      "position": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "global_position": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "size": {
+        "x": 1280.0,
+        "y": 720.0
+      },
+      "custom_minimum_size": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "rotation_deg": 0.0,
+      "scale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "pivot_offset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "anchors": {
+        "left": 0.0,
+        "top": 0.0,
+        "right": 0.0,
+        "bottom": 0.0
+      },
+      "offsets": {
+        "left": 0.0,
+        "top": 0.0,
+        "right": 1280.0,
+        "bottom": 720.0
+      },
+      "size_flags_horizontal": 1,
+      "size_flags_vertical": 1
+    },
+    "visibility": {
+      "visible": true,
+      "visible_in_tree": true,
+      "modulate": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0,
+        "hex": "#ffffffff"
+      },
+      "self_modulate": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0,
+        "hex": "#ffffffff"
+      },
+      "top_level": false,
+      "show_behind_parent": false,
+      "clip_children": 0,
+      "light_mask": 1,
+      "visibility_layer": 1,
+      "z_index": 0,
+      "z_as_relative": true,
+      "y_sort_enabled": false
+    },
+    "physics": {},
+    "ui_and_content": {
+      "focus_mode": 0,
+      "mouse_filter": 2,
+      "tooltip_text": "",
+      "color": {
+        "r": 0.9788,
+        "g": 0.9745,
+        "b": 1.0,
+        "a": 1.0,
+        "hex": "#faf9ffff"
+      }
+    },
+    "signals": [
+      {
+        "signal": "child_order_changed",
+        "target": "/root/@Node@304/GSSStageViewport",
+        "method": "Viewport::canvas_parent_mark_dirty"
+      },
+      {
+        "signal": "item_rect_changed",
+        "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+        "method": "Control::_size_changed"
+      }
+    ],
+    "all_properties": {
+      "accessibility_controls_nodes": [],
+      "accessibility_described_by_nodes": [],
+      "accessibility_description": "",
+      "accessibility_flow_to_nodes": [],
+      "accessibility_labeled_by_nodes": [],
+      "accessibility_live": 0,
+      "accessibility_name": "",
+      "anchor_bottom": 0.0,
+      "anchor_left": 0.0,
+      "anchor_right": 0.0,
+      "anchor_top": 0.0,
+      "anchors_preset": 0,
+      "auto_translate_mode": 0,
+      "clip_children": 0,
+      "clip_contents": false,
+      "color": {
+        "r": 0.9788,
+        "g": 0.9745,
+        "b": 1.0,
+        "a": 1.0,
+        "hex": "#faf9ffff"
+      },
+      "custom_maximum_size": {
+        "x": -1.0,
+        "y": -1.0
+      },
+      "custom_minimum_size": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "editor_description": "",
+      "focus_behavior_recursive": 0,
+      "focus_mode": 0,
+      "focus_neighbor_bottom": "",
+      "focus_neighbor_left": "",
+      "focus_neighbor_right": "",
+      "focus_neighbor_top": "",
+      "focus_next": "",
+      "focus_previous": "",
+      "grow_horizontal": 1,
+      "grow_vertical": 1,
+      "layout_direction": 0,
+      "layout_mode": 3,
+      "light_mask": 1,
+      "localize_numeral_system": true,
+      "material": null,
+      "modulate": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0,
+        "hex": "#ffffffff"
+      },
+      "mouse_behavior_recursive": 0,
+      "mouse_default_cursor_shape": 0,
+      "mouse_filter": 2,
+      "mouse_force_pass_scroll_events": true,
+      "offset_bottom": 720.0,
+      "offset_left": 0.0,
+      "offset_right": 1280.0,
+      "offset_top": 0.0,
+      "offset_transform_enabled": false,
+      "offset_transform_pivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "offset_transform_pivot_ratio": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "offset_transform_position": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "offset_transform_position_ratio": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "offset_transform_rotation": 0.0,
+      "offset_transform_scale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "offset_transform_visual_only": true,
+      "oversampling_with_scale": 0,
+      "physics_interpolation_mode": 2,
+      "pivot_offset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "pivot_offset_ratio": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "process_mode": 0,
+      "process_physics_priority": 0,
+      "process_priority": 0,
+      "process_thread_group": 0,
+      "propagate_maximum_size": false,
+      "rotation": 0.0,
+      "scale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "self_modulate": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0,
+        "hex": "#ffffffff"
+      },
+      "shortcut_context": null,
+      "show_behind_parent": false,
+      "size": {
+        "x": 1280.0,
+        "y": 720.0
+      },
+      "size_flags_horizontal": 1,
+      "size_flags_stretch_ratio": 1.0,
+      "size_flags_vertical": 1,
+      "texture_filter": 0,
+      "texture_repeat": 0,
+      "theme": null,
+      "theme_type_variation": "",
+      "tooltip_auto_translate_mode": 0,
+      "tooltip_text": "",
+      "top_level": false,
+      "translation_context": "",
+      "unique_name_in_owner": false,
+      "use_parent_material": false,
+      "visibility_layer": 1,
+      "visible": true,
+      "y_sort_enabled": false,
+      "z_as_relative": true,
+      "z_index": 0
+    },
+    "children": [
+      {
+        "id": "node_1",
+        "parent_id": "node_0",
+        "name": "PriorityRadioGroup",
+        "class": "VBoxContainer",
+        "category": "control",
+        "path": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+        "depth": 1,
+        "index_in_parent": 0,
+        "children_count": 3,
+        "groups": [],
+        "script": "res://addons/material3/components/selection/m3_radio_group.gd",
+        "process_mode": 0,
+        "visible": true,
+        "screen_rect": {
+          "x": 80.0,
+          "y": 80.0,
+          "width": 209.0,
+          "height": 152.0,
+          "has_bounds": true,
+          "on_screen": true
+        },
+        "script_variables": {
+          "_is_updating": false,
+          "selected_index": 0
+        },
+        "transforms": {
+          "position": {
+            "x": 80.0,
+            "y": 80.0
+          },
+          "global_position": {
+            "x": 80.0,
+            "y": 80.0
+          },
+          "size": {
+            "x": 209.0,
+            "y": 152.0
+          },
+          "custom_minimum_size": {
+            "x": 209.0,
+            "y": 152.0
+          },
+          "rotation_deg": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "anchors": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 0.0,
+            "bottom": 0.0
+          },
+          "offsets": {
+            "left": 80.0,
+            "top": 80.0,
+            "right": 289.0,
+            "bottom": 232.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_vertical": 1
+        },
+        "visibility": {
+          "visible": true,
+          "visible_in_tree": true,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "top_level": false,
+          "show_behind_parent": false,
+          "clip_children": 0,
+          "light_mask": 1,
+          "visibility_layer": 1,
+          "z_index": 0,
+          "z_as_relative": true,
+          "y_sort_enabled": false
+        },
+        "physics": {},
+        "ui_and_content": {
+          "focus_mode": 0,
+          "mouse_filter": 1,
+          "tooltip_text": ""
+        },
+        "signals": [
+          {
+            "signal": "child_entered_tree",
+            "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+            "method": "_on_child_tree_changed"
+          },
+          {
+            "signal": "child_exiting_tree",
+            "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+            "method": "_on_child_tree_changed"
+          },
+          {
+            "signal": "child_order_changed",
+            "target": "/root/@Node@304/GSSStageViewport",
+            "method": "Viewport::canvas_parent_mark_dirty"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioHigh",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioNormal",
+            "method": "Control::_size_changed"
+          },
+          {
+            "signal": "item_rect_changed",
+            "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioDisabled",
+            "method": "Control::_size_changed"
+          }
+        ],
+        "all_properties": {
+          "accessibility_controls_nodes": [],
+          "accessibility_described_by_nodes": [],
+          "accessibility_description": "",
+          "accessibility_flow_to_nodes": [],
+          "accessibility_labeled_by_nodes": [],
+          "accessibility_live": 0,
+          "accessibility_name": "",
+          "accessibility_region": false,
+          "alignment": 0,
+          "anchor_bottom": 0.0,
+          "anchor_left": 0.0,
+          "anchor_right": 0.0,
+          "anchor_top": 0.0,
+          "anchors_preset": 0,
+          "auto_translate_mode": 0,
+          "clip_children": 0,
+          "clip_contents": false,
+          "custom_maximum_size": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "custom_minimum_size": {
+            "x": 209.0,
+            "y": 152.0
+          },
+          "editor_description": "",
+          "focus_behavior_recursive": 0,
+          "focus_mode": 0,
+          "focus_neighbor_bottom": "",
+          "focus_neighbor_left": "",
+          "focus_neighbor_right": "",
+          "focus_neighbor_top": "",
+          "focus_next": "",
+          "focus_previous": "",
+          "grow_horizontal": 1,
+          "grow_vertical": 1,
+          "layout_direction": 0,
+          "layout_mode": 0,
+          "light_mask": 1,
+          "localize_numeral_system": true,
+          "material": null,
+          "modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "mouse_behavior_recursive": 0,
+          "mouse_default_cursor_shape": 0,
+          "mouse_filter": 1,
+          "mouse_force_pass_scroll_events": true,
+          "offset_bottom": 232.0,
+          "offset_left": 80.0,
+          "offset_right": 289.0,
+          "offset_top": 80.0,
+          "offset_transform_enabled": false,
+          "offset_transform_pivot": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_pivot_ratio": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_transform_position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_position_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "offset_transform_rotation": 0.0,
+          "offset_transform_scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "offset_transform_visual_only": true,
+          "oversampling_with_scale": 0,
+          "physics_interpolation_mode": 2,
+          "pivot_offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "pivot_offset_ratio": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "position": {
+            "x": 80.0,
+            "y": 80.0
+          },
+          "process_mode": 0,
+          "process_physics_priority": 0,
+          "process_priority": 0,
+          "process_thread_group": 0,
+          "propagate_maximum_size": true,
+          "rotation": 0.0,
+          "scale": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "selected_index": 0,
+          "self_modulate": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0,
+            "hex": "#ffffffff"
+          },
+          "shortcut_context": null,
+          "show_behind_parent": false,
+          "size": {
+            "x": 209.0,
+            "y": 152.0
+          },
+          "size_flags_horizontal": 1,
+          "size_flags_stretch_ratio": 1.0,
+          "size_flags_vertical": 1,
+          "texture_filter": 0,
+          "texture_repeat": 0,
+          "theme": null,
+          "theme_override_constants/separation": null,
+          "theme_type_variation": "",
+          "tooltip_auto_translate_mode": 0,
+          "tooltip_text": "",
+          "top_level": false,
+          "translation_context": "",
+          "unique_name_in_owner": false,
+          "use_parent_material": false,
+          "visibility_layer": 1,
+          "visible": true,
+          "y_sort_enabled": false,
+          "z_as_relative": true,
+          "z_index": 0
+        },
+        "children": [
+          {
+            "id": "node_2",
+            "parent_id": "node_1",
+            "name": "RadioHigh",
+            "class": "Control",
+            "category": "control",
+            "path": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioHigh",
+            "depth": 2,
+            "index_in_parent": 0,
+            "children_count": 0,
+            "groups": [],
+            "script": "res://addons/material3/components/selection/m3_radio.gd",
+            "process_mode": 0,
+            "visible": true,
+            "screen_rect": {
+              "x": 80.0,
+              "y": 80.0,
+              "width": 209.0,
+              "height": 48.0,
+              "has_bounds": true,
+              "on_screen": true
+            },
+            "script_variables": {
+              "_dot_scale": 0.7392,
+              "_dot_tween": "<Tween>",
+              "_font": "<FontFile>",
+              "_font_size": 14,
+              "_is_pointer_down": false,
+              "_pointer_inside": false,
+              "_ripple": "<Node:M3Ripple (Control)>",
+              "_ripple_wave_alpha": 0.0,
+              "_ripple_wave_count": 0,
+              "_ripple_wave_radius": 0.0,
+              "_select_progress": 0.7392,
+              "_state_layer_alpha": 0.0,
+              "_theme_connected": true,
+              "current_state": 0,
+              "custom_corner_radius": -1.0,
+              "density_override": 99,
+              "disabled": false,
+              "dot_size": 10.0,
+              "group_name": "",
+              "ring_size": 20.0,
+              "ripple_enabled": true,
+              "selected": true,
+              "shape_token": 0,
+              "text": "High Priority",
+              "touch_target_min_size": {
+                "x": 48.0,
+                "y": 48.0
+              },
+              "value": "high"
+            },
+            "transforms": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "global_position": {
+                "x": 80.0,
+                "y": 80.0
+              },
+              "size": {
+                "x": 209.0,
+                "y": 48.0
+              },
+              "custom_minimum_size": {
+                "x": 141.0,
+                "y": 48.0
+              },
+              "rotation_deg": 0.0,
+              "scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "pivot_offset": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "anchors": {
+                "left": 0.0,
+                "top": 0.0,
+                "right": 0.0,
+                "bottom": 0.0
+              },
+              "offsets": {
+                "left": 0.0,
+                "top": 0.0,
+                "right": 209.0,
+                "bottom": 48.0
+              },
+              "size_flags_horizontal": 1,
+              "size_flags_vertical": 1
+            },
+            "visibility": {
+              "visible": true,
+              "visible_in_tree": true,
+              "modulate": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "self_modulate": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "top_level": false,
+              "show_behind_parent": false,
+              "clip_children": 0,
+              "light_mask": 1,
+              "visibility_layer": 1,
+              "z_index": 0,
+              "z_as_relative": true,
+              "y_sort_enabled": false
+            },
+            "physics": {},
+            "ui_and_content": {
+              "focus_mode": 2,
+              "mouse_filter": 0,
+              "tooltip_text": ""
+            },
+            "signals": [
+              {
+                "signal": "toggled",
+                "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+                "method": "_on_radio_toggled"
+              },
+              {
+                "signal": "child_order_changed",
+                "target": "/root/@Node@304/GSSStageViewport",
+                "method": "Viewport::canvas_parent_mark_dirty"
+              },
+              {
+                "signal": "visibility_changed",
+                "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+                "method": "Container::_child_minsize_changed"
+              },
+              {
+                "signal": "item_rect_changed",
+                "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioHigh/M3Ripple",
+                "method": "Control::_size_changed"
+              },
+              {
+                "signal": "resized",
+                "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioHigh",
+                "method": "_on_resized"
+              },
+              {
+                "signal": "mouse_entered",
+                "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioHigh",
+                "method": "_on_mouse_entered"
+              },
+              {
+                "signal": "mouse_exited",
+                "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioHigh",
+                "method": "_on_mouse_exited"
+              },
+              {
+                "signal": "focus_entered",
+                "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioHigh",
+                "method": "_on_focus_entered"
+              },
+              {
+                "signal": "focus_exited",
+                "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioHigh",
+                "method": "_on_focus_exited"
+              },
+              {
+                "signal": "size_flags_changed",
+                "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+                "method": "Container::queue_sort"
+              },
+              {
+                "signal": "maximum_size_changed",
+                "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+                "method": "Container::_child_minsize_changed"
+              },
+              {
+                "signal": "minimum_size_changed",
+                "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+                "method": "Container::_child_minsize_changed"
+              },
+              {
+                "signal": "_desired_size_changed",
+                "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+                "method": "Container::_child_desired_size_changed"
+              }
+            ],
+            "all_properties": {
+              "accessibility_controls_nodes": [],
+              "accessibility_described_by_nodes": [],
+              "accessibility_description": "",
+              "accessibility_flow_to_nodes": [],
+              "accessibility_labeled_by_nodes": [],
+              "accessibility_live": 0,
+              "accessibility_name": "",
+              "auto_translate_mode": 0,
+              "clip_children": 0,
+              "clip_contents": false,
+              "current_state": 0,
+              "custom_corner_radius": -1.0,
+              "custom_maximum_size": {
+                "x": -1.0,
+                "y": -1.0
+              },
+              "custom_minimum_size": {
+                "x": 141.0,
+                "y": 48.0
+              },
+              "density_override": 99,
+              "disabled": false,
+              "dot_size": 10.0,
+              "editor_description": "",
+              "focus_behavior_recursive": 0,
+              "focus_mode": 2,
+              "focus_neighbor_bottom": "",
+              "focus_neighbor_left": "",
+              "focus_neighbor_right": "",
+              "focus_neighbor_top": "",
+              "focus_next": "",
+              "focus_previous": "",
+              "group_name": "",
+              "layout_direction": 0,
+              "layout_mode": 2,
+              "light_mask": 1,
+              "localize_numeral_system": true,
+              "material": null,
+              "metadata/_m3_group_wired": true,
+              "modulate": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "mouse_behavior_recursive": 0,
+              "mouse_default_cursor_shape": 2,
+              "mouse_filter": 0,
+              "mouse_force_pass_scroll_events": true,
+              "offset_transform_enabled": false,
+              "offset_transform_pivot": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "offset_transform_pivot_ratio": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "offset_transform_position": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "offset_transform_position_ratio": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "offset_transform_rotation": 0.0,
+              "offset_transform_scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "offset_transform_visual_only": true,
+              "oversampling_with_scale": 0,
+              "physics_interpolation_mode": 2,
+              "pivot_offset": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "pivot_offset_ratio": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "position": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "process_mode": 0,
+              "process_physics_priority": 0,
+              "process_priority": 0,
+              "process_thread_group": 0,
+              "propagate_maximum_size": false,
+              "ring_size": 20.0,
+              "ripple_enabled": true,
+              "rotation": 0.0,
+              "scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "selected": true,
+              "self_modulate": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "shape_token": 0,
+              "shortcut_context": null,
+              "show_behind_parent": false,
+              "size": {
+                "x": 209.0,
+                "y": 48.0
+              },
+              "size_flags_horizontal": 1,
+              "size_flags_stretch_ratio": 1.0,
+              "size_flags_vertical": 1,
+              "text": "High Priority",
+              "texture_filter": 0,
+              "texture_repeat": 0,
+              "theme": null,
+              "theme_type_variation": "",
+              "tooltip_auto_translate_mode": 0,
+              "tooltip_text": "",
+              "top_level": false,
+              "touch_target_min_size": {
+                "x": 48.0,
+                "y": 48.0
+              },
+              "translation_context": "",
+              "unique_name_in_owner": false,
+              "use_parent_material": false,
+              "value": "high",
+              "visibility_layer": 1,
+              "visible": true,
+              "y_sort_enabled": false,
+              "z_as_relative": true,
+              "z_index": 0
+            },
+            "children": []
+          },
+          {
+            "id": "node_3",
+            "parent_id": "node_1",
+            "name": "RadioNormal",
+            "class": "Control",
+            "category": "control",
+            "path": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioNormal",
+            "depth": 2,
+            "index_in_parent": 1,
+            "children_count": 0,
+            "groups": [],
+            "script": "res://addons/material3/components/selection/m3_radio.gd",
+            "process_mode": 0,
+            "visible": true,
+            "screen_rect": {
+              "x": 80.0,
+              "y": 132.0,
+              "width": 209.0,
+              "height": 48.0,
+              "has_bounds": true,
+              "on_screen": true
+            },
+            "script_variables": {
+              "_dot_scale": 0.0,
+              "_dot_tween": null,
+              "_font": "<FontFile>",
+              "_font_size": 14,
+              "_is_pointer_down": false,
+              "_pointer_inside": false,
+              "_ripple": "<Node:M3Ripple (Control)>",
+              "_ripple_wave_alpha": 0.0,
+              "_ripple_wave_count": 0,
+              "_ripple_wave_radius": 0.0,
+              "_select_progress": 0.0,
+              "_state_layer_alpha": 0.0,
+              "_theme_connected": true,
+              "current_state": 0,
+              "custom_corner_radius": -1.0,
+              "density_override": 99,
+              "disabled": false,
+              "dot_size": 10.0,
+              "group_name": "",
+              "ring_size": 20.0,
+              "ripple_enabled": true,
+              "selected": false,
+              "shape_token": 0,
+              "text": "Normal Priority",
+              "touch_target_min_size": {
+                "x": 48.0,
+                "y": 48.0
+              },
+              "value": "normal"
+            },
+            "transforms": {
+              "position": {
+                "x": 0.0,
+                "y": 52.0
+              },
+              "global_position": {
+                "x": 80.0,
+                "y": 132.0
+              },
+              "size": {
+                "x": 209.0,
+                "y": 48.0
+              },
+              "custom_minimum_size": {
+                "x": 161.0,
+                "y": 48.0
+              },
+              "rotation_deg": 0.0,
+              "scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "pivot_offset": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "anchors": {
+                "left": 0.0,
+                "top": 0.0,
+                "right": 0.0,
+                "bottom": 0.0
+              },
+              "offsets": {
+                "left": 0.0,
+                "top": 52.0,
+                "right": 209.0,
+                "bottom": 100.0
+              },
+              "size_flags_horizontal": 1,
+              "size_flags_vertical": 1
+            },
+            "visibility": {
+              "visible": true,
+              "visible_in_tree": true,
+              "modulate": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "self_modulate": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "top_level": false,
+              "show_behind_parent": false,
+              "clip_children": 0,
+              "light_mask": 1,
+              "visibility_layer": 1,
+              "z_index": 0,
+              "z_as_relative": true,
+              "y_sort_enabled": false
+            },
+            "physics": {},
+            "ui_and_content": {
+              "focus_mode": 2,
+              "mouse_filter": 0,
+              "tooltip_text": ""
+            },
+            "signals": [
+              {
+                "signal": "toggled",
+                "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+                "method": "_on_radio_toggled"
+              },
+              {
+                "signal": "child_order_changed",
+                "target": "/root/@Node@304/GSSStageViewport",
+                "method": "Viewport::canvas_parent_mark_dirty"
+              },
+              {
+                "signal": "visibility_changed",
+                "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+                "method": "Container::_child_minsize_changed"
+              },
+              {
+                "signal": "item_rect_changed",
+                "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioNormal/M3Ripple",
+                "method": "Control::_size_changed"
+              },
+              {
+                "signal": "resized",
+                "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioNormal",
+                "method": "_on_resized"
+              },
+              {
+                "signal": "mouse_entered",
+                "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioNormal",
+                "method": "_on_mouse_entered"
+              },
+              {
+                "signal": "mouse_exited",
+                "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioNormal",
+                "method": "_on_mouse_exited"
+              },
+              {
+                "signal": "focus_entered",
+                "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioNormal",
+                "method": "_on_focus_entered"
+              },
+              {
+                "signal": "focus_exited",
+                "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioNormal",
+                "method": "_on_focus_exited"
+              },
+              {
+                "signal": "size_flags_changed",
+                "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+                "method": "Container::queue_sort"
+              },
+              {
+                "signal": "maximum_size_changed",
+                "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+                "method": "Container::_child_minsize_changed"
+              },
+              {
+                "signal": "minimum_size_changed",
+                "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+                "method": "Container::_child_minsize_changed"
+              },
+              {
+                "signal": "_desired_size_changed",
+                "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+                "method": "Container::_child_desired_size_changed"
+              }
+            ],
+            "all_properties": {
+              "accessibility_controls_nodes": [],
+              "accessibility_described_by_nodes": [],
+              "accessibility_description": "",
+              "accessibility_flow_to_nodes": [],
+              "accessibility_labeled_by_nodes": [],
+              "accessibility_live": 0,
+              "accessibility_name": "",
+              "auto_translate_mode": 0,
+              "clip_children": 0,
+              "clip_contents": false,
+              "current_state": 0,
+              "custom_corner_radius": -1.0,
+              "custom_maximum_size": {
+                "x": -1.0,
+                "y": -1.0
+              },
+              "custom_minimum_size": {
+                "x": 161.0,
+                "y": 48.0
+              },
+              "density_override": 99,
+              "disabled": false,
+              "dot_size": 10.0,
+              "editor_description": "",
+              "focus_behavior_recursive": 0,
+              "focus_mode": 2,
+              "focus_neighbor_bottom": "",
+              "focus_neighbor_left": "",
+              "focus_neighbor_right": "",
+              "focus_neighbor_top": "",
+              "focus_next": "",
+              "focus_previous": "",
+              "group_name": "",
+              "layout_direction": 0,
+              "layout_mode": 2,
+              "light_mask": 1,
+              "localize_numeral_system": true,
+              "material": null,
+              "metadata/_m3_group_wired": true,
+              "modulate": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "mouse_behavior_recursive": 0,
+              "mouse_default_cursor_shape": 2,
+              "mouse_filter": 0,
+              "mouse_force_pass_scroll_events": true,
+              "offset_transform_enabled": false,
+              "offset_transform_pivot": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "offset_transform_pivot_ratio": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "offset_transform_position": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "offset_transform_position_ratio": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "offset_transform_rotation": 0.0,
+              "offset_transform_scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "offset_transform_visual_only": true,
+              "oversampling_with_scale": 0,
+              "physics_interpolation_mode": 2,
+              "pivot_offset": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "pivot_offset_ratio": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "position": {
+                "x": 0.0,
+                "y": 52.0
+              },
+              "process_mode": 0,
+              "process_physics_priority": 0,
+              "process_priority": 0,
+              "process_thread_group": 0,
+              "propagate_maximum_size": false,
+              "ring_size": 20.0,
+              "ripple_enabled": true,
+              "rotation": 0.0,
+              "scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "selected": false,
+              "self_modulate": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "shape_token": 0,
+              "shortcut_context": null,
+              "show_behind_parent": false,
+              "size": {
+                "x": 209.0,
+                "y": 48.0
+              },
+              "size_flags_horizontal": 1,
+              "size_flags_stretch_ratio": 1.0,
+              "size_flags_vertical": 1,
+              "text": "Normal Priority",
+              "texture_filter": 0,
+              "texture_repeat": 0,
+              "theme": null,
+              "theme_type_variation": "",
+              "tooltip_auto_translate_mode": 0,
+              "tooltip_text": "",
+              "top_level": false,
+              "touch_target_min_size": {
+                "x": 48.0,
+                "y": 48.0
+              },
+              "translation_context": "",
+              "unique_name_in_owner": false,
+              "use_parent_material": false,
+              "value": "normal",
+              "visibility_layer": 1,
+              "visible": true,
+              "y_sort_enabled": false,
+              "z_as_relative": true,
+              "z_index": 0
+            },
+            "children": []
+          },
+          {
+            "id": "node_4",
+            "parent_id": "node_1",
+            "name": "RadioDisabled",
+            "class": "Control",
+            "category": "control",
+            "path": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioDisabled",
+            "depth": 2,
+            "index_in_parent": 2,
+            "children_count": 0,
+            "groups": [],
+            "script": "res://addons/material3/components/selection/m3_radio.gd",
+            "process_mode": 0,
+            "visible": true,
+            "screen_rect": {
+              "x": 80.0,
+              "y": 184.0,
+              "width": 209.0,
+              "height": 48.0,
+              "has_bounds": true,
+              "on_screen": true
+            },
+            "script_variables": {
+              "_dot_scale": 0.0,
+              "_dot_tween": null,
+              "_font": "<FontFile>",
+              "_font_size": 14,
+              "_is_pointer_down": false,
+              "_pointer_inside": false,
+              "_ripple": "<Node:M3Ripple (Control)>",
+              "_ripple_wave_alpha": 0.0,
+              "_ripple_wave_count": 0,
+              "_ripple_wave_radius": 0.0,
+              "_select_progress": 0.0,
+              "_state_layer_alpha": 0.0,
+              "_theme_connected": true,
+              "current_state": 4,
+              "custom_corner_radius": -1.0,
+              "density_override": 99,
+              "disabled": true,
+              "dot_size": 10.0,
+              "group_name": "",
+              "ring_size": 20.0,
+              "ripple_enabled": true,
+              "selected": false,
+              "shape_token": 0,
+              "text": "Low Priority (Disabled)",
+              "touch_target_min_size": {
+                "x": 48.0,
+                "y": 48.0
+              },
+              "value": "low"
+            },
+            "transforms": {
+              "position": {
+                "x": 0.0,
+                "y": 104.0
+              },
+              "global_position": {
+                "x": 80.0,
+                "y": 184.0
+              },
+              "size": {
+                "x": 209.0,
+                "y": 48.0
+              },
+              "custom_minimum_size": {
+                "x": 209.0,
+                "y": 48.0
+              },
+              "rotation_deg": 0.0,
+              "scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "pivot_offset": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "anchors": {
+                "left": 0.0,
+                "top": 0.0,
+                "right": 0.0,
+                "bottom": 0.0
+              },
+              "offsets": {
+                "left": 0.0,
+                "top": 104.0,
+                "right": 209.0,
+                "bottom": 152.0
+              },
+              "size_flags_horizontal": 1,
+              "size_flags_vertical": 1
+            },
+            "visibility": {
+              "visible": true,
+              "visible_in_tree": true,
+              "modulate": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "self_modulate": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "top_level": false,
+              "show_behind_parent": false,
+              "clip_children": 0,
+              "light_mask": 1,
+              "visibility_layer": 1,
+              "z_index": 0,
+              "z_as_relative": true,
+              "y_sort_enabled": false
+            },
+            "physics": {},
+            "ui_and_content": {
+              "focus_mode": 2,
+              "mouse_filter": 0,
+              "tooltip_text": ""
+            },
+            "signals": [
+              {
+                "signal": "toggled",
+                "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+                "method": "_on_radio_toggled"
+              },
+              {
+                "signal": "child_order_changed",
+                "target": "/root/@Node@304/GSSStageViewport",
+                "method": "Viewport::canvas_parent_mark_dirty"
+              },
+              {
+                "signal": "visibility_changed",
+                "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+                "method": "Container::_child_minsize_changed"
+              },
+              {
+                "signal": "item_rect_changed",
+                "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioDisabled/M3Ripple",
+                "method": "Control::_size_changed"
+              },
+              {
+                "signal": "resized",
+                "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioDisabled",
+                "method": "_on_resized"
+              },
+              {
+                "signal": "mouse_entered",
+                "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioDisabled",
+                "method": "_on_mouse_entered"
+              },
+              {
+                "signal": "mouse_exited",
+                "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioDisabled",
+                "method": "_on_mouse_exited"
+              },
+              {
+                "signal": "focus_entered",
+                "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioDisabled",
+                "method": "_on_focus_entered"
+              },
+              {
+                "signal": "focus_exited",
+                "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioDisabled",
+                "method": "_on_focus_exited"
+              },
+              {
+                "signal": "size_flags_changed",
+                "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+                "method": "Container::queue_sort"
+              },
+              {
+                "signal": "maximum_size_changed",
+                "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+                "method": "Container::_child_minsize_changed"
+              },
+              {
+                "signal": "minimum_size_changed",
+                "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+                "method": "Container::_child_minsize_changed"
+              },
+              {
+                "signal": "_desired_size_changed",
+                "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+                "method": "Container::_child_desired_size_changed"
+              }
+            ],
+            "all_properties": {
+              "accessibility_controls_nodes": [],
+              "accessibility_described_by_nodes": [],
+              "accessibility_description": "",
+              "accessibility_flow_to_nodes": [],
+              "accessibility_labeled_by_nodes": [],
+              "accessibility_live": 0,
+              "accessibility_name": "",
+              "auto_translate_mode": 0,
+              "clip_children": 0,
+              "clip_contents": false,
+              "current_state": 4,
+              "custom_corner_radius": -1.0,
+              "custom_maximum_size": {
+                "x": -1.0,
+                "y": -1.0
+              },
+              "custom_minimum_size": {
+                "x": 209.0,
+                "y": 48.0
+              },
+              "density_override": 99,
+              "disabled": true,
+              "dot_size": 10.0,
+              "editor_description": "",
+              "focus_behavior_recursive": 0,
+              "focus_mode": 2,
+              "focus_neighbor_bottom": "",
+              "focus_neighbor_left": "",
+              "focus_neighbor_right": "",
+              "focus_neighbor_top": "",
+              "focus_next": "",
+              "focus_previous": "",
+              "group_name": "",
+              "layout_direction": 0,
+              "layout_mode": 2,
+              "light_mask": 1,
+              "localize_numeral_system": true,
+              "material": null,
+              "metadata/_m3_group_wired": true,
+              "modulate": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "mouse_behavior_recursive": 0,
+              "mouse_default_cursor_shape": 8,
+              "mouse_filter": 0,
+              "mouse_force_pass_scroll_events": true,
+              "offset_transform_enabled": false,
+              "offset_transform_pivot": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "offset_transform_pivot_ratio": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "offset_transform_position": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "offset_transform_position_ratio": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "offset_transform_rotation": 0.0,
+              "offset_transform_scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "offset_transform_visual_only": true,
+              "oversampling_with_scale": 0,
+              "physics_interpolation_mode": 2,
+              "pivot_offset": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "pivot_offset_ratio": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "position": {
+                "x": 0.0,
+                "y": 104.0
+              },
+              "process_mode": 0,
+              "process_physics_priority": 0,
+              "process_priority": 0,
+              "process_thread_group": 0,
+              "propagate_maximum_size": false,
+              "ring_size": 20.0,
+              "ripple_enabled": true,
+              "rotation": 0.0,
+              "scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "selected": false,
+              "self_modulate": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0,
+                "hex": "#ffffffff"
+              },
+              "shape_token": 0,
+              "shortcut_context": null,
+              "show_behind_parent": false,
+              "size": {
+                "x": 209.0,
+                "y": 48.0
+              },
+              "size_flags_horizontal": 1,
+              "size_flags_stretch_ratio": 1.0,
+              "size_flags_vertical": 1,
+              "text": "Low Priority (Disabled)",
+              "texture_filter": 0,
+              "texture_repeat": 0,
+              "theme": null,
+              "theme_type_variation": "",
+              "tooltip_auto_translate_mode": 0,
+              "tooltip_text": "",
+              "top_level": false,
+              "touch_target_min_size": {
+                "x": 48.0,
+                "y": 48.0
+              },
+              "translation_context": "",
+              "unique_name_in_owner": false,
+              "use_parent_material": false,
+              "value": "low",
+              "visibility_layer": 1,
+              "visible": true,
+              "y_sort_enabled": false,
+              "z_as_relative": true,
+              "z_index": 0
+            },
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "flat_nodes": [
+    {
+      "id": "node_0",
+      "parent_id": "",
+      "name": "RadioVariants",
+      "class": "ColorRect",
+      "category": "control",
+      "path": "/root/@Node@304/GSSStageViewport/RadioVariants",
+      "depth": 0,
+      "index_in_parent": 0,
+      "children_count": 1,
+      "groups": [],
+      "script": "",
+      "process_mode": 0,
+      "visible": true,
+      "screen_rect": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 1280.0,
+        "height": 720.0,
+        "has_bounds": true,
+        "on_screen": true
+      },
+      "script_variables": {},
+      "transforms": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "global_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "size": {
+          "x": 1280.0,
+          "y": 720.0
+        },
+        "custom_minimum_size": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "rotation_deg": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "anchors": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 0.0,
+          "bottom": 0.0
+        },
+        "offsets": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 1280.0,
+          "bottom": 720.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_vertical": 1
+      },
+      "visibility": {
+        "visible": true,
+        "visible_in_tree": true,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "top_level": false,
+        "show_behind_parent": false,
+        "clip_children": 0,
+        "light_mask": 1,
+        "visibility_layer": 1,
+        "z_index": 0,
+        "z_as_relative": true,
+        "y_sort_enabled": false
+      },
+      "physics": {},
+      "ui_and_content": {
+        "focus_mode": 0,
+        "mouse_filter": 2,
+        "tooltip_text": "",
+        "color": {
+          "r": 0.9788,
+          "g": 0.9745,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#faf9ffff"
+        }
+      },
+      "signals": [
+        {
+          "signal": "child_order_changed",
+          "target": "/root/@Node@304/GSSStageViewport",
+          "method": "Viewport::canvas_parent_mark_dirty"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+          "method": "Control::_size_changed"
+        }
+      ],
+      "all_properties": {
+        "accessibility_controls_nodes": [],
+        "accessibility_described_by_nodes": [],
+        "accessibility_description": "",
+        "accessibility_flow_to_nodes": [],
+        "accessibility_labeled_by_nodes": [],
+        "accessibility_live": 0,
+        "accessibility_name": "",
+        "anchor_bottom": 0.0,
+        "anchor_left": 0.0,
+        "anchor_right": 0.0,
+        "anchor_top": 0.0,
+        "anchors_preset": 0,
+        "auto_translate_mode": 0,
+        "clip_children": 0,
+        "clip_contents": false,
+        "color": {
+          "r": 0.9788,
+          "g": 0.9745,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#faf9ffff"
+        },
+        "custom_maximum_size": {
+          "x": -1.0,
+          "y": -1.0
+        },
+        "custom_minimum_size": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "editor_description": "",
+        "focus_behavior_recursive": 0,
+        "focus_mode": 0,
+        "focus_neighbor_bottom": "",
+        "focus_neighbor_left": "",
+        "focus_neighbor_right": "",
+        "focus_neighbor_top": "",
+        "focus_next": "",
+        "focus_previous": "",
+        "grow_horizontal": 1,
+        "grow_vertical": 1,
+        "layout_direction": 0,
+        "layout_mode": 3,
+        "light_mask": 1,
+        "localize_numeral_system": true,
+        "material": null,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "mouse_behavior_recursive": 0,
+        "mouse_default_cursor_shape": 0,
+        "mouse_filter": 2,
+        "mouse_force_pass_scroll_events": true,
+        "offset_bottom": 720.0,
+        "offset_left": 0.0,
+        "offset_right": 1280.0,
+        "offset_top": 0.0,
+        "offset_transform_enabled": false,
+        "offset_transform_pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_pivot_ratio": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "offset_transform_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_position_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_rotation": 0.0,
+        "offset_transform_scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "offset_transform_visual_only": true,
+        "oversampling_with_scale": 0,
+        "physics_interpolation_mode": 2,
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "pivot_offset_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "process_mode": 0,
+        "process_physics_priority": 0,
+        "process_priority": 0,
+        "process_thread_group": 0,
+        "propagate_maximum_size": false,
+        "rotation": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "shortcut_context": null,
+        "show_behind_parent": false,
+        "size": {
+          "x": 1280.0,
+          "y": 720.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_stretch_ratio": 1.0,
+        "size_flags_vertical": 1,
+        "texture_filter": 0,
+        "texture_repeat": 0,
+        "theme": null,
+        "theme_type_variation": "",
+        "tooltip_auto_translate_mode": 0,
+        "tooltip_text": "",
+        "top_level": false,
+        "translation_context": "",
+        "unique_name_in_owner": false,
+        "use_parent_material": false,
+        "visibility_layer": 1,
+        "visible": true,
+        "y_sort_enabled": false,
+        "z_as_relative": true,
+        "z_index": 0
+      }
+    },
+    {
+      "id": "node_1",
+      "parent_id": "node_0",
+      "name": "PriorityRadioGroup",
+      "class": "VBoxContainer",
+      "category": "control",
+      "path": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+      "depth": 1,
+      "index_in_parent": 0,
+      "children_count": 3,
+      "groups": [],
+      "script": "res://addons/material3/components/selection/m3_radio_group.gd",
+      "process_mode": 0,
+      "visible": true,
+      "screen_rect": {
+        "x": 80.0,
+        "y": 80.0,
+        "width": 209.0,
+        "height": 152.0,
+        "has_bounds": true,
+        "on_screen": true
+      },
+      "script_variables": {
+        "_is_updating": false,
+        "selected_index": 0
+      },
+      "transforms": {
+        "position": {
+          "x": 80.0,
+          "y": 80.0
+        },
+        "global_position": {
+          "x": 80.0,
+          "y": 80.0
+        },
+        "size": {
+          "x": 209.0,
+          "y": 152.0
+        },
+        "custom_minimum_size": {
+          "x": 209.0,
+          "y": 152.0
+        },
+        "rotation_deg": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "anchors": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 0.0,
+          "bottom": 0.0
+        },
+        "offsets": {
+          "left": 80.0,
+          "top": 80.0,
+          "right": 289.0,
+          "bottom": 232.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_vertical": 1
+      },
+      "visibility": {
+        "visible": true,
+        "visible_in_tree": true,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "top_level": false,
+        "show_behind_parent": false,
+        "clip_children": 0,
+        "light_mask": 1,
+        "visibility_layer": 1,
+        "z_index": 0,
+        "z_as_relative": true,
+        "y_sort_enabled": false
+      },
+      "physics": {},
+      "ui_and_content": {
+        "focus_mode": 0,
+        "mouse_filter": 1,
+        "tooltip_text": ""
+      },
+      "signals": [
+        {
+          "signal": "child_entered_tree",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+          "method": "_on_child_tree_changed"
+        },
+        {
+          "signal": "child_exiting_tree",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+          "method": "_on_child_tree_changed"
+        },
+        {
+          "signal": "child_order_changed",
+          "target": "/root/@Node@304/GSSStageViewport",
+          "method": "Viewport::canvas_parent_mark_dirty"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioHigh",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioNormal",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioDisabled",
+          "method": "Control::_size_changed"
+        }
+      ],
+      "all_properties": {
+        "accessibility_controls_nodes": [],
+        "accessibility_described_by_nodes": [],
+        "accessibility_description": "",
+        "accessibility_flow_to_nodes": [],
+        "accessibility_labeled_by_nodes": [],
+        "accessibility_live": 0,
+        "accessibility_name": "",
+        "accessibility_region": false,
+        "alignment": 0,
+        "anchor_bottom": 0.0,
+        "anchor_left": 0.0,
+        "anchor_right": 0.0,
+        "anchor_top": 0.0,
+        "anchors_preset": 0,
+        "auto_translate_mode": 0,
+        "clip_children": 0,
+        "clip_contents": false,
+        "custom_maximum_size": {
+          "x": -1.0,
+          "y": -1.0
+        },
+        "custom_minimum_size": {
+          "x": 209.0,
+          "y": 152.0
+        },
+        "editor_description": "",
+        "focus_behavior_recursive": 0,
+        "focus_mode": 0,
+        "focus_neighbor_bottom": "",
+        "focus_neighbor_left": "",
+        "focus_neighbor_right": "",
+        "focus_neighbor_top": "",
+        "focus_next": "",
+        "focus_previous": "",
+        "grow_horizontal": 1,
+        "grow_vertical": 1,
+        "layout_direction": 0,
+        "layout_mode": 0,
+        "light_mask": 1,
+        "localize_numeral_system": true,
+        "material": null,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "mouse_behavior_recursive": 0,
+        "mouse_default_cursor_shape": 0,
+        "mouse_filter": 1,
+        "mouse_force_pass_scroll_events": true,
+        "offset_bottom": 232.0,
+        "offset_left": 80.0,
+        "offset_right": 289.0,
+        "offset_top": 80.0,
+        "offset_transform_enabled": false,
+        "offset_transform_pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_pivot_ratio": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "offset_transform_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_position_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_rotation": 0.0,
+        "offset_transform_scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "offset_transform_visual_only": true,
+        "oversampling_with_scale": 0,
+        "physics_interpolation_mode": 2,
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "pivot_offset_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "position": {
+          "x": 80.0,
+          "y": 80.0
+        },
+        "process_mode": 0,
+        "process_physics_priority": 0,
+        "process_priority": 0,
+        "process_thread_group": 0,
+        "propagate_maximum_size": true,
+        "rotation": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "selected_index": 0,
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "shortcut_context": null,
+        "show_behind_parent": false,
+        "size": {
+          "x": 209.0,
+          "y": 152.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_stretch_ratio": 1.0,
+        "size_flags_vertical": 1,
+        "texture_filter": 0,
+        "texture_repeat": 0,
+        "theme": null,
+        "theme_override_constants/separation": null,
+        "theme_type_variation": "",
+        "tooltip_auto_translate_mode": 0,
+        "tooltip_text": "",
+        "top_level": false,
+        "translation_context": "",
+        "unique_name_in_owner": false,
+        "use_parent_material": false,
+        "visibility_layer": 1,
+        "visible": true,
+        "y_sort_enabled": false,
+        "z_as_relative": true,
+        "z_index": 0
+      }
+    },
+    {
+      "id": "node_2",
+      "parent_id": "node_1",
+      "name": "RadioHigh",
+      "class": "Control",
+      "category": "control",
+      "path": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioHigh",
+      "depth": 2,
+      "index_in_parent": 0,
+      "children_count": 0,
+      "groups": [],
+      "script": "res://addons/material3/components/selection/m3_radio.gd",
+      "process_mode": 0,
+      "visible": true,
+      "screen_rect": {
+        "x": 80.0,
+        "y": 80.0,
+        "width": 209.0,
+        "height": 48.0,
+        "has_bounds": true,
+        "on_screen": true
+      },
+      "script_variables": {
+        "_dot_scale": 0.7392,
+        "_dot_tween": "<Tween>",
+        "_font": "<FontFile>",
+        "_font_size": 14,
+        "_is_pointer_down": false,
+        "_pointer_inside": false,
+        "_ripple": "<Node:M3Ripple (Control)>",
+        "_ripple_wave_alpha": 0.0,
+        "_ripple_wave_count": 0,
+        "_ripple_wave_radius": 0.0,
+        "_select_progress": 0.7392,
+        "_state_layer_alpha": 0.0,
+        "_theme_connected": true,
+        "current_state": 0,
+        "custom_corner_radius": -1.0,
+        "density_override": 99,
+        "disabled": false,
+        "dot_size": 10.0,
+        "group_name": "",
+        "ring_size": 20.0,
+        "ripple_enabled": true,
+        "selected": true,
+        "shape_token": 0,
+        "text": "High Priority",
+        "touch_target_min_size": {
+          "x": 48.0,
+          "y": 48.0
+        },
+        "value": "high"
+      },
+      "transforms": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "global_position": {
+          "x": 80.0,
+          "y": 80.0
+        },
+        "size": {
+          "x": 209.0,
+          "y": 48.0
+        },
+        "custom_minimum_size": {
+          "x": 141.0,
+          "y": 48.0
+        },
+        "rotation_deg": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "anchors": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 0.0,
+          "bottom": 0.0
+        },
+        "offsets": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 209.0,
+          "bottom": 48.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_vertical": 1
+      },
+      "visibility": {
+        "visible": true,
+        "visible_in_tree": true,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "top_level": false,
+        "show_behind_parent": false,
+        "clip_children": 0,
+        "light_mask": 1,
+        "visibility_layer": 1,
+        "z_index": 0,
+        "z_as_relative": true,
+        "y_sort_enabled": false
+      },
+      "physics": {},
+      "ui_and_content": {
+        "focus_mode": 2,
+        "mouse_filter": 0,
+        "tooltip_text": ""
+      },
+      "signals": [
+        {
+          "signal": "toggled",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+          "method": "_on_radio_toggled"
+        },
+        {
+          "signal": "child_order_changed",
+          "target": "/root/@Node@304/GSSStageViewport",
+          "method": "Viewport::canvas_parent_mark_dirty"
+        },
+        {
+          "signal": "visibility_changed",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+          "method": "Container::_child_minsize_changed"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioHigh/M3Ripple",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "resized",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioHigh",
+          "method": "_on_resized"
+        },
+        {
+          "signal": "mouse_entered",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioHigh",
+          "method": "_on_mouse_entered"
+        },
+        {
+          "signal": "mouse_exited",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioHigh",
+          "method": "_on_mouse_exited"
+        },
+        {
+          "signal": "focus_entered",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioHigh",
+          "method": "_on_focus_entered"
+        },
+        {
+          "signal": "focus_exited",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioHigh",
+          "method": "_on_focus_exited"
+        },
+        {
+          "signal": "size_flags_changed",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+          "method": "Container::queue_sort"
+        },
+        {
+          "signal": "maximum_size_changed",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+          "method": "Container::_child_minsize_changed"
+        },
+        {
+          "signal": "minimum_size_changed",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+          "method": "Container::_child_minsize_changed"
+        },
+        {
+          "signal": "_desired_size_changed",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+          "method": "Container::_child_desired_size_changed"
+        }
+      ],
+      "all_properties": {
+        "accessibility_controls_nodes": [],
+        "accessibility_described_by_nodes": [],
+        "accessibility_description": "",
+        "accessibility_flow_to_nodes": [],
+        "accessibility_labeled_by_nodes": [],
+        "accessibility_live": 0,
+        "accessibility_name": "",
+        "auto_translate_mode": 0,
+        "clip_children": 0,
+        "clip_contents": false,
+        "current_state": 0,
+        "custom_corner_radius": -1.0,
+        "custom_maximum_size": {
+          "x": -1.0,
+          "y": -1.0
+        },
+        "custom_minimum_size": {
+          "x": 141.0,
+          "y": 48.0
+        },
+        "density_override": 99,
+        "disabled": false,
+        "dot_size": 10.0,
+        "editor_description": "",
+        "focus_behavior_recursive": 0,
+        "focus_mode": 2,
+        "focus_neighbor_bottom": "",
+        "focus_neighbor_left": "",
+        "focus_neighbor_right": "",
+        "focus_neighbor_top": "",
+        "focus_next": "",
+        "focus_previous": "",
+        "group_name": "",
+        "layout_direction": 0,
+        "layout_mode": 2,
+        "light_mask": 1,
+        "localize_numeral_system": true,
+        "material": null,
+        "metadata/_m3_group_wired": true,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "mouse_behavior_recursive": 0,
+        "mouse_default_cursor_shape": 2,
+        "mouse_filter": 0,
+        "mouse_force_pass_scroll_events": true,
+        "offset_transform_enabled": false,
+        "offset_transform_pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_pivot_ratio": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "offset_transform_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_position_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_rotation": 0.0,
+        "offset_transform_scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "offset_transform_visual_only": true,
+        "oversampling_with_scale": 0,
+        "physics_interpolation_mode": 2,
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "pivot_offset_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "process_mode": 0,
+        "process_physics_priority": 0,
+        "process_priority": 0,
+        "process_thread_group": 0,
+        "propagate_maximum_size": false,
+        "ring_size": 20.0,
+        "ripple_enabled": true,
+        "rotation": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "selected": true,
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "shape_token": 0,
+        "shortcut_context": null,
+        "show_behind_parent": false,
+        "size": {
+          "x": 209.0,
+          "y": 48.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_stretch_ratio": 1.0,
+        "size_flags_vertical": 1,
+        "text": "High Priority",
+        "texture_filter": 0,
+        "texture_repeat": 0,
+        "theme": null,
+        "theme_type_variation": "",
+        "tooltip_auto_translate_mode": 0,
+        "tooltip_text": "",
+        "top_level": false,
+        "touch_target_min_size": {
+          "x": 48.0,
+          "y": 48.0
+        },
+        "translation_context": "",
+        "unique_name_in_owner": false,
+        "use_parent_material": false,
+        "value": "high",
+        "visibility_layer": 1,
+        "visible": true,
+        "y_sort_enabled": false,
+        "z_as_relative": true,
+        "z_index": 0
+      }
+    },
+    {
+      "id": "node_3",
+      "parent_id": "node_1",
+      "name": "RadioNormal",
+      "class": "Control",
+      "category": "control",
+      "path": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioNormal",
+      "depth": 2,
+      "index_in_parent": 1,
+      "children_count": 0,
+      "groups": [],
+      "script": "res://addons/material3/components/selection/m3_radio.gd",
+      "process_mode": 0,
+      "visible": true,
+      "screen_rect": {
+        "x": 80.0,
+        "y": 132.0,
+        "width": 209.0,
+        "height": 48.0,
+        "has_bounds": true,
+        "on_screen": true
+      },
+      "script_variables": {
+        "_dot_scale": 0.0,
+        "_dot_tween": null,
+        "_font": "<FontFile>",
+        "_font_size": 14,
+        "_is_pointer_down": false,
+        "_pointer_inside": false,
+        "_ripple": "<Node:M3Ripple (Control)>",
+        "_ripple_wave_alpha": 0.0,
+        "_ripple_wave_count": 0,
+        "_ripple_wave_radius": 0.0,
+        "_select_progress": 0.0,
+        "_state_layer_alpha": 0.0,
+        "_theme_connected": true,
+        "current_state": 0,
+        "custom_corner_radius": -1.0,
+        "density_override": 99,
+        "disabled": false,
+        "dot_size": 10.0,
+        "group_name": "",
+        "ring_size": 20.0,
+        "ripple_enabled": true,
+        "selected": false,
+        "shape_token": 0,
+        "text": "Normal Priority",
+        "touch_target_min_size": {
+          "x": 48.0,
+          "y": 48.0
+        },
+        "value": "normal"
+      },
+      "transforms": {
+        "position": {
+          "x": 0.0,
+          "y": 52.0
+        },
+        "global_position": {
+          "x": 80.0,
+          "y": 132.0
+        },
+        "size": {
+          "x": 209.0,
+          "y": 48.0
+        },
+        "custom_minimum_size": {
+          "x": 161.0,
+          "y": 48.0
+        },
+        "rotation_deg": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "anchors": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 0.0,
+          "bottom": 0.0
+        },
+        "offsets": {
+          "left": 0.0,
+          "top": 52.0,
+          "right": 209.0,
+          "bottom": 100.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_vertical": 1
+      },
+      "visibility": {
+        "visible": true,
+        "visible_in_tree": true,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "top_level": false,
+        "show_behind_parent": false,
+        "clip_children": 0,
+        "light_mask": 1,
+        "visibility_layer": 1,
+        "z_index": 0,
+        "z_as_relative": true,
+        "y_sort_enabled": false
+      },
+      "physics": {},
+      "ui_and_content": {
+        "focus_mode": 2,
+        "mouse_filter": 0,
+        "tooltip_text": ""
+      },
+      "signals": [
+        {
+          "signal": "toggled",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+          "method": "_on_radio_toggled"
+        },
+        {
+          "signal": "child_order_changed",
+          "target": "/root/@Node@304/GSSStageViewport",
+          "method": "Viewport::canvas_parent_mark_dirty"
+        },
+        {
+          "signal": "visibility_changed",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+          "method": "Container::_child_minsize_changed"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioNormal/M3Ripple",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "resized",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioNormal",
+          "method": "_on_resized"
+        },
+        {
+          "signal": "mouse_entered",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioNormal",
+          "method": "_on_mouse_entered"
+        },
+        {
+          "signal": "mouse_exited",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioNormal",
+          "method": "_on_mouse_exited"
+        },
+        {
+          "signal": "focus_entered",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioNormal",
+          "method": "_on_focus_entered"
+        },
+        {
+          "signal": "focus_exited",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioNormal",
+          "method": "_on_focus_exited"
+        },
+        {
+          "signal": "size_flags_changed",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+          "method": "Container::queue_sort"
+        },
+        {
+          "signal": "maximum_size_changed",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+          "method": "Container::_child_minsize_changed"
+        },
+        {
+          "signal": "minimum_size_changed",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+          "method": "Container::_child_minsize_changed"
+        },
+        {
+          "signal": "_desired_size_changed",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+          "method": "Container::_child_desired_size_changed"
+        }
+      ],
+      "all_properties": {
+        "accessibility_controls_nodes": [],
+        "accessibility_described_by_nodes": [],
+        "accessibility_description": "",
+        "accessibility_flow_to_nodes": [],
+        "accessibility_labeled_by_nodes": [],
+        "accessibility_live": 0,
+        "accessibility_name": "",
+        "auto_translate_mode": 0,
+        "clip_children": 0,
+        "clip_contents": false,
+        "current_state": 0,
+        "custom_corner_radius": -1.0,
+        "custom_maximum_size": {
+          "x": -1.0,
+          "y": -1.0
+        },
+        "custom_minimum_size": {
+          "x": 161.0,
+          "y": 48.0
+        },
+        "density_override": 99,
+        "disabled": false,
+        "dot_size": 10.0,
+        "editor_description": "",
+        "focus_behavior_recursive": 0,
+        "focus_mode": 2,
+        "focus_neighbor_bottom": "",
+        "focus_neighbor_left": "",
+        "focus_neighbor_right": "",
+        "focus_neighbor_top": "",
+        "focus_next": "",
+        "focus_previous": "",
+        "group_name": "",
+        "layout_direction": 0,
+        "layout_mode": 2,
+        "light_mask": 1,
+        "localize_numeral_system": true,
+        "material": null,
+        "metadata/_m3_group_wired": true,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "mouse_behavior_recursive": 0,
+        "mouse_default_cursor_shape": 2,
+        "mouse_filter": 0,
+        "mouse_force_pass_scroll_events": true,
+        "offset_transform_enabled": false,
+        "offset_transform_pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_pivot_ratio": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "offset_transform_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_position_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_rotation": 0.0,
+        "offset_transform_scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "offset_transform_visual_only": true,
+        "oversampling_with_scale": 0,
+        "physics_interpolation_mode": 2,
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "pivot_offset_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "position": {
+          "x": 0.0,
+          "y": 52.0
+        },
+        "process_mode": 0,
+        "process_physics_priority": 0,
+        "process_priority": 0,
+        "process_thread_group": 0,
+        "propagate_maximum_size": false,
+        "ring_size": 20.0,
+        "ripple_enabled": true,
+        "rotation": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "selected": false,
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "shape_token": 0,
+        "shortcut_context": null,
+        "show_behind_parent": false,
+        "size": {
+          "x": 209.0,
+          "y": 48.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_stretch_ratio": 1.0,
+        "size_flags_vertical": 1,
+        "text": "Normal Priority",
+        "texture_filter": 0,
+        "texture_repeat": 0,
+        "theme": null,
+        "theme_type_variation": "",
+        "tooltip_auto_translate_mode": 0,
+        "tooltip_text": "",
+        "top_level": false,
+        "touch_target_min_size": {
+          "x": 48.0,
+          "y": 48.0
+        },
+        "translation_context": "",
+        "unique_name_in_owner": false,
+        "use_parent_material": false,
+        "value": "normal",
+        "visibility_layer": 1,
+        "visible": true,
+        "y_sort_enabled": false,
+        "z_as_relative": true,
+        "z_index": 0
+      }
+    },
+    {
+      "id": "node_4",
+      "parent_id": "node_1",
+      "name": "RadioDisabled",
+      "class": "Control",
+      "category": "control",
+      "path": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioDisabled",
+      "depth": 2,
+      "index_in_parent": 2,
+      "children_count": 0,
+      "groups": [],
+      "script": "res://addons/material3/components/selection/m3_radio.gd",
+      "process_mode": 0,
+      "visible": true,
+      "screen_rect": {
+        "x": 80.0,
+        "y": 184.0,
+        "width": 209.0,
+        "height": 48.0,
+        "has_bounds": true,
+        "on_screen": true
+      },
+      "script_variables": {
+        "_dot_scale": 0.0,
+        "_dot_tween": null,
+        "_font": "<FontFile>",
+        "_font_size": 14,
+        "_is_pointer_down": false,
+        "_pointer_inside": false,
+        "_ripple": "<Node:M3Ripple (Control)>",
+        "_ripple_wave_alpha": 0.0,
+        "_ripple_wave_count": 0,
+        "_ripple_wave_radius": 0.0,
+        "_select_progress": 0.0,
+        "_state_layer_alpha": 0.0,
+        "_theme_connected": true,
+        "current_state": 4,
+        "custom_corner_radius": -1.0,
+        "density_override": 99,
+        "disabled": true,
+        "dot_size": 10.0,
+        "group_name": "",
+        "ring_size": 20.0,
+        "ripple_enabled": true,
+        "selected": false,
+        "shape_token": 0,
+        "text": "Low Priority (Disabled)",
+        "touch_target_min_size": {
+          "x": 48.0,
+          "y": 48.0
+        },
+        "value": "low"
+      },
+      "transforms": {
+        "position": {
+          "x": 0.0,
+          "y": 104.0
+        },
+        "global_position": {
+          "x": 80.0,
+          "y": 184.0
+        },
+        "size": {
+          "x": 209.0,
+          "y": 48.0
+        },
+        "custom_minimum_size": {
+          "x": 209.0,
+          "y": 48.0
+        },
+        "rotation_deg": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "anchors": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 0.0,
+          "bottom": 0.0
+        },
+        "offsets": {
+          "left": 0.0,
+          "top": 104.0,
+          "right": 209.0,
+          "bottom": 152.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_vertical": 1
+      },
+      "visibility": {
+        "visible": true,
+        "visible_in_tree": true,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "top_level": false,
+        "show_behind_parent": false,
+        "clip_children": 0,
+        "light_mask": 1,
+        "visibility_layer": 1,
+        "z_index": 0,
+        "z_as_relative": true,
+        "y_sort_enabled": false
+      },
+      "physics": {},
+      "ui_and_content": {
+        "focus_mode": 2,
+        "mouse_filter": 0,
+        "tooltip_text": ""
+      },
+      "signals": [
+        {
+          "signal": "toggled",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+          "method": "_on_radio_toggled"
+        },
+        {
+          "signal": "child_order_changed",
+          "target": "/root/@Node@304/GSSStageViewport",
+          "method": "Viewport::canvas_parent_mark_dirty"
+        },
+        {
+          "signal": "visibility_changed",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+          "method": "Container::_child_minsize_changed"
+        },
+        {
+          "signal": "item_rect_changed",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioDisabled/M3Ripple",
+          "method": "Control::_size_changed"
+        },
+        {
+          "signal": "resized",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioDisabled",
+          "method": "_on_resized"
+        },
+        {
+          "signal": "mouse_entered",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioDisabled",
+          "method": "_on_mouse_entered"
+        },
+        {
+          "signal": "mouse_exited",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioDisabled",
+          "method": "_on_mouse_exited"
+        },
+        {
+          "signal": "focus_entered",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioDisabled",
+          "method": "_on_focus_entered"
+        },
+        {
+          "signal": "focus_exited",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup/RadioDisabled",
+          "method": "_on_focus_exited"
+        },
+        {
+          "signal": "size_flags_changed",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+          "method": "Container::queue_sort"
+        },
+        {
+          "signal": "maximum_size_changed",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+          "method": "Container::_child_minsize_changed"
+        },
+        {
+          "signal": "minimum_size_changed",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+          "method": "Container::_child_minsize_changed"
+        },
+        {
+          "signal": "_desired_size_changed",
+          "target": "/root/@Node@304/GSSStageViewport/RadioVariants/PriorityRadioGroup",
+          "method": "Container::_child_desired_size_changed"
+        }
+      ],
+      "all_properties": {
+        "accessibility_controls_nodes": [],
+        "accessibility_described_by_nodes": [],
+        "accessibility_description": "",
+        "accessibility_flow_to_nodes": [],
+        "accessibility_labeled_by_nodes": [],
+        "accessibility_live": 0,
+        "accessibility_name": "",
+        "auto_translate_mode": 0,
+        "clip_children": 0,
+        "clip_contents": false,
+        "current_state": 4,
+        "custom_corner_radius": -1.0,
+        "custom_maximum_size": {
+          "x": -1.0,
+          "y": -1.0
+        },
+        "custom_minimum_size": {
+          "x": 209.0,
+          "y": 48.0
+        },
+        "density_override": 99,
+        "disabled": true,
+        "dot_size": 10.0,
+        "editor_description": "",
+        "focus_behavior_recursive": 0,
+        "focus_mode": 2,
+        "focus_neighbor_bottom": "",
+        "focus_neighbor_left": "",
+        "focus_neighbor_right": "",
+        "focus_neighbor_top": "",
+        "focus_next": "",
+        "focus_previous": "",
+        "group_name": "",
+        "layout_direction": 0,
+        "layout_mode": 2,
+        "light_mask": 1,
+        "localize_numeral_system": true,
+        "material": null,
+        "metadata/_m3_group_wired": true,
+        "modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "mouse_behavior_recursive": 0,
+        "mouse_default_cursor_shape": 8,
+        "mouse_filter": 0,
+        "mouse_force_pass_scroll_events": true,
+        "offset_transform_enabled": false,
+        "offset_transform_pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_pivot_ratio": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "offset_transform_position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_position_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "offset_transform_rotation": 0.0,
+        "offset_transform_scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "offset_transform_visual_only": true,
+        "oversampling_with_scale": 0,
+        "physics_interpolation_mode": 2,
+        "pivot_offset": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "pivot_offset_ratio": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "position": {
+          "x": 0.0,
+          "y": 104.0
+        },
+        "process_mode": 0,
+        "process_physics_priority": 0,
+        "process_priority": 0,
+        "process_thread_group": 0,
+        "propagate_maximum_size": false,
+        "ring_size": 20.0,
+        "ripple_enabled": true,
+        "rotation": 0.0,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "selected": false,
+        "self_modulate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0,
+          "hex": "#ffffffff"
+        },
+        "shape_token": 0,
+        "shortcut_context": null,
+        "show_behind_parent": false,
+        "size": {
+          "x": 209.0,
+          "y": 48.0
+        },
+        "size_flags_horizontal": 1,
+        "size_flags_stretch_ratio": 1.0,
+        "size_flags_vertical": 1,
+        "text": "Low Priority (Disabled)",
+        "texture_filter": 0,
+        "texture_repeat": 0,
+        "theme": null,
+        "theme_type_variation": "",
+        "tooltip_auto_translate_mode": 0,
+        "tooltip_text": "",
+        "top_level": false,
+        "touch_target_min_size": {
+          "x": 48.0,
+          "y": 48.0
+        },
+        "translation_context": "",
+        "unique_name_in_owner": false,
+        "use_parent_material": false,
+        "value": "low",
+        "visibility_layer": 1,
+        "visible": true,
+        "y_sort_enabled": false,
+        "z_as_relative": true,
+        "z_index": 0
+      }
+    }
+  ]
+}
